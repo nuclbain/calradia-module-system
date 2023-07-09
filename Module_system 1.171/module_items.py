@@ -1507,6 +1507,18 @@ items = [
 ["mt_horse_c10","Knighty Horse", [("horse5_5_a",0), ("horse5_5_a.1",0)], itp_merchandise|itp_type_horse, 0, 1699,abundance(50)|hit_points(165)|body_armor(40)|difficulty(4)|horse_speed(52)|horse_maneuver(50)|horse_charge(28)|horse_scale(110),imodbits_horse_basic|imodbit_champion],
 ["mt_horse_c11","Knighty Horse", [("horse7",0), ("horse7.1",0)], itp_merchandise|itp_type_horse, 0, 1699,abundance(50)|hit_points(165)|body_armor(40)|difficulty(4)|horse_speed(52)|horse_maneuver(50)|horse_charge(28)|horse_scale(110),imodbits_horse_basic|imodbit_champion],
 
+# The Stormguard items
+["ms_helmet_light", "Mountaineer Helmet", [("helm37",0)], itp_merchandise|itp_type_head_armor, 0, 299, weight(1)|abundance(100)|head_armor(24)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate ],
+["ms_helmet_a", "Thunderguard Helmet", [("helm34",0)], itp_merchandise|itp_type_head_armor, 0, 499, weight(2)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate ],
+["ms_helmet_a2", "Thunderguard Helmet", [("helm33",0)], itp_merchandise|itp_type_head_armor, 0, 499, weight(2)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate ],
+["ms_helmet_b", "Stormbringers Helmet", [("helm35",0)], itp_merchandise|itp_type_head_armor, 0, 599, weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate ],
+["ms_helmet_c", "Stormbringers Helmet", [("helm36",0)], itp_merchandise|itp_type_head_armor, 0, 699, weight(2)|abundance(100)|head_armor(48)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate ],
+["ms_helmet_d", "Avalanche Warriors Helmet", [("helm9",0)], itp_merchandise|itp_type_head_armor, 0, 799, weight(2)|abundance(100)|head_armor(52)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate ],
+["ms_helmet_e", "Lightning Riders Helmet", [("helm24",0)], itp_merchandise|itp_type_head_armor, 0, 1299, weight(2)|abundance(100)|head_armor(56)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
+
+["ms_facemask_a", "Tempest Sentinels Facemask", [("mask_1",0)], itp_merchandise|itp_type_head_armor, 0, 1099, weight(2)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
+["ms_facemask_b", "Tempest Sentinels Facemask", [("mask_2",0)], itp_merchandise|itp_type_head_armor, 0, 1099, weight(2)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
+
 # black horde items
 ["mh_helmet_heavy_a", "Heavy Hairako Helmet", [("mask_helmet1",0), ("mask_helmet1.1",0)], itp_merchandise|itp_type_head_armor, 0, 899, weight(2)|abundance(100)|head_armor(50)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
 
