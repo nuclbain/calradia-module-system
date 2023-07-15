@@ -411,6 +411,20 @@ troops = [
 ["elen_sniper","Elen Sniper","Elen Snipers",tf_guarantee_all,0,0,fac_kingdom_10, [itm_mt_leather_armor_c2, itm_mt_leather_armor_c, itm_mt_leather_boots_a, itm_m_gloves_a, itm_milanese_sword, itm_mt_hood_a, itm_mt_hood_a2, itm_mt_hood_a3, itm_tab_shield_kite_b, itm_long_bow, itm_bodkin_arrows], tier_one_attrib|level(27),wp(250)|wp_archery(200),knows_common|knows_ironflesh_2|knows_power_draw_5,swadian_face_young_1, swadian_face_young_2],
 ["elen_white_hood","Elen White Hood","Elen White Hoods",tf_guarantee_all,0,0,fac_kingdom_10, [itm_mt_leather_armor_c3, itm_m_greaves_b, itm_m_gauntlets_b, itm_mt_hood_a4, itm_war_bow, itm_bodkin_arrows, itm_ms_metal_shield_a, itm_ms_metal_shield_a2, itm_ms_metal_shield_a3, itm_ms_metal_shield_a4, itm_side_sword], tier_three_attrib|level(34),wp(330)|wp_archery(200),knows_common|knows_ironflesh_7|knows_power_draw_10|knows_power_strike_5,swadian_face_old_1, swadian_face_old_2],
 
+# Stormguard units
+# Mountaineer - Thunderguard - Stormbringers - Avalanche Warriors
+["stormguard_mountaineer","Mountaineer","Mountaineers",tf_guarantee_all,0,0,fac_kingdom_12, [itm_pilgrim_hood,itm_ms_helmet_light,itm_ms_gambeson_a,itm_ms_gambeson_b,itm_ms_gambeson_c,itm_wrapping_boots,itm_leather_gloves,itm_hatchet,itm_wooden_shield,itm_boar_spear], def_attrib|level(4),wp(60),knows_common,swadian_face_younger_1, swadian_face_middle_2],
+["stormguard_thunderguard","Thunderguard","Thunderguards",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_helmet_a,itm_ms_helmet_a2,itm_ms_byrnie_a,itm_m_leather_boots_a,itm_sword_viking_1,itm_tab_shield_round_b,itm_war_spear], def_attrib|level(9),wp(85),knows_common,swadian_face_young_1, swadian_face_middle_2],
+["stormguard_stormbringer","Stormbringer","Stormbringers",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_helmet_b,itm_ms_helmet_c,itm_ms_stormbringer_hauberk_a,itm_ms_stormbringer_hauberk_b,itm_ms_stormbringer_hauberk_c,itm_m_leather_boots_a,itm_one_handed_battle_axe_c,itm_tab_shield_round_c,itm_two_handed_battle_axe_2], def_attrib|level(14),wp(110),knows_common,swadian_face_young_1, swadian_face_middle_2],
+["stormguard_avalanche_warrior","Avalanche Warrior","Avalanche Warriors",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_helmet_d,itm_ms_mail_shirt_a,itm_ms_mail_shirt_b,itm_ms_mail_shirt_c,itm_mt_mail_boots_a,itm_m_gauntlets_a,itm_mace_4,itm_tab_shield_small_round_c,itm_sword_of_war,itm_throwing_spears], def_attrib|level(19),wp(135),knows_common,swadian_face_young_1, swadian_face_middle_2],
+
+# Avalanche Warriors - Lightning Riders
+["stormguard_lightning_rider","Lightning Rider","Lightning Riders",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_helmet_e,itm_ms_byrnie_b,itm_ms_byrnie_c,itm_ms_byrnie_d,itm_m_greaves_b,itm_mt_scale_gloves_a,itm_one_handed_battle_axe_c,itm_tab_shield_round_d,itm_light_lance,itm_throwing_spears,itm_hunter], tier_two_attrib|level(24),wp(160),knows_common,knows_riding_5,swadian_face_young_1, swadian_face_middle_2],
+
+# Avalanche Warriors - Tempest Sentinels - Elite Stormguard
+["stormguard_tempest_sentinel","Tempest Sentinel","Tempest Sentinels",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_facemask_a,itm_ms_armor_bear,itm_ms_facemask_b,itm_m_greaves_b,itm_mt_gauntlets_a,itm_one_handed_battle_axe_c,itm_tab_shield_round_d,itm_ms_two_h_sword_c,itm_throwing_spears], def_attrib|level(24),wp(180),knows_common,knows_power_throw_6,swadian_face_young_1, swadian_face_middle_2],
+["stormguard_elite_stormguard","Elite Stormguard","Elite Stormguards",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_facemask_elite,itm_ms_coat_of_plates_a,itm_ms_coat_of_plates_b,itm_ms_greaves_a,itm_m_gauntlets_b,itm_sarranid_axe_b,itm_tab_shield_round_e,itm_ms_great_axe_b,itm_heavy_throwing_axes], tier_three_attrib|level(35),wp(400),knows_common,knows_power_throw_9,swadian_face_young_1, swadian_face_middle_2],
+
 #peasant - retainer - footman - man-at-arms -  knight
   ["swadian_recruit","Swadian Recruit","Swadian Recruits",tf_guarantee_armor,0,0,fac_kingdom_1,
    [itm_scythe,itm_hatchet,itm_pickaxe,itm_club,itm_stones,itm_tab_shield_heater_a,itm_leather_cap,itm_felt_hat,itm_felt_hat,
@@ -2719,6 +2733,14 @@ upgrade(troops,"elen_heavy_infantry", "elen_cheif")
 upgrade(troops,"elen_archer","elen_experienced_archer")
 upgrade(troops,"elen_experienced_archer","elen_sniper")
 upgrade(troops,"elen_sniper","elen_white_hood")
+
+# stormguard
+upgrade(troops,"stormguard_mountaineer","stormguard_thunderguard")
+upgrade(troops,"stormguard_thunderguard","stormguard_stormbringer")
+upgrade(troops,"stormguard_stormbringer","stormguard_avalanche_warrior")
+
+upgrade2(troops,"stormguard_avalanche_warrior","stormguard_lightning_rider","stormguard_tempest_sentinel")
+upgrade(troops,"stormguard_tempest_sentinel","stormguard_elite_stormguard")
 
 # native
 upgrade(troops,"swadian_recruit","swadian_militia")
