@@ -1687,8 +1687,8 @@ items = [
 ["ms_helmet_wolf_a3", "Wolf Helmet", [("wolf_helm3",0)], itp_merchandise|itp_type_head_armor, 0, 349, weight(1)|abundance(10)|head_armor(29)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["ms_helmet_wolf_a4", "Wolf Helmet", [("wolf_helm4",0)], itp_merchandise|itp_type_head_armor, 0, 349, weight(1)|abundance(10)|head_armor(29)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 
-["ms_helmet_a", "Great Helmet", [("2great_helmet_new",0)], itp_merchandise|itp_type_head_armor, 0, 999, weight(2.5)|abundance(100)|head_armor(52)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate ],
-["ms_helmet_b", "Great Horned Kattle Hat", [("2kettle_hat_new",0)], itp_merchandise|itp_type_head_armor, 0, 999, weight(2.5)|abundance(100)|head_armor(52)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate ],
+["ms_great_helmet_a", "Great Helmet", [("2great_helmet_new",0)], itp_merchandise|itp_type_head_armor, 0, 999, weight(2.5)|abundance(100)|head_armor(52)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate ],
+["ms_great_helmet_b", "Great Horned Kattle Hat", [("2kettle_hat_new",0)], itp_merchandise|itp_type_head_armor, 0, 999, weight(2.5)|abundance(100)|head_armor(52)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate ],
 
 ["ms_helmet_great_a", "Great Helmet of Doom", [("spak_helmet_k",0)], itp_merchandise|itp_type_head_armor, 0, 999, weight(2.5)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate ],
 ["ms_helmet_great_a2", "Great Helmet of Doom", [("spak_helmet_k2",0)], itp_merchandise|itp_type_head_armor, 0, 999, weight(2.5)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate ],

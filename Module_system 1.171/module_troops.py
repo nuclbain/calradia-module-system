@@ -419,7 +419,7 @@ troops = [
 ["stormguard_avalanche_warrior","Avalanche Warrior","Avalanche Warriors",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_helmet_d,itm_ms_mail_shirt_a,itm_ms_mail_shirt_b,itm_ms_mail_shirt_c,itm_mt_mail_boots_a,itm_m_gauntlets_a,itm_mace_4,itm_tab_shield_small_round_c,itm_sword_of_war,itm_throwing_spears], def_attrib|level(19),wp(135),knows_common,swadian_face_young_1, swadian_face_middle_2],
 
 # Avalanche Warriors - Lightning Riders
-["stormguard_lightning_rider","Lightning Rider","Lightning Riders",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_helmet_e,itm_ms_byrnie_b,itm_ms_byrnie_c,itm_ms_byrnie_d,itm_m_greaves_b,itm_mt_scale_gloves_a,itm_one_handed_battle_axe_c,itm_tab_shield_round_d,itm_light_lance,itm_throwing_spears], tier_two_attrib|level(24),wp(160),knows_common,knows_riding_5,swadian_face_young_1, swadian_face_middle_2],
+["stormguard_lightning_rider","Lightning Rider","Lightning Riders",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_helmet_e,itm_ms_byrnie_b,itm_ms_byrnie_c,itm_ms_byrnie_d,itm_m_greaves_b,itm_mt_scale_gloves_a,itm_one_handed_battle_axe_c,itm_tab_shield_round_d,itm_light_lance,itm_throwing_spears,itm_hunter], tier_two_attrib|level(24),wp(160),knows_common,knows_riding_5,swadian_face_young_1, swadian_face_middle_2],
 
 # Avalanche Warriors - Tempest Sentinels - Elite Stormguard
 ["stormguard_tempest_sentinel","Tempest Sentinel","Tempest Sentinels",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_facemask_a,itm_ms_armor_bear,itm_ms_facemask_b,itm_m_greaves_b,itm_mt_gauntlets_a,itm_one_handed_battle_axe_c,itm_tab_shield_round_d,itm_ms_two_h_sword_c,itm_throwing_spears], def_attrib|level(24),wp(180),knows_common,knows_power_throw_6,swadian_face_young_1, swadian_face_middle_2],
