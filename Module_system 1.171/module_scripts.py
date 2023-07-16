@@ -6355,6 +6355,18 @@ scripts = [
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_a, "pt_kingdom_10_reinforcements_a"),
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_b, "pt_kingdom_10_reinforcements_b"),
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_c, "pt_kingdom_10_reinforcements_c"),
+
+        (else_try),
+          (faction_slot_eq, ":faction_no", slot_faction_culture, "fac_culture_12"),
+      
+          (faction_set_slot, ":faction_no", slot_faction_deserter_troop, "trp_stormguard_thunderguard"),
+          (faction_set_slot, ":faction_no", slot_faction_guard_troop, "trp_stormguard_tempest_sentinel"),
+          (faction_set_slot, ":faction_no", slot_faction_messenger_troop, "trp_stormguard_lightning_rider"),
+          (faction_set_slot, ":faction_no", slot_faction_prison_guard_troop, "trp_stormguard_elite_stormguard"),
+          (faction_set_slot, ":faction_no", slot_faction_castle_guard_troop, "trp_stormguard_elite_stormguard"),
+          (faction_set_slot, ":faction_no",  slot_faction_reinforcements_a, "pt_kingdom_12_reinforcements_a"),
+          (faction_set_slot, ":faction_no",  slot_faction_reinforcements_b, "pt_kingdom_12_reinforcements_b"),
+          (faction_set_slot, ":faction_no",  slot_faction_reinforcements_c, "pt_kingdom_12_reinforcements_c"),
         (try_end),
       (try_end),
 	]),
