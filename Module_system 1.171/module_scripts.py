@@ -289,6 +289,10 @@ scripts = [
       (faction_set_slot, "fac_kingdom_10",  slot_faction_leader, "trp_kingdom_10_lord"),
     (troop_set_slot, "trp_kingdom_10_lord", slot_troop_renown, 1200),
 
+      (faction_set_slot, "fac_kingdom_11",  slot_faction_culture, "fac_culture_11"),
+      (faction_set_slot, "fac_kingdom_11",  slot_faction_leader, "trp_kingdom_11_lord"),
+    (troop_set_slot, "trp_kingdom_11_lord", slot_troop_renown, 1200),
+
       (faction_set_slot, "fac_kingdom_12",  slot_faction_culture, "fac_culture_12"),
       (faction_set_slot, "fac_kingdom_12",  slot_faction_leader, "trp_kingdom_12_lord"),
     (troop_set_slot, "trp_kingdom_12_lord", slot_troop_renown, 1200),
