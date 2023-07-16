@@ -413,14 +413,25 @@ troops = [
 
 # Adid units
 # Nomad Scout - Desert Vanguard - Sultanate Vanguard
+["adid_nomad_scout","Nomad Scout","Nomad Scouts",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_11, [itm_headcloth,itm_turban,itm_desert_turban,itm_maa_coat_a,itm_maa_coat_a2,itm_wrapping_boots,itm_spiked_club,itm_long_spiked_club,itm_leather_covered_round_shield], def_attrib|level(4),wp(60),knows_common,swadian_face_younger_1, swadian_face_middle_2],
+["adid_desert_vanguard","Desert Vanguard","Desert Vanguards",tf_guarantee_all,0,0,fac_kingdom_11, [itm_maa_light_helmet_a,itm_maa_mail_a,itm_maa_mail_b,itm_maa_mail_b2,itm_m_leather_boots_a,itm_scimitar,itm_maa_round_shield_a,itm_maa_round_shield_a2,itm_maa_round_shield_a3,itm_maa_round_shield_a4], def_attrib|level(9),wp(85),knows_common,swadian_face_young_1, swadian_face_middle_2],
+["adid_sultanate_vanguard","Sultanate Vanguard","Sultanate Vanguards",tf_guarantee_all,0,0,fac_kingdom_11, [itm_maa_mail_coif_a,itm_maa_mail_coif_a2,itm_maa_mail_coif_a3,itm_maa_mail_a,itm_maa_mail_b,itm_maa_mail_b2,itm_m_leather_boots_a,itm_scimitar_b,itm_maa_shield_a,itm_maa_shield_a2,itm_maa_shield_a3,itm_maa_shield_a4,itm_maa_shield_a5,itm_maa_shield_a6,itm_maa_shield_a7,itm_maa_shield_a8,itm_maa_shield_a9,itm_maa_shield_a10,itm_maa_shield_a11,itm_maa_shield_a12,itm_bamboo_spear], def_attrib|level(15),wp(135),knows_common,swadian_face_young_1, swadian_face_middle_2],
 
 # Sultanate Vanguard - Camel Rider - Sandstalker
+["adid_camel_rider","Camel Rider","Camel Riders",tf_guarantee_all,0,0,fac_kingdom_11, [itm_maa_mail_coif_b,itm_maa_mail_a,itm_maa_mail_b,itm_maa_mail_b2,itm_m_leather_boots_a,itm_scimitar_b,itm_maa_camel_rider_shield_a,itm_maa_camel_rider_shield_b,itm_nomad_bow,itm_arrows,itm_maa_camel_light_a,itm_maa_camel_light_b,itm_maa_camel_light_c,itm_maa_camel_light_d], def_attrib|level(21),wp(155)|wp_archery(200),knows_common|knows_riding_5|knows_horse_archery_5,swadian_face_young_1, swadian_face_middle_2],
+["adid_sandstalker","Sandstalker","Sandstalkers",tf_guarantee_all,0,0,fac_kingdom_11, [itm_maa_mail_coif_b,itm_maa_scale_a,itm_maa_scale_a2,itm_m_leather_boots_a,itm_sarranid_axe_b,itm_maa_camel_rider_shield_c,itm_maa_camel_rider_shield_d,itm_maa_camel_rider_shield_e,itm_maa_camel_rider_shield_f,itm_strong_bow,itm_barbed_arrows,itm_maa_camel_war_a,itm_maa_camel_war_b,itm_maa_camel_war_c,itm_maa_camel_war_d,itm_m_gloves_a], def_attrib|level(29),wp(255)|wp_archery(340),knows_common|knows_riding_5|knows_horse_archery_8,swadian_face_young_1, swadian_face_middle_2],
 
 # Sultanate Vanguard - Serpent Guard - Oasis Acolyte
+["adid_serpent_guard","Serpent Guard","Serpent Guards",tf_guarantee_all,0,0,fac_kingdom_11, [itm_maa_mail_coif_a,itm_maa_mail_coif_a2,itm_maa_mail_coif_a3,itm_maa_mail_coif_b,itm_maa_mail_coif_c,itm_maa_scale_a,itm_maa_scale_a2,itm_m_leather_boots_a,itm_sarranid_mace_1,itm_sarranid_axe_b,itm_sarranid_axe_a,itm_maa_shield_a,itm_maa_shield_a2,itm_maa_shield_a3,itm_maa_shield_a4,itm_maa_shield_a5,itm_maa_shield_a6,itm_maa_shield_a7,itm_maa_shield_a8,itm_maa_shield_a9,itm_maa_shield_a10,itm_maa_shield_a11,itm_maa_shield_a12,itm_m_gloves_a,itm_spear], def_attrib|level(21),wp(135)|wp_polearm(240),knows_common,swadian_face_young_1, swadian_face_middle_2],
+["adid_oasis_acolyte","Oasis Acolyte","Oasis Acolytes",tf_guarantee_all,0,0,fac_kingdom_11, [itm_maa_mail_coif_a,itm_maa_mail_coif_a2,itm_maa_mail_coif_a3,itm_maa_mail_coif_b,itm_maa_mail_coif_c,itm_maa_scale_b,itm_m_leather_boots_a,itm_sarranid_mace_1,itm_sarranid_axe_b,itm_sarranid_axe_a,itm_maa_shield_a,itm_maa_shield_a2,itm_maa_shield_a3,itm_maa_shield_a4,itm_maa_shield_a5,itm_maa_shield_a6,itm_maa_shield_a7,itm_maa_shield_a8,itm_maa_shield_a9,itm_maa_shield_a10,itm_maa_shield_a11,itm_maa_shield_a12,itm_m_gloves_a,itm_war_spear,itm_throwing_spears], def_attrib|level(25),wp(195)|wp_polearm(260),knows_common|knows_ironflesh_4|knows_power_throw_4,swadian_face_young_1, swadian_face_middle_2],
 
 # Oasis Acolyte - Oasis Priest - Oasis High Priest
+["adid_oasis_priest","Oasis Priest","Oasis Priests",tf_guarantee_all,0,0,fac_kingdom_11, [itm_maa_mail_coif_a,itm_maa_mail_coif_a2,itm_maa_mail_coif_a3,itm_maa_mail_coif_b,itm_maa_mail_coif_c,itm_maa_heavy_scale_a,itm_m_greaves_a,itm_m_greaves_b,itm_sarranid_mace_1,itm_sarranid_axe_b,itm_sarranid_axe_a,itm_maa_shield_a,itm_maa_shield_a2,itm_maa_shield_a3,itm_maa_shield_a4,itm_maa_shield_a5,itm_maa_shield_a6,itm_maa_shield_a7,itm_maa_shield_a8,itm_maa_shield_a9,itm_maa_shield_a10,itm_maa_shield_a11,itm_maa_shield_a12,itm_m_gloves_a,itm_throwing_spears], def_attrib|str_24|agi_20|level(29),wp(260),knows_common|knows_ironflesh_9|knows_power_strike_5|knows_athletics_6,swadian_face_young_1, swadian_face_middle_2],
+["adid_oasis_high_priest","Oasis High Priest","Oasis High Priests",tf_guarantee_all,0,0,fac_kingdom_11, [itm_maa_cavalry_a,itm_maa_heavy_scale_a,itm_m_greaves_a,itm_m_greaves_b,itm_polehammer,itm_m_gauntlets_a,itm_m_gauntlets_b,itm_throwing_spears], def_attrib|str_27|agi_23|level(33),wp(300),knows_common|knows_ironflesh_10|knows_power_strike_10|knows_athletics_6,swadian_face_young_1, swadian_face_middle_2],
 
 # Oasis Acolyte - Royal Lancer - Golden Falcon
+["adid_royal_lancer","Royal Lancer","Royal Lancers",tf_guarantee_all,0,0,fac_kingdom_11, [itm_maa_cavalry_a,itm_maa_cavalry_b,itm_maa_cavalry_c,itm_maa_cavalry_c2,itm_maa_scale_b,itm_m_greaves_a,itm_m_greaves_b,itm_sarranid_mace_1,itm_sarranid_axe_b,itm_sarranid_axe_a,itm_maa_round_shield_a,itm_maa_round_shield_a2,itm_maa_round_shield_a3,itm_maa_round_shield_a4,itm_m_gauntlets_a,itm_m_gauntlets_b,itm_lance,itm_arabian_horse_a,itm_arabian_horse_b], def_attrib|str_24|agi_20|level(29),wp(260),knows_common|knows_ironflesh_9|knows_power_strike_5|knows_riding_6,swadian_face_young_1, swadian_face_middle_2],
+["adid_golden_falcon","Golden Falcon","Golden Falcons",tf_guarantee_all,0,0,fac_kingdom_11, [itm_maa_cavalry_a,itm_maa_cavalry_b,itm_maa_cavalry_c,itm_maa_cavalry_c2,itm_maa_scale_b,itm_m_greaves_a,itm_m_greaves_b,itm_sarranid_mace_1,itm_sarranid_axe_b,itm_sarranid_axe_a,itm_maa_round_shield_a,itm_maa_round_shield_a2,itm_maa_round_shield_a3,itm_maa_round_shield_a4,itm_m_gauntlets_a,itm_m_gauntlets_b,itm_lance,itm_warhorse_sarranid], def_attrib|str_27|agi_23|level(33),wp(320),knows_common|knows_ironflesh_10|knows_power_strike_7|knows_riding_8,swadian_face_young_1, swadian_face_middle_2],
 
 # Stormguard units
 # Mountaineer - Thunderguard - Stormbringers - Avalanche Warriors
@@ -2749,6 +2760,18 @@ upgrade(troops,"elen_heavy_infantry", "elen_cheif")
 upgrade(troops,"elen_archer","elen_experienced_archer")
 upgrade(troops,"elen_experienced_archer","elen_sniper")
 upgrade(troops,"elen_sniper","elen_white_hood")
+
+# adid
+upgrade(troops,"adid_nomad_scout","adid_desert_vanguard")
+upgrade(troops,"adid_desert_vanguard","adid_sultanate_vanguard")
+
+upgrade2(troops,"adid_sultanate_vanguard","adid_camel_rider","adid_serpent_guard")
+upgrade(troops,"adid_camel_rider","adid_sandstalker")
+upgrade(troops,"adid_serpent_guard","adid_oasis_acolyte")
+
+upgrade2(troops,"adid_oasis_acolyte","adid_oasis_priest","adid_royal_lancer")
+upgrade(troops,"adid_oasis_priest","adid_oasis_high_priest")
+upgrade(troops,"adid_royal_lancer","adid_golden_falcon")
 
 # stormguard
 upgrade(troops,"stormguard_mountaineer","stormguard_thunderguard")
