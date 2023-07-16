@@ -159,6 +159,12 @@ scripts = [
       (faction_set_slot, "fac_culture_10", slot_faction_tier_4_troop, "trp_elen_sniper"),
       (faction_set_slot, "fac_culture_10", slot_faction_tier_5_troop, "trp_elen_white_hood"),
 
+      (faction_set_slot, "fac_culture_11", slot_faction_tier_1_troop, "trp_adid_nomad_scout"),
+      (faction_set_slot, "fac_culture_11", slot_faction_tier_2_troop, "trp_adid_desert_vanguard"),
+      (faction_set_slot, "fac_culture_11", slot_faction_tier_3_troop, "trp_adid_serpent_guard"),
+      (faction_set_slot, "fac_culture_11", slot_faction_tier_4_troop, "trp_adid_oasis_acolyte"),
+      (faction_set_slot, "fac_culture_11", slot_faction_tier_5_troop, "trp_adid_golden_falcon"),
+
       (faction_set_slot, "fac_culture_1", slot_faction_town_walker_male_troop, "trp_town_walker_1"),
       (faction_set_slot, "fac_culture_1", slot_faction_town_walker_female_troop, "trp_town_walker_2"),
       (faction_set_slot, "fac_culture_1", slot_faction_village_walker_male_troop, "trp_village_walker_1"),
@@ -228,6 +234,13 @@ scripts = [
       (faction_set_slot, "fac_culture_10", slot_faction_village_walker_female_troop, "trp_village_walker_2"),
       (faction_set_slot, "fac_culture_10", slot_faction_town_spy_male_troop, "trp_spy_walker_1"),
       (faction_set_slot, "fac_culture_10", slot_faction_town_spy_female_troop, "trp_spy_walker_2"),
+
+      (faction_set_slot, "fac_culture_11", slot_faction_town_walker_male_troop, "trp_town_walker_1"),
+      (faction_set_slot, "fac_culture_11", slot_faction_town_walker_female_troop, "trp_town_walker_2"),
+      (faction_set_slot, "fac_culture_11", slot_faction_village_walker_male_troop, "trp_village_walker_1"),
+      (faction_set_slot, "fac_culture_11", slot_faction_village_walker_female_troop, "trp_village_walker_2"),
+      (faction_set_slot, "fac_culture_11", slot_faction_town_spy_male_troop, "trp_spy_walker_1"),
+      (faction_set_slot, "fac_culture_11", slot_faction_town_spy_female_troop, "trp_spy_walker_2"),
 
       (try_begin),
         (eq, "$cheat_mode", 1),
