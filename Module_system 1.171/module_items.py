@@ -1622,6 +1622,12 @@ items = [
 ["maa_round_shield_a3", "Adid Round Shield", [("saracenshss",0)], itp_type_shield, itcf_carry_round_shield, 299, weight(1.5)|hit_points(500)|body_armor(6)|spd_rtng(90)|shield_width(40),imodbits_shield ],
 ["maa_round_shield_a4", "Adid Round Shield", [("saracenshsss",0)], itp_type_shield, itcf_carry_round_shield, 299, weight(1.5)|hit_points(500)|body_armor(6)|spd_rtng(90)|shield_width(40),imodbits_shield ],
 
+["maa_camel_rider_shield_a", "Camel Rider Shield", [("camel_rider_shield_a",0)], itp_type_shield, itcf_carry_round_shield, 339, weight(1.5)|hit_points(540)|body_armor(6)|spd_rtng(90)|shield_width(52),imodbits_shield ],
+["maa_camel_rider_shield_b", "Camel Rider Shield", [("camel_rider_shield_b",0)], itp_type_shield, itcf_carry_round_shield, 339, weight(1.5)|hit_points(540)|body_armor(6)|spd_rtng(90)|shield_width(52),imodbits_shield ],
+["maa_camel_rider_shield_c", "Camel Rider Shield", [("camel_rider_shield_c",0)], itp_type_shield, itcf_carry_round_shield, 339, weight(1.5)|hit_points(540)|body_armor(6)|spd_rtng(90)|shield_width(52),imodbits_shield ],
+["maa_camel_rider_shield_d", "Camel Rider Shield", [("camel_rider_shield_d",0)], itp_type_shield, itcf_carry_round_shield, 339, weight(1.5)|hit_points(540)|body_armor(6)|spd_rtng(90)|shield_width(52),imodbits_shield ],
+["maa_camel_rider_shield_e", "Camel Rider Shield", [("camel_rider_shield_e",0)], itp_type_shield, itcf_carry_round_shield, 339, weight(1.5)|hit_points(540)|body_armor(6)|spd_rtng(90)|shield_width(52),imodbits_shield ],
+["maa_camel_rider_shield_f", "Camel Rider Shield", [("camel_rider_shield_f",0)], itp_type_shield, itcf_carry_round_shield, 339, weight(1.5)|hit_points(540)|body_armor(6)|spd_rtng(90)|shield_width(52),imodbits_shield ],
 
 ["maa_light_helmet_a", "Adid Light Helmet", [("sarr",0)], itp_merchandise|itp_type_head_armor, 0, 299, weight(2.5)|abundance(100)|head_armor(24)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
 
@@ -1651,6 +1657,17 @@ items = [
 
 ["maa_heavy_scale_a", "Adid Elite Scale Armor", [("saracenghulam",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1399 , weight(23)|abundance(100)|head_armor(0)|body_armor(54)|leg_armor(17)|difficulty(0) ,imodbits_armor ], 
 
+["maa_camel_a", "Camel", [("bedyin_camel",0)], itp_merchandise|itp_type_horse,0 ,999, weight(0)|abundance(100)|hit_points(200)|body_armor(20)|difficulty(0)|horse_speed(30)|horse_maneuver(30)|horse_charge(20)|horse_scale(90),imodbits_horse_basic|imodbit_champion],
+
+["maa_camel_light_a", "Rider's Camel", [("camel_22",0)], itp_merchandise|itp_type_horse,0 ,1599, weight(0)|abundance(100)|hit_points(250)|body_armor(25)|difficulty(0)|horse_speed(40)|horse_maneuver(40)|horse_charge(30)|horse_scale(90),imodbits_horse_basic|imodbit_champion],
+["maa_camel_light_b", "Rider's Camel", [("bedyin_camel_1",0),("bedyin_camel_1.1",0)], itp_merchandise|itp_type_horse,0 ,1999, weight(0)|abundance(100)|hit_points(250)|body_armor(25)|difficulty(0)|horse_speed(40)|horse_maneuver(40)|horse_charge(30)|horse_scale(90),imodbits_horse_basic|imodbit_champion],
+["maa_camel_light_c", "Rider's Camel", [("bedyin_camel_a",0),("bedyin_camel_a.1",0)], itp_merchandise|itp_type_horse,0 ,1999, weight(0)|abundance(100)|hit_points(250)|body_armor(25)|difficulty(0)|horse_speed(40)|horse_maneuver(40)|horse_charge(30)|horse_scale(90),imodbits_horse_basic|imodbit_champion],
+["maa_camel_light_d", "Rider's Camel", [("bedyin_camel_b",0),("bedyin_camel_b.1",0)], itp_merchandise|itp_type_horse,0 ,1999, weight(0)|abundance(100)|hit_points(250)|body_armor(25)|difficulty(0)|horse_speed(40)|horse_maneuver(40)|horse_charge(30)|horse_scale(90),imodbits_horse_basic|imodbit_champion],
+
+["maa_camel_war_a", "War Camel", [("bedyin_camel_c",0),("bedyin_camel_c.1",0),("bedyin_camel_c.2",0)], itp_merchandise|itp_type_horse,0 ,2599, weight(0)|abundance(100)|hit_points(300)|body_armor(45)|difficulty(3)|horse_speed(45)|horse_maneuver(45)|horse_charge(45)|horse_scale(100),imodbits_horse_basic|imodbit_champion],
+["maa_camel_war_b", "War Camel", [("bedyin_camel_d",0),("bedyin_camel_d.1",0),("bedyin_camel_d.2",0)], itp_merchandise|itp_type_horse,0 ,2599, weight(0)|abundance(100)|hit_points(300)|body_armor(45)|difficulty(3)|horse_speed(45)|horse_maneuver(45)|horse_charge(45)|horse_scale(100),imodbits_horse_basic|imodbit_champion],
+["maa_camel_war_c", "War Camel", [("bedyin_camel_e",0),("bedyin_camel_e.1",0),("bedyin_camel_e.2",0)], itp_merchandise|itp_type_horse,0 ,2599, weight(0)|abundance(100)|hit_points(300)|body_armor(45)|difficulty(3)|horse_speed(45)|horse_maneuver(45)|horse_charge(45)|horse_scale(100),imodbits_horse_basic|imodbit_champion],
+["maa_camel_war_d", "War Camel", [("bedyin_camel_f",0),("bedyin_camel_f.1",0)], itp_merchandise|itp_type_horse,0 ,2599, weight(0)|abundance(100)|hit_points(300)|body_armor(45)|difficulty(3)|horse_speed(45)|horse_maneuver(45)|horse_charge(45)|horse_scale(100),imodbits_horse_basic|imodbit_champion],
 
 # SPAK OSP items
 ["ms_plain_shield_a", "Rusty Round Shield", [("2shield",0)], itp_type_shield, itcf_carry_round_shield,  140 , weight(4)|hit_points(330)|body_armor(6)|spd_rtng(90)|shield_width(40),imodbits_shield ],
