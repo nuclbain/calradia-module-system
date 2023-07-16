@@ -41,6 +41,7 @@ factions = [
   ("culture_9",  "{!}culture_9", 0, 0.9, [], []),
   ("culture_10",  "{!}culture_10", 0, 0.9, [], []),
   ("culture_11",  "{!}culture_11", 0, 0.9, [], []),
+  ("culture_12",  "{!}culture_12", 0, 0.9, [], []),
 
 #  ("swadian_caravans","Swadian Caravans", 0, 0.5,[("outlaws",-0.8), ("dark_knights",-0.2)], []),
 #  ("vaegir_caravans","Vaegir Caravans", 0, 0.5,[("outlaws",-0.8), ("dark_knights",-0.2)], []),
