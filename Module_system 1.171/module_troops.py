@@ -411,6 +411,17 @@ troops = [
 ["elen_sniper","Elen Sniper","Elen Snipers",tf_guarantee_all,0,0,fac_kingdom_10, [itm_mt_leather_armor_c2, itm_mt_leather_armor_c, itm_mt_leather_boots_a, itm_m_gloves_a, itm_milanese_sword, itm_mt_hood_a, itm_mt_hood_a2, itm_mt_hood_a3, itm_tab_shield_kite_b, itm_long_bow, itm_bodkin_arrows], tier_one_attrib|level(27),wp(250)|wp_archery(200),knows_common|knows_ironflesh_2|knows_power_draw_5,swadian_face_young_1, swadian_face_young_2],
 ["elen_white_hood","Elen White Hood","Elen White Hoods",tf_guarantee_all,0,0,fac_kingdom_10, [itm_mt_leather_armor_c3, itm_m_greaves_b, itm_m_gauntlets_b, itm_mt_hood_a4, itm_war_bow, itm_bodkin_arrows, itm_ms_metal_shield_a, itm_ms_metal_shield_a2, itm_ms_metal_shield_a3, itm_ms_metal_shield_a4, itm_side_sword], tier_three_attrib|level(34),wp(330)|wp_archery(200),knows_common|knows_ironflesh_7|knows_power_draw_10|knows_power_strike_5,swadian_face_old_1, swadian_face_old_2],
 
+# Adid units
+# Nomad Scout - Desert Vanguard - Sultanate Vanguard
+
+# Sultanate Vanguard - Camel Rider - Sandstalker
+
+# Sultanate Vanguard - Serpent Guard - Oasis Acolyte
+
+# Oasis Acolyte - Oasis Priest - Oasis High Priest
+
+# Oasis Acolyte - Royal Lancer - Golden Falcon
+
 # Stormguard units
 # Mountaineer - Thunderguard - Stormbringers - Avalanche Warriors
 ["stormguard_mountaineer","Mountaineer","Mountaineers",tf_guarantee_all,0,0,fac_kingdom_12, [itm_pilgrim_hood,itm_ms_helmet_light,itm_ms_gambeson_a,itm_ms_gambeson_b,itm_ms_gambeson_c,itm_wrapping_boots,itm_leather_gloves,itm_hatchet,itm_wooden_shield,itm_boar_spear], def_attrib|level(4),wp(60),knows_common,swadian_face_younger_1, swadian_face_middle_2],
