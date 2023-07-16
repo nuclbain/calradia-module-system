@@ -1188,6 +1188,13 @@ scripts = [
       (faction_set_slot, "fac_kingdom_10", slot_faction_quick_battle_tier_1_cavalry, "trp_elen_cheif"),
       (faction_set_slot, "fac_kingdom_10", slot_faction_quick_battle_tier_2_cavalry, "trp_elen_cheif"),
 
+      (faction_set_slot, "fac_kingdom_11", slot_faction_quick_battle_tier_1_infantry, "trp_adid_oasis_acolyte"),
+      (faction_set_slot, "fac_kingdom_11", slot_faction_quick_battle_tier_2_infantry, "trp_adid_oasis_acolyte"),
+      (faction_set_slot, "fac_kingdom_11", slot_faction_quick_battle_tier_1_archer, "trp_adid_camel_rider"),
+      (faction_set_slot, "fac_kingdom_11", slot_faction_quick_battle_tier_2_archer, "trp_adid_sandstalker"),
+      (faction_set_slot, "fac_kingdom_11", slot_faction_quick_battle_tier_1_cavalry, "trp_adid_royal_lancer"),
+      (faction_set_slot, "fac_kingdom_11", slot_faction_quick_battle_tier_2_cavalry, "trp_adid_golden_falcon"),
+
       (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_1_infantry, "trp_stormguard_stormbringer"),
       (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_2_infantry, "trp_stormguard_elite_stormguard"),
       (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_1_archer, "trp_stormguard_avalanche_warrior"),
