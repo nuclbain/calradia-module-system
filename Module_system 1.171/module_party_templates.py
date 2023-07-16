@@ -137,6 +137,9 @@ party_templates = [
   ("kingdom_10_reinforcements_b", "{!}kingdom_10_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_elen_fighter,2,8),(trp_elen_light_infantry,1,3),(trp_elen_archer,2,7)]),
   ("kingdom_10_reinforcements_c", "{!}kingdom_10_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_elen_heavy_infantry,3,5), (trp_elen_cheif,3,5), (trp_elen_sniper,3,5), (trp_elen_white_hood,1,2)]),
 
+  ("kingdom_12_reinforcements_a", "{!}kingdom_12_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_stormguard_mountaineer,5,15),(trp_stormguard_thunderguard,3,4)]),
+  ("kingdom_12_reinforcements_b", "{!}kingdom_12_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_elen_fighter,2,8),(trp_stormguard_stormbringer,1,3),(trp_stormguard_avalanche_warrior,2,7)]),
+  ("kingdom_12_reinforcements_c", "{!}kingdom_12_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_stormguard_tempest_sentinel,3,5), (trp_stormguard_lightning_rider,3,5), (trp_stormguard_elite_stormguard,3,5)]),
 
 ##  ("kingdom_1_reinforcements_a", "kingdom_1_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_swadian_footman,3,7),(trp_swadian_skirmisher,5,10),(trp_swadian_militia,11,26)]),
 ##  ("kingdom_1_reinforcements_b", "kingdom_1_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_swadian_man_at_arms,5,10),(trp_swadian_infantry,5,10),(trp_swadian_crossbowman,3,8)]),

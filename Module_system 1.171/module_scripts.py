@@ -276,6 +276,10 @@ scripts = [
       (faction_set_slot, "fac_kingdom_10",  slot_faction_leader, "trp_kingdom_10_lord"),
     (troop_set_slot, "trp_kingdom_10_lord", slot_troop_renown, 1200),
 
+      (faction_set_slot, "fac_kingdom_12",  slot_faction_culture, "fac_culture_12"),
+      (faction_set_slot, "fac_kingdom_12",  slot_faction_leader, "trp_kingdom_12_lord"),
+    (troop_set_slot, "trp_kingdom_12_lord", slot_troop_renown, 1200),
+
       (assign, ":player_faction_culture", "fac_culture_1"),
       (faction_set_slot, "fac_player_supporters_faction",  slot_faction_culture, ":player_faction_culture"),
       (faction_set_slot, "fac_player_faction",  slot_faction_culture, ":player_faction_culture"),
@@ -567,7 +571,7 @@ scripts = [
 	  (call_script, "script_give_center_to_faction_aux", "p_town_10", "fac_kingdom_3"),
 	  (call_script, "script_give_center_to_faction_aux", "p_town_11", "fac_kingdom_2"),
 	  (call_script, "script_give_center_to_faction_aux", "p_town_12", "fac_kingdom_4"),
-	  (call_script, "script_give_center_to_faction_aux", "p_town_13", "fac_kingdom_2"),
+	  (call_script, "script_give_center_to_faction_aux", "p_town_13", "fac_kingdom_12"),
 	  (call_script, "script_give_center_to_faction_aux", "p_town_14", "fac_kingdom_3"),
 	  (call_script, "script_give_center_to_faction_aux", "p_town_15", "fac_kingdom_9"),
 	  (call_script, "script_give_center_to_faction_aux", "p_town_16", "fac_kingdom_7"),
@@ -580,12 +584,12 @@ scripts = [
 	  
       (call_script, "script_give_center_to_faction_aux", "p_castle_1", "fac_kingdom_9"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_2", "fac_kingdom_8"),
-      (call_script, "script_give_center_to_faction_aux", "p_castle_3", "fac_kingdom_2"),
+      (call_script, "script_give_center_to_faction_aux", "p_castle_3", "fac_kingdom_12"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_4", "fac_kingdom_2"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_5", "fac_kingdom_4"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_6", "fac_kingdom_7"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_7", "fac_kingdom_3"),
-      (call_script, "script_give_center_to_faction_aux", "p_castle_8", "fac_kingdom_2"),
+      (call_script, "script_give_center_to_faction_aux", "p_castle_8", "fac_kingdom_12"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_9", "fac_kingdom_5"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_10", "fac_kingdom_4"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_11", "fac_kingdom_4"),
@@ -649,7 +653,7 @@ scripts = [
       (call_script, "script_give_center_to_lord", "p_town_10", "trp_kingdom_3_lord", 0),
       (call_script, "script_give_center_to_lord", "p_town_11", "trp_knight_2_2", 0),
       (call_script, "script_give_center_to_lord", "p_town_12", "trp_knight_4_2", 0),
-      (call_script, "script_give_center_to_lord", "p_town_13", "trp_knight_2_3", 0),
+      (call_script, "script_give_center_to_lord", "p_town_13", "trp_kingdom_12_lord", 0),
       (call_script, "script_give_center_to_lord", "p_town_14", "trp_kingdom_8_lord", 0),
 
       (call_script, "script_give_center_to_lord", "p_town_15", "trp_kingdom_9_lord", 0),
@@ -666,6 +670,8 @@ scripts = [
       (call_script, "script_give_center_to_lord", "p_castle_29", "trp_knight_2_10", 0), #Nelag_Castle
       (call_script, "script_give_center_to_lord", "p_castle_30", "trp_knight_3_4", 0), #Asugan_Castle
       (call_script, "script_give_center_to_lord", "p_castle_35", "trp_knight_1_3", 0), #Haringoth_Castle
+      (call_script, "script_give_center_to_lord", "p_castle_3", "trp_knight_12_1", 0), #Bulugha_Castle to Lord Alistair Stormrider
+      (call_script, "script_give_center_to_lord", "p_castle_8", "trp_knight_12_2", 0), #Jeirbe_Castle to Lady Seraphina Windwhisper
 	  
       (call_script, "script_assign_lords_to_empty_centers"),
 	  	  
@@ -1151,6 +1157,13 @@ scripts = [
       (faction_set_slot, "fac_kingdom_10", slot_faction_quick_battle_tier_2_archer, "trp_elen_white_hood"),
       (faction_set_slot, "fac_kingdom_10", slot_faction_quick_battle_tier_1_cavalry, "trp_elen_cheif"),
       (faction_set_slot, "fac_kingdom_10", slot_faction_quick_battle_tier_2_cavalry, "trp_elen_cheif"),
+
+      (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_1_infantry, "trp_stormguard_stormbringer"),
+      (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_2_infantry, "trp_stormguard_elite_stormguard"),
+      (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_1_archer, "trp_stormguard_avalanche_warrior"),
+      (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_2_archer, "trp_stormguard_tempest_sentinel"),
+      (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_1_cavalry, "trp_stormguard_lightning_rider"),
+      (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_2_cavalry, "trp_stormguard_lightning_rider"),
 
       #for multiplayer mode
       (assign, "$g_multiplayer_selected_map", multiplayer_scenes_begin),
@@ -6341,6 +6354,18 @@ scripts = [
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_a, "pt_kingdom_10_reinforcements_a"),
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_b, "pt_kingdom_10_reinforcements_b"),
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_c, "pt_kingdom_10_reinforcements_c"),
+
+        (else_try),
+          (faction_slot_eq, ":faction_no", slot_faction_culture, "fac_culture_12"),
+      
+          (faction_set_slot, ":faction_no", slot_faction_deserter_troop, "trp_stormguard_thunderguard"),
+          (faction_set_slot, ":faction_no", slot_faction_guard_troop, "trp_stormguard_tempest_sentinel"),
+          (faction_set_slot, ":faction_no", slot_faction_messenger_troop, "trp_stormguard_lightning_rider"),
+          (faction_set_slot, ":faction_no", slot_faction_prison_guard_troop, "trp_stormguard_elite_stormguard"),
+          (faction_set_slot, ":faction_no", slot_faction_castle_guard_troop, "trp_stormguard_elite_stormguard"),
+          (faction_set_slot, ":faction_no",  slot_faction_reinforcements_a, "pt_kingdom_12_reinforcements_a"),
+          (faction_set_slot, ":faction_no",  slot_faction_reinforcements_b, "pt_kingdom_12_reinforcements_b"),
+          (faction_set_slot, ":faction_no",  slot_faction_reinforcements_c, "pt_kingdom_12_reinforcements_c"),
         (try_end),
       (try_end),
 	]),
