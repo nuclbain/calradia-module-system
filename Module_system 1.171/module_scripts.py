@@ -1159,6 +1159,13 @@ scripts = [
       (faction_set_slot, "fac_kingdom_10", slot_faction_quick_battle_tier_1_cavalry, "trp_elen_cheif"),
       (faction_set_slot, "fac_kingdom_10", slot_faction_quick_battle_tier_2_cavalry, "trp_elen_cheif"),
 
+      (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_1_infantry, "trp_stormguard_stormbringer"),
+      (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_2_infantry, "trp_stormguard_elite_stormguard"),
+      (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_1_archer, "trp_stormguard_avalanche_warrior"),
+      (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_2_archer, "trp_stormguard_tempest_sentinel"),
+      (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_1_cavalry, "trp_stormguard_lightning_rider"),
+      (faction_set_slot, "fac_kingdom_12", slot_faction_quick_battle_tier_2_cavalry, "trp_stormguard_lightning_rider"),
+
       #for multiplayer mode
       (assign, "$g_multiplayer_selected_map", multiplayer_scenes_begin),
       (assign, "$g_multiplayer_respawn_period", 5),
