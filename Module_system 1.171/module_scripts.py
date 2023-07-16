@@ -6368,6 +6368,38 @@ scripts = [
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_b, "pt_kingdom_10_reinforcements_b"),
           (faction_set_slot, ":faction_no",  slot_faction_reinforcements_c, "pt_kingdom_10_reinforcements_c"),
 
+        # Adid Sultanate
+        # Kingdom 11 troops
+        # Tier 1
+        # trp_adid_nomad_scout = 77
+        # trp_adid_desert_vanguard = 78
+        # trp_adid_sultanate_vanguard = 79
+        # Tier 2
+        # trp_adid_camel_rider = 80
+        # trp_adid_sandstalker = 81
+        # trp_adid_serpent_guard = 82
+        # trp_adid_oasis_acolyte = 83
+        # Tier 3
+        # trp_adid_oasis_priest = 84
+        # trp_adid_oasis_high_priest = 85
+        # trp_adid_royal_lancer = 86
+        # trp_adid_golden_falcon = 87
+        # 
+        # Build all the unique troops based on existing one
+        # Deserter and messanger based on tier 1 troops, guard on tier 2, castle/prison guard on tier 3
+        # TODO: Add deserter, messenger, castle guard, prison guard troops.
+        (else_try),
+          (faction_slot_eq, ":faction_no", slot_faction_culture, "fac_culture_11"),
+
+          (faction_set_slot, ":faction_no", slot_faction_deserter_troop, "trp_adid_nomad_scout"),
+          (faction_set_slot, ":faction_no", slot_faction_guard_troop, "trp_adid_oasis_acolyte"),
+          (faction_set_slot, ":faction_no", slot_faction_messenger_troop, "trp_adid_nomad_scout"),
+          (faction_set_slot, ":faction_no", slot_faction_prison_guard_troop, "trp_adid_golden_falcon"),
+          (faction_set_slot, ":faction_no", slot_faction_castle_guard_troop, "trp_adid_golden_falcon"),
+          (faction_set_slot, ":faction_no", slot_faction_reinforcements_a, "pt_kingdom_11_reinforcements_a"),
+          (faction_set_slot, ":faction_no", slot_faction_reinforcements_b, "pt_kingdom_11_reinforcements_b"),
+          (faction_set_slot, ":faction_no", slot_faction_reinforcements_c, "pt_kingdom_11_reinforcements_c"),
+
         (else_try),
           (faction_slot_eq, ":faction_no", slot_faction_culture, "fac_culture_12"),
       

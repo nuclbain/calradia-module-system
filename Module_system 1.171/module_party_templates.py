@@ -137,6 +137,25 @@ party_templates = [
   ("kingdom_10_reinforcements_b", "{!}kingdom_10_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_elen_fighter,2,8),(trp_elen_light_infantry,1,3),(trp_elen_archer,2,7)]),
   ("kingdom_10_reinforcements_c", "{!}kingdom_10_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_elen_heavy_infantry,3,5), (trp_elen_cheif,3,5), (trp_elen_sniper,3,5), (trp_elen_white_hood,1,2)]),
 
+  # Kingdom 11 troops
+  # Tier 1
+  # trp_adid_nomad_scout = 77
+  # trp_adid_desert_vanguard = 78
+  # trp_adid_sultanate_vanguard = 79
+  # Tier 2
+  # trp_adid_camel_rider = 80
+  # trp_adid_sandstalker = 81
+  # trp_adid_serpent_guard = 82
+  # trp_adid_oasis_acolyte = 83
+  # Tier 3
+  # trp_adid_oasis_priest = 84
+  # trp_adid_oasis_high_priest = 85
+  # trp_adid_royal_lancer = 86
+  # trp_adid_golden_falcon = 87
+  ("kingdom_11_reinforcements_a", "{!}kingdom_11_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_adid_nomad_scout,5,15),(trp_adid_desert_vanguard,3,4),(trp_adid_sultanate_vanguard,3,4)]),
+  ("kingdom_11_reinforcements_b", "{!}kingdom_11_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_adid_camel_rider,2,8),(trp_adid_sandstalker,1,3),(trp_adid_serpent_guard,2,7),(trp_adid_oasis_acolyte,2,7)]),
+  ("kingdom_11_reinforcements_c", "{!}kingdom_11_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_adid_oasis_priest,3,5), (trp_adid_oasis_high_priest,3,5), (trp_adid_royal_lancer,3,5), (trp_adid_golden_falcon,1,2)]),
+
   ("kingdom_12_reinforcements_a", "{!}kingdom_12_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_stormguard_mountaineer,5,15),(trp_stormguard_thunderguard,3,4)]),
   ("kingdom_12_reinforcements_b", "{!}kingdom_12_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_elen_fighter,2,8),(trp_stormguard_stormbringer,1,3),(trp_stormguard_avalanche_warrior,2,7)]),
   ("kingdom_12_reinforcements_c", "{!}kingdom_12_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_stormguard_tempest_sentinel,3,5), (trp_stormguard_lightning_rider,3,5), (trp_stormguard_elite_stormguard,3,5)]),
