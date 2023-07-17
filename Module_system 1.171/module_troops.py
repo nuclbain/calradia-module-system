@@ -743,15 +743,26 @@ troops = [
    [itm_arabian_sword_b,itm_scimitar_b,itm_war_spear,itm_mace_4,itm_sarranid_boots_c, itm_sarranid_boots_d,itm_arabian_armor_b,itm_sarranid_mail_coif,itm_sarranid_helmet1,itm_sarranid_horseman_helmet,itm_mail_boots,itm_iron_greaves,itm_mail_mittens,itm_leather_gloves,itm_tab_shield_kite_d],
    def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|knows_ironflesh_3|knows_power_strike_3,swadian_face_middle_1, swadian_face_older_2],
 
-
+  #        Looter
+  #        /        \
+  #      Bandit   Outlaw
+  #      /      \         /    
+  # Pillager   Marauder  Highwayman
+  #                     |
+  #               Bandit Lord
   ["looter","Looter","Looters",tf_guarantee_armor|tf_guarantee_boots,0,0,fac_outlaws,
-   [itm_hatchet,itm_club,itm_butchering_knife,itm_falchion,itm_rawhide_coat,itm_stones,itm_nomad_armor,itm_nomad_armor,itm_woolen_cap,itm_woolen_cap,itm_nomad_boots,itm_wrapping_boots],
+   [itm_m_hose_a,itm_m_hose_b,itm_m_hose_c,itm_m_hose_d,itm_m_hose_e,itm_m_aketon_a,itm_m_aketon_b,itm_m_hauberk_a,itm_m_brigandine_d,itm_tab_shield_heater_a,itm_tab_shield_round_b,itm_grosse_messer,itm_espada_eslavona_a,itm_espada_eslavona_b, itm_milanese_sword, itm_spear, itm_german_hunting_spear, itm_german_poleaxe, itm_hunting_crossbow, itm_bolts],
    def_attrib|level(4),wp(20),knows_common,bandit_face1, bandit_face2],
-  ["experienced_looter","Experienced Looter","Experienced Looters",tf_guarantee_armor|tf_guarantee_boots,0,0,fac_outlaws, [itm_hatchet,itm_falchion,itm_boar_spear,itm_rawhide_coat,itm_stones,itm_nomad_armor,itm_woolen_cap,itm_head_wrappings,itm_padded_coif,itm_nomad_boots,itm_wrapping_boots,itm_hunter_boots, itm_tab_shield_round_a, itm_tab_shield_kite_a], def_attrib|level(8),wp(60),knows_common,bandit_face1, bandit_face2],
-  ["master_looter","Master Looter","Master Looters",tf_guarantee_armor|tf_guarantee_boots,0,0,fac_outlaws, [itm_hatchet,itm_falchion,itm_boar_spear,itm_hunting_crossbow,itm_mail_hauberk,itm_haubergeon,itm_woolen_cap,itm_head_wrappings,itm_padded_coif,itm_nomad_boots,itm_wrapping_boots,itm_hunter_boots, itm_tab_shield_round_b, itm_tab_shield_heater_a, itm_bolts, itm_ragged_outfit], def_attrib|level(15),wp(140),knows_common,bandit_face1, bandit_face2],
-  ["bandit","Bandit","Bandits",tf_guarantee_armor,0,0,fac_outlaws,
-   [itm_arrows,itm_spiked_mace,itm_sword_viking_1,itm_short_bow,itm_falchion,itm_nordic_shield,itm_rawhide_coat,itm_leather_cap,itm_leather_jerkin,itm_nomad_armor,itm_nomad_boots,itm_wrapping_boots,itm_saddle_horse],
-   def_attrib|level(10),wp(60),knows_common|knows_power_draw_1,bandit_face1, bandit_face2],
+  ["bandit","Bandit","Bandits",tf_guarantee_armor|tf_guarantee_boots,0,0,fac_outlaws, [itm_m_leather_boots_a, itm_m_hauberk_a, itm_m_hauberk_b, itm_m_hauberk_c, itm_m_brigandine_c, itm_m_brigandine_e, itm_tab_shield_heater_b, itm_tab_shield_round_c, itm_tab_shield_small_round_b,itm_grosse_messer_b, itm_italian_falchion, itm_italian_sword, itm_partisan, itm_guisarme, itm_german_hunting_spear, itm_german_poleaxe, itm_hunting_crossbow, itm_bolts], def_attrib|level(10),wp(60),knows_common|knows_power_draw_1,bandit_face1, bandit_face2],
+
+  ["pillager","Pillager","Pillagers",tf_guarantee_all,0,0,fac_outlaws, [itm_m_leather_boots_a, itm_m_hauberk_a, itm_m_hauberk_b, itm_m_hauberk_c, itm_m_gloves_a, itm_tab_shield_heater_b, itm_grosse_messer, itm_italian_falchion, itm_italian_sword, itm_heavy_crossbow, itm_steel_bolts, itm_padded_coif, itm_mail_coif, itm_kettle_hat], def_attrib|level(12),wp(70),knows_common|knows_power_draw_1|knows_riding_2,bandit_face1, bandit_face2],
+  
+  ["marauder","Marauder","Marauders",tf_guarantee_all,0,0,fac_outlaws, [itm_m_greaves_b, itm_m_brigandine_b, itm_german_poleaxe, itm_simple_poleaxe, itm_elegant_poleaxe, itm_english_bill, itm_swiss_halberd, itm_m_kattle_a], def_attrib|level(16),wp(90),knows_common|knows_power_draw_1|knows_riding_2,bandit_face1, bandit_face2],
+
+  ["outlaw","Outlaw","Outlaws",tf_guarantee_all,0,0,fac_outlaws, [itm_m_hose_a, itm_m_hose_b, itm_m_hose_c, itm_m_hose_d, itm_m_hose_e, itm_m_aketon_a, itm_m_aketon_b, itm_m_hauberk_a, itm_tab_shield_small_round_a, itm_tab_shield_small_round_b, itm_grosse_messer, itm_espada_eslavona_a,itm_espada_eslavona_b, itm_milanese_sword, itm_spear, itm_hunting_crossbow, itm_bolts, itm_saddle_horse], def_attrib|level(10),wp(60),knows_common|knows_riding_2,bandit_face1, bandit_face2],
+  ["highwayman","Highwayman","Highwaymen",tf_guarantee_all,0,0,fac_outlaws, [itm_m_leather_boots_a, itm_m_hauberk_a, itm_m_hauberk_b, itm_m_hauberk_c, itm_m_brigandine_c, itm_m_brigandine_e, itm_tab_shield_small_round_c, itm_grosse_messer_b, itm_italian_falchion, itm_italian_sword, itm_partisan, itm_guisarme, itm_lance, itm_hunting_crossbow, itm_bolts, itm_saddle_horse], def_attrib|level(16),wp(90),knows_common|knows_riding_5|knows_riding_2,bandit_face1, bandit_face2],
+  ["bandit_lord","Bandit Lord","Bandit Lords",tf_guarantee_all,0,0,fac_outlaws, [itm_m_greaves_a, itm_m_gauntlets_a, itm_mt_heavy_plate_a2, itm_ms_flamberg_great, itm_mt_armet_b, itm_hunting_crossbow, itm_bolts, itm_warhorse], knight_attrib_5|level(25),wp(245),knows_common|knows_power_draw_1|knows_riding_5|knows_ironflesh_10|knows_power_strike_6,bandit_face1, bandit_face2],
+
   ["brigand","Brigand","Brigands",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_outlaws,
    [itm_arrows,itm_spiked_mace,itm_sword_viking_1,itm_falchion,itm_wooden_shield,itm_hide_covered_round_shield,itm_long_bow,itm_leather_cap,itm_leather_jerkin,itm_nomad_boots,itm_saddle_horse],
    def_attrib|level(16),wp(90),knows_common|knows_power_draw_3,bandit_face1, bandit_face2],
@@ -2853,8 +2864,18 @@ upgrade(troops,"sarranid_archer","sarranid_master_archer")
 upgrade(troops,"sarranid_horseman","sarranid_mamluke")
 
 
-upgrade(troops,"looter","experienced_looter")
-upgrade(troops,"experienced_looter","master_looter")
+#        Looter
+#        /        \
+#      Bandit   Outlaw
+#      /      \         /    
+# Pillager   Marauder  Highwayman
+#                     |
+#               Bandit Lord
+upgrade2(troops,"looter","bandit","outlaw")
+upgrade2(troops,"bandit","pillager","marauder")
+
+upgrade(troops,"outlaw","highwayman")
+upgrade(troops,"highwayman","bandit_lord")
 
 #new tree connections
 upgrade(troops,"mountain_bandit","rhodok_tribesman")
