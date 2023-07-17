@@ -40,8 +40,18 @@ party_templates = [
 ##  ("vaegir_nobleman","Vaegir Nobleman",icon_vaegir_knight|carries_goods(10)|pf_quest_party,0,fac_commoners,merchant_personality,[(trp_nobleman,1,1),(trp_vaegir_knight,2,6),(trp_vaegir_horseman,4,12)]),
 ##  ("swadian_nobleman","Swadian Nobleman",icon_gray_knight|carries_goods(10)|pf_quest_party,0,fac_commoners,merchant_personality,[(trp_nobleman,1,1),(trp_swadian_knight,2,6),(trp_swadian_man_at_arms,4,12)]),
 # Ryan BEGIN
-  ("looters","Looters Party",icon_axeman|carries_goods(8),0,fac_outlaws,bandit_personality,[(trp_looter,35,320),(trp_experienced_looter,35,120),(trp_master_looter,35,70)]),
-  ("heretics","Doomcult Heretics",icon_gray_knight|carries_goods(8),0,fac_heretics,bandit_personality,[(trp_experienced_looter,100,120),(trp_master_looter,120,700)]),
+# bandit 0 - 100
+# pillager 0 - 10
+# marauder 0 - 10
+# outlaw 0 - 10
+# highwayman 0 - 5
+# bandit_lord 0 - 1
+# TODO: Check troops distribution and rebalance if needed
+  (
+    "looters","Looters Party",icon_axeman|carries_goods(8),0,fac_outlaws,bandit_personality,
+    [(trp_looter,1,120),(trp_bandit,0,100),(trp_pillager,0,10),(trp_marauder,0,10),(trp_outlaw,0,10),(trp_highwayman,0,5)]
+  ),
+  ("heretics","Doomcult Heretics",icon_gray_knight|carries_goods(8),0,fac_heretics,bandit_personality,[(trp_looter,100,120)]),
 # Ryan END
   ("manhunters","Manhunters",icon_gray_knight,0,fac_manhunters,soldier_personality,[(trp_manhunter,19,100)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
