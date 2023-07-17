@@ -691,8 +691,8 @@ scripts = [
       (call_script, "script_give_center_to_lord", "p_town_17", "trp_knight_3_2", 0),
       (call_script, "script_give_center_to_lord", "p_town_18", "trp_kingdom_8_lord", 0),	  
 	  
-      (call_script, "script_give_center_to_lord", "p_town_19", "trp_kingdom_6_lord", 0),
-      (call_script, "script_give_center_to_lord", "p_town_20", "trp_knight_6_1", 0), 
+      (call_script, "script_give_center_to_lord", "p_town_19", "trp_kingdom_11_lord", 0),
+      (call_script, "script_give_center_to_lord", "p_town_20", "trp_kingdom_6_lord", 0), 
       (call_script, "script_give_center_to_lord", "p_town_21", "trp_knight_6_2", 0),
       (call_script, "script_give_center_to_lord", "p_town_22", "trp_knight_6_3", 0),	  
 
@@ -700,6 +700,10 @@ scripts = [
       (call_script, "script_give_center_to_lord", "p_castle_29", "trp_knight_2_10", 0), #Nelag_Castle
       (call_script, "script_give_center_to_lord", "p_castle_30", "trp_knight_3_4", 0), #Asugan_Castle
       (call_script, "script_give_center_to_lord", "p_castle_35", "trp_knight_1_3", 0), #Haringoth_Castle
+
+      (call_script, "script_give_center_to_lord", "p_castle_45", "trp_knight_11_1", 0), 
+      (call_script, "script_give_center_to_lord", "p_castle_46", "trp_knight_11_2", 0),
+
       (call_script, "script_give_center_to_lord", "p_castle_3", "trp_knight_12_1", 0), #Bulugha_Castle to Lord Alistair Stormrider
       (call_script, "script_give_center_to_lord", "p_castle_8", "trp_knight_12_2", 0), #Jeirbe_Castle to Lady Seraphina Windwhisper
 	  
