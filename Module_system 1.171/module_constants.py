@@ -1010,33 +1010,35 @@ slot_team_flag_situation                       = 0
 
 #Rebellion changes end
 # character backgrounds
-cb_noble = 1
-cb_merchant = 2
-cb_guard = 3
-cb_forester = 4
-cb_nomad = 5
-cb_thief = 6
+cb_farmer = 1
+cb_knight = 2
+cb_merchant = 3
+cb_theif = 4
+cb_scolar = 5
+cb_warlord = 6
 cb_priest = 7
 
-cb2_page = 0
-cb2_apprentice = 1
-cb2_urchin  = 2
-cb2_steppe_child = 3
-cb2_merchants_helper = 4
+cb2_orphan = 0
+cb2_village = 1
+cb2_martial  = 2
+cb2_explorer = 3
+cb2_noble = 4
+cb2_nomad = 5
 
-cb3_poacher = 3
-cb3_craftsman = 4
-cb3_peddler = 5
-cb3_troubadour = 7
-cb3_squire = 8
-cb3_lady_in_waiting = 9
-cb3_student = 10
+cb3_knight = 3
+cb3_heroine = 4
+cb3_mrcenary = 5
+cb3_trader = 7
+cb3_archer = 8
+cb3_leader = 9
+cb3_raider = 10
 
 cb4_revenge = 1
-cb4_loss    = 2
-cb4_wanderlust =  3
-cb4_disown  = 5
-cb4_greed  = 6
+cb4_adventure = 2
+cb4_wealth =  3
+cb4_fame = 4
+cb4_legacy = 5
+cb4_chaos = 6
 
 #NPC system changes end
 #Encounter types

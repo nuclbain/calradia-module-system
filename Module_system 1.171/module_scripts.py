@@ -48121,7 +48121,11 @@ scripts = [
      #(try_end),  
                
      #(set_visitor, 3, ":bandit_troop"),
+     # Game start ambush script
+     # Spawn 2 looters and 1 bandit 
      (set_visitor, 3, "trp_bandit"),
+     (set_visitor, 3, "trp_looter"),
+     (set_visitor, 3, "trp_looter"),
 
      (assign, "$talked_with_merchant", 0),
      (set_jump_mission, "mt_alley_fight"),

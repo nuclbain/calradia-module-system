@@ -23,6 +23,7 @@ def save_game_menus(variable_list,variable_uses,tag_uses,quick_strings):
   ofile.write("menusfile version 1\n")
   ofile.write(" %d\n"%(len(game_menus)))
   for game_menu in game_menus:
+    print "Exporting game menu: " + game_menu[0]
     ofile.write("menu_%s %d %s %s"%(game_menu[0],game_menu[1],string.replace(game_menu[2]," ","_"),game_menu[3]))
     save_statement_block(ofile,0,1, game_menu[4]  , variable_list, variable_uses,tag_uses,quick_strings)
     menu_items = game_menu[5]
