@@ -101,21 +101,7 @@ scripts = [
 		#makes Lords banner the players
 		(troop_get_slot, ":banner", "$enlisted_lord", slot_troop_banner_scene_prop),
 		(troop_set_slot, "trp_player", slot_troop_banner_scene_prop, ":banner"),
-        (display_message, "@You have been enlisted!"),	
-
-		
-        (str_store_troop_name_link, s13, "$enlisted_lord"),
-		(str_store_faction_name_link, s14, ":commander_faction"),
-		(quest_set_slot, "qst_freelancer_enlisted", slot_quest_target_party, "$enlisted_party"),
-		(quest_set_slot, "qst_freelancer_enlisted", slot_quest_importance, 5),
-		(quest_set_slot, "qst_freelancer_enlisted", slot_quest_xp_reward, 1000),
-		(quest_set_slot, "qst_freelancer_enlisted", slot_quest_gold_reward, 100),
-		(setup_quest_text, "qst_freelancer_enlisted"),
-		(str_clear, s2), #description. necessary?
-        (call_script, "script_start_quest", "qst_freelancer_enlisted", "$enlisted_lord"),
-		(str_store_troop_name, s5, "$player_cur_troop"),
-		(str_store_string, s5, "@Current rank: {s5}"),
-        (add_quest_note_from_sreg, "qst_freelancer_enlisted", 3, s5, 1),		
+        (display_message, "@You have been enlisted!"),				
     ]),
 
 #  RUNS IF THE PLAYER LEAVES THE ARMY
@@ -148,17 +134,14 @@ scripts = [
 		(assign, "$freelancer_state", 0),
 		(call_script, "script_freelancer_detach_party"),
 		(rest_for_hours, 0,0,0),
-		(display_message, "@You have left your commander!"), 
-
-        #(call_script, "script_cancel_quest", "qst_freelancer_enlisted"),
-		(call_script, "script_finish_quest", "qst_freelancer_enlisted", 100), #percentage--make based on days served?
+		(display_message, "@You have left your commander!"),        
     ]),
 	
 #  RUNS IF THE PLAYER GOES ON VACATION
 
     ("event_player_vacation",
     [
-	    (troop_set_slot, "trp_player", slot_troop_current_mission, plyr_mission_vacation), ###move to quests, not missions
+	    (troop_set_slot, "trp_player", slot_troop_current_mission, plyr_mission_vacation),
 		(troop_set_slot, "trp_player", slot_troop_days_on_mission, 14),
 	
 		#removes faction relation given at enlist
@@ -172,17 +155,7 @@ scripts = [
 		(assign, "$freelancer_state", 2),
 		(call_script, "script_freelancer_detach_party"),
 		(rest_for_hours, 0,0,0),
-		(display_message, "@You have been granted leave!"), 	
-
-		(str_store_troop_name_link, s13, "$enlisted_lord"),
-		(str_store_faction_name_link, s14, ":commander_faction"),
-		(quest_set_slot, "qst_freelancer_vacation", slot_quest_target_party, "$enlisted_party"),
-		(quest_set_slot, "qst_freelancer_vacation", slot_quest_importance, 0),
-		(quest_set_slot, "qst_freelancer_vacation", slot_quest_xp_reward, 50),
-		(quest_set_slot, "qst_freelancer_vacation",	slot_quest_expiration_days, 14),
-		(setup_quest_text, "qst_freelancer_vacation"),
-		(str_clear, s2), #description. necessary?
-        (call_script, "script_start_quest", "qst_freelancer_vacation", "$enlisted_lord"),
+		(display_message, "@You have been granted leave!"), 		
     ]),
 
 # RUNS WHEN PLAYER RETURNS FROM VACATION
@@ -239,7 +212,6 @@ scripts = [
 	(rest_for_hours, 0,0,0),
 	(assign, "$freelancer_state", 0),
 	#(display_message, "@You have deserted your commander!"), #Taken care of elsewhere
-	(call_script, "script_fail_quest", "qst_freelancer_enlisted"),
    ]),	
 	
 	
@@ -698,23 +670,16 @@ scripts_directives = [
 	[
 		#(try_begin), #in the script 
       	    (eq, "$freelancer_state", 1),
-			(store_character_level, "$g_strength_contribution_of_player", "$player_cur_troop"),
-			(val_div, "$g_strength_contribution_of_player", 2),
-			(val_max, "$g_strength_contribution_of_player", 5), #contribution(scale 0-100) = level/2, min 5 (so about 5-25)
-			#(store_character_level, ":freelancer_player_contribution", "$player_cur_troop"),
-			#(val_mul, ":freelancer_player_contribution", 6),
-			#(val_div, ":freelancer_player_contribution", 5), #level * 1.2 (for a bit of a scaling bump)
-			#(val_max, ":freelancer_player_contribution", 10), #and to give a base line
-			#(assign, "$g_strength_contribution_of_player", ":freelancer_player_contribution"),
+			(store_character_level, ":freelancer_player_contribution", "$player_cur_troop"),
+			(val_mul, ":freelancer_player_contribution", 6),
+			(val_div, ":freelancer_player_contribution", 5), #level * 1.2 (for a bit of a scaling bump)
+			(val_max, ":freelancer_player_contribution", 10), #and to give a base line
+			(assign, "$g_strength_contribution_of_player", ":freelancer_player_contribution"),
         (else_try),			
-	]],
-    [SD_OP_BLOCK_INSERT, "enter_court", D_SEARCH_FROM_TOP | D_SEARCH_SCRIPTLINE | D_INSERT_AFTER,(party_stack_get_troop_id, ":stack_troop","p_temp_party",":i_stack"),0,
-	[
-		(gt, ":stack_troop", 0),
-    ]],	
+	]], 
 	
 	##FLORIS ONLY - Trade with Merchant Caravans
-	[SD_OP_BLOCK_INSERT, "party_give_xp_and_gold", D_SEARCH_FROM_TOP | D_SEARCH_SCRIPTLINE | D_INSERT_BEFORE, (party_slot_eq, ":enemy_party", slot_party_type, spt_kingdom_caravan),0,not_in_party],	
+	#[SD_OP_BLOCK_INSERT, "party_give_xp_and_gold", D_SEARCH_FROM_TOP | D_SEARCH_SCRIPTLINE | D_INSERT_BEFORE, (party_slot_eq, ":enemy_party", slot_party_type, spt_kingdom_caravan),0,not_in_party],	
 	##FLORIS ONLY END	
 ]
                 

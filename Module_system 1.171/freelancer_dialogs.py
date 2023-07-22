@@ -58,7 +58,7 @@ lord_talk_addon = [
 
     [anyone|plyr,"lord_talk", [
         (eq, "$g_talk_troop", "$enlisted_lord"),
-		(neq, "$freelancer_state", 0),
+		(eq, "$freelancer_state", 1),
         (ge, "$g_talk_troop_faction_relation", 0),
         (neq, "$players_kingdom", "$g_talk_troop_faction"),
         (eq, "$players_kingdom", 0),

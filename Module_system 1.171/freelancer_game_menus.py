@@ -5,7 +5,6 @@
 
 from header_game_menus import *
 from module_constants import *
-from header_items import *
 
 ####################################################################################################################
 #  (menu-id, menu-flags, menu_text, mesh-name, [<operations>], [<options>]),
@@ -50,18 +49,6 @@ game_menus = [
 			(party_get_battle_opponent, ":commander_opponent", "$enlisted_party"),
 			(gt, ":commander_opponent", 0),
 		],"Follow the commander into battle.",[
-		    (party_set_slot, "p_freelancer_party_backup", slot_party_last_in_combat, 1), #needed to catch post-battle and detach any attached parties
-			
-			(try_begin),
-				(neg|troop_is_guarantee_horse, "$player_cur_troop"), 
-				(troop_get_inventory_slot, ":horse", "trp_player", ek_horse),
-				(gt, ":horse", 0),
-				(troop_get_inventory_slot_modifier, ":horse_imod", "trp_player", ek_horse),
-				(set_show_messages, 0),
-				(troop_add_item, "trp_player", ":horse", ":horse_imod"),
-				(troop_set_inventory_slot, "trp_player", ek_horse, -1),
-				(set_show_messages, 1),
-			(try_end),
 			(start_encounter, "$enlisted_party"),
 			(change_screen_map),
 		]),
@@ -261,9 +248,6 @@ game_menus = [
 			(store_troop_faction, ":commander_faction", "$enlisted_lord"),
 			(faction_set_slot, ":commander_faction", slot_faction_freelancer_troop, "$player_cur_troop"),
 			(call_script, "script_freelancer_equip_troop", "$player_cur_troop"),
-			(str_store_troop_name, s5, "$player_cur_troop"),
-		    (str_store_string, s5, "@Current rank: {s5}"),
-            (add_quest_note_from_sreg, "qst_freelancer_enlisted", 3, s5, 1),
             (change_screen_map),]),
 
         ("upgrade_path_2",[
@@ -275,9 +259,6 @@ game_menus = [
 			(store_troop_faction, ":commander_faction", "$enlisted_lord"),
 			(faction_set_slot, ":commander_faction", slot_faction_freelancer_troop, "$player_cur_troop"),
 			(call_script, "script_freelancer_equip_troop", "$player_cur_troop"),
-			(str_store_troop_name, s5, "$player_cur_troop"),
-		    (str_store_string, s5, "@Current rank: {s5}"),
-            (add_quest_note_from_sreg, "qst_freelancer_enlisted", 3, s5, 1),
             (change_screen_map),]),
     ]),
 #+freelancer end
@@ -288,7 +269,7 @@ pre_join_freelancer = [
           (eq, "$freelancer_state", 1),
 		  (try_begin),
 			(party_get_attached_to, ":attached", "$enlisted_party"),
-			(this_or_next|eq, "$enlisted_party", "$g_encountered_party_2"),
+			(this_or_next|eq, "$enlisted_party", "$g_encountered_party_2"), #added in order to automatically skip this menu
 			(eq, ":attached", "$g_encountered_party_2"),
 			(select_enemy, 0),
 			(assign,"$g_enemy_party","$g_encountered_party"),
@@ -303,23 +284,13 @@ pre_join_freelancer = [
 
 join_siege_outside_freelancer = [
           (eq, "$freelancer_state", 1),
-		  (try_begin),
-			(store_troop_faction, ":commanders_faction", "$enlisted_lord"),
-			(store_relation, ":relation", ":commanders_faction", "$g_encountered_party_faction"),
-			(this_or_next|eq, ":commanders_faction", "$g_encountered_party_faction"), #encountered party is always the castle/town sieged
-			(ge, ":relation", 0),
-			(jump_to_menu, "mnu_siege_started_defender"),
-		  (else_try),
-			(jump_to_menu, "mnu_besiegers_camp_with_allies"),
-		  (try_end),
-
+		  (jump_to_menu, "mnu_besiegers_camp_with_allies"),
 ]
 
 join_battle_collect_others = [
 	(try_begin),
 		(eq, "$freelancer_state", 1),
 		(call_script, "script_let_nearby_parties_join_current_battle", 0, 0),
-		(str_store_party_name, 1,"$g_enemy_party"), #to prevent bug'd text from the above script (which also uses s1)
 	(try_end),
 ]		  
 
@@ -331,13 +302,12 @@ join_wounded_freelancer = [
 	  "You are too wounded to fight.",[(leave_encounter),(change_screen_map)]),
 ]
 
-
 from util_wrappers import *
 from util_common import *
 
 
 def modmerge_game_menus(orig_game_menus, check_duplicates = False):
-	try: #battle joining
+	try:
 		find_i = list_find_first_match_i( orig_game_menus, "pre_join" )
 		codeblock = GameMenuWrapper(orig_game_menus[find_i]).GetOpBlock()
 		codeblock.Append(pre_join_freelancer)	
@@ -353,7 +323,7 @@ def modmerge_game_menus(orig_game_menus, check_duplicates = False):
 		print "Injecton 1 failed:", sys.exc_info()[1]
 		raise
 		
-	try: #victory processing
+	try:
 		find_i = list_find_first_match_i( orig_game_menus, "total_victory" )
 		codeblock = GameMenuWrapper(orig_game_menus[find_i]).GetOpBlock()
 		pos = codeblock.FindLineMatching( (assign, "$talk_context", tc_ally_thanks) )
@@ -372,7 +342,7 @@ def modmerge_game_menus(orig_game_menus, check_duplicates = False):
 		print "Injecton 2 failed:", sys.exc_info()[1]
 		raise
 	
-	try: #extra menu options
+	try:
 		find_i = list_find_first_match_i( orig_game_menus, "join_battle" )
 		codeblock = GameMenuWrapper(orig_game_menus[find_i]).GetMenuOptions()
 		codeblock.extend(join_wounded_freelancer) 
@@ -400,7 +370,7 @@ def modmerge_game_menus(orig_game_menus, check_duplicates = False):
 		print "Injecton 3 failed:", sys.exc_info()[1]
 		raise
 
-	try: #disabling menu options
+	try:
 		find_i = list_find_first_match_i( orig_game_menus, "join_battle" )
 		menulist = GameMenuWrapper(orig_game_menus[find_i]).GetMenuOptions()
 		for i in range(len(menulist)):

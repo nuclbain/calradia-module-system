@@ -4348,3 +4348,12 @@ try:
 except:
     raise
 # modmerger_end
+# modmerger_start version=201 type=2
+try:
+    component_name = "strings"
+    var_set = { "strings" : strings }
+    from modmerger import modmerge
+    modmerge(var_set)
+except:
+    raise
+# modmerger_end

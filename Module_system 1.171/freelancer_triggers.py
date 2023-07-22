@@ -5,6 +5,7 @@
 
 from header_common import *
 from header_operations import *
+from header_items import *
 from header_triggers import *
 
 from module_constants import *
@@ -37,16 +38,6 @@ triggers = [
     [
         (assign, "$freelancer_state", 0),
         (call_script, "script_freelancer_detach_party"),
-		
-		#to prevent companions from being lost forever
-		(call_script, "script_party_restore"), 
-		(party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
-        (try_for_range_backwards, ":cur_stack", 0, ":num_stacks"),
-			(party_stack_get_troop_id, ":return_troop", "p_main_party", ":cur_stack"),
-			(neg|troop_is_hero, ":return_troop"),
-			(party_stack_get_size, ":stack_size", "p_main_party", ":cur_stack"),
-			(party_remove_members, "p_main_party", ":return_troop", ":stack_size"),
-		(try_end),
 
         #removes faction relation given at enlist
 		(store_troop_faction, ":commander_faction", "$enlisted_lord"),
@@ -57,6 +48,8 @@ triggers = [
         (try_end),
 
 		(assign, "$g_encountered_party", "$g_enemy_party"),
+        #(assign, "$g_next_menu", "mnu_captivity_start_wilderness"),
+        #(jump_to_menu, "mnu_total_defeat"),
 		(jump_to_menu, "mnu_captivity_start_wilderness"),
     ]),
 
@@ -64,28 +57,23 @@ triggers = [
 
     (0.0, 0, 0, [
         (eq, "$freelancer_state", 1),
-		
-		#collected nearby enemies->detach (post-battle)
-		(try_begin), 
-			(party_slot_ge, "p_freelancer_party_backup", slot_party_last_in_combat, 1),
-			(map_free),
-			(party_set_slot, "p_freelancer_party_backup", slot_party_last_in_combat, 0),
-			(party_get_num_attached_parties, ":num_attached", "p_main_party"),
-			(try_for_range_backwards, ":i", 0, ":num_attached"),
-				(party_get_attached_party_with_rank, ":party", "p_main_party", ":i"),
-				(party_detach, ":party"),
-			(try_end),
-		(try_end),
-		
-		#Is currently in battle
         (party_get_battle_opponent, ":commander_enemy", "$enlisted_party"),
         (gt, ":commander_enemy", 0),
-		
-		#checks that the player's health is high enough to join battle
         (store_troop_health, ":player_health", "trp_player"),
+        #checks that the player's health is high enough to join battle
         (ge, ":player_health", 50),
     ],
     [
+	    (try_begin),
+		    (neg|troop_is_guarantee_horse, "$player_cur_troop"), 
+		    (troop_get_inventory_slot, ":horse", "trp_player", ek_horse),
+			(gt, ":horse", 0),
+			(troop_get_inventory_slot_modifier, ":horse_imod", "trp_player", ek_horse),
+			(set_show_messages, 0),
+			(troop_add_item, "trp_player", ":horse", ":horse_imod"),
+			(troop_set_inventory_slot, "trp_player", ek_horse, -1),
+			(set_show_messages, 1),
+		(try_end),
         (jump_to_menu, "mnu_world_map_soldier"),
     ]),
 

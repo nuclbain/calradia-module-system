@@ -77,8 +77,9 @@ simple_triggers = [
 		   (try_end),			
         (try_end),
 		
-		
-		
+
+		(store_current_hours, "$g_next_pay_time"),
+		(val_add, "$g_next_pay_time", 24 * 7),		
         (store_character_level, ":level", "$player_cur_troop"),
         #pays player 10 times the troop level
         (store_mul, ":weekly_pay", 10, ":level"),
@@ -105,7 +106,7 @@ simple_triggers = [
         (try_end),
         (try_begin),
            (lt, ":num_food", 2),
-           (troop_add_item, "trp_player", "itm_trade_bread"),
+           (troop_add_item, "trp_player", "itm_bread"),
         (try_end),
     ]),
 	
