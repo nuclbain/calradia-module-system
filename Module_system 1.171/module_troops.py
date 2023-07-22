@@ -751,17 +751,26 @@ troops = [
   #                     |
   #               Bandit Lord
   ["looter","Looter","Looters",tf_guarantee_armor|tf_guarantee_boots,0,0,fac_outlaws,
-   [itm_m_hose_a,itm_m_hose_b,itm_m_hose_c,itm_m_hose_d,itm_m_hose_e,itm_m_aketon_a,itm_m_aketon_b,itm_m_hauberk_a,itm_m_brigandine_d,itm_tab_shield_heater_a,itm_tab_shield_round_b,itm_grosse_messer,itm_espada_eslavona_a,itm_espada_eslavona_b, itm_milanese_sword, itm_spear, itm_german_hunting_spear, itm_german_poleaxe, itm_hunting_crossbow, itm_bolts],
+   [itm_m_hose_a, itm_m_hose_b, itm_m_hose_c, itm_m_hose_d, itm_m_hose_e, itm_m_aketon_a, itm_m_aketon_b, itm_m_hauberk_a, itm_m_brigandine_d, itm_tab_shield_heater_a, itm_tab_shield_round_b, itm_grosse_messer, itm_espada_eslavona_a, itm_espada_eslavona_b, itm_milanese_sword, itm_head_wrappings, itm_arming_cap, itm_mail_coif],
    def_attrib|level(4),wp(20),knows_common,bandit_face1, bandit_face2],
-  ["bandit","Bandit","Bandits",tf_guarantee_armor|tf_guarantee_boots,0,0,fac_outlaws, [itm_m_leather_boots_a, itm_m_hauberk_a, itm_m_hauberk_b, itm_m_hauberk_c, itm_m_brigandine_c, itm_m_brigandine_e, itm_tab_shield_heater_b, itm_tab_shield_round_c, itm_tab_shield_small_round_b,itm_grosse_messer_b, itm_italian_falchion, itm_italian_sword, itm_partisan, itm_guisarme, itm_german_hunting_spear, itm_german_poleaxe, itm_hunting_crossbow, itm_bolts], def_attrib|level(10),wp(60),knows_common|knows_power_draw_1,bandit_face1, bandit_face2],
+  ["bandit","Bandit","Bandits",tf_guarantee_armor|tf_guarantee_boots,0,0,fac_outlaws, [itm_m_leather_boots_a, itm_m_hauberk_a, itm_m_hauberk_b, itm_m_hauberk_c, itm_m_brigandine_c, itm_m_brigandine_e, itm_tab_shield_heater_b, itm_tab_shield_round_c, itm_tab_shield_small_round_b,itm_grosse_messer_b, itm_italian_falchion, itm_italian_sword, itm_partisan, itm_guisarme, itm_german_hunting_spear, itm_german_poleaxe, itm_hunting_crossbow, itm_bolts, itm_m_onion_bascinet_a, itm_m_onion_bascinet_b, itm_m_onion_bascinet_c], def_attrib|level(10),wp(60),knows_common|knows_power_draw_1,bandit_face1, bandit_face2],
 
   ["pillager","Pillager","Pillagers",tf_guarantee_all,0,0,fac_outlaws, [itm_m_leather_boots_a, itm_m_hauberk_a, itm_m_hauberk_b, itm_m_hauberk_c, itm_m_gloves_a, itm_tab_shield_heater_b, itm_grosse_messer, itm_italian_falchion, itm_italian_sword, itm_heavy_crossbow, itm_steel_bolts, itm_padded_coif, itm_mail_coif, itm_kettle_hat], def_attrib|level(12),wp(70),knows_common|knows_power_draw_1|knows_riding_2,bandit_face1, bandit_face2],
   
-  ["marauder","Marauder","Marauders",tf_guarantee_all,0,0,fac_outlaws, [itm_m_greaves_b, itm_m_brigandine_b, itm_german_poleaxe, itm_simple_poleaxe, itm_elegant_poleaxe, itm_english_bill, itm_swiss_halberd, itm_m_kattle_a], def_attrib|level(16),wp(90),knows_common|knows_power_draw_1|knows_riding_2,bandit_face1, bandit_face2],
+  ["marauder","Marauder","Marauders",tf_guarantee_all,0,0,fac_outlaws, [itm_m_greaves_b, itm_m_brigandine_b, itm_german_poleaxe, itm_simple_poleaxe, itm_elegant_poleaxe, itm_english_bill, itm_swiss_halberd, itm_ms_great_helmet_b], def_attrib|level(16),wp(90),knows_common|knows_power_draw_1|knows_riding_2,bandit_face1, bandit_face2],
 
   ["outlaw","Outlaw","Outlaws",tf_guarantee_all,0,0,fac_outlaws, [itm_m_hose_a, itm_m_hose_b, itm_m_hose_c, itm_m_hose_d, itm_m_hose_e, itm_m_aketon_a, itm_m_aketon_b, itm_m_hauberk_a, itm_tab_shield_small_round_a, itm_tab_shield_small_round_b, itm_grosse_messer, itm_espada_eslavona_a,itm_espada_eslavona_b, itm_milanese_sword, itm_spear, itm_hunting_crossbow, itm_bolts, itm_saddle_horse], def_attrib|level(10),wp(60),knows_common|knows_riding_2,bandit_face1, bandit_face2],
   ["highwayman","Highwayman","Highwaymen",tf_guarantee_all,0,0,fac_outlaws, [itm_m_leather_boots_a, itm_m_hauberk_a, itm_m_hauberk_b, itm_m_hauberk_c, itm_m_brigandine_c, itm_m_brigandine_e, itm_tab_shield_small_round_c, itm_grosse_messer_b, itm_italian_falchion, itm_italian_sword, itm_partisan, itm_guisarme, itm_lance, itm_hunting_crossbow, itm_bolts, itm_saddle_horse], def_attrib|level(16),wp(90),knows_common|knows_riding_5|knows_riding_2,bandit_face1, bandit_face2],
   ["bandit_lord","Bandit Lord","Bandit Lords",tf_guarantee_all,0,0,fac_outlaws, [itm_m_greaves_a, itm_m_gauntlets_a, itm_mt_heavy_plate_a2, itm_ms_flamberg_great, itm_mt_armet_b, itm_hunting_crossbow, itm_bolts, itm_warhorse], knight_attrib_5|level(25),wp(245),knows_common|knows_power_draw_1|knows_riding_5|knows_ironflesh_10|knows_power_strike_6,bandit_face1, bandit_face2],
+
+  #                     Cultist Acolyte
+  #                      /            \
+  #              Dark Cultist     Occultist
+  #               /               /        \
+  #      Shadowblade  Dark Cavalier  Shadow Rider
+  # TODO: Complete troop tree for cultists
+  ["cultist_acolyte","Cultist Acolyte","Cultist Acolytes",tf_guarantee_all,0,0,fac_outlaws, [itm_mt_leather_boots_e, itm_mt_leather_gloves_a, itm_mt_hood_a3, itm_ms_armor_doom_cult_a, itm_ms_armor_doom_cult_b, itm_winged_mace, itm_one_handed_battle_axe_c, itm_tab_shield_heater_cav_a], def_attrib|str_15|agi_15|level(12),wp(100),knows_common|knows_ironflesh_3,bandit_face1, bandit_face2],
+  ["dark_cultist","Dark Cultist","Dark Cultists",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_outlaws, [itm_ms_doom_cult_greaves_a, itm_ms_doom_cult_greaves_b, itm_ms_doom_cult_greaves_c, itm_ms_doom_cult_gauntlets_a, itm_ms_helmet_cult_a, itm_ms_helmet_cult_a2, itm_ms_armor_doom_cult_c, itm_ms_armor_doom_cult_c2, itm_ms_armor_doom_cult_c3, itm_ms_armor_doom_cult_c4, itm_ms_armor_doom_cult_c5, itm_winged_mace, itm_one_handed_battle_axe_c, itm_tab_shield_heater_cav_b, itm_ms_flamberg, itm_ms_flamberg_great], def_attrib|str_20|agi_20|level(24), wp(120), knows_common|knows_ironflesh_10, bandit_face1, bandit_face2],
 
   ["brigand","Brigand","Brigands",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_outlaws,
    [itm_arrows,itm_spiked_mace,itm_sword_viking_1,itm_falchion,itm_wooden_shield,itm_hide_covered_round_shield,itm_long_bow,itm_leather_cap,itm_leather_jerkin,itm_nomad_boots,itm_saddle_horse],
@@ -2876,6 +2885,9 @@ upgrade2(troops,"bandit","pillager","marauder")
 
 upgrade(troops,"outlaw","highwayman")
 upgrade(troops,"highwayman","bandit_lord")
+
+# Cultists
+upgrade(troops,"cultist_acolyte","dark_cultist")
 
 #new tree connections
 upgrade(troops,"mountain_bandit","rhodok_tribesman")

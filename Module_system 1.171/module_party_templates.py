@@ -49,9 +49,9 @@ party_templates = [
 # TODO: Check troops distribution and rebalance if needed
   (
     "looters","Looters Party",icon_axeman|carries_goods(8),0,fac_outlaws,bandit_personality,
-    [(trp_looter,1,120),(trp_bandit,0,100),(trp_pillager,0,10),(trp_marauder,0,10),(trp_outlaw,0,10),(trp_highwayman,0,5)]
+    [(trp_marauder,0,10),(trp_outlaw,0,10),(trp_highwayman,0,5),(trp_bandit,0,100),(trp_pillager,0,10),(trp_looter,1,120)]
   ),
-  ("heretics","Doomcult Heretics",icon_gray_knight|carries_goods(8),0,fac_heretics,bandit_personality,[(trp_looter,100,120)]),
+  ("heretics","Doomcult Heretics",icon_gray_knight|carries_goods(20),0,fac_heretics,bandit_personality,[(trp_dark_cultist,0,20),(trp_cultist_acolyte,0,50)]),
 # Ryan END
   ("manhunters","Manhunters",icon_gray_knight,0,fac_manhunters,soldier_personality,[(trp_manhunter,19,100)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
