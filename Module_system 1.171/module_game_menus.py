@@ -9296,7 +9296,7 @@ game_menus = [
         (str_clear, s1),
         (try_begin),
           (neg|party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
-		  (troop_get_slot, ":player_spouse", "trp_player", slot_troop_spouse),
+		    (troop_get_slot, ":player_spouse", "trp_player", slot_troop_spouse),
           (neg|party_slot_eq, "$current_town", slot_town_lord, ":player_spouse"),
 
           (party_slot_ge, "$current_town", slot_town_lord, "trp_player"), #can rest for free in castles and towns with unassigned lords
@@ -9305,14 +9305,14 @@ game_menus = [
           (party_get_num_companions, ":num_men", "p_main_party"),
           (store_div, reg1, ":num_men", 4),
           (val_add, reg1, 1),
-          (str_store_string, s1, "@ ({reg1} denars per night)"),
+          (str_store_string, s1, "@({reg1} denars per night)"),
           (store_troop_gold, ":gold", "trp_player"),
           (lt, ":gold", reg1),
           (assign, ":can_rest", 0),
         (try_end),
         (eq, ":can_rest", 1),
       ],
-      "Wait here for some time{s1}.",
+      "Wait here for some time ({reg1}/night).",
       [
         (assign, "$auto_enter_town", "$current_town"),
         (assign, "$g_town_visit_after_rest", 1),
@@ -9395,10 +9395,6 @@ game_menus = [
         (jump_to_menu, "mnu_collect_taxes"),
       ]),
 
-       
-
-
-      
       ("town_leave",[],"Leave...",
       [
         (assign, "$g_permitted_to_center",0),
