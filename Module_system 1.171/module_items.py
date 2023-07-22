@@ -1521,29 +1521,29 @@ items = [
 
 ["ms_facemask_elite", "Elite Tempest Sentinels Facemask", [("nord_ornate_visored_helmet",0),("nord_ornate_visored_helmet.1",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 2299, weight(2)|abundance(100)|head_armor(60)|body_armor(0)|leg_armor(0)|difficulty(12) ,imodbits_plate ],
 
-["ms_gambeson_a", "Stormguard Gambeson", [("light_gambeson_a",0)], itp_merchandise|itp_type_body_armor, 0, 499, weight(15)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
-["ms_gambeson_b", "Stormguard Gambeson", [("light_gambeson_b",0)], itp_merchandise|itp_type_body_armor, 0, 499, weight(15)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
-["ms_gambeson_c", "Stormguard Gambeson", [("light_gambeson_c",0)], itp_merchandise|itp_type_body_armor, 0, 499, weight(15)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
+["ms_gambeson_a", "Stormguard Gambeson", [("light_gambeson_a",0)], itp_merchandise|itp_type_body_armor, 0, 499, weight(15)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(5) ,imodbits_cloth ],
+["ms_gambeson_b", "Stormguard Gambeson", [("light_gambeson_b",0)], itp_merchandise|itp_type_body_armor, 0, 499, weight(15)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(5) ,imodbits_cloth ],
+["ms_gambeson_c", "Stormguard Gambeson", [("light_gambeson_c",0)], itp_merchandise|itp_type_body_armor, 0, 499, weight(15)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(5) ,imodbits_cloth ],
 
-["ms_byrnie_a", "Stormguard Byrnie", [("english_byrne",0)], itp_merchandise|itp_type_body_armor, 0, 899, weight(20)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
-["ms_byrnie_b", "Stormguard Byrnie", [("viking_byrnie_b",0), ("viking_byrnie_b.1",0)], itp_merchandise|itp_type_body_armor, 0, 899, weight(20)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
-["ms_byrnie_c", "Stormguard Byrnie", [("viking_byrnie_c",0)], itp_merchandise|itp_type_body_armor, 0, 899, weight(20)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
-["ms_byrnie_d", "Stormguard Byrnie", [("viking_byrnie_new",0)], itp_merchandise|itp_type_body_armor, 0, 899, weight(20)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
+["ms_byrnie_a", "Stormguard Byrnie", [("english_byrne",0)], itp_merchandise|itp_type_body_armor, 0, 899, weight(20)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(13)|difficulty(5) ,imodbits_cloth ],
+["ms_byrnie_b", "Stormguard Byrnie", [("viking_byrnie_b",0), ("viking_byrnie_b.1",0)], itp_merchandise|itp_type_body_armor, 0, 899, weight(20)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(13)|difficulty(5) ,imodbits_cloth ],
+["ms_byrnie_c", "Stormguard Byrnie", [("viking_byrnie_c",0)], itp_merchandise|itp_type_body_armor, 0, 899, weight(20)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(13)|difficulty(5) ,imodbits_cloth ],
+["ms_byrnie_d", "Stormguard Byrnie", [("viking_byrnie_new",0)], itp_merchandise|itp_type_body_armor, 0, 899, weight(20)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(13)|difficulty(5) ,imodbits_cloth ],
 
-["ms_mail_shirt_a", "Stormguard Mail Shirt", [("mail_shirt_viking",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(23)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
-["ms_mail_shirt_b", "Stormguard Mail Shirt", [("mail_shirt_viking_blue",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(23)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
-["ms_mail_shirt_c", "Stormguard Mail Shirt", [("mail_shirt_viking_green",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(23)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
+["ms_mail_shirt_a", "Stormguard Mail Shirt", [("mail_shirt_viking",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(23)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(22)|difficulty(5) ,imodbits_cloth ],
+["ms_mail_shirt_b", "Stormguard Mail Shirt", [("mail_shirt_viking_blue",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(23)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(22)|difficulty(5) ,imodbits_cloth ],
+["ms_mail_shirt_c", "Stormguard Mail Shirt", [("mail_shirt_viking_green",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(23)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(22)|difficulty(5) ,imodbits_cloth ],
 
-["ms_short_hauberk_a", "Stormguard Short Hauberk", [("norman_short_hauberk",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(22)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
-["ms_short_hauberk_b", "Stormguard Short Hauberk", [("norman_short_hauberk_blue",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(22)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
-["ms_short_hauberk_c", "Stormguard Short Hauberk", [("norman_short_hauberk_yellow",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(22)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(0)|difficulty(5) ,imodbits_cloth ],
+["ms_short_hauberk_a", "Stormguard Short Hauberk", [("norman_short_hauberk",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(22)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(11)|difficulty(5) ,imodbits_cloth ],
+["ms_short_hauberk_b", "Stormguard Short Hauberk", [("norman_short_hauberk_blue",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(22)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(11)|difficulty(5) ,imodbits_cloth ],
+["ms_short_hauberk_c", "Stormguard Short Hauberk", [("norman_short_hauberk_yellow",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(22)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(11)|difficulty(5) ,imodbits_cloth ],
 
-["ms_stormbringer_hauberk_a", "Stormbringer Hauberk", [("saxon_hauberk_a",0)], itp_merchandise|itp_type_body_armor, 0, 1599, weight(25)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(0)|difficulty(8) ,imodbits_cloth ],
-["ms_stormbringer_hauberk_b", "Stormbringer Hauberk", [("saxon_hauberk_b",0)], itp_merchandise|itp_type_body_armor, 0, 1599, weight(25)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(0)|difficulty(8) ,imodbits_cloth ],
-["ms_stormbringer_hauberk_c", "Stormbringer Hauberk", [("saxon_hauberk_c",0)], itp_merchandise|itp_type_body_armor, 0, 1599, weight(25)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(0)|difficulty(8) ,imodbits_cloth ],
+["ms_stormbringer_hauberk_a", "Stormbringer Hauberk", [("saxon_hauberk_a",0)], itp_merchandise|itp_type_body_armor, 0, 1599, weight(25)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(16)|difficulty(8) ,imodbits_cloth ],
+["ms_stormbringer_hauberk_b", "Stormbringer Hauberk", [("saxon_hauberk_b",0)], itp_merchandise|itp_type_body_armor, 0, 1599, weight(25)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(16)|difficulty(8) ,imodbits_cloth ],
+["ms_stormbringer_hauberk_c", "Stormbringer Hauberk", [("saxon_hauberk_c",0)], itp_merchandise|itp_type_body_armor, 0, 1599, weight(25)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(16)|difficulty(8) ,imodbits_cloth ],
 
-["ms_coat_of_plates_a", "Tempest Sentinels Coat of Plates", [("nord_coat_of_plates",0)], itp_merchandise|itp_type_body_armor, 0, 1999, weight(30)|abundance(100)|head_armor(0)|body_armor(60)|leg_armor(0)|difficulty(12) ,imodbits_cloth ],
-["ms_coat_of_plates_b", "Tempest Sentinels Coat of Plates", [("nord_coat_of_plates_pelt",0),("nord_coat_of_plates_pelt.1",0)], itp_merchandise|itp_type_body_armor, 0, 1999, weight(30)|abundance(100)|head_armor(0)|body_armor(60)|leg_armor(0)|difficulty(12) ,imodbits_cloth ],
+["ms_coat_of_plates_a", "Tempest Sentinels Coat of Plates", [("nord_coat_of_plates",0)], itp_merchandise|itp_type_body_armor, 0, 1999, weight(30)|abundance(100)|head_armor(0)|body_armor(60)|leg_armor(25)|difficulty(12) ,imodbits_cloth ],
+["ms_coat_of_plates_b", "Tempest Sentinels Coat of Plates", [("nord_coat_of_plates_pelt",0),("nord_coat_of_plates_pelt.1",0)], itp_merchandise|itp_type_body_armor, 0, 1999, weight(30)|abundance(100)|head_armor(0)|body_armor(60)|leg_armor(25)|difficulty(12) ,imodbits_cloth ],
 
 ["ms_greaves_a", "Tempest Sentinels Greaves", [("nord_splinted_greaves",0)], itp_merchandise|itp_type_foot_armor, 0, 2099, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(30)|difficulty(12) ,imodbits_cloth ],
 
