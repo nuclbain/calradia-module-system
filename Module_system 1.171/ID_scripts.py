@@ -612,5 +612,18 @@ script_troop_tree_recursive_backtracking = 610
 script_troop_tree_recursive_detect_max_tier = 611
 script_prsnt_line = 612
 script_get_page_no_of_troop_tree_for_troop_on = 613
+script_freelancer_attach_party = 614
+script_freelancer_detach_party = 615
+script_event_player_enlists = 616
+script_event_player_discharge = 617
+script_event_player_vacation = 618
+script_event_player_returns_vacation = 619
+script_event_player_deserts = 620
+script_party_restore = 621
+script_get_desert_troops = 622
+script_freelancer_keep_field_loot = 623
+script_cf_freelancer_player_can_upgrade = 624
+script_freelancer_equip_troop = 625
+script_freelancer_unequip_troop = 626
 
 
