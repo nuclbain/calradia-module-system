@@ -8022,6 +8022,48 @@ game_menus = [
           (jump_to_menu, "mnu_center_improve"),
         ]
       ),
+      (
+        "center_build_archery_range",
+        [
+          (eq, reg6, 0),
+          (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_archery_range, 0),
+				],
+        "Build an archery range.",
+        [
+          (assign, "$g_improvement_type", slot_center_has_archery_range),
+          (jump_to_menu, "mnu_center_improve"),
+				]
+			),
+			(
+        "center_build_stables",
+        [
+          (eq, reg6, 0),
+					(this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+					(party_slot_eq, "$g_encountered_party", slot_center_has_stables, 0),
+				],
+				"Build stables.",
+				[
+					(assign, "$g_improvement_type", slot_center_has_stables),
+					(jump_to_menu, "mnu_center_improve"),
+				]
+			),
+			(
+				"center_build_local_guild",
+				[
+					(eq, reg6, 0),
+					(this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+					(party_slot_eq, "$g_encountered_party", slot_center_has_local_guild, 0),
+				],
+				"Build a local warriors' guild.",
+				[
+					(assign, "$g_improvement_type", slot_center_has_local_guild),
+					(jump_to_menu, "mnu_center_improve"),
+				]
+			),
       ("go_back_dot",[],"Go back.",[(jump_to_menu, "$g_next_menu")]),
     ],
   ),
@@ -8055,6 +8097,96 @@ game_menus = [
       ),
     ],
   ),
+  (
+    "center_stables",0,
+    "Here you can buy mounted troops for your garrison.",
+    "none",
+    [],
+    [
+      (
+        "center_stables_recruit_volunteers",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_stables, 1),
+				],
+        "Recruit volunteers. (500 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 500),
+          (troop_remove_gold, "trp_player", 500),
+          (party_add_members, "$g_encountered_party", "trp_watchman", 5),
+        ]
+			),
+			(
+				"escape_stables",
+				[],
+				"Leave...",
+				[
+					(jump_to_menu, "$g_next_menu"),
+				]
+			),
+		],
+	),
+  (
+		"center_archery_range",0,
+		"Here you can buy archers for your garrison.",
+		"none",
+		[],
+		[
+			(
+				"center_archery_range_recruit_volunteers",
+				[
+					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+					(party_slot_eq, "$g_encountered_party", slot_center_has_archery_range, 1),
+				],
+				"Recruit volunteers. (500 denars)",
+				[
+					(store_troop_gold, ":gold", "trp_player"),
+					(ge, ":gold", 500),
+					(troop_remove_gold, "trp_player", 500),
+					(party_add_members, "$g_encountered_party", "trp_watchman", 5),
+				]
+			),
+			(
+				"escape_archery_range",
+				[],
+				"Leave...",
+				[
+					(jump_to_menu, "$g_next_menu"),
+				]
+			),
+		],
+	),
+	(
+		"center_local_guild",0,
+		"Here you can buy mercenaries for your garrison.",
+		"none",
+		[],
+		[
+			(
+				"center_local_guild_recruit_volunteers",
+				[
+					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+					(party_slot_eq, "$g_encountered_party", slot_center_has_local_guild, 1),
+				],
+				"Recruit volunteers. (500 denars)",
+				[
+					(store_troop_gold, ":gold", "trp_player"),
+					(ge, ":gold", 500),
+					(troop_remove_gold, "trp_player", 500),
+					(party_add_members, "$g_encountered_party", "trp_watchman", 5),
+				]
+			),
+			(
+				"escape_local_guild",
+				[],
+				"Leave...",
+				[
+					(jump_to_menu, "$g_next_menu"),
+				]     
+			)
+		],
+	),
   (
     "center_improve",0,
     "{s19} As the party member with the highest engineer skill ({reg2}), {reg3?you reckon:{s3} reckons} that building the {s4} will cost you\
@@ -9663,6 +9795,7 @@ game_menus = [
       ("wallet_barracks",
       [
         (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+				(party_slot_eq, "$g_encountered_party", slot_center_has_barracks, 1),
         (try_begin),
 
         (try_end),

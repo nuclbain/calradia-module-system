@@ -399,12 +399,15 @@ slot_center_has_school           = 1133 #village
 slot_center_has_messenger_post   = 1134 #town, castle, village
 slot_center_has_prisoner_tower   = 1135 #town, castle
 slot_center_has_barracks         = 1136 #town, castle
+slot_center_has_archery_range    = 1137 #town, castle
+slot_center_has_stables          = 1138 #town, castle
+slot_center_has_local_guild      = 1139 #town, castle
 
 village_improvements_begin = slot_center_has_manor
 village_improvements_end          = 1135
 
 walled_center_improvements_begin = slot_center_has_messenger_post
-walled_center_improvements_end               = 1137
+walled_center_improvements_end               = 1140
 
 slot_center_player_enterprise     				  = 137 #noted with the item produced
 slot_center_player_enterprise_production_order    = 138
