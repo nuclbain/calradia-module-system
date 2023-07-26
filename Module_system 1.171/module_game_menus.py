@@ -45,6 +45,65 @@ game_menus = [
        [(jump_to_menu, "mnu_start_game_1"),
         ]
        ),
+      (
+        "quick_start",[],"Quick Start (DEBUG)",
+        [
+          (assign, "$current_town", "p_town_6"),
+          (assign, "$g_starting_town", "$current_town"),
+          (assign, "$g_journey_string", "str_journey_to_praven"),
+          (party_relocate_near_party, "p_main_party", "$g_starting_town", 2),
+
+          (troop_raise_attribute, "$g_player_troop", ca_strength, 12),
+          (troop_raise_attribute, "$g_player_troop", ca_agility, 12),
+          (troop_raise_attribute, "$g_player_troop", ca_charisma, 12),
+          (troop_raise_attribute, "$g_player_troop", ca_intelligence, 12),  
+
+          (troop_raise_skill, "$g_player_troop", skl_leadership, 5),
+          (troop_raise_skill, "$g_player_troop", skl_prisoner_management, 5),
+          (troop_raise_skill, "$g_player_troop", skl_inventory_management, 10),
+          (troop_raise_skill, "$g_player_troop", skl_trade, 5),
+          (troop_raise_skill, "$g_player_troop", skl_pathfinding, 5),
+          (troop_raise_skill, "$g_player_troop", skl_spotting, 5),
+          (troop_raise_skill, "$g_player_troop", skl_tracking, 5),
+          (troop_raise_skill, "$g_player_troop", skl_tactics, 5),
+          (troop_raise_skill, "$g_player_troop", skl_first_aid, 5),
+          (troop_raise_skill, "$g_player_troop", skl_surgery, 5),
+          (troop_raise_skill, "$g_player_troop", skl_wound_treatment, 5),
+          (troop_raise_skill, "$g_player_troop", skl_engineer, 5),
+          (troop_raise_skill, "$g_player_troop", skl_persuasion, 5),
+          (troop_raise_skill, "$g_player_troop", skl_riding, 5),
+          (troop_raise_skill, "$g_player_troop", skl_athletics, 5),
+          (troop_raise_skill, "$g_player_troop", skl_shield, 5),
+          (troop_raise_skill, "$g_player_troop", skl_weapon_master, 5),
+          (troop_raise_skill, "$g_player_troop", skl_power_strike, 5),
+          (troop_raise_skill, "$g_player_troop", skl_power_throw, 5),
+          (troop_raise_skill, "$g_player_troop", skl_power_draw, 5),
+          (troop_raise_skill, "$g_player_troop", skl_weapon_master, 5),
+          (troop_raise_skill, "$g_player_troop", skl_ironflesh, 5),
+
+          (troop_raise_proficiency, "$g_player_troop", wpt_one_handed_weapon, 100),
+          (troop_raise_proficiency, "$g_player_troop", wpt_two_handed_weapon, 100),
+          (troop_raise_proficiency, "$g_player_troop", wpt_polearm, 100),
+          (troop_raise_proficiency, "$g_player_troop", wpt_archery, 100),
+          (troop_raise_proficiency, "$g_player_troop", wpt_crossbow, 100),
+          (troop_raise_proficiency, "$g_player_troop", wpt_throwing, 100),
+
+          (troop_add_item, "$g_player_troop","itm_m_brigandine_a",0),
+          (troop_add_item, "$g_player_troop","itm_m_leather_boots_a",0),
+          (troop_add_item, "$g_player_troop","itm_m_gloves_a",0),
+          (troop_add_item, "$g_player_troop","itm_m_kattle_a",0),
+          (troop_add_item, "$g_player_troop","itm_morningstar",0),
+          (troop_add_item, "$g_player_troop","itm_grosse_messer_b",0),
+          (troop_add_item, "$g_player_troop","itm_tab_shield_heater_cav_b",0),
+          (troop_add_item, "$g_player_troop","itm_smoked_fish",0),
+
+          (troop_add_gold, "$g_player_troop", 100000),
+
+          (party_add_members, "p_main_party", "trp_watchman", 10),
+
+          (jump_to_menu,"mnu_choose_skill"),
+        ]
+      ),
       ("go_back",[],"Go back",
        [
          (change_screen_quit),
@@ -3128,7 +3187,7 @@ game_menus = [
          (assign,"$g_camp_mode", 1),
          (assign, "$g_infinite_camping", 1),
          (assign, "$g_player_icon_state", pis_camping),
-         (rest_for_hours_interactive, 10 * 24 * 365, 20), #10 year rest while not attackable with 20x speed
+         (rest_for_hours_interactive, 10 * 24 * 365, 200), #10 year rest while not attackable with 20x speed
          (change_screen_return),
         ]
        ),	   
@@ -8009,44 +8068,32 @@ game_menus = [
        "Build a prisoner tower.",[(assign, "$g_improvement_type", slot_center_has_prisoner_tower),
                                   (jump_to_menu, "mnu_center_improve"),]),
       (
-        "center_build_barracks",
+        "center_build_swadian_barracks",
         [
           (eq, reg6, 0),
           (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
-          (party_slot_eq, "$g_encountered_party", slot_center_has_barracks, 0),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_swadia_barracks, 0),
+					(party_slot_eq, "$g_encountered_party", slot_center_culture, "fac_culture_1")
         ],
-        "Build a barracks.",
+        "[infantry] Build a Swadia barracks.",
         [
-          (assign, "$g_improvement_type", slot_center_has_barracks),
+          (assign, "$g_improvement_type", slot_center_has_swadia_barracks),
           (jump_to_menu, "mnu_center_improve"),
         ]
       ),
-      (
-        "center_build_archery_range",
-        [
-          (eq, reg6, 0),
-          (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
-          (party_slot_eq, "$g_encountered_party", slot_center_has_archery_range, 0),
-				],
-        "Build an archery range.",
-        [
-          (assign, "$g_improvement_type", slot_center_has_archery_range),
-          (jump_to_menu, "mnu_center_improve"),
-				]
-			),
 			(
-        "center_build_stables",
+        "center_build_swadia_stables",
         [
           (eq, reg6, 0),
 					(this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
 					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
-					(party_slot_eq, "$g_encountered_party", slot_center_has_stables, 0),
+					(party_slot_eq, "$g_encountered_party", slot_center_has_swadia_stables, 0),
+					(party_slot_eq, "$g_encountered_party", slot_center_culture, "fac_culture_1")
 				],
-				"Build stables.",
+				"[Cavalry] Build Swadia stables.",
 				[
-					(assign, "$g_improvement_type", slot_center_has_stables),
+					(assign, "$g_improvement_type", slot_center_has_swadia_stables),
 					(jump_to_menu, "mnu_center_improve"),
 				]
 			),
@@ -8056,11 +8103,12 @@ game_menus = [
 					(eq, reg6, 0),
 					(this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
 					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
-					(party_slot_eq, "$g_encountered_party", slot_center_has_local_guild, 0),
+					(party_slot_eq, "$g_encountered_party", slot_center_has_swadia_lion_guild, 0),
+					(party_slot_eq, "$g_encountered_party", slot_center_culture, "fac_culture_1")
 				],
-				"Build a local warriors' guild.",
+				"[Special] Build a Swadia Lion Guild.",
 				[
-					(assign, "$g_improvement_type", slot_center_has_local_guild),
+					(assign, "$g_improvement_type", slot_center_has_swadia_lion_guild),
 					(jump_to_menu, "mnu_center_improve"),
 				]
 			),
@@ -8068,23 +8116,23 @@ game_menus = [
     ],
   ),
   (
-    "center_barracks",0,
-    "Here you can hire and train soldiers for your garrison.",
+    "center_swadia_barracks",0,
+    "Here you can hire soldiers for your garrison. (Troops will be added to the town's garrison, not your party)",
     "none",
     [],
     [
       (
-        "center_barracks_recruit_volunteers",
+        "center_swadia_barracks_recruit_volunteers",
         [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-          (party_slot_eq, "$g_encountered_party", slot_center_has_barracks, 1),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_swadia_barracks, 1),
         ],
-        "Recruit volunteers. (500 denars)",
+        "[5x Recruits] Hire. (250 denars)",
         [
           (store_troop_gold, ":gold", "trp_player"),
-          (ge, ":gold", 500),
-          (troop_remove_gold, "trp_player", 500),
-          (party_add_members, "$g_encountered_party", "trp_watchman", 5),
+          (ge, ":gold", 250),
+          (troop_remove_gold, "trp_player", 250),
+          (party_add_members, "$g_encountered_party", "trp_swadian_recruit", 5),
         ]
       ),
       (
@@ -8098,23 +8146,23 @@ game_menus = [
     ],
   ),
   (
-    "center_stables",0,
-    "Here you can buy mounted troops for your garrison.",
+    "center_swadia_stables",0,
+    "Here you can buy mounted troops for your garrison. (Troops will be added to the town's garrison, not your party)",
     "none",
     [],
     [
       (
-        "center_stables_recruit_volunteers",
+        "center_swadia_stables_recruit_volunteers",
         [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-          (party_slot_eq, "$g_encountered_party", slot_center_has_stables, 1),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_swadia_stables, 1),
 				],
-        "Recruit volunteers. (500 denars)",
+        "[5x Horsemans] Hire. (500 denars)",
         [
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 500),
           (troop_remove_gold, "trp_player", 500),
-          (party_add_members, "$g_encountered_party", "trp_watchman", 5),
+          (party_add_members, "$g_encountered_party", "trp_swadian_horseman", 5),
         ]
 			),
 			(
@@ -8127,53 +8175,23 @@ game_menus = [
 			),
 		],
 	),
-  (
-		"center_archery_range",0,
-		"Here you can buy archers for your garrison.",
-		"none",
-		[],
-		[
-			(
-				"center_archery_range_recruit_volunteers",
-				[
-					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-					(party_slot_eq, "$g_encountered_party", slot_center_has_archery_range, 1),
-				],
-				"Recruit volunteers. (500 denars)",
-				[
-					(store_troop_gold, ":gold", "trp_player"),
-					(ge, ":gold", 500),
-					(troop_remove_gold, "trp_player", 500),
-					(party_add_members, "$g_encountered_party", "trp_watchman", 5),
-				]
-			),
-			(
-				"escape_archery_range",
-				[],
-				"Leave...",
-				[
-					(jump_to_menu, "$g_next_menu"),
-				]
-			),
-		],
-	),
 	(
-		"center_local_guild",0,
-		"Here you can buy mercenaries for your garrison.",
+		"center_swadia_lion_guild",0,
+		"Here you can hire noble Lion Guards of Swadia for your garrison. (Troops will be added to the town's garrison, not your party)",
 		"none",
 		[],
 		[
 			(
-				"center_local_guild_recruit_volunteers",
+				"center_swadia_lion_guild_recruit_volunteers",
 				[
 					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-					(party_slot_eq, "$g_encountered_party", slot_center_has_local_guild, 1),
+					(party_slot_eq, "$g_encountered_party", slot_center_has_swadia_lion_guild, 1),
 				],
-				"Recruit volunteers. (500 denars)",
+				"[5x Young Lion] Hire. (2500 denars)",
 				[
 					(store_troop_gold, ":gold", "trp_player"),
-					(ge, ":gold", 500),
-					(troop_remove_gold, "trp_player", 500),
+					(ge, ":gold", 2500),
+					(troop_remove_gold, "trp_player", 2500),
 					(party_add_members, "$g_encountered_party", "trp_watchman", 5),
 				]
 			),
@@ -9792,20 +9810,42 @@ game_menus = [
            (jump_to_menu, "mnu_center_manage"),
        ]),
 
-      ("wallet_barracks",
+      ("wallet_swadia_barracks",
       [
         (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
-				(party_slot_eq, "$g_encountered_party", slot_center_has_barracks, 1),
-        (try_begin),
-
-        (try_end),
+				(party_slot_eq, "$g_encountered_party", slot_center_has_swadia_barracks, 1),
       ],
-      "Visit barracks.",
+      "[Hire] Visit barracks.",
       [
 				(assign, "$g_next_menu", "mnu_town"),
-				(jump_to_menu, "mnu_center_barracks"),
+        (set_background_mesh, "mesh_pic_recruits"),
+				(jump_to_menu, "mnu_center_swadia_barracks"),
 			]),
-		
+
+      ("wallet_swadia_stables",
+      [
+        (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+        (party_slot_eq, "$g_encountered_party", slot_center_has_swadia_stables, 1),
+      ],
+      "[Hire] Visit stables.",
+      [
+        (assign, "$g_next_menu", "mnu_town"),
+        (set_background_mesh, "mesh_pic_recruits"),
+        (jump_to_menu, "mnu_center_swadia_stables"),
+      ]),
+
+      ("wallet_swadia_lion_guild",
+      [
+        (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+        (party_slot_eq, "$g_encountered_party", slot_center_has_swadia_lion_guild, 1),
+      ],
+      "[Hire] Visit local guild.",
+      [
+        (assign, "$g_next_menu", "mnu_town"),
+        (set_background_mesh, "mesh_pic_recruits"),
+        (jump_to_menu, "mnu_center_swadia_lion_guild"),
+      ]),
+      
       ("walled_center_move_court",
       [
         (neg|party_slot_eq, "$current_town", slot_village_state, svs_under_siege),

@@ -447,9 +447,15 @@ troops = [
 ["stormguard_tempest_sentinel","Tempest Sentinel","Tempest Sentinels",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_facemask_a,itm_ms_huscarl_armor_a,itm_ms_facemask_b,itm_m_greaves_b,itm_mt_gauntlets_a,itm_one_handed_battle_axe_c,itm_tab_shield_round_d,itm_ms_two_h_sword_c,itm_throwing_spears], def_attrib|level(24),wp(180),knows_common,knows_power_throw_6,swadian_face_young_1, swadian_face_middle_2],
 ["stormguard_elite_stormguard","Elite Stormguard","Elite Stormguards",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_facemask_elite,itm_ms_coat_of_plates_a,itm_ms_coat_of_plates_b,itm_ms_greaves_a,itm_m_gauntlets_b,itm_sarranid_axe_b,itm_tab_shield_round_e,itm_ms_great_axe_b,itm_heavy_throwing_axes], tier_three_attrib|level(35),wp(400),knows_common,knows_power_throw_9,swadian_face_young_1, swadian_face_middle_2],
 
+
+
+  ["swadian_peasant","Swadian Peasant","Swadian Peasants",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_1,[itm_scythe,itm_hatchet,itm_pitch_fork,itm_stones,itm_tab_shield_heater_a,itm_tab_shield_round_a,itm_red_shirt,itm_shirt,itm_rich_leather_a,itm_linen_tunic_e,itm_m_hose_d], def_attrib|level(4),wp(60),knows_common,swadian_face_younger_1, swadian_face_middle_2],
+  ["swadian_huntsman","Swadian Huntsman","Swadian Huntsmans",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_1,[itm_falchion,itm_hatchet,itm_hunting_bow,itm_arrows,itm_tab_shield_heater_a,itm_tab_shield_round_a,itm_red_shirt,itm_shirt,itm_rich_leather_a,itm_linen_tunic_e,itm_m_hose_d,itm_mt_hood_a2], def_attrib|level(8),wp(80),knows_common|knows_power_draw_3,swadian_face_younger_1, swadian_face_middle_2],
+  ["swadian_peasant_milita","Swadian Peasant Milita","Swadian Peasant Militas",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield,0,0,fac_kingdom_1,[itm_falchion,itm_hatchet,itm_spiked_club,itm_boar_spear,itm_scythe,itm_pitch_fork,itm_tab_shield_heater_a,itm_rich_leather_a,itm_linen_tunic_e,itm_lamellar_shirt_e,itm_byrnie_h_padded,itm_m_swadia_milita_boots_a,itm_m_swadia_milita_boots_b,itm_m_light_infantry_helmet_a,itm_m_light_infantry_helmet_b,itm_m_light_infantry_helmet_c,itm_m_light_infantry_helmet_d,itm_m_light_infantry_helmet_e], def_attrib|level(8),wp(80),knows_common|knows_ironflesh_3|knows_shield_2,swadian_face_younger_1, swadian_face_middle_2],
+
 #peasant - retainer - footman - man-at-arms -  knight
   ["swadian_recruit","Swadian Recruit","Swadian Recruits",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_1,
-   [itm_scythe,itm_hatchet,itm_pickaxe,itm_sword_medieval_a,itm_stones,itm_tab_shield_heater_a,itm_tab_shield_round_a,itm_m_swadia_recruit_a,itm_m_infantry_coif_a,itm_m_swadia_light_boots_a,itm_m_swadia_light_boots_b],
+   [itm_scythe,itm_hatchet,itm_pickaxe,itm_stones,itm_tab_shield_round_a,itm_m_swadia_recruit_a,itm_m_infantry_coif_a,itm_m_swadia_light_boots_a,itm_m_swadia_light_boots_b],
    def_attrib|level(4),wp(60),knows_common,swadian_face_younger_1, swadian_face_middle_2],
   ["swadian_militia","Swadian Militia","Swadian Militia",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield,0,0,fac_kingdom_1,
    [itm_bolts,itm_spiked_club,itm_fighting_pick,itm_boar_spear,itm_sword_medieval_a,itm_hunting_crossbow,itm_tab_shield_heater_a, itm_m_swadia_milita_boots_a,itm_m_swadia_milita_boots_b,itm_m_swadia_recruit_a,itm_m_light_infantry_helmet_a,itm_m_light_infantry_helmet_b,itm_m_light_infantry_helmet_c,itm_m_light_infantry_helmet_d,itm_m_light_infantry_helmet_e], def_attrib|level(9),wp(75),knows_common,swadian_face_young_1, swadian_face_old_2],
@@ -457,6 +463,7 @@ troops = [
    [itm_spear,itm_fighting_pick,itm_sword_medieval_b_small,itm_sword_medieval_a,itm_tab_shield_heater_b,
     itm_m_swadia_infantry_a,itm_m_swadia_infantry_b,itm_m_swadia_infantry_boots_a,itm_m_swadia_infantry_boots_b,itm_m_light_infantry_helmet_a,itm_m_light_infantry_helmet_b,itm_m_light_infantry_helmet_c,itm_m_light_infantry_helmet_d,itm_m_light_infantry_helmet_e],
    def_attrib|level(14),wp_melee(85),knows_common|knows_ironflesh_2|knows_shield_2|knows_athletics_2|knows_power_strike_2,swadian_face_young_1, swadian_face_old_2],
+  ["swadian_guard","Swadian Guard","Swadian Guards",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1, [itm_english_bill,itm_m_swadia_sergant_armor_a,itm_m_swadia_sergant_armor_b,itm_m_swadia_leather_boots_a,itm_m_swadia_leather_boots_b,itm_m_infantry_coif_a,itm_mt_gauntlets_b], def_attrib|level(20),wp_melee(125),knows_common|knows_ironflesh_4|knows_power_strike_2|knows_athletics_5,swadian_face_middle_1, swadian_face_old_2],
   ["swadian_infantry","Swadian Infantry","Swadian Infantry",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1,
    [itm_pike,itm_fighting_pick,itm_bastard_sword_a,itm_sword_medieval_a,itm_sword_medieval_b_small,itm_tab_shield_heater_c, itm_m_swadia_infantry_a,itm_m_swadia_infantry_b,itm_m_swadia_leather_boots_a,itm_m_swadia_leather_boots_b,itm_m_infantry_helmet_a,itm_m_infantry_helmet_b,itm_m_infantry_helmet_c,itm_m_infantry_helmet_d,itm_m_infantry_helmet_e],
    def_attrib|level(20),wp_melee(105),knows_common|knows_riding_3|knows_ironflesh_2|knows_power_strike_2|knows_shield_3|knows_athletics_3,swadian_face_middle_1, swadian_face_old_2],
@@ -476,6 +483,8 @@ troops = [
    [itm_bolts,itm_arrows,itm_crossbow,itm_crossbow,itm_heavy_crossbow,itm_sword_medieval_b_small,itm_sword_medieval_a,itm_voulge,itm_tab_shield_heater_c,
     itm_m_swadia_sergant_armor_a,itm_m_swadia_sergant_armor_b,itm_m_capelina_a,itm_m_capelina_b,itm_m_swadia_leather_boots_a,itm_m_swadia_leather_boots_b,itm_m_gloves_a],
    str_14 | agi_10 | int_4 | cha_4|level(24),wp_one_handed (100) | wp_two_handed (100) | wp_polearm (100) | wp_archery (100) | wp_crossbow (120) | wp_throwing (100),knows_common|knows_power_draw_3|knows_ironflesh_1|knows_power_strike_1|knows_athletics_2,swadian_face_middle_1, swadian_face_older_2],
+
+  ["swadian_horseman","Swadian Horseman","Swadian Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,[itm_morningstar,itm_tab_shield_small_round_c,itm_m_swadia_sergant_armor_a,itm_m_swadia_sergant_armor_b,itm_m_leather_boots_a,itm_m_cavalry_helmet_a,itm_m_cavalry_helmet_b,itm_m_cavalry_helmet_c,itm_m_cavalry_helmet_d,itm_m_cavalry_helmet_e,itm_m_cavalry_helmet_f,itm_m_cavalry_helmet_g,itm_hunter,itm_m_gloves_a], def_attrib|level(19),wp_melee(100),knows_common|knows_riding_3|knows_ironflesh_2|knows_power_strike_2|knows_shield_3|knows_athletics_3,swadian_face_middle_1, swadian_face_old_2],
   ["swadian_man_at_arms","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,
    [itm_lance,itm_fighting_pick,itm_bastard_sword_b,itm_sword_medieval_b,itm_sword_medieval_c_small,itm_tab_shield_heater_cav_a,
     itm_m_swadia_knight_armor_a,itm_m_swadia_knight_armor_b,itm_m_swadia_knight_armor_c,itm_m_crusader_helm_a,itm_m_crusader_helm_b,itm_m_crusader_helm_c,itm_m_crusader_helm_d,itm_m_crusader_helm_e,itm_m_crusader_helm_f,itm_m_swadia_leather_boots_a,itm_m_swadia_leather_boots_b,itm_m_gloves_a,itm_hunter],
@@ -2810,16 +2819,20 @@ upgrade(troops,"stormguard_stormbringer","stormguard_avalanche_warrior")
 upgrade2(troops,"stormguard_avalanche_warrior","stormguard_lightning_rider","stormguard_tempest_sentinel")
 upgrade(troops,"stormguard_tempest_sentinel","stormguard_elite_stormguard")
 
+# new troop trees for native factions
+upgrade2(troops,"swadian_peasant","swadian_peasant_milita","swadian_huntsman")
+
 # native
 upgrade(troops,"swadian_recruit","swadian_militia")
 
 upgrade2(troops,"swadian_militia","swadian_footman","swadian_skirmisher")
-upgrade2(troops,"swadian_footman","swadian_man_at_arms","swadian_infantry")
+upgrade2(troops,"swadian_footman","swadian_guard","swadian_infantry")
 upgrade(troops,"swadian_infantry","swadian_sergeant")
 upgrade(troops,"swadian_skirmisher","swadian_crossbowman")
 
 upgrade(troops,"swadian_crossbowman","swadian_sharpshooter")
 
+upgrade(troops,"swadian_horseman","swadian_man_at_arms")
 upgrade(troops,"swadian_man_at_arms","swadian_knight")
 
 upgrade(troops,"vaegir_recruit","vaegir_footman")

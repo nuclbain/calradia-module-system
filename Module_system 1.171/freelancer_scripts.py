@@ -93,7 +93,7 @@ scripts = [
 			(neg|faction_slot_eq, ":commander_faction", slot_faction_freelancer_troop, 0),
 			(faction_get_slot, "$player_cur_troop", ":commander_faction", slot_faction_freelancer_troop),
 		(else_try),
-			(faction_get_slot, "$player_cur_troop", ":commander_faction", slot_faction_tier_1_troop),
+			(faction_get_slot, "$player_cur_troop", ":commander_faction", slot_faction_tier_2_troop),
 		(try_end),		
 		(call_script, "script_freelancer_equip_troop", "$player_cur_troop"),
 
