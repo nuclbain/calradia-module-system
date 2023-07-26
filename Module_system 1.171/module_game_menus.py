@@ -8008,7 +8008,13 @@ game_menus = [
                                        ],
        "Build a prisoner tower.",[(assign, "$g_improvement_type", slot_center_has_prisoner_tower),
                                   (jump_to_menu, "mnu_center_improve"),]),
-                           
+      ("center_build_barracks",[(eq, reg6, 0),
+                                      (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+                                      (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+                                      (party_slot_eq, "$g_encountered_party", slot_center_has_prisoner_tower, 0),
+                                       ],
+       "Build a barracks.",[(assign, "$g_improvement_type", slot_center_has_barracks),
+                                  (jump_to_menu, "mnu_center_improve"),]),
       ("go_back_dot",[],"Go back.",[(jump_to_menu, "$g_next_menu")]),
     ],
   ),
@@ -9617,6 +9623,16 @@ game_menus = [
            (assign, "$g_next_menu", "mnu_town"),
            (jump_to_menu, "mnu_center_manage"),
        ]),
+
+      ("wallet_barracks",
+      [
+        (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+        (try_begin),
+
+        (try_end),
+      ],
+      "Visit barracks.",
+      []),
 		
       ("walled_center_move_court",
       [

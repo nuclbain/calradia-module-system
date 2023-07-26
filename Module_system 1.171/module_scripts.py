@@ -34186,6 +34186,11 @@ scripts = [
        (str_store_string, s0, "@Prison Tower"),
        (str_store_string, s1, "@A prison tower reduces the chance of captives held here running away successfully."),
        (assign, reg0, 7000),
+     (else_try),
+       (eq, ":improvement_no", slot_center_has_barracks),
+       (str_store_string, s0, "@Barracks"),
+       (str_store_string, s1, "@A barracks lets you train troops."),
+       (assign, reg0, 1000),
      (try_end),
      ]),
   
