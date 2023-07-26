@@ -8008,17 +8008,53 @@ game_menus = [
                                        ],
        "Build a prisoner tower.",[(assign, "$g_improvement_type", slot_center_has_prisoner_tower),
                                   (jump_to_menu, "mnu_center_improve"),]),
-      ("center_build_barracks",[(eq, reg6, 0),
-                                      (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-                                      (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
-                                      (party_slot_eq, "$g_encountered_party", slot_center_has_prisoner_tower, 0),
-                                       ],
-       "Build a barracks.",[(assign, "$g_improvement_type", slot_center_has_barracks),
-                                  (jump_to_menu, "mnu_center_improve"),]),
+      (
+        "center_build_barracks",
+        [
+          (eq, reg6, 0),
+          (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_barracks, 0),
+        ],
+        "Build a barracks.",
+        [
+          (assign, "$g_improvement_type", slot_center_has_barracks),
+          (jump_to_menu, "mnu_center_improve"),
+        ]
+      ),
       ("go_back_dot",[],"Go back.",[(jump_to_menu, "$g_next_menu")]),
     ],
   ),
-
+  (
+    "center_barracks",0,
+    "Here you can hire and train soldiers for your garrison.",
+    "none",
+    [],
+    [
+      (
+        "center_barracks_recruit_volunteers",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_barracks, 1),
+        ],
+        "Recruit volunteers. (500 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 500),
+          (troop_remove_gold, "trp_player", 500),
+          (party_add_members, "$g_encountered_party", "trp_watchman", 5),
+        ]
+      ),
+      (
+        "escape_barrracks",
+        [],
+        "Leave...",
+        [
+          (jump_to_menu, "$g_next_menu"),
+        ]
+      ),
+    ],
+  ),
   (
     "center_improve",0,
     "{s19} As the party member with the highest engineer skill ({reg2}), {reg3?you reckon:{s3} reckons} that building the {s4} will cost you\
@@ -9632,7 +9668,10 @@ game_menus = [
         (try_end),
       ],
       "Visit barracks.",
-      []),
+      [
+				(assign, "$g_next_menu", "mnu_town"),
+				(jump_to_menu, "mnu_center_barracks"),
+			]),
 		
       ("walled_center_move_court",
       [
