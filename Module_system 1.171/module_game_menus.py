@@ -8243,12 +8243,40 @@ game_menus = [
 					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
 					(party_slot_eq, "$g_encountered_party", slot_center_has_swadia_lion_guild, 1),
 				],
+				"[1x Young Lion] Hire. (500 denars)",
+				[
+					(store_troop_gold, ":gold", "trp_player"),
+					(ge, ":gold", 500),
+					(troop_remove_gold, "trp_player", 500),
+					(party_add_members, "$g_encountered_party", "trp_swadian_young_lion", 1),
+				]
+			),
+			(
+				"center_swadia_lion_guild_recruit_volunteers",
+				[
+					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+					(party_slot_eq, "$g_encountered_party", slot_center_has_swadia_lion_guild, 1),
+				],
 				"[5x Young Lion] Hire. (2500 denars)",
 				[
 					(store_troop_gold, ":gold", "trp_player"),
 					(ge, ":gold", 2500),
 					(troop_remove_gold, "trp_player", 2500),
-					(party_add_members, "$g_encountered_party", "trp_watchman", 5),
+					(party_add_members, "$g_encountered_party", "trp_swadian_young_lion", 5),
+				]
+			),
+			(
+				"center_swadia_lion_guild_recruit_volunteers",
+				[
+					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+					(party_slot_eq, "$g_encountered_party", slot_center_has_swadia_lion_guild, 1),
+				],
+				"[10x Young Lion] Hire. (5000 denars)",
+				[
+					(store_troop_gold, ":gold", "trp_player"),
+					(ge, ":gold", 5000),
+					(troop_remove_gold, "trp_player", 5000),
+					(party_add_members, "$g_encountered_party", "trp_swadian_young_lion", 10),
 				]
 			),
 			(
