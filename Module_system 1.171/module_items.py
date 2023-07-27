@@ -1301,6 +1301,22 @@ items = [
 91 , weight(1.5)|difficulty(0)|spd_rtng(106) | weapon_length(47)|swing_damage(24 , cut) | thrust_damage(22 , pierce),imodbits_sword_high ],
 
 # CWA Stuff
+["m_swadia_elite_recruit_a", "Swadian Elite Padded Armor", [("novici_Jerusalem",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 325 , weight(10)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(0) ,imodbits_armor ],
+["m_swadia_elite_sergant_armor_a", "Swadian Elite Mail Armor", [("sergeant_Jerusalem_armor",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 592 , weight(16)|abundance(100)|head_armor(0)|body_armor(39)|leg_armor(18)|difficulty(0) ,imodbits_armor ],
+
+["m_swadia_elite_knight_armor_a", "Swadian Elite Knight Armor", [("knight_armor_jerusalem_a",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1397 , weight(19)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(23)|difficulty(11) ,imodbits_armor ],
+["m_swadia_elite_knight_armor_b", "Swadian Elite Knight Armor", [("knight_armor_jerusalem_b",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1397 , weight(19)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(23)|difficulty(11) ,imodbits_armor ],
+["m_swadia_elite_knight_armor_c", "Swadian Elite Knight Armor", [("knight_armor_jerusalem_c",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1397 , weight(19)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(23)|difficulty(11) ,imodbits_armor ],
+
+["m_swadia_elite_knight_armor_a_cloaked", "Swadian Elite Knight Armor", [("knight_armor_jerusalem_a_cloak",0),("knight_armor_jerusalem_a_cloak.1",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1497 , weight(21)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(25)|difficulty(11) ,imodbits_armor ],
+["m_swadia_elite_knight_armor_b_cloaked", "Swadian Elite Knight Armor", [("knight_armor_jerusalem_b_cloak",0),("knight_armor_jerusalem_b_cloak.1",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1497 , weight(21)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(25)|difficulty(11) ,imodbits_armor ],
+["m_swadia_elite_knight_armor_c_cloaked", "Swadian Elite Knight Armor", [("knight_armor_jerusalem_c_cloak",0),("knight_armor_jerusalem_c_cloak.1",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1497 , weight(21)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(25)|difficulty(11) ,imodbits_armor ],
+["m_swadia_elite_knight_armor_d_cloaked", "Swadian Elite Knight Armor", [("knight_armor_jerusalem_d_cloak",0),("knight_armor_jerusalem_d_cloak.1",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1497 , weight(21)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(25)|difficulty(11) ,imodbits_armor ],
+["m_swadia_elite_knight_armor_e_cloaked", "Swadian Elite Knight Armor", [("knight_armor_jerusalem_e_cloak",0),("knight_armor_jerusalem_e_cloak.1",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1497 , weight(21)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(25)|difficulty(11) ,imodbits_armor ],
+["m_swadia_elite_knight_armor_f_cloaked", "Swadian Elite Knight Armor", [("knight_armor_jerusalem_f_cloak",0),("knight_armor_jerusalem_f_cloak.1",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1497 , weight(21)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(25)|difficulty(11) ,imodbits_armor ],
+
+["m_swadia_lord_armor_a", "Swadian High Knight Armor", [("armor_king_Jerusalem",0),("armor_king_Jerusalem.1",0),("armor_king_Jerusalem.2",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1871 , weight(21)|abundance(100)|head_armor(0)|body_armor(56)|leg_armor(27)|difficulty(15) ,imodbits_armor ],
+
 ["m_swadia_recruit_a", "Swadian Recruit Armor", [("novici_tripoli_armor",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor ],
 
 ["m_swadia_armor_light_a", "Swadian Light Armor", [("archer_tripoli_armor_a",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 352 , weight(12)|abundance(100)|head_armor(0)|body_armor(26)|leg_armor(7)|difficulty(0) ,imodbits_armor ],
@@ -1366,6 +1382,8 @@ items = [
 ["m_swadia_elite_helmet_a", "Swadian Elite Helmet", [("fracia_helmet_1",0)], itp_type_head_armor|itp_merchandise   ,0, 1522 , weight(2.5)|abundance(100)|head_armor(49)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_armor ],
 ["m_swadia_elite_helmet_b", "Swadian Elite Helmet", [("fracia_helmet_2",0)], itp_type_head_armor|itp_merchandise   ,0, 1522 , weight(2.5)|abundance(100)|head_armor(49)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_armor ],
 ["m_swadia_elite_helmet_c", "Swadian Elite Helmet", [("fracia_knight_helm_a",0)], itp_type_head_armor|itp_merchandise   ,0, 1522 , weight(2.5)|abundance(100)|head_armor(49)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_armor ],
+
+["m_swadia_lord_helmet_a", "Swadian High Knight Helmet", [("helm_king_Jerusalem",0)], itp_type_head_armor|itp_merchandise|itp_attach_armature   ,0, 1995 , weight(2.5)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_armor ],
 
 ["m_swadia_light_boots_a", "Swadian Light Boots", [("boot_light_crusader_a",0)], itp_type_foot_armor|itp_merchandise   ,0, 100 , weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(4)|difficulty(0) ,imodbits_armor ],
 ["m_swadia_light_boots_b", "Swadian Light Boots", [("boot_light_crusader_b",0)], itp_type_foot_armor|itp_merchandise   ,0, 100 , weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(4)|difficulty(0) ,imodbits_armor ],
