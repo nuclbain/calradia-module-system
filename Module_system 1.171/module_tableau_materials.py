@@ -1028,7 +1028,183 @@ tableaus = [
      (cur_tableau_add_tableau_mesh, "tableau_coop_companion_select_alpha_mask", ":troop_no", pos1, 0, 0),
      ]),
      
-     
+  ("shield_heater_c", 0, "shields_old", 1024, 1024, 0, 0, 0, 0,
+  [
+  (store_script_param, ":banner_mesh", 1),
+  (set_fixed_point_multiplier, 100),
+  (init_position, pos1),
+  (position_set_x, pos1, 9),
+  (position_set_y, pos1, 111),
+  (cur_tableau_add_mesh, ":banner_mesh", pos1, 40, 0),
+  (init_position, pos1),
+
+  (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_old", pos1, 0, 0),
+  (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+  ]),
+
+  ("shield_heater_d", 0, "shields_old", 1024, 1024, 0, 0, 0, 0,
+  [
+  (store_script_param, ":banner_mesh", 1),
+  (set_fixed_point_multiplier, 100),
+  (init_position, pos1),
+  (position_set_x, pos1, -41),
+  (position_set_y, pos1, 27),
+  (cur_tableau_add_mesh, ":banner_mesh", pos1, 40, 0),
+  (init_position, pos1),
+
+  (position_set_z, pos1, 10),
+  (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_old", pos1, 0, 0),
+  (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+  ]),
+
+  ("shield_kite_g", 0, "shields_old", 1024, 1024, 0, 0, 0, 0,
+  [
+  (store_script_param, ":banner_mesh", 1),
+
+  (set_fixed_point_multiplier, 100),
+
+  (init_position, pos1),
+  (position_set_x, pos1, 42),
+  (position_set_y, pos1, 42),
+  (cur_tableau_add_mesh, ":banner_mesh", pos1, 42, 0),
+  (init_position, pos1),
+  (position_set_z, pos1, 10),
+  (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_old", pos1, 0, 0),
+  (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+  ]),
+
+
+  ("shield_kite_h", 0, "shields_old", 1024, 1024, 0, 0, 0, 0,
+  [
+  (store_script_param, ":banner_mesh", 1),
+
+  (set_fixed_point_multiplier, 100),
+  (init_position, pos1),
+  (position_set_x, pos1, 6),
+  (position_set_y, pos1, 60),
+  (cur_tableau_add_mesh, ":banner_mesh", pos1, 45, 0),
+  (init_position, pos1),
+  (position_set_z, pos1, 10),
+  (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_old", pos1, 0, 0),
+  (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+  ]),
+
+
+  ("shield_kite_i", 0, "shields_old", 1024, 1024, 0, 0, 0, 0,
+  [
+  (store_script_param, ":banner_mesh", 1),
+
+  (set_fixed_point_multiplier, 100),
+
+  (init_position, pos1),
+  (position_set_x, pos1, 70),
+  (position_set_y, pos1, -20),
+  (cur_tableau_add_mesh, ":banner_mesh", pos1, 50, 0),
+  (init_position, pos1),
+  (position_set_z, pos1, 10),
+  (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_old", pos1, 0, 0),
+  (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+  ]),
+
+  ("shield_kite_k", 0, "shields_old", 1024, 1024, 0, 0, 0, 0,
+  [
+  (store_script_param, ":banner_mesh", 1),
+
+  (set_fixed_point_multiplier, 100),
+
+  (init_position, pos1),
+  (position_set_x, pos1, 78),
+  (position_set_y, pos1, -60),
+  (cur_tableau_add_mesh, ":banner_mesh", pos1, -50, 0),
+  (init_position, pos1),
+  (position_set_z, pos1, 10),
+
+  (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_old", pos1, 0, 0),
+  (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+
+  ]),
+
+  ("shield_norman_4", 0, "shields_b_old", 1024, 1024, 0, 0, 0, 0,
+  [
+  (store_script_param, ":banner_mesh", 1),
+
+  (set_fixed_point_multiplier, 100),
+
+  (init_position, pos1),
+
+  (position_set_x, pos1, -15),
+  (position_set_y, pos1, -65),
+  (cur_tableau_add_mesh, ":banner_mesh", pos1, -55, 0),
+  (init_position, pos1),
+  (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_norman", pos1, 0, 0),
+  (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+
+  ]),
+
+  ("shield_norman_3", 0, "shields_b_old", 1024, 1024, 0, 0, 0, 0,
+  [
+  (store_script_param, ":banner_mesh", 1),
+
+  (set_fixed_point_multiplier, 100),
+
+  (init_position, pos1),
+
+  (position_set_x, pos1, -60),
+  (position_set_y, pos1, -60),
+  (cur_tableau_add_mesh, ":banner_mesh", pos1, -60, 0),
+  (init_position, pos1),
+  (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_norman", pos1, 0, 0),
+  (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+
+  ]),
+
+  ("shield_norman_2", 0, "shields_b_old", 1024, 1024, 0, 0, 0, 0,
+  [
+  (store_script_param, ":banner_mesh", 1),
+
+  (set_fixed_point_multiplier, 100),
+
+  (init_position, pos1),
+
+  (position_set_x, pos1, -36),
+  (position_set_y, pos1, 100),
+  (cur_tableau_add_mesh, ":banner_mesh", pos1, 50, 0),
+  (init_position, pos1),
+  (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_norman", pos1, 0, 0),
+
+  (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+
+  ]),
+
+  ("shield_norman_1", 0, "shields_b_old", 1024, 1024, 0, 0, 0, 0,
+  [
+  (store_script_param, ":banner_mesh", 1),
+
+  (set_fixed_point_multiplier, 100),
+
+  (init_position, pos1),
+  (position_set_x, pos1, -77),
+  (position_set_y, pos1, 111),
+  (cur_tableau_add_mesh, ":banner_mesh", pos1, 60, 0),
+  (init_position, pos1),
+  (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_norman", pos1, 0, 0),
+  (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+  ]),
+    ("pavise_shield_3", 0, "sample_shield_matte", 512, 512, 0, 0, 0, 0,
+   [
+       (store_script_param, ":banner_mesh", 1),
+
+       (set_fixed_point_multiplier, 100),
+
+       (init_position, pos1),
+       (position_set_x, pos1, -54),
+       (position_set_y, pos1, 120),
+       (cur_tableau_add_mesh, ":banner_mesh", pos1, 116, 0),
+       (init_position, pos1),
+       (position_set_z, pos1, 10),
+       (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_pavise_3", pos1, 0, 0),
+       (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+       ]),
 ]
 # modmerger_start version=201 type=4
 try:

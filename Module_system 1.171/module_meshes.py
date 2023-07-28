@@ -234,6 +234,10 @@ meshes = [
   ("tableau_mesh_shield_pavise_1", 0, "tableau_mesh_shield_pavise_1",  0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("tableau_mesh_shield_pavise_2", 0, "tableau_mesh_shield_pavise_2",  0, 0, 0, 0, 0, 0, 10, 10, 10),
 
+  ("tableau_mesh_shield_old", 0, "tableau_mesh_shield_old", 0, 0, 0, 0, 0, 0, 5, 5, 5),
+  ("tableau_mesh_shield_norman", 0, "tableau_mesh_shield_bold", 0, 0, 0, 0, 0, 0, 5, 5, 5),
+  ("tableau_mesh_shield_pavise_3", 0, "tableau_mesh_shield_pavise_3", 0, 0, 0, 0, 0, 0, 10, 10, 10),
+
   ("heraldic_armor_bg", 0, "heraldic_armor_bg",  0, 0, 0, 0, 0, 0, 10, 10, 10),
 
   ("tableau_mesh_heraldic_armor_a", 0, "tableau_mesh_heraldic_armor_a",  0, 0, 0, 0, 0, 0, 1, 1, 1),
