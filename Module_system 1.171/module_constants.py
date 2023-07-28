@@ -392,18 +392,21 @@ slot_party_last_traded_center     = 126
 
 
 
-slot_center_has_manor            = 130 #village
-slot_center_has_fish_pond        = 131 #village
-slot_center_has_watch_tower      = 132 #village
-slot_center_has_school           = 133 #village
-slot_center_has_messenger_post   = 134 #town, castle, village
-slot_center_has_prisoner_tower   = 135 #town, castle
+slot_center_has_manor             = 1130 #village
+slot_center_has_fish_pond         = 1131 #village
+slot_center_has_watch_tower       = 1132 #village
+slot_center_has_school            = 1133 #village
+slot_center_has_messenger_post    = 1134 #town, castle, village
+slot_center_has_prisoner_tower    = 1135 #town, castle
+slot_center_has_swadia_barracks   = 1136 #town, castle
+slot_center_has_swadia_stables    = 1137 #town, castle
+slot_center_has_swadia_lion_guild = 1138 #town, castle
 
 village_improvements_begin = slot_center_has_manor
-village_improvements_end          = 135
+village_improvements_end          = 1135
 
 walled_center_improvements_begin = slot_center_has_messenger_post
-walled_center_improvements_end               = 136
+walled_center_improvements_end               = 1139
 
 slot_center_player_enterprise     				  = 137 #noted with the item produced
 slot_center_player_enterprise_production_order    = 138
