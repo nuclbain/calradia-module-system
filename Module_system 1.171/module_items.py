@@ -1916,8 +1916,6 @@ items = [
 ["mt_bascinet_c2", "Bascinet", [("helm4",0)], itp_merchandise|itp_type_head_armor, 0, 699, weight(1.75)|abundance(100)|head_armor(43)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate ],
 ["mt_bascinet_d", "Bascinet", [("helm30",0)], itp_merchandise|itp_type_head_armor, 0, 799, weight(2)|abundance(100)|head_armor(48)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate ],
 
-
-
 ["mt_armet_a", "Armet", [("helm19",0)], itp_merchandise|itp_type_head_armor, 0, 1199, weight(2.5)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["mt_armet_a2", "Armet with Decorations", [("helm20",0), ("helm20.1",0)], itp_merchandise|itp_type_head_armor, 0, 1199, weight(2.5)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 ["mt_armet_b", "Heavy Armet", [("helm5",0)], itp_merchandise|itp_type_head_armor, 0, 1199, weight(2.5)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
@@ -2140,6 +2138,31 @@ items = [
  
 ["mh_sword_a", "Horde Sabre", [("mongol_saber_a",0),("mongol_saber_a_scab", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_scimitar|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 159, weight(1.25)|difficulty(0)|spd_rtng(100) | weapon_length(90)|swing_damage(32 , cut),imodbits_sword_high ],
 
+["mkk_black_scale_a", "Bkacl Scale Armor", [("Ghulam_heavy_cavalryman_1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1599 , weight(20)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(18)|difficulty(9) ,imodbits_armor ],
+["mkk_black_scale_b", "Bkacl Scale Armor", [("Ghulam_heavy_cavalryman_2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1599 , weight(20)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(18)|difficulty(9) ,imodbits_armor ],
+["mkk_black_scale_c", "Bkacl Scale Armor", [("Ghulam_heavy_cavalryman_3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1599 , weight(20)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(18)|difficulty(9) ,imodbits_armor ],
+
+["mkk_robe_a", "Warrior Robe", [("arabian_light_armor_a",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,519 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(11)|difficulty(0) ,imodbits_armor ],
+["mkk_robe_b", "Warrior Robe", [("arabian_light_armor_b",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,519 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(11)|difficulty(0) ,imodbits_armor ],
+["mkk_robe_c", "Warrior Robe", [("arabian_light_armor_c",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,519 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(11)|difficulty(0) ,imodbits_armor ],
+["mkk_robe_d", "Warrior Robe", [("arabian_light_armor_d",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,519 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(11)|difficulty(0) ,imodbits_armor ],
+
+["mkk_midi_robe_a", "Warrior Mail with Robe", [("armor_archer_saracin_1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1199 , weight(17)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+["mkk_midi_robe_b", "Warrior Mail with Robe", [("armor_archer_saracin_2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1199 , weight(17)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+["mkk_midi_robe_c", "Warrior Mail with Robe", [("armor_archer_saracin_3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1199 , weight(17)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+["mkk_midi_robe_d", "Warrior Mail with Robe", [("armor_archer_saracin_4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1199 , weight(17)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+["mkk_midi_robe_e", "Warrior Mail with Robe", [("armor_archer_saracin_5",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1199 , weight(17)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+["mkk_midi_robe_f", "Warrior Mail with Robe", [("armor_archer_saracin_6",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1199 , weight(17)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+
+["mkk_scale_vest_a", "Scale Vest", [("heavy_armor_arabs_a",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1149 , weight(17)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+["mkk_scale_vest_b", "Scale Vest", [("heavy_armor_arabs_b",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1149 , weight(17)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+["mkk_scale_vest_c", "Scale Vest", [("heavy_armor_arabs_c_1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1149 , weight(17)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+["mkk_scale_vest_d", "Scale Vest", [("heavy_armor_arabs_d",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1149 , weight(17)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+["mkk_scale_vest_e", "Scale Vest", [("heavy_armor_arabs_e",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1149 , weight(17)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+["mkk_scale_vest_f", "Scale Vest", [("heavy_armor_arabs_f_1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1149 , weight(17)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+
+["mkk_scale_vest_alt_a", "Scale Vest with Pauldrons", [("heavy_armor_arabs_c",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1399 , weight(19)|abundance(100)|head_armor(0)|body_armor(49)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
+["mkk_scale_vest_alt_b", "Scale Vest with Pauldrons", [("heavy_armor_arabs_f",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1399 , weight(19)|abundance(100)|head_armor(0)|body_armor(49)|leg_armor(16)|difficulty(0) ,imodbits_armor ],
 
 # Sonyer OSP Items
 ["maa_shield_a", "Adid Footman Shield", [("shielea",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_kite_shield, 399, weight(2.5)|abundance(100)|hit_points(979)|body_armor(10)|spd_rtng(82)|shield_width(90),imodbits_shield ],
