@@ -655,42 +655,47 @@ troops = [
    [itm_ashwood_pike,itm_battle_fork,itm_battle_axe,itm_fighting_axe,itm_tab_shield_round_d,itm_tab_shield_round_e,itm_mail_hauberk,itm_heraldic_mail_with_tabard,itm_mail_chausses,itm_iron_greaves,itm_nordic_helmet,itm_nordic_helmet,itm_nordic_helmet,itm_spiked_helmet,itm_leather_gloves],
    def_attrib|level(24),wp(130),knows_athletics_3|knows_shield_2|knows_ironflesh_3,nord_face_middle_1, nord_face_older_2],
 
+  ["rhodok_peasant","Rhodok Peasant","Rhodok Peasants",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_5, [itm_pitch_fork, itm_tab_shield_pavise_a, itm_hatchet, itm_peasant_tunic_new, itm_arena_tunic_d, itm_arena_tunic_d_vest, itm_wrapping_boots, itm_felt_hat_b, itm_head_wrappings], def_attrib|level(4),wp(55),knows_common|knows_power_draw_2|knows_ironflesh_1,rhodok_face_younger_1, rhodok_face_old_2],
+  ["rhodok_milita", "Rhodok Militia", "Rhodok Militia", tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_5, [itm_pitch_fork, itm_tab_shield_pavise_a, itm_hatchet, itm_mace_1, itm_voulge_short, itm_scythe, itm_peasant_tunic_new, itm_arena_tunic_d_leather, itm_m_leather_boots_a, itm_arming_cap], def_attrib|level(8),wp(90),knows_common|knows_power_draw_2|knows_ironflesh_1,rhodok_face_younger_1, rhodok_face_old_2],
+  ["rhodok_hunter", "Rhodok Hunter", "Rhodok Hunters", tf_guarantee_all,0,0,fac_kingdom_5, [itm_fur_covered_shield, itm_hatchet, itm_mace_1, itm_falchion, itm_rawhide_coat_new_a, itm_rawhide_coat_leather_lamellar, itm_m_leather_boots_a, itm_pilgrim_hood, itm_hunting_crossbow, itm_bolts], def_attrib|level(8),wp(80)|wp_crossbow(100),knows_common|knows_power_draw_2|knows_ironflesh_1,rhodok_face_younger_1, rhodok_face_old_2],
+  ["rhodok_bear_hunter", "Rhodok Bear Hunter", "Rhodok Bear Hunters", tf_guarantee_all,0,0,fac_kingdom_5, [itm_fur_covered_shield, itm_one_handed_war_axe_a, itm_mace_2, itm_grosse_messer, itm_rawhide_coat_lamellar, itm_m_leather_boots_a, itm_pilgrim_hood, itm_hunting_crossbow, itm_bolts, itm_m_gloves_a], def_attrib|level(15),wp(110)|wp_crossbow(140),knows_common|knows_power_draw_2|knows_ironflesh_1,rhodok_face_younger_1, rhodok_face_old_2],
 
-  ["rhodok_tribesman","Rhodok Tribesman","Rhodok Tribesmen",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_5,
-   [itm_pitch_fork,itm_tab_shield_pavise_a,
-    itm_shirt,itm_coarse_tunic,itm_wrapping_boots,itm_nomad_boots,itm_head_wrappings,itm_straw_hat],
-   def_attrib|level(4),wp(55),knows_common|knows_power_draw_2|knows_ironflesh_1,rhodok_face_younger_1, rhodok_face_old_2],
-  ["rhodok_spearman","Rhodok Spearman","Rhodok Spearmen",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_5,
-   [itm_spear,itm_pike,itm_spear,itm_tab_shield_pavise_a,itm_falchion,
-    itm_felt_hat_b,itm_common_hood,itm_leather_armor,itm_arena_tunic_green,itm_wrapping_boots,itm_nomad_boots],
+  ["rhodok_tribesman","Rhodok Tribesman","Rhodok Tribesmen",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_5,[itm_pitch_fork,itm_voulge_short,itm_felt_hat_b, itm_headcloth, itm_head_wrappings, itm_arming_cap, itm_long_spiked_club, itm_tab_shield_pavise_a, itm_peasant_tunic_padded, itm_m_leather_boots_a, itm_m_gloves_a, itm_leather_gloves], def_attrib|level(4),wp(55),knows_common|knows_power_draw_2|knows_ironflesh_1,rhodok_face_younger_1, rhodok_face_old_2],
+
+  ["rhodok_levy","Rhodok Levy","Rhodok Levy",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_5, [itm_spear, itm_arming_cap, itm_mace_2, itm_mace_3, itm_mace_4, itm_tab_shield_pavise_b, itm_shirt_a_padded_new, itm_aketon_green, itm_m_onion_bascinet_a, itm_m_onion_bascinet_b, itm_m_onion_bascinet_c, itm_m_gloves_a, itm_leather_gloves, itm_m_hose_a, itm_m_hose_b, itm_m_hose_c], def_attrib|level(6),wp(60),knows_common|knows_power_draw_2|knows_ironflesh_1,rhodok_face_young_1, rhodok_face_old_2],
+  ["rhodok_foot_knight","Rhodok Foot Knight","Rhodok Foot Knights",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0, fac_kingdom_5, [itm_crusader_sword, itm_shield_kite_i, itm_shield_kite_k, itm_peasant_tunic_cuirass, itm_m_leather_boots_a, itm_m_gloves_a, itm_leather_gloves, itm_m_kattle_a], def_attrib|level(9),wp(80),knows_common|knows_ironflesh_2|knows_shield_1|knows_power_strike_2|knows_athletics_1,rhodok_face_young_1, rhodok_face_old_2],
+  ["rhodok_swordmaster","Rhodok Swordmaster","Rhodok Swordmasters",tf_guarantee_all,0,0, fac_kingdom_5, [itm_crusader_sword, itm_morningstar, itm_grosse_messer_b, itm_german_bastard_sword, itm_shield_kite_i, itm_shield_kite_k, itm_m_corrazina_a, itm_m_corrazina_b, itm_m_corrazina_c, itm_m_greaves_a, itm_m_greaves_b, itm_m_gauntlets_a, itm_m_gauntlets_b, itm_m_bascinet_a, itm_m_bascinet_b], def_attrib|level(17),wp(130),knows_common|knows_ironflesh_5|knows_shield_1|knows_power_strike_5|knows_athletics_1,rhodok_face_young_1, rhodok_face_old_2],
+  ["rhodok_brother_of_sword", "Brother of the Sword", "Brothers of the Sword", tf_guarantee_all,0,0,fac_kingdom_5, [itm_crusader_sword, itm_morningstar, itm_grosse_messer_b, itm_german_bastard_sword, itm_shield_kite_i, itm_shield_kite_k, itm_m_churburg_a, itm_m_churburg_b, itm_m_greaves_a, itm_m_greaves_b, itm_m_gauntlets_a, itm_m_gauntlets_b, itm_m_bascinet_a, itm_m_bascinet_b], def_attrib|level(25),wp(165),knows_common|knows_ironflesh_8|knows_shield_6|knows_power_strike_8|knows_athletics_5,rhodok_face_young_1, rhodok_face_old_2],
+  
+  ["rhodok_spearman","Rhodok Spearman","Rhodok Spearmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_5,
+   [itm_spear,itm_pike,itm_spear,itm_tab_shield_pavise_a,itm_falchion, itm_m_flat_top_a, itm_m_coif_alternate_c,
+    itm_peasant_tunic_lamellar, itm_m_leather_boots_a, itm_m_gloves_a, itm_leather_gloves, itm_m_pepperpot_a, itm_m_pepperpot_b],
    def_attrib|level(9),wp(80),knows_common|knows_ironflesh_2|knows_shield_1|knows_power_strike_2|knows_athletics_1,rhodok_face_young_1, rhodok_face_old_2],
+
+  ["rhodok_executioner","Rhodok Executioner","Rhodok Executioners",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield,0,0,fac_kingdom_5, [itm_war_axe, itm_plate_covered_round_shield, itm_military_sickle_a, itm_m_munitions_helm_a, itm_m_munitions_helm_b, itm_peasant_tunic_lamellar, itm_m_greaves_a, itm_m_gloves_a], def_attrib|level(19),wp(145),knows_common|knows_ironflesh_9|knows_shield_3|knows_power_strike_9|knows_athletics_3,rhodok_face_young_1, rhodok_face_old_2],
+  ["rhodok_law_itself","Rhodok Law Itself","Rhodok Laws Themselves",tf_guarantee_all,0,0,fac_kingdom_5, [itm_war_axe, itm_shield_heater_d, itm_morningstar, itm_m_tower_helm_a, itm_peasant_tunic_lamellar, itm_m_greaves_b, itm_m_gauntlets_b], def_attrib|level(27),wp(235),knows_common|knows_ironflesh_10|knows_shield_7|knows_power_strike_10|knows_athletics_7,rhodok_face_young_1, rhodok_face_old_2],
+
   ["rhodok_trained_spearman","Rhodok Trained Spearman","Rhodok Trained Spearmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield,0,0,fac_kingdom_5,
-   [itm_pike,itm_war_spear,itm_tab_shield_pavise_b,
-    itm_footman_helmet,itm_padded_coif,itm_aketon_green,itm_aketon_green,itm_ragged_outfit,itm_nomad_boots,itm_leather_boots],
+   [itm_guisarme, itm_side_sword, itm_grosse_messer,itm_tab_shield_pavise_b, itm_m_corrazina_a, itm_m_corrazina_b, itm_m_corrazina_c, itm_m_greaves_a, itm_m_gauntlets_a],
    def_attrib|level(14),wp_one_handed (105) | wp_two_handed (105) | wp_polearm (115) | wp_archery (105) | wp_crossbow (105) | wp_throwing (105),knows_common|knows_ironflesh_3|knows_shield_2|knows_power_strike_2|knows_athletics_2,rhodok_face_young_1, rhodok_face_older_2],
   ["rhodok_veteran_spearman","Rhodok Veteran Spearman","Rhodok Veteran Spearmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield,0,0,fac_kingdom_5,
-   [itm_ashwood_pike,itm_glaive,itm_tab_shield_pavise_c,
-    itm_kettle_hat,itm_mail_coif,itm_mail_with_tunic_green,itm_leather_boots,itm_splinted_leather_greaves,itm_leather_gloves],
+   [itm_english_bill, itm_guisarme, itm_italian_sword, itm_italian_falchion, itm_side_sword, itm_grosse_messer,itm_tab_shield_pavise_c, itm_m_churburg_a, itm_m_churburg_b, itm_m_tower_helm_a, itm_m_greaves_b, itm_m_gauntlets_b],
    def_attrib|level(19),wp_one_handed (115) | wp_two_handed (115) | wp_polearm (130) | wp_archery (115) | wp_crossbow (115) | wp_throwing (115),knows_common|knows_ironflesh_5|knows_shield_3|knows_power_strike_4|knows_athletics_3,rhodok_face_young_1, rhodok_face_older_2],
   ["rhodok_sergeant","Rhodok Sergeant","Rhodok Sergeants",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_gloves,0,0,fac_kingdom_5,
-   [itm_glaive,itm_military_hammer,itm_military_cleaver_c,itm_tab_shield_pavise_d,
-    itm_full_helm, itm_bascinet_3,itm_bascinet_2,itm_surcoat_over_mail,itm_surcoat_over_mail,itm_heraldic_mail_with_surcoat,itm_mail_chausses,itm_leather_gloves,itm_mail_mittens],
+   [itm_swiss_halberd, itm_italian_sword, itm_italian_falchion, itm_side_sword, itm_grosse_messer,itm_tab_shield_pavise_d, itm_m_churburg_c, itm_m_tower_helm_b, itm_m_greaves_b, itm_m_gauntlets_b],
    def_attrib|level(25),wp_one_handed (130) | wp_two_handed (115) | wp_polearm (155) | wp_archery (115) | wp_crossbow (115) | wp_throwing (115),knows_common|knows_ironflesh_6|knows_shield_5|knows_power_strike_5|knows_athletics_5,rhodok_face_middle_1, rhodok_face_older_2],
   ["rhodok_crossbowman","Rhodok Crossbowman","Rhodok Crossbowmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_ranged,0,0,fac_kingdom_5,
    [itm_sword_medieval_a,itm_falchion,itm_club_with_spike_head,itm_tab_shield_pavise_a,itm_crossbow,itm_bolts,
-    itm_arena_tunic_green,itm_felt_hat_b,itm_common_hood,itm_nomad_boots,itm_wrapping_boots],
+    itm_arena_tunic_d_leather,itm_m_coif_alternate_a, itm_m_coif_alternate_b, itm_m_coif_alternate_c, itm_m_leather_boots_a, itm_mt_leather_gloves_a],
    def_attrib|level(10),wp(85),knows_common|knows_ironflesh_2|knows_shield_1|knows_power_strike_1|knows_athletics_2,rhodok_face_young_1, rhodok_face_older_2],
   ["rhodok_trained_crossbowman","Rhodok Trained Crossbowman","Rhodok Trained Crossbowmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_ranged|tf_guarantee_shield,0,0,fac_kingdom_5,
-   [itm_sword_medieval_a,itm_sword_medieval_b_small,itm_club_with_spike_head,itm_tab_shield_pavise_a,itm_crossbow,itm_bolts,
-    itm_common_hood,itm_leather_armor,itm_arena_tunic_green,itm_nomad_boots],
+   [itm_sword_medieval_a,itm_sword_medieval_b_small,itm_club_with_spike_head,itm_tab_shield_pavise_a,itm_crossbow,itm_bolts, itm_arena_tunic_d_lamellar, itm_arena_tunic_d_lamellar_variant, itm_m_conical_helmet_a, itm_m_flat_top_a, itm_m_greaves_a, itm_m_gloves_a],
    def_attrib|level(15),wp_one_handed (90) | wp_two_handed (90) | wp_polearm (90) | wp_archery (90) | wp_crossbow (105) | wp_throwing (90),knows_common|knows_ironflesh_1|knows_shield_2|knows_power_strike_2|knows_athletics_3,rhodok_face_young_1, rhodok_face_older_2],
   ["rhodok_veteran_crossbowman","Rhodok Veteran Crossbowman","Rhodok Veteran Crossbowmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_ranged|tf_guarantee_shield,0,0,fac_kingdom_5,
-   [itm_sword_medieval_a,itm_sword_medieval_b_small,itm_fighting_pick,itm_club_with_spike_head,itm_tab_shield_pavise_b,itm_tab_shield_pavise_c,itm_heavy_crossbow,itm_bolts,
-    itm_leather_cap,itm_felt_hat_b,itm_aketon_green,itm_leather_boots],
+   [itm_sword_medieval_a,itm_sword_medieval_b_small,itm_fighting_pick,itm_club_with_spike_head,itm_tab_shield_pavise_b,itm_tab_shield_pavise_c,itm_heavy_crossbow,itm_bolts, itm_arena_tunic_d_lamellar_variant, itm_m_pepperpot_c, itm_m_greaves_a, itm_m_gauntlets_a],
    def_attrib|level(20),wp_one_handed (100) | wp_two_handed (100) | wp_polearm (100) | wp_archery (100) | wp_crossbow (120) | wp_throwing (100),knows_common|knows_ironflesh_2|knows_shield_3|knows_power_strike_3|knows_athletics_4,rhodok_face_middle_1, rhodok_face_older_2],
   ["rhodok_sharpshooter","Rhodok Sharpshooter","Rhodok Sharpshooters",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_ranged|tf_guarantee_shield,0,0,fac_kingdom_5,
-   [itm_sword_medieval_b,itm_military_pick,itm_military_hammer,itm_tab_shield_pavise_c,itm_sniper_crossbow,itm_steel_bolts,
-    itm_kettle_hat,itm_mail_coif,itm_mail_with_tunic_green,itm_leather_boots,itm_splinted_leather_greaves],
+   [itm_sword_medieval_b,itm_military_pick,itm_military_hammer,itm_tab_shield_pavise_c,itm_sniper_crossbow,itm_steel_bolts, itm_arena_tunic_d_mail, itm_arena_tunic_d_haubergeon, itm_m_pepperpot_c, itm_m_greaves_b, itm_m_gauntlets_b],
    str_14 | agi_5 | int_4 | cha_4|level(25),wp_one_handed (110) | wp_two_handed (110) | wp_polearm (110) | wp_archery (100) | wp_crossbow (140) | wp_throwing (100),knows_common|knows_ironflesh_3|knows_shield_4|knows_power_strike_4|knows_athletics_6,rhodok_face_middle_1, rhodok_face_older_2],
   ["rhodok_messenger","Rhodok Messenger","Rhodok Messengers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_kingdom_5,
    [itm_sword_medieval_b,itm_leather_jerkin,itm_leather_boots,itm_courser,itm_leather_gloves,itm_short_bow,itm_arrows],
@@ -2899,8 +2904,16 @@ upgrade(troops,"nord_veteran","nord_champion")
 upgrade(troops,"nord_huntsman","nord_archer")
 upgrade(troops,"nord_archer","nord_veteran_archer")
 
-upgrade2(troops,"rhodok_tribesman","rhodok_spearman","rhodok_crossbowman")
-upgrade(troops,"rhodok_spearman","rhodok_trained_spearman")
+upgrade2(troops,"rhodok_peasant","rhodok_milita","rhodok_hunter")
+upgrade(troops,"rhodok_hunter","rhodok_bear_hunter")
+
+upgrade2(troops,"rhodok_tribesman","rhodok_levy","rhodok_foot_knight")
+upgrade(troops,"rhodok_foot_knight","rhodok_swordmaster")
+upgrade(troops,"rhodok_swordmaster","rhodok_brother_of_sword")
+
+upgrade2(troops,"rhodok_levy","rhodok_spearman","rhodok_crossbowman")
+upgrade2(troops,"rhodok_spearman","rhodok_trained_spearman", "rhodok_executioner")
+upgrade(troops,"rhodok_executioner","rhodok_law_itself")
 upgrade(troops,"rhodok_trained_spearman","rhodok_veteran_spearman")
 upgrade(troops,"rhodok_veteran_spearman","rhodok_sergeant")
 

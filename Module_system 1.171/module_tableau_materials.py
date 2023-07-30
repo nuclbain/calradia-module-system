@@ -1190,7 +1190,7 @@ tableaus = [
   (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_norman", pos1, 0, 0),
   (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
   ]),
-    ("pavise_shield_3", 0, "sample_shield_matte", 512, 512, 0, 0, 0, 0,
+    ("pavise_shield_3", 0, "sample_tableau_shield_pavise_3", 512, 512, 0, 0, 0, 0,
    [
        (store_script_param, ":banner_mesh", 1),
 
