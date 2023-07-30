@@ -96,7 +96,7 @@ dialogs	= [
 			(neg|faction_slot_eq, "$g_talk_troop_faction", slot_faction_freelancer_troop, 0),
 			(faction_get_slot, reg1, "$g_talk_troop_faction", slot_faction_freelancer_troop),
 		(else_try),
-			(faction_get_slot, reg1, "$g_talk_troop_faction", slot_faction_tier_1_troop),
+			(faction_get_slot, reg1, "$g_talk_troop_faction", slot_faction_tier_2_troop),
 		(try_end),
 		(str_store_troop_name, s1, reg1),
 		(store_character_level, reg1, reg1),

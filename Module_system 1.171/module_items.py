@@ -1535,7 +1535,7 @@ items = [
 # shirt_a_leather_jerkin, shirt_a_leather_jerkin.1
 ["shirt_a_leather_jerkin", "Leather Jerkin", [("shirt_a_leather_jerkin",0),("shirt_a_leather_jerkin.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(10)|leg_armor(0)|difficulty(0),imodbits_cloth],
 # shirt_a_padded_new, shirt_a_padded_new.1
-["shirt_a_padded_new", "Padded Shirt", [("shirt_a_padded_new",0),("shirt_a_padded_new.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(12)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["shirt_a_padded_new", "Padded Shirt", [("shirt_a_padded_new",0),("shirt_a_padded_new.1",0)], itp_merchandise|itp_type_body_armor, 0, 401,abundance(100)|head_armor(0)|body_armor(23)|leg_armor(7)|difficulty(0),imodbits_cloth],
 # shirt_a_byrnie, shirt_a_byrnie.1, shirt_a_byrnie.2
 ["shirt_a_byrnie", "Byrnie", [("shirt_a_byrnie",0),("shirt_a_byrnie.1",0),("shirt_a_byrnie.2",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(14)|leg_armor(0)|difficulty(0),imodbits_cloth],
 # shirt_a_lamellar_new, shirt_a_lamellar_new.1
@@ -1709,39 +1709,39 @@ items = [
 # arena_tunic_d_nomad, arena_tunic_d_nomad.1
 ["arena_tunic_d_nomad", "Arena Tunic with Nomad", [("arena_tunic_d_nomad",0),("arena_tunic_d_nomad.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(1)|body_armor(20)|leg_armor(1)|difficulty(0),imodbits_cloth],
 # arena_tunic_d_leather, arena_tunic_d_leather.1
-["arena_tunic_d_leather", "Arena Tunic with Leather", [("arena_tunic_d_leather",0),("arena_tunic_d_leather.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(20)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["arena_tunic_d_leather", "Arena Tunic with Leather", [("arena_tunic_d_leather",0),("arena_tunic_d_leather.1",0)], itp_merchandise|itp_type_body_armor, 0, 399,abundance(100)|head_armor(0)|body_armor(24)|leg_armor(6)|difficulty(0),imodbits_cloth],
 # arena_tunic_d_padded, arena_tunic_d_padded.1
 ["arena_tunic_d_padded", "Arena Tunic with Padded", [("arena_tunic_d_padded",0),("arena_tunic_d_padded.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(20)|leg_armor(0)|difficulty(0),imodbits_cloth],
 # arena_tunic_d_cuirass, arena_tunic_d_cuirass.1
 ["arena_tunic_d_cuirass", "Arena Tunic with Cuirass", [("arena_tunic_d_cuirass",0),("arena_tunic_d_cuirass.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(20)|leg_armor(0)|difficulty(0),imodbits_cloth],
 # arena_tunic_d_haubergeon, arena_tunic_d_haubergeon.1
-["arena_tunic_d_haubergeon", "Arena Tunic with Haubergeon", [("arena_tunic_d_haubergeon",0),("arena_tunic_d_haubergeon.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(20)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["arena_tunic_d_haubergeon", "Arena Tunic with Haubergeon", [("arena_tunic_d_haubergeon",0),("arena_tunic_d_haubergeon.1",0)], itp_merchandise|itp_type_body_armor, 0, 599,abundance(100)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(0),imodbits_armor],
 # arena_tunic_d_lamellar, arena_tunic_d_lamellar.1
-["arena_tunic_d_lamellar", "Arena Tunic with Lamellar", [("arena_tunic_d_lamellar",0),("arena_tunic_d_lamellar.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(20)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["arena_tunic_d_lamellar", "Arena Tunic with Lamellar", [("arena_tunic_d_lamellar",0),("arena_tunic_d_lamellar.1",0)], itp_merchandise|itp_type_body_armor, 0, 499,abundance(100)|head_armor(0)|body_armor(37)|leg_armor(15)|difficulty(0),imodbits_armor],
 # arena_tunic_d_lamellar_variant, arena_tunic_d_lamellar_variant.1
-["arena_tunic_d_lamellar_variant", "Arena Tunic with Lamellar Variant", [("arena_tunic_d_lamellar_variant",0),("arena_tunic_d_lamellar_variant.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(20)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["arena_tunic_d_lamellar_variant", "Arena Tunic with Lamellar Variant", [("arena_tunic_d_lamellar_variant",0),("arena_tunic_d_lamellar_variant.1",0)], itp_merchandise|itp_type_body_armor, 0, 459,abundance(100)|head_armor(0)|body_armor(34)|leg_armor(15)|difficulty(0),imodbits_armor],
 # arena_tunic_d_mail, arena_tunic_d_mail.1
-["arena_tunic_d_mail", "Arena Tunic with Mail", [("arena_tunic_d_mail",0),("arena_tunic_d_mail.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(20)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["arena_tunic_d_mail", "Arena Tunic with Mail", [("arena_tunic_d_mail",0),("arena_tunic_d_mail.1",0)], itp_merchandise|itp_type_body_armor, 0, 699,abundance(100)|head_armor(0)|body_armor(39)|leg_armor(16)|difficulty(0),imodbits_armor],
 # peasant_tunic_new
-["peasant_tunic_new", "Peasant Tunic", [("peasant_tunic_new",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(1)|body_armor(10)|leg_armor(1)|difficulty(0),imodbits_cloth],
+["peasant_tunic_new", "Peasant Tunic", [("peasant_tunic_new",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(6)|leg_armor(3)|difficulty(0),imodbits_cloth],
 # peasant_tunic_padded, peasant_tunic_padded.1
 ["peasant_tunic_padded", "Peasant Tunic with Padded", [("peasant_tunic_padded",0),("peasant_tunic_padded.1",0)], itp_merchandise|itp_type_body_armor, 0, 439,abundance(100)|head_armor(0)|body_armor(25)|leg_armor(6)|difficulty(0),imodbits_cloth],
 # peasant_tunic_cuirass, peasant_tunic_cuirass.1, peasant_tunic_cuirass.2
-["peasant_tunic_cuirass", "Peasant Tunic with Cuirass", [("peasant_tunic_cuirass",0),("peasant_tunic_cuirass.1",0),("peasant_tunic_cuirass.2",0)], itp_merchandise|itp_type_body_armor, 0, 499,abundance(100)|head_armor(0)|body_armor(25)|leg_armor(6)|difficulty(0),imodbits_armor],
+["peasant_tunic_cuirass", "Peasant Tunic with Cuirass", [("peasant_tunic_cuirass",0),("peasant_tunic_cuirass.1",0),("peasant_tunic_cuirass.2",0)], itp_merchandise|itp_type_body_armor, 0, 499,abundance(100)|head_armor(0)|body_armor(29)|leg_armor(6)|difficulty(0),imodbits_armor],
 # peasant_tunic_lamellar, peasant_tunic_lamellar.1, peasant_tunic_lamellar.2, peasant_tunic_lamellar.3
-["peasant_tunic_lamellar", "Peasant Tunic with Lamellar", [("peasant_tunic_lamellar",0),("peasant_tunic_lamellar.1",0),("peasant_tunic_lamellar.2",0),("peasant_tunic_lamellar.3",0)], itp_merchandise|itp_type_body_armor, 0, 599,abundance(100)|head_armor(0)|body_armor(29)|leg_armor(7)|difficulty(0),imodbits_armor],
+["peasant_tunic_lamellar", "Peasant Tunic with Lamellar", [("peasant_tunic_lamellar",0),("peasant_tunic_lamellar.1",0),("peasant_tunic_lamellar.2",0),("peasant_tunic_lamellar.3",0)], itp_merchandise|itp_type_body_armor, 0, 699,abundance(100)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(0),imodbits_armor],
 # rawhide_coat_new_a
-["rawhide_coat_new_a", "Rawhide Coat", [("rawhide_coat_new_a",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(2)|body_armor(15)|leg_armor(2)|difficulty(0),imodbits_cloth],
+["rawhide_coat_new_a", "Rawhide Coat", [("rawhide_coat_new_a",0)], itp_merchandise|itp_type_body_armor, 0, 199,abundance(100)|head_armor(0)|body_armor(15)|leg_armor(8)|difficulty(0),imodbits_cloth],
 # rawhide_coat_new
-["rawhide_coat_new", "Rawhide Coat", [("rawhide_coat_new",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(2)|body_armor(15)|leg_armor(2)|difficulty(0),imodbits_cloth],
+["rawhide_coat_new", "Rawhide Coat", [("rawhide_coat_new",0)], itp_merchandise|itp_type_body_armor, 0, 249,abundance(100)|head_armor(0)|body_armor(15)|leg_armor(12)|difficulty(0),imodbits_cloth],
 # rawhide_coat_leather, rawhide_coat_leather.1
-["rawhide_coat_leather", "Rawhide Coat with Leather", [("rawhide_coat_leather",0),("rawhide_coat_leather.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(2)|body_armor(15)|leg_armor(2)|difficulty(0),imodbits_cloth],
+["rawhide_coat_leather", "Rawhide Coat with Leather", [("rawhide_coat_leather",0),("rawhide_coat_leather.1",0)], itp_merchandise|itp_type_body_armor, 0, 399,abundance(100)|head_armor(0)|body_armor(21)|leg_armor(11)|difficulty(0),imodbits_cloth],
 # rawhide_coat_leather_lamellar, rawhide_coat_leather_lamellar.1
-["rawhide_coat_leather_lamellar", "Rawhide Coat with Leather Lamellar", [("rawhide_coat_leather_lamellar",0),("rawhide_coat_leather_lamellar.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(2)|body_armor(15)|leg_armor(2)|difficulty(0),imodbits_cloth],
+["rawhide_coat_leather_lamellar", "Rawhide Coat with Leather Lamellar", [("rawhide_coat_leather_lamellar",0),("rawhide_coat_leather_lamellar.1",0)], itp_merchandise|itp_type_body_armor, 0, 499,abundance(100)|head_armor(0)|body_armor(32)|leg_armor(15)|difficulty(0),imodbits_cloth],
 # rawhide_coat_mail, rawhide_coat_mail.1, rawhide_coat_mail.2
-["rawhide_coat_mail", "Rawhide Coat with Mail", [("rawhide_coat_mail",0),("rawhide_coat_mail.1",0),("rawhide_coat_mail.2",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(2)|body_armor(15)|leg_armor(2)|difficulty(0),imodbits_cloth],
+["rawhide_coat_mail", "Rawhide Coat with Mail", [("rawhide_coat_mail",0),("rawhide_coat_mail.1",0),("rawhide_coat_mail.2",0)], itp_merchandise|itp_type_body_armor, 0, 599,abundance(100)|head_armor(0)|body_armor(40)|leg_armor(19)|difficulty(0),imodbits_cloth],
 # rawhide_coat_lamellar, rawhide_coat_lamellar.1
-["rawhide_coat_lamellar", "Rawhide Coat with Lamellar", [("rawhide_coat_lamellar",0),("rawhide_coat_lamellar.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(2)|body_armor(15)|leg_armor(2)|difficulty(0),imodbits_cloth],
+["rawhide_coat_lamellar", "Rawhide Coat with Lamellar", [("rawhide_coat_lamellar",0),("rawhide_coat_lamellar.1",0)], itp_merchandise|itp_type_body_armor, 0, 599,abundance(100)|head_armor(0)|body_armor(36)|leg_armor(15)|difficulty(0),imodbits_cloth],
 # khergit_vest_a_new, khergit_vest_a_new.1
 ["khergit_vest_a_new", "Khergit Vest", [("khergit_vest_a_new",0),("khergit_vest_a_new.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(3)|body_armor(20)|leg_armor(3)|difficulty(0),imodbits_cloth],
 # khergit_vest_a_lamellar
