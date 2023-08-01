@@ -569,31 +569,29 @@ troops = [
    [itm_ashwood_pike,itm_battle_fork,itm_bardiche,itm_battle_axe,itm_fighting_axe,itm_tab_shield_kite_d,itm_studded_leather_coat,itm_lamellar_armor,itm_mail_chausses,itm_iron_greaves,itm_nordic_helmet,itm_nordic_helmet,itm_nordic_helmet,itm_spiked_helmet,itm_leather_gloves],
    def_attrib|level(24),wp(130),knows_athletics_3|knows_shield_2|knows_ironflesh_3,vaegir_face_middle_1, vaegir_face_older_2],
 
-
   ["khergit_tribesman","Khergit Tribesman","Khergit Tribesmen",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_3,
    [itm_arrows,itm_club,itm_spear,itm_hunting_bow,
-    itm_steppe_cap,itm_nomad_cap_b,itm_leather_vest,itm_steppe_armor,itm_nomad_boots,itm_khergit_leather_boots],
+    itm_nomad_cap_b,itm_arena_tunic_d_nomad,itm_nomad_vest_new_a,itm_wrapping_boots],
    def_attrib|level(5),wp(50),knows_common|knows_riding_3|knows_power_draw_2|knows_horse_archery_2,khergit_face_younger_1, khergit_face_old_2],
-  ["khergit_skirmisher","Khergit Skirmisher","Khergit Skirmishers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_kingdom_3,
-   [itm_arrows,itm_sword_khergit_1,itm_winged_mace,itm_spear,itm_nomad_bow,itm_javelin,itm_tab_shield_small_round_a,
-    itm_steppe_cap,itm_nomad_cap_b,itm_leather_steppe_cap_a,itm_khergit_armor,itm_steppe_armor,itm_leather_vest,itm_nomad_boots,itm_khergit_leather_boots,itm_steppe_horse,itm_saddle_horse],
-   def_attrib|level(10),wp_one_handed (60) | wp_two_handed (60) | wp_polearm (60) | wp_archery (80) | wp_crossbow (60) | wp_throwing (80),knows_common|knows_riding_4|knows_power_draw_3|knows_power_throw_1|knows_horse_archery_3,khergit_face_younger_1, khergit_face_old_2],
-  ["khergit_horseman","Khergit Horseman","Khergit Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_ranged|tf_guarantee_horse,0,0,fac_kingdom_3,
-  [itm_arrows,itm_light_lance,itm_nomad_bow,itm_sword_khergit_2,itm_tab_shield_small_round_a,itm_tab_shield_small_round_b,itm_spear,
-   itm_leather_steppe_cap_a, itm_leather_steppe_cap_b,itm_nomad_robe,itm_nomad_vest,itm_khergit_leather_boots,itm_hide_boots,itm_spiked_helmet,itm_nomad_cap,itm_steppe_horse,itm_hunter],
-   def_attrib|level(14),wp(80),knows_common|knows_riding_5|knows_power_draw_4|knows_ironflesh_2|knows_power_throw_2|knows_horse_archery_3|knows_shield_1,khergit_face_young_1, khergit_face_older_2],
-  ["khergit_horse_archer","Khergit Horse Archer","Khergit Horse Archers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_ranged|tf_guarantee_horse,0,0,fac_kingdom_3,
+
+  # hergit warrior -> khergit sworsman -> khergit veteran -> khergit champion
+  ["khergit_warrior","Khergit Warrior","Khergit Warriors",tf_guarantee_all,0,0,fac_kingdom_3, [itm_m_lancer_helmet_light_a, itm_m_lancer_helmet_light_b,itm_m_lamellar_leather_a,itm_m_leather_boots_a, itm_tab_shield_round_a, itm_sword_khergit_1], def_attrib|level(10),wp_one_handed (80) | wp_two_handed (60) | wp_polearm (60) | wp_archery (60) | wp_crossbow (60) | wp_throwing (60),knows_shield_2|knows_ironflesh_4|knows_power_strike_4,khergit_face_younger_1, khergit_face_old_2],
+  ["khergit_swordsman","Khergit Swordsman","Khergit Swordsmen",tf_guarantee_all,0,0,fac_kingdom_3, [itm_m_lancer_helmet_midi_a, itm_m_lancer_helmet_midi_b, itm_m_lancer_helmet_midi_c, itm_m_lancer_helmet_midi_d, itm_m_lancer_helmet_midi_e, itm_m_lancer_helmet_midi_f, itm_m_lamellar_leather_b,itm_m_leather_boots_a, itm_tab_shield_small_round_a , itm_sword_khergit_2, itm_leather_gloves], def_attrib|level(15),wp_one_handed (120) | wp_two_handed (60) | wp_polearm (60) | wp_archery (60) | wp_crossbow (60) | wp_throwing (60),knows_shield_3|knows_ironflesh_5|knows_power_strike_5,khergit_face_younger_1, khergit_face_old_2],
+  ["khergit_veteran","Khergit Veteran","Khergit Veterans",tf_guarantee_all,0,0,fac_kingdom_3, [itm_m_lancer_helmet_heavy_a,itm_nomad_vest_lamellar,itm_m_greaves_b, itm_tab_shield_small_round_b, itm_sword_khergit_3, itm_m_gauntlets_b], def_attrib|level(20),wp_one_handed (160) | wp_two_handed (60) | wp_polearm (60) | wp_archery (60) | wp_crossbow (60) | wp_throwing (60),knows_shield_4|knows_ironflesh_6|knows_power_strike_6,khergit_face_younger_1, khergit_face_old_2],
+  ["khergit_champion","Khergit Champion","Khergit Champions",tf_guarantee_all,0,0,fac_kingdom_3, [itm_m_lancer_helmet_heavy_a,itm_m_lamellar_champion_a,itm_m_greaves_a, itm_strange_sword,itm_m_gauntlets_a, itm_m_buckler_a, itm_m_buckler_b], def_attrib|str_20|agi_25|level(25),wp_one_handed (250) | wp_two_handed (250) | wp_polearm (60) | wp_archery (60) | wp_crossbow (60) | wp_throwing (60),knows_shield_5|knows_ironflesh_9|knows_athletics_8|knows_power_strike_10,khergit_face_younger_1, khergit_face_old_2],
+
+  ["khergit_skirmisher","Khergit Skirmisher","Khergit Skirmishers",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_3, [itm_arrows,itm_sword_khergit_1,itm_winged_mace,itm_spear,itm_nomad_bow,itm_javelin,itm_tab_shield_small_round_a,itm_m_lancer_helmet_light_a,itm_m_lancer_helmet_light_b,itm_m_lamellar_armor_west_a,itm_m_lamellar_armor_a,itm_m_leather_boots_a, itm_leather_gloves, itm_m_gloves_a,itm_steppe_horse,itm_saddle_horse], def_attrib|level(10),wp_one_handed (60) | wp_two_handed (60) | wp_polearm (60) | wp_archery (80) | wp_crossbow (60) | wp_throwing (80),knows_common|knows_riding_4|knows_power_draw_3|knows_power_throw_1|knows_horse_archery_3,khergit_face_younger_1, khergit_face_old_2],
+  ["khergit_horseman","Khergit Horseman","Khergit Horsemen",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_3, [itm_arrows,itm_light_lance,itm_nomad_bow,itm_sword_khergit_2,itm_tab_shield_small_round_a,itm_tab_shield_small_round_b,itm_spear, itm_m_lancer_helmet_midi_a, itm_m_lancer_helmet_midi_b, itm_m_lancer_helmet_midi_c, itm_m_lancer_helmet_midi_d, itm_m_lancer_helmet_midi_e, itm_m_lancer_helmet_midi_f,itm_m_lamellar_armor_west_b,itm_m_lamellar_armor_b,itm_m_leather_boots_a, itm_leather_gloves, itm_m_gloves_a,itm_steppe_horse,itm_hunter], def_attrib|level(14),wp(80),knows_common|knows_riding_5|knows_power_draw_4|knows_ironflesh_2|knows_power_throw_2|knows_horse_archery_3|knows_shield_1,khergit_face_young_1, khergit_face_older_2],
+  ["khergit_horse_archer","Khergit Horse Archer","Khergit Horse Archers",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_3,
    [itm_arrows,itm_sword_khergit_2,itm_winged_mace,itm_spear,itm_khergit_bow,itm_tab_shield_small_round_a,itm_tab_shield_small_round_a,itm_tab_shield_small_round_b,itm_bodkin_arrows,itm_arrows,itm_javelin,
-    itm_leather_steppe_cap_b,itm_nomad_cap_b,itm_tribal_warrior_outfit,itm_nomad_robe,itm_khergit_leather_boots,itm_tab_shield_small_round_a,itm_tab_shield_small_round_b,itm_steppe_horse],
+    itm_m_lancer_helmet_midi_a, itm_m_lancer_helmet_midi_b, itm_m_lancer_helmet_midi_c, itm_m_lancer_helmet_midi_d, itm_m_lancer_helmet_midi_e, itm_m_lancer_helmet_midi_f,itm_m_lancer_armor_a_long,itm_m_lancer_armor_b_long,itm_m_leather_boots_a, itm_lamellar_gauntlets, itm_scale_gauntlets, itm_leather_gloves, itm_m_gloves_a,itm_tab_shield_small_round_a,itm_tab_shield_small_round_b,itm_steppe_horse],
    def_attrib|level(14),wp_one_handed (80) | wp_two_handed (80) | wp_polearm (80) | wp_archery (110) | wp_crossbow (80) | wp_throwing (110),knows_riding_5|knows_power_draw_3|knows_ironflesh_1|knows_horse_archery_4|knows_power_throw_3,khergit_face_young_1, khergit_face_older_2],
   ["khergit_veteran_horse_archer","Khergit Veteran Horse Archer","Khergit Veteran Horse Archers",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_3,
-   [itm_sword_khergit_3,itm_winged_mace,itm_spear,itm_khergit_bow,itm_khergit_bow,itm_khergit_bow
-   ,itm_nomad_bow,itm_arrows,itm_khergit_arrows,itm_khergit_arrows,itm_khergit_arrows,itm_javelin,itm_tab_shield_small_round_b,itm_tab_shield_small_round_c,
-    itm_khergit_cavalry_helmet,itm_khergit_cavalry_helmet,itm_leather_warrior_cap,itm_lamellar_vest_khergit,itm_tribal_warrior_outfit,itm_khergit_leather_boots,itm_leather_gloves,itm_steppe_horse,itm_courser],
+   [itm_m_dao_a, itm_m_dao_b,itm_winged_mace,itm_spear ,itm_m_rider_arrows,itm_m_rider_bow_a,itm_javelin,itm_tab_shield_small_round_b,itm_tab_shield_small_round_c,
+    itm_m_lancer_helmet_midi_a, itm_m_lancer_helmet_midi_b, itm_m_lancer_helmet_midi_c, itm_m_lancer_helmet_midi_d, itm_m_lancer_helmet_midi_e, itm_m_lancer_helmet_midi_f,itm_m_lancer_armor_elite_a_long,itm_m_lancer_armor_elite_b_long,itm_m_leather_boots_a, itm_lamellar_gauntlets, itm_scale_gauntlets, itm_leather_gloves, itm_m_gloves_a,itm_steppe_horse,itm_courser],
    def_attrib|level(21),wp_one_handed (90) | wp_two_handed (90) | wp_polearm (90) | wp_archery (130) | wp_crossbow (90) | wp_throwing (130),knows_riding_7|knows_power_draw_5|knows_ironflesh_3|knows_horse_archery_7|knows_power_throw_4|knows_shield_1,khergit_face_middle_1, khergit_face_older_2],
   ["khergit_lancer","Khergit Lancer","Khergit Lancers",tf_mounted|tf_guarantee_all_wo_ranged,0,0,fac_kingdom_3,
-   [itm_sword_khergit_4,itm_spiked_mace,itm_one_handed_war_axe_b,itm_hafted_blade_a,itm_hafted_blade_b,itm_heavy_lance,itm_lance,
-    itm_khergit_guard_helmet,itm_khergit_cavalry_helmet,itm_khergit_war_helmet,itm_lamellar_vest_khergit,itm_lamellar_armor,itm_khergit_leather_boots,itm_splinted_leather_greaves,itm_leather_gloves,itm_scale_gauntlets,itm_tab_shield_small_round_b,itm_tab_shield_small_round_c,itm_courser,itm_warhorse_steppe,itm_warhorse_steppe,itm_warhorse_steppe],
+   [itm_sword_khergit_4,itm_spiked_mace,itm_m_impaler_b,itm_m_impaler_a, itm_m_lancer_helmet_midi_a, itm_m_lancer_helmet_midi_b, itm_m_lancer_helmet_midi_c, itm_m_lancer_helmet_midi_d, itm_m_lancer_helmet_midi_e, itm_m_lancer_helmet_midi_f,itm_m_lancer_armor_a,itm_m_lancer_armor_b,itm_m_lancer_armor_c,itm_m_lancer_armor_d,itm_m_lancer_armor_e,itm_m_lancer_armor_f,itm_m_lancer_armor_g,itm_m_leather_boots_a, itm_lamellar_gauntlets, itm_scale_gauntlets, itm_leather_gloves, itm_m_gloves_a,itm_tab_shield_small_round_b,itm_tab_shield_small_round_c,itm_courser,itm_warhorse_steppe,itm_warhorse_steppe,itm_warhorse_steppe],
    def_attrib|level(23),wp_one_handed (110) | wp_two_handed (110) | wp_polearm (150) | wp_archery (110) | wp_crossbow (110) | wp_throwing (110),knows_riding_7|knows_power_strike_4|knows_power_draw_4|knows_power_throw_2|knows_ironflesh_4|knows_horse_archery_1|knows_shield_2,khergit_face_middle_1, khergit_face_older_2],
   ["khergit_messenger","Khergit Messenger","Khergit Messengers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_kingdom_3,
    [itm_sword_khergit_2,itm_leather_jerkin,itm_leather_boots,itm_courser,itm_leather_gloves,itm_short_bow,itm_arrows],
@@ -2891,7 +2889,12 @@ upgrade(troops,"vaegir_infantry","vaegir_guard")
 
 upgrade(troops,"vaegir_horseman","vaegir_knight")
 
-upgrade(troops,"khergit_tribesman","khergit_skirmisher")
+upgrade2(troops,"khergit_tribesman","khergit_skirmisher","khergit_warrior")
+
+upgrade(troops,"khergit_warrior","khergit_swordsman")
+upgrade(troops,"khergit_swordsman","khergit_veteran")
+upgrade(troops,"khergit_veteran","khergit_champion")
+
 upgrade(troops,"khergit_skirmisher","khergit_horseman")
 upgrade2(troops,"khergit_horseman","khergit_lancer","khergit_horse_archer")
 upgrade(troops,"khergit_horse_archer","khergit_veteran_horse_archer")
