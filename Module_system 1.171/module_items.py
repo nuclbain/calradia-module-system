@@ -1806,7 +1806,7 @@ items = [
 # rawhide_coat_lamellar, rawhide_coat_lamellar.1
 ["rawhide_coat_lamellar", "Rawhide Coat with Lamellar", [("rawhide_coat_lamellar",0),("rawhide_coat_lamellar.1",0)], itp_merchandise|itp_type_body_armor, 0, 599,abundance(100)|head_armor(0)|body_armor(36)|leg_armor(15)|difficulty(0),imodbits_cloth],
 # khergit_vest_a_new, khergit_vest_a_new.1
-["khergit_vest_a_new", "Khergit Vest", [("khergit_vest_a_new",0),("khergit_vest_a_new.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(3)|body_armor(20)|leg_armor(3)|difficulty(0),imodbits_cloth],
+["khergit_vest_a_new", "Khergit Vest", [("khergit_vest_a_new",0),("khergit_vest_a_new.1",0)], itp_merchandise|itp_type_body_armor, 0, 269,abundance(100)|head_armor(0)|body_armor(18)|leg_armor(8)|difficulty(0),imodbits_cloth],
 # khergit_vest_a_lamellar
 ["khergit_vest_a_lamellar", "Khergit Vest with Lamellar", [("khergit_vest_a_lamellar",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(3)|body_armor(20)|leg_armor(3)|difficulty(0),imodbits_cloth],
 # khergit_vest_a_mail, khergit_vest_a_mail.1

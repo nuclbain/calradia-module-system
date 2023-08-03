@@ -569,6 +569,10 @@ troops = [
    [itm_ashwood_pike,itm_battle_fork,itm_bardiche,itm_battle_axe,itm_fighting_axe,itm_tab_shield_kite_d,itm_studded_leather_coat,itm_lamellar_armor,itm_mail_chausses,itm_iron_greaves,itm_nordic_helmet,itm_nordic_helmet,itm_nordic_helmet,itm_spiked_helmet,itm_leather_gloves],
    def_attrib|level(24),wp(130),knows_athletics_3|knows_shield_2|knows_ironflesh_3,vaegir_face_middle_1, vaegir_face_older_2],
 
+  ["khergit_slave","Khergit Slave","Khergit Slaves",tf_guarantee_horse,0,0,fac_kingdom_3,[itm_club, itm_wooden_stick, itm_cudgel,itm_stones, itm_wrapping_boots,itm_shirt,itm_burlap_tunic,itm_mt_wrapping_a, itm_mt_wrapping_a2], def_attrib|level(3),wp(30),knows_common,vaegir_face_middle_1, vaegir_face_older_2],
+  ["khergit_frontliner","Khergit Frontliner","Khergit Frontliners",tf_guarantee_all|tf_guarantee_armor,0,0,fac_kingdom_3, [itm_mace_1, itm_mace_2, itm_mace_3, itm_mace_4, itm_tab_shield_heater_a, itm_shield_kite_g, itm_shield_kite_i, itm_boar_spear,itm_voulge_short,itm_leather_vest,itm_wrapping_boots, itm_m_leather_boots_a,itm_m_swadia_milita_boots_a,itm_m_swadia_milita_boots_b, itm_m_coif_alternate_c], def_attrib|level(8),wp(80),knows_common|knows_ironflesh_3|knows_power_strike_2|knows_athletics_2,vaegir_face_middle_1, vaegir_face_older_2],
+  ["khergit_suicidal","Khergit Suicidal","Khergit Suicidals",tf_guarantee_all|tf_guarantee_armor,0,0,fac_kingdom_3, [itm_mace_1, itm_mace_2, itm_mace_3, itm_mace_4, itm_practice_board_shield, itm_tab_shield_heater_a, itm_shield_kite_g, itm_shield_kite_i, itm_boar_spear, itm_voulge_short, itm_m_leather_boots_a,itm_m_swadia_milita_boots_a, itm_m_swadia_milita_boots_b, itm_m_coif_alternate_c, itm_m_flat_top_a,itm_m_lamellar_armor_west_b, itm_leather_gloves, itm_m_gloves_a], def_attrib|level(15),wp(135),knows_common|knows_ironflesh_5|knows_power_strike_4|knows_athletics_5,vaegir_face_middle_1, vaegir_face_older_2],
+
   ["khergit_tribesman","Khergit Tribesman","Khergit Tribesmen",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_3,
    [itm_arrows,itm_club,itm_spear,itm_hunting_bow,
     itm_nomad_cap_b,itm_arena_tunic_d_nomad,itm_nomad_vest_new_a,itm_wrapping_boots],
@@ -2888,6 +2892,9 @@ upgrade(troops,"vaegir_spearman","vaegir_bardiche_bearer")
 upgrade(troops,"vaegir_infantry","vaegir_guard")
 
 upgrade(troops,"vaegir_horseman","vaegir_knight")
+
+upgrade(troops,"khergit_slave","khergit_frontliner")
+upgrade(troops,"khergit_frontliner","khergit_suicidal")
 
 upgrade2(troops,"khergit_tribesman","khergit_skirmisher","khergit_warrior")
 
