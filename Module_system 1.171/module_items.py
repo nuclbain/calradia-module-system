@@ -1588,13 +1588,13 @@ items = [
 
 # Combined armors
 # shirt_a_new
-["shirt_a_new", "Shirt", [("shirt_a_new",0)], itp_merchandise|itp_type_body_armor, 0, 239,abundance(100)|head_armor(0)|body_armor(6)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["shirt_a_new", "Shirt", [("shirt_a_new",0)], itp_merchandise|itp_type_body_armor, 0, 239,abundance(100)|head_armor(0)|body_armor(6)|leg_armor(4)|difficulty(0),imodbits_cloth],
 # shirt_a_vest, shirt_a_vest.1
-["shirt_a_vest", "Shirt with Vest", [("shirt_a_vest",0),("shirt_a_vest.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(7)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["shirt_a_vest", "Shirt with Vest", [("shirt_a_vest",0),("shirt_a_vest.1",0)], itp_merchandise|itp_type_body_armor, 0, 109,abundance(100)|head_armor(0)|body_armor(8)|leg_armor(4)|difficulty(0),imodbits_cloth],
 # shirt_a_cloak, shirt_a_cloak.1
-["shirt_a_cloak", "Shirt with Cloak", [("shirt_a_cloak",0),("shirt_a_cloak.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(8)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["shirt_a_cloak", "Shirt with Cloak", [("shirt_a_cloak",0),("shirt_a_cloak.1",0)], itp_merchandise|itp_type_body_armor, 0, 109,abundance(100)|head_armor(0)|body_armor(8)|leg_armor(4)|difficulty(0),imodbits_cloth],
 # shirt_a_tattered_vest, shirt_a_tattered_vest.1
-["shirt_a_tattered_vest", "Tattered Shirt with Vest", [("shirt_a_tattered_vest",0),("shirt_a_tattered_vest.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(7)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["shirt_a_tattered_vest", "Tattered Shirt with Vest", [("shirt_a_tattered_vest",0),("shirt_a_tattered_vest.1",0)], itp_merchandise|itp_type_body_armor, 0, 189,abundance(100)|head_armor(0)|body_armor(15)|leg_armor(4)|difficulty(0),imodbits_cloth],
 # shirt_a_leather_jerkin, shirt_a_leather_jerkin.1
 ["shirt_a_leather_jerkin", "Leather Jerkin", [("shirt_a_leather_jerkin",0),("shirt_a_leather_jerkin.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(10)|leg_armor(0)|difficulty(0),imodbits_cloth],
 # shirt_a_padded_new, shirt_a_padded_new.1
@@ -1612,17 +1612,17 @@ items = [
 # shirt_a_coat_of_plates_new, shirt_a_coat_of_plates_new.1
 ["shirt_a_coat_of_plates_new", "Coat of Plates", [("shirt_a_coat_of_plates_new",0),("shirt_a_coat_of_plates_new.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(1)|body_armor(24)|leg_armor(0)|difficulty(0),imodbits_armor],
 # rich_tunic_a_new
-["rich_tunic_a_new", "Rich Tunic", [("rich_tunic_a_new",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(1)|body_armor(6)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["rich_tunic_a_new", "Rich Tunic", [("rich_tunic_a_new",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(8)|leg_armor(4)|difficulty(0),imodbits_cloth],
 # rich_tunic_a_shirt, rich_tunic_a_shirt.1
-["rich_tunic_a_shirt", "Rich Tunic with Shirt", [("rich_tunic_a_shirt",0),("rich_tunic_a_shirt.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(9)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["rich_tunic_a_shirt", "Rich Tunic with Shirt", [("rich_tunic_a_shirt",0),("rich_tunic_a_shirt.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(8)|leg_armor(4)|difficulty(0),imodbits_cloth],
 # rich_tunic_a_cloak, rich_tunic_a_cloak.1
-["rich_tunic_a_cloak", "Rich Tunic with Cloak", [("rich_tunic_a_cloak",0),("rich_tunic_a_cloak.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(9)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["rich_tunic_a_cloak", "Rich Tunic with Cloak", [("rich_tunic_a_cloak",0),("rich_tunic_a_cloak.1",0)], itp_merchandise|itp_type_body_armor, 0, 109,abundance(100)|head_armor(0)|body_armor(9)|leg_armor(4)|difficulty(0),imodbits_cloth],
 # rich_tunic_a_vest, rich_tunic_a_vest.1, rich_tunic_a_vest.2
-["rich_tunic_a_vest", "Rich Tunic with Vest", [("rich_tunic_a_vest",0),("rich_tunic_a_vest.1",0),("rich_tunic_a_vest.2",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(9)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["rich_tunic_a_vest", "Rich Tunic with Vest", [("rich_tunic_a_vest",0),("rich_tunic_a_vest.1",0),("rich_tunic_a_vest.2",0)], itp_merchandise|itp_type_body_armor, 0, 199,abundance(100)|head_armor(0)|body_armor(18)|leg_armor(4)|difficulty(0),imodbits_cloth],
 # rich_tunic_a_padded, rich_tunic_a_padded.1, rich_tunic_a_padded.2
-["rich_tunic_a_padded", "Rich Tunic with Padded Cloth", [("rich_tunic_a_padded",0),("rich_tunic_a_padded.1",0),("rich_tunic_a_padded.2",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(9)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["rich_tunic_a_padded", "Rich Tunic with Padded Cloth", [("rich_tunic_a_padded",0),("rich_tunic_a_padded.1",0),("rich_tunic_a_padded.2",0)], itp_merchandise|itp_type_body_armor, 0, 209,abundance(100)|head_armor(0)|body_armor(19)|leg_armor(4)|difficulty(0),imodbits_cloth],
 # rich_tunic_a_lamellar_leather, rich_tunic_a_lamellar_leather.1
-["rich_tunic_a_lamellar_leather", "Rich Tunic with Lamellar Leather", [("rich_tunic_a_lamellar_leather",0),("rich_tunic_a_lamellar_leather.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(1)|body_armor(12)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["rich_tunic_a_lamellar_leather", "Rich Tunic with Lamellar Leather", [("rich_tunic_a_lamellar_leather",0),("rich_tunic_a_lamellar_leather.1",0)], itp_merchandise|itp_type_body_armor, 0, 189,abundance(100)|head_armor(0)|body_armor(17)|leg_armor(4)|difficulty(0),imodbits_cloth],
 # rich_tunic_a_haubergeon, rich_tunic_a_haubergeon.1
 ["rich_tunic_a_haubergeon", "Rich Tunic with Haubergeon", [("rich_tunic_a_haubergeon",0),("rich_tunic_a_haubergeon.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(1)|body_armor(12)|leg_armor(0)|difficulty(0),imodbits_cloth],
 # rich_tunic_a_lamellar, rich_tunic_a_lamellar.1
