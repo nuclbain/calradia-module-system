@@ -620,7 +620,7 @@ scripts = [
       (call_script, "script_give_center_to_faction_aux", "p_castle_6", "fac_kingdom_7"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_7", "fac_kingdom_3"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_8", "fac_kingdom_12"),
-      (call_script, "script_give_center_to_faction_aux", "p_castle_9", "fac_kingdom_5"),
+      (call_script, "script_give_center_to_faction_aux", "p_castle_9", "fac_kingdom_11"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_10", "fac_kingdom_4"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_11", "fac_kingdom_4"),
 
@@ -663,8 +663,8 @@ scripts = [
       (call_script, "script_give_center_to_faction_aux", "p_castle_42", "fac_kingdom_6"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_43", "fac_kingdom_6"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_44", "fac_kingdom_6"),
-      (call_script, "script_give_center_to_faction_aux", "p_castle_45", "fac_kingdom_6"),
-      (call_script, "script_give_center_to_faction_aux", "p_castle_46", "fac_kingdom_6"),
+      (call_script, "script_give_center_to_faction_aux", "p_castle_45", "fac_kingdom_11"),
+      (call_script, "script_give_center_to_faction_aux", "p_castle_46", "fac_kingdom_11"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_47", "fac_kingdom_6"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_48", "fac_kingdom_6"),
       

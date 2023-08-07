@@ -1586,6 +1586,40 @@ items = [
 
 ["m_lancer_helmet_heavy_a", "Heavy Lancer Helmet", [("donyasbkab",0)], itp_merchandise| itp_type_head_armor | itp_attach_armature|itp_covers_beard,0, 689 , weight(2.5)|abundance(100)|head_armor(44)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
 
+# Highlander Pack
+ ["a_h1",  "Highlander Costume", [("a_h1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 1259 , weight(3)|abundance(100)|head_armor(10)|body_armor(30)|leg_armor(30)|difficulty(7) ,imodbits_armor ],
+ ["a_h1_1",  "Highlander Costume", [("a_h1_1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 1259 , weight(3)|abundance(100)|head_armor(10)|body_armor(30)|leg_armor(30)|difficulty(7) ,imodbits_armor ],
+ ["a_h2",  "Highlander Armor", [("a_h2",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 2000 , weight(3)|abundance(100)|head_armor(10)|body_armor(55)|leg_armor(30)|difficulty(7) ,imodbits_armor ],
+ ["a_h2_1",  "Highlander Armor", [("a_h2_1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 2000 , weight(3)|abundance(100)|head_armor(10)|body_armor(55)|leg_armor(30)|difficulty(7) ,imodbits_armor ],
+ ["a_h3",  "Elite Highlander Armor", [("a_h3",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 3000 , weight(3)|abundance(100)|head_armor(10)|body_armor(65)|leg_armor(30)|difficulty(7) ,imodbits_armor ],
+ ["a_h3_1",  "Elite Highlander Armor", [("a_h3_1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 3000 , weight(3)|abundance(100)|head_armor(10)|body_armor(65)|leg_armor(30)|difficulty(7) ,imodbits_armor ],
+ ["a_h4",  "Highlander Cotume", [("a_h4",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 3000 , weight(3)|abundance(100)|head_armor(10)|body_armor(40)|leg_armor(30)|difficulty(7) ,imodbits_armor ],
+ ["a_h4_1",  "Highlander Cotume", [("a_h4_1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 3000 , weight(3)|abundance(100)|head_armor(10)|body_armor(40)|leg_armor(30)|difficulty(7) ,imodbits_armor ],
+
+["h_h1", "Highlander Beret", [("h_h1",0)], itp_type_head_armor| itp_attach_armature|itp_fit_to_head   ,0, 278 , weight(2)|abundance(100)|head_armor(20)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
+["h_h1_1", "Highlander Beret", [("h_h1_1",0)], itp_type_head_armor | itp_attach_armature|itp_fit_to_head   ,0, 278 , weight(2)|abundance(100)|head_armor(20)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
+["h_h2", "Highlander Beret", [("h_h2",0)], itp_type_head_armor | itp_attach_armature|itp_fit_to_head   ,0, 350 , weight(2)|abundance(100)|head_armor(25)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
+["h_h2_1", "Highlander Beret", [("h_h2_1",0)], itp_type_head_armor | itp_attach_armature|itp_fit_to_head   ,0, 350 , weight(2)|abundance(100)|head_armor(25)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
+ 
+["b_h1", "Highlander Boots", [("b_h1",0)], itp_merchandise| itp_type_foot_armor | itp_attach_armature,0, 1770 , weight(2.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(30)|difficulty(7) ,imodbits_armor ],
+["b_h1_1", "Highlander Boots", [("b_h1_1",0)], itp_merchandise| itp_type_foot_armor | itp_attach_armature,0, 1770 , weight(2.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(30)|difficulty(7) ,imodbits_armor ],
+["b_h2", "Highlander Boots", [("b_h2",0)], itp_merchandise| itp_type_foot_armor | itp_attach_armature,0, 1770 , weight(2.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(30)|difficulty(7) ,imodbits_armor ],
+["b_h2_1", "Highlander Boots", [("b_h2_1",0)], itp_merchandise| itp_type_foot_armor | itp_attach_armature,0, 1770 , weight(2.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(30)|difficulty(7) ,imodbits_armor ],
+
+["s_h1", "Improved Highlander Shield", [("s_h1",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield ,  2000 , weight(3.5)|hit_points(350)|body_armor(2)|spd_rtng(100)|shield_width(60),imodbits_shield ],
+["s_h1_1", "Improved Highlander Shield", [("s_h1_1",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield ,  2500 , weight(3.5)|hit_points(360)|body_armor(2)|spd_rtng(100)|shield_width(60),imodbits_shield ],
+["s_h1_2", "Improved Highlander Shield", [("s_h1_2",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield ,  3000 , weight(3.5)|hit_points(370)|body_armor(2)|spd_rtng(100)|shield_width(60),imodbits_shield ],
+["s_h2", "Highlander Shield", [("s_h2",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield ,  1000 , weight(3.5)|hit_points(300)|body_armor(2)|spd_rtng(100)|shield_width(60),imodbits_shield ],
+["s_h2_1", "Highlander Shield", [("s_h2_1",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield ,  1500 , weight(3.5)|hit_points(315)|body_armor(2)|spd_rtng(100)|shield_width(60),imodbits_shield ],
+["s_h2_2", "Highlander Shield", [("s_h2_2",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield ,  1800 , weight(3.5)|hit_points(330)|body_armor(2)|spd_rtng(100)|shield_width(60),imodbits_shield ],
+
+["dirk", "Dirk",[("dirk",0),("dirk_scabbard", ixmesh_carry)], itp_type_one_handed_wpn|itp_primary, itc_dagger|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn, 183 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(75)|swing_damage(25 , cut) | thrust_damage(19 ,  pierce),imodbits_sword ],
+
+["2h_claymore", "Claymore", [("2h_claymore",0)], itp_type_two_handed_wpn|itp_merchandise| itp_primary, itc_bastardsword|itcf_carry_sword_back, 294 , weight(2.0)|difficulty(9)|spd_rtng(98) | weapon_length(101)|swing_damage(35 , cut) | thrust_damage(26 ,  pierce),imodbits_sword_high ],
+
+["highlad_broadsword", "Highlad Broadsword", [("highlad_broadsword",0),("highlad_broadsword_scabbard", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(95)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high ],
+# Higlander Pack end
+
 # Combined armors
 # shirt_a_new
 ["shirt_a_new", "Shirt", [("shirt_a_new",0)], itp_merchandise|itp_type_body_armor, 0, 239,abundance(100)|head_armor(0)|body_armor(6)|leg_armor(4)|difficulty(0),imodbits_cloth],
@@ -1596,11 +1630,11 @@ items = [
 # shirt_a_tattered_vest, shirt_a_tattered_vest.1
 ["shirt_a_tattered_vest", "Tattered Shirt with Vest", [("shirt_a_tattered_vest",0),("shirt_a_tattered_vest.1",0)], itp_merchandise|itp_type_body_armor, 0, 189,abundance(100)|head_armor(0)|body_armor(15)|leg_armor(4)|difficulty(0),imodbits_cloth],
 # shirt_a_leather_jerkin, shirt_a_leather_jerkin.1
-["shirt_a_leather_jerkin", "Leather Jerkin", [("shirt_a_leather_jerkin",0),("shirt_a_leather_jerkin.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(10)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["shirt_a_leather_jerkin", "Leather Jerkin", [("shirt_a_leather_jerkin",0),("shirt_a_leather_jerkin.1",0)], itp_merchandise|itp_type_body_armor, 0, 189,abundance(100)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(0),imodbits_cloth],
 # shirt_a_padded_new, shirt_a_padded_new.1
-["shirt_a_padded_new", "Padded Shirt", [("shirt_a_padded_new",0),("shirt_a_padded_new.1",0)], itp_merchandise|itp_type_body_armor, 0, 401,abundance(100)|head_armor(0)|body_armor(23)|leg_armor(7)|difficulty(0),imodbits_cloth],
+["shirt_a_padded_new", "Padded Shirt", [("shirt_a_padded_new",0),("shirt_a_padded_new.1",0)], itp_merchandise|itp_type_body_armor, 0, 201,abundance(100)|head_armor(0)|body_armor(26)|leg_armor(14)|difficulty(0),imodbits_cloth],
 # shirt_a_byrnie, shirt_a_byrnie.1, shirt_a_byrnie.2
-["shirt_a_byrnie", "Byrnie", [("shirt_a_byrnie",0),("shirt_a_byrnie.1",0),("shirt_a_byrnie.2",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(14)|leg_armor(0)|difficulty(0),imodbits_cloth],
+["shirt_a_byrnie", "Byrnie", [("shirt_a_byrnie",0),("shirt_a_byrnie.1",0),("shirt_a_byrnie.2",0)], itp_merchandise|itp_type_body_armor, 0, 399,abundance(100)|head_armor(0)|body_armor(37)|leg_armor(13)|difficulty(0),imodbits_armor],
 # shirt_a_lamellar_new, shirt_a_lamellar_new.1
 ["shirt_a_lamellar_new", "Lamellar Shirt", [("shirt_a_lamellar_new",0),("shirt_a_lamellar_new.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(16)|leg_armor(0)|difficulty(0),imodbits_cloth],
 # shirt_a_coat_of_plates_light, shirt_a_coat_of_plates_light.1
