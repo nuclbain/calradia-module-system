@@ -3241,8 +3241,17 @@ game_menus = [
 	    (try_end),
 	    (jump_to_menu, "mnu_cheat_find_item"),
 	   ]
-       ),	   
-
+       ),
+      ("cheat_find_item_prev_range",[], "{!}Move to previous range.",
+       [
+        (val_sub, "$cheat_find_item_range_begin", max_inventory_items),
+        (try_begin),
+          (lt, "$cheat_find_item_range_begin", 0),
+          (assign, "$cheat_find_item_range_begin", itm_items_end-max_inventory_items),
+        (try_end),
+        (jump_to_menu, "mnu_cheat_find_item"),
+       ]
+       ),
 	   ("cheat_find_item_choose_this",[], "{!}Choose from this range.",
        [
         (troop_clear_inventory, "trp_find_item_cheat"),
