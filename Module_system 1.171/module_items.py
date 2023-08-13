@@ -2178,6 +2178,82 @@ items = [
  
 ["mh_sword_a", "Horde Sabre", [("mongol_saber_a",0),("mongol_saber_a_scab", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_scimitar|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 159, weight(1.25)|difficulty(0)|spd_rtng(100) | weapon_length(90)|swing_damage(32 , cut),imodbits_sword_high ],
 
+["mkk_gauntlets_sar_a","Sarranid Scale Gloves", [("gauntlets_arabs_a_L", 0)], itp_type_hand_armor|itp_merchandise, 0,710, weight(0.75)|abundance(100)|body_armor(5), imodbit_lordly, [], []],
+["mkk_gauntlets_sar_b","Sarranid Decorated Scale Gloves", [("gauntlets_arabs_b_L", 0)], itp_type_hand_armor|itp_merchandise, 0,999, weight(0.75)|abundance(100)|body_armor(6), imodbit_lordly, [], []],
+["mkk_gauntlets_mail_a","Mail Gloves", [("gauntlets_crysader_L", 0)], itp_type_hand_armor|itp_merchandise, 0,710, weight(0.75)|abundance(100)|body_armor(5), imodbits_none, []],
+["mkk_gloves_a","Leather Gloves", [("gloves_a_L", 0)], itp_type_hand_armor|itp_merchandise, 0,710, weight(0.75)|abundance(100)|body_armor(3), imodbit_reinforced|imodbit_lordly, []],
+["mkk_gloves_b","Rich Leather Gloves", [("gloves_lord_L", 0)], itp_type_hand_armor|itp_merchandise, 0,899, weight(0.75)|abundance(100)|body_armor(4), imodbit_reinforced|imodbit_lordly, []],
+["mkk_gloves_c","Enchanted Leather Gloves", [("gloves_king_L", 0)], itp_type_hand_armor|itp_merchandise, 0,1399, weight(0.75)|abundance(1)|body_armor(8), imodbit_reinforced|imodbit_lordly, []],
+
+["civil_poor_boots_a","Sandals", [("civil_poor_boots_a", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,75, weight(1)|abundance(100)|leg_armor(1), imodbits_cloth, []],
+["civil_rich_boots_a","Rich Boots", [("civil_rich_Boots_a", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,450, weight(1)|abundance(100)|leg_armor(18), imodbits_cloth, []],
+["civil_rich_boots_b","Rich Boots", [("civil_rich_Boots_b", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,450, weight(1)|abundance(100)|leg_armor(18), imodbits_cloth, []],
+
+["mkk_boots_common_a","Sarranid Boots", [("boots_tyrk_a", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,99, weight(1)|abundance(100)|leg_armor(10), imodbits_cloth, []],
+["mkk_boots_common_b","Sarranid Boots", [("boots_tyrk_b", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,99, weight(1)|abundance(100)|leg_armor(10), imodbits_cloth, []],
+["mkk_boots_common_c","Sarranid Boots", [("boots_tyrk_c", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,99, weight(1)|abundance(100)|leg_armor(10), imodbits_cloth, []],
+
+["mkk_boots_a","Light Sarranid Boots", [("saracin_light_boot_a", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,159, weight(1)|abundance(100)|leg_armor(12), imodbits_cloth, []],
+["mkk_boots_b","Light Sarranid Boots", [("saracin_light_boot_b", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,159, weight(1)|abundance(100)|leg_armor(12), imodbits_cloth, []],
+
+["mkk_leather_boots_a","Sarranid Leather Boots", [("saracin_medium_boot_a", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,399, weight(1)|abundance(100)|leg_armor(20), imodbits_cloth, []],
+["mkk_leather_boots_b","Sarranid Leather Boots", [("saracin_medium_boot_b", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,399, weight(1)|abundance(100)|leg_armor(20), imodbits_cloth, []],
+
+["mkk_heavy_boots_a","Sarranid Heavy Boots", [("saracin_hard_boot_a", 0)], itp_type_foot_armor|itp_attach_armature, 0,1199, weight(2)|abundance(100)|leg_armor(34), imodbits_plate, []],
+["mkk_heavy_boots_b","Sarranid Heavy Boots", [("saracin_hard_boot_b", 0)], itp_type_foot_armor|itp_attach_armature, 0,1199, weight(2)|abundance(100)|leg_armor(34), imodbits_plate, []],
+
+
+["mkk_turban_a", "Turban", [("saracin_turban_a",0)], itp_merchandise|itp_type_head_armor, 0, 255, weight(2)|abundance(100)|head_armor(21)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+["mkk_turban_b", "Turban", [("saracin_turban_b",0)], itp_merchandise|itp_type_head_armor, 0, 255, weight(2)|abundance(100)|head_armor(21)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+["mkk_turban_c", "Turban", [("saracin_turban_c",0)], itp_merchandise|itp_type_head_armor, 0, 255, weight(2)|abundance(100)|head_armor(21)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+
+["mkk_helm_sar_a","Light Sarranid Helmet", [("helm_saracin_3", 0)], itp_type_head_armor|itp_merchandise, 0,390, weight(1)|abundance(100)|head_armor(15)|difficulty(7), imodbits_none, [], []],
+["mkk_helm_sar_b","Sarranid War Cap", [("helm_saracin_b", 0)], itp_type_head_armor|itp_merchandise, 0,390, weight(1)|abundance(100)|head_armor(15)|difficulty(7), imodbits_none, [], []],
+
+["mkk_helm_warrior_a","Warrior Helmet", [("helm_saracin_2", 0)], itp_type_head_armor|itp_merchandise, 0,450, weight(2)|abundance(100)|head_armor(25)|difficulty(7), imodbit_reinforced, [], []],
+["mkk_helm_warrior_b","Warrior Helmet", [("helm_saracin_a", 0)], itp_type_head_armor|itp_merchandise, 0,450, weight(2)|abundance(100)|head_armor(39)|difficulty(7), imodbit_reinforced, [], []],
+["mkk_helm_warrior_c","Warrior Helmet", [("helm_saracin_j", 0)], itp_type_head_armor|itp_merchandise, 0,450, weight(2)|abundance(100)|head_armor(39)|difficulty(7), imodbit_reinforced, [], []],
+
+["mkk_helm_mail_a","Mail Helmet", [("helm_saracin_f", 0)], itp_type_head_armor|itp_merchandise, 0,450, weight(2)|abundance(100)|head_armor(32)|difficulty(7), imodbit_reinforced, [], []],
+["mkk_helm_mail_b","Mail Helmet", [("helm_saracin_1", 0)], itp_type_head_armor|itp_merchandise, 0,450, weight(2)|abundance(100)|head_armor(32)|difficulty(7), imodbit_reinforced, [], []],
+["mkk_helm_mail_c","Mail Helmet", [("helm_saracin_d", 0)], itp_type_head_armor|itp_merchandise, 0,450, weight(2)|abundance(100)|head_armor(32)|difficulty(7), imodbit_reinforced, [], []],
+["mkk_helm_mail_d","Mail Helmet", [("helm_saracin_e", 0)], itp_type_head_armor|itp_merchandise, 0,450, weight(2)|abundance(100)|head_armor(32)|difficulty(7), imodbit_reinforced, [], []],
+["mkk_helm_mail_e","Mail Helmet", [("helm_saracin_f", 0)], itp_type_head_armor|itp_merchandise, 0,450, weight(2)|abundance(100)|head_armor(32)|difficulty(7), imodbit_reinforced, [], []],
+
+["mkk_helm_light_sarranid","Light Sarranid Helmet", [("helm_saracin_c", 0)], itp_type_head_armor|itp_merchandise, 0,399, weight(2)|abundance(100)|head_armor(25)|difficulty(0), imodbit_reinforced|imodbit_lordly, [], []],
+
+["mkk_gulam_helm_a","Gulam Helmet", [("gulam_helm_a", 0)], itp_type_head_armor|itp_merchandise|itp_fit_to_head, 0,390, weight(2)|abundance(100)|head_armor(45)|difficulty(7), imodbits_none, [], []],
+["mkk_gulam_helm_b","Gulam Helmet", [("gulam_helm_b", 0),("gulam_helm_b_market", ixmesh_inventory)], itp_type_head_armor|itp_attach_armature|itp_merchandise|itp_fit_to_head, 0,390, weight(2)|abundance(100)|head_armor(45)|difficulty(7), imodbits_none, [], []],
+["mkk_gulam_helm_c","Gulam Helmet", [("gulam_helm_c", 0),("gulam_helm_c_market", ixmesh_inventory)], itp_type_head_armor|itp_attach_armature|itp_merchandise|itp_fit_to_head, 0,390, weight(2)|abundance(100)|head_armor(45)|difficulty(7), imodbits_none, [], []],
+["mkk_gulam_helm_d","Gulam Helmet", [("gulam_helm_d", 0),("gulam_helm_d_market", ixmesh_inventory)], itp_type_head_armor|itp_attach_armature|itp_merchandise|itp_fit_to_head, 0,390, weight(2)|abundance(100)|head_armor(45)|difficulty(7), imodbits_none, [], []],
+["mkk_gulam_helm_f","Gulam Helmet", [("gulam_helm_f", 0),("gulam_helm_f_market", ixmesh_inventory)], itp_type_head_armor|itp_attach_armature|itp_merchandise|itp_fit_to_head|itp_covers_beard, 0,390, weight(2)|abundance(100)|head_armor(45)|difficulty(7), imodbits_none, [], []],
+
+["mkk_sultan_helmet_a","Sultan's Helmet", [("helm_Sultan_saracens", 0),("helm_Sultan_saracens_market", ixmesh_inventory)], itp_type_head_armor|itp_attach_armature|itp_merchandise|itp_fit_to_head|itp_covers_beard, 0,3990, weight(2)|abundance(1)|head_armor(58)|difficulty(17), imodbits_none, [], []],
+
+["mkk_heavy_helmet_a", "Sarranid Heavy Cavalry Helmet", [("helm_tyrk_heavi_a",0), ("helm_tyrk_heavi_a.1",0)], itp_merchandise|itp_type_head_armor, 0, 1799, weight(2)|abundance(100)|head_armor(54)|body_armor(0)|leg_armor(0)|difficulty(11) ,imodbits_plate ],
+["mkk_heavy_helmet_b", "Sarranid Heavy Cavalry Helmet", [("helm_tyrk_heavi_b",0), ("helm_tyrk_heavi_b.1",0)], itp_merchandise|itp_type_head_armor, 0, 1799, weight(2)|abundance(100)|head_armor(54)|body_armor(0)|leg_armor(0)|difficulty(11) ,imodbits_plate ],
+["mkk_heavy_helmet_c", "Sarranid Heavy Cavalry Helmet", [("helm_tyrk_heavi_c",0), ("helm_tyrk_heavi_c.1",0)], itp_merchandise|itp_type_head_armor, 0, 1799, weight(2)|abundance(100)|head_armor(54)|body_armor(0)|leg_armor(0)|difficulty(11) ,imodbits_plate ],
+
+["mkk_semi_heavy_helmet_a", "Sarranid Heavy Helmet", [("helm_tyrk_a",0), ("helm_tyrk_a.1",0), ("helm_tyrk_a_market",ixmesh_inventory), ("helm_tyrk_a_market.1",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 1699, weight(2)|abundance(100)|head_armor(50)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
+["mkk_semi_heavy_helmet_b", "Sarranid Heavy Helmet", [("helm_tyrk_b",0), ("helm_tyrk_b_market",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 1699, weight(2)|abundance(100)|head_armor(50)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
+["mkk_semi_heavy_helmet_c", "Sarranid Heavy Helmet", [("helm_tyrk_c",0), ("helm_tyrk_c_market",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 1699, weight(2)|abundance(100)|head_armor(50)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
+["mkk_semi_heavy_helmet_d", "Sarranid Heavy Helmet", [("helm_tyrk_d",0), ("helm_tyrk_d_market",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 1699, weight(2)|abundance(100)|head_armor(50)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
+["mkk_semi_heavy_helmet_e", "Sarranid Heavy Helmet", [("helm_tyrk_e",0), ("helm_tyrk_e.1",0), ("helm_tyrk_e.2",0), ("helm_tyrk_e_market",ixmesh_inventory), ("helm_tyrk_e_market.1",ixmesh_inventory), ("helm_tyrk_e_market.2",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 1699, weight(2)|abundance(100)|head_armor(50)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
+["mkk_semi_heavy_helmet_f", "Sarranid Heavy Helmet", [("helm_tyrk_f",0), ("helm_tyrk_f.1",0), ("helm_tyrk_f_market",ixmesh_inventory), ("helm_tyrk_f_market.1",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 1699, weight(2)|abundance(100)|head_armor(50)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
+
+
+["mkk_mamluke_a", "Mamluke Armor", [("tyrk_armor_heavi_a",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1699 , weight(20)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(23)|difficulty(9) ,imodbits_armor ],
+["mkk_mamluke_b", "Mamluke Armor", [("tyrk_armor_heavi_b",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1699 , weight(20)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(23)|difficulty(9) ,imodbits_armor ],
+["mkk_mamluke_c", "Mamluke Armor", [("tyrk_armor_heavi_c",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1699 , weight(20)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(23)|difficulty(9) ,imodbits_armor ],
+
+["mkk_archer_armor_a", "Sarranid Archers Armor", [("armor_medium_tyrk_a",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1299 , weight(16)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(12)|difficulty(9) ,imodbits_armor ],
+["mkk_archer_armor_b", "Sarranid Archers Armor", [("armor_medium_tyrk_b",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1299 , weight(16)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(12)|difficulty(9) ,imodbits_armor ],
+["mkk_archer_armor_c", "Sarranid Archers Armor", [("armor_medium_tyrk_c",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1299 , weight(16)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(12)|difficulty(9) ,imodbits_armor ],
+["mkk_archer_armor_d", "Sarranid Archers Armor", [("armor_medium_tyrk_d",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1299 , weight(16)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(12)|difficulty(9) ,imodbits_armor ],
+
+["mkk_infantry_armor_a", "Sarranid Infantry Armor", [("armor_medium_tyrk_e",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1499 , weight(20)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(21)|difficulty(9) ,imodbits_armor ],
+["mkk_infantry_armor_b", "Sarranid Infantry Armor", [("armor_medium_tyrk_f",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1499 , weight(20)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(21)|difficulty(9) ,imodbits_armor ],
+
 ["mkk_black_scale_a", "Black Scale Armor", [("Ghulam_heavy_cavalryman_1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1599 , weight(20)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(18)|difficulty(9) ,imodbits_armor ],
 ["mkk_black_scale_b", "Black Scale Armor", [("Ghulam_heavy_cavalryman_2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1599 , weight(20)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(18)|difficulty(9) ,imodbits_armor ],
 ["mkk_black_scale_c", "Black Scale Armor", [("Ghulam_heavy_cavalryman_3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1599 , weight(20)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(18)|difficulty(9) ,imodbits_armor ],
