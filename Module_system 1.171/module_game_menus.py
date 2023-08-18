@@ -8121,6 +8121,66 @@ game_menus = [
 					(jump_to_menu, "mnu_center_improve"),
 				]
 			),
+      (
+        "center_build_vaegir_barracks",
+        [
+          (eq, reg6, 0),
+          (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_barracks, 0),
+					(party_slot_eq, "$g_encountered_party", slot_center_culture, "fac_culture_2")
+        ],
+        "[infantry] Build a Vaegir barracks.",
+        [
+          (assign, "$g_improvement_type", slot_center_has_vaegir_barracks),
+          (jump_to_menu, "mnu_center_improve"),
+        ]
+      ),
+      (
+        "center_build_vaegir_archery",
+        [
+          (eq, reg6, 0),
+          (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_archery, 0),
+					(party_slot_eq, "$g_encountered_party", slot_center_culture, "fac_culture_2")
+        ],
+        "[Archers] Build a Vaegir archery.",
+        [
+          (assign, "$g_improvement_type", slot_center_has_vaegir_archery),
+          (jump_to_menu, "mnu_center_improve"),
+        ]
+      ),
+      (
+        "center_build_vaegir_stables",
+        [
+          (eq, reg6, 0),
+          (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_stables, 0),
+					(party_slot_eq, "$g_encountered_party", slot_center_culture, "fac_culture_2")
+        ],
+        "[Cavalry] Build a Vaegir stables.",
+        [
+          (assign, "$g_improvement_type", slot_center_has_vaegir_stables),
+          (jump_to_menu, "mnu_center_improve"),
+        ]
+      ),
+      (
+        "center_build_vaegir_elders_house",
+        [
+          (eq, reg6, 0),
+          (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_elders_house, 0),
+					(party_slot_eq, "$g_encountered_party", slot_center_culture, "fac_culture_2")
+        ],
+        "[Elite] Build a Vaegir elders_house.",
+        [
+          (assign, "$g_improvement_type", slot_center_has_vaegir_elders_house),
+          (jump_to_menu, "mnu_center_improve"),
+        ]
+      ),
       ("go_back_dot",[],"Go back.",[(jump_to_menu, "$g_next_menu")]),
     ],
   ),
@@ -8131,7 +8191,7 @@ game_menus = [
     [],
     [
       (
-        "center_swadia_barracks_recruit_volunteers",
+        "center_swadia_barracks_recruit_volunteers_1",
         [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
           (party_slot_eq, "$g_encountered_party", slot_center_has_swadia_barracks, 1),
@@ -8145,7 +8205,7 @@ game_menus = [
         ]
       ),
       (
-        "center_swadia_barracks_recruit_volunteers",
+        "center_swadia_barracks_recruit_volunteers_5",
         [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
           (party_slot_eq, "$g_encountered_party", slot_center_has_swadia_barracks, 1),
@@ -8159,7 +8219,7 @@ game_menus = [
         ]
       ),
       (
-        "center_swadia_barracks_recruit_volunteers",
+        "center_swadia_barracks_recruit_volunteers_10",
         [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
           (party_slot_eq, "$g_encountered_party", slot_center_has_swadia_barracks, 1),
@@ -8189,7 +8249,7 @@ game_menus = [
     [],
     [
       (
-        "center_swadia_stables_recruit_volunteers",
+        "center_swadia_stables_recruit_volunteers_1",
         [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
           (party_slot_eq, "$g_encountered_party", slot_center_has_swadia_stables, 1),
@@ -8203,7 +8263,7 @@ game_menus = [
         ]
 			),
       (
-        "center_swadia_stables_recruit_volunteers",
+        "center_swadia_stables_recruit_volunteers_5",
         [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
           (party_slot_eq, "$g_encountered_party", slot_center_has_swadia_stables, 1),
@@ -8217,7 +8277,7 @@ game_menus = [
         ]
 			),
       (
-        "center_swadia_stables_recruit_volunteers",
+        "center_swadia_stables_recruit_volunteers_10",
         [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
           (party_slot_eq, "$g_encountered_party", slot_center_has_swadia_stables, 1),
@@ -8247,7 +8307,7 @@ game_menus = [
 		[],
 		[
 			(
-				"center_swadia_lion_guild_recruit_volunteers",
+				"center_swadia_lion_guild_recruit_volunteers_1",
 				[
 					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
 					(party_slot_eq, "$g_encountered_party", slot_center_has_swadia_lion_guild, 1),
@@ -8261,7 +8321,7 @@ game_menus = [
 				]
 			),
 			(
-				"center_swadia_lion_guild_recruit_volunteers",
+				"center_swadia_lion_guild_recruit_volunteers_5",
 				[
 					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
 					(party_slot_eq, "$g_encountered_party", slot_center_has_swadia_lion_guild, 1),
@@ -8275,7 +8335,7 @@ game_menus = [
 				]
 			),
 			(
-				"center_swadia_lion_guild_recruit_volunteers",
+				"center_swadia_lion_guild_recruit_volunteers_10",
 				[
 					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
 					(party_slot_eq, "$g_encountered_party", slot_center_has_swadia_lion_guild, 1),
@@ -8298,6 +8358,180 @@ game_menus = [
 			)
 		],
 	),
+  (
+    "center_vaegir_barracks",0,
+    "Here you can hire soldiers for your garrison. (Troops will be added to the town's garrison, not your party)",
+    "none",
+    [],
+    [
+      (
+        "center_vaegir_barracks_recruit_volunteers_1",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_barracks, 1),
+        ],
+        "[1x Vaegir Recruits] Hire. (50 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 50),
+          (troop_remove_gold, "trp_player", 50),
+          (party_add_members, "$g_encountered_party", "trp_vaegir_recruit", 1),
+        ]
+      ),
+      (
+        "center_vaegir_barracks_recruit_volunteers_5",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_barracks, 1),
+        ],
+        "[5x Vaegir Recruits] Hire. (250 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 250),
+          (troop_remove_gold, "trp_player", 250),
+          (party_add_members, "$g_encountered_party", "trp_vaegir_recruit", 5),
+        ]
+      ),
+      (
+        "center_swadia_barracks_recruit_volunteers_10",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_barracks, 1),
+        ],
+        "[10x Vaegir Recruits] Hire. (500 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 500),
+          (troop_remove_gold, "trp_player", 500),
+          (party_add_members, "$g_encountered_party", "trp_vaegir_recruit", 10),
+        ]
+      ),
+      (
+        "escape_vaegir_barracks",
+        [],
+        "Leave...",
+        [
+          (jump_to_menu, "$g_next_menu"),
+        ]
+      ),
+    ],
+  ),
+  (
+    "center_vaegir_archery",0,
+    "Here you can hire soldiers for your garrison. (Troops will be added to the town's garrison, not your party)",
+    "none",
+    [],
+    [
+      (
+        "center_vaegir_archery_recruit_volunteers_1",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_archery, 1),
+        ],
+        "[1x Vaegir Archers] Hire. (50 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 50),
+          (troop_remove_gold, "trp_player", 50),
+          (party_add_members, "$g_encountered_party", "trp_vaegir_archer", 1),
+        ]
+      ),
+      (
+        "center_vaegir_archery_recruit_volunteers_5",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_archery, 1),
+        ],
+        "[5x Vaegir Archers] Hire. (250 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 250),
+          (troop_remove_gold, "trp_player", 250),
+          (party_add_members, "$g_encountered_party", "trp_vaegir_archer", 5),
+        ]
+      ),
+      (
+        "center_swadia_archery_recruit_volunteers_10",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_archery, 1),
+        ],
+        "[10x Vaegir Archers] Hire. (500 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 500),
+          (troop_remove_gold, "trp_player", 500),
+          (party_add_members, "$g_encountered_party", "trp_vaegir_archer", 10),
+        ]
+      ),
+      (
+        "escape_vaegir_archery",
+        [],
+        "Leave...",
+        [
+          (jump_to_menu, "$g_next_menu"),
+        ]
+      ),
+    ],
+  ),
+  (
+    "center_vaegir_stables",0,
+    "Here you can hire soldiers for your garrison. (Troops will be added to the town's garrison, not your party)",
+    "none",
+    [],
+    [
+      (
+        "center_vaegir_stables_recruit_volunteers_1",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_stables, 1),
+        ],
+        "[1x Vaegir Horsemen] Hire. (50 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 50),
+          (troop_remove_gold, "trp_player", 50),
+          (party_add_members, "$g_encountered_party", "trp_vaegir_horseman", 1),
+        ]
+      ),
+      (
+        "center_vaegir_stables_recruit_volunteers_5",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_stables, 1),
+        ],
+        "[5x Vaegir Horsemen] Hire. (250 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 250),
+          (troop_remove_gold, "trp_player", 250),
+          (party_add_members, "$g_encountered_party", "trp_vaegir_horseman", 5),
+        ]
+      ),
+      (
+        "center_swadia_stables_recruit_volunteers_10",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_stables, 1),
+        ],
+        "[10x Vaegir Horsemen] Hire. (500 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 500),
+          (troop_remove_gold, "trp_player", 500),
+          (party_add_members, "$g_encountered_party", "trp_vaegir_horseman", 10),
+        ]
+      ),
+      (
+        "escape_vaegir_stables",
+        [],
+        "Leave...",
+        [
+          (jump_to_menu, "$g_next_menu"),
+        ]
+      ),
+    ],
+  ),
   (
     "center_improve",0,
     "{s19} As the party member with the highest engineer skill ({reg2}), {reg3?you reckon:{s3} reckons} that building the {s4} will cost you\
