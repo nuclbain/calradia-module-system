@@ -8533,6 +8533,64 @@ game_menus = [
     ],
   ),
   (
+    "center_vaegir_elders_house",0,
+    "Here you can hire soldiers for your garrison. (Troops will be added to the town's garrison, not your party)",
+    "none",
+    [],
+    [
+      (
+        "center_vaegir_elders_house_recruit_volunteers_1",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_elders_house, 1),
+        ],
+        "[1x Vaegir Gryden] Hire. (50 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 50),
+          (troop_remove_gold, "trp_player", 50),
+          (party_add_members, "$g_encountered_party", "trp_vaegir_gryden", 1),
+        ]
+      ),
+      (
+        "center_vaegir_elders_house_recruit_volunteers_5",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_elders_house, 1),
+        ],
+        "[5x Vaegir Gryden] Hire. (250 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 250),
+          (troop_remove_gold, "trp_player", 250),
+          (party_add_members, "$g_encountered_party", "trp_vaegir_gryden", 5),
+        ]
+      ),
+      (
+        "center_swadia_elders_house_recruit_volunteers_10",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_elders_house, 1),
+        ],
+        "[10x Vaegir Gryden] Hire. (500 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 500),
+          (troop_remove_gold, "trp_player", 500),
+          (party_add_members, "$g_encountered_party", "trp_vaegir_gryden", 10),
+        ]
+      ),
+      (
+        "escape_vaegir_elers_house",
+        [],
+        "Leave...",
+        [
+          (jump_to_menu, "$g_next_menu"),
+        ]
+      ),
+    ],
+  ),
+  (
     "center_improve",0,
     "{s19} As the party member with the highest engineer skill ({reg2}), {reg3?you reckon:{s3} reckons} that building the {s4} will cost you\
  {reg5} denars and will take {reg6} days.",
@@ -10171,6 +10229,50 @@ game_menus = [
         (assign, "$g_next_menu", "mnu_town"),
         (set_background_mesh, "mesh_pic_recruits"),
         (jump_to_menu, "mnu_center_swadia_lion_guild"),
+      ]),
+      ("wallet_vaegir_barracks",
+      [
+        (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+        (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_barracks, 1),
+      ],
+      "[Hire] Visit local guild.",
+      [
+        (assign, "$g_next_menu", "mnu_town"),
+        (set_background_mesh, "mesh_pic_recruits"),
+        (jump_to_menu, "mnu_center_vaegir_barracks"),
+      ]),
+      ("wallet_vaegir_archery",
+      [
+        (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+        (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_archery, 1),
+      ],
+      "[Hire] Visit local guild.",
+      [
+        (assign, "$g_next_menu", "mnu_town"),
+        (set_background_mesh, "mesh_pic_recruits"),
+        (jump_to_menu, "mnu_center_vaegir_archery"),
+      ]),
+      ("wallet_vaegir_stables",
+      [
+        (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+        (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_stables, 1),
+      ],
+      "[Hire] Visit local guild.",
+      [
+        (assign, "$g_next_menu", "mnu_town"),
+        (set_background_mesh, "mesh_pic_recruits"),
+        (jump_to_menu, "mnu_center_vaegir_stables"),
+      ]),
+      ("wallet_vaegir_elders_house",
+      [
+        (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+        (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_elders_house, 1),
+      ],
+      "[Hire] Visit local guild.",
+      [
+        (assign, "$g_next_menu", "mnu_town"),
+        (set_background_mesh, "mesh_pic_recruits"),
+        (jump_to_menu, "mnu_center_vaegir_elders_house"),
       ]),
       
       ("walled_center_move_court",

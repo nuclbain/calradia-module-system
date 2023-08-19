@@ -556,6 +556,25 @@ troops = [
    [itm_bardiche,itm_great_bardiche,itm_war_axe,itm_fighting_axe,itm_lance,itm_tab_shield_kite_cav_b,
     itm_m_vaegir_novogrod_helm,itm_m_vaegir_litchina_helm,itm_m_vaegir_rus_splint_greaves,itm_m_vaegir_rus_scale,itm_mt_scale_gloves_b,itm_mt_scale_gloves_a,itm_northerner_horse_hunter],
    def_attrib|level(26),wp_one_handed (120) | wp_two_handed (140) | wp_polearm (120) | wp_archery (120) | wp_crossbow (120) | wp_throwing (120),knows_riding_4|knows_shield_2|knows_ironflesh_4|knows_power_strike_4,vaegir_face_middle_1, vaegir_face_older_2],
+
+  ["vaegir_gryden","Vaegir Gryden","Vaegir Gryden",tf_guarantee_all,0,0,fac_kingdom_2,
+   [itm_bardiche,itm_great_bardiche,itm_war_axe,itm_fighting_axe,itm_norman_shield_1, itm_norman_shield_2, itm_norman_shield_3, itm_norman_shield_4, itm_mace_4,
+    itm_m_vaegir_novogrod_helm,itm_m_vaegir_litchina_helm,itm_m_vaegir_rus_splint_greaves,itm_m_vaegir_rus_scale,itm_mt_scale_gloves_b,itm_mt_scale_gloves_a],
+   def_attrib|str_25|agi_25|level(27),wp_melee(200),knows_athletics_6|knows_shield_2|knows_ironflesh_3|knows_power_strike_4,vaegir_face_middle_1, vaegir_face_older_2],
+  ["vaegir_boyar", "Vaegir Boyar", "Vaegir Boyars", tf_guarantee_all,0,0,fac_kingdom_2,
+    [itm_bardiche,itm_great_bardiche,itm_war_axe,itm_fighting_axe, itm_norman_shield_1, itm_norman_shield_2, itm_norman_shield_3, itm_norman_shield_4, itm_mace_4,
+    itm_m_vaegir_novogrod_helm,itm_m_vaegir_litchina_helm,itm_ms_coat_of_plates_a,itm_m_gauntlets_a, itm_m_greaves_a, itm_m_greaves_b, itm_m_gauntlets_a],
+    def_attrib|str_30|agi_30|level(32),wp_melee(300),knows_athletics_9|knows_shield_6|knows_ironflesh_10|knows_power_strike_9,vaegir_face_middle_1, vaegir_face_older_2],
+
+  ["vaegir_zemskyi_boyar", "Vaegir Zemskyi Boyar", "Vaegir Zemskye Boyary", tf_guarantee_all,0,0,fac_kingdom_2,
+    [itm_long_bardiche,itm_great_long_bardiche, itm_norman_shield_1, itm_norman_shield_2, itm_norman_shield_3, itm_norman_shield_4, itm_mace_4, itm_mace_3, itm_sarranid_mace_1, itm_sarranid_axe_a,
+    itm_m_vaegir_novogrod_helm,itm_ms_coat_of_plates_b,itm_m_gauntlets_a, itm_m_greaves_a, itm_m_greaves_b, itm_m_gauntlets_a],
+    tier_three_attrib|str_30|agi_30|level(38),wp_melee(400),knows_athletics_9|knows_shield_6|knows_ironflesh_10|knows_power_strike_9,vaegir_face_middle_1, vaegir_face_older_2],
+  ["vaegir_knyazhiy_boyar", "Vaegir Knyazhiy Boyar", "Vaegir Knyazhie Boyary", tf_guarantee_all,0,0,fac_kingdom_2,
+    [itm_war_axe,itm_fighting_axe,itm_lance, itm_norman_shield_1, itm_norman_shield_2, itm_norman_shield_3, itm_norman_shield_4, itm_mace_4, itm_strong_bow, itm_barbed_arrows,
+    itm_m_vaegir_litchina_helm,itm_ms_coat_of_plates_b,itm_m_gauntlets_a, itm_m_greaves_a, itm_m_greaves_b, itm_m_gauntlets_a, itm_northerner_horse_hunter],
+    tier_two_attrib|str_30|agi_30|level(38),wp(350),knows_athletics_9|knows_shield_6|knows_ironflesh_10|knows_power_strike_9,vaegir_face_middle_1, vaegir_face_older_2],  
+
   ["vaegir_messenger","Vaegir Messenger","Vaegir Messengers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_kingdom_2,
    [itm_sword_medieval_b,itm_leather_jerkin,itm_leather_boots,itm_courser,itm_leather_gloves,itm_short_bow,itm_arrows],
    str_7 | agi_21 | int_4 | cha_4|level(25),wp(130),knows_common|knows_riding_7|knows_horse_archery_5|knows_power_draw_5,vaegir_face_young_1, vaegir_face_older_2],
@@ -2859,6 +2878,8 @@ upgrade(troops,"vaegir_spearman","vaegir_bardiche_bearer")
 upgrade(troops,"vaegir_infantry","vaegir_guard")
 
 upgrade(troops,"vaegir_horseman","vaegir_knight")
+upgrade(troops,"vaegir_gryden","vaegir_boyar")
+upgrade2(troops,"vaegir_boyar","vaegir_zemskyi_boyar","vaegir_knyazhiy_boyar")
 
 upgrade(troops,"khergit_slave","khergit_frontliner")
 upgrade(troops,"khergit_frontliner","khergit_suicidal")

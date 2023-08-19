@@ -501,6 +501,8 @@ scripts = [
       (faction_set_slot, "fac_kingdom_8", slot_faction_banner, "mesh_arms_d02"),
       (faction_set_slot, "fac_kingdom_9", slot_faction_banner, "mesh_arms_b07"),
       (faction_set_slot, "fac_kingdom_10", slot_faction_banner, "mesh_arms_a20"),
+      (faction_set_slot, "fac_kingdom_11", slot_faction_banner, "mesh_arms_d18"),
+      (faction_set_slot, "fac_kingdom_12", slot_faction_banner, "mesh_arms_c06"),
 
       (try_for_range, ":cur_faction", npc_kingdoms_begin, npc_kingdoms_end),
         (faction_get_slot, ":cur_faction_king", ":cur_faction", slot_faction_leader),
