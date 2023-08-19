@@ -1364,6 +1364,11 @@ items = [
 ["m_swadia_mail_gloves_a","Old Mail Gloves", [("dethertir_gauntlets_L",0)], itp_merchandise|itp_type_hand_armor,0, 399, weight(0.75)|abundance(100)|body_armor(5)|difficulty(0),imodbits_armor],
 
 ["m_swadia_elite_recruit_a", "Swadian Elite Padded Armor", [("novici_Jerusalem",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 325 , weight(10)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(0) ,imodbits_armor ],
+["m_swadia_elite_recruit_b", "Swadian Elite Padded Armor", [("armor_infantry_Jerusalem_a",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 409 , weight(10)|abundance(100)|head_armor(0)|body_armor(28)|leg_armor(13)|difficulty(0) ,imodbits_armor ],
+["m_swadia_elite_recruit_c", "Swadian Elite Padded Armor", [("armor_infantry_Jerusalem_b",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 409 , weight(10)|abundance(100)|head_armor(0)|body_armor(28)|leg_armor(13)|difficulty(0) ,imodbits_armor ],
+["m_swadia_elite_recruit_d", "Swadian Elite Padded Armor", [("archer_jerusalem_armor_a",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 399 , weight(10)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(13)|difficulty(0) ,imodbits_armor ],
+["m_swadia_elite_recruit_e", "Swadian Elite Padded Armor", [("archer_jerusalem_armor_b",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 399 , weight(10)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(13)|difficulty(0) ,imodbits_armor ],
+
 ["m_swadia_elite_sergant_armor_a", "Swadian Elite Mail Armor", [("sergeant_Jerusalem_armor",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 592 , weight(16)|abundance(100)|head_armor(0)|body_armor(39)|leg_armor(18)|difficulty(0) ,imodbits_armor ],
 
 ["m_swadia_elite_knight_armor_a", "Swadian Elite Knight Armor", [("knight_armor_jerusalem_a",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1397 , weight(19)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(23)|difficulty(11) ,imodbits_armor ],

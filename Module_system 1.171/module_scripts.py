@@ -6022,7 +6022,18 @@ scripts = [
 			(is_between, ":cur_troop", "trp_knight_6_1", "trp_kingdom_1_pretender"),
 			(store_sub, ":npc_seed", ":cur_troop", "trp_knight_6_1"),
 			(assign, ":ancestor_seed", 31),
-			
+		(else_try),
+			(is_between, ":cur_troop", "trp_knight_7_1", "trp_knight_8_1"),
+			(store_sub, ":npc_seed", ":cur_troop", "trp_knight_7_1"),
+			(assign, ":ancestor_seed", 31),
+    (else_try),
+      (is_between, ":cur_troop", "trp_knight_8_1", "trp_knight_11_1"),
+      (store_sub, ":npc_seed", ":cur_troop", "trp_knight_8_1"),
+      (assign, ":ancestor_seed", 31),
+    (else_try),
+      (is_between, ":cur_troop", "trp_knight_11_1", "trp_knight_12_1"),
+      (store_sub, ":npc_seed", ":cur_troop", "trp_knight_11_1"),
+      (assign, ":ancestor_seed", 31),
 		(try_end),
 		
 		
