@@ -3077,6 +3077,9 @@ game_menus = [
         (change_screen_mission),
         ]
        ),
+      ("camp_test_equipment_selection",[],"Test equipment selection.",
+        [(jump_to_menu, "mnu_test_equipment"),] 
+      ),
       ("camp_action",[],"Take an action.",
        [(jump_to_menu, "mnu_camp_action"),
         ]
@@ -3321,6 +3324,28 @@ game_menus = [
         ]
        ),
       ]
+  ),
+  (
+    "test_equipment",0,
+    "You are testing equipment.",
+    "none",
+    [],
+    [
+      ("talk_to_quartermaster",[],"Talk to the quartermaster.",[
+        (call_script, "script_get_meeting_scene"), (assign, ":meeting_scene", reg0),
+        (modify_visitors_at_site,":meeting_scene"),
+        (reset_visitors),
+        (set_visitor,0,"trp_player"),
+        (set_visitor,17,"trp_quartermaster"),
+        (set_jump_mission,"mt_conversation_encounter"),
+        (jump_to_scene,":meeting_scene"),
+        (assign, "$talk_context", tc_after_duel),
+        (change_screen_map_conversation, "trp_quartermaster"),
+      ]),
+      ("leave",[],"Back.",
+       [(jump_to_menu, "mnu_camp")]
+      ),
+    ]
   ),
 
   ("camp_action",0,

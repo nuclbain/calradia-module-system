@@ -62,7 +62,11 @@ game_menus = [
 		
 		("revolt",[],"Revolt against the commander!",
         [(jump_to_menu, "mnu_ask_revolt"),]),
-		
+
+		# Allow player to select his own equipment based on his tier 
+		("select_equipment",[],"Speak to the quartermaster.",
+				[(jump_to_menu, "mnu_select_equipment"),]),
+
 		("desert",[],"Desert the army.(keep equipment but lose relations)",
         [(jump_to_menu, "mnu_ask_desert"),]),
 		
@@ -176,6 +180,14 @@ game_menus = [
 		
     ]),
 	
+		# mnu_select_equipment
+		("select_equipment",0,
+		"Select your equipment.",
+		"none",
+    [(set_background_mesh, "mesh_pic_soldier_desert"),],[
+				("leave_selection",[],"Leave as it is.",
+				[(change_screen_return),]),
+    ]),
  
     #menu_ask_desert
     ("ask_desert",0,

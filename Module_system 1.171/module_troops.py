@@ -1091,6 +1091,7 @@ troops = [
    0x00000000000c100739ce9c805d2f381300000000001cc7ad0000000000000000],
 #NPC system changes end
 
+  ["quartermaster", "quartermaster", "quartermaster", tf_hero|tf_randomize_face, 0,reserved,  fac_neutral,[     itm_courtly_outfit, itm_m_leather_boots_a], def_attrib|level(2),wp(20),knows_common, man_face_middle_1, mercenary_face_2],
 
 #governers olgrel rasevas                                                                        Horse          Bodywear                Footwear_in                     Footwear_out                    Armor                       Weapon                  Shield                  Headwaer
   ["kingdom_1_lord",  "King Harlaus",  "Harlaus",  tf_hero, 0,reserved,  fac_kingdom_1,[itm_charger,   itm_rich_outfit,        itm_blue_hose,                  itm_plate_boots,               itm_plate_armor, itm_gauntlets,    itm_bastard_sword_b,      itm_tab_shield_heater_cav_b,       itm_great_helmet],          knight_attrib_5,wp(220),knight_skills_5|knows_trainer_5, 0x0000000f45041105241acd2b5a66a86900000000001e98310000000000000000,swadian_face_older_2],
