@@ -1645,9 +1645,9 @@ items = [
 # shirt_a_coat_of_plates_light, shirt_a_coat_of_plates_light.1
 ["shirt_a_coat_of_plates_light", "Light Coat of Plates", [("shirt_a_coat_of_plates_light",0),("shirt_a_coat_of_plates_light.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(18)|leg_armor(0)|difficulty(0),imodbits_armor],
 # shirt_a_mail_new, shirt_a_mail_new.1
-["shirt_a_mail_new", "Mail Shirt", [("shirt_a_mail_new",0),("shirt_a_mail_new.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(20)|leg_armor(0)|difficulty(0),imodbits_armor],
+["shirt_a_mail_new", "Mail Shirt", [("shirt_a_mail_new",0),("shirt_a_mail_new.1",0)], itp_merchandise|itp_type_body_armor, 0, 456,abundance(100)|head_armor(0)|body_armor(29)|leg_armor(17)|difficulty(0),imodbits_armor],
 # shirt_a_lamellar_mail, shirt_a_lamellar_mail.1, shirt_a_lamellar_mail.2
-["shirt_a_lamellar_mail", "Lamellar Mail Shirt", [("shirt_a_lamellar_mail",0),("shirt_a_lamellar_mail.1",0),("shirt_a_lamellar_mail.2",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(0)|body_armor(22)|leg_armor(0)|difficulty(0),imodbits_armor],
+["shirt_a_lamellar_mail", "Lamellar Mail Shirt", [("shirt_a_lamellar_mail",0),("shirt_a_lamellar_mail.1",0),("shirt_a_lamellar_mail.2",0)], itp_merchandise|itp_type_body_armor, 0, 781,abundance(100)|head_armor(0)|body_armor(35)|leg_armor(17)|difficulty(0),imodbits_armor],
 # shirt_a_coat_of_plates_new, shirt_a_coat_of_plates_new.1
 ["shirt_a_coat_of_plates_new", "Coat of Plates", [("shirt_a_coat_of_plates_new",0),("shirt_a_coat_of_plates_new.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(1)|body_armor(24)|leg_armor(0)|difficulty(0),imodbits_armor],
 # rich_tunic_a_new
