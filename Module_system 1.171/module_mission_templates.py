@@ -2216,9 +2216,9 @@ mission_templates = [
     "lead_charge",mtf_battle_mode|mtf_synch_inventory,charge,
     "You lead your men to battle.",
     [
-     (1,mtef_defenders|mtef_team_0,0,aif_start_alarmed,12,[]),
+     (1,mtef_defenders|mtef_team_0,0,aif_start_alarmed,60,[]),
      (0,mtef_defenders|mtef_team_0,0,aif_start_alarmed,0,[]),
-     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,12,[]),
+     (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,60,[]),
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
      ],
     [
@@ -2356,15 +2356,15 @@ mission_templates = [
                  (store_mission_timer_a,":mission_time"),
                  (ge,":mission_time",10),
                  (store_normalized_team_count,":num_defenders", 0),
-                 (lt,":num_defenders",6)],
-           [(add_reinforcements_to_entry,0,7),(assign, "$defender_reinforcement_limit_increased", 0),(val_add,"$defender_reinforcement_stage",1)]),
+                 (lt,":num_defenders",30)],
+           [(add_reinforcements_to_entry,0,30),(assign, "$defender_reinforcement_limit_increased", 0),(val_add,"$defender_reinforcement_stage",1)]),
       
       (1, 0, 5, [(lt,"$attacker_reinforcement_stage",2),
                  (store_mission_timer_a,":mission_time"),
                  (ge,":mission_time",10),
                  (store_normalized_team_count,":num_attackers", 1),
-                 (lt,":num_attackers",6)],
-           [(add_reinforcements_to_entry,3,7),(val_add,"$attacker_reinforcement_stage",1)]),
+                 (lt,":num_attackers",30)],
+           [(add_reinforcements_to_entry,3,30),(val_add,"$attacker_reinforcement_stage",1)]),
 
       common_battle_check_victory_condition,
       common_battle_victory_display,
