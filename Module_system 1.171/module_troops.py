@@ -616,6 +616,10 @@ troops = [
   ["khergit_lancer","Khergit Lancer","Khergit Lancers",tf_mounted|tf_guarantee_all_wo_ranged,0,0,fac_kingdom_3,
    [itm_sword_khergit_4,itm_spiked_mace,itm_m_impaler_b,itm_m_impaler_a, itm_m_lancer_helmet_midi_a, itm_m_lancer_helmet_midi_b, itm_m_lancer_helmet_midi_c, itm_m_lancer_helmet_midi_d, itm_m_lancer_helmet_midi_e, itm_m_lancer_helmet_midi_f,itm_m_lancer_armor_a,itm_m_lancer_armor_b,itm_m_lancer_armor_c,itm_m_lancer_armor_d,itm_m_lancer_armor_e,itm_m_lancer_armor_f,itm_m_lancer_armor_g,itm_m_leather_boots_a, itm_lamellar_gauntlets, itm_scale_gauntlets, itm_leather_gloves, itm_m_gloves_a,itm_tab_shield_small_round_b,itm_tab_shield_small_round_c,itm_courser,itm_warhorse_steppe,itm_warhorse_steppe,itm_warhorse_steppe],
    def_attrib|level(23),wp_one_handed (110) | wp_two_handed (110) | wp_polearm (150) | wp_archery (110) | wp_crossbow (110) | wp_throwing (110),knows_riding_7|knows_power_strike_4|knows_power_draw_4|knows_power_throw_2|knows_ironflesh_4|knows_horse_archery_1|knows_shield_2,khergit_face_middle_1, khergit_face_older_2],
+
+  ["khergit_khevtuul","Khergit Khevtuul","Khergit Khevtuuls",tf_guarantee_all,0,0,fac_kingdom_3, [itm_strange_sword, itm_practice_board_shield, itm_m_rider_bow_a, itm_m_rider_arrows, itm_m_lancer_helmet_midi_a, itm_m_lancer_helmet_midi_b, itm_m_lancer_helmet_midi_c, itm_m_lancer_helmet_midi_d, itm_m_lancer_helmet_midi_e, itm_m_lancer_helmet_midi_f,itm_m_lancer_armor_elite_a,itm_m_lancer_armor_elite_b,itm_m_lancer_armor_elite_c,itm_m_lancer_armor_elite_d,itm_m_lancer_armor_elite_e,itm_m_lancer_armor_elite_f,itm_m_lancer_armor_elite_g,itm_m_leather_boots_a, itm_lamellar_gauntlets, itm_scale_gauntlets, itm_leather_gloves, itm_m_gloves_a],def_attrib|str_20|agi_25|level(29),wp_one_handed (200) | wp_two_handed (230) | wp_polearm (150) | wp_archery (260) | wp_crossbow (110) | wp_throwing (110),knows_power_strike_9|knows_athletics_7|knows_power_draw_5|knows_ironflesh_7|knows_shield_2,khergit_face_middle_1, khergit_face_older_2],
+  ["khergit_kheshig","Khergit Kheshig","Khergit Kheshigs",tf_guarantee_all,0,0,fac_kingdom_3, [itm_strange_sword, itm_practice_board_shield, itm_m_rider_bow_a, itm_m_rider_arrows, itm_m_lancer_heavy_elite_a, itm_m_lancer_helmet_heavy_a, itm_lamellar_gauntlets, itm_scale_gauntlets, itm_m_gloves_a, itm_m_greaves_a, itm_khergit_leather_boots, itm_khergit_guard_boots],def_attrib|str_28|agi_30|level(35),wp_one_handed (300) | wp_two_handed (355) | wp_polearm (150) | wp_archery (400) | wp_crossbow (110) | wp_throwing (110),knows_power_strike_10|knows_power_draw_10|knows_ironflesh_10|knows_athletics_9|knows_shield_4,khergit_face_middle_1, khergit_face_older_2],
+
   ["khergit_messenger","Khergit Messenger","Khergit Messengers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_kingdom_3,
    [itm_sword_khergit_2,itm_leather_jerkin,itm_leather_boots,itm_courser,itm_leather_gloves,itm_short_bow,itm_arrows],
    str_7 | agi_21 | int_4 | cha_4|level(25),wp(125),knows_common|knows_riding_7|knows_horse_archery_5|knows_power_draw_5,khergit_face_young_1, khergit_face_older_2],
@@ -2884,7 +2888,7 @@ upgrade2(troops,"vaegir_boyar","vaegir_zemskyi_boyar","vaegir_knyazhiy_boyar")
 upgrade(troops,"khergit_slave","khergit_frontliner")
 upgrade(troops,"khergit_frontliner","khergit_suicidal")
 
-upgrade2(troops,"khergit_tribesman","khergit_skirmisher","khergit_warrior")
+upgrade(troops,"khergit_tribesman","khergit_warrior")
 
 upgrade(troops,"khergit_warrior","khergit_swordsman")
 upgrade(troops,"khergit_swordsman","khergit_veteran")
@@ -2893,6 +2897,8 @@ upgrade(troops,"khergit_veteran","khergit_champion")
 upgrade(troops,"khergit_skirmisher","khergit_horseman")
 upgrade2(troops,"khergit_horseman","khergit_lancer","khergit_horse_archer")
 upgrade(troops,"khergit_horse_archer","khergit_veteran_horse_archer")
+
+upgrade(troops,"khergit_khevtuul","khergit_kheshig")
 
 upgrade2(troops,"nord_recruit","nord_footman","nord_huntsman")
 upgrade2(troops,"nord_footman","nord_trained_footman", "nord_native_warrior")

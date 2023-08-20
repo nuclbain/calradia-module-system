@@ -8181,6 +8181,51 @@ game_menus = [
           (jump_to_menu, "mnu_center_improve"),
         ]
       ),
+      (
+        "center_build_khergit_barracks",
+        [
+          (eq, reg6, 0),
+          (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_barracks, 0),
+					(party_slot_eq, "$g_encountered_party", slot_center_culture, "fac_culture_3")
+        ],
+        "[infantry] Build a Khergit barracks.",
+        [
+          (assign, "$g_improvement_type", slot_center_has_khergit_barracks),
+          (jump_to_menu, "mnu_center_improve"),
+        ]
+      ),
+			(
+        "center_build_khergit_stables",
+        [
+          (eq, reg6, 0),
+					(this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+					(party_slot_eq, "$g_encountered_party", slot_center_has_khergit_stables, 0),
+					(party_slot_eq, "$g_encountered_party", slot_center_culture, "fac_culture_3")
+				],
+				"[Cavalry] Build Khergit stables.",
+				[
+					(assign, "$g_improvement_type", slot_center_has_khergit_stables),
+					(jump_to_menu, "mnu_center_improve"),
+				]
+			),
+			(
+				"center_build_champions_hall",
+				[
+					(eq, reg6, 0),
+					(this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+					(party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+					(party_slot_eq, "$g_encountered_party", slot_center_has_khergit_champions_hall, 0),
+					(party_slot_eq, "$g_encountered_party", slot_center_culture, "fac_culture_3")
+				],
+				"[Special] Build a Champions Hall.",
+				[
+					(assign, "$g_improvement_type", slot_center_has_khergit_champions_hall),
+					(jump_to_menu, "mnu_center_improve"),
+				]
+			),
       ("go_back_dot",[],"Go back.",[(jump_to_menu, "$g_next_menu")]),
     ],
   ),
@@ -8544,11 +8589,11 @@ game_menus = [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
           (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_elders_house, 1),
         ],
-        "[1x Vaegir Gryden] Hire. (50 denars)",
+        "[1x Vaegir Gryden] Hire. (400 denars)",
         [
           (store_troop_gold, ":gold", "trp_player"),
-          (ge, ":gold", 50),
-          (troop_remove_gold, "trp_player", 50),
+          (ge, ":gold", 400),
+          (troop_remove_gold, "trp_player", 400),
           (party_add_members, "$g_encountered_party", "trp_vaegir_gryden", 1),
         ]
       ),
@@ -8558,25 +8603,25 @@ game_menus = [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
           (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_elders_house, 1),
         ],
-        "[5x Vaegir Gryden] Hire. (250 denars)",
+        "[5x Vaegir Gryden] Hire. (2000 denars)",
         [
           (store_troop_gold, ":gold", "trp_player"),
-          (ge, ":gold", 250),
-          (troop_remove_gold, "trp_player", 250),
+          (ge, ":gold", 2000),
+          (troop_remove_gold, "trp_player", 2000),
           (party_add_members, "$g_encountered_party", "trp_vaegir_gryden", 5),
         ]
       ),
       (
-        "center_swadia_elders_house_recruit_volunteers_10",
+        "center_vaegir_elders_house_recruit_volunteers_10",
         [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
           (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_elders_house, 1),
         ],
-        "[10x Vaegir Gryden] Hire. (500 denars)",
+        "[10x Vaegir Gryden] Hire. (4000 denars)",
         [
           (store_troop_gold, ":gold", "trp_player"),
-          (ge, ":gold", 500),
-          (troop_remove_gold, "trp_player", 500),
+          (ge, ":gold", 4000),
+          (troop_remove_gold, "trp_player", 4000),
           (party_add_members, "$g_encountered_party", "trp_vaegir_gryden", 10),
         ]
       ),
@@ -8588,6 +8633,180 @@ game_menus = [
           (jump_to_menu, "$g_next_menu"),
         ]
       ),
+    ],
+  ),
+  (
+    "center_khergit_barracks",0,
+    "Here you can hire soldiers for your garrison. (Troops will be added to the town's garrison, not your party)",
+    "none",
+    [],
+    [
+      (
+        "center_khergit_barracks_recruit_volunteers_1",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_barracks, 1),
+        ],
+        "[1x Khergit Tribesmen] Hire. (50 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 50),
+          (troop_remove_gold, "trp_player", 50),
+          (party_add_members, "$g_encountered_party", "trp_khergit_tribesman", 1),
+        ]
+      ),
+      (
+        "center_khergit_barracks_recruit_volunteers_5",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_barracks, 1),
+        ],
+        "[5x Khergit Tribesmen] Hire. (250 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 250),
+          (troop_remove_gold, "trp_player", 250),
+          (party_add_members, "$g_encountered_party", "trp_khergit_tribesman", 5),
+        ]
+      ),
+      (
+        "center_khergit_barracks_recruit_volunteers_10",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_barracks, 1),
+        ],
+        "[10x Khergit Tribesmen] Hire. (500 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 500),
+          (troop_remove_gold, "trp_player", 500),
+          (party_add_members, "$g_encountered_party", "trp_khergit_tribesman", 10),
+        ]
+      ),
+      (
+        "escape_khergit_barracks",
+        [],
+        "Leave...",
+        [
+          (jump_to_menu, "$g_next_menu"),
+        ]
+      ),
+    ],
+  ),
+  (
+    "center_khergit_stables",0,
+    "Here you can buy mounted troops for your garrison. (Troops will be added to the town's garrison, not your party)",
+    "none",
+    [],
+    [
+      (
+        "center_khergit_stables_recruit_volunteers_1",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_stables, 1),
+        ],
+        "[1x Khergit Skirmishers] Hire. (100 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 100),
+          (troop_remove_gold, "trp_player", 100),
+          (party_add_members, "$g_encountered_party", "trp_khergit_skirmisher", 1),
+        ]
+      ),
+      (
+        "center_khergit_stables_recruit_volunteers_5",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_stables, 1),
+        ],
+        "[5x Khergit Skirmishers] Hire. (500 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 500),
+          (troop_remove_gold, "trp_player", 500),
+          (party_add_members, "$g_encountered_party", "trp_khergit_skirmisher", 5),
+        ]
+      ),
+      (
+        "center_khergit_stables_recruit_volunteers_10",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_stables, 1),
+        ],
+        "[10x Khergit Skirmishers] Hire. (1000 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 1000),
+          (troop_remove_gold, "trp_player", 1000),
+          (party_add_members, "$g_encountered_party", "trp_khergit_skirmisher", 10),
+        ]
+      ),
+      (
+        "escape_khergit_stables",
+        [],
+        "Leave...",
+        [
+          (jump_to_menu, "$g_next_menu"),
+        ]
+      ),
+    ],
+  ),
+  (
+    "center_khergit_champions_hall",0,
+    "Here you can hire noble Lion Guards of Swadia for your garrison. (Troops will be added to the town's garrison, not your party)",
+    "none",
+    [],
+    [
+      (
+        "center_khergit_champions_hall_recruit_volunteers_1",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_champions_hall, 1),
+        ],
+        "[1x Khergit Khevtuul] Hire. (500 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 500),
+          (troop_remove_gold, "trp_player", 500),
+          (party_add_members, "$g_encountered_party", "trp_khergit_khevtuul", 1),
+        ]
+      ),
+      (
+        "center_khergit_champions_hall_recruit_volunteers_5",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_champions_hall, 1),
+        ],
+        "[5x Khergit Khevtuul] Hire. (2500 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 2500),
+          (troop_remove_gold, "trp_player", 2500),
+          (party_add_members, "$g_encountered_party", "trp_khergit_khevtuul", 5),
+        ]
+      ),
+      (
+        "center_khergit_champions_hall_recruit_volunteers_10",
+        [
+          (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_champions_hall, 1),
+        ],
+        "[10x Khergit Khevtuul] Hire. (5000 denars)",
+        [
+          (store_troop_gold, ":gold", "trp_player"),
+          (ge, ":gold", 5000),
+          (troop_remove_gold, "trp_player", 5000),
+          (party_add_members, "$g_encountered_party", "trp_khergit_khevtuul", 10),
+        ]
+      ),
+      (
+        "escape_champions_hall",
+        [],
+        "Leave...",
+        [
+          (jump_to_menu, "$g_next_menu"),
+        ]     
+      )
     ],
   ),
   (
@@ -10235,7 +10454,7 @@ game_menus = [
         (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
         (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_barracks, 1),
       ],
-      "[Hire] Visit local guild.",
+      "[Hire] Visit barracks.",
       [
         (assign, "$g_next_menu", "mnu_town"),
         (set_background_mesh, "mesh_pic_recruits"),
@@ -10246,7 +10465,7 @@ game_menus = [
         (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
         (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_archery, 1),
       ],
-      "[Hire] Visit local guild.",
+      "[Hire] Visit archery range.",
       [
         (assign, "$g_next_menu", "mnu_town"),
         (set_background_mesh, "mesh_pic_recruits"),
@@ -10257,7 +10476,7 @@ game_menus = [
         (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
         (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_stables, 1),
       ],
-      "[Hire] Visit local guild.",
+      "[Hire] Visit stables.",
       [
         (assign, "$g_next_menu", "mnu_town"),
         (set_background_mesh, "mesh_pic_recruits"),
@@ -10268,13 +10487,47 @@ game_menus = [
         (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
         (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_elders_house, 1),
       ],
-      "[Hire] Visit local guild.",
+      "[Hire] Visit elders house.",
       [
         (assign, "$g_next_menu", "mnu_town"),
         (set_background_mesh, "mesh_pic_recruits"),
         (jump_to_menu, "mnu_center_vaegir_elders_house"),
       ]),
       
+      ("wallet_khergit_barracks",
+      [
+        (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+        (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_barracks, 1),
+      ],
+      "[Hire] Visit barracks.",
+      [
+        (assign, "$g_next_menu", "mnu_town"),
+        (set_background_mesh, "mesh_pic_recruits"),
+        (jump_to_menu, "mnu_center_khergit_barracks"),
+      ]),
+      ("wallet_khergit_stables",
+      [
+        (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+        (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_stables, 1),
+      ],
+      "[Hire] Visit stables.",
+      [
+        (assign, "$g_next_menu", "mnu_town"),
+        (set_background_mesh, "mesh_pic_recruits"),
+        (jump_to_menu, "mnu_center_khergit_stables"),
+      ]),  
+      ("wallet_khergit_champions_hall",
+      [
+        (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
+        (party_slot_eq, "$g_encountered_party", slot_center_has_khergit_champions_hall, 1),
+      ],
+      "[Hire] Visit champions hall.",
+      [
+        (assign, "$g_next_menu", "mnu_town"),
+        (set_background_mesh, "mesh_pic_recruits"),
+        (jump_to_menu, "mnu_center_khergit_champions_hall"),
+      ]),
+
       ("walled_center_move_court",
       [
         (neg|party_slot_eq, "$current_town", slot_village_state, svs_under_siege),
