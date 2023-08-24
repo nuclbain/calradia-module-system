@@ -181,13 +181,28 @@ game_menus = [
     ]),
 	
 		# mnu_select_equipment
-		("select_equipment",0,
-		"Select your equipment.",
-		"none",
-    [(set_background_mesh, "mesh_pic_soldier_desert"),],[
-				("leave_selection",[],"Leave as it is.",
-				[(change_screen_return),]),
-    ]),
+		(
+			"select_equipment",0,
+			"You are testing equipment.",
+			"none",
+			[(set_background_mesh, "mesh_pic_soldier_desert")],
+			[
+				("talk_to_quartermaster",[],"Talk to the quartermaster.",[
+					(call_script, "script_get_meeting_scene"), (assign, ":meeting_scene", reg0),
+					(modify_visitors_at_site,":meeting_scene"),
+					(reset_visitors),
+					(set_visitor,0,"trp_player"),
+					(set_visitor,17,"trp_quartermaster"),
+					(set_jump_mission,"mt_conversation_encounter"),
+					(jump_to_scene,":meeting_scene"),
+					(assign, "$talk_context", tc_after_duel),
+					(change_screen_map_conversation, "trp_quartermaster"),
+				]),
+				("leave_selection",[],"Back.",
+				[(change_screen_return)]
+				),
+			]
+		),
  
     #menu_ask_desert
     ("ask_desert",0,

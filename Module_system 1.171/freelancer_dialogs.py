@@ -166,6 +166,51 @@ dialogs	= [
 		(change_screen_map),
 		],
 		],	
+
+  # Quartermaster dialogs
+  [anyone,"start", [
+    (eq, "$g_talk_troop", "trp_quartermaster"),
+  ], "Greetings soldier, want to change your equipment?", "dismiss_quartermaster",[]],
+
+  [anyone|plyr,"dismiss_quartermaster", [], "Yeah, I want to change my primary weapon.", "pick_primary_weapon",[]],
+  [anyone|plyr,"dismiss_quartermaster", [], "Glad you asked, I want to change my secondary weapon.", "close_window",[]],
+  [anyone|plyr,"dismiss_quartermaster", [], "New piece of armor would be nice.", "close_window",[]],
+  [anyone|plyr,"dismiss_quartermaster", [], "I'm looking for a new helmet.", "close_window",[]],
+  [anyone|plyr,"dismiss_quartermaster", [], "I've been thinking about a new shield.", "close_window",[]],
+  [anyone|plyr,"dismiss_quartermaster", [], "I would like to pick another pair of boots.", "close_window",[]],
+  [anyone|plyr,"dismiss_quartermaster", [], "I'd prefer to have a different pair of gloves.", "close_window",[]],
+  [anyone|plyr,"dismiss_quartermaster", [], "Let's leave it as it is...", "close_window",[]],
+
+  [anyone,"pick_primary_weapon", [], "What kind of weapon do you want?", "pick_primary_weapon_type",[]],
+  [anyone|plyr,"pick_primary_weapon_type", [], "Sword", "close_window",[
+    (try_begin),
+      (player_has_item, "itm_sword_medieval_a", 0),
+      (display_message, "@You already have this weapon.", 0xFF0000),
+    (else_try),
+      (troop_add_item, "trp_player", "itm_sword_medieval_a", 0),
+    (try_end),
+  ]],
+  [anyone|plyr,"pick_primary_weapon_type", [], "Axe", "close_window",[
+    (try_begin),
+      (player_has_item, "itm_axe", 0),
+      (display_message, "@You already have this weapon.", 0xFF0000),
+    (else_try),
+      (troop_add_item, "trp_player", "itm_axe", 0),
+    (try_end),
+  ]],
+  [anyone|plyr,"pick_primary_weapon_type", [], "Pick manually.", "dismiss_quartermaster",[
+    (troop_clear_inventory, "trp_quartermaster"),
+    (troop_get_inventory_capacity, ":inv_size", "trp_rhodok_tribesman"),
+    (try_for_range, ":item", 0, ":inv_size"),
+      (troop_get_inventory_slot, ":item_id", "trp_rhodok_tribesman", ":item"),
+      (item_get_type, ":item_type", ":item_id"),
+      (troop_add_merchandise, "trp_quartermaster", ":item_type", ":item_id", 1),
+    (try_end),
+
+    (change_screen_trade, "trp_quartermaster"),
+  ]],
+  [anyone|plyr,"pick_primary_weapon_type", [], "Back.", "dismiss_quartermaster",[]],
+
 #+freelancer end
 ]
 
