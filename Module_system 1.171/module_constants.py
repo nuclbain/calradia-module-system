@@ -206,9 +206,9 @@ slot_faction_morale_of_player_troops    = 99
 
 #diplomacy
 slot_faction_truce_days_with_factions_begin 			= 120
-slot_faction_provocation_days_with_factions_begin 		= 130
-slot_faction_war_damage_inflicted_on_factions_begin 	= 140
-slot_faction_sum_advice_about_factions_begin 			= 150
+slot_faction_provocation_days_with_factions_begin 		= 170
+slot_faction_war_damage_inflicted_on_factions_begin 	= 220
+slot_faction_sum_advice_about_factions_begin 			= 260
 
 #revolts -- notes for self
 #type 1 -- minor revolt, aimed at negotiating change without changing the ruler
