@@ -2169,8 +2169,11 @@ items = [
 ["khergit_vest_b_lamellar", "Khergit Vest with Lamellar", [("khergit_vest_b_lamellar",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(3)|body_armor(20)|leg_armor(3)|difficulty(0),imodbits_cloth],
 # khergit_vest_b_mail, khergit_vest_b_mail.1
 ["khergit_vest_b_mail", "Khergit Vest with Mail", [("khergit_vest_b_mail",0),("khergit_vest_b_mail.1",0)], itp_merchandise|itp_type_body_armor, 0, 99,abundance(100)|head_armor(3)|body_armor(20)|leg_armor(3)|difficulty(0),imodbits_cloth],
-["cuir_bouilli_with_pelt", "Cuir Bouilli with Pelt", [("cuir_bouilli_b",0),("cuir_bouilli_b.1",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
- 3400 , weight(24)|abundance(10)|head_armor(2)|body_armor(51)|leg_armor(15)|difficulty(8) ,imodbits_armor ],
+
+["cuir_bouilli_with_pelt", "Cuir Bouilli with Pelt", [("cuir_bouilli_b",0),("cuir_bouilli_b.1",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 3400 , weight(24)|abundance(10)|head_armor(2)|body_armor(51)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_4, fac_kingdom_2, fac_kingdom_12] ],
+["banded_armor_b", "Banded Armor with Pelt", [("banded_armor_b",0),("banded_armor_b.1",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 3250 , weight(24)|abundance(10)|head_armor(2)|body_armor(49)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_4, fac_kingdom_2, fac_kingdom_12] ],
+["banded_armor_c", "Nordic Banded Armor", [("banded_armor_c",0),("banded_armor_c.1",0),("banded_armor_c.2",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 3250 , weight(24)|abundance(10)|head_armor(2)|body_armor(49)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_4, fac_kingdom_2, fac_kingdom_12] ],
+["banded_armor_d", "Nordic Banded Armor", [("banded_armor_d",0),("banded_armor_d.1",0),("banded_armor_d.2",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 3250 , weight(24)|abundance(10)|head_armor(2)|body_armor(49)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_4, fac_kingdom_2, fac_kingdom_12] ],
 
 # Custom mod armors
 ["m_coif_a", "Mail Coif", [("elite_cavalary_coif",0), ("elite_cavalary_coif_ixmesh_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 459, weight(2)|abundance(100)|head_armor(43)|body_armor(2)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
