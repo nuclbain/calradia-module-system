@@ -2233,6 +2233,11 @@ items = [
 ["m_corrazina_b", "Corrazina", [("corrazina_grey",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1599 , weight(24)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(19)|difficulty(10) ,imodbits_armor ], 
 ["m_corrazina_c", "Corrazina", [("corrazina_green",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1599 , weight(24)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(19)|difficulty(10) ,imodbits_armor ], 
 
+["m_corrazina_a_cloak", "Corrazina with Cloak", [("corrazina_red_cloak",0),("corrazina_red_cloak.1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1899 , weight(24)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(19)|difficulty(10) ,imodbits_armor ], 
+
+["m_full_plate_a", "Full Plate with Pelt", [("full_plate_armor_b",0),("full_plate_armor_b.1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,2999 , weight(24)|abundance(100)|head_armor(0)|body_armor(56)|leg_armor(19)|difficulty(15) ,imodbits_armor ], 
+["m_full_plate_b", "Full Plate with Cloack & Pelt", [("full_plate_armor_c",0),("full_plate_armor_c.1",0),("full_plate_armor_c.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,2999 , weight(24)|abundance(100)|head_armor(0)|body_armor(56)|leg_armor(19)|difficulty(15) ,imodbits_armor ], 
+
 ["m_churburg_a", "Churburg Plate", [("churburg_13",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1799 , weight(24)|abundance(100)|head_armor(0)|body_armor(55)|leg_armor(21)|difficulty(10) ,imodbits_armor ], 
 ["m_churburg_b", "Churburg Plate", [("churburg_13_brass",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1799 , weight(24)|abundance(100)|head_armor(0)|body_armor(55)|leg_armor(21)|difficulty(10) ,imodbits_armor ], 
 ["m_churburg_c", "Churburg Plate on Mail", [("churburg_13_mail",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,2059 , weight(27)|abundance(100)|head_armor(0)|body_armor(59)|leg_armor(21)|difficulty(12) ,imodbits_armor ], 
