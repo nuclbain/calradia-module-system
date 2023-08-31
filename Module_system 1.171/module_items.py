@@ -1598,8 +1598,8 @@ items = [
  ["a_h2_1",  "Highlander Armor", [("a_h2_1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 1000 , weight(15)|abundance(100)|head_armor(0)|body_armor(34)|leg_armor(14)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
  ["a_h3",  "Elite Highlander Armor", [("a_h3",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 3000 , weight(3)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(18)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
  ["a_h3_1",  "Elite Highlander Armor", [("a_h3_1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 3000 , weight(3)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(18)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
- ["a_h4",  "Highlander Cotume", [("a_h4",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 300 , weight(3)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
- ["a_h4_1",  "Highlander Cotume", [("a_h4_1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 300 , weight(3)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
+ ["a_h4",  "Highlander Costume", [("a_h4",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 300 , weight(3)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
+ ["a_h4_1",  "Highlander Costume", [("a_h4_1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 300 , weight(3)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
 
 ["h_h1", "Highlander Beret", [("h_h1",0)], itp_type_head_armor| itp_attach_armature|itp_fit_to_head   ,0, 278 , weight(2)|abundance(100)|head_armor(20)|body_armor(0)|leg_armor(0) ,imodbits_cloth, [], [fac_kingdom_4] ],
 ["h_h1_1", "Highlander Beret", [("h_h1_1",0)], itp_type_head_armor | itp_attach_armature|itp_fit_to_head   ,0, 278 , weight(2)|abundance(100)|head_armor(20)|body_armor(0)|leg_armor(0) ,imodbits_cloth, [], [fac_kingdom_4] ],
