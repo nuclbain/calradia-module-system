@@ -1327,6 +1327,27 @@ items = [
 370 , weight(5)|hit_points(550)|body_armor(10)|spd_rtng(78)|shield_width(45)|shield_height(100),imodbits_shield,
 [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_pavise_shield_3", ":agent_no", ":troop_no")])]],
 
+# New heraldic armors
+["mail_long_surcoat_new_heraldic", "Heraldic Mail with Tabard", [("mail_long_surcoat_new_heraldic",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3412 , weight(21)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(16)|difficulty(7) ,imodbits_armor,
+ [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_heraldic_mail_long_surcoat_new", ":agent_no", ":troop_no")])]],
+
+["mail_short_surcoat_new_heraldic", "Heraldic Mail with Tabard", [("heraldic_surcoat_over_mail_short",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3999 , weight(25)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(19)|difficulty(9) ,imodbits_armor,
+ [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_heraldic_surcoat_over_mail_short", ":agent_no", ":troop_no")])]],
+
+["mail_tabard_heraldic", "Heraldic Mail with Tabard", [("tabard_b_heraldic",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+ 3187 , weight(20)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(19)|difficulty(7) ,imodbits_armor,
+ [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_tabard_b_heraldic", ":agent_no", ":troop_no")])]],
+
+["brigandine_b_heraldic", "Heraldic Brigandine", [("brigandine_b_heraldic",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs,0,
+ 2230 , weight(20)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(16)|difficulty(10) ,imodbits_armor,
+ [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_brigandine_b_heraldic_new", ":agent_no", ":troop_no")])]],
+ 
+["heraldic_tunic_new", "Heraldic Tunic", [("heraldic_tunic_new",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs,0,
+ 2230 , weight(20)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(16)|difficulty(10) ,imodbits_armor,
+ [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_heraldic_short_tunic_new", ":agent_no", ":troop_no")])]],
+
 # CWA Stuff
 ["m_swadia_light_horse_a","Swadia Light Horse", [("European_horse_a",0), ("European_horse_a.1",0)], itp_merchandise|itp_type_horse, 0, 1299,abundance(50)|hit_points(165)|body_armor(30)|difficulty(3)|horse_speed(52)|horse_maneuver(50)|horse_charge(28)|horse_scale(110),imodbits_horse_basic|imodbit_champion],
 ["m_swadia_light_horse_b","Swadia Light Horse", [("European_horse_b",0), ("European_horse_b.1",0)], itp_merchandise|itp_type_horse, 0, 1299,abundance(50)|hit_points(165)|body_armor(30)|difficulty(3)|horse_speed(52)|horse_maneuver(50)|horse_charge(28)|horse_scale(110),imodbits_horse_basic|imodbit_champion],
