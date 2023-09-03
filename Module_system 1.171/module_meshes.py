@@ -244,6 +244,13 @@ meshes = [
   ("tableau_mesh_heraldic_armor_b", 0, "tableau_mesh_heraldic_armor_b",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_c", 0, "tableau_mesh_heraldic_armor_c",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_d", 0, "tableau_mesh_heraldic_armor_d",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+###NEW###
+  ("tableau_mesh_mail_long_surcoat_new_heraldic", 0, "tableau_mesh_mail_long_surcoat_new_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("tableau_mesh_brigandine_b_heraldic", 0, "tableau_mesh_brigandine_b_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("tableau_mesh_heraldic_tunic_new", 0, "tableau_mesh_heraldic_tunic_new",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("tableau_mesh_heraldic_surcoat_over_mail_short", 0, "tableau_mesh_heraldic_surcoat_over_mail_short",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("tableau_mesh_tabard_b_heraldic", 0, "tableau_mesh_tabard_b_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
+###NEW###
 
   ("outer_terrain_plain_1", 0, "ter_border_a", -90, 0, 0, 0, 0, 0, 1, 1, 1),
   ("banner_a01", 0, "banner_a01", 0, 0, 0, -90, 0, 0, 1, 1, 1),

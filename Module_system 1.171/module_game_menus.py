@@ -94,12 +94,12 @@ game_menus = [
           (troop_add_item, "$g_player_troop","itm_m_leather_boots_a",0),
           (troop_add_item, "$g_player_troop","itm_m_gloves_a",0),
           (troop_add_item, "$g_player_troop","itm_m_kattle_a",0),
-          (troop_add_item, "$g_player_troop","itm_morningstar",0),
-          (troop_add_item, "$g_player_troop","itm_grosse_messer_b",0),
-          (troop_add_item, "$g_player_troop","itm_tab_shield_heater_cav_b",0),
+          (troop_add_item, "$g_player_troop","itm_guisarme",0),
+          (troop_add_item, "$g_player_troop","itm_crusader_sword",0),
+          (troop_add_item, "$g_player_troop","itm_shield_heater_d",0),
           (troop_add_item, "$g_player_troop","itm_smoked_fish",0),
 
-          (troop_add_gold, "$g_player_troop", 100000),
+          (troop_add_gold, "$g_player_troop", 1000000),
 
           (party_add_members, "p_main_party", "trp_watchman", 10),
 
