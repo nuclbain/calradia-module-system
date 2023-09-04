@@ -445,7 +445,7 @@ troops = [
 
 # Avalanche Warriors - Tempest Sentinels - Elite Stormguard
 ["stormguard_tempest_sentinel","Tempest Sentinel","Tempest Sentinels",tf_guarantee_all,0,0,fac_kingdom_12, [itm_m_cavalry_helmet_g,itm_ms_mail_shirt_heavy_a,itm_ms_mail_shirt_heavy_b,itm_ms_mail_shirt_heavy_c,itm_m_greaves_b,itm_m_gauntlets_a,itm_m_gauntlets_b,itm_one_handed_battle_axe_c,itm_shield_kite_k,itm_ms_two_h_sword_c, itm_war_axe, itm_shortened_voulge,itm_throwing_spears], def_attrib|level(24),wp(180),knows_common,knows_power_throw_6,swadian_face_young_1, swadian_face_middle_2],
-["stormguard_elite_stormguard","Elite Stormguard","Elite Stormguards",tf_guarantee_all,0,0,fac_kingdom_12, [itm_ms_facemask_elite,itm_ms_coat_of_plates_a,itm_ms_coat_of_plates_b,itm_ms_greaves_a,itm_m_gauntlets_b,itm_sarranid_axe_b,itm_tab_shield_round_e,itm_ms_great_axe_b,itm_heavy_throwing_axes], tier_three_attrib|level(35),wp(400),knows_common,knows_power_throw_9,swadian_face_young_1, swadian_face_middle_2],
+["stormguard_elite_stormguard","Elite Stormguard","Elite Stormguards",tf_guarantee_all,0,0,fac_kingdom_12, [itm_m_crusader_helm_f,itm_ms_mail_shirt_heavy_d,itm_ms_mail_shirt_heavy_e,itm_ms_greaves_a,itm_m_gauntlets_b,itm_sarranid_axe_b,itm_sarranid_axe_a,itm_shield_kite_k,itm_bec_de_corbin_a,itm_bec_de_corbin,itm_simple_poleaxe,itm_heavy_throwing_axes,itm_throwing_spears], tier_three_attrib|level(35),wp(400),knows_common,knows_power_throw_9,swadian_face_young_1, swadian_face_middle_2],
 
 
 
