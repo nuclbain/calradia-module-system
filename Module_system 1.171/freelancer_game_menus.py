@@ -4,6 +4,7 @@
 # Mod-Merger'd by Windyplains, Monnikje and Caba'drin
 
 from header_game_menus import *
+from header_items import *
 from module_constants import *
 
 ####################################################################################################################
@@ -59,6 +60,30 @@ game_menus = [
 		("commander",[(party_get_battle_opponent, ":commander_opponent", "$enlisted_party"),(lt, ":commander_opponent", 0),],
 		   "Request audience with your commander.",
         [(jump_to_menu, "mnu_commander_aud"),]),
+		(
+			"quartemaster",
+			[
+				(troop_clear_inventory, "trp_quartermaster"),
+				(troop_get_inventory_capacity, ":inv_cap", "$player_cur_troop"),
+				(troop_get_inventory_capacity, ":player_inv_cap", "trp_player"),
+
+				(try_for_range, ":i_slot", ek_item_0, ":inv_cap"),
+					(troop_get_inventory_slot, ":item", "$player_cur_troop", ":i_slot"),
+					(troop_add_item, "trp_quartermaster", ":item"),
+				(try_end),
+
+				(try_for_range, ":i_slot", ek_item_0, ":player_inv_cap"),
+					(troop_get_inventory_slot, ":item", "trp_player", ":i_slot"),
+					(troop_remove_item, "trp_quartermaster", ":item"),
+				(try_end),
+
+				(troop_sort_inventory, "trp_quartermaster"),
+			],
+			"Request to see the quartermaster.",
+			[
+				(change_screen_loot, "trp_quartermaster"),
+			]
+		),
 		
 		("revolt",[],"Revolt against the commander!",
         [(jump_to_menu, "mnu_ask_revolt"),]),

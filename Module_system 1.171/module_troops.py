@@ -1091,6 +1091,9 @@ troops = [
    0x00000000000c100739ce9c805d2f381300000000001cc7ad0000000000000000],
 #NPC system changes end
 
+# Special NPCs
+  ["quartermaster","Quartermaster","Quartermaster",tf_hero|tf_unmoveable_in_party_window, 0, reserved, fac_commoners,[itm_leather_jerkin,itm_hide_boots,itm_club],
+    str_7|agi_7|int_7|cha_7|level(1),wp(40),knows_common,swadian_face_older_2,swadian_face_old_2],
 
 #governers olgrel rasevas                                                                        Horse          Bodywear                Footwear_in                     Footwear_out                    Armor                       Weapon                  Shield                  Headwaer
   ["kingdom_1_lord",  "King Chamond II",  "Chamond",  tf_hero, 0,reserved,  fac_kingdom_1,[itm_m_swadia_lord_horse_a,   itm_rich_outfit,        itm_blue_hose,                  itm_mt_greaves_g,               itm_m_swadia_elite_knight_armor_e_cloaked, itm_mt_gauntlets_a,    itm_german_bastard_sword,      itm_shield_heater_d,       itm_mt_full_helm_f],          knight_attrib_5,wp(220),knight_skills_5|knows_trainer_5, 0x0000000f6d10244606db6db6db6dcafe00000000001db8fb0000000000000000,swadian_face_older_2],
