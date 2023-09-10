@@ -1369,6 +1369,10 @@ items = [
 ["m_swadia_common_a", "Rusty Padded Armor", [("dethertir_armor_h",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(8)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 ["m_swadia_common_b", "Rusty Padded Armor", [("dethertir_armor_f",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(8)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 
+["m_swadia_common_plated_a", "Rusty Padded Armor with Plates", [("swadia_padded_a",0), ("swadia_padded_a.1",0),("swadia_padded_a.2",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 799 , weight(16)|abundance(100)|head_armor(0)|body_armor(31)|leg_armor(8)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
+["m_swadia_common_plated_b", "Rusty Padded Armor with Plates", [("swadia_padded_b",0), ("swadia_padded_b.1",0),("swadia_padded_b.2",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1455 , weight(18)|abundance(100)|head_armor(0)|body_armor(34)|leg_armor(15)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
+["m_swadia_common_plated_c", "Rusty Padded Armor with Plates", [("swadia_padded_c",0), ("swadia_padded_c.1",0),("swadia_padded_c.2",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1455 , weight(18)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
+
 ["m_swadia_common_mail_a", "Rusty Mail Armor", [("dethertir_armor_g",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 499 , weight(16)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(8)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 ["m_swadia_common_mail_b", "Rusty Mail Armor", [("dethertir_armor_c",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 499 , weight(16)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(8)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 
@@ -1407,6 +1411,10 @@ items = [
 
 ["m_swadia_recruit_a", "Swadian Recruit Armor", [("novici_tripoli_armor",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 
+["m_swadia_recruit_plated_a", "Swadian Plated Recruit Armor", [("swadia_army_a",0),("swadia_army_a.1",0),("swadia_army_a.2",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1399 , weight(15)|abundance(100)|head_armor(0)|body_armor(29)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
+["m_swadia_recruit_plated_b", "Swadian Plated Recruit Armor", [("swadia_army_b",0),("swadia_army_b.1",0),("swadia_army_b.2",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1699 , weight(15)|abundance(100)|head_armor(0)|body_armor(33)|leg_armor(16)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
+["m_swadia_recruit_plated_c", "Swadian Plated Recruit Armor", [("swadia_army_c",0),("swadia_army_c.1",0),("swadia_army_c.2",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1499 , weight(15)|abundance(100)|head_armor(0)|body_armor(29)|leg_armor(16)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
+
 ["m_swadia_armor_light_a", "Swadian Light Armor", [("archer_tripoli_armor_a",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 352 , weight(12)|abundance(100)|head_armor(0)|body_armor(26)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 ["m_swadia_armor_light_b", "Swadian Light Armor", [("archer_tripoli_armor_b",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 352 , weight(12)|abundance(100)|head_armor(0)|body_armor(26)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 ["m_swadia_infantry_a", "Swadian Infantry Armor", [("armor_infantry_tripoli_a",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 442 , weight(12)|abundance(100)|head_armor(0)|body_armor(32)|leg_armor(11)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
@@ -1414,6 +1422,10 @@ items = [
 
 ["m_swadia_sergant_armor_a", "Swadian Sergant Armor", [("sergeant_armor_tripoli_a",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 532 , weight(16)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(15)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 ["m_swadia_sergant_armor_b", "Swadian Sergant Armor", [("sergeant_armor_tripoli_b",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 532 , weight(16)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(15)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
+
+["m_swadia_guardian_armor_a", "Swadian Guard Armor", [("swadia_army_padded_a",0),("swadia_army_padded_a.1",0),("swadia_army_padded_a.2",0),("swadia_army_padded_a.3",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 2679 , weight(23)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_1] ],
+["m_swadia_guardian_armor_b", "Swadian Guard Armor", [("swadia_army_padded_b",0),("swadia_army_padded_b.1",0),("swadia_army_padded_b.2",0),("swadia_army_padded_b.3",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 2679 , weight(23)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_1] ],
+["m_swadia_guardian_armor_c", "Swadian Guard Armor", [("swadia_army_padded_c",0),("swadia_army_padded_c.1",0),("swadia_army_padded_c.2",0),("swadia_army_padded_c.3",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 2679 , weight(23)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_1] ],
 
 ["m_swadia_knight_armor_a", "Swadian Knight Armor", [("knight_armor_tripolli_a",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1232 , weight(19)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(21)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 ["m_swadia_knight_armor_b", "Swadian Knight Armor", [("knight_armor_tripolli_b",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1232 , weight(19)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(21)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
