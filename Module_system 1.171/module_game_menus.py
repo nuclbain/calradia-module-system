@@ -998,17 +998,31 @@ game_menus = [
     "none",
     [],
     [
-      ("start_male",[],"Male",
+      ("start_male",[],"Human Male",
        [
          (troop_set_type,"trp_player", 0),
          (assign,"$character_gender",tf_male),
          (jump_to_menu,"mnu_start_character_1"),
         ]
        ),
-      ("start_female",[],"Female",
+      ("start_female",[],"Human Female",
        [
          (troop_set_type, "trp_player", 1),
          (assign, "$character_gender", tf_female),
+         (jump_to_menu, "mnu_start_character_1"),
+       ]
+       ),
+      # ("start_rotten",[],"Rotten Corpse",
+      #  [
+      #    (troop_set_type, "trp_player", 2),
+      #    (assign, "$character_gender", tf_unded),
+      #    (jump_to_menu, "mnu_start_character_1"),
+      #  ]
+      #  ),
+      ("start_awakened",[],"Awakened Skeleton",
+       [
+         (troop_set_type, "trp_player", 3),
+         (assign, "$character_gender", tf_awakened),
          (jump_to_menu, "mnu_start_character_1"),
        ]
        ),

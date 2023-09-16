@@ -95,7 +95,7 @@ woman_face_keys = [
 (280,0,0.0,1.0, "Post-Edit"),
 ]
 undead_face_keys = []
-
+skeletal_face_keys = []
 
 chin_size = 0
 chin_shape = 1
@@ -184,20 +184,36 @@ skins = [
     psys_game_blood,psys_game_blood_2,
   ),
   
-##  (
-##    "undead", 0,
-##    "undead_body", "undead_calf_l", "undead_handL",
-##    "undead_head", undead_face_keys,
-##    [],
-##    [],
-##    [],
-##    [],
-##    [("undeadface_a",0xffffffff,[]),
-##     ("undeadface_b",0xffcaffc0,[]),
-##     ], #undead_face_textures
-##    [], #voice sounds
-##    "skel_human", 1.0,
-##  ),
+#  (
+#    "undead", 0,
+#    "undead_body", "undead_calf_l", "undead_handL",
+#    "undead_head", undead_face_keys,
+#    [],
+#    [],
+#    [],
+#    [],
+#    [("undeadface_a",0xffffffff,[]),
+#     ("undeadface_b",0xffcaffc0,[]),
+#     ], #undead_face_textures
+#    [], #voice sounds
+#    "skel_human", 1.0,
+#  ),
+
+  (
+    "skeleton", 0,
+    "barf_skeleton", "barf_skeleton_calf_l", "barf_skeleton_handL",
+    "barf_skull", skeletal_face_keys,
+    [], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
+    [], #beard meshes ,"beard_q"
+    ["hair_blonde", "hair_red", "hair_brunette", "hair_black", "hair_white"], #hair textures
+    ["beard_blonde","beard_red","beard_brunette","beard_black","beard_white"], #beard_materials
+    [("barf_skull",0xffcbe0e0,["hair_blonde"],[0xffff88ff, 0xffb04717, 0xff88ff19]),
+     ], #man_face_textures,
+    [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_man_yell"),(voice_stun,"snd_man_stun"),(voice_victory,"snd_man_victory")], #voice sounds
+    "skel_human", 1.0,
+    psys_war_smoke_tall,psys_war_smoke_tall,
+    []
+  ),
 ]
 
 # modmerger_start version=201 type=2
