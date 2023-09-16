@@ -1737,11 +1737,11 @@ items = [
 
 ["sar_helmet5", "Sar Helmet 5", [("sar_helmet5",0)], itp_type_head_armor   ,0, 578 , weight(3)|abundance(0)|head_armor(20)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
 
-["woolen_cap_new_b", "Woolen Cap b", [("woolen_cap_new_b",0)], itp_merchandise| itp_type_head_armor  |itp_civilian ,0, 2 , weight(1)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["woolen_cap_new_c", "Woolen Cap c", [("woolen_cap_new_c",0)], itp_merchandise| itp_type_head_armor  |itp_civilian ,0, 2 , weight(1)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["woolen_cap_new_d", "Woolen Cap d", [("woolen_cap_new_d",0)], itp_merchandise| itp_type_head_armor  |itp_civilian ,0, 2 , weight(1)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["woolen_cap_new_e", "Woolen Cap e", [("woolen_cap_new_e",0)], itp_merchandise| itp_type_head_armor  |itp_civilian ,0, 2 , weight(1)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["woolen_cap_new_f", "Woolen Cap f", [("woolen_cap_new_f",0)], itp_merchandise| itp_type_head_armor  |itp_civilian ,0, 2 , weight(1)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["woolen_cap_new_b", "Woolen Cap", [("woolen_cap_new_b",0)], itp_merchandise| itp_type_head_armor  |itp_civilian ,0, 2 , weight(1)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["woolen_cap_new_c", "Woolen Cap", [("woolen_cap_new_c",0)], itp_merchandise| itp_type_head_armor  |itp_civilian ,0, 2 , weight(1)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["woolen_cap_new_d", "Woolen Cap", [("woolen_cap_new_d",0)], itp_merchandise| itp_type_head_armor  |itp_civilian ,0, 2 , weight(1)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["woolen_cap_new_e", "Woolen Cap", [("woolen_cap_new_e",0)], itp_merchandise| itp_type_head_armor  |itp_civilian ,0, 2 , weight(1)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["woolen_cap_new_f", "Woolen Cap", [("woolen_cap_new_f",0)], itp_merchandise| itp_type_head_armor  |itp_civilian ,0, 2 , weight(1)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 
 ["cervelliere", "Cervelliere", [("cervelliere",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 4 , weight(0.6)|abundance(0)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 
