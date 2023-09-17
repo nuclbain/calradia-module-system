@@ -6,6 +6,13 @@ from header_operations import *
 from header_triggers import *
 from module_constants import *
 import string
+##diplomacy start+ Import for use with terrain advantage
+from header_terrain_types import *
+##diplomacy end+
+
+##diplomacy begin
+from module_items import *
+##diplomacy end
 
 ####################################################################################################################
 #  Each presentation record contains the following fields:
@@ -563,7 +570,7 @@ presentations = [
       (position_set_x, pos1, 820),
       (position_set_y, pos1, ":cur_y"),
       (overlay_set_position, reg0, pos1),
-      
+
       (val_sub, ":cur_y", ":cur_y_adder"),
 
       (create_combo_label_overlay, "$g_presentation_obj_custom_battle_designer_4"),
@@ -869,7 +876,7 @@ presentations = [
 
       (presentation_set_duration, 999999),
       ]),
-    
+
     (ti_on_presentation_event_state_change,
      [
        (store_trigger_param_1, ":object"),
@@ -2414,7 +2421,7 @@ presentations = [
 
       (try_begin),
         (eq, "$g_multiplayer_game_type", multiplayer_game_type_siege),
-      
+
         (val_sub, ":cur_y", ":cur_y_adder"),
 
         (create_text_overlay, reg0, "str_defender_spawn_count_limit", 0),
@@ -2443,7 +2450,7 @@ presentations = [
 
         (store_sub, ":value_to_set", 5, "$g_multiplayer_number_of_respawn_count"),
         (overlay_set_val, "$g_presentation_obj_admin_panel_27", ":value_to_set"),
-        #(val_sub, ":cur_y", ":cur_y_adder"),      
+        #(val_sub, ":cur_y", ":cur_y_adder"),
       (else_try),
         (assign, "$g_presentation_obj_admin_panel_27", -1),
       (try_end),
@@ -2468,7 +2475,7 @@ presentations = [
 
       (try_begin),
         (eq, "$g_multiplayer_game_type", multiplayer_game_type_headquarters),
-      
+
         (val_sub, ":cur_y", ":cur_y_adder"),
 
         (create_text_overlay, reg0, "str_point_gained_from_flags", 0),
@@ -2484,10 +2491,10 @@ presentations = [
       (else_try),
         (assign, "$g_presentation_obj_admin_panel_17", -1),
       (try_end),
-      
+
       (try_begin),
         (eq, "$g_multiplayer_game_type", multiplayer_game_type_capture_the_flag),
-      
+
         (val_sub, ":cur_y", ":cur_y_adder"),
 
         (create_text_overlay, reg0, "str_point_gained_from_capturing_flag", 0),
@@ -2765,7 +2772,7 @@ presentations = [
         (start_presentation, "prsnt_game_multiplayer_admin_panel"),
       (try_end),
       ]),
-    
+
     (ti_on_presentation_event_state_change,
      [(store_trigger_param_1, ":object"),
       (store_trigger_param_2, ":value"),
@@ -3019,12 +3026,12 @@ presentations = [
         (assign, ":end_cond", 1000),
         (call_script, "script_game_multiplayer_get_game_type_mission_template", "$g_multiplayer_game_type"),
         (assign, ":cur_mt", reg0),
-        
+
         (str_store_server_name, s0),
         (str_store_string, s3, "str_server_name_s0"),
-        (str_store_string, s2, "str_s2_s3"),        
+        (str_store_string, s2, "str_s2_s3"),
 
-        (try_begin),                
+        (try_begin),
           (eq, "$g_multiplayer_game_type", multiplayer_game_type_deathmatch),
           (str_store_string, s0, "str_multi_game_type_1"),
         (else_try),
@@ -3073,33 +3080,33 @@ presentations = [
         (str_store_string, s0, ":cur_scene"),
         (str_store_string, s3, "str_map_name_s0"),
         (str_store_string, s2, "str_s2_s3"),
-        
+
         (store_mission_timer_a, ":mission_timer"),
         (val_add, ":mission_timer", "$server_mission_timer_while_player_joined"),
-        (assign, reg0, ":mission_timer"),       
+        (assign, reg0, ":mission_timer"),
         (store_mul, "$g_multiplayer_game_max_seconds", "$g_multiplayer_game_max_minutes", 60),
         (store_sub, ":remaining_seconds", "$g_multiplayer_game_max_seconds", ":mission_timer"),
         (store_div, reg0, ":remaining_seconds", 60),
         (store_mod, reg1, ":remaining_seconds", 60),
         (try_begin),
           (ge, reg0, 10),
-          (ge, reg1, 10),          
+          (ge, reg1, 10),
           (str_clear, s0),
           (str_clear, s1),
-        (else_try),  
+        (else_try),
           (ge, reg0, 10),
           (str_clear, s0),
           (str_store_string, s1, "@0"),
-        (else_try),  
+        (else_try),
           (ge, reg1, 10),
           (str_store_string, s0, "@0"),
           (str_clear, s1),
-        (else_try),  
+        (else_try),
           (str_store_string, s0, "@0"),
           (str_store_string, s1, "@0"),
         (try_end),
         (str_store_string, s3, "str_remaining_time_s0reg0_s1reg1"),
-        
+
         (str_store_string, s2, "str_s2_s3"),
 
         (try_for_range, ":cur_option", 0, ":end_cond"),
@@ -3113,7 +3120,7 @@ presentations = [
             (str_store_string, s3, s0),
             (str_store_string, s2, "str_s2_s3"),
           (try_end),
-        (try_end),        
+        (try_end),
         (create_text_overlay, reg0, s2, tf_scrollable),
         (overlay_set_color, reg0, 0xFFFFFF),
         (position_set_x, pos1, 230),
@@ -3417,7 +3424,7 @@ presentations = [
       (try_end),
       ]),
     ]),
-  
+
   ("multiplayer_troop_select", prsntf_manual_end_only, 0, [
     (ti_on_presentation_load,
      [(set_fixed_point_multiplier, 1000),
@@ -3475,7 +3482,7 @@ presentations = [
       (try_end),
       (presentation_set_duration, 999999),
       ]),
-   
+
     (ti_on_presentation_event_state_change,
      [(store_trigger_param_1, ":object"),
       (multiplayer_get_my_player, ":my_player_no"),
@@ -3938,7 +3945,7 @@ presentations = [
       (position_set_x, pos1, 680),
       (position_set_y, pos1, 652),
       (overlay_set_position, "$g_presentation_obj_item_select_12", pos1),
-      
+
       (store_add, "$g_presentation_obj_item_select_next", "$g_presentation_obj_item_select_12", 1),
 
       (player_get_troop_id, ":my_troop_no", ":my_player_no"),
@@ -4114,7 +4121,7 @@ presentations = [
           (position_set_x, pos1, 638),
           (position_set_y, pos1, 265),
           (overlay_set_position, reg0, pos1),
-          
+        
           (create_text_overlay, reg0, "str_ccoop_select_companion_class", 0),
           (overlay_set_color, reg0, 0xFFFFFF),
           (position_set_x, pos1, 222),
@@ -4389,7 +4396,7 @@ presentations = [
       #INVASION MODE END
       (presentation_set_duration, 999999),
       ]),
-    
+
     (ti_on_presentation_mouse_enter_leave,
        [(store_trigger_param_1, ":object"),
         (store_trigger_param_2, ":enter_leave"),
@@ -4404,7 +4411,7 @@ presentations = [
           (try_begin),
             (eq, ":enter_leave", 0),
 
-            (assign, ":item_no", -1), 
+            (assign, ":item_no", -1),
             (try_begin),
               (ge, ":object", "$g_presentation_obj_item_select_next"),
               (store_sub, ":tested_object", ":object", "$g_presentation_obj_item_select_next"),
@@ -4470,7 +4477,7 @@ presentations = [
               (store_add, ":player_slot_index", slot_player_selected_item_indices_begin, 8),
               (val_sub, ":player_slot_index", 1),
               (multiplayer_get_my_player, ":my_player_no"),
-              (player_get_slot, ":item_no", ":my_player_no", ":player_slot_index"),   
+              (player_get_slot, ":item_no", ":my_player_no", ":player_slot_index"),
               (assign, ":target_obj", "$g_inside_obj_8"),
             (else_try),
               (eq, ":object", "$g_presentation_obj_item_select_9"),
@@ -4500,7 +4507,7 @@ presentations = [
               (assign, "$g_current_opened_item_details", ":item_no"),
             (try_end),
           (else_try),
-            (assign, ":item_no", -1), 
+            (assign, ":item_no", -1),
             (try_begin),
               (ge, ":object", "$g_presentation_obj_item_select_next"),
               (store_sub, ":tested_object", ":object", "$g_presentation_obj_item_select_next"),
@@ -4561,7 +4568,7 @@ presentations = [
               (store_add, ":player_slot_index", slot_player_selected_item_indices_begin, 8),
               (val_sub, ":player_slot_index", 1),
               (multiplayer_get_my_player, ":my_player_no"),
-              (player_get_slot, ":item_no", ":my_player_no", ":player_slot_index"),   
+              (player_get_slot, ":item_no", ":my_player_no", ":player_slot_index"),
               (assign, ":target_obj", "$g_inside_obj_8"),
             (else_try),
               (eq, ":object", "$g_presentation_obj_item_select_9"),
@@ -4589,7 +4596,7 @@ presentations = [
           (presentation_set_duration, 0),
         (try_end),
       ]),
-        
+
     (ti_on_presentation_event_state_change,
      [(store_trigger_param_1, ":object"),
       (store_trigger_param_2, ":value"),
@@ -4946,15 +4953,15 @@ presentations = [
             (try_begin),
               (eq, "$g_multiplayer_game_type", multiplayer_game_type_siege),
               (gt, "$g_multiplayer_number_of_respawn_count", 0),
-          
+
               (ge, "$g_my_spawn_count", "$g_multiplayer_number_of_respawn_count"),
-         
+
               (multiplayer_get_my_player, ":my_player_no"),
               (player_get_team_no, ":my_player_team", ":my_player_no"),
 
               (this_or_next|eq, ":my_player_team", 0),
               (ge, "$g_my_spawn_count", 999),
-        
+
               (assign, "$g_show_no_more_respawns_remained", 1),
             (else_try),
               (assign, "$g_show_no_more_respawns_remained", 0),
@@ -4964,7 +4971,7 @@ presentations = [
 
             (store_mission_timer_a, "$g_multiplayer_respawn_start_time"),
             (start_presentation, "prsnt_multiplayer_respawn_time_counter"),
-          (try_end),      
+          (try_end),
         (else_try),
           (eq, ":object", "$g_presentation_obj_item_select_13"),
           (assign, "$g_multiplayer_bot_type_1_wanted", ":value"),
@@ -4990,7 +4997,7 @@ presentations = [
         (presentation_set_duration, 0),
       (try_end),
       ]),
-    
+
     (ti_on_presentation_mouse_press,
      [(store_trigger_param_1, ":object"),
       (store_trigger_param_2, ":mouse_state"),
@@ -5075,7 +5082,7 @@ presentations = [
             (gt, "$g_presentation_state", 0),
             (presentation_set_duration, 0),
             (assign, "$g_presentation_state", 0),
-            (start_presentation, "prsnt_multiplayer_item_select"),      
+            (start_presentation, "prsnt_multiplayer_item_select"),
           (try_end),
         (try_end),
       (else_try),
@@ -5084,16 +5091,16 @@ presentations = [
 		(call_script, "script_multiplayer_send_item_selections"),
         #INVASION MODE END
         (presentation_set_duration, 0),
-      (try_end),      
+      (try_end),
       ]),
-    
+
     (ti_on_presentation_run,
      [(store_trigger_param_1, ":cur_time"),
 
 ## this causes an error sometimes
 ##      (multiplayer_get_my_player, ":my_player_no"),
 ##      (player_get_gold, ":player_gold", ":my_player_no"),
-##      (call_script, "script_multiplayer_calculate_cur_selected_items_cost", ":my_player_no", 1),      
+##      (call_script, "script_multiplayer_calculate_cur_selected_items_cost", ":my_player_no", 1),
 ##      (try_begin),
 ##        (ge, ":player_gold", reg0),
 ##        (overlay_set_color, "$g_presentation_obj_item_select_12", 0xFFFFFF),
@@ -5226,7 +5233,7 @@ presentations = [
 
         (try_begin),
           (ge, "$g_multiplayer_message_value_1", 0),
-          (agent_get_team, ":returned_flag_agent_team", "$g_multiplayer_message_value_1"), 
+          (agent_get_team, ":returned_flag_agent_team", "$g_multiplayer_message_value_1"),
           (team_get_faction, ":returned_flag_agent_faction", ":returned_flag_agent_team"),
           (str_store_faction_name, s1, ":returned_flag_agent_faction"),
           (str_store_string, s0, "str_s1_returned_flag"),
@@ -5263,7 +5270,7 @@ presentations = [
       (else_try),
         (eq, "$g_multiplayer_message_type", multiplayer_message_type_capture_the_flag_stole),
 
-        (agent_get_team, ":stolen_flag_agent_team", "$g_multiplayer_message_value_1"), 
+        (agent_get_team, ":stolen_flag_agent_team", "$g_multiplayer_message_value_1"),
         (team_get_faction, ":stolen_flag_agent_faction", ":stolen_flag_agent_team"),
         (str_store_faction_name, s1, ":stolen_flag_agent_faction"),
 
@@ -5298,7 +5305,7 @@ presentations = [
         (presentation_set_duration, 400),
       (else_try),
         (eq, "$g_multiplayer_message_type", multiplayer_message_type_flag_captured),
-      
+
         (store_div, ":winner_agent_team", "$g_multiplayer_message_value_1", 100),
         (store_mod, reg0, "$g_multiplayer_message_value_1", 100),
         (val_sub, ":winner_agent_team", 1),
@@ -5343,7 +5350,7 @@ presentations = [
         (presentation_set_duration, 400),
       (else_try),
         (eq, "$g_multiplayer_message_type", multiplayer_message_type_flag_is_pulling),
-      
+
         (store_div, ":winner_agent_team", "$g_multiplayer_message_value_1", 100),
         (store_mod, reg0, "$g_multiplayer_message_value_1", 100),
         (val_sub, ":winner_agent_team", 1),
@@ -5367,7 +5374,7 @@ presentations = [
         (assign, ":text_font_color", 0xFFFFFFFF),
 
         (team_get_faction, ":winner_agent_faction", ":winner_agent_team"),
-        (str_store_faction_name, s1, ":winner_agent_faction"),      
+        (str_store_faction_name, s1, ":winner_agent_faction"),
 
         (str_store_string, s0, "str_s1_pulling_flag_reg0"),
         (create_text_overlay, "$g_multiplayer_message_1", s0, tf_center_justify|tf_with_outline),
@@ -5381,7 +5388,7 @@ presentations = [
         (overlay_set_size, "$g_multiplayer_message_1", pos1),
         (presentation_set_duration, 400),
       (else_try),
-        (eq, "$g_multiplayer_message_type", multiplayer_message_type_flag_neutralized),      
+        (eq, "$g_multiplayer_message_type", multiplayer_message_type_flag_neutralized),
 
         (store_div, ":winner_agent_team", "$g_multiplayer_message_value_1", 100),
         (store_mod, reg0, "$g_multiplayer_message_value_1", 100),
@@ -5433,8 +5440,8 @@ presentations = [
         (position_set_y, pos1, 2000),
         (overlay_set_size, "$g_multiplayer_message_1", pos1),
         (presentation_set_duration, 400),
-      (else_try),     
-        (eq, "$g_multiplayer_message_type", multiplayer_message_type_round_result_in_siege_mode),      
+      (else_try),
+        (eq, "$g_multiplayer_message_type", multiplayer_message_type_round_result_in_siege_mode),
 
         (assign, ":winner_agent_team", "$g_multiplayer_message_value_1"),
 
@@ -5470,7 +5477,7 @@ presentations = [
           (str_store_string, s0, "str_round_draw"),
           (assign, ":text_font_color", 0xFFFFFFFF),
         (try_end),
-      
+
         (create_text_overlay, "$g_multiplayer_message_1", s0, tf_center_justify|tf_with_outline),
         (overlay_set_color, "$g_multiplayer_message_1", ":text_font_color"),
         (try_begin),
@@ -5488,7 +5495,7 @@ presentations = [
         (presentation_set_duration, 400),
       (else_try),
         (eq, "$g_multiplayer_message_type", multiplayer_message_type_round_draw),
-      
+
         (assign, ":text_font_color", 0xFFFFFFFF),
         (str_store_string, s0, "str_round_draw"),
         (create_text_overlay, "$g_multiplayer_message_1", s0, tf_center_justify|tf_with_outline),
@@ -5503,7 +5510,7 @@ presentations = [
         (presentation_set_duration, 400),
       (else_try),
         (eq, "$g_multiplayer_message_type", multiplayer_message_type_start_death_mode),
-      
+
         (assign, ":text_font_color", 0xFFFFFFFF),
         (str_store_string, s0, "str_death_mode_started"),
         (create_text_overlay, "$g_multiplayer_message_1", s0, tf_center_justify|tf_with_outline),
@@ -5515,7 +5522,7 @@ presentations = [
         (position_set_x, pos1, 2000),
         (position_set_y, pos1, 2000),
         (overlay_set_size, "$g_multiplayer_message_1", pos1),
-        (presentation_set_duration, 400),      
+        (presentation_set_duration, 400),
       (else_try),
         (eq, "$g_multiplayer_message_type", multiplayer_message_type_target_destroyed),
 
@@ -5562,7 +5569,7 @@ presentations = [
           (eq, "$g_multiplayer_message_value_1", 2),
           (str_store_string, s0, "str_s1_destroyed_trebuchet"),
         (try_end),
-      
+
         (create_text_overlay, "$g_multiplayer_message_1", s0, tf_center_justify|tf_with_outline),
         (overlay_set_color, "$g_multiplayer_message_1", ":text_font_color"),
         (position_set_x, pos1, 350),
@@ -5610,7 +5617,7 @@ presentations = [
           (eq, ":num_targets_saved", 2),
           (str_store_string, s0, "str_s1_saved_2_targets"),
         (try_end),
-      
+
         (create_text_overlay, "$g_multiplayer_message_1", s0, tf_center_justify|tf_with_outline),
         (overlay_set_color, "$g_multiplayer_message_1", ":text_font_color"),
         (position_set_x, pos1, 350),
@@ -5620,7 +5627,7 @@ presentations = [
         (position_set_x, pos1, 2000),
         (position_set_y, pos1, 2000),
         (overlay_set_size, "$g_multiplayer_message_1", pos1),
-        (presentation_set_duration, 400),      
+        (presentation_set_duration, 400),
       (else_try),
         (eq, "$g_multiplayer_message_type", multiplayer_message_type_attackers_won_the_round),
 
@@ -5666,7 +5673,7 @@ presentations = [
         (position_set_x, pos1, 2000),
         (position_set_y, pos1, 2000),
         (overlay_set_size, "$g_multiplayer_message_1", pos1),
-        (presentation_set_duration, 400),      
+        (presentation_set_duration, 400),
       (try_end),
       ]),
     (ti_on_presentation_run,
@@ -5705,7 +5712,7 @@ presentations = [
           (str_store_string, s0, "str_auto_team_balance_next_round"),
           (position_set_x, pos1, 375),
         (try_end),
-      
+
         (create_text_overlay, "$g_multiplayer_message_2", s0, tf_center_justify|tf_with_outline),
         (overlay_set_color, "$g_multiplayer_message_2", ":text_font_color"),
         (position_set_y, pos1, 550),
@@ -5721,13 +5728,13 @@ presentations = [
      [
        ]),
      ]),
-      
+
   ("multiplayer_message_3", prsntf_read_only|prsntf_manual_end_only, 0, [
     (ti_on_presentation_load, [
-      (set_fixed_point_multiplier, 1000),      
+      (set_fixed_point_multiplier, 1000),
       (try_begin),
         (eq, "$g_multiplayer_message_type", multiplayer_message_type_poll_result),
-      
+
         (assign, ":text_font_color", 0xFFFFFFFF),
         (try_begin),
           (eq, "$g_multiplayer_message_value_3", 1),
@@ -5834,7 +5841,7 @@ presentations = [
       (overlay_set_position, reg0, pos3),
       (position_set_x, pos1, 50),
       (position_set_y, pos1, 50),
-      (overlay_set_size, reg0, pos1),      
+      (overlay_set_size, reg0, pos1),
 
       (try_begin),
         (eq, "$g_multiplayer_team_1_faction", "$g_multiplayer_team_2_faction"),
@@ -5864,7 +5871,7 @@ presentations = [
       (overlay_set_position, reg0, pos3),
       (position_set_x, pos1, 50),
       (position_set_y, pos1, 50),
-      (overlay_set_size, reg0, pos1),      
+      (overlay_set_size, reg0, pos1),
 
       (presentation_set_duration, 999999),
       ]),
@@ -5876,7 +5883,7 @@ presentations = [
         (neq, ":team_2_score", "$g_multiplayer_team_2_last_displayed_score"),
         (assign, "$g_multiplayer_team_1_last_displayed_score", ":team_1_score"),
         (assign, "$g_multiplayer_team_2_last_displayed_score", ":team_2_score"),
-      
+
         (str_store_faction_name, s0, "$g_multiplayer_team_1_faction"),
         (assign, reg0, ":team_1_score"),
         (overlay_set_text, "$g_multiplayer_team_1_score_display_overlay", "str_reg0"),
@@ -5896,7 +5903,7 @@ presentations = [
 
 
   ("multiplayer_flag_projection_display", prsntf_read_only|prsntf_manual_end_only, 0, [
-    (ti_on_presentation_load, 
+    (ti_on_presentation_load,
     [
       (set_fixed_point_multiplier, 1000),
 
@@ -5906,7 +5913,7 @@ presentations = [
       (val_sub, ":flag_mesh", multiplayer_flag_projections_begin),
       (val_add, ":flag_mesh", multiplayer_flag_taken_projections_begin),
       (create_mesh_overlay, "$g_presentation_obj_flag_projection_display_2", ":flag_mesh"),
-      
+
       (try_begin),
         (neq, "$g_multiplayer_team_1_faction", "$g_multiplayer_team_2_faction"),
         (store_sub, ":flag_mesh", "$g_multiplayer_team_2_faction", npc_kingdoms_begin),
@@ -5919,9 +5926,9 @@ presentations = [
         (assign, ":flag_mesh", "mesh_flag_project_rb"),
         (create_mesh_overlay, "$g_presentation_obj_flag_projection_display_3", ":flag_mesh"),
         (assign, ":flag_mesh", "mesh_flag_project_rb_miss"),
-        (create_mesh_overlay, "$g_presentation_obj_flag_projection_display_4", ":flag_mesh"),      
+        (create_mesh_overlay, "$g_presentation_obj_flag_projection_display_4", ":flag_mesh"),
       (try_end),
-      
+
       (position_set_x, pos1, 250),
       (position_set_y, pos1, 250),
       (overlay_set_size, "$g_presentation_obj_flag_projection_display_1", pos1),
@@ -5934,31 +5941,31 @@ presentations = [
       (overlay_set_display, "$g_presentation_obj_flag_projection_display_4", 0),
       (presentation_set_duration, 999999),
       ]),
-      
-    (ti_on_presentation_run, 
+
+    (ti_on_presentation_run,
     [
       (set_fixed_point_multiplier, 1000),
-      
-      (scene_prop_get_instance, ":flag_red_id", "$team_1_flag_scene_prop", 0),      
-      (team_get_slot, ":team_0_flag_situation", 0, slot_team_flag_situation),      
+
+      (scene_prop_get_instance, ":flag_red_id", "$team_1_flag_scene_prop", 0),
+      (team_get_slot, ":team_0_flag_situation", 0, slot_team_flag_situation),
       (try_begin),
         (neq, ":team_0_flag_situation", 1),
         (prop_instance_get_position, pos1, ":flag_red_id"), #hold position of flag of team 1 (red flag) at pos1
       (else_try),
-        (entry_point_get_position, pos1, multi_base_point_team_1), #moved from above to here after auto-set position      
-      (try_end),            
+        (entry_point_get_position, pos1, multi_base_point_team_1), #moved from above to here after auto-set position
+      (try_end),
       (position_move_z, pos1, 200, 1),
-      
-      (scene_prop_get_instance, ":flag_blue_id", "$team_2_flag_scene_prop", 0),      
-      (team_get_slot, ":team_1_flag_situation", 1, slot_team_flag_situation),            
+
+      (scene_prop_get_instance, ":flag_blue_id", "$team_2_flag_scene_prop", 0),
+      (team_get_slot, ":team_1_flag_situation", 1, slot_team_flag_situation),
       (try_begin),
         (neq, ":team_1_flag_situation", 1),
         (prop_instance_get_position, pos2, ":flag_blue_id"), #hold position of flag of team 1 (red flag) at pos1
       (else_try),
-        (entry_point_get_position, pos2, multi_base_point_team_2), #moved from above to here after auto-set position      
-      (try_end),      
+        (entry_point_get_position, pos2, multi_base_point_team_2), #moved from above to here after auto-set position
+      (try_end),
       (position_move_z, pos2, 200, 1),
-            
+
       (position_get_screen_projection, pos3, pos1),
       (position_get_x, ":x_pos", pos3),
       (position_get_y, ":y_pos", pos3),
@@ -5984,9 +5991,9 @@ presentations = [
             (overlay_set_display, "$g_presentation_obj_flag_projection_display_2", 0),
           (else_try), #if our flag is stolen
             (try_begin),
-              (eq, ":my_player_team", 0), 
+              (eq, ":my_player_team", 0),
               (assign, ":our_base_entry_id", multi_base_point_team_1),
-            (else_try), 
+            (else_try),
               (assign, ":our_base_entry_id", multi_base_point_team_2),
             (try_end),
 
@@ -6004,12 +6011,12 @@ presentations = [
             (overlay_set_display, "$g_presentation_obj_flag_projection_display_1", 1),
             (overlay_set_display, "$g_presentation_obj_flag_projection_display_2", 0),
           (try_end),
-        (try_end),      
+        (try_end),
       (else_try),
         (overlay_set_display, "$g_presentation_obj_flag_projection_display_1", 0),
         (overlay_set_display, "$g_presentation_obj_flag_projection_display_2", 0),
       (try_end),
-      
+
       (position_get_screen_projection, pos3, pos2),
       (position_get_x, ":x_pos", pos3),
       (position_get_y, ":y_pos", pos3),
@@ -6035,17 +6042,17 @@ presentations = [
             (overlay_set_position, "$g_presentation_obj_flag_projection_display_3", pos3),
             (overlay_set_display, "$g_presentation_obj_flag_projection_display_3", 1),
             (overlay_set_display, "$g_presentation_obj_flag_projection_display_4", 0),
-          (else_try), #if our flag is stolen      
+          (else_try), #if our flag is stolen
             (try_begin),
-              (eq, ":my_player_team", 0), 
+              (eq, ":my_player_team", 0),
               (assign, ":our_base_entry_id", multi_base_point_team_1),
-            (else_try), 
+            (else_try),
               (assign, ":our_base_entry_id", multi_base_point_team_2),
             (try_end),
 
             (entry_point_get_position, pos5, ":our_base_entry_id"), #moved from above to here after auto-set position
             (position_get_screen_projection, pos3, pos5),
-      
+
             (overlay_set_position, "$g_presentation_obj_flag_projection_display_4", pos3),
             (overlay_set_display, "$g_presentation_obj_flag_projection_display_4", 1),
             (overlay_set_display, "$g_presentation_obj_flag_projection_display_3", 0),
@@ -6098,11 +6105,11 @@ presentations = [
         (scene_prop_get_instance, ":flag_1_id", "$team_1_flag_scene_prop", 0),
         (prop_instance_get_position, pos1, ":flag_1_id"), #hold position of flag of team 1 at pos1
         (position_move_z, pos1, 250, 1),
-      
+
         (scene_prop_get_instance, ":flag_2_id", "$team_2_flag_scene_prop", 0),
         (prop_instance_get_position, pos2, ":flag_2_id"), #hold position of flag of team 2 at pos2
         (position_move_z, pos2, 250, 1),
-      
+
         (position_get_screen_projection, pos3, pos1),
         (position_get_x, ":x_pos", pos3),
         (position_get_y, ":y_pos", pos3),
@@ -6116,7 +6123,7 @@ presentations = [
         (else_try),
           (overlay_set_display, "$g_presentation_obj_flag_projection_display_1", 0),
         (try_end),
-      
+
         (position_get_screen_projection, pos3, pos2),
         (position_get_x, ":x_pos", pos3),
         (position_get_y, ":y_pos", pos3),
@@ -6138,7 +6145,7 @@ presentations = [
 
   ("multiplayer_destructible_targets_display", prsntf_read_only|prsntf_manual_end_only, 0, [ #this is for search and destroy death mode flags.
     (ti_on_presentation_load, [
-      (set_fixed_point_multiplier, 1000),     
+      (set_fixed_point_multiplier, 1000),
 
       (try_begin),
         (eq, "$g_defender_team", 0),
@@ -6146,7 +6153,7 @@ presentations = [
       (else_try),
         (store_sub, ":flag_mesh", "$g_multiplayer_team_2_faction", npc_kingdoms_begin),
       (try_end),
-      
+
       (val_add, ":flag_mesh", multiplayer_flag_projections_begin),
       (create_mesh_overlay, "$g_presentation_obj_flag_projection_display_1", ":flag_mesh"),
       (create_mesh_overlay, "$g_presentation_obj_flag_projection_display_2", ":flag_mesh"),
@@ -6165,14 +6172,14 @@ presentations = [
         (eq, "$g_round_ended", 0),
         (set_fixed_point_multiplier, 1000),
         (scene_prop_get_instance, ":target_1_id", "$g_destructible_target_1", 0),
-        (prop_instance_get_position, pos1, ":target_1_id"), 
-        (prop_instance_get_position, pos1, ":target_1_id"), 
+        (prop_instance_get_position, pos1, ":target_1_id"),
+        (prop_instance_get_position, pos1, ":target_1_id"),
         (position_move_z, pos1, 250, 1),
         (scene_prop_get_instance, ":target_2_id", "$g_destructible_target_2", 0),
-        (prop_instance_get_position, pos2, ":target_2_id"), 
-        (prop_instance_get_position, pos2, ":target_2_id"), 
+        (prop_instance_get_position, pos2, ":target_2_id"),
+        (prop_instance_get_position, pos2, ":target_2_id"),
         (position_move_z, pos2, 250, 1),
-      
+
         (position_get_screen_projection, pos3, pos1),
         (position_get_x, ":x_pos", pos3),
         (position_get_y, ":y_pos", pos3),
@@ -6180,7 +6187,7 @@ presentations = [
         (try_begin),
           (is_between, ":x_pos", -100, 1100),
           (is_between, ":y_pos", -100, 850),
-      
+
           (prop_instance_get_starting_position, pos0, ":target_1_id"),
           (prop_instance_get_position, pos1, ":target_1_id"),
           (get_sq_distance_between_positions_in_meters, ":dist", pos0, pos1),
@@ -6191,7 +6198,7 @@ presentations = [
         (else_try),
           (overlay_set_display, "$g_presentation_obj_flag_projection_display_1", 0),
         (try_end),
-      
+
         (position_get_screen_projection, pos3, pos2),
         (position_get_x, ":x_pos", pos3),
         (position_get_y, ":y_pos", pos3),
@@ -6216,14 +6223,13 @@ presentations = [
       ]),
     ]),
 
-    
   ("multiplayer_respawn_time_counter", prsntf_read_only|prsntf_manual_end_only, 0, [
-    (ti_on_presentation_load, [      
+    (ti_on_presentation_load, [
       (set_fixed_point_multiplier, 1000),
 
       (assign, "$g_multiplayer_respawn_counter_overlay", -1),
       (assign, "$g_multiplayer_respawn_remained_overlay", -1),
-      
+
       (assign, ":do_not_show_respawn_counter", 0),
       (try_begin),
         (eq, "$g_multiplayer_message_type", multiplayer_message_type_round_result_in_siege_mode),
@@ -6257,7 +6263,7 @@ presentations = [
       #(store_mission_timer_a, "$g_multiplayer_respawn_start_time"),
       (presentation_set_duration, 999999),
       ]),
-  
+
     (ti_on_presentation_run, [
       (ge, "$g_multiplayer_respawn_counter_overlay", 0),
       (multiplayer_get_my_player, ":my_player_no"),
@@ -6300,7 +6306,7 @@ presentations = [
                 (multiplayer_get_my_player, ":my_player_no"),
                 (player_get_team_no, ":my_player_team", ":my_player_no"),
                 (eq, ":my_player_team", 0),
-      
+
                 (try_begin),
                   (gt, reg0, 1),
                   (str_store_string, s1, "str_reg0_respawns_remained"),
@@ -6308,7 +6314,7 @@ presentations = [
                   (str_store_string, s1, "str_this_is_your_last_respawn"),
                 (try_end),
               (else_try),
-                (str_clear, s1),                
+                (str_clear, s1),
               (try_end),
             (else_try),
               (eq, "$g_show_no_more_respawns_remained", 1),
@@ -6400,7 +6406,7 @@ presentations = [
         (val_add, ":y_needed", 70),
       (try_end),
 
-      (multiplayer_get_my_player, ":my_player_no"),       
+      (multiplayer_get_my_player, ":my_player_no"),
 
       (try_begin),
         (gt, ":y_needed", 490),
@@ -6470,7 +6476,7 @@ presentations = [
 
         (team_get_faction, ":faction_of_team_1", 0),
         (team_get_faction, ":faction_of_team_2", 1),
-          
+
         (try_begin),
           (eq, ":faction_of_team_1", ":faction_of_team_2"),
           (eq, ":i_team", 1),
@@ -6494,13 +6500,13 @@ presentations = [
           (eq, ":cur_faction", "fac_kingdom_1"),
           (create_mesh_overlay, reg0, "mesh_ui_kingdom_shield_6"),
         (try_end),
-      
+
         (position_set_x, pos1, 100),
         (position_set_y, pos1, 100),
         (overlay_set_position, reg0, pos3),
         (position_set_x, pos1, 50),
         (position_set_y, pos1, 50),
-        (overlay_set_size, reg0, pos1),      
+        (overlay_set_size, reg0, pos1),
 
         (team_get_score, reg0, ":i_team"),
         (create_text_overlay, reg0, "str_score_reg0", tf_right_align),
@@ -6512,7 +6518,7 @@ presentations = [
         (overlay_set_position, reg0, pos1),
         (position_set_x, pos1, 1200),
         (position_set_y, pos1, 1200),
-        (overlay_set_size, reg0, pos1),      
+        (overlay_set_size, reg0, pos1),
 
         (try_begin), #counting number of flags each team has only at hq mod.
           (eq, "$g_multiplayer_game_type", multiplayer_game_type_headquarters),
@@ -6532,11 +6538,11 @@ presentations = [
           (overlay_set_position, reg0, pos1),
           (position_set_x, pos1, 600),
           (position_set_y, pos1, 600),
-          (overlay_set_size, reg0, pos1),      
+          (overlay_set_size, reg0, pos1),
         (try_end),
 
         (val_sub, ":cur_y", 60),
-      
+
         (create_text_overlay, reg0, "str_player_name", 0),
         (overlay_set_color, reg0, 0xFFFFFF),
         (position_set_x, pos1, ":cur_x"),
@@ -6548,7 +6554,7 @@ presentations = [
 
         (try_begin), #at headquarters and capture the flag write score instead before kill count
           (this_or_next|eq, "$g_multiplayer_game_type", multiplayer_game_type_capture_the_flag),
-          (eq, "$g_multiplayer_game_type", multiplayer_game_type_headquarters),      
+          (eq, "$g_multiplayer_game_type", multiplayer_game_type_headquarters),
           (create_text_overlay, reg0, "str_score", 0),
           (overlay_set_color, reg0, 0xFFFFFF),
           (store_add, ":sub_cur_x", ":cur_x", 138),
@@ -6559,7 +6565,7 @@ presentations = [
           (position_set_y, pos1, 750),
           (overlay_set_size, reg0, pos1),
         (try_end),
-      
+
         (create_text_overlay, reg0, "str_kills", tf_center_justify),
         (overlay_set_color, reg0, 0xFFFFFF),
         (store_add, ":sub_cur_x", ":cur_x", 206), #191
@@ -6579,7 +6585,7 @@ presentations = [
         (position_set_x, pos1, 750),
         (position_set_y, pos1, 750),
         (overlay_set_size, reg0, pos1),
-      
+
         (create_text_overlay, reg0, "str_ping", tf_center_justify),
         (overlay_set_color, reg0, 0xFFFFFF),
         (store_add, ":sub_cur_x", ":cur_x", 308), #291
@@ -6589,7 +6595,7 @@ presentations = [
         (position_set_x, pos1, 750),
         (position_set_y, pos1, 750),
         (overlay_set_size, reg0, pos1),
-      
+
         (create_mesh_overlay, reg0, "mesh_white_plane"),
         (overlay_set_color, reg0, 0xFFFFFF),
         (overlay_set_alpha, reg0, 0xD0),
@@ -6603,12 +6609,12 @@ presentations = [
         (overlay_set_size, reg0, pos1),
 
         (val_sub, ":cur_y", 35),
-      
+
         (store_add, ":end_cond", ":num_players", 1),
         (try_for_range, ":unused", 0, ":end_cond"),
           (assign, ":max_score_plus_death", -30030),
           (assign, ":max_score_plus_death_player_no", -1),
-          (try_for_range, ":player_no", 0, ":num_players"),            
+          (try_for_range, ":player_no", 0, ":num_players"),
             (store_add, ":slot_index", ":player_no", multi_data_player_index_list_begin),
             (troop_slot_eq, "trp_multiplayer_data", ":slot_index", 1),
             (player_get_team_no, ":player_team", ":player_no"),
@@ -6616,20 +6622,20 @@ presentations = [
 
             (try_begin),
               (this_or_next|eq, "$g_multiplayer_game_type", multiplayer_game_type_capture_the_flag),
-              (eq, "$g_multiplayer_game_type", multiplayer_game_type_headquarters),      
+              (eq, "$g_multiplayer_game_type", multiplayer_game_type_headquarters),
               (player_get_score, ":kill_count", ":player_no"), #get score in "capture the flag" or "headquarters"
             (else_try),
               (player_get_kill_count, ":kill_count", ":player_no"), #get kill count in "siege" or "battle" or "team deathmatch" or "deathmatch"
             (try_end),
-      
+
             (player_get_death_count, ":death_count", ":player_no"), #get_death_count
 
             (store_mul, ":player_score_plus_death", ":kill_count", 1000),
             (val_sub, ":player_score_plus_death", ":death_count"),
-      
+
             (this_or_next|gt, ":player_score_plus_death", ":max_score_plus_death"),
             (eq, ":player_score_plus_death", -30030),
-      
+
             (assign, ":max_score_plus_death", ":player_score_plus_death"),
             (assign, ":max_score_plus_death_player_no", ":player_no"),
           (try_end),
@@ -6637,7 +6643,7 @@ presentations = [
             (ge, ":max_score_plus_death_player_no", 0),
             (store_add, ":slot_index", ":max_score_plus_death_player_no", multi_data_player_index_list_begin),
             (troop_set_slot, "trp_multiplayer_data", ":slot_index", 0),
-      
+
             (try_begin),
               (eq, ":my_player_no", ":max_score_plus_death_player_no"),
               (create_mesh_overlay, reg0, "mesh_white_plane"),
@@ -6652,10 +6658,10 @@ presentations = [
               (position_set_y, pos1, 1000),
               (overlay_set_size, reg0, pos1),
             (try_end),
-  
+
             (try_begin), #at headquarters and capture the flag write score instead dead label before kill count
               (this_or_next|eq, "$g_multiplayer_game_type", multiplayer_game_type_capture_the_flag),
-              (eq, "$g_multiplayer_game_type", multiplayer_game_type_headquarters),      
+              (eq, "$g_multiplayer_game_type", multiplayer_game_type_headquarters),
 
               (assign, ":font_color", 0xFFFFFF),
               (player_get_agent_id, ":max_score_plus_death_agent_id", ":max_score_plus_death_player_no"),
@@ -6670,7 +6676,7 @@ presentations = [
               (overlay_set_color, reg0, ":font_color"),
               (position_set_x, pos1, 750),
               (position_set_y, pos1, 750),
-              (overlay_set_size, reg0, pos1),      
+              (overlay_set_size, reg0, pos1),
               (store_add, ":sub_cur_x", ":cur_x", 165), #150
               (position_set_x, pos1, ":sub_cur_x"),
               (position_set_y, pos1, ":cur_y"),
@@ -6710,29 +6716,29 @@ presentations = [
             (position_set_x, pos1, ":cur_x"),
             (position_set_y, pos1, ":cur_y"),
             (overlay_set_position, reg0, pos1),
-      
+
             (player_get_kill_count, reg0, ":max_score_plus_death_player_no"), #get_kill_count
             (create_text_overlay, reg0, "str_reg0", tf_right_align),
             (overlay_set_color, reg0, ":font_color"),
             (position_set_x, pos1, 750),
             (position_set_y, pos1, 750),
-            (overlay_set_size, reg0, pos1),      
+            (overlay_set_size, reg0, pos1),
             (store_add, ":sub_cur_x", ":cur_x", 215), #200
             (position_set_x, pos1, ":sub_cur_x"),
             (position_set_y, pos1, ":cur_y"),
             (overlay_set_position, reg0, pos1),
-      
+
             (player_get_death_count, reg0, ":max_score_plus_death_player_no"),
             (create_text_overlay, reg0, "str_reg0", tf_right_align),
             (overlay_set_color, reg0, ":font_color"),
             (position_set_x, pos1, 750),
             (position_set_y, pos1, 750),
-            (overlay_set_size, reg0, pos1),      
+            (overlay_set_size, reg0, pos1),
             (store_add, ":sub_cur_x", ":cur_x", 265), #250
             (position_set_x, pos1, ":sub_cur_x"),
             (position_set_y, pos1, ":cur_y"),
             (overlay_set_position, reg0, pos1),
-      
+
             (player_get_ping, reg0, ":max_score_plus_death_player_no"),
             (create_text_overlay, reg0, "str_reg0", tf_right_align),
             (overlay_set_color, reg0, ":font_color"),
@@ -6752,7 +6758,7 @@ presentations = [
               (else_try),
                 (assign, ":number_of_bots_in_cur_team", "$g_multiplayer_num_bots_team_2"),
               (try_end),
-             
+
               (team_get_bot_kill_count, reg0, ":i_team"),
               (team_get_bot_death_count, reg1, ":i_team"),
               (try_begin),
@@ -6763,7 +6769,7 @@ presentations = [
               (else_try),
                 (assign, ":write_bot_informations_of_team", 0),
               (try_end),
-      
+
               (eq, ":write_bot_informations_of_team", 1),
 
               (assign, ":number_of_alive_bots", 0),
@@ -6792,7 +6798,7 @@ presentations = [
                   (assign, reg0, ":number_of_dead_bots"),
                   (create_text_overlay, reg0, "str_reg0_dead", 0),
                   (store_add, ":sub_cur_x", ":cur_x", 123),
-                (try_end),      
+                (try_end),
                 (overlay_set_color, reg0, ":font_color"),
                 (position_set_x, pos1, 750),
                 (position_set_y, pos1, 750),
@@ -6816,7 +6822,7 @@ presentations = [
               (position_set_x, pos1, ":cur_x"),
               (position_set_y, pos1, ":cur_y"),
               (overlay_set_position, reg0, pos1),
-      
+
               (team_get_bot_kill_count, reg0, ":i_team"),
               (create_text_overlay, reg0, "str_reg0", tf_right_align),
               (overlay_set_color, reg0, ":font_color"),
@@ -6827,7 +6833,7 @@ presentations = [
               (position_set_x, pos1, ":sub_cur_x"),
               (position_set_y, pos1, ":cur_y"),
               (overlay_set_position, reg0, pos1),
-      
+
               (team_get_bot_death_count, reg0, ":i_team"),
               (create_text_overlay, reg0, "str_reg0", tf_right_align),
               (overlay_set_color, reg0, ":font_color"),
@@ -6868,7 +6874,7 @@ presentations = [
       (overlay_set_position, reg0, pos1),
       (position_set_x, pos1, 36000),
       (position_set_y, pos1, 50),
-      (overlay_set_size, reg0, pos1), 
+      (overlay_set_size, reg0, pos1),
 
       (try_begin),
         (gt, ":spectator_rows", 0),
@@ -6876,7 +6882,7 @@ presentations = [
         (assign, ":cur_x", 280),
         (val_sub, ":cur_y", 50),
 
-        #"spectators" text 
+        #"spectators" text
         (create_text_overlay, reg0, "str_spectators", 0),
         (overlay_set_color, reg0, 0xFFFFFF),
         (position_set_x, pos1, ":cur_x"),
@@ -6947,7 +6953,7 @@ presentations = [
           (position_set_x, pos1, ":cur_x"),
           (position_set_y, pos1, ":cur_y"),
           (overlay_set_position, reg0, pos1),
-          
+
           (player_get_ping, reg0, ":player_no"),
           (create_text_overlay, reg0, "str_reg0", tf_right_align),
           (overlay_set_color, reg0, ":font_color"),
@@ -6958,13 +6964,13 @@ presentations = [
           (position_set_x, pos1, ":sub_cur_x"),
           (position_set_y, pos1, ":cur_y"),
           (overlay_set_position, reg0, pos1),
-          (val_sub, ":cur_y", 20),      
+          (val_sub, ":cur_y", 20),
         (try_end),
       (try_end),
 
       (omit_key_once, key_mouse_scroll_up),
       (omit_key_once, key_mouse_scroll_down),
-      
+
       (presentation_set_duration, 999999),
       ]),
     (ti_on_presentation_run,
@@ -6993,7 +6999,7 @@ presentations = [
     ]),
 
   #this score table is used in only deathmatch
-  ("multiplayer_stats_chart_deathmatch", prsntf_read_only|prsntf_manual_end_only, 0, [ 
+  ("multiplayer_stats_chart_deathmatch", prsntf_read_only|prsntf_manual_end_only, 0, [
     (ti_on_presentation_load,
      [(set_fixed_point_multiplier, 1000),
 
@@ -7280,7 +7286,7 @@ presentations = [
       (position_set_x, pos1, 750),
       (position_set_y, pos1, 750),
       (overlay_set_size, reg0, pos1),
-      
+
       (create_text_overlay, reg0, "str_kills", tf_center_justify),
       (overlay_set_color, reg0, 0xFFFFFF),
       (store_add, ":sub_cur_x", ":cur_x", 179), #164
@@ -7290,7 +7296,7 @@ presentations = [
       (position_set_x, pos1, 750),
       (position_set_y, pos1, 750),
       (overlay_set_size, reg0, pos1),
-      
+
       (create_text_overlay, reg0, "str_deaths", tf_center_justify),
       (overlay_set_color, reg0, 0xFFFFFF),
       (store_add, ":sub_cur_x", ":cur_x", 233), #205
@@ -7300,7 +7306,7 @@ presentations = [
       (position_set_x, pos1, 750),
       (position_set_y, pos1, 750),
       (overlay_set_size, reg0, pos1),
-      
+
       (create_text_overlay, reg0, "str_ping", tf_center_justify),
       (overlay_set_color, reg0, 0xFFFFFF),
       (store_add, ":sub_cur_x", ":cur_x", 282), #264
@@ -7310,7 +7316,7 @@ presentations = [
       (position_set_x, pos1, 750),
       (position_set_y, pos1, 750),
       (overlay_set_size, reg0, pos1),
-      
+
       (create_mesh_overlay, reg0, "mesh_white_plane"),
       (overlay_set_color, reg0, 0xFFFFFF),
       (overlay_set_alpha, reg0, 0xD0),
@@ -7324,7 +7330,7 @@ presentations = [
       (overlay_set_size, reg0, pos1),
 
       (val_sub, ":cur_y", 35),
-      
+
       (store_add, ":end_cond", ":num_players", 1),
       (try_for_range, ":unused", 0, ":end_cond"),
         (assign, ":max_score_plus_death", -30030),
@@ -7340,10 +7346,10 @@ presentations = [
           (player_get_death_count, ":death_count", ":player_no"), #get_death_count
           (store_mul, ":player_score_plus_death", ":kill_count", 1000),
           (val_sub, ":player_score_plus_death", ":death_count"),
-      
+
           (this_or_next|gt, ":player_score_plus_death", ":max_score_plus_death"),
           (eq, ":player_score_plus_death", -30030),
-      
+
           (assign, ":max_score_plus_death", ":player_score_plus_death"),
           (assign, ":max_kills_player_no", ":player_no"),
         (try_end),
@@ -7352,7 +7358,7 @@ presentations = [
           (store_add, ":slot_index", ":max_kills_player_no", multi_data_player_index_list_begin),
           (troop_set_slot, "trp_multiplayer_data", ":slot_index", 0),
           (str_store_player_username, s1, ":max_kills_player_no"),
-      
+
           (try_begin),
             (eq, ":my_player_no", ":max_kills_player_no"),
             (create_mesh_overlay, reg0, "mesh_white_plane"),
@@ -7402,29 +7408,29 @@ presentations = [
           (position_set_x, pos1, ":cur_x"),
           (position_set_y, pos1, ":cur_y"),
           (overlay_set_position, reg0, pos1),
-      
+
           (player_get_kill_count, reg0, ":max_kills_player_no"),
           (create_text_overlay, reg0, "str_reg0", tf_right_align),
           (overlay_set_color, reg0, 0xFFFFFF),
           (position_set_x, pos1, 750),
           (position_set_y, pos1, 750),
-          (overlay_set_size, reg0, pos1),      
+          (overlay_set_size, reg0, pos1),
           (store_add, ":sub_cur_x", ":cur_x", 188), #173
           (position_set_x, pos1, ":sub_cur_x"),
           (position_set_y, pos1, ":cur_y"),
           (overlay_set_position, reg0, pos1),
-      
+
           (player_get_death_count, reg0, ":max_kills_player_no"),
           (create_text_overlay, reg0, "str_reg0", tf_right_align),
           (overlay_set_color, reg0, 0xFFFFFF),
           (position_set_x, pos1, 750),
           (position_set_y, pos1, 750),
-          (overlay_set_size, reg0, pos1),      
+          (overlay_set_size, reg0, pos1),
           (store_add, ":sub_cur_x", ":cur_x", 238), #223
           (position_set_x, pos1, ":sub_cur_x"),
           (position_set_y, pos1, ":cur_y"),
           (overlay_set_position, reg0, pos1),
-      
+
           (player_get_ping, reg0, ":max_kills_player_no"),
           (create_text_overlay, reg0, "str_reg0", tf_right_align),
           (overlay_set_color, reg0, 0xFFFFFF),
@@ -7447,7 +7453,7 @@ presentations = [
           (else_try),
             (create_text_overlay, reg0, "str_bot_1_agent", 0),
           (try_end),
-      
+
           (overlay_set_color, reg0, 0xD0D0D0),
           (position_set_x, pos1, 750),
           (position_set_y, pos1, 750),
@@ -7455,7 +7461,7 @@ presentations = [
           (position_set_x, pos1, ":cur_x"),
           (position_set_y, pos1, ":cur_y"),
           (overlay_set_position, reg0, pos1),
-      
+
           (team_get_bot_kill_count, reg0, 0),
           (assign, ":bot_kill_count", reg0),
           (team_get_bot_kill_count, reg0, 1),
@@ -7470,7 +7476,7 @@ presentations = [
           (position_set_x, pos1, ":sub_cur_x"),
           (position_set_y, pos1, ":cur_y"),
           (overlay_set_position, reg0, pos1),
-      
+
           (team_get_bot_death_count, reg0, 0),
           (assign, ":bot_death_count", reg0),
           (team_get_bot_death_count, reg0, 1),
@@ -7506,7 +7512,7 @@ presentations = [
       (overlay_set_position, reg0, pos1),
       (position_set_x, pos1, 15250),
       (position_set_y, pos1, 50),
-      (overlay_set_size, reg0, pos1), 
+      (overlay_set_size, reg0, pos1),
 
       (try_begin),
         (gt, ":spectator_rows", 0),
@@ -7545,7 +7551,7 @@ presentations = [
         (overlay_set_position, reg0, pos1),
         (position_set_x, pos1, 12000),
         (position_set_y, pos1, 50),
-        (overlay_set_size, reg0, pos1), 
+        (overlay_set_size, reg0, pos1),
 
         (val_sub, ":cur_y", 30),
 
@@ -7585,7 +7591,7 @@ presentations = [
           (position_set_x, pos1, ":cur_x"),
           (position_set_y, pos1, ":cur_y"),
           (overlay_set_position, reg0, pos1),
-          
+
           (player_get_ping, reg0, ":player_no"),
           (create_text_overlay, reg0, "str_reg0", tf_right_align),
           (overlay_set_color, reg0, ":font_color"),
@@ -7596,13 +7602,13 @@ presentations = [
           (position_set_x, pos1, ":sub_cur_x"),
           (position_set_y, pos1, ":cur_y"),
           (overlay_set_position, reg0, pos1),
-          (val_sub, ":cur_y", 20),      
+          (val_sub, ":cur_y", 20),
         (try_end),
       (try_end),
 
       (omit_key_once, key_mouse_scroll_up),
       (omit_key_once, key_mouse_scroll_down),
-      
+
       (presentation_set_duration, 999999),
       ]),
     (ti_on_presentation_run,
@@ -8049,7 +8055,7 @@ presentations = [
           (assign, ":continue", 1),
         (try_end),
         (eq, ":continue", 1),
-      
+
         (val_add, ":cur_y", escape_menu_item_height),
       (try_end),
 
@@ -8085,7 +8091,7 @@ presentations = [
         (try_end),
         (eq, ":continue", 1),
         (str_store_player_username, s0, ":player_no"),
-      
+
         (create_button_overlay, ":overlay_id", s0, 0),
         (overlay_set_color, ":overlay_id", 0xFFFFFF),
         (position_set_x, pos1, 130),
@@ -8182,7 +8188,7 @@ presentations = [
         (store_sub, ":string_index", ":map_no", multiplayer_scenes_begin),
         (val_add, ":string_index", multiplayer_scene_names_begin),
         (str_store_string, s0, ":string_index"),
-      
+
         (create_button_overlay, ":overlay_id", s0, 0),
         (overlay_set_color, ":overlay_id", 0xFFFFFF),
         (position_set_x, pos1, 100),
@@ -8618,7 +8624,7 @@ presentations = [
           (overlay_set_text, "$g_presentation_obj_name_kingdom_1", "str_default_kingdom_name"),
           (str_store_string, s7, "str_default_kingdom_name"),
         (try_end),
-        
+
         (create_button_overlay, "$g_presentation_obj_name_kingdom_2", "@Continue...", tf_center_justify),
         (position_set_x, pos1, 500),
         (position_set_y, pos1, 300),
@@ -8639,7 +8645,7 @@ presentations = [
         (try_end),
         ]),
       ]),
-  
+
   ("banner_selection",0,mesh_load_window,[
       (ti_on_presentation_load,
        [(set_fixed_point_multiplier, 1000),
@@ -8694,7 +8700,7 @@ presentations = [
           (party_set_banner_icon, "p_main_party", ":selected_banner_map_icon"),
           (store_add, ":selected_banner_spr", ":selected_banner", banner_scene_props_begin),
           (troop_set_slot, "trp_player", slot_troop_banner_scene_prop, ":selected_banner_spr"),
-                    
+
           #Correcting banners according to the player banner
           #(assign, ":end_cond", active_npcs_end),
           #(try_for_range, ":cur_troop", original_kingdom_heroes_begin, ":end_cond"),
@@ -8704,7 +8710,7 @@ presentations = [
           #  (troop_set_slot, ":cur_troop", slot_troop_banner_scene_prop, banner_scene_props_end_minus_one),
           #  (assign, ":end_cond", 0),
           #(try_end),
-                    
+
           (presentation_set_duration, 0),
           (assign, ":troop_to_change", 0),
           (assign, ":end_cond", active_npcs_end),
@@ -8715,7 +8721,7 @@ presentations = [
             (troop_set_slot, ":cur_troop", slot_troop_banner_scene_prop, banner_scene_props_end_minus_one),
             (troop_get_slot, ":cur_party", ":cur_troop", slot_troop_leaded_party),
             (gt, ":cur_party", 0),
-            (party_set_banner_icon, ":cur_party", banner_map_icons_end_minus_one),             
+            (party_set_banner_icon, ":cur_party", banner_map_icons_end_minus_one),
           (try_end),
           (try_for_range, ":cur_center", walled_centers_begin, walled_centers_end),
             (try_begin),
@@ -8723,7 +8729,7 @@ presentations = [
               (party_set_banner_icon, ":cur_center", ":selected_banner_map_icon"),
             (else_try),
               (party_slot_eq, ":cur_center", slot_town_lord, ":troop_to_change"),
-              (party_set_banner_icon, ":cur_center", banner_map_icons_end_minus_one), 
+              (party_set_banner_icon, ":cur_center", banner_map_icons_end_minus_one),
             (try_end),
           (try_end),
         (try_end),
@@ -8756,7 +8762,7 @@ presentations = [
 ##        (create_mesh_overlay_with_tableau_material, "$g_presentation_obj_custom_banner_1", ":flag_type", "tableau_custom_banner_square", "trp_player"),
         (troop_get_slot, ":bg_color_1", "trp_player", slot_troop_custom_banner_bg_color_1),
         (troop_get_slot, ":bg_color_2", "trp_player", slot_troop_custom_banner_bg_color_2),
-        
+
         (create_text_overlay, reg1, "str_color_no_1", 0),
         (position_set_x, pos1, 40),
         (position_set_y, pos1, 550),
@@ -8777,7 +8783,7 @@ presentations = [
         (position_set_y, pos1, 250),
         (overlay_set_size, "$g_presentation_obj_custom_banner_22", pos1),
         (overlay_set_size, "$g_presentation_obj_custom_banner_23", pos1),
-        
+
         (create_button_overlay, "$g_presentation_obj_custom_banner_2", "str_change", tf_center_justify),
         (create_button_overlay, "$g_presentation_obj_custom_banner_3", "str_change", tf_center_justify),
         (create_button_overlay, "$g_presentation_obj_custom_banner_4", "str_change_background", tf_center_justify),
@@ -8817,7 +8823,7 @@ presentations = [
         (position_set_x, pos1, 50),
         (position_set_y, pos1, 50),
         (overlay_set_size, "$g_presentation_obj_custom_banner_18", pos1),
-        
+
 
         (create_text_overlay, reg1, "str_number_of_charges", 0),
         (position_set_x, pos1, 40),
@@ -9017,7 +9023,7 @@ presentations = [
           (position_set_x, pos1, 800),
           (overlay_set_position, "$g_presentation_obj_custom_banner_39", pos1),
         (try_end),
-        
+
         (position_set_x, pos1, 350),
         (position_set_y, pos1, 400),
         (overlay_set_position, "$g_presentation_obj_custom_banner_1", pos1),
@@ -9790,7 +9796,7 @@ presentations = [
              (ge, ":old_marshall", 0),
              (party_is_active, ":old_marshall"),
              (party_set_marshall, ":old_marshall", 0),
-           (try_end),  
+           (try_end),
 
             (faction_set_slot, "$players_kingdom", slot_faction_marshall, "$g_presentation_marshall_selection_max_renown_1_troop"),
             (try_begin),
@@ -9804,7 +9810,7 @@ presentations = [
         (try_end),
         ]),
      ]),
-  
+
   ("battle",0,0,[
       (ti_on_presentation_load,
        [(set_fixed_point_multiplier, 1000),
@@ -9828,12 +9834,14 @@ presentations = [
         (assign, "$g_presentation_obj_battle_but8", -1),
         (str_clear, s7),
 
-        (try_for_agents, ":agent_no"),
-          (agent_set_slot, ":agent_no", slot_agent_map_overlay_id, 0),
-        (try_end),
+		## PBOD Changes
+        # (try_for_agents, ":agent_no"),
+          # (agent_set_slot, ":agent_no", slot_agent_map_overlay_id, 0),
+        # (try_end),
 
-        (get_player_agent_no, ":player_agent"),
-        (agent_get_troop_id, ":player_troop_id", ":player_agent"),
+        # (get_player_agent_no, ":player_agent"),
+        # (agent_get_troop_id, ":player_troop_id", ":player_agent"),
+		## PBOD Changes End
 
         (position_set_y, pos1, 700),
         (create_text_overlay, reg1, "@Action", tf_center_justify|tf_single_line|tf_with_outline),
@@ -9858,12 +9866,22 @@ presentations = [
         (assign, "$group6_has_troops", 0),
         (assign, "$group7_has_troops", 0),
         (assign, "$group8_has_troops", 0),
-        (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+        #(party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
         (assign, "$num_classes", 0),
-        (try_for_range, ":troop_iterator", 0, ":num_stacks"),
-          (party_stack_get_troop_id, ":cur_troop_id", "p_main_party", ":troop_iterator"),
-          (troop_get_class, ":troop_class", ":cur_troop_id"),
-          (neq, ":player_troop_id", ":cur_troop_id"),
+        #(try_for_range, ":troop_iterator", 0, ":num_stacks"),
+        #  (party_stack_get_troop_id, ":cur_troop_id", "p_main_party", ":troop_iterator"),
+        #  (troop_get_class, ":troop_class", ":cur_troop_id"),
+		#  (neq, ":player_troop_id", ":cur_troop_id"),
+        ## PBOD Changes - includes comments out above
+		(try_for_agents, ":agent"),
+		  (agent_set_slot, ":agent", slot_agent_map_overlay_id, 0),
+          (agent_is_alive, ":agent"),
+		  (agent_is_human, ":agent"),
+		  (agent_is_non_player, ":agent"),
+		  (agent_get_party_id, ":party", ":agent"),
+		  (eq, ":party", "p_main_party"),
+		  (agent_get_division, ":troop_class", ":agent"),
+		## PBOD Changes End
           (try_begin),
             (eq, ":troop_class", 0),
             (try_begin),
@@ -9960,7 +9978,7 @@ presentations = [
           (position_set_x, pos3, ":stat_position_name_x"),
           (position_set_y, pos3, ":stat_position_name_y"),
           (overlay_set_position, "$g_presentation_obj_battle_name0", pos3),
-        
+
           (val_add, ":stat_position_name_y", -40),
 
           (create_text_overlay, "$g_presentation_but0_movement", s7, tf_center_justify),
@@ -9985,7 +10003,7 @@ presentations = [
           (position_set_x, pos2, ":stat_position_check_x"),
           (position_set_y, pos2, ":stat_position_check_y"),
           (overlay_set_position, "$g_presentation_obj_battle_check1", pos2),
-          (val_add, ":stat_position_check_y", -40),        
+          (val_add, ":stat_position_check_y", -40),
 
           (create_text_overlay, "$g_presentation_obj_battle_name1", s7, 0),
           (position_set_x, pos3, ":stat_position_name_x"),
@@ -10011,11 +10029,11 @@ presentations = [
           (overlay_set_alpha, "$g_presentation_obj_battle_but2", 0),
           (overlay_set_color, "$g_presentation_obj_battle_but2", 0xFFFF00),
 
-          (create_check_box_overlay, "$g_presentation_obj_battle_check2", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (create_check_box_overlay, "$g_presentation_obj_battle_check2", "mesh_checkbox_off", "mesh_checkbox_on"),
           (position_set_x, pos2, ":stat_position_check_x"),
           (position_set_y, pos2, ":stat_position_check_y"),
           (overlay_set_position, "$g_presentation_obj_battle_check2", pos2),
-          (val_add, ":stat_position_check_y", -40),        
+          (val_add, ":stat_position_check_y", -40),
 
           (create_text_overlay, "$g_presentation_obj_battle_name2", s7, 0),
           (position_set_x, pos3, ":stat_position_name_x"),
@@ -10041,11 +10059,11 @@ presentations = [
           (overlay_set_alpha, "$g_presentation_obj_battle_but3", 0),
           (overlay_set_color, "$g_presentation_obj_battle_but3", 0xFFFF00),
 
-          (create_check_box_overlay, "$g_presentation_obj_battle_check3", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (create_check_box_overlay, "$g_presentation_obj_battle_check3", "mesh_checkbox_off", "mesh_checkbox_on"),
           (position_set_x, pos2, ":stat_position_check_x"),
           (position_set_y, pos2, ":stat_position_check_y"),
           (overlay_set_position, "$g_presentation_obj_battle_check3", pos2),
-          (val_add, ":stat_position_check_y", -40),        
+          (val_add, ":stat_position_check_y", -40),
 
           (create_text_overlay, "$g_presentation_obj_battle_name3", s7, 0),
           (position_set_x, pos3, ":stat_position_name_x"),
@@ -10071,18 +10089,18 @@ presentations = [
           (overlay_set_alpha, "$g_presentation_obj_battle_but4", 0),
           (overlay_set_color, "$g_presentation_obj_battle_but4", 0xFFFF00),
 
-          (create_check_box_overlay, "$g_presentation_obj_battle_check4", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (create_check_box_overlay, "$g_presentation_obj_battle_check4", "mesh_checkbox_off", "mesh_checkbox_on"),
           (position_set_x, pos2, ":stat_position_check_x"),
           (position_set_y, pos2, ":stat_position_check_y"),
           (overlay_set_position, "$g_presentation_obj_battle_check4", pos2),
-          (val_add, ":stat_position_check_y", -40),        
+          (val_add, ":stat_position_check_y", -40),
 
           (create_text_overlay, "$g_presentation_obj_battle_name4", s7, 0),
           (position_set_x, pos3, ":stat_position_name_x"),
           (position_set_y, pos3, ":stat_position_name_y"),
           (overlay_set_position, "$g_presentation_obj_battle_name4", pos3),
           (val_add, ":stat_position_name_y", -40),
-        
+
           (create_text_overlay, "$g_presentation_but4_movement", s7, tf_center_justify),
           (create_text_overlay, "$g_presentation_but4_riding", s7, tf_center_justify),
           (create_text_overlay, "$g_presentation_but4_weapon_usage", s7, tf_center_justify),
@@ -10101,11 +10119,11 @@ presentations = [
           (overlay_set_alpha, "$g_presentation_obj_battle_but5", 0),
           (overlay_set_color, "$g_presentation_obj_battle_but5", 0xFFFF00),
 
-          (create_check_box_overlay, "$g_presentation_obj_battle_check5", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (create_check_box_overlay, "$g_presentation_obj_battle_check5", "mesh_checkbox_off", "mesh_checkbox_on"),
           (position_set_x, pos2, ":stat_position_check_x"),
           (position_set_y, pos2, ":stat_position_check_y"),
           (overlay_set_position, "$g_presentation_obj_battle_check5", pos2),
-          (val_add, ":stat_position_check_y", -40),        
+          (val_add, ":stat_position_check_y", -40),
 
           (create_text_overlay, "$g_presentation_obj_battle_name5", s7, 0),
           (position_set_x, pos3, ":stat_position_name_x"),
@@ -10131,11 +10149,11 @@ presentations = [
           (overlay_set_alpha, "$g_presentation_obj_battle_but6", 0),
           (overlay_set_color, "$g_presentation_obj_battle_but6", 0xFFFF00),
 
-          (create_check_box_overlay, "$g_presentation_obj_battle_check6", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (create_check_box_overlay, "$g_presentation_obj_battle_check6", "mesh_checkbox_off", "mesh_checkbox_on"),
           (position_set_x, pos2, ":stat_position_check_x"),
           (position_set_y, pos2, ":stat_position_check_y"),
           (overlay_set_position, "$g_presentation_obj_battle_check6", pos2),
-          (val_add, ":stat_position_check_y", -40),        
+          (val_add, ":stat_position_check_y", -40),
 
           (create_text_overlay, "$g_presentation_obj_battle_name6", s7, 0),
           (position_set_x, pos3, ":stat_position_name_x"),
@@ -10161,11 +10179,11 @@ presentations = [
           (overlay_set_alpha, "$g_presentation_obj_battle_but7", 0),
           (overlay_set_color, "$g_presentation_obj_battle_but7", 0xFFFF00),
 
-          (create_check_box_overlay, "$g_presentation_obj_battle_check7", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (create_check_box_overlay, "$g_presentation_obj_battle_check7", "mesh_checkbox_off", "mesh_checkbox_on"),
           (position_set_x, pos2, ":stat_position_check_x"),
           (position_set_y, pos2, ":stat_position_check_y"),
           (overlay_set_position, "$g_presentation_obj_battle_check7", pos2),
-          (val_add, ":stat_position_check_y", -40),        
+          (val_add, ":stat_position_check_y", -40),
 
           (create_text_overlay, "$g_presentation_obj_battle_name7", s7, 0),
           (position_set_x, pos3, ":stat_position_name_x"),
@@ -10191,11 +10209,11 @@ presentations = [
           (overlay_set_alpha, "$g_presentation_obj_battle_but8", 0),
           (overlay_set_color, "$g_presentation_obj_battle_but8", 0xFFFF00),
 
-          (create_check_box_overlay, "$g_presentation_obj_battle_check8", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (create_check_box_overlay, "$g_presentation_obj_battle_check8", "mesh_checkbox_off", "mesh_checkbox_on"),
           (position_set_x, pos2, ":stat_position_check_x"),
           (position_set_y, pos2, ":stat_position_check_y"),
           (overlay_set_position, "$g_presentation_obj_battle_check8", pos2),
-          (val_add, ":stat_position_check_y", -40),        
+          (val_add, ":stat_position_check_y", -40),
 
           (create_text_overlay, "$g_presentation_obj_battle_name8", s7, 0),
           (position_set_x, pos3, ":stat_position_name_x"),
@@ -10207,10 +10225,10 @@ presentations = [
           (create_text_overlay, "$g_presentation_but8_riding", s7, tf_center_justify),
           (create_text_overlay, "$g_presentation_but8_weapon_usage", s7, tf_center_justify),
         (try_end),
-        
+
         (get_player_agent_no, ":player_agent"),
         (agent_get_team, ":player_team", ":player_agent"),
-        
+
         (call_script, "script_update_order_panel", ":player_team"),
 
         #(create_button_overlay, "$g_presentation_obj_battle_10", "@Hold This Position", tf_center_justify),
@@ -10227,7 +10245,7 @@ presentations = [
         #(create_button_overlay, "$g_presentation_obj_battle_21", "@Use Blunt Weapons", tf_center_justify),
         #(create_button_overlay, "$g_presentation_obj_battle_28", "@Hold Your Fire", tf_center_justify),
         #(create_button_overlay, "$g_presentation_obj_battle_29", "@Fire At Will", tf_center_justify),
-        
+
         (assign, ":y_position_for_order_buttons", 640),
         (assign, ":addition_y_position", "$num_classes"),
         (val_mul, ":addition_y_position", -40),
@@ -10237,7 +10255,7 @@ presentations = [
         (create_listbox_overlay, "$g_presentation_obj_battle_11", "str_space", 0),
         (create_listbox_overlay, "$g_presentation_obj_battle_12", "str_space", 0),
         (create_listbox_overlay, "$g_presentation_obj_battle_13", "str_space", 0),
-        
+
         (overlay_add_item, "$g_presentation_obj_battle_10", "@Stand Ground"),
         ##(overlay_add_item, "$g_presentation_obj_battle_10", "@Spread Out"),
         ##(overlay_add_item, "$g_presentation_obj_battle_10", "@Stand Closer"),
@@ -10255,7 +10273,7 @@ presentations = [
         (overlay_set_color, "$g_presentation_obj_battle_16", 0xFFFFFFFF),
         (create_button_overlay, "$g_presentation_obj_battle_17", "@Advance", tf_center_justify|tf_single_line|tf_with_outline),
         (overlay_set_color, "$g_presentation_obj_battle_17", 0xFFFFFFFF),
-        
+
         (position_set_x, pos1, 600),
         (position_set_y, pos1, 600),
         (overlay_set_size, "$g_presentation_obj_battle_10", pos1),
@@ -10300,7 +10318,7 @@ presentations = [
 
         (overlay_add_item, "$g_presentation_obj_battle_11", "@Dismount"),
         (overlay_add_item, "$g_presentation_obj_battle_11", "@Mount"),
-        
+
         (position_set_x, pos1, 600),
         (position_set_y, pos1, 600),
         (overlay_set_size, "$g_presentation_obj_battle_11", pos1),
@@ -10316,7 +10334,7 @@ presentations = [
 
         (overlay_add_item, "$g_presentation_obj_battle_12", "@Fire At Will"),
         (overlay_add_item, "$g_presentation_obj_battle_12", "@Hold Your Fire"),
-        
+
         (position_set_x, pos1, 600),
         (position_set_y, pos1, 600),
         (overlay_set_size, "$g_presentation_obj_battle_12", pos1),
@@ -10332,7 +10350,7 @@ presentations = [
 
         (overlay_add_item, "$g_presentation_obj_battle_13", "@Use Blunt Weapons"),
         (overlay_add_item, "$g_presentation_obj_battle_13", "@Use Any Weapon"),
-        
+
         (position_set_x, pos1, 600),
         (position_set_y, pos1, 600),
         (overlay_set_size, "$g_presentation_obj_battle_13", pos1),
@@ -10360,7 +10378,7 @@ presentations = [
         (create_text_overlay, "$g_battle_us_wounded", s7, tf_center_justify),
         (create_text_overlay, "$g_battle_us_routed", s7, tf_center_justify),
         (create_text_overlay, "$g_battle_us_dead", s7, tf_center_justify),
-        
+
         (create_text_overlay, "$g_battle_enemies_ready", s7, tf_center_justify),
         (create_text_overlay, "$g_battle_enemies_wounded", s7, tf_center_justify),
         (create_text_overlay, "$g_battle_enemies_routed", s7, tf_center_justify),
@@ -10407,7 +10425,7 @@ presentations = [
         (overlay_set_size, "$g_battle_enemies_wounded", pos1),
         (overlay_set_size, "$g_battle_enemies_routed", pos1),
         (overlay_set_size, "$g_battle_enemies_dead", pos1),
-        (overlay_set_size, "$g_battle_allies_ready", pos1),        
+        (overlay_set_size, "$g_battle_allies_ready", pos1),
         (overlay_set_size, "$g_battle_allies_wounded", pos1),
         (overlay_set_size, "$g_battle_allies_routed", pos1),
         (overlay_set_size, "$g_battle_allies_dead", pos1),
@@ -10460,7 +10478,7 @@ presentations = [
           (store_div, "$g_battle_map_scale", ":map_height", "$g_battle_map_height"),
           (store_div, "$g_battle_map_width", ":map_width", "$g_battle_map_scale"),
         (try_end),
-        
+
         (create_image_button_overlay, "$g_battle_map_plane", "mesh_white_plane", "mesh_white_plane"),
         (overlay_set_color, "$g_battle_map_plane", 0),
         (store_add, ":map_bordered_width", "$g_battle_map_width", 20),
@@ -10483,6 +10501,20 @@ presentations = [
         (overlay_set_alpha, "$g_battle_map_infantry_order_flag", 0),
         (overlay_set_alpha, "$g_battle_map_archers_order_flag", 0),
         (overlay_set_alpha, "$g_battle_map_cavalry_order_flag", 0),
+		##PBOD Begin
+		(create_mesh_overlay, reg0, "mesh_flag4"),
+		(overlay_set_alpha, reg0, 0),
+		(create_mesh_overlay, reg0, "mesh_flag5"),
+		(overlay_set_alpha, reg0, 0),
+		(create_mesh_overlay, reg0, "mesh_flag6"),
+		(overlay_set_alpha, reg0, 0),
+		(create_mesh_overlay, reg0, "mesh_flag7"),
+		(overlay_set_alpha, reg0, 0),
+		(create_mesh_overlay, reg0, "mesh_flag8"),
+		(overlay_set_alpha, reg0, 0),
+		(create_mesh_overlay, reg0, "mesh_flag9"),
+		(overlay_set_alpha, reg0, 0),
+        ##PBOD End
 
         (call_script, "script_update_order_panel_checked_classes"),
         (call_script, "script_update_order_panel_statistics_and_map"),
@@ -10594,11 +10626,11 @@ presentations = [
             (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0x44),
           (else_try),
             (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0),
-          (try_end),        
+          (try_end),
         (else_try),
           (eq, ":object", "$g_presentation_obj_battle_but0"),
           (assign, ":update_listeners", 1),
-        
+
           (assign, "$g_formation_group0_selected", 1),
           (overlay_animate_to_alpha, "$g_presentation_obj_battle_but0", 250, 0x44),
           (overlay_set_val, "$g_presentation_obj_battle_check0", 1),
@@ -11162,7 +11194,7 @@ presentations = [
             (call_script, "script_team_give_order_from_order_panel", ":player_agent", mordr_dismount),
             (call_script, "script_update_order_panel", ":player_team"),
             (assign, "$g_latest_order_2", 0),
-          (try_end),        
+          (try_end),
         (else_try),
           (eq, ":object", "$g_presentation_obj_battle_12"),
           (try_begin),
@@ -11175,7 +11207,7 @@ presentations = [
             (call_script, "script_team_give_order_from_order_panel", ":player_agent", mordr_fire_at_will),
             (call_script, "script_update_order_panel", ":player_team"),
             (assign, "$g_latest_order_3", 0),
-          (try_end),        
+          (try_end),
         (else_try),
           (eq, ":object", "$g_presentation_obj_battle_13"),
           (try_begin),
@@ -11252,11 +11284,11 @@ presentations = [
             (eq, "$g_formation_group8_selected", 1),
             (team_give_order, ":player_team", 8, mordr_hold),
             (team_set_order_position, ":player_team", 8, pos3),
-          (try_end),        
+          (try_end),
           (call_script, "script_update_order_flags_on_map"),
           (call_script, "script_update_order_panel", ":player_team"),
         (try_end),
-        
+
         (try_begin),
           (eq, ":update_listeners", 1),
           (team_set_order_listener, ":player_team", -1),
@@ -12371,7 +12403,7 @@ presentations = [
    [(ti_on_presentation_load,
      [(presentation_set_duration, 999999),
       (set_fixed_point_multiplier, 1000),
-      
+
       (create_mesh_overlay, reg1, "mesh_pic_payment"),
       (position_set_x, pos1, 800),
       (position_set_y, pos1, 800),
@@ -12379,7 +12411,7 @@ presentations = [
       (position_set_x, pos1, 170),
       (position_set_y, pos1, 0),
       (overlay_set_position, reg1, pos1),
-      
+
       (create_text_overlay, reg1, "str_weekly_budget", tf_center_justify),
       (position_set_x, pos1, 1500),
       (position_set_y, pos1, 1500),
@@ -12398,31 +12430,40 @@ presentations = [
       (overlay_set_area_size, "$g_presentation_obj_bugdet_report_container", pos1),
       (set_container_overlay, "$g_presentation_obj_bugdet_report_container"),
 
-      (game_get_reduce_campaign_ai, ":reduce_campaign_ai"),      
+      (game_get_reduce_campaign_ai, ":reduce_campaign_ai"),
       (try_begin),
         (eq, ":reduce_campaign_ai", 0), #hard
         (assign, ":num_centers_needed_for_efficiency_loss", 2),
         (assign, ":tax_efficiency_loss_ratio_per_center", 5),
-      (else_try),  
+      (else_try),
         (eq, ":reduce_campaign_ai", 1), #medium
         (assign, ":num_centers_needed_for_efficiency_loss", 4),
         (assign, ":tax_efficiency_loss_ratio_per_center", 4),
-      (else_try),  
+      (else_try),
         (eq, ":reduce_campaign_ai", 2), #easy
         (assign, ":num_centers_needed_for_efficiency_loss", 6),
         (assign, ":tax_efficiency_loss_ratio_per_center", 3),
-      (try_end),  
+      (try_end),
+	  ##diplomacy start+ Handle player is co-ruler of NPC kingdom
+	  (assign, ":alt_rule_faction", "fac_player_supporters_faction"),
+	  (try_begin),
+		 (is_between, "$players_kingdom", npc_kingdoms_begin, npc_kingdoms_end),
+		 (call_script, "script_dplmc_get_troop_standing_in_faction", "trp_player", "$players_kingdom"),
+		 (ge, reg0, DPLMC_FACTION_STANDING_LEADER_SPOUSE),
+	 	 (assign, ":alt_rule_faction", "$players_kingdom"),
+	  (try_end),
+	  ##diplomacy end+
 
       (assign, ":num_lines", 0),
       (assign, ":num_owned_center_values_for_tax_efficiency", 0),
       (assign, ":all_centers_accumulated_total", 0),
       (assign, ":all_centers_accumulated_taxes_and_rents", 0),
-      (try_for_range, ":center_no", centers_begin, centers_end),	  
+      (try_for_range, ":center_no", centers_begin, centers_end),
 	    (try_begin),
-		  (party_slot_ge, ":center_no", slot_center_player_enterprise, 1),		  
+		  (party_slot_ge, ":center_no", slot_center_player_enterprise, 1),
 		  (val_add, ":num_lines", 1),
-	    (try_end),	  
-	  
+	    (try_end),
+
         (party_slot_eq, ":center_no", slot_town_lord, "trp_player"),
         (val_add, ":num_lines", 1),
         (val_add, ":num_owned_center_values_for_tax_efficiency", 1),
@@ -12439,7 +12480,7 @@ presentations = [
         (eq, "$player_has_homage", 0),
         (val_add, ":num_lines", 1),
       (try_end),
-      (try_begin),      
+      (try_begin),
         (gt, ":num_owned_center_values_for_tax_efficiency", ":num_centers_needed_for_efficiency_loss"),
       #gt accumulated total is ignored
         (val_add, ":num_lines", 1),
@@ -12456,48 +12497,77 @@ presentations = [
 			(party_slot_eq, ":party_no", slot_party_type, spt_castle),
           (neg|party_slot_ge, ":party_no", slot_town_lord, 1), #unassigned
 		  (store_faction_of_party, ":center_faction", ":party_no"),
+		  ##diplomacy start+
+		  (this_or_next|eq, ":alt_rule_faction", ":center_faction"),#co-ruler of an NPC kingdom ##fixed typo 2011-06-07
+		  ##diplomacy end+
 		  (eq, ":center_faction", "fac_player_supporters_faction"),
+		  ##diplomacy start+
+		  (this_or_next|is_between, ":alt_rule_faction", npc_kingdoms_begin, npc_kingdoms_end),#co-ruler of an NPC kingdom
+		  ##diplomacy end+
 		  (faction_slot_eq, "fac_player_supporters_faction", slot_faction_leader, "trp_player"),
-          (assign, ":garrison_troop", 1),		  
+          (assign, ":garrison_troop", 1),
 		(try_end),
-		
+
         (this_or_next|eq, ":party_no", "p_main_party"),
-			(eq, ":garrison_troop", 1),
+        ##diplomacy begin
+        (assign, ":patrol_troop", 0),
+        (try_begin),
+          (party_slot_eq, ":party_no",slot_party_type, spt_patrol),
+          (party_slot_eq, ":party_no", dplmc_slot_party_mission_diplomacy, "trp_player"),
+          (assign, ":patrol_troop", 1),
+        (try_end),
+        (this_or_next|eq, ":patrol_troop", 1),
+        ##diplomacy end
+        (eq, ":garrison_troop", 1),
         (val_add, ":num_lines", 1), #include empty towns/castles
       (try_end),
       (try_begin),
         (gt, "$g_player_debt_to_party_members", 0),
         (val_add, ":num_lines", 2), #include new debt line
       (try_end),
+      ##diplomacy begin
+      (try_begin),
+        (this_or_next|gt, "$g_player_minister", 0),
+        (this_or_next|troop_slot_ge, "trp_player", slot_troop_spouse, 0),
+        (this_or_next|gt, "$g_player_chamberlain", 0),
+        (gt, "$g_player_constable", 0),
+        (val_add, ":num_lines", 1), # staff salary
+      (try_end),
+
+      (try_begin),
+        (gt, "$g_player_chamberlain", 0),
+        (val_add, ":num_lines", 2), #earlier cash, new cash
+      (try_end),
+      ##diplomacy end
       (val_add, ":num_lines", 3),
       (store_mul, ":cur_y", 27, ":num_lines"),
       (assign, ":net_change", 0), #this is the amount added
-      (try_for_range, ":center_no", centers_begin, centers_end),		
+      (try_for_range, ":center_no", centers_begin, centers_end),
 		#Enterprise
         (try_begin),
 		  (party_get_slot, ":enterprise_output", ":center_no", slot_center_player_enterprise),
 		  (gt, ":enterprise_output", 1),
 		  (neg|party_slot_ge, ":center_no", slot_center_player_enterprise_days_until_complete, 1),
-		  
+
           (str_store_party_name, s0, ":center_no"),
-		  
+
 		  (call_script, "script_process_player_enterprise", ":enterprise_output", ":center_no"),
 		  (assign, ":net_profit", reg0),
 		  (assign, ":price_of_single_output", reg4),
 		  (assign, ":price_of_single_input", reg5),
 		  (assign, ":price_of_secondary_input", reg10),
-		  
+
 		  (store_sub, ":town_order", ":center_no", towns_begin),
 		  (store_add, ":craftsman_troop", ":town_order", "trp_town_1_master_craftsman"),
 
 		  (item_get_slot, ":outputs_added_to_market", ":enterprise_output", slot_item_output_per_run),
 		  (assign, ":outputs_added_to_warehouse", 0),
-		  
+
 		  #Enterprise impact of outputs
 		  (try_begin),
 		    #output placed in inventory: deduct selling price and add one good
 			(party_slot_eq, ":center_no", slot_center_player_enterprise_production_order, 1),
-			
+
 			#Count empty slots
 			(assign, ":empty_slots", 0),
 			(troop_get_inventory_capacity, ":total_capacity", ":craftsman_troop"),
@@ -12506,16 +12576,16 @@ presentations = [
 				(lt, ":slot", 1),
 				(val_add, ":empty_slots", 1),
 			(try_end),
-			
+
 			(assign, ":outputs_added_to_warehouse", ":outputs_added_to_market"),
 			(val_min, ":outputs_added_to_warehouse",  ":empty_slots"),
 			(gt, ":outputs_added_to_warehouse", 0),
-			
+
 			(store_mul, ":cancelled_sales", ":price_of_single_output", ":outputs_added_to_warehouse"),
 			(val_sub, ":net_profit", ":cancelled_sales"),
 			(val_sub, ":outputs_added_to_market", ":outputs_added_to_warehouse"),
 		  (try_end),
-		  
+
 		  #If the transaction is for real, and not just a budget check
 		  (try_begin),
 		    (eq, "$g_apply_budget_report_to_gold", 1),
@@ -12524,43 +12594,43 @@ presentations = [
 			#Affect prices by outputs added to market
 			(store_sub, ":item_slot_no", ":enterprise_output", trade_goods_begin),
 			(val_add, ":item_slot_no", slot_town_trade_good_prices_begin),
-			(party_get_slot, ":current_index", ":center_no", ":item_slot_no"),			
+			(party_get_slot, ":current_index", ":center_no", ":item_slot_no"),
 			(store_mul, ":impact_on_price", ":outputs_added_to_market", 15),
 			(val_sub, ":current_index", ":impact_on_price"),
-			(party_set_slot, ":center_no", ":item_slot_no",":current_index"),			
-						
+			(party_set_slot, ":center_no", ":item_slot_no",":current_index"),
+
 			(gt, "$cheat_mode", 0),
 			(str_store_troop_name, s3, ":craftsman_troop"),
 			(assign, reg3, ":outputs_added_to_warehouse"),
 			(display_message, "@{!}DEBUG -- Adding {reg3} items to {s3}"),
 		  (try_end),
-		  
+
 		  #Enterprise impact of outputs
-		  (item_get_slot, ":inputs_taken_from_market", ":enterprise_output", slot_item_input_number),		  
+		  (item_get_slot, ":inputs_taken_from_market", ":enterprise_output", slot_item_input_number),
 		  (try_begin),
 			(item_slot_ge, ":enterprise_output", slot_item_secondary_raw_material, 1),
 		    (assign, ":2ary_inputs_taken_from_market", ":inputs_taken_from_market"),
 		  (else_try),
 		    (assign, ":2ary_inputs_taken_from_market", 0),
 		  (try_end),
-		  
+
 		  (assign, ":inputs_taken_from_warehouse", 0),
 		  (assign, ":2ary_inputs_taken_from_warehouse", 0),
-		  
+
 		  (try_begin),
 		    #input present in inventory: reimburse for input cost and remove one good
 			(troop_get_inventory_capacity, ":total_capacity", ":craftsman_troop"),
 			(try_for_range, ":capacity_iterator", 0, ":total_capacity"),
 				(troop_get_inventory_slot, ":item_in_slot", ":craftsman_troop", ":capacity_iterator"),
-			
+
 				(lt, ":inputs_taken_from_warehouse", ":inputs_taken_from_market"),
 				(item_slot_eq, ":enterprise_output", slot_item_primary_raw_material, ":item_in_slot"),
                 #(troop_inventory_slot_get_item_amount, ":item_ammo", ":craftsman_troop", ":capacity_iterator"),
                 #(troop_inventory_slot_get_item_max_amount, ":item_max_ammo", ":craftsman_troop", ":capacity_iterator"),
                 #(eq, ":item_ammo", ":item_max_ammo"),
-				
+
 				(val_add, ":inputs_taken_from_warehouse", 1),
-			(else_try),	
+			(else_try),
 				(lt, ":2ary_inputs_taken_from_warehouse", ":2ary_inputs_taken_from_market"),
 				(item_slot_eq, ":enterprise_output", slot_item_secondary_raw_material, ":item_in_slot"),
                 #(troop_inventory_slot_get_item_amount, ":item_ammo", ":craftsman_troop", ":capacity_iterator"),
@@ -12569,21 +12639,21 @@ presentations = [
 
 				(val_add, ":2ary_inputs_taken_from_warehouse", 1),
 			(try_end),
-		  
+
 		    (try_begin),
 				(gt, ":inputs_taken_from_warehouse", 0),
 				(val_sub, ":inputs_taken_from_market", ":inputs_taken_from_warehouse"),
 				(store_mul, ":savings_from_warehoused_inputs",	":price_of_single_input", ":inputs_taken_from_warehouse"),
 				(val_add, ":net_profit", ":savings_from_warehoused_inputs"),
-			(try_end),	
+			(try_end),
 		    (try_begin),
 				(gt, ":2ary_inputs_taken_from_warehouse", 0),
 				(val_sub, ":2ary_inputs_taken_from_market", ":2ary_inputs_taken_from_warehouse"),
 				(assign, ":savings_from_warehoused_inputs",	":price_of_secondary_input"),
 				(val_add, ":net_profit", ":savings_from_warehoused_inputs"),
-			(try_end),					
+			(try_end),
 		  (try_end),
-		  
+
 		  #If the transaction is for real, and not just a budget check
 		  (try_begin),
 		    (eq, "$g_apply_budget_report_to_gold", 1),
@@ -12591,28 +12661,28 @@ presentations = [
 			(troop_remove_items, ":craftsman_troop", ":raw_material", ":inputs_taken_from_warehouse"),
 			(item_get_slot, ":secondary_raw_material", ":enterprise_output", slot_item_secondary_raw_material),
 			(troop_remove_items, ":craftsman_troop", ":secondary_raw_material", ":2ary_inputs_taken_from_warehouse"),
-			
+
 			#Affect prices by intputs added to market
 			(store_sub, ":item_slot_no", ":raw_material", trade_goods_begin),
 			(val_add, ":item_slot_no", slot_town_trade_good_prices_begin),
-			(party_get_slot, ":current_index", ":center_no", ":item_slot_no"),			
+			(party_get_slot, ":current_index", ":center_no", ":item_slot_no"),
 			(store_mul, ":impact_on_price", ":outputs_added_to_market", 15),
 			(val_add, ":current_index", ":impact_on_price"),
-			(party_set_slot, ":center_no", ":item_slot_no",":current_index"),			
-			
+			(party_set_slot, ":center_no", ":item_slot_no",":current_index"),
+
 			(try_begin),
 				(gt, ":2ary_inputs_taken_from_market", 0),
 				(store_sub, ":item_slot_no", ":secondary_raw_material", trade_goods_begin),
 				(val_add, ":item_slot_no", slot_town_trade_good_prices_begin),
-				(party_get_slot, ":current_index", ":center_no", ":item_slot_no"),			
+				(party_get_slot, ":current_index", ":center_no", ":item_slot_no"),
 				(val_add, ":current_index", 15),
-				(party_set_slot, ":center_no", ":item_slot_no",":current_index"),			
+				(party_set_slot, ":center_no", ":item_slot_no",":current_index"),
 			(try_end),
-		  (try_end),		  
-		  		  
+		  (try_end),
+
 		  (call_script, "script_get_enterprise_name", ":enterprise_output"),
 		  (str_store_string, s5, reg0),
-		  
+
           (create_text_overlay, reg1, "str_enterprise_s5_at_s0", 0),
           (position_set_x, pos1, 900),
           (position_set_y, pos1, 900),
@@ -12620,31 +12690,31 @@ presentations = [
           (position_set_x, pos1, 25),
           (position_set_y, pos1, ":cur_y"),
           (overlay_set_position, reg1, pos1),
-		  
+
           (assign, reg0, ":net_profit"),
-		  
+
 		  #Enterprise revenue strings
           (try_begin),
      	    (store_faction_of_party, ":faction_no", ":center_no"),
 		    (store_relation, ":relation", ":faction_no", "$players_kingdom"),
 		    (lt, ":relation", 0),
-		    (assign, reg0, 0), 
-		    (assign, ":net_profit", 0), 
-		  
+		    (assign, reg0, 0),
+		    (assign, ":net_profit", 0),
+
             (create_text_overlay, reg1, "str_under_sequestration", tf_right_align|tf_single_line),
-            (overlay_set_color, reg1, 0xFF0000),		  
+            (overlay_set_color, reg1, 0xFF0000),
 		  (else_try),
-		    (ge, reg0, 0), 
+		    (ge, reg0, 0),
             (create_text_overlay, reg1, "@{!}{reg0}", tf_right_align|tf_single_line),
             (overlay_set_color, reg1, 0x00AA00),
           (else_try),
             (create_text_overlay, reg1, "@{!}{reg0}", tf_right_align|tf_single_line),
             (overlay_set_color, reg1, 0xFF0000),
           (try_end),
-		  
+
           (val_add, ":all_centers_accumulated_total", ":net_profit"),
-          (val_add, ":net_change", ":net_profit"),		  
-		  
+          (val_add, ":net_change", ":net_profit"),
+
           (position_set_x, pos1, 900),
           (position_set_y, pos1, 900),
           (overlay_set_size, reg1, pos1),
@@ -12658,13 +12728,25 @@ presentations = [
         (party_slot_eq, ":center_no", slot_town_lord, "trp_player"),
         (party_get_slot, ":accumulated_rents", ":center_no", slot_center_accumulated_rents),
         (party_get_slot, ":accumulated_tariffs", ":center_no", slot_center_accumulated_tariffs),
-		
+
         (store_add, ":accumulated_total", ":accumulated_rents", ":accumulated_tariffs"),
         (val_add, ":all_centers_accumulated_total", ":accumulated_total"),
         (val_add, ":all_centers_accumulated_taxes_and_rents", ":accumulated_total"),
         (val_add, ":net_change", ":accumulated_total"),
         (str_store_party_name, s0, ":center_no"),
+        ##diplomacy begin
+        (try_begin),
+          (neg|is_between, ":center_no", castles_begin, castles_end),
+          (party_get_slot, ":tax_rate", ":center_no", dplmc_slot_center_taxation),
+          (neq, ":tax_rate", 0),
+          (call_script, "script_dplmc_describe_tax_rate_to_s50", ":tax_rate"),
+          (str_store_string, s0, "@{s0} ({s50})"),
+        (try_end),
+        ##diplomacy end
         (create_text_overlay, reg1, "str_rents_from_s0", 0),
+        ##diplomacy begin
+        (str_store_party_name, s0, ":center_no"),
+        ##diplomacy end
         (position_set_x, pos1, 900),
         (position_set_y, pos1, 900),
         (overlay_set_size, reg1, pos1),
@@ -12686,7 +12768,7 @@ presentations = [
         (position_set_y, pos1, ":cur_y"),
         (overlay_set_position, reg1, pos1),
         (val_sub, ":cur_y", 27),
-		
+
         (try_begin),
           (is_between, ":center_no", towns_begin, towns_end),
           (create_text_overlay, reg1, "str_tariffs_from_s0", 0),
@@ -12711,7 +12793,7 @@ presentations = [
           (position_set_y, pos1, ":cur_y"),
           (overlay_set_position, reg1, pos1),
           (val_sub, ":cur_y", 27),
-        (try_end),								
+        (try_end),
       (try_end),
 
       (try_begin),
@@ -12743,19 +12825,92 @@ presentations = [
         (overlay_set_position, reg1, pos1),
         (val_sub, ":cur_y", 27),
       (try_end),
-      
+
       (try_begin),
         (gt, ":num_owned_center_values_for_tax_efficiency", ":num_centers_needed_for_efficiency_loss"),
         (gt, ":all_centers_accumulated_total", 0),
         (store_sub, ":ratio_lost", ":num_owned_center_values_for_tax_efficiency", ":num_centers_needed_for_efficiency_loss"),
         (val_mul, ":ratio_lost", ":tax_efficiency_loss_ratio_per_center"),
         (val_min, ":ratio_lost", 65),
-                
+
         #(store_mul, ":tax_lost", ":all_centers_accumulated_total", ":ratio_lost"),
         (store_mul, ":tax_lost", ":all_centers_accumulated_taxes_and_rents", ":ratio_lost"),
         (val_div, ":tax_lost", 100),
+        ##diplomacy begin
+        (assign, ":percent", 0),
+        (try_begin),
+          (gt, "$g_player_chamberlain", 0),
+          (val_add, ":percent", 10),
+        (try_end),
+        (try_begin),
+		  ##diplomacy start+ Handle player is co-ruler of NPC kingdom
+		  (try_begin),
+			#Copy slot values
+		    (is_between, ":alt_rule_faction", npc_kingdoms_begin, npc_kingdoms_end),
+			(neg|faction_slot_eq, "fac_player_supporters_faction", slot_faction_state, sfs_active),
+
+			(faction_get_slot, reg0, ":alt_rule_faction", dplmc_slot_faction_serfdom),
+			(faction_set_slot, "fac_player_supporters_faction", dplmc_slot_faction_serfdom,  reg0),
+
+			(faction_get_slot, reg0, ":alt_rule_faction", dplmc_slot_faction_centralization),
+			(faction_set_slot, "fac_player_supporters_faction", dplmc_slot_faction_centralization,  reg0),
+
+			(faction_get_slot, reg0, ":alt_rule_faction", dplmc_slot_faction_quality),
+			(faction_set_slot, "fac_player_supporters_faction", dplmc_slot_faction_quality,  reg0),
+
+			(faction_get_slot, reg0, ":alt_rule_faction", dplmc_slot_faction_aristocracy),
+			(faction_set_slot, "fac_player_supporters_faction", dplmc_slot_faction_aristocracy,  reg0),
+
+			(faction_get_slot, reg0, ":alt_rule_faction", dplmc_slot_faction_mercantilism),
+			(faction_set_slot, "fac_player_supporters_faction", dplmc_slot_faction_mercantilism,  reg0),
+		  (try_end),
+
+		  (this_or_next|is_between, ":alt_rule_faction", npc_kingdoms_begin, npc_kingdoms_end),
+		  ##diplomacy end+
+          (faction_slot_eq, "fac_player_supporters_faction", slot_faction_state, sfs_active),
+          (try_begin),
+            (faction_get_slot, ":centralization", "fac_player_supporters_faction", dplmc_slot_faction_centralization),
+            (neq, ":centralization", 0),
+            (val_mul, ":centralization", 5),
+            (val_add, ":percent", ":centralization"),
+          (try_end),
+          (try_begin),
+            (faction_get_slot, ":serfdom", "fac_player_supporters_faction", dplmc_slot_faction_serfdom),
+            (neq, ":serfdom", 0),
+            (val_mul, ":serfdom", 3),
+            (val_add, ":percent", ":serfdom"),
+          (try_end),
+        (else_try),
+          (gt, "$players_kingdom", 0),
+          (faction_get_slot, ":centralization", "$players_kingdom", dplmc_slot_faction_centralization),
+          (neq, ":centralization", 0),
+          (val_mul, ":centralization", -5),
+          (val_add, ":percent", ":centralization"),
+        (try_end),
+        (try_begin),
+          (gt, ":tax_lost", 0),
+          (store_mul, ":save", ":tax_lost", ":percent"),
+          (val_div, ":save", 100),
+          (store_mul, ":percent", ":save", 100),
+          (val_div, ":percent", ":tax_lost"),
+          (val_sub, ":tax_lost", ":save"),
+        (try_end),
+         ##diplomacy end
         (val_sub, ":net_change", ":tax_lost"),
-        (create_text_overlay, reg1, "str_loss_due_to_tax_inefficiency", 0),
+        ##diplomacy begin
+        (try_begin),
+          (gt, "$g_player_chamberlain", 0),
+          (str_store_string, s55, "str_loss_due_to_tax_inefficiency"),
+          (assign, reg0, ":percent"),
+          (val_mul, reg0, -1),
+	        (str_store_string, s55, "@{s55} ({reg0}%)"),
+          (create_text_overlay, reg1, "@{s55}", 0),
+        (else_try),
+        ##diplomacy end
+          (create_text_overlay, reg1, "str_loss_due_to_tax_inefficiency", 0),
+        ##diplomacy begin
+        (try_end),
+        ##diplomacy end
         (position_set_x, pos1, 25),
         (position_set_y, pos1, ":cur_y"),
         (overlay_set_position, reg1, pos1),
@@ -12780,17 +12935,34 @@ presentations = [
           (this_or_next|party_slot_eq, ":party_no", slot_party_type, spt_town),
           (party_slot_eq, ":party_no", slot_party_type, spt_castle),
           (party_slot_eq, ":party_no", slot_town_lord, "trp_player"),
+          ##diplomacy begin
+          (neg|party_slot_eq, ":party_no", slot_village_infested_by_bandits, "trp_peasant_woman"),
+          ##diplomacy end
           (assign, ":garrison_troop", 1),
-		(else_try),  
+		(else_try),
           (this_or_next|party_slot_eq, ":party_no", slot_party_type, spt_town),
 			(party_slot_eq, ":party_no", slot_party_type, spt_castle),
           (neg|party_slot_ge, ":party_no", slot_town_lord, 1), #unassigned
 		  (store_faction_of_party, ":center_faction", ":party_no"),
+		  ##diplomacy start+ Either player is co-ruler of faction, or this is fac_player_supporters_faction
+		  (this_or_next|eq, ":alt_rule_faction", ":center_faction"),
+		  ##diplomacy end+
 		  (eq, ":center_faction", "fac_player_supporters_faction"),
+		  ##diplomacy start+
+		  (this_or_next|is_between, ":alt_rule_faction", npc_kingdoms_begin, npc_kingdoms_end),#Player is co-ruler of NPC faction
+		  ##diplomacy end+
 		  (faction_slot_eq, "fac_player_supporters_faction", slot_faction_leader, "trp_player"),
-          (assign, ":garrison_troop", 1),			  
+          (assign, ":garrison_troop", 1),
         (try_end),
-		
+        ##diplomacy begin
+        (assign, ":patrol_troop", 0),
+        (try_begin),
+          (party_slot_eq, ":party_no",slot_party_type, spt_patrol),
+          (party_slot_eq, ":party_no", dplmc_slot_party_mission_diplomacy, "trp_player"),
+          (assign, ":patrol_troop", 1),
+        (try_end),
+        (this_or_next|eq, ":patrol_troop", 1),
+        ##diplomacy end
         (this_or_next|eq, ":party_no", "p_main_party"),
 			(eq, ":garrison_troop", 1),
         (assign, ":total_wage", 0),
@@ -12865,6 +13037,51 @@ presentations = [
         (overlay_set_position, reg1, pos1),
         (val_sub, ":cur_y", 27),
       (try_end),
+      ##diplomacy begin
+      (assign, ":staff_salary", 0),
+      (try_begin),
+        (gt, "$g_player_minister", 0),
+        (val_add, ":staff_salary", 15),
+      (try_end),
+      (try_begin),
+        (troop_slot_ge, "trp_player", slot_troop_spouse, 0),
+        (val_add, ":staff_salary", 10),
+      (try_end),
+      (try_begin),
+        (gt, "$g_player_chamberlain", 0),
+        (val_add, ":staff_salary", 15),
+      (try_end),
+      (try_begin),
+        (gt, "$g_player_constable", 0),
+        (val_add, ":staff_salary", 15),
+      (try_end),
+      (try_begin),
+        (gt, "$g_player_chancellor", 0),
+        (val_add, ":staff_salary", 20),
+      (try_end),
+
+      (try_begin),
+        (gt, ":staff_salary", 0),
+        (val_sub, ":net_change", ":staff_salary"),
+        (create_text_overlay, reg1, "@Staff:", 0),
+        (position_set_x, pos1, 900),
+        (position_set_y, pos1, 900),
+        (overlay_set_size, reg1, pos1),
+        (position_set_x, pos1, 25),
+        (position_set_y, pos1, ":cur_y"),
+        (overlay_set_position, reg1, pos1),
+        (store_mul, reg0, ":staff_salary", -1),
+        (create_text_overlay, reg1, "@{!}{reg0}", tf_right_align|tf_single_line),
+        (position_set_x, pos1, 900),
+        (position_set_y, pos1, 900),
+        (overlay_set_size, reg1, pos1),
+        (overlay_set_color, reg1, 0xFF0000),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, ":cur_y"),
+        (overlay_set_position, reg1, pos1),
+        (val_sub, ":cur_y", 27),
+      (try_end),
+      ##diplomacy end
       (create_mesh_overlay, reg1, "mesh_white_plane"),
       (overlay_set_color, reg1, 0x000000),
       (position_set_x, pos1, 24000),
@@ -12904,7 +13121,16 @@ presentations = [
       (position_set_x, pos1, 25),
       (position_set_y, pos1, ":cur_y"),
       (overlay_set_position, reg1, pos1),
+      ##diplomacy begin
+      (try_begin),
+        (gt, "$g_player_chamberlain", 0),
+        (store_troop_gold, ":player_wealth", "trp_household_possessions"),
+      (else_try),
+      ##diplomacy end
       (store_troop_gold, ":player_wealth", "trp_player"),
+      ##diplomacy begin
+      (try_end),
+      ##diplomacy end
       (assign, reg0, ":player_wealth"),
       (create_text_overlay, reg1, "@{!}{reg0}", tf_right_align|tf_single_line),
       (position_set_x, pos1, 900),
@@ -12915,6 +13141,9 @@ presentations = [
       (overlay_set_position, reg1, pos1),
       (val_sub, ":cur_y", 27),
       (val_mul, ":net_change", -1),
+      ##diplomacy begin
+      (assign, ":cash_to_pay", 0),
+      ##diplomacy end
       (try_begin),
         (ge, ":player_wealth", ":net_change"),
         (assign, ":player_wealth_dif", ":net_change"),
@@ -12922,6 +13151,28 @@ presentations = [
       (else_try),
         (assign, ":player_wealth_dif", ":player_wealth"),
         (store_sub, ":player_new_debt_to_party_members", ":net_change", ":player_wealth"),
+        ##diplomacy begin
+        (try_begin),
+          (gt, "$g_player_chamberlain", 0),
+          (store_troop_gold, ":player_inv_wealth", "trp_player"),
+
+          (try_begin), #drawing debts from personal money
+            (ge, ":player_inv_wealth", ":player_new_debt_to_party_members"),
+            (assign, ":cash_to_pay", ":player_new_debt_to_party_members"),
+            (assign, ":player_new_debt_to_party_members", 0),
+          (else_try),
+            (assign, ":cash_to_pay", ":player_inv_wealth"),
+            (val_sub, ":player_new_debt_to_party_members",":player_inv_wealth"),
+          (try_end),
+
+          (try_begin),
+            (eq, "$g_apply_budget_report_to_gold", 1),
+            (troop_remove_gold, "trp_player", ":cash_to_pay"),
+            (assign, reg0, ":cash_to_pay"),
+            (display_message, "@You paid {reg0} cash to liquidate a debt"),
+          (try_end),
+        (try_end),
+        ##diplomacy end
       (try_end),
       (create_text_overlay, reg1, "str_new_wealth", 0),
       (position_set_x, pos1, 900),
@@ -12939,6 +13190,45 @@ presentations = [
       (position_set_y, pos1, ":cur_y"),
       (overlay_set_position, reg1, pos1),
       (val_sub, ":cur_y", 27),
+      ##diplomacy begin
+      (try_begin),
+        (gt, "$g_player_chamberlain", 0),
+        (gt, ":cash_to_pay", 0),
+        (create_text_overlay, reg1, "@Earlier cash:", 0),
+        (position_set_x, pos1, 900),
+        (position_set_y, pos1, 900),
+        (overlay_set_size, reg1, pos1),
+        (position_set_x, pos1, 25),
+        (position_set_y, pos1, ":cur_y"),
+        (overlay_set_position, reg1, pos1),
+        (assign, reg0, ":player_inv_wealth"),
+        (create_text_overlay, reg1, "@{!}{reg0}", tf_right_align|tf_single_line),
+        (position_set_x, pos1, 900),
+        (position_set_y, pos1, 900),
+        (overlay_set_size, reg1, pos1),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, ":cur_y"),
+        (overlay_set_position, reg1, pos1),
+        (val_sub, ":cur_y", 27),
+
+        (create_text_overlay, reg1, "@New cash:", 0),
+        (position_set_x, pos1, 900),
+        (position_set_y, pos1, 900),
+        (overlay_set_size, reg1, pos1),
+        (position_set_x, pos1, 25),
+        (position_set_y, pos1, ":cur_y"),
+        (overlay_set_position, reg1, pos1),
+        (store_sub, reg0, ":player_inv_wealth", ":cash_to_pay"),
+        (create_text_overlay, reg1, "@{!}{reg0}", tf_right_align|tf_single_line),
+        (position_set_x, pos1, 900),
+        (position_set_y, pos1, 900),
+        (overlay_set_size, reg1, pos1),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, ":cur_y"),
+        (overlay_set_position, reg1, pos1),
+        (val_sub, ":cur_y", 27),
+      (try_end),
+      ##diplomacy end
 
       (try_begin),
         (gt, ":player_new_debt_to_party_members", 0),
@@ -12974,10 +13264,28 @@ presentations = [
         (assign, "$g_player_debt_to_party_members", ":player_new_debt_to_party_members"),
         (try_begin),
           (gt, ":player_wealth_dif", 0),
+          ##diplomacy begin
+          (try_begin),
+            (gt, "$g_player_chamberlain", 0),
+            (call_script, "script_dplmc_withdraw_from_treasury", ":player_wealth_dif"),
+          (else_try),
+          ##diplomacy end
           (troop_remove_gold, "trp_player", ":player_wealth_dif"),
+          ##diplomacy begin
+          (try_end),
+          ##diplomacy end
         (else_try),
           (val_mul, ":player_wealth_dif", -1),
+          ##diplomacy begin
+          (try_begin),
+            (gt, "$g_player_chamberlain", 0),
+            (call_script, "script_dplmc_pay_into_treasury", ":player_wealth_dif"),
+          (else_try),
+          ##diplomacy end
           (troop_add_gold, "trp_player", ":player_wealth_dif"),
+          ##diplomacy begin
+          (try_end),
+          ##diplomacy end
         (try_end),
         (try_for_range, ":center_no", centers_begin, centers_end),
           (party_slot_eq, ":center_no", slot_town_lord, "trp_player"),
@@ -13045,7 +13353,7 @@ presentations = [
      ]),
 
   ("multiplayer_duel_start_counter", prsntf_read_only|prsntf_manual_end_only, 0, [
-    (ti_on_presentation_load, [      
+    (ti_on_presentation_load, [
       (set_fixed_point_multiplier, 1000),
 
       (assign, "$g_multiplayer_duel_start_counter_overlay", -1),
@@ -13063,7 +13371,7 @@ presentations = [
 
       (presentation_set_duration, 999999),
       ]),
-  
+
     (ti_on_presentation_run, [
       (ge, "$g_multiplayer_duel_start_counter_overlay", 0),
       (store_mission_timer_a, ":current_time"),
@@ -13082,7 +13390,6591 @@ presentations = [
       ]),
     ]),
 
-    #INVASION MODE START
+##diplomacy begin
+  ("dplmc_autoloot_upgrade_management", 0, mesh_load_window, [
+    (ti_on_presentation_load,
+     [
+      (set_fixed_point_multiplier, 1000),
+      (presentation_set_duration, 999999),
+
+      # done
+      (create_game_button_overlay, "$g_presentation_obj_10", "@Done"),
+      (position_set_x, pos1, 900),
+      (position_set_y, pos1, 25),
+      (overlay_set_position, "$g_presentation_obj_10", pos1),
+
+      ## current hero
+      # character picture
+      (create_mesh_overlay_with_tableau_material, reg0, -1, "tableau_troop_note_mesh", "$temp"),
+      (position_set_x, pos1, 500),
+      (position_set_y, pos1, 500),
+      (overlay_set_size, reg0, pos1),
+      (position_set_x, pos1, 200),
+      (position_set_y, pos1, 560),
+      (overlay_set_position, reg0, pos1),
+
+      (str_store_troop_name, s1, "$temp"),
+      (store_character_level, ":troop_level", "$temp"),
+      (assign, reg1, ":troop_level"),
+      (str_store_string, s1, "@Name: {s1}^Level: {reg1}"),
+
+      (store_troop_health, ":cur_hp", "$temp", 1),
+      (call_script, "script_dplmc_get_troop_max_hp", "$temp"),
+      (assign, reg1, ":cur_hp"),
+      (assign, reg2, reg0),
+      (str_store_string, s1, "@{s1}^HP: {reg1}/{reg2}"),
+
+      (create_text_overlay, reg1, "@{s1}", tf_double_space),
+      (position_set_x, pos1, 380),
+      (position_set_y, pos1, 560),
+      (overlay_set_position, reg1, pos1),
+
+      # title
+      (create_text_overlay, reg1, "@Weapon upgrade settings:", tf_center_justify|tf_vertical_align_center),
+      (position_set_x, pos1, 445),
+      (position_set_y, pos1, 530),
+      (overlay_set_position, reg1, pos1),
+
+      # init trp_temp_array_c
+      (assign, ":sub_overlay_id", 0),
+      (try_for_range_backwards, ":item_type", 0, itp_type_animal),
+        (this_or_next|is_between, ":item_type", itp_type_one_handed_wpn, itp_type_goods),
+        (this_or_next|is_between, ":item_type", itp_type_pistol, itp_type_animal),
+        (eq, ":item_type", 0),
+        (troop_set_slot, "trp_temp_array_c", ":sub_overlay_id", ":item_type"),
+        (val_add, ":sub_overlay_id", 1),
+      (try_end),
+
+      # settings 1
+      # set 1: wpn slot button
+      (position_set_x, pos1, 270),
+      (position_set_y, pos1, 450),
+      (create_combo_button_overlay, "$g_presentation_obj_1"),
+      (overlay_set_position, "$g_presentation_obj_1", pos1),
+      (assign, ":sub_overlay_id", 0),
+      (call_script, "script_dplmc_get_current_item_for_autoloot", 0),
+      (try_for_range_backwards, ":item_type", 0, itp_type_animal),
+        (this_or_next|is_between, ":item_type", itp_type_one_handed_wpn, itp_type_goods),
+        (this_or_next|is_between, ":item_type", itp_type_pistol, itp_type_animal),
+        (eq, ":item_type", 0),
+        (store_add, ":out_string", "str_dplmc_hero_wpn_slot_none", ":item_type"),
+        (str_store_string, s0, ":out_string"),
+        (overlay_add_item, "$g_presentation_obj_1", s0),
+        (try_begin),
+          (troop_slot_eq, "$temp", dplmc_slot_upgrade_wpn_0, ":item_type"),
+          (overlay_set_val, "$g_presentation_obj_1", ":sub_overlay_id"),
+        (try_end),
+        (val_add, ":sub_overlay_id", 1),
+      (try_end),
+
+      (position_set_y, pos1, 420),
+      (create_combo_button_overlay, "$g_presentation_obj_2"),
+      (overlay_set_position, "$g_presentation_obj_2", pos1),
+      (assign, ":sub_overlay_id", 0),
+      (call_script, "script_dplmc_get_current_item_for_autoloot", 1),
+      (try_for_range_backwards, ":item_type", 0, itp_type_animal),
+        (this_or_next|is_between, ":item_type", itp_type_one_handed_wpn, itp_type_goods),
+        (this_or_next|is_between, ":item_type", itp_type_pistol, itp_type_animal),
+        (eq, ":item_type", 0),
+        (store_add, ":out_string", "str_dplmc_hero_wpn_slot_none", ":item_type"),
+        (str_store_string, s0, ":out_string"),
+        (overlay_add_item, "$g_presentation_obj_2", s0),
+        (try_begin),
+          (troop_slot_eq, "$temp", dplmc_slot_upgrade_wpn_1, ":item_type"),
+          (overlay_set_val, "$g_presentation_obj_2", ":sub_overlay_id"),
+        (try_end),
+        (val_add, ":sub_overlay_id", 1),
+      (try_end),
+
+      (position_set_y, pos1, 390),
+      (create_combo_button_overlay, "$g_presentation_obj_3"),
+      (overlay_set_position, "$g_presentation_obj_3", pos1),
+      (assign, ":sub_overlay_id", 0),
+      (call_script, "script_dplmc_get_current_item_for_autoloot", 2),
+      (try_for_range_backwards, ":item_type", 0, itp_type_animal),
+        (this_or_next|is_between, ":item_type", itp_type_one_handed_wpn, itp_type_goods),
+        (this_or_next|is_between, ":item_type", itp_type_pistol, itp_type_animal),
+        (eq, ":item_type", 0),
+        (store_add, ":out_string", "str_dplmc_hero_wpn_slot_none", ":item_type"),
+        (str_store_string, s0, ":out_string"),
+        (overlay_add_item, "$g_presentation_obj_3", s0),
+        (try_begin),
+          (troop_slot_eq, "$temp", dplmc_slot_upgrade_wpn_2, ":item_type"),
+          (overlay_set_val, "$g_presentation_obj_3", ":sub_overlay_id"),
+        (try_end),
+        (val_add, ":sub_overlay_id", 1),
+      (try_end),
+
+      (position_set_y, pos1, 360),
+      (create_combo_button_overlay, "$g_presentation_obj_4"),
+      (overlay_set_position, "$g_presentation_obj_4", pos1),
+      (assign, ":sub_overlay_id", 0),
+      (call_script, "script_dplmc_get_current_item_for_autoloot", 3),
+      (try_for_range_backwards, ":item_type", 0, itp_type_animal),
+        (this_or_next|is_between, ":item_type", itp_type_one_handed_wpn, itp_type_goods),
+        (this_or_next|is_between, ":item_type", itp_type_pistol, itp_type_animal),
+        (eq, ":item_type", 0),
+        (store_add, ":out_string", "str_dplmc_hero_wpn_slot_none", ":item_type"),
+        (str_store_string, s0, ":out_string"),
+        (overlay_add_item, "$g_presentation_obj_4", s0),
+        (try_begin),
+          (troop_slot_eq, "$temp", dplmc_slot_upgrade_wpn_3, ":item_type"),
+          (overlay_set_val, "$g_presentation_obj_4", ":sub_overlay_id"),
+        (try_end),
+        (val_add, ":sub_overlay_id", 1),
+      (try_end),
+
+      (position_set_x, pos1, 1000),
+      (position_set_y, pos1, 800),
+      (overlay_set_size, "$g_presentation_obj_1", pos1),
+      (overlay_set_size, "$g_presentation_obj_2", pos1),
+      (overlay_set_size, "$g_presentation_obj_3", pos1),
+      (overlay_set_size, "$g_presentation_obj_4", pos1),
+      # set 1: apply to all
+      (position_set_x, pos1, 128),
+      (position_set_y, pos1, 310),
+      (create_image_button_overlay, "$g_presentation_obj_11", "mesh_longer_button", "mesh_longer_button_down"),
+      (overlay_set_position, "$g_presentation_obj_11", pos1),
+      (position_set_x, pos1, 270),
+      (position_set_y, pos1, 325),
+      (create_text_overlay, reg1, "@Apply to everyone", tf_center_justify|tf_vertical_align_center),
+      (overlay_set_position, reg1, pos1),
+
+      # upgrade armor and horse
+      # text
+      (position_set_x, pos1, 300),
+      (position_set_y, pos1, 155),
+      (create_text_overlay, reg1, "@Upgrade armor ", tf_center_justify|tf_vertical_align_center),
+      (overlay_set_position, reg1, pos1),
+      (position_set_y, pos1, 105),
+      (create_text_overlay, reg1, "@Upgrade horse ", tf_center_justify|tf_vertical_align_center),
+      (overlay_set_position, reg1, pos1),
+      # checkbox
+      (position_set_x, pos1, 180),
+      (position_set_y, pos1, 148),
+      (create_check_box_overlay, "$g_presentation_obj_13", "mesh_checkbox_off", "mesh_checkbox_on"),
+      (overlay_set_position, "$g_presentation_obj_13", pos1),
+      (troop_get_slot,":upg_armor", "$temp",dplmc_slot_upgrade_armor),
+      (overlay_set_val, "$g_presentation_obj_13", ":upg_armor"),
+      (position_set_y, pos1, 98),
+      (create_check_box_overlay, "$g_presentation_obj_14", "mesh_checkbox_off", "mesh_checkbox_on"),
+      (overlay_set_position, "$g_presentation_obj_14", pos1),
+      (troop_get_slot,":upg_horse", "$temp",dplmc_slot_upgrade_horse),
+      (overlay_set_val, "$g_presentation_obj_14", ":upg_horse"),
+      # long button
+      (position_set_x, pos1, 418),
+      (position_set_y, pos1, 140),
+      (create_image_button_overlay, "$g_presentation_obj_15", "mesh_longer_button", "mesh_longer_button_down"),
+      (overlay_set_position, "$g_presentation_obj_15", pos1),
+      (position_set_y, pos1, 90),
+      (create_image_button_overlay, "$g_presentation_obj_16", "mesh_longer_button", "mesh_longer_button_down"),
+      (overlay_set_position, "$g_presentation_obj_16", pos1),
+      (position_set_x, pos1, 560),
+      (position_set_y, pos1, 155),
+      (create_text_overlay, reg1, "@Apply to everyone", tf_center_justify|tf_vertical_align_center),
+      (overlay_set_position, reg1, pos1),
+      (position_set_y, pos1, 105),
+      (create_text_overlay, reg1, "@Apply to everyone", tf_center_justify|tf_vertical_align_center),
+      (overlay_set_position, reg1, pos1),
+
+      # hero list
+      (assign, ":pos_x", 900),
+      (assign, ":pos_y", 600),
+      (assign, ":num_of_heros", 0),
+      (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
+      (try_for_range, ":i_stack", 1, ":num_stacks"),
+        (party_stack_get_troop_id,":stack_troop","p_main_party",":i_stack"),
+        (is_between, ":stack_troop", companions_begin, companions_end),
+        (str_store_troop_name, s1, ":stack_troop"),
+        (position_set_x, pos1, ":pos_x"),
+        (position_set_y, pos1, ":pos_y"),
+        (val_sub, ":pos_y", 30),
+        (create_button_overlay, reg0, "@{s1}", tf_center_justify|tf_vertical_align_center),
+        (overlay_set_position, reg0, pos1),
+
+        (assign, ":trp_slot_prsnt_no", ":num_of_heros"),
+        (troop_set_slot, "trp_temp_array_a", ":trp_slot_prsnt_no", reg0),
+        (troop_set_slot, "trp_temp_array_b", ":trp_slot_prsnt_no", ":stack_troop"),
+        (val_add, ":num_of_heros", 1),
+      (try_end),
+#      ####### mouse fix pos system #######
+#      (call_script, "script_mouse_fix_pos_ready"),
+#      ####### mouse fix pos system #######
+     ]),
+
+#    (ti_on_presentation_run,
+#      [
+#      ####### mouse fix pos system #######
+#      (call_script, "script_mouse_fix_pos_run"),
+#      ####### mouse fix pos system #######
+#    ]),
+
+    (ti_on_presentation_event_state_change,
+     [
+        (store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":value"),
+
+        (try_begin),
+          (eq, ":object", "$g_presentation_obj_1"),
+          (troop_get_slot, ":item_type", "trp_temp_array_c", ":value"),
+          (troop_set_slot, "$temp", dplmc_slot_upgrade_wpn_0, ":item_type"),
+          (start_presentation, "prsnt_dplmc_autoloot_upgrade_management"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_2"),
+          (troop_get_slot, ":item_type", "trp_temp_array_c", ":value"),
+          (troop_set_slot, "$temp", dplmc_slot_upgrade_wpn_1, ":item_type"),
+          (start_presentation, "prsnt_dplmc_autoloot_upgrade_management"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_3"),
+          (troop_get_slot, ":item_type", "trp_temp_array_c", ":value"),
+          (troop_set_slot, "$temp", dplmc_slot_upgrade_wpn_2, ":item_type"),
+          (start_presentation, "prsnt_dplmc_autoloot_upgrade_management"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_4"),
+          (troop_get_slot, ":item_type", "trp_temp_array_c", ":value"),
+          (troop_set_slot, "$temp", dplmc_slot_upgrade_wpn_3, ":item_type"),
+          (start_presentation, "prsnt_dplmc_autoloot_upgrade_management"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_10"),
+          (presentation_set_duration, 0),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_11"),
+          (call_script, "script_dplmc_copy_upgrade_to_all_heroes", "$temp", dplmc_wpn_setting_1),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_13"),
+          (troop_set_slot, "$temp", dplmc_slot_upgrade_armor, ":value"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_14"),
+          (troop_set_slot, "$temp", dplmc_slot_upgrade_horse, ":value"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_15"),
+          (call_script, "script_dplmc_copy_upgrade_to_all_heroes", "$temp", dplmc_armor_setting),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_16"),
+          (call_script, "script_dplmc_copy_upgrade_to_all_heroes", "$temp", dplmc_horse_setting),
+        (try_end),
+
+        (assign, ":num_of_heros", 0),
+        (party_get_num_companion_stacks, ":num_stacks","p_main_party"),
+        (try_for_range, ":i_stack", 0, ":num_stacks"),
+          (party_stack_get_troop_id,":stack_troop","p_main_party",":i_stack"),
+          (is_between, ":stack_troop", companions_begin, companions_end),
+          (assign, ":trp_slot_prsnt_no", ":num_of_heros"),
+          (val_add, ":num_of_heros", 1),
+          (troop_slot_eq, "trp_temp_array_a", ":trp_slot_prsnt_no", ":object"),
+          (troop_get_slot, ":cur_troop", "trp_temp_array_b", ":trp_slot_prsnt_no"),
+          (assign, "$temp", ":cur_troop"),
+          (start_presentation, "prsnt_dplmc_autoloot_upgrade_management"),
+        (try_end),
+    ]),
+  ]),
+
+
+    ("dplmc_policy_management",0,mesh_load_window,[
+      (ti_on_presentation_load,
+       [
+        (set_fixed_point_multiplier, 1000),
+        (presentation_set_duration, 999999),
+		##nested diplomacy start+ insert g_presentation_obj_5, g_presentation_obj_6 and increment others
+
+		##Moved up here from below
+        (faction_get_slot, ":centralization", "fac_player_supporters_faction", dplmc_slot_faction_centralization),
+        (faction_get_slot, ":aristocratcy", "fac_player_supporters_faction", dplmc_slot_faction_aristocracy),
+        (faction_get_slot, ":serfdom", "fac_player_supporters_faction", dplmc_slot_faction_serfdom),
+        (faction_get_slot, ":quality", "fac_player_supporters_faction", dplmc_slot_faction_quality),
+		(faction_get_slot, ":mercantilism", "fac_player_supporters_faction", dplmc_slot_faction_quality),#<- dplmc+ added
+
+        # done
+        (create_game_button_overlay, "$g_presentation_obj_12", "@Done"),#<- dplmc+ changed obj_10 to obj_12
+        (position_set_x, pos1, 900),
+        (position_set_y, pos1, 25),
+        (overlay_set_position, "$g_presentation_obj_12", pos1),#<- dplmc_ changed obj_10 to obj_12
+
+        # title
+        (create_text_overlay, reg1, "@Select your domestic policy", tf_center_justify|tf_vertical_align_center),
+        (position_set_x, pos1, 445),
+        (position_set_y, pos1, 700),
+        (overlay_set_position, reg1, pos1),
+
+        (create_slider_overlay, "$g_presentation_obj_sliders_1", -3, 3),
+        (create_slider_overlay, "$g_presentation_obj_sliders_2", -3, 3),
+        (create_slider_overlay, "$g_presentation_obj_sliders_3", -3, 3),
+        (create_slider_overlay, "$g_presentation_obj_sliders_4", -3, 3),
+		(create_slider_overlay, "$g_presentation_obj_sliders_5", -3, 3),#<-dplmc+ added
+        (assign, reg1, 25),
+		##dplmc+ start incremented sliders by 1... (and changed since things might not be at their initial values)
+		(store_add, ":text", "str_dplmc_neither_centralize_nor_decentralized", ":centralization"),
+        (create_text_overlay, "$g_presentation_obj_sliders_6", ":text"),
+		(store_add, ":text", "str_dplmc_neither_aristocratic_nor_plutocratic", ":aristocratcy"),
+        (create_text_overlay, "$g_presentation_obj_sliders_7", ":text"),
+		(store_add, ":text", "str_dplmc_mixture_serfs", ":serfdom"),
+        (create_text_overlay, "$g_presentation_obj_sliders_8", ":text"),
+		(store_add, ":text", "str_dplmc_mediocre_quality", ":quality"),
+        (create_text_overlay, "$g_presentation_obj_sliders_9", ":text"),
+		##dplmc+ end incremented sliders by 1
+		(store_add, ":text", "str_dplmc_neither_mercantilist_nor_laissez_faire", ":mercantilism"),
+		(create_text_overlay, "$g_presentation_obj_sliders_10", ":text"),#<- dplmc+ added
+
+        (create_text_overlay, "$g_presentation_obj_1", "@Centralization:"),
+        (create_text_overlay, "$g_presentation_obj_2", "@Aristocracy:"),
+        (create_text_overlay, "$g_presentation_obj_3", "@Serfdom:"),
+        (create_text_overlay, "$g_presentation_obj_4", "@Troop quality:"),
+		(create_text_overlay, "$g_presentation_obj_5", "@Mercantilism:"),#<-- dplmc+ added
+		#dplmc+ start incremented obj by 1...
+        (create_text_overlay, "$g_presentation_obj_6", "@High centralization reduces tax inefficiency for the king and raises it for vassals. This will interfere  the relations between ruler and vassals."),
+        (create_text_overlay, "$g_presentation_obj_7", "@High aristocracy will improve the relations between the king and his vassals who will be able to raise bigger armies but it will decreased trade."),
+        (create_text_overlay, "$g_presentation_obj_8", "@High serfdom reduces tax inefficiency for the king and his vassals and vassals can maintain bigger armies but troops loose moral."),
+        (create_text_overlay, "$g_presentation_obj_9", "@High troop quality increases the strength of troops but decreases army size."),
+		#dplmc+ end incremented obj by 1
+		(create_text_overlay, "$g_presentation_obj_10", "@Mercantilistic policies maximize exports while minimizing imports, and increase government regulation of industry."),#<-dplmc+ added
+
+		##Moved earlier
+        #(faction_get_slot, ":centralization", "fac_player_supporters_faction", dplmc_slot_faction_centralization),
+        #(faction_get_slot, ":aristocratcy", "fac_player_supporters_faction", dplmc_slot_faction_aristocracy),
+        #(faction_get_slot, ":serfdom", "fac_player_supporters_faction", dplmc_slot_faction_serfdom),
+        #(faction_get_slot, ":quality", "fac_player_supporters_faction", dplmc_slot_faction_quality),
+		#(faction_get_slot, ":mercantilism", "fac_player_supporters_faction", dplmc_slot_faction_quality),#<- dplmc+ added
+
+        (overlay_set_val, "$g_presentation_obj_sliders_1", ":centralization"),
+        (overlay_set_val, "$g_presentation_obj_sliders_2", ":aristocratcy"),
+        (overlay_set_val, "$g_presentation_obj_sliders_3", ":serfdom"),
+        (overlay_set_val, "$g_presentation_obj_sliders_4", ":quality"),
+		(overlay_set_val, "$g_presentation_obj_sliders_5", ":mercantilism"),#<- dplmc+ added
+        (position_set_x, pos1, 200),
+
+		##SLIDERS
+		#dplmc start+ pushed all items by 150, then dropped all items by 75, then decreased the spacing from 150 to 100
+        (position_set_y, pos1, 575),#750),
+        (overlay_set_position, "$g_presentation_obj_sliders_1", pos1),
+        (position_set_y, pos1, 450),#600),
+        (overlay_set_position, "$g_presentation_obj_sliders_2", pos1),
+        (position_set_y, pos1, 325),#450),
+        (overlay_set_position, "$g_presentation_obj_sliders_3", pos1),
+        (position_set_y, pos1, 200),#300),
+        (overlay_set_position, "$g_presentation_obj_sliders_4", pos1),
+		#dplmc end+ end pushed all items by 150
+        (position_set_y, pos1, 75),#150), #<- dplmc+ added
+        (overlay_set_position, "$g_presentation_obj_sliders_5", pos1),#<- dplmc+ added
+
+
+		##HEADERS
+        (position_set_x, pos1, 100),
+		#dplmc+ start pushed all items by 150, then dropped all items by 75, then changed the spacing to 100
+        (position_set_y, pos1, 625),#800),
+        (overlay_set_position, "$g_presentation_obj_1", pos1),
+        (position_set_y, pos1, 500),#650),
+        (overlay_set_position, "$g_presentation_obj_2", pos1),
+        (position_set_y, pos1, 375),#500),
+        (overlay_set_position, "$g_presentation_obj_3", pos1),
+        (position_set_y, pos1, 250),#350),
+        (overlay_set_position, "$g_presentation_obj_4", pos1),
+		#dplmc+ end pushed all items by 150
+		(position_set_y, pos1, 125),#200), #<- dplmc+ added
+        (overlay_set_position, "$g_presentation_obj_5", pos1), #<- dplmc+ added
+
+		##SLIDER DESCRIPTIONS
+        (position_set_x, pos1, 50),
+		#dplmc+ start pushed all items by 150, and incremented obj by 1, then dropped all items by 75, then raised it 10, then changed the spacing to 100
+        (position_set_y, pos1, 550),#700),
+        (overlay_set_position, "$g_presentation_obj_6", pos1),
+        (position_set_y, pos1, 425),#550),
+        (overlay_set_position, "$g_presentation_obj_7", pos1),
+        (position_set_y, pos1, 300),#400),
+        (overlay_set_position, "$g_presentation_obj_8", pos1),
+        (position_set_y, pos1, 175),#250),
+        (overlay_set_position, "$g_presentation_obj_9", pos1),
+		#dplmc+ end pushed all items by 150, and incremented obj by 1
+		(position_set_y, pos1, 50),#100), #<- dplmc+ added
+        (overlay_set_position, "$g_presentation_obj_10", pos1), #<- dplmc+ added
+
+        (position_set_x, pos1, 775),
+        (position_set_y, pos1, 775),
+		#dplmc+ start increment obj by 1
+        (overlay_set_size, "$g_presentation_obj_6", pos1),
+        (overlay_set_size, "$g_presentation_obj_7", pos1),
+        (overlay_set_size, "$g_presentation_obj_8", pos1),
+        (overlay_set_size, "$g_presentation_obj_9", pos1),
+		#dplmc+ end increment obj by 1
+		(overlay_set_size, "$g_presentation_obj_10", pos1),#<- dplmc+ added
+
+		##SLIDER LEVEL TEXT
+        (position_set_x, pos1, 400),#400),
+		#dplmc+ start pushed all items by 150, and incremented sliders by 1, then dropped all items by 75, then changed the spacing to 100
+        (position_set_y, pos1, 575),#750),
+        (overlay_set_position, "$g_presentation_obj_sliders_6", pos1),
+        (position_set_y, pos1, 450),#600),
+        (overlay_set_position, "$g_presentation_obj_sliders_7", pos1),
+        (position_set_y, pos1, 325),#450),
+        (overlay_set_position, "$g_presentation_obj_sliders_8", pos1),
+        (position_set_y, pos1, 200),#300),
+        (overlay_set_position, "$g_presentation_obj_sliders_9", pos1),
+		#dplmc+ end pushed all items by 150, and incremented sliders by 1
+		(position_set_y, pos1, 75),#150),#<- dplmc+ added
+        (overlay_set_position, "$g_presentation_obj_sliders_10", pos1),#<- dplmc+ added
+
+        (position_set_x, pos1, 925),
+        (position_set_y, pos1, 925),
+		#dplmc+ start incremented sliders by 1
+        (overlay_set_size, "$g_presentation_obj_sliders_6", pos1),
+        (overlay_set_size, "$g_presentation_obj_sliders_7", pos1),
+        (overlay_set_size, "$g_presentation_obj_sliders_8", pos1),
+        (overlay_set_size, "$g_presentation_obj_sliders_9", pos1),
+		#dplmc+ end incremented sliders by 1
+		(overlay_set_size, "$g_presentation_obj_sliders_10", pos1),#<- dplmc+ added
+        ]),
+      (ti_on_presentation_run,
+       [
+        ]),
+      (ti_on_presentation_event_state_change,
+       [(store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":value"),
+        ##nested diplomacy start+
+		#Added new option, so had to increment some sliders
+        (try_begin),
+          (eq, ":object", "$g_presentation_obj_sliders_1"),
+          (faction_set_slot,  "fac_player_supporters_faction", dplmc_slot_faction_centralization, ":value"),
+          (val_add, ":value", "str_dplmc_neither_centralize_nor_decentralized"),
+          (overlay_set_text, "$g_presentation_obj_sliders_6", ":value"),#dplmc+ incremented "sliders"
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_sliders_2"),
+          (faction_set_slot,  "fac_player_supporters_faction", dplmc_slot_faction_aristocracy, ":value"),
+          (val_add, ":value", "str_dplmc_neither_aristocratic_nor_plutocratic"),
+          (overlay_set_text, "$g_presentation_obj_sliders_7", ":value"),#dplmc+ incremented "sliders"
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_sliders_3"),
+          (faction_set_slot,  "fac_player_supporters_faction", dplmc_slot_faction_serfdom, ":value"),
+          (val_add, ":value", "str_dplmc_mixture_serfs"),
+          (overlay_set_text, "$g_presentation_obj_sliders_8", ":value"),#dplmc+ incremented "sliders"
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_sliders_4"),
+          (faction_set_slot,  "fac_player_supporters_faction", dplmc_slot_faction_quality, ":value"),
+          (val_add, ":value", "str_dplmc_mediocre_quality"),
+          (overlay_set_text, "$g_presentation_obj_sliders_9", ":value"),#dplmc+ incremented "sliders"
+		#Finished incremented sliders.
+		(else_try),
+		  #dplmc+ new option: mercantilism
+		  (eq, ":object", "$g_presentation_obj_sliders_5"),
+          (faction_set_slot,  "fac_player_supporters_faction", dplmc_slot_faction_mercantilism, ":value"),
+          (val_add, ":value", "str_dplmc_neither_mercantilist_nor_laissez_faire"),
+          (overlay_set_text, "$g_presentation_obj_sliders_10", ":value"),
+		#Change variable associated with "Done" button.
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_12"),#dplmc+ changed 10 to 12
+          (assign, "$g_players_policy_set", 1),
+          (presentation_set_duration, 0),
+        (try_end),
+		##nested diplomacy end+
+    ]),
+  ]),
+
+  ##nested diplomacy start+
+  #
+  #Make it slightly harder to abuse the AI.
+  #For example, some players report randomly starting wars with a faction and
+  #demanding a hard-to-take castle until the AI concedes.
+  #
+  #See changes in logic below for specifics.
+  #
+  ##nested diplomacy end+
+    ("dplmc_peace_terms",0,mesh_load_window,[
+      (ti_on_presentation_load,
+       [
+        (set_fixed_point_multiplier, 1000),
+        (presentation_set_duration, 999999),
+
+        # done
+        (create_game_button_overlay, "$g_presentation_obj_10", "@Done"),
+        (position_set_x, pos1, 900),
+        (position_set_y, pos1, 25),
+        (overlay_set_position, "$g_presentation_obj_10", pos1),
+
+        #cancel
+        (create_game_button_overlay, "$g_presentation_obj_9", "@Cancel"),
+        (position_set_x, pos1, 100),
+        (overlay_set_position, "$g_presentation_obj_9", pos1),
+
+        # title
+        (create_text_overlay, reg1, "@Dictate the peace terms", tf_center_justify|tf_vertical_align_center),
+        (position_set_x, pos1, 445),
+        (position_set_y, pos1, 700),
+        (overlay_set_position, reg1, pos1),
+
+        (position_set_y, pos1, 550),
+        (create_text_overlay, "$g_presentation_obj_2", "@Select the castle and the amount of money and check the boxes to activate the demand. The demands are combined if both boxes are checked."),
+        (position_set_x, pos1, 50),
+        (overlay_set_position, "$g_presentation_obj_2", pos1),
+
+        (create_slider_overlay, "$g_presentation_obj_sliders_1", 1, 10),
+        (overlay_set_val, "$g_presentation_obj_sliders_1", 1),
+        (position_set_x, pos1, 300),
+        (position_set_y, pos1, 350),
+        (overlay_set_position, "$g_presentation_obj_sliders_1", pos1),
+        (assign, "$demanded_money", 1000),
+        (assign, "$diplomacy_var", 1),
+
+        (create_text_overlay, "$g_presentation_obj_sliders_2", "@1000 denars"),
+        (position_set_x, pos1, 500),
+        (overlay_set_position, "$g_presentation_obj_sliders_2", pos1),
+
+        (create_check_box_overlay, "$g_presentation_obj_battle_check0", "mesh_checkbox_off", "mesh_checkbox_on"),
+        (position_set_x, pos1, 700),
+        (overlay_set_position, "$g_presentation_obj_battle_check0", pos1),
+        (overlay_set_val, "$g_presentation_obj_battle_check0", 1),
+
+        (assign, "$demanded_castle", 0),
+        (assign, ":castle_count", 0),
+        (create_combo_button_overlay, "$g_presentation_obj_1"),
+        (try_for_range, ":castle", castles_begin, castles_end),
+		  ##diplomacy start+
+		  (party_slot_eq, ":castle", slot_party_type, spt_castle),
+		  ##diplomacy end+
+          (store_faction_of_party, ":castle_faction", ":castle"),
+          (eq, ":castle_faction", "$g_notification_menu_var1"),
+          (str_store_party_name, s2, ":castle"),
+          (overlay_add_item, "$g_presentation_obj_1", s2),
+          (assign, "$demanded_castle", ":castle"),
+          (val_add, ":castle_count", 1),
+        (end_try),
+        (assign, "$diplomacy_var2", 0),
+        (position_set_x, pos1, 300),
+        (position_set_y, pos1, 250),
+        (overlay_set_position, "$g_presentation_obj_1", pos1),
+        (overlay_set_val, "$g_presentation_obj_1", ":castle_count"),
+
+        (create_check_box_overlay, "$g_presentation_obj_battle_check1", "mesh_checkbox_off", "mesh_checkbox_on"),
+        (position_set_x, pos1, 700),
+        (overlay_set_position, "$g_presentation_obj_battle_check1", pos1),
+
+        ]),
+      (ti_on_presentation_run,
+       [
+        ]),
+      (ti_on_presentation_event_state_change,
+       [(store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":value"),
+
+        (try_begin),
+          (eq, ":object", "$g_presentation_obj_1"),
+
+          (assign, ":cur", 0),
+          (try_for_range, ":castle", castles_begin, castles_end),
+            (store_faction_of_party, ":castle_faction", ":castle"),
+            (eq, ":castle_faction", "$g_notification_menu_var1"),
+            (try_begin),
+              (eq, ":cur", ":value"),
+              (assign, "$demanded_castle", ":castle"),
+            (try_end),
+            (val_add, ":cur", 1),
+          (try_end),
+
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_check0"),
+          (assign, "$diplomacy_var", ":value"),
+
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_check1"),
+          (assign, "$diplomacy_var2", ":value"),
+
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_sliders_1"),
+          (store_mul, "$demanded_money",":value", 1000),
+		  ##diplomacy start+
+		  ##OLD:
+          #(assign, reg0, "$demanded_money"),
+          #(overlay_set_text, "$g_presentation_obj_sliders_2", "@{reg0} denars"),
+		  ##NEW:
+		  (assign, reg1, "$demanded_money"),
+		  (overlay_set_text, "$g_presentation_obj_sliders_2", "str_reg1_denars"),
+		  ##diplomacy end+
+
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_9"),
+          (presentation_set_duration, 0),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_10"),
+          (presentation_set_duration, 0),
+
+          (try_begin),
+            (eq, "$diplomacy_var", 0),
+            (assign, "$demanded_money", 0),
+          (try_end),
+
+          (try_begin),
+            (eq, "$diplomacy_var2", 0),
+            (assign, "$demanded_castle", 0),
+          (try_end),
+
+          (assign, ":demand", 0),
+          (try_begin),
+            (gt, "$demanded_money", 0),
+            (store_div, ":demand", "$demanded_money", 1000),
+          (try_end),
+		  ##nested diplomacy start+
+		  #OLD:
+		  #(try_begin),
+          #   (is_between, "$demanded_castle", castles_begin, castles_end),
+          #   (val_add, ":demand", 12),
+          #(try_end),
+		  #NEW:
+		  #
+		  #Not all castles are created equal.
+		  (assign, ":npc_faction", "$g_notification_menu_var1"),
+
+		  (assign, ":player_faction", "fac_player_supporters_faction"),
+		  (try_begin),
+		     (neg|faction_slot_eq, ":player_faction", slot_faction_state, sfs_active),
+			 (is_between, "$players_kingdom", npc_kingdoms_begin, npc_kingdoms_end),
+			 (assign, ":player_faction", "$players_kingdom"),
+		  (try_end),
+
+		  #(assign, ":castle_value", 0),
+		  (assign, ":was_taken_recently", 0),
+		  (assign, ":would_make_lord_fiefless", 0),
+		  (assign, ":distance_factor", 100),#If positive, 100 times the ratio of distance of closest friendly center to closest enemy center; if negative, 100 times the ratio of the distance of the closest enemy center to the closest friendly center.
+		  (try_begin),
+			(is_between, "$demanded_castle", castles_begin, castles_end),
+			## (1) Determine whether or not the demanded castle was taken recently.
+			(try_begin),
+				#This version of Diplomacy+ saves transfer times, so we can check directly.
+				(neg|party_slot_eq, "$demanded_castle", dplmc_slot_center_last_transfer_time, 0),
+				(store_current_hours, ":hours_since_capture"),
+				(party_get_slot, reg0, "$demanded_castle", dplmc_slot_center_last_transfer_time),
+				(val_sub, ":hours_since_capture", reg0),
+				(try_begin),
+					#In the last month (i.e. about a war)
+					(lt, ":hours_since_capture", 31 * 24),
+					(assign, ":was_taken_recently", 1),
+				(else_try),
+					#For non-core castles, extend the definition of recent to the last three months
+					(neg|party_slot_eq, "$demanded_castle", slot_center_original_faction, ":npc_faction"),
+					(lt, ":hours_since_capture", 91 * 24),
+					(assign, ":was_taken_recently", 1),
+				(else_try),
+					(assign, ":was_taken_recently", 0),
+				(try_end),
+			(else_try),
+				#This is an old saved game, so use some rules of thumb.
+				#If the player faction is the original or previous owner, it might have been taken recently.
+				(this_or_next|party_slot_eq, "$demanded_castle", slot_center_original_faction, "$players_kingdom"),
+				(this_or_next|party_slot_eq, "$demanded_castle", slot_center_ex_faction, "$players_kingdom"),
+					(party_slot_eq, "$demanded_castle", slot_center_ex_faction, "fac_player_supporters_faction"),
+				(assign, ":was_taken_recently", 1),
+			(else_try),
+				#If the original owner is at war with the current owner, it might have been taken recently.
+				(neg|party_slot_eq, "$demanded_castle", slot_center_original_faction, ":npc_faction"),
+				(party_get_slot, ":third_faction", "$demanded_castle", slot_center_original_faction),
+				(is_between, ":third_faction", kingdoms_begin, kingdoms_end),
+				(faction_slot_eq, ":third_faction", slot_faction_state, sfs_active),
+				(store_relation, reg0, ":npc_faction", ":third_faction"),
+				(lt, reg0, 0),
+				(assign, ":was_taken_recently", 1),
+			(else_try),
+				#If the ex-owner is at war with the current owner, it might have been taken recently.
+				(neg|party_slot_eq, "$demanded_castle", slot_center_ex_faction, ":npc_faction"),
+				(party_get_slot, ":third_faction", "$demanded_castle", slot_center_ex_faction),
+				(is_between, ":third_faction", kingdoms_begin, kingdoms_end),
+				(faction_slot_eq, ":third_faction", slot_faction_state, sfs_active),
+				(store_relation, reg0, ":npc_faction", ":third_faction"),
+				(lt, reg0, 0),
+				(assign, ":was_taken_recently", 1),
+			(else_try),
+				#If there is no assigned lord, it was taken recently.
+				(neg|party_slot_ge, "$demanded_castle", slot_town_lord, 0),
+				(assign, ":was_taken_recently", 1),
+			(try_end),##End "Was taken recently?"
+			## (2) Determine whether handing over the demanded castle would cost any lord his last fief.
+			## (2a: At the same time, calculate the closest friendly & enemy walled centers)
+			(party_slot_ge, "$demanded_castle", slot_town_lord, 1),
+			(party_get_slot, ":lord_a", "$demanded_castle", slot_town_lord),
+			(assign, ":lord_b", -1),
+			(assign, ":would_make_lord_fiefless", 1),
+			(assign, ":distance_to_friendly_fortress", 10000),
+			(assign, ":distance_to_enemy_fortress", 10000),
+			(try_for_range, ":center_no", centers_begin, centers_end),
+				(neq, ":center_no", "$demanded_castle"),
+				#Check for fieflessness
+				(try_begin),
+					(party_slot_eq, ":center_no", slot_village_bound_center, "$demanded_castle"),
+					(neg|party_slot_eq, ":center_no", slot_town_lord, ":lord_a"),
+					(party_slot_ge, ":center_no", slot_town_lord, 1),
+					(party_get_slot, ":lord_b", ":center_no", slot_town_lord),
+				(else_try),
+					(party_slot_eq, ":center_no", slot_town_lord, ":lord_a"),
+					(neg|party_slot_eq, ":center_no", slot_village_bound_center, "$demanded_castle"),
+					(assign, ":would_make_lord_fiefless", 0),
+				(try_end),
+				#For walled centers check distance
+				(this_or_next|party_slot_eq, ":center_no", slot_party_type, spt_town),
+					(this_or_next|party_slot_eq, ":center_no", slot_party_type, spt_castle),
+
+				(store_faction_of_party, ":center_faction", ":center_no"),
+				(store_distance_to_party_from_party, ":cur_distance", ":center_no", "$demanded_castle"),
+
+				(call_script, "script_dplmc_get_faction_truce_length_with_faction", ":center_faction", ":npc_faction"),
+				(try_begin),
+					(this_or_next|gt, reg0, dplmc_treaty_defense_days_expire),
+					(eq, ":center_faction", ":npc_faction"),
+					(val_min, ":distance_to_friendly_fortress", ":cur_distance"),
+				(else_try),
+					(store_relation, reg0, ":center_faction", ":npc_faction"),
+					(val_min, ":distance_to_enemy_fortress", ":cur_distance"),
+				(try_end),
+			(try_end),
+			#(2a, set distance factor based on closest other fortress)
+			(assign, ":distance_factor", 100),
+			(try_begin),
+				(this_or_next|ge, ":distance_to_friendly_fortress", 10000),
+					(ge, ":distance_to_enemy_fortress", 10000),
+				#No fortress found for one or both
+			(else_try),
+				#Friendly is closer
+				(lt, ":distance_to_friendly_fortress", ":distance_to_enemy_fortress"),
+				(gt, ":distance_to_enemy_fortress", 25),#Within 25 ignore differences
+				(val_max, ":distance_to_friendly_fortress", 1),
+				(store_mul, ":distance_factor", ":distance_to_enemy_fortress", 100),
+				(val_div, ":distance_factor", ":distance_to_friendly_fortress"),
+				(try_begin),
+					(le, ":distance_to_enemy_fortress", 50),
+					(val_min, ":distance_factor", 200),
+				(try_end),
+			(else_try),
+				#Enemy is closer
+				(lt, ":distance_to_enemy_fortress", ":distance_to_friendly_fortress"),
+				(gt, ":distance_to_friendly_fortress", 25),#Within 25 ignore differences
+				(val_max, ":distance_to_enemy_fortress", 1),
+				(store_mul, ":distance_factor", ":distance_to_friendly_fortress", 100),
+				(val_div, ":distance_factor", ":distance_to_enemy_fortress"),
+				(try_begin),
+					(le, ":distance_to_friendly_fortress", 50),
+					(val_min, ":distance_factor", 200),
+				(try_end),
+				(val_mul, ":distance_factor", -1),
+			(try_end),##end 2a: distance factor
+
+			(neq, ":would_make_lord_fiefless", 1),#If we already know it would make the castle owner fiefless, stop.
+			(ge, ":lord_b", 1),
+			(assign, ":would_make_lord_fiefless", 1),
+			(try_for_range, ":center_no", centers_begin, centers_end),
+				(party_slot_eq, ":center_no", slot_town_lord, ":lord_b"),
+				(this_or_next|neg|is_between, ":center_no", villages_begin, villages_end),
+					(neg|party_slot_eq, ":center_no", slot_village_bound_center, "$demanded_castle"),
+					(assign, ":would_make_lord_fiefless", 0),
+			(try_end),
+		  (try_end),##end 2: would make lord fiefless?
+		  (assign, ":castle_strength_ratio", 100),
+		  (assign, ":high_ratio", 150),
+		  (try_begin),
+			(is_between, "$demanded_castle", castles_begin, castles_end),
+			#(3) Determine typical castle strength
+			(assign, ":typical_strength", 0),
+			(assign, ":high_ratio", 0),#<- for now, store max strength seen
+			(try_for_range, ":center_no", castles_begin, castles_end),
+				(try_begin),
+					(eq, "$g_dplmc_terrain_advantage", DPLMC_TERRAIN_ADVANTAGE_ENABLE),
+					(call_script, "script_dplmc_party_calculate_strength_in_terrain", ":center_no", dplmc_terrain_code_siege, 0, 1),
+					#Outputs to reg0 (using terrain) and reg1 (not using terrain).  We'll be using reg1,
+					#but the function will be updating the cached strength using the terrain version (as I want).
+					(assign, reg0, reg1),
+				(else_try),
+					#Use the non-terrain-modified strength script.
+					(call_script, "script_party_calculate_strength", ":center_no", dplmc_terrain_code_siege, 0),
+				(try_end),
+
+				(val_max, reg0, 250),#A certain minimum scale is assumed
+				(val_add, ":typical_strength", reg0),
+				(val_max, ":high_ratio", reg0),#keep track of max
+				(eq, ":center_no", "$demanded_castle"),
+				(assign, ":castle_strength_ratio", reg0),
+			(try_end),
+			(try_begin),
+				(gt, castles_end, castles_begin),
+				(store_sub, reg0, castles_end, castles_begin),
+				(val_div, ":typical_strength", reg0),
+			(try_end),
+			(val_max, ":typical_strength", 300),#<- A certain minimum scale is assumed
+			(val_mul, ":castle_strength_ratio", 100),
+			(val_mul, ":high_ratio", 100),
+
+			(store_div, reg0, ":typical_strength", 2),
+
+			(val_add, ":castle_strength_ratio", reg0),
+			(val_add, ":high_ratio", reg0),
+
+			(val_div, ":castle_strength_ratio", ":typical_strength"),
+			(val_div, ":high_ratio", ":typical_strength"),
+
+			(assign, reg0, ":castle_strength_ratio"),
+			(val_max, reg0, 100),
+			(val_mul, reg0, 12),#Scale so that 100 is 12, 200 is 24, etc.
+			(val_add, reg0, 50),
+			(val_div, reg0, 100),
+			(val_add, ":demand", reg0),
+
+			(val_sub, ":high_ratio", 100),
+			(val_div, ":high_ratio", 2),
+			(val_add, ":high_ratio", 100),
+			(val_clamp, ":high_ratio", 110, 400),
+		  (try_end),##end (3) determine typical castle strength
+
+		  ##Next line: replace fac_player_supporters_faction with :player_faction
+          (call_script, "script_npc_decision_checklist_peace_or_war", "$g_notification_menu_var1", ":player_faction", -1),
+
+		  ##Save the unmodified numbers for later
+		  (assign, ":check_peace_war_result", reg0),
+		  #(assign, ":original_demand", ":demand"),
+		  ##diplomacy end+
+          (assign, ":goodwill", reg0),
+          (val_mul, ":goodwill", 2),
+          (store_random_in_range, ":random", 0, ":demand"),
+
+          (val_div, ":demand", -2),
+
+          (call_script, "script_change_player_relation_with_faction", "$g_notification_menu_var1", ":demand"),
+		  ##diplomacy start+
+		  #Count "third party" kingdoms: kingdoms that aren't either the player's kingdom
+		  #or the other kingdom in the negotiations, and that aren't allied to either.
+		  #(faction_get_slot, ":npc_faction_leader", ":npc_faction", slot_faction_leader),
+		  (assign, ":other_players", 0),
+		  (try_for_range, ":third_faction", kingdoms_begin, kingdoms_end),
+			 #Active faction
+		     (faction_slot_eq, ":third_faction", slot_faction_state, sfs_active),
+			 (neq, ":third_faction", ":npc_faction"),
+			 (neq, ":third_faction", "fac_player_supporters_faction"),
+			 (neq, ":third_faction", "$players_kingdom"),
+			 #Not allied (full alliance or defensive alliance) to either faction
+			 (call_script, "script_dplmc_get_faction_truce_length_with_faction", ":third_faction", ":npc_faction"),
+			 (le, reg0, dplmc_treaty_defense_days_expire),
+			 (call_script, "script_dplmc_get_faction_truce_length_with_faction", ":third_faction", "$players_kingdom"),
+			 (le, reg0, dplmc_treaty_defense_days_expire),
+			 (val_add, ":other_players", 1),
+		  (try_end),
+		  #Improve the AI's decision-making somewhat.
+		  (game_get_reduce_campaign_ai, ":reduce_campaign_ai"),
+		  (val_clamp, ":reduce_campaign_ai", 0, 3),#0 is hard, 1 is medium, 2 is easy
+		  (try_begin),
+            #This should never be reached.
+				(lt, ":check_peace_war_result", 0),
+            (this_or_next|is_between, "$demanded_castle", castles_begin, castles_end),
+               (gt, "$demanded_money", 0),
+			(jump_to_menu,"mnu_dplmc_deny_terms"),
+        (else_try),
+            (is_between, "$demanded_castle", castles_begin, castles_end),
+				(lt, ":check_peace_war_result", 2),
+            #Don't enable "fishing" for fiefs, hoping to get a lucky
+            #result.  Make the chance of giving a fief zero.
+            (this_or_next|party_slot_eq,"$demanded_castle",slot_center_original_faction,":npc_faction"),
+            (this_or_next|eq, ":would_make_lord_fiefless", 1),
+            (this_or_next|ge, ":castle_strength_ratio", ":high_ratio"),
+				(this_or_next|eq, ":was_taken_recently", 0),
+               (eq, ":other_players", 0),
+			(jump_to_menu,"mnu_dplmc_deny_terms"),
+        (else_try),
+            (is_between, "$demanded_castle", castles_begin, castles_end),
+            #Some things will just never be agreed to.
+				#If three or more of the following are true, reject:
+				#- The demanded castle was not taken recently
+				#- The demanded castle is one of the faction's original castles
+				#- Giving the castle would make some lords fiefless
+				#- The castle has an especially large garrison
+				#- Aside from the player's faction and the NPC faction (and their allies),
+				#  there are no other kingdoms.
+				#- The demanded castle is significantly deeper within the NPC kingdom's territory
+				#  than it is close to enemy territory
+            (assign, reg0, 1),
+			(val_sub, reg0, ":was_taken_recently"),
+			(val_max, reg0, 0),
+            (try_begin),#Check: is the castle part of the faction's original territory?
+               (party_slot_eq,"$demanded_castle",slot_center_original_faction,":npc_faction"),
+			   (val_add, reg0, 1),
+            (try_end),
+			(val_max, ":would_make_lord_fiefless", 0),
+			(val_add, reg0, ":would_make_lord_fiefless"),
+			(try_begin),#Check: castle has high strength compared to average?
+				 (ge, ":castle_strength_ratio", ":high_ratio"),
+				 (val_add, reg0, 1),
+			(try_end),
+			(try_begin),#Check: no one else remaining?
+				 (eq, ":other_players", 0),
+				 (val_add, reg0, 1),
+			(try_end),
+			(try_begin),#Check: is it much closer to friendly centers than enemy centers?
+				(ge, ":distance_factor", 190),
+				(val_add, reg0, 1),
+			(try_end),
+			(val_add, ":random", reg0),#Even if less than 3 are met, other factors will still decrease likelihood of acceptance.
+
+			(ge, reg0, 3),
+			(jump_to_menu,"mnu_dplmc_deny_terms"),
+        (else_try),
+			#SPECIAL CASE: Two Kingdoms Remain
+			(eq, ":other_players", 0),
+			(this_or_next|is_between, "$demanded_castle", castles_begin, castles_end),
+				(gt, "$demanded_money", 0),
+			(is_between, ":npc_faction", kingdoms_begin, kingdoms_end),
+			(assign, ":minimum_peace_war_result", 2),
+			(try_begin),
+				#Hard: never accept.
+				(eq, ":reduce_campaign_ai", 0),
+				(store_add, ":minimum_peace_war_result", ":check_peace_war_result", 1),
+				(val_max, ":minimum_peace_war_result", 4),
+			(else_try),
+				#Medium: never give up fiefs, sometimes accept other deals.
+				(eq, ":reduce_campaign_ai", 1),
+				(is_between, "$demanded_castle", castles_begin, castles_end),
+				(store_add, ":minimum_peace_war_result", ":check_peace_war_result", 1),
+				(val_max, ":minimum_peace_war_result", 4),
+			(else_try),
+				#Easy: sometimes accept.
+				(eq, ":reduce_campaign_ai", 2),
+			(try_end),
+			(lt, ":check_peace_war_result", ":minimum_peace_war_result"),
+			(jump_to_menu,"mnu_dplmc_deny_terms"),
+		  (else_try),
+		  #fall through to other behavior
+		  ##diplomacy end+
+            (le, ":random", ":goodwill"),
+            (try_begin),
+              (is_between, "$demanded_castle", castles_begin, castles_end),
+				  ##diplomacy start+
+				  #Relation hit with the owner of the surrendered castle and its village,
+				  #if there was a valid owner.
+				  (try_begin),
+					(party_slot_ge, "$demanded_castle", slot_town_lord, 1),
+					(party_get_slot, reg0, ":center_no", slot_town_lord),
+					(call_script, "script_change_player_relation_with_troop", reg0, -1),
+				  (try_end),
+				  (try_for_range, ":center_no", villages_begin, villages_end),
+					(party_slot_eq, ":center_no", slot_village_bound_center, "$demanded_castle"),
+					(party_slot_ge, ":center_no", slot_town_lord, 1),
+					(party_get_slot, reg0, ":center_no", slot_town_lord),
+					(call_script, "script_change_player_relation_with_troop", reg0, -1),
+				  (try_end),
+			  ##Change next to use :player_faction instead of fac_player_supporters_faction
+              (call_script, "script_give_center_to_faction", "$demanded_castle", ":player_faction"),
+			  ##diplomacy end+
+            (try_end),
+            (try_begin),
+              (gt, "$demanded_money", 0),
+              (call_script, "script_dplmc_pay_into_treasury", "$demanded_money"),
+			  ##diplomacy start+ other faction loses money
+			  #Since setting terms for surrender is a non-native feature, there is no need to make this optional.
+			  (faction_get_slot, ":faction_leader", "$g_notification_menu_var1", slot_faction_leader),
+			  (try_begin),
+				(ge, ":faction_leader", 1),
+				(neq, "$g_notification_menu_var1", "$players_kingdom"),
+				(neq, "$g_notification_menu_var1", "fac_player_supporters_faction"),
+				(ge, "$demanded_money", 1),
+				(assign, ":cost_to_leader", "$demanded_money"),
+				#(try_begin),
+				#	 (faction_get_slot, ":marshall", "$g_notification_menu_var1", slot_faction_marshall),
+				#	 (neq, ":marshall", "trp_player"),
+				#	 (neq, ":marshall", ":faction_leader"),
+				#	 (ge, ":marshall", 0),
+				#	 (store_troop_gold, reg0, ":marshall"),
+				#	 (store_troop_gold, reg1, ":faction_leader"),
+				#	 (val_add, reg1, reg0),
+				#	 (gt, reg1, 0),
+				#	 (store_mul, ":cost_to_marshall", "$demanded_money", reg0),
+				#	 (val_div, ":cost_to_marshall", reg1),
+				#	 (store_div, reg0, "$demanded_money", 2),
+				#	 (val_min, ":cost_to_marshall", reg0),#no more than 1/2
+				#	 (store_mul, reg0, "$demanded_money", 3),
+				#	 (val_div, reg0, 13),#no less than 3/13 (6/26 marshall, 20/26 leader)
+				#	 (val_max, ":cost_to_marshall", reg0),
+				#	 (gt, ":cost_to_marshall", 0),
+				#	 (call_script, "script_dplmc_remove_gold_from_lord_and_holdings", ":cost_to_marshall", ":marshall"),
+				#	 (val_sub, ":cost_to_leader", ":cost_to_marshall"),
+				#	 (store_random_in_range, reg0, 0, 1000),
+				#	 (val_add, reg0, ":cost_to_marshall"),
+				#	 (val_div, reg0, 1000),
+				#	 (ge, reg0, 1),
+				#	 (val_mul, reg0, -1),
+				#	 (call_script, "script_change_player_relation_with_troop", ":marshall", reg0),
+				#(try_end),
+				(ge, ":cost_to_leader", 1),
+				(call_script, "script_dplmc_remove_gold_from_lord_and_holdings", ":cost_to_leader", ":faction_leader"),
+				(store_random_in_range, reg0, 0, 1000),
+				(val_add, reg0, ":cost_to_leader"),
+				(val_div, reg0, 1000),
+				(ge, reg0, 1),
+				(val_mul, reg0, -1),
+				(call_script, "script_change_player_relation_with_troop", ":faction_leader", reg0),
+			  (try_end),
+			  ##diplomacy end+
+            (try_end),
+			##diplomacy start+
+            (call_script, "script_diplomacy_start_peace_between_kingdoms", "$g_notification_menu_var1", ":player_faction", 1),
+			##diplomacy end+
+            (presentation_set_duration, 0),
+            (change_screen_return),
+          (else_try),
+            (jump_to_menu,"mnu_dplmc_deny_terms"),
+          (try_end),
+
+        (try_end),
+    ]),
+  ]),
+
+  # Jrider +
+  # REPORTS PRESENTATIONS 1.2 :
+  # Factions relations presentation report
+  ("jrider_faction_relations_report", 0,
+   mesh_message_window,
+   [
+     (ti_on_presentation_load,
+      [
+    (presentation_set_duration, 999999),
+        (set_fixed_point_multiplier, 1000),
+
+        # Embed picture upper right
+        (create_mesh_overlay, reg1, "mesh_pic_castledes"),
+        (position_set_x, pos1, 180),
+        (position_set_y, pos1, 180),
+        (overlay_set_size, reg1, pos1),
+        (position_set_x, pos1, 795),
+        (position_set_y, pos1, 600),
+        (overlay_set_position, reg1, pos1),
+
+        # Embed picture upper left
+        (create_mesh_overlay, reg1, "mesh_pic_looted_village"),
+        (position_set_x, pos1, 170),
+        (position_set_y, pos1, 170),
+        (overlay_set_size, reg1, pos1),
+        (position_set_x, pos1, -15),
+        (position_set_y, pos1, 600),
+        (overlay_set_position, reg1, pos1),
+
+    # Presentation title, centered at the top
+        (create_text_overlay, reg1, "@_Faction Relations Report_", tf_center_justify),
+    (position_set_x, pos1, 500), # Higher, means more toward the right
+        (position_set_y, pos1, 670), # Higher, means more toward the top
+        (overlay_set_position, reg1, pos1),
+    (position_set_x, pos1, 1500),
+        (position_set_y, pos1, 1500),
+    (overlay_set_size, reg1, pos1),
+
+    # Back to menu - graphical button
+    (create_game_button_overlay, reg1, "@_Return to menu_"),
+    (position_set_x, pos1, 500),
+        (position_set_y, pos1, 23),
+        (overlay_set_position, reg1, pos1),
+        (assign, "$g_jrider_faction_report_Return_to_menu", reg1),
+
+    # Set Headlines
+#set column title
+          (assign, ":x_poshl", 250),
+          (assign, ":y_pos", 620),
+          (position_set_y, pos1, ":y_pos"),
+    (try_for_range, ":faction", kingdoms_begin, kingdoms_end),
+            (faction_slot_eq, ":faction", slot_faction_state, sfs_active), # continue if active
+            (try_begin),
+              (is_between, ":faction", npc_kingdoms_begin, npc_kingdoms_end),
+              (store_sub, ":offset", ":faction", "fac_kingdom_1"),
+              (val_add, ":offset", "str_swadians"),
+              (str_store_string, s1, ":offset"),
+            (else_try),
+              (str_store_string, s1, "@Your kingdom"),
+            (try_end),
+
+            (str_store_string, s11, ":offset"),
+            (create_text_overlay, reg10, s1, tf_left_align|tf_with_outline),
+            (faction_get_color, ":faction_color", ":faction"),
+            (overlay_set_color, reg10, ":faction_color"),
+
+            (position_set_x, pos3, 650),
+            (position_set_y, pos3, 800),
+            (overlay_set_size, reg10, pos3),
+
+            (position_set_x, pos1, ":x_poshl"),
+            (overlay_set_position, reg10, pos1),
+            (val_add, ":x_poshl", 90),
+    (try_end),
+
+
+    (assign, ":x_poshl", 215),
+     (assign, ":y_pos", 597),
+     (assign, ":headline_size", 0),
+    (position_set_x, ":headline_size", 720),
+        (position_set_y, ":headline_size", 775),
+
+        (assign, ":hl_columnsep_size", 50),
+        (position_set_x, ":hl_columnsep_size", 60),
+        (position_set_y, ":hl_columnsep_size", 28000),
+
+        (create_text_overlay, reg2, "@Player^Relation", tf_center_justify),
+        (overlay_set_size, reg2, ":headline_size"),
+        (position_set_x, pos1, ":x_poshl"),
+        (position_set_y, pos1, ":y_pos"),
+        (overlay_set_position, reg2, pos1),
+
+        (val_add, ":x_poshl", 45),
+        (try_for_range, ":count", 0, 7),
+          # create a separator column
+          (create_mesh_overlay, reg1, "mesh_white_plane"),
+          (overlay_set_color, reg1, 0x000000),
+          (overlay_set_size, reg1, ":hl_columnsep_size"),
+          (store_sub, ":line_x", ":x_poshl", 15), # set it 21 pix left of current column start
+          (store_sub, ":y_pos2", ":y_pos", 500), # set it 21 pix left of current column start
+          (position_set_x, pos2, ":line_x"),
+          (position_set_y, pos2, ":y_pos2"),
+          (overlay_set_position, reg1, pos2),
+          (val_add, ":x_poshl", 90),
+
+          (try_begin),
+            (eq, "$cheat_mode", 1),
+            (assign, reg20, ":count"),
+            (display_message, "@{!}DEBUG - Drawing line {reg20}"),
+          (try_end),
+        (try_end),
+
+        # clear the string globals that we'll use
+         (str_clear, s9),
+    (str_clear, s8),
+    (str_clear, s3),
+    (str_clear, s60),
+    (str_clear, s61),
+    (str_clear, s0),
+
+        # Scrollable area (all the next overlay will be contained in this, s0 sets the scrollbar)
+        (create_text_overlay, reg1, s0, tf_scrollable_style_2),
+        (position_set_x, pos1, 50),
+        (position_set_y, pos1, 70),
+        (overlay_set_position, reg1, pos1),
+        (position_set_x, pos1, 860),
+        (position_set_y, pos1, 527),
+        (overlay_set_area_size, reg1, pos1),
+        (set_container_overlay, reg1),
+
+        # set base position and size for lines
+        (assign, ":line_size", 0),
+        (assign, ":y_pos", 0),
+
+        # set base color for line
+    (assign, ":line_color", 0x000000),
+
+        # Line faction loop begins here - fetching corresponding informations and printing the line title
+        (try_for_range_backwards, ":faction_line", kingdoms_begin, kingdoms_end),
+            (faction_slot_eq, ":faction_line", slot_faction_state, sfs_active), # continue if active
+
+            # Base position for subheaders
+            (assign, ":x_posfhl", 220),
+
+            # Loop other factions (columns)
+            (try_for_range, ":faction_column", kingdoms_begin, kingdoms_end),
+                (faction_slot_eq, ":faction_column", slot_faction_state, sfs_active), # continue if active
+
+                (try_begin), # not same faction
+                  (neq, ":faction_column", ":faction_line"),
+
+                  (str_store_faction_name, s8, ":faction_column"),
+
+                  # sub-faction excluding current faction line
+                  (try_begin),
+                      # different from faction line, display status and relation with faction line
+                      (neq, ":faction_column", ":faction_line"),
+                      (call_script, "script_diplomacy_faction_get_diplomatic_status_with_faction", ":faction_line", ":faction_column"),
+                      (assign, ":global_diplomatic_status", reg0),
+                      (assign, ":extended_diplomatic_status", reg1),
+
+                      (try_begin), # War
+                          (eq, ":global_diplomatic_status", -2),
+                          (str_store_string, s60, "@War"),
+                          (assign, reg60, 0xDD0000),
+                          (assign, reg59, 0),
+                      (else_try), # Border incident
+                          (eq, ":global_diplomatic_status", -1),
+                          (str_store_string, s60, "@Casus Belli"),
+                          (assign, reg60, 0xDD8000),
+                          (assign, reg59, ":extended_diplomatic_status"),
+                      (else_try), # Peace
+                          (eq, ":global_diplomatic_status", 0),
+                          (str_store_string, s60, "@Peace"),
+                          (assign, reg60, 0xFFFFFF),
+                          (assign, reg59, 0),
+                      (else_try), # Truce (non aggression)
+                          (eq, ":global_diplomatic_status", 1),
+                          (str_store_string, s60, "@Truce"),
+                          (assign, reg60, 0xDDDDDD),
+                          (assign, reg59, ":extended_diplomatic_status"),
+
+                          # for Diplomacy, comment if not using
+                          (try_begin),
+                              (ge, ":extended_diplomatic_status", 61),
+                              (str_store_string, s60, "@Alliance"),
+                              (assign, reg60, 0x00FF00),
+                              (store_sub, reg59, ":extended_diplomatic_status", 60),
+                          (else_try),
+                              (ge, ":extended_diplomatic_status", 41),
+                              (str_store_string, s60, "@Defense"),
+                              (assign, reg60, 0x00FFAA),
+                              (store_sub, reg59, ":extended_diplomatic_status", 40),
+                          (else_try),
+                              (ge, ":extended_diplomatic_status", 21),
+                              (str_store_string, s60, "@Trade"),
+                              (assign, reg60, 0x00FFCC),
+                              (store_sub, reg59, ":extended_diplomatic_status", 20),
+                          (try_end),
+                      (try_end),
+
+                      (val_add, ":x_poshl", 50),
+
+                      # diplomatic status and duration block (set at current line)
+                      (create_text_overlay, reg10, s60, tf_left_align|tf_with_outline),
+                      (overlay_set_size, reg10, ":line_size"),
+                      (overlay_set_color, reg10, reg60),
+                      (store_sub, ":line_x", ":x_posfhl", 20),
+                      (store_add, ":line_y", ":y_pos", 54),
+                      (position_set_x, pos3, ":line_x"),
+                      (position_set_y, pos3, ":line_y"),
+                      (overlay_set_position, reg10, pos3),
+
+                      (create_text_overlay, reg10, "@{reg59?{reg59} days:}", tf_center_justify),
+                      (overlay_set_size, reg10, ":line_size"),
+                      (store_add, ":line_y", ":y_pos", 36),
+                      (store_add, ":line_x", ":x_posfhl", 10),
+                      (position_set_x, pos3, ":line_x"),
+                      (position_set_y, pos3, ":line_y"),
+                      (overlay_set_position, reg10, pos3),
+
+
+                      # add diplomatic status
+                      (store_relation, ":kingdom_relation", ":faction_line", ":faction_column"),
+
+                      # kingdom relation (same line as faction name)
+                      (assign, reg61, ":kingdom_relation"),
+                      (create_text_overlay, reg10, "@{reg61}", tf_center_justify),
+                      (overlay_set_size, reg10, ":line_size"),
+
+                      (store_add, ":line_y", ":y_pos", 18),
+                      (store_add, ":line_x", ":x_posfhl", 10),
+                      (position_set_x, pos3, ":line_x"),
+                      (position_set_y, pos3, ":line_y"),
+                      (overlay_set_position, reg10, pos3),
+                  (try_end), # end select alternate display
+                (try_end),
+
+                # increase column x position
+                (val_add, ":x_posfhl", 90), # valid values 220, 385, 550, 715
+            (try_end), # end of column faction loop
+
+            # Faction line information, this is a 4 line block
+            # reset x postion for next beginning column and decrease y position according to line count
+            (assign, ":x_poshl", 165),
+
+            (val_add, ":y_pos", 54), # linebreak
+
+            # create a separator for faction line
+            (create_mesh_overlay, reg1, "mesh_white_plane"),
+            (overlay_set_color, reg1, 0x000000),
+            (position_set_x, pos1, 42000),
+            (position_set_y, pos1, 60),
+            (overlay_set_size, reg1, pos1),
+            (position_set_x, pos1, 17),
+            (store_add, ":line_y", ":y_pos", 20), # set it 20 pix above current line
+            (position_set_y, pos1, ":line_y"),
+            (overlay_set_position, reg1, pos1),
+
+            # Set line title
+            (str_store_faction_name, s9, ":faction_line"),
+            (str_store_string, s1, "@{s9}"),
+            (create_text_overlay, reg10, s1, tf_left_align|tf_with_outline),
+            (faction_get_color, ":faction_color", ":faction_line"),
+            (overlay_set_color, reg10, ":faction_color"),
+
+            (position_set_x, pos3, 750),
+            (position_set_y, pos3, 850),
+            (overlay_set_size, reg10, pos3),
+
+            (position_set_x, pos3, 10),
+            (position_set_y, pos3, ":y_pos"),
+            (overlay_set_position, reg10, pos3),
+
+            # set position for columns
+            (assign, ":x_poshl", 165),
+            (assign, ":line_size", 0),
+            (position_set_x, ":line_size", 700),
+            (position_set_y, ":line_size", 800),
+
+            ## Player relation (first column)
+            (store_relation, reg1, "fac_player_supporters_faction", ":faction_line"),
+
+            # no clean strings existing, doing it the same way it's done in game_menu
+            (try_begin),
+                (ge, reg1, 90),
+                (str_store_string, s3, "@Loyal"),
+            (else_try),
+                (ge, reg1, 80),
+                (str_store_string, s3, "@Devoted"),
+            (else_try),
+                (ge, reg1, 70),
+                (str_store_string, s3, "@Fond"),
+            (else_try),
+                (ge, reg1, 60),
+                (str_store_string, s3, "@Gracious"),
+            (else_try),
+                (ge, reg1, 50),
+                (str_store_string, s3, "@Friendly"),
+            (else_try),
+                (ge, reg1, 40),
+                (str_store_string, s3, "@Supportive"),
+            (else_try),
+                (ge, reg1, 30),
+                (str_store_string, s3, "@Favorable"),
+            (else_try),
+                (ge, reg1, 20),
+                (str_store_string, s3, "@Cooperative"),
+            (else_try),
+                (ge, reg1, 10),
+                (str_store_string, s3, "@Accepting"),
+            (else_try),
+                (ge, reg1, 0),
+                (str_store_string, s3, "@Indifferent"),
+            (else_try),
+                (ge, reg1, -10),
+                (str_store_string, s3, "@Suspicious"),
+            (else_try),
+                (ge, reg1, -20),
+                (str_store_string, s3, "@Grumbling"),
+            (else_try),
+                (ge, reg1, -30),
+                (str_store_string, s3, "@Hostile"),
+            (else_try),
+                (ge, reg1, -40),
+                (str_store_string, s3, "@Resentful"),
+            (else_try),
+                (ge, reg1, -50),
+                (str_store_string, s3, "@Angry"),
+            (else_try),
+                (ge, reg1, -60),
+                (str_store_string, s3, "@Hateful"),
+            (else_try),
+                (ge, reg1, -70),
+                (str_store_string, s3, "@Revengeful"),
+            (else_try),
+                (str_store_string, s3, "@Vengeful"),
+            (try_end),
+
+            # Set relation to player numerical value (same line)
+            (create_text_overlay, reg10, "@{reg1}", tf_right_align),
+            (overlay_set_size, reg10, ":line_size"),
+            (store_add, ":line_x", ":x_poshl", 20),
+            (position_set_x, pos1, ":line_x"),
+            (position_set_y, pos1, ":y_pos"),
+            (overlay_set_position, reg10, pos1),
+            (overlay_set_color, reg10, ":line_color"),
+
+            # Set relation to player string value (second line)
+            (create_text_overlay, reg10, "@{s3}", tf_right_align),
+            (overlay_set_size, reg10, ":line_size"),
+            (position_set_x, pos1, ":line_x"),
+            (store_sub, ":line_y", ":y_pos", 20),
+            (position_set_y, pos1, ":line_y"),
+            (overlay_set_position, reg10, pos1),
+            (overlay_set_color, reg10, ":line_color"),
+
+            # Set Faction Coat of Arm for standard faction (left of relation string)
+            (try_begin),
+                (neq, ":faction_line", "fac_player_supporters_faction"),
+                (store_sub, ":mesh_index", ":faction_line", kingdoms_begin),
+                (val_add, ":mesh_index", "mesh_pic_recruits"),
+                (create_mesh_overlay, reg10, ":mesh_index"),
+                (position_set_x, pos1, 75),
+                (position_set_y, pos1, 75),
+                (overlay_set_size, reg10, pos1),
+                (position_set_x, pos1, 165),
+                (store_sub, ":line_y", ":y_pos", 37),
+                (position_set_y, pos1, ":line_y"),
+                (overlay_set_position, reg10, pos1),
+            (try_end),
+
+            # for current line_faction count lords and centers
+            (assign, ":num_lords", 0),
+            (assign, ":num_caravans", 0),
+            (assign, ":num_centers", 0),
+            (assign, ":unassigned_centers", 0),
+            (try_for_parties, ":cur_party"),
+                (store_faction_of_party, ":cur_faction", ":cur_party"),
+                (eq, ":cur_faction", ":faction_line"),
+
+                (try_begin),
+                    (party_slot_eq, ":cur_party", slot_party_type, spt_kingdom_hero_party),
+                    (val_add, ":num_lords", 1),
+                (else_try),
+                    (party_slot_eq, ":cur_party", slot_party_type, spt_kingdom_caravan),
+                    (val_add, ":num_caravans", 1),
+                (else_try),
+                    (this_or_next|party_slot_eq, ":cur_party", slot_party_type, spt_town),
+                    (this_or_next|party_slot_eq, ":cur_party", slot_party_type, spt_castle),
+                    (party_slot_eq, ":cur_party", slot_party_type, spt_village),
+                    (val_add, ":num_centers", 1),
+
+                    (try_begin),
+                        (party_slot_eq, ":cur_party", slot_town_lord, stl_unassigned),
+                        (val_add, ":unassigned_centers", 1),
+                    (try_end),
+                (try_end),
+            (try_end), # end of parties loop
+
+            # Count prisoners
+            (assign, ":prisoners", 0),
+            (try_for_range, ":lord_id", active_npcs_begin, active_npcs_end),
+                (troop_slot_eq, ":lord_id", slot_troop_occupation, slto_kingdom_hero),
+                (troop_slot_ge, ":lord_id", slot_troop_prisoner_of_party, 0),
+                (store_troop_faction, ":lord_faction", ":lord_id"),
+                (eq, ":lord_faction", ":faction_line"),
+                (val_add, ":prisoners", 1),
+            (try_end),
+
+            # add count to last line for faction line report (second, third and fourth line)
+            (assign, reg61, ":num_centers"),
+            (assign, reg58, ":unassigned_centers"),
+            (create_text_overlay, reg10, "@{reg61} {reg58?({reg58} U) :}Centers", tf_left_align),
+            (overlay_set_size, reg10, ":line_size"),
+            (position_set_x, pos1, 15),
+            (store_sub, ":line_y", ":y_pos", 17),
+            (position_set_y, pos1, ":line_y"),
+            (overlay_set_position, reg10, pos1),
+            (overlay_set_color, reg10, 0x000000),
+
+            (assign, reg62, ":num_caravans"),
+            (create_text_overlay, reg10, "@{reg62} Caravans", tf_left_align),
+            (overlay_set_size, reg10, ":line_size"),
+            (position_set_x, pos1, 15),
+            (val_sub, ":line_y", 17),
+            (position_set_y, pos1, ":line_y"),
+            (overlay_set_position, reg10, pos1),
+            (overlay_set_color, reg10, 0x000000),
+
+            (assign, reg60, ":num_lords"),
+            (assign, reg59, ":prisoners"),
+            (create_text_overlay, reg10, "@{reg60} {reg59?({reg59} P) :}Lords", tf_left_align),
+            (overlay_set_size, reg10, ":line_size"),
+            (position_set_x, pos1, 15),
+            (val_sub, ":line_y", 17),
+            (position_set_y, pos1, ":line_y"),
+            (overlay_set_position, reg10, pos1),
+            (overlay_set_color, reg10, 0x000000),
+
+            # increase line for next faction block
+            (val_add, ":y_pos", 18),#linebreak
+
+        (try_end), # end of faction loop
+        (set_container_overlay, -1),
+   ]),
+   ## END on load trigger
+
+   ## Check for buttonpress
+   (ti_on_presentation_event_state_change,
+    [
+        (store_trigger_param_1, ":button_pressed_id"),
+        (try_begin),
+             (eq, ":button_pressed_id", "$g_jrider_faction_report_Return_to_menu"), # pressed  (Return to menu)
+        (presentation_set_duration, 0),
+    (try_end),
+    ]),
+   ## END presentation event state change trigger
+
+   ## Event to process when running the presentation
+   (ti_on_presentation_run,
+    [
+        (try_begin),
+      (this_or_next|key_clicked, key_escape),
+      (key_clicked, key_right_mouse_button),
+      (presentation_set_duration, 0),
+      (jump_to_menu, "mnu_reports"),
+        (try_end),
+
+        ]),
+   ]),
+  # END presentation run trigger
+  # END Faction relation presentation
+  # Jrider -
+
+##diplomacy end
+##diplomacy start+
+##Custom player kingdom vassal titles, credit Caba`drin start
+#(Updated 2011-04-24, to use Caba`drin's 2011-04-20 bug-fix and update)
+# See http://forums.taleworlds.com/index.php/topic,148259.0.html
+("dplmc_set_vassal_title",0,mesh_load_window,[
+      (ti_on_presentation_load,
+       [(set_fixed_point_multiplier, 1000),
+        (str_clear, s1),
+        (str_clear, s2),
+
+        (create_text_overlay, reg0, "@How will your male vassals be known?", tf_center_justify),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 600),
+        (overlay_set_position, reg0, pos1),
+        (create_text_overlay, reg0, "@How will your female vassals be known?", tf_center_justify),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 400),
+        (overlay_set_position, reg0, pos1),
+
+        (create_simple_text_box_overlay, "$g_presentation_obj_name_kingdom_1"),
+        (position_set_x, pos1, 400),
+        (position_set_y, pos1, 500),
+        (overlay_set_position, "$g_presentation_obj_name_kingdom_1", pos1),
+        (try_begin),
+          (troop_slot_eq, "trp_heroes_end", 0, 1), #Pick a slot
+          (str_store_troop_name, s0, "trp_heroes_end"),
+        (else_try),
+          (str_store_string, s0, "@{!}"),
+          (str_store_string, s0, "str_faction_title_male_player"),
+        (try_end),
+        (overlay_set_text, "$g_presentation_obj_name_kingdom_1", s0),
+
+        (create_simple_text_box_overlay, reg0),
+        (position_set_x, pos1, 400),
+        (position_set_y, pos1, 300),
+        (overlay_set_position, reg0, pos1),
+        (try_begin),
+          (troop_slot_eq, "trp_heroes_end", 1, 1), #Pick a slot
+          (str_store_troop_name_plural, s0, "trp_heroes_end"),
+        (else_try),
+          (str_store_string, s0, "@{!}"),
+          (str_store_string, s0, "str_faction_title_female_player"),
+        (try_end),
+        (overlay_set_text, reg0, s0),
+
+        (create_button_overlay, reg0, "@Use the Titles Entered Above.", tf_center_justify),
+        (position_set_x, pos1, 600),
+        (position_set_y, pos1, 150),
+        (overlay_set_position, reg0, pos1),
+
+        (create_button_overlay, reg0, "@Use Default Titles (Lord/Lady).", tf_center_justify),
+        (position_set_x, pos1, 600),
+        (position_set_y, pos1, 100),
+        (overlay_set_position, reg0, pos1),
+
+        (presentation_set_duration, 999999),
+        ]),
+      (ti_on_presentation_event_state_change,
+       [(store_trigger_param_1, ":object"),
+        (try_begin),
+          (eq, ":object", "$g_presentation_obj_name_kingdom_1"),
+          (str_store_string, s1, s0), #Male Title
+        (else_try),
+          (store_add, ":overlay", "$g_presentation_obj_name_kingdom_1", 1),
+          (eq, ":object", ":overlay"),
+          (str_store_string, s2, s0), ##Female Title
+        (else_try),
+          (val_add, ":overlay", 1),
+          (eq, ":object", ":overlay"), #Custom
+          (try_begin),
+            (neg|str_is_empty, s1),
+            (troop_set_name, "trp_heroes_end", s1),
+            (troop_set_slot, "trp_heroes_end", 0, 1),
+            (try_for_range, ":lord_lady", lords_begin, lords_end),
+                (store_troop_faction, ":faction", ":lord_lady"),
+                (eq, ":faction", "fac_player_supporters_faction"),
+                (call_script, "script_troop_set_title_according_to_faction", ":lord_lady", ":faction"),
+            (try_end),
+          (try_end),
+          (try_begin),
+            (neg|str_is_empty, s2),
+            (troop_set_plural_name, "trp_heroes_end", s2),
+            (troop_set_slot, "trp_heroes_end", 1, 1),
+            (try_for_range, ":lord_lady", kingdom_ladies_begin, kingdom_ladies_end),
+                (store_troop_faction, ":faction", ":lord_lady"),
+                (eq, ":faction", "fac_player_supporters_faction"),
+                (call_script, "script_troop_set_title_according_to_faction", ":lord_lady", ":faction"),
+            (try_end),
+          (try_end),
+          (try_begin),
+            (this_or_next|neg|str_is_empty, s1),
+            (neg|str_is_empty, s2),
+            (try_for_range, ":lord_lady", companions_begin, companions_end),
+                (store_troop_faction, ":faction", ":lord_lady"),
+                (eq, ":faction", "fac_player_supporters_faction"),
+                (troop_slot_eq, ":lord_lady", slot_troop_occupation, slto_kingdom_hero),
+                (call_script, "script_troop_set_title_according_to_faction", ":lord_lady", ":faction"),
+            (try_end),
+          (try_end),
+          (presentation_set_duration, 0),
+        (else_try),
+          (val_add, ":overlay", 1),
+          (eq, ":object", ":overlay"), #Default
+          (troop_set_slot, "trp_heroes_end", 0, 0),
+          (troop_set_slot, "trp_heroes_end", 1, 0),
+          (try_for_range, ":lord_lady", lords_begin, kingdom_ladies_end),
+            (neg|is_between, ":lord_lady", pretenders_begin, pretenders_end),
+            (store_troop_faction, ":faction", ":lord_lady"),
+            (eq, ":faction", "fac_player_supporters_faction"),
+            (call_script, "script_troop_set_title_according_to_faction", ":lord_lady", ":faction"),
+          (try_end),
+          (try_for_range, ":lord_lady", companions_begin, companions_end),
+            (store_troop_faction, ":faction", ":lord_lady"),
+            (eq, ":faction", "fac_player_supporters_faction"),
+            (troop_slot_eq, ":lord_lady", slot_troop_occupation, slto_kingdom_hero),
+            (call_script, "script_troop_set_title_according_to_faction", ":lord_lady", ":faction"),
+          (try_end),
+          (presentation_set_duration, 0),
+        (try_end),
+        ]),
+      ]),
+##Custom player kingdom vassal titles, credit Caba`drin end
+
+##Auto-Sell, credit rubik (Custom Commander) begin
+##Adds global variables:
+#  $g_sell_items_when_leaving, renamed to g_dplmc_sell_items_when_leaving
+#  $g_auto_sell_price_limit, renamed to g_dplmc_auto_sell_price_limit
+##Adds slot:
+#  slot_item_type_not_for_sell, renamed to dplmc_slot_item_type_not_for_sell
+  ("dplmc_auto_sell_options", 0, mesh_load_window, [
+    (ti_on_presentation_load,
+      [
+        (presentation_set_duration, 999999),
+        (set_fixed_point_multiplier, 1000),
+
+        ## do auto-sell automaticly when leaving
+        (create_text_overlay, reg0, "@Sell items automaticly when leaving:", tf_vertical_align_center),
+        (position_set_x, pos1, 170),
+        (position_set_y, pos1, 660),
+        (overlay_set_position, reg0, pos1),
+
+        (create_check_box_overlay, "$g_presentation_obj_1", "mesh_checkbox_off", "mesh_checkbox_on"),
+        (position_set_x, pos1, 150),
+        (position_set_y, pos1, 652),
+        (overlay_set_position, "$g_presentation_obj_1", pos1),
+        (overlay_set_val, "$g_presentation_obj_1", "$g_dplmc_sell_items_when_leaving"),
+
+        ## price_limit
+        (create_text_overlay, reg0, "@Price limit for auto-sell:", tf_vertical_align_center),
+        (position_set_x, pos1, 150),
+        (position_set_y, pos1, 610),
+        (overlay_set_position, reg0, pos1),
+
+        (create_number_box_overlay, "$g_presentation_obj_2", 10, 10000),
+        (position_set_x, pos1, 600),
+        (position_set_y, pos1, 596),
+        (overlay_set_val, "$g_presentation_obj_2", "$g_dplmc_auto_sell_price_limit"),
+        (overlay_set_position, "$g_presentation_obj_2", pos1),
+
+        # done
+        (create_game_button_overlay, "$g_presentation_obj_3", "@Done"),
+        (position_set_x, pos1, 900),
+        (position_set_y, pos1, 25),
+        (overlay_set_position, "$g_presentation_obj_3", pos1),
+
+        ## Item types
+        (create_text_overlay, reg0, "@Item types for auto-sell:", tf_vertical_align_center),
+        (position_set_x, pos1, 150),
+        (position_set_y, pos1, 578),
+        (overlay_set_position, reg0, pos1),
+
+        # select all
+        (create_image_button_overlay, "$g_presentation_obj_5", "mesh_drop_button_child", "mesh_drop_button_child_down"),
+        (position_set_x, pos1, 160),
+        (position_set_y, pos1, 528),
+        (overlay_set_position, "$g_presentation_obj_5", pos1),
+        (create_text_overlay, reg1, "@Select all", tf_center_justify|tf_vertical_align_center),
+        (position_set_x, pos1, 265),
+        (position_set_y, pos1, 538),
+        (overlay_set_position, reg1, pos1),
+
+        # select invert
+        (create_image_button_overlay, "$g_presentation_obj_6", "mesh_drop_button_child", "mesh_drop_button_child_down"),
+        (position_set_x, pos1, 385),
+        (position_set_y, pos1, 528),
+        (overlay_set_position, "$g_presentation_obj_6", pos1),
+        (create_text_overlay, reg1, "@Select invert", tf_center_justify|tf_vertical_align_center),
+        (position_set_x, pos1, 490),
+        (position_set_y, pos1, 538),
+        (overlay_set_position, reg1, pos1),
+
+        (assign, ":pos_x", 160),
+        (assign, ":pos_y", 500),
+        (try_for_range, ":cur_type", 0, 20),
+          (store_add, ":cur_item_type", itp_type_horse, ":cur_type"),
+          (neq, ":cur_item_type", itp_type_goods),
+          (neq, ":cur_item_type", itp_type_animal),
+          (neq, ":cur_item_type", itp_type_book),
+          # button
+          (position_set_x, pos1, ":pos_x"),
+          (position_set_y, pos1, ":pos_y"),
+          (create_mesh_overlay, reg1, "mesh_drop_button_child"),
+          (overlay_set_position, reg1, pos1),
+          # text
+          (store_add, ":text_pos_x", ":pos_x", 120),
+          (store_add, ":text_pos_y", ":pos_y", 10),
+          (position_set_x, pos1, ":text_pos_x"),
+          (position_set_y, pos1, ":text_pos_y"),
+          (store_add, ":out_string", "str_dplmc_hero_wpn_slot_horse", ":cur_type"),#<- dplmc+ added "dplmc" prefix
+          (str_store_string, s1, ":out_string"),
+          (create_text_overlay, reg1, "@{s1}", tf_center_justify|tf_vertical_align_center),
+          (overlay_set_position, reg1, pos1),
+          # checkbox
+          (store_add, ":checkbox_pos_x", ":pos_x", 0),
+          (store_add, ":checkbox_pos_y", ":pos_y", 4),
+          (position_set_x, pos1, ":checkbox_pos_x"),
+          (position_set_y, pos1, ":checkbox_pos_y"),
+          (create_check_box_overlay, reg1, "mesh_checkbox_off", "mesh_checkbox_on"),
+          (overlay_set_position, reg1, pos1),
+          (store_add, ":item_type", itp_type_horse, ":cur_type"),
+          (item_get_slot, ":for_sell", ":item_type", dplmc_slot_item_type_not_for_sell),
+          (store_sub, ":for_sell", 1, ":for_sell"),
+          (overlay_set_val, reg1, ":for_sell"),
+          (troop_set_slot, "trp_temp_array_b", ":cur_type", reg1),
+          # focous
+          (val_add, ":pos_x", 225),
+          (try_begin),
+            (eq, ":pos_x", 835),
+            (assign, ":pos_x", 160),
+            (val_sub, ":pos_y", 28),
+          (try_end),
+        (try_end),
+
+        ####### mouse fix pos system #######
+        #(call_script, "script_mouse_fix_pos_ready"),
+        ####### mouse fix pos system #######
+      ]),
+
+      #(ti_on_presentation_run,
+        #[
+        ####### mouse fix pos system #######
+        #(call_script, "script_mouse_fix_pos_run"),
+        ####### mouse fix pos system #######
+      #]),
+
+    (ti_on_presentation_event_state_change,
+      [
+        (store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":value"),
+
+        (try_begin),
+          (eq, ":object", "$g_presentation_obj_1"),
+          (assign, "$g_dplmc_sell_items_when_leaving", ":value"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_2"),
+          (assign, "$g_dplmc_auto_sell_price_limit", ":value"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_3"),
+          (presentation_set_duration, 0),
+        (else_try),
+          ## select all
+          (eq, ":object", "$g_presentation_obj_5"),
+          (try_for_range, ":cur_type", 0, 20),
+            (store_add, ":cur_item_type", itp_type_horse, ":cur_type"),
+            (neq, ":cur_item_type", itp_type_goods),
+            (neq, ":cur_item_type", itp_type_animal),
+            (neq, ":cur_item_type", itp_type_book),
+            (item_set_slot, ":cur_item_type", dplmc_slot_item_type_not_for_sell, 0),
+            (troop_get_slot, ":dest_checkbox", "trp_temp_array_b", ":cur_type"),
+            (overlay_set_val, ":dest_checkbox", 1),
+          (try_end),
+        (else_try),
+          ## select invert
+          (eq, ":object", "$g_presentation_obj_6"),
+          (try_for_range, ":cur_type", 0, 20),
+            (store_add, ":cur_item_type", itp_type_horse, ":cur_type"),
+            (neq, ":cur_item_type", itp_type_goods),
+            (neq, ":cur_item_type", itp_type_animal),
+            (neq, ":cur_item_type", itp_type_book),
+            (item_get_slot, ":for_sell", ":cur_item_type", dplmc_slot_item_type_not_for_sell),
+            (val_add, ":for_sell", 1),
+            (val_mod, ":for_sell", 2),
+            (item_set_slot, ":cur_item_type", dplmc_slot_item_type_not_for_sell, ":for_sell"),
+            (troop_get_slot, ":dest_checkbox", "trp_temp_array_b", ":cur_type"),
+            (store_sub, ":dest_val", 1, ":for_sell"),
+            (overlay_set_val, ":dest_checkbox", ":dest_val"),
+          (try_end),
+        (try_end),
+
+        ## checkboxes
+        (try_for_range, ":slot_item_type_checkbox", 0, 20),
+          (troop_slot_eq, "trp_temp_array_b", ":slot_item_type_checkbox", ":object"),
+          (store_add, ":item_type", itp_type_horse, ":slot_item_type_checkbox"),
+          (store_sub, ":for_sell", 1, ":value"),
+          (item_set_slot, ":item_type", dplmc_slot_item_type_not_for_sell, ":for_sell"),
+        (try_end),
+      ]),
+    ]),
+##auto-sell, credit rubik (Custom Commander) end
+
+##Auto-Buy-Food shopping list management credit rubik (Custom Commander), end
+##
+##Global variables used:
+##   $g_buy_foods_when_leaving changed to $g_dplmc_buy_food_when_leaving
+##
+##Slots used:
+##   slot_item_food_portion, renamed to dplmc_slot_item_food_portion
+  ("dplmc_shopping_list_of_food", 0, mesh_load_window, [
+    (ti_on_presentation_load,
+      [
+        (presentation_set_duration, 999999),
+        (set_fixed_point_multiplier, 1000),
+
+        ## back
+        (create_game_button_overlay, "$g_presentation_obj_1", "@Done"),
+        (position_set_x, pos1, 900),
+        (position_set_y, pos1, 25),
+        (overlay_set_position, "$g_presentation_obj_1", pos1),
+
+        ## buy food automatically when leaving
+        (create_text_overlay, reg0, "@Buy food automatically when leaving:", tf_vertical_align_center),
+        (position_set_x, pos1, 170),
+        (position_set_y, pos1, 690),
+        (overlay_set_position, reg0, pos1),
+
+        (create_check_box_overlay, "$g_presentation_obj_2", "mesh_checkbox_off", "mesh_checkbox_on"),
+        (position_set_x, pos1, 150),
+        (position_set_y, pos1, 682),
+        (overlay_set_position, "$g_presentation_obj_2", pos1),
+        (overlay_set_val, "$g_presentation_obj_2", "$g_dplmc_buy_food_when_leaving"),
+
+        (assign, ":pos_x", 60),
+        (assign, ":pos_y", 550),
+        (try_for_range, ":cur_food", food_begin, food_end),
+          # frame
+          (create_mesh_overlay, reg1, "mesh_inv_slot"),
+          (position_set_x, pos1, 800),
+          (position_set_y, pos1, 800),
+          (overlay_set_size, reg1, pos1),
+          (position_set_x, pos1, ":pos_x"),
+          (position_set_y, pos1, ":pos_y"),
+          (overlay_set_position, reg1, pos1),
+          # back ground
+          (create_mesh_overlay, reg1, "mesh_mp_inventory_choose"),
+          (position_set_x, pos1, 640),
+          (position_set_y, pos1, 640),
+          (overlay_set_size, reg1, pos1),
+          (position_set_x, pos1, ":pos_x"),
+          (position_set_y, pos1, ":pos_y"),
+          (overlay_set_position, reg1, pos1),
+          # item overlay
+          (troop_set_slot, "trp_temp_array_a", ":cur_food", reg1),
+          (create_mesh_overlay_with_item_id, reg1, ":cur_food"),
+          (position_set_x, pos1, 800),
+          (position_set_y, pos1, 800),
+          (overlay_set_size, reg1, pos1),
+          (store_add, ":item_x", ":pos_x", 40),
+          (store_add, ":item_y", ":pos_y", 40),
+          (position_set_x, pos1, ":item_x"),
+          (position_set_y, pos1, ":item_y"),
+          (overlay_set_position, reg1, pos1),
+          (troop_set_slot, "trp_temp_array_b", ":cur_food", reg1),
+          # text *
+          (create_text_overlay, reg1, "@*", tf_center_justify|tf_vertical_align_center),
+          (store_add, ":text_x", ":pos_x", 100),
+          (store_add, ":text_y", ":pos_y", 40),
+          (position_set_x, pos1, ":text_x"),
+          (position_set_y, pos1, ":text_y"),
+          (overlay_set_position, reg1, pos1),
+          # number_box
+          (create_number_box_overlay, reg1, 0, 5),
+          (store_add, ":number_box_x", ":pos_x", 115),
+          (store_add, ":number_box_y", ":pos_y", 30),
+          (position_set_x, pos1, ":number_box_x"),
+          (position_set_y, pos1, ":number_box_y"),
+          (overlay_set_position, reg1, pos1),
+          (item_get_slot, ":food_portion", ":cur_food", dplmc_slot_item_food_portion),
+          (overlay_set_val, reg1, ":food_portion"),
+          (troop_set_slot, "trp_temp_array_c", ":cur_food", reg1),
+          # next
+          (val_add, ":pos_x", 240),
+          (try_begin),
+            (eq, ":pos_x", 1020),
+            (assign, ":pos_x", 60),
+            (val_sub, ":pos_y", 120),
+          (try_end),
+        (try_end),
+
+        ####### mouse fix pos system #######
+        #(call_script, "script_mouse_fix_pos_ready"),
+        ####### mouse fix pos system #######
+      ]),
+
+    #(ti_on_presentation_run,
+      #[
+        ####### mouse fix pos system #######
+        #(call_script, "script_mouse_fix_pos_run"),
+        ####### mouse fix pos system #######
+    #]),
+
+    (ti_on_presentation_mouse_enter_leave,
+      [
+      (store_trigger_param_1, ":object"),
+      (store_trigger_param_2, ":enter_leave"),
+
+      (try_begin),
+        (eq, ":enter_leave", 0),
+        (try_for_range, ":cur_food", food_begin, food_end),
+          (troop_slot_eq, "trp_temp_array_a", ":cur_food", ":object"),
+          (troop_get_slot, ":target_obj", "trp_temp_array_b", ":cur_food"),
+          (overlay_get_position, pos0, ":target_obj"),
+          (show_item_details, ":cur_food", pos0, 100),
+          (assign, "$g_current_opened_item_details", ":cur_food"),
+        (try_end),
+      (else_try),
+        (try_for_range, ":cur_food", food_begin, food_end),
+          (troop_slot_eq, "trp_temp_array_a", ":cur_food", ":object"),
+          (try_begin),
+            (eq, "$g_current_opened_item_details", ":cur_food"),
+            (close_item_details),
+          (try_end),
+        (try_end),
+      (try_end),
+    ]),
+
+    (ti_on_presentation_event_state_change,
+      [
+        (store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":value"),
+
+        (try_for_range, ":cur_food", food_begin, food_end),
+          (troop_slot_eq, "trp_temp_array_c", ":cur_food", ":object"),
+          (item_set_slot, ":cur_food", dplmc_slot_item_food_portion, ":value"),
+        (try_end),
+
+        (try_begin),
+          (eq, ":object", "$g_presentation_obj_2"),
+          (assign, "$g_dplmc_buy_food_when_leaving", ":value"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_1"),
+          (presentation_set_duration, 0),
+        (try_end),
+    ]),
+  ]),
+##Auto-Buy-Food shopping list management credit rubik (Custom Commander), end
+
+# Jrider +
+  ##############################################################################
+  # REPORT PRESENTATIONS v1.2
+  ## Character relations report
+  ("jrider_character_relation_report", 0,
+   mesh_message_window,
+   [
+     ## Load Presentation
+     (ti_on_presentation_load,
+      # generic_ti_on_load +
+      [
+    (presentation_set_duration, 999999),
+        (set_fixed_point_multiplier, 1000),
+
+        (str_clear, s0),
+        (str_clear, s1),
+
+        # Character presentation type variations
+        (try_begin),
+            ###############################
+            ## Courtship Relations presentation
+            (eq, "$g_character_presentation_type", 0),
+
+            # Set presentation title string
+            (str_store_string, s0, "@_Courtships in progress_"),
+
+            # Set size of listbox
+            (assign, ":base_scroll_y", 160),
+            (assign, ":base_scroll_size_y", 480),
+            (assign, ":base_candidates_y", 0), # scrollable area size minus (one line size + 2) 430
+
+            # Set storage index
+            (assign, "$g_base_character_presentation_storage_index", 1000),
+
+            # presentation specific extra overlays
+            (call_script, "script_generate_knonwn_poems_string"),
+
+            # Extra text area for knowns poems (filling once so we use a register), filled from s1 generated in script call
+            (create_text_overlay, reg1, s1, tf_left_align),
+            (position_set_x, pos1, 590), # position
+            (position_set_y, pos1, 55),
+            (overlay_set_position, reg1, pos1),
+            (position_set_x, pos1, 750), # size
+            (position_set_y, pos1, 850),
+            (overlay_set_size, reg1, pos1),
+            (overlay_set_color, reg1, 0xFF66CC), # color
+        (else_try),
+            ###############################
+            ## Lord Relations presentation
+            (eq, "$g_character_presentation_type", 1),
+
+            # Set presentation title string
+            (str_store_string, s0, "@_Known Lords by Relation_"),
+
+            # Set size of listbox
+            (assign, ":base_scroll_y", 110),
+            (assign, ":base_scroll_size_y", 550),
+            (assign, ":base_candidates_y", 0), # scrollable area size minus 530
+
+            # Set storage index
+            (assign, "$g_base_character_presentation_storage_index", 2000),
+        (else_try),
+            ###############################
+            ## Player and Companions presentation
+            (eq, "$g_character_presentation_type", 2),
+
+            # Set presentation title string
+            (str_store_string, s0, "@_Character & Companions_"),
+
+            # Set size of listbox
+            (assign, ":base_scroll_y", 110),
+            (assign, ":base_scroll_size_y", 550),
+            (assign, ":base_candidates_y", 0), # scrollable area size minus (one line size + 2) 530
+
+            # Set storage index
+            (assign, "$g_base_character_presentation_storage_index", 3000),
+
+            # Extra area for equipment display
+            (assign, ":inv_bar_size", 0),
+            (position_set_x, ":inv_bar_size", 400),
+            (position_set_y, ":inv_bar_size", 400),
+
+            (create_mesh_overlay, reg1, "mesh_mp_inventory_left"),
+            (position_set_x, pos1, 67),
+            (position_set_y, pos1, 300),
+            (overlay_set_position, reg1, pos1),
+            (overlay_set_size, reg1, ":inv_bar_size"),
+
+            (create_mesh_overlay, reg1, "mesh_mp_inventory_right"),
+            (position_set_x, pos1, 450),
+            (position_set_y, pos1, 330),
+            (overlay_set_position, reg1, pos1),
+            (overlay_set_size, reg1, ":inv_bar_size"),
+        (try_end),
+        # END of presentation type specific init and static overlay
+
+        ###############################
+        # Create common overlays
+        # set foreground mesh overlay (has some transparency in it, so can't use it directly)
+        (create_mesh_overlay, reg1, "mesh_face_gen_window"),
+        (position_set_x, pos1, 0),
+        (position_set_y, pos1, 0),
+        (overlay_set_position, reg1, pos1),
+    (position_set_x, pos1, 1000),
+        (position_set_y, pos1, 1000),
+    (overlay_set_size, reg1, pos1),
+
+    # Presentation title overlay, centered at the top of right pane (from s0, presentation type specific)
+        (create_text_overlay, reg1, s0, tf_center_justify),
+        (overlay_set_color, reg1, 0xDDDDDD),
+    (position_set_x, pos1, 740), # Higher, means more toward the right
+        (position_set_y, pos1, 680), # Higher, means more toward the top
+        (overlay_set_position, reg1, pos1),
+    (position_set_x, pos1, 1200),
+        (position_set_y, pos1, 1200),
+    (overlay_set_size, reg1, pos1),
+
+    # Done button
+        (create_game_button_overlay, "$g_jrider_character_report_Return_to_menu", "@_Done_"),
+    (position_set_x, pos1, 290),
+        (position_set_y, pos1, 10),
+        (overlay_set_position, "$g_jrider_character_report_Return_to_menu", pos1),
+
+        # Character Information text to fill when an entry is clicked in the list
+        (create_text_overlay, "$g_jrider_character_information_text", "str_space", tf_left_align),
+        (overlay_set_color, "$g_jrider_character_information_text", 0xFFFFFF),
+        (position_set_x, pos1, 55), # Higher, means more toward the right
+        (position_set_y, pos1, 60), # Higher, means more toward the top
+        (overlay_set_position, "$g_jrider_character_information_text", pos1),
+        (position_set_x, pos1, 700), # smaller means smaller font
+        (position_set_y, pos1, 800),
+        (overlay_set_size, "$g_jrider_character_information_text", pos1),
+
+        # Character selection listbox overlay
+        # use scrollable text area with global reference so objects can be put inside using overlay_set_container
+        (create_text_overlay, "$g_jrider_character_relation_listbox", "str_empty_string", tf_scrollable_style_2),
+        (position_set_x, pos1, 590),
+        (position_set_y, pos1, ":base_scroll_y"),
+        (overlay_set_position, "$g_jrider_character_relation_listbox", pos1),
+        (position_set_x, pos1, 335),
+        (position_set_y, pos1, ":base_scroll_size_y"),
+        (overlay_set_area_size, "$g_jrider_character_relation_listbox", pos1),
+
+        # Faction filter
+        (create_combo_button_overlay, "$g_jrider_character_faction_filter", "str_empty_string",0),
+        (position_set_x, pos1, 507),
+        (position_set_y, pos1, 709),
+        (overlay_set_position, "$g_jrider_character_faction_filter", pos1),
+        (position_set_x, pos1, 550),
+        (position_set_y, pos1, 650),
+        (overlay_set_size, "$g_jrider_character_faction_filter", pos1),
+
+        # add elements to filter button
+        (overlay_add_item, "$g_jrider_character_faction_filter", "@Your supporters"),
+        (overlay_add_item, "$g_jrider_character_faction_filter", "@Swadians"),
+        (overlay_add_item, "$g_jrider_character_faction_filter", "@Vaegirs"),
+        (overlay_add_item, "$g_jrider_character_faction_filter", "@Khergits"),
+        (overlay_add_item, "$g_jrider_character_faction_filter", "@Nords"),
+        (overlay_add_item, "$g_jrider_character_faction_filter", "@Rhodoks"),
+        (overlay_add_item, "$g_jrider_character_faction_filter", "@Sarranids"),
+        (overlay_add_item, "$g_jrider_character_faction_filter", "@All Factions"),
+
+        # Set initial value for selection box
+        (try_begin),
+            (this_or_next|eq, "$g_jrider_pres_called_from_menu", 1),
+            (eq, "$g_jrider_faction_filter", -1),
+
+            (assign, "$g_jrider_faction_filter", -1),
+            (overlay_set_val, "$g_jrider_character_faction_filter", 7),
+        (else_try),
+            (overlay_set_val, "$g_jrider_character_faction_filter", "$g_jrider_faction_filter"),
+        (try_end),
+
+        ###############################
+        # Populate lists
+        # Init presentation common global variables
+        (assign, "$num_charinfo_candidates", 0),
+
+        # Fill listbox (overlay_add_item and extra storage)
+        (call_script, "script_fill_relation_canditate_list_for_presentation", "$g_character_presentation_type", ":base_candidates_y"),
+        (assign, "$g_jrider_reset_selected_on_faction", 0),
+        # stop if there's no candidate
+        (gt, "$num_charinfo_candidates", 0),
+
+        # get extra information from storage
+        (store_add, ":current_storage_index", "$g_base_character_presentation_storage_index", "$g_latest_character_relation_entry"),
+        (troop_get_slot, "$character_info_id", "trp_temp_array_c", ":current_storage_index"),
+
+        # Fill text information for current entry and update text information overlay
+        (call_script, "script_generate_extended_troop_relation_information_string", "$character_info_id"),
+        (overlay_set_text, "$g_jrider_character_information_text", s1),
+
+        # color selected entry
+        (overlay_set_color, "$g_jrider_last_checked_indicator", 0xFF6666FF),
+        (overlay_set_alpha, "$g_jrider_last_checked_indicator", 0x44),
+
+        # Begin common dynamic overlay
+        # mesh Overlay for character portrait (global not needed)
+        (create_image_button_overlay_with_tableau_material, "$g_jrider_character_portrait", -1, "tableau_troop_note_mesh", "$character_info_id"),
+        (position_set_x, pos2, 100),
+        (position_set_y, pos2, 280),
+        (overlay_set_position, "$g_jrider_character_portrait", pos2),
+        (position_set_x, pos2, 1100), #1150
+        (position_set_y, pos2, 1100), #1150
+        (overlay_set_size, "$g_jrider_character_portrait", pos2),
+
+        # mesh Overlay for faction coat of arms
+        (try_begin),
+            (store_troop_faction, ":troop_faction", "$character_info_id"),
+            (neq, ":troop_faction", "fac_player_supporters_faction"),
+            (is_between, ":troop_faction", kingdoms_begin, kingdoms_end),
+            (store_sub, ":faction_mesh_index", ":troop_faction", kingdoms_begin),
+            (val_add, ":faction_mesh_index", "mesh_pic_recruits"),
+
+            (create_mesh_overlay, "$g_jrider_faction_coat_of_arms", ":faction_mesh_index"),
+            (position_set_x, pos3, 150),
+            (position_set_y, pos3, 600),
+            (overlay_set_position, "$g_jrider_faction_coat_of_arms", pos3),
+            (position_set_x, pos3, 250),
+            (position_set_y, pos3, 250),
+            (overlay_set_size, "$g_jrider_faction_coat_of_arms", pos3),
+        (try_end),
+
+        # Begin presentation type specific dynamic overlay
+        # equipement meshes for character/companions
+        (try_begin),
+            (eq, "$g_character_presentation_type", 2),
+
+            (assign, ":base_inv_slot_x", 452),
+            (assign, ":base_inv_slot_y", 536),
+
+            (try_for_range, ":item_eq", 0, 9),
+            # loop equipment slots
+                (troop_get_inventory_slot, reg1, "$character_info_id", ":item_eq"),
+
+                (try_begin),
+                    (eq, ":item_eq", 4),
+                    (assign, ":base_inv_slot_x", 68),
+                    (assign, ":base_inv_slot_y", 557),
+                (try_end),
+                (try_begin),
+                    (lt, reg1, 1),
+                    # empty... assign default mesh
+                   (try_begin),
+                       (lt, ":item_eq", 4),
+                       (assign, ":mesh_id", "mesh_mp_inventory_slot_equip"),
+                   (else_try),
+                       (eq, ":item_eq", 4),
+                       (assign, ":mesh_id", "mesh_mp_inventory_slot_helmet"),
+                   (else_try),
+                       (eq, ":item_eq", 5),
+                       (assign, ":mesh_id", "mesh_mp_inventory_slot_armor"),
+                   (else_try),
+                       (eq, ":item_eq", 6),
+                       (assign, ":mesh_id", "mesh_mp_inventory_slot_boot"),
+                   (else_try),
+                       (eq, ":item_eq", 7),
+                       (assign, ":mesh_id", "mesh_mp_inventory_slot_glove"),
+                   (else_try),
+                       (eq, ":item_eq", 8),
+                       (assign, ":mesh_id", "mesh_mp_inventory_slot_horse"),
+                   (try_end),
+
+                   (create_mesh_overlay, reg11, ":mesh_id"),
+                   (overlay_set_size, reg11, ":inv_bar_size"),
+
+                   (position_set_x, pos1, ":base_inv_slot_x"),
+                   (position_set_y, pos1, ":base_inv_slot_y"),
+                   (overlay_set_position, reg11, pos1),
+
+                   (troop_set_slot, "trp_temp_array_a", ":item_eq", -1),
+                   (store_add, ":item_eq_id", ":item_eq", 10),
+                   (troop_set_slot, "trp_temp_array_a", ":item_eq_id", -1),
+                # end missing item
+                (else_try),
+                    (create_mesh_overlay_with_item_id, reg10, reg1),
+                    (position_set_x, pos1, 450),
+                    (position_set_y, pos1, 450),
+                    (overlay_set_size, reg10, pos1),
+
+                    (store_add, ":item_inv_slot_x", ":base_inv_slot_x", 25),
+                    (store_add, ":item_inv_slot_y", ":base_inv_slot_y", 25),
+
+                    (position_set_x, pos1, ":item_inv_slot_x"),
+                    (position_set_y, pos1, ":item_inv_slot_y"),
+                    (overlay_set_position, reg10, pos1),
+
+                    # save id for reuse
+                    (troop_set_slot, "trp_temp_array_a", ":item_eq", reg10),
+                    (store_add, ":item_eq_id", ":item_eq", 10),
+                    (troop_set_slot, "trp_temp_array_a", ":item_eq_id", reg1),
+                # real items
+                (try_end),
+                (val_sub, ":base_inv_slot_y", 51),
+            (try_end),
+            # end loop equipments slots
+        (try_end),
+
+        # do an update if called from menu and reset init variable
+        (try_begin),
+            (eq, "$g_jrider_pres_called_from_menu", 1),
+            (assign, "$g_jrider_pres_called_from_menu", 0),
+        (try_end),
+    ]),
+    # end presentation load
+
+    ## Mouse-over
+    (ti_on_presentation_mouse_enter_leave,
+      [
+      (store_trigger_param_1, ":object"),
+      (store_trigger_param_2, ":enter_leave"),
+
+      (try_begin),
+          (eq, "$g_character_presentation_type", 2),
+          (try_begin),
+              (eq, ":enter_leave", 0),
+              (try_for_range, ":slot_no", 0, 9),
+                  (troop_slot_eq, "trp_temp_array_a", ":slot_no", ":object"),
+                  (store_add, ":slot_no_eq", ":slot_no", 10),
+                  (troop_get_slot, ":item_no", "trp_temp_array_a", ":slot_no_eq"),
+
+                  (set_fixed_point_multiplier, 1000),
+
+                  (position_set_x,pos0,740),
+                  (position_set_y,pos0,235),
+                  (show_item_details, ":item_no", pos0, 100),
+              (try_end),
+          (else_try),
+              (try_for_range, ":slot_no", 0, 9),
+                (troop_slot_eq, "trp_temp_array_a", ":slot_no", ":object"),
+                (close_item_details),
+              (try_end),
+          (try_end),
+      (try_end),
+    ]),
+    # end mouseover
+
+    ## Check for buttonpress
+    (ti_on_presentation_event_state_change,
+     [
+        (store_trigger_param_1, ":object"), # object
+        (store_trigger_param_2, ":value"),  # value
+
+        (try_begin),
+            # pressed  (Return to menu)
+            (eq, ":object", "$g_jrider_character_report_Return_to_menu"),
+
+            (try_begin),
+                (neq, "$num_charinfo_candidates", 0),
+                (overlay_set_text, "$g_jrider_character_information_text", "str_empty_string"),
+                (overlay_set_alpha, "$g_jrider_last_checked_indicator", 0),
+            (try_end),
+            (presentation_set_duration, 0),
+
+        (else_try),
+            # Faction filter
+            (eq, ":object", "$g_jrider_character_faction_filter"),
+            (try_begin),
+                (eq, ":value", 7),
+                (assign, "$g_jrider_faction_filter", -1),
+            (else_try),
+                (assign, "$g_jrider_faction_filter", ":value"),
+            (try_end),
+
+            # reset selected to first
+            (assign, "$g_jrider_reset_selected_on_faction", 1000),
+
+            # restart presentation to take filters into account
+            (start_presentation, "prsnt_jrider_character_relation_report"),
+
+        (else_try),
+            (neq, ":object", "$g_jrider_character_information_text"),
+            (neq, ":object", "$g_jrider_character_portrait"),
+            (neq, ":object", "$g_jrider_character_relation_listbox"),
+            #(neq, ":object", "$g_jrider_faction_coat_of_arms"),
+            # clicked on list entry
+            # get storage index + base storage index
+            (store_add, ":storage_button_id", ":object", "$g_base_character_presentation_storage_index"),
+            (troop_get_slot, ":character_number", "trp_temp_array_b", ":storage_button_id"),
+
+            (overlay_set_alpha, "$g_jrider_last_checked_indicator", 0),
+            (overlay_set_color, "$g_jrider_last_checked_indicator", 0xDDDDDD),
+
+            # update last entry and check variables
+            (assign, "$g_latest_character_relation_entry", ":character_number"),
+            (assign, "$g_jrider_last_checked_indicator", ":object"),
+
+            # color selected entry
+            (overlay_set_color, "$g_jrider_last_checked_indicator", 0xFF6666FF),
+            (overlay_set_alpha, "$g_jrider_last_checked_indicator", 0x44),
+
+            # get troop information from storage to update text
+            (val_add, ":character_number", "$g_base_character_presentation_storage_index"),
+            (troop_get_slot, "$character_info_id", "trp_temp_array_c", ":character_number"),
+
+            # restart presentation to update picture and text
+            (start_presentation, "prsnt_jrider_character_relation_report"),
+    (try_end),
+     ] # + generic_ti_on_presentation_event_state_change
+     ),
+     # end event state change
+
+    ## Event to process when running the presentation
+    (ti_on_presentation_run,
+     # generic_ti_on_presentation_run +
+     [
+        (try_begin),
+      (this_or_next|key_clicked, key_escape),
+      (key_clicked, key_right_mouse_button),
+      (presentation_set_duration, 0),
+      (jump_to_menu, "mnu_reports"),
+        (try_end),
+
+        ]),
+     # end presentation run
+     ]),
+    ###################################
+    # Character relation presentation end
+# Jrider -
+
+
+##diplomacy end+
+
+
+## Prebattle Orders & Deployment Begin   
+ ("prebattle_custom_deployment", 0, mesh_load_window, [
+    (ti_on_presentation_load,
+     [(set_fixed_point_multiplier, 1000),
+	  (assign, "$g_presentation_credits_obj_1", 0),
+	  
+	    (party_get_slot, ":battle_size", "p_main_party", slot_party_prebattle_battle_size),	
+		(set_show_messages, 0),
+	  	(call_script, "script_calculate_battle_advantage"),
+		(assign, ":battle_advantage", reg0),
+		(set_show_messages, 1),
+		(call_script, "script_party_count_members_with_full_health", "p_collective_friends"),
+		(assign, ":friend_count", reg0),	  
+		(call_script, "script_party_count_members_with_full_health", "p_main_party"),
+		(assign, ":num_our_regulars_remaining", reg0),		
+		
+		(store_mul, ":players_share", ":num_our_regulars_remaining", 100),
+		(val_div, ":players_share", ":friend_count"), #This likely needs more work...it doesn't appear to be a flat %
+		
+		#Results below this point are x100 for 2 decimal point accuracy
+		(store_sub, ":battle_size_scaled", ":battle_size", 30), #Scale battle_size to the engine used 30-150 = 0-1 scale
+		(val_mul, ":battle_size_scaled", 100),
+		(val_div, ":battle_size_scaled", 120),
+		
+		(assign, ":spawn_point_count", 12),
+		(try_begin),
+		    (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
+		    (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
+			(val_mul, ":battle_advantage", 2),
+            (val_div, ":battle_advantage", 3), #scale down the advantage a bit for sieges.
+			(val_add, ":spawn_point_count", 6), #For all sieges
+			(eq, "$g_next_menu", "mnu_siege_started_defender"), #Siege Defense?
+			(party_slot_eq, "$g_encountered_party", slot_center_siege_with_belfry, 1),
+		    #(display_message, "@Siege Defense - Belfry"), #Debug
+			(val_add, ":spawn_point_count", 2), #For tower defense only
+		(try_end),
+		(val_mul, ":spawn_point_count", 100),
+		
+		(store_mul, ":num_ally_in_battle", ":battle_size_scaled", 4),
+		(val_add, ":num_ally_in_battle", 125),
+		
+		(val_add, ":battle_advantage", 15),
+		(val_mul, ":battle_advantage", 100),
+		(val_div, ":battle_advantage", 15),
+		(val_clamp, ":battle_advantage", 20, 250),
+		
+		(val_mul, ":num_ally_in_battle", ":battle_advantage"),
+		(val_mul, ":num_ally_in_battle", ":spawn_point_count"),
+		(val_div, ":num_ally_in_battle", 1000000), #For 3 values that were multiplied by 100
+		(val_add, ":num_ally_in_battle", 1), #To account for rounding
+		
+		(store_mul, ":num_player_troops_in_battle", ":num_ally_in_battle", ":players_share"),
+		(val_div, ":num_player_troops_in_battle", 100),
+		
+		# (store_mul, ":batt_adv_multiplier", ":battle_size", 26),
+		# (val_add, ":batt_adv_multiplier", 220),
+		# (val_mul, ":batt_adv_multiplier", ":battle_advantage"),
+		
+		# (store_mul, ":batt_adv_multiplier", ":battle_size", 26),
+		# (val_add, ":batt_adv_multiplier", 220),
+		# (val_mul, ":batt_adv_multiplier", ":battle_advantage"),
+		# (store_mul, ":size_offset", ":battle_size", 396),
+		# (val_add, ":size_offset", 3300),
+		# (store_add, ":num_ally_in_battle", ":batt_adv_multiplier", ":size_offset"),
+		# (val_div, ":num_ally_in_battle", 1000),
+		# (store_mul, ":num_player_troops_in_battle", ":num_ally_in_battle", ":players_share"),
+		# (val_div, ":num_player_troops_in_battle", 100),
+		
+		# (store_mul, ":minimum_in_battle", ":battle_size", 8),
+		# (val_div, ":minimum_in_battle", 100),
+		# (val_add, ":minimum_in_battle", 1),
+		# (store_sub, ":maximum_in_battle", ":battle_size", ":minimum_in_battle"),
+		# (val_add, ":maximum_in_battle", 1),
+		# (val_clamp, ":num_player_troops_in_battle", ":minimum_in_battle", ":maximum_in_battle"),
+		
+		(val_min, ":num_player_troops_in_battle", ":num_our_regulars_remaining"), #Make sure it doesn't say the player can spawn more than they have
+		(party_set_slot, "p_main_party", slot_party_prebattle_size_in_battle, ":num_player_troops_in_battle"),
+
+      (create_text_overlay, reg0, "@Plan Deployment", tf_center_justify|tf_single_line|tf_with_outline),
+      (overlay_set_color, reg0, 0xFFFFFFFF),
+      (position_set_x, pos1, 1500),
+      (position_set_y, pos1, 1500),
+      (overlay_set_size, reg0, pos1),
+      (position_set_x, pos1, 500),
+      (position_set_y, pos1, 680),
+      (overlay_set_position, reg0, pos1),
+
+	  (party_get_slot, ":round_size", "p_main_party", slot_party_prebattle_size_in_battle),
+	  (assign, reg1, ":round_size"),
+	  (create_text_overlay, reg0, "@You will have {reg1} troops available at the battle's start", tf_center_justify|tf_single_line),
+      (position_set_x, pos1, 500),
+      (position_set_y, pos1, 650),
+      (overlay_set_position, reg0, pos1),
+	  
+      (create_text_overlay, reg0, "@Troop",  tf_center_justify),
+      (position_set_x, pos1, 105),
+      (position_set_y, pos1, 600),
+      (overlay_set_position, reg0, pos1),
+
+      (create_text_overlay, reg0, "@# at start  / # in party", tf_center_justify),
+      (position_set_x, pos1, 385),
+      (position_set_y, pos1, 600),
+      (overlay_set_position, reg0, pos1),
+   
+      (str_clear, s0),
+      (create_text_overlay, "$g_presentation_obj_bugdet_report_container", s0, tf_scrollable_style_2),
+      (position_set_x, pos1, 50),
+      (position_set_y, pos1, 100),
+      (overlay_set_position, "$g_presentation_obj_bugdet_report_container", pos1),
+      (position_set_x, pos1, 385),#was 360
+      (position_set_y, pos1, 500), 
+      (overlay_set_area_size, "$g_presentation_obj_bugdet_report_container", pos1),
+      (set_container_overlay, "$g_presentation_obj_bugdet_report_container"),
+   
+   	  (assign, ":in_count", 0),
+      (assign, ":cur_y_adder", 40),  
+	  (party_get_num_companion_stacks, ":num_of_stacks", "p_main_party"),
+	  (store_mul, ":cur_y", ":num_of_stacks", ":cur_y_adder"),
+	  
+		(try_for_range, ":i", 0, ":num_of_stacks"),
+			(party_stack_get_troop_id, ":troop_id", "p_main_party", ":i"),
+			(neq, ":troop_id", "trp_player"),
+			(party_stack_get_size, ":stack_size", "p_main_party", ":i"),
+			(party_stack_get_num_wounded, ":stack_wounded", "p_main_party", ":i"),
+			(val_sub, ":stack_size", ":stack_wounded"),
+			(troop_get_slot, ":num_of_agents", ":troop_id", slot_troop_prebattle_first_round),
+			(val_min, ":num_of_agents", ":stack_size"),
+			(troop_set_slot, ":troop_id", slot_troop_prebattle_first_round, ":num_of_agents"),
+			
+            (val_add, ":in_count", ":num_of_agents"),
+			
+			(str_store_troop_name, s1, ":troop_id"),
+			(create_text_overlay, reg0, s1),
+			(position_set_x, pos1, 800),
+			(position_set_y, pos1, 800),
+			(overlay_set_size, reg0, pos1),
+			(position_set_x, pos1, 25),
+			(position_set_y, pos1, ":cur_y"),
+			(overlay_set_position, reg0, pos1),
+			
+			(assign, reg0, ":stack_size"),
+			(str_store_string, s1, "@/ {reg0}"),
+			(create_text_overlay, reg0, s1),
+			(position_set_x, pos1, 325),
+			(position_set_y, pos1, ":cur_y"),
+			(overlay_set_position, reg0, pos1),
+						
+			(val_add, ":stack_size", 1), #for upper limit of number box
+			
+			(create_number_box_overlay, reg0, 0, ":stack_size"),
+			(overlay_set_val, reg0, ":num_of_agents"),
+			(position_set_x, pos1, 250),
+			(position_set_y, pos1, ":cur_y"),
+			(overlay_set_position, reg0, pos1),
+				
+			(troop_set_slot, "trp_temp_array_a", ":troop_id", reg0),
+
+			(val_sub, ":cur_y", ":cur_y_adder"),
+		(try_end), #End Stack/Troop Loop
+
+	    (set_container_overlay, -1),
+
+		(party_set_slot, "p_main_party", slot_party_prebattle_in_battle_count, ":in_count"),
+		(assign, reg0, ":in_count"),
+		(create_text_overlay, reg60, "@{reg0}", tf_with_outline),
+		(try_begin), 		
+		    (gt, ":in_count", ":round_size"),
+			(overlay_set_color, reg60, 0xFF1100),
+		(else_try),
+		    (overlay_set_color, reg60, 0xFFFFFF),
+		(try_end),
+		(position_set_x, pos1, 290),
+		(position_set_y, pos1, 50),
+		(overlay_set_position, reg60, pos1),
+		
+		(assign, reg0, ":round_size"),
+		(create_text_overlay, reg0, "@of {reg0} troops", 0),
+		(position_set_x, pos1, 330),
+		(position_set_y, pos1, 50),
+		(overlay_set_position, reg0, pos1),
+		
+		(create_mesh_overlay, reg0, "mesh_pic_charge"),
+        (position_set_x, pos1, 700),
+        (position_set_y, pos1, 700),
+        (overlay_set_size, reg0, pos1),
+        (position_set_x, pos1, 225), 
+        (position_set_y, pos1, 50),
+        (overlay_set_position, reg0, pos1),
+		
+	  (create_game_button_overlay, "$g_presentation_obj_custom_battle_designer_19", "@Ready Troops", 0),
+      (position_set_x, pos1, 880),
+      (position_set_y, pos1, 15),
+      (overlay_set_position, "$g_presentation_obj_custom_battle_designer_19", pos1),
+
+      (create_game_button_overlay, "$g_presentation_obj_custom_battle_designer_20", "@Reassess", 0),
+      (position_set_x, pos1, 722),
+      (position_set_y, pos1, 15),
+      (overlay_set_position, "$g_presentation_obj_custom_battle_designer_20", pos1),
+	  
+	  (create_game_button_overlay, "$g_presentation_obj_custom_battle_designer_18", "@Scrap All", 0),
+      (position_set_x, pos1, 565),
+      (position_set_y, pos1, 15),
+      (overlay_set_position, "$g_presentation_obj_custom_battle_designer_18", pos1),
+
+		#Preview button?
+	
+	  (presentation_set_duration, 999999),
+      ]),
+	(ti_on_presentation_run,
+      [	
+	    (try_begin),
+			(key_clicked, key_escape),
+			(presentation_set_duration, 0),
+        (try_end),
+	    (party_get_slot, ":battle_size", "p_main_party", slot_party_prebattle_battle_size),	
+	    (this_or_next|lt, ":battle_size", 30),
+		(gt, ":battle_size", max_battle_size),
+		(assign, "$g_presentation_credits_obj_1", 1),
+		(start_presentation, "prsnt_prebattle_record_battle_size"),
+      ]),
+    (ti_on_presentation_event_state_change,
+     [
+       (store_trigger_param_1, ":object"),
+       (store_trigger_param_2, ":value"),
+	   
+	   	(try_begin), #Buttons
+			(eq, ":object", "$g_presentation_obj_custom_battle_designer_20"),
+			(jump_to_menu, "$g_next_menu"),
+			(presentation_set_duration, 0),
+		(else_try),
+		    (eq, ":object", "$g_presentation_obj_custom_battle_designer_18"),
+			(party_get_num_companion_stacks, ":num_of_stacks", "p_main_party"),
+		    (try_for_range, ":i", 0, ":num_of_stacks"),
+			    (party_stack_get_troop_id, ":troop_id", "p_main_party", ":i"),
+			    (neq, ":troop_id", "trp_player"),
+			    (troop_get_slot, ":overlay_id", "trp_temp_array_a", ":troop_id"),
+			    (troop_set_slot, ":troop_id", slot_troop_prebattle_first_round, 0),
+			    (overlay_set_val, ":overlay_id", 0),
+		    (try_end),
+			(party_set_slot, "p_main_party", slot_party_prebattle_in_battle_count, 0),
+			(overlay_set_text, reg60, "@0"),
+			(overlay_set_color, reg60, 0xFFFFFF),
+		(else_try),
+		    (eq, ":object", "$g_presentation_obj_custom_battle_designer_19"),
+			(party_get_slot, ":cur_count", "p_main_party", slot_party_prebattle_in_battle_count),
+		    (party_get_slot, ":round_size", "p_main_party", slot_party_prebattle_size_in_battle),
+			(try_begin),
+			    (gt, ":cur_count", ":round_size"),
+		        (create_text_overlay, reg0, "@Too many troops^Check number available", tf_center_justify|tf_with_outline),
+				(overlay_set_color, reg0, 0xFF1100),
+		        (position_set_x, pos1, 600),
+		        (position_set_y, pos1, 500),
+		        (overlay_set_position, reg0, pos1),
+			    (position_set_x, pos1, 0),
+		        (position_set_y, pos1, 0),
+				(overlay_animate_to_size, reg0, 3000, pos1),
+			(else_try),
+			    (party_set_slot, "p_main_party", slot_party_prebattle_customized_deployment, 1),
+			    (jump_to_menu, "$g_next_menu"),
+			    (presentation_set_duration, 0),
+			(try_end),
+		(else_try), #Number Boxes
+
+		 (party_get_num_companion_stacks, ":num_of_stacks", "p_main_party"),
+		 (try_for_range, ":i", 0, ":num_of_stacks"),
+			(party_stack_get_troop_id, ":troop_id", "p_main_party", ":i"),
+			(neq, ":troop_id", "trp_player"),
+			(troop_slot_eq, "trp_temp_array_a", ":troop_id", ":object"),
+			(troop_get_slot, ":num_agents", ":troop_id", slot_troop_prebattle_first_round),
+			(assign, ":num_of_stacks", 0), #loop breaker
+		 (try_end),
+		 
+		 (party_get_slot, ":cur_count", "p_main_party", slot_party_prebattle_in_battle_count),
+		 (party_get_slot, ":round_size", "p_main_party", slot_party_prebattle_size_in_battle),
+		 (store_sub, ":dif", ":value", ":num_agents"),
+		 (store_add, ":new_total", ":cur_count", ":dif"),
+		 
+		 (try_begin),
+			(gt, ":new_total", ":round_size"),
+			(ge, ":new_total", ":cur_count"),
+			(try_begin),
+			    (ge, ":cur_count", ":round_size"), #if it was too big to begin with, reset value
+				(assign, ":modified_value", ":num_agents"), #revert to pre-change number
+				(assign, ":new_total", ":cur_count"), #revert to pre-change number
+			(else_try),
+			    (store_sub, ":dif2", ":new_total", ":round_size"),
+				(val_sub, ":dif", ":dif2"),
+				(val_max, ":dif", 0),
+				(store_add, ":modified_value", ":value", ":dif"),
+				(store_add, ":new_total", ":cur_count", ":dif"),
+			(try_end),
+			(overlay_set_val, ":object", ":modified_value"),
+			(troop_set_slot, ":troop_id", slot_troop_prebattle_first_round, ":modified_value"),
+		 (else_try),
+		    (troop_set_slot, ":troop_id", slot_troop_prebattle_first_round, ":value"),
+		 (try_end),
+		 
+		 (assign, reg0, ":new_total"),
+		 (overlay_set_text, reg60, "@{reg0}"),
+		 (try_begin),
+			(gt, ":new_total", ":round_size"),
+			(overlay_set_color, reg60, 0xFF1100),
+		 (else_try),
+			(overlay_set_color, reg60, 0xFFFFFF),
+		 (try_end),
+		 (party_set_slot, "p_main_party", slot_party_prebattle_in_battle_count, ":new_total"),
+	   (try_end),	 
+		 
+       ]),
+    ]),
+	
+ ("prebattle_orders",0, mesh_note_window,[
+     (ti_on_presentation_load,
+       [(set_fixed_point_multiplier, 1000),
+        (assign, "$g_formation_group0_selected", 0),
+        (assign, "$g_formation_group1_selected", 0),
+        (assign, "$g_formation_group2_selected", 0),
+        (assign, "$g_formation_group3_selected", 0),
+        (assign, "$g_formation_group4_selected", 0),
+        (assign, "$g_formation_group5_selected", 0),
+        (assign, "$g_formation_group6_selected", 0),
+        (assign, "$g_formation_group7_selected", 0),
+        (assign, "$g_formation_group8_selected", 0),
+        (assign, "$g_presentation_obj_battle_but0", -1),
+        (assign, "$g_presentation_obj_battle_but1", -1),
+        (assign, "$g_presentation_obj_battle_but2", -1),
+        (assign, "$g_presentation_obj_battle_but3", -1),
+        (assign, "$g_presentation_obj_battle_but4", -1),
+        (assign, "$g_presentation_obj_battle_but5", -1),
+        (assign, "$g_presentation_obj_battle_but6", -1),
+        (assign, "$g_presentation_obj_battle_but7", -1),
+        (assign, "$g_presentation_obj_battle_but8", -1),
+        (str_clear, s7),   
+	
+	    (position_set_y, pos1, 700),
+        		
+		(create_text_overlay, "$g_presentation_credits_obj_2", "@Initial", tf_center_justify|tf_single_line|tf_with_outline),
+        (overlay_set_color, "$g_presentation_credits_obj_2", 0xFFAAAAAA),
+        (position_set_x, pos1, 225),
+        (overlay_set_position, "$g_presentation_credits_obj_2", pos1),
+        (create_text_overlay, "$g_presentation_credits_obj_3", "@Movement 1", tf_center_justify|tf_single_line|tf_with_outline),
+        (overlay_set_color, "$g_presentation_credits_obj_3", 0xFFAAAAAA),
+        (position_set_x, pos1, 357), #415; 400
+        (overlay_set_position, "$g_presentation_credits_obj_3", pos1),
+        (create_text_overlay, "$g_presentation_credits_obj_4", "@Movement 2", tf_center_justify|tf_single_line|tf_with_outline),
+        (overlay_set_color, "$g_presentation_credits_obj_4", 0xFFAAAAAA),
+        (position_set_x, pos1, 487), #590 ; 575
+        (overlay_set_position, "$g_presentation_credits_obj_4", pos1),
+		(create_text_overlay, "$g_presentation_credits_obj_5", "@Formation", tf_center_justify|tf_single_line|tf_with_outline),
+        (overlay_set_color, "$g_presentation_credits_obj_5", 0xFFAAAAAA),
+        (position_set_x, pos1, 610),
+        (overlay_set_position, "$g_presentation_credits_obj_5", pos1),
+		
+		(create_text_overlay, "$g_presentation_credits_obj_6", "@Attack", tf_center_justify|tf_single_line|tf_with_outline),
+        (overlay_set_color, "$g_presentation_credits_obj_6", 0xFFAAAAAA),
+        (position_set_x, pos1, 225),
+        (overlay_set_position, "$g_presentation_credits_obj_6", pos1),
+		(overlay_set_display, "$g_presentation_credits_obj_6", 0),
+		(create_text_overlay, "$g_presentation_credits_obj_7", "@Weapon Type", tf_center_justify|tf_single_line|tf_with_outline),
+        (overlay_set_color, "$g_presentation_credits_obj_7", 0xFFAAAAAA),
+        (position_set_x, pos1, 360), #390
+        (overlay_set_position, "$g_presentation_credits_obj_7", pos1),
+		(overlay_set_display, "$g_presentation_credits_obj_7", 0),
+		(create_text_overlay, "$g_presentation_credits_obj_8", "@Shield", tf_center_justify|tf_single_line|tf_with_outline),
+        (overlay_set_color, "$g_presentation_credits_obj_8", 0xFFAAAAAA),
+        (position_set_x, pos1, 485), #490
+        (overlay_set_position, "$g_presentation_credits_obj_8", pos1),
+		(overlay_set_display, "$g_presentation_credits_obj_8", 0),
+		(create_text_overlay, "$g_presentation_credits_obj_9", "@Skirmish", tf_center_justify|tf_single_line|tf_with_outline),
+        (overlay_set_color, "$g_presentation_credits_obj_9", 0xFFAAAAAA),
+        (position_set_x, pos1, 600), #590
+        (overlay_set_position, "$g_presentation_credits_obj_9", pos1),
+		(overlay_set_display, "$g_presentation_credits_obj_9", 0),
+
+        (assign, "$group0_has_troops", 0),
+        (assign, "$group1_has_troops", 0),
+        (assign, "$group2_has_troops", 0),
+        (assign, "$group3_has_troops", 0),
+        (assign, "$group4_has_troops", 0),
+        (assign, "$group5_has_troops", 0),
+        (assign, "$group6_has_troops", 0),
+        (assign, "$group7_has_troops", 0),
+        (assign, "$group8_has_troops", 0),
+        (party_get_num_companion_stacks, ":num_stacks", "p_main_party"),
+        (assign, "$num_classes", 0),
+		(try_for_range, ":troop_iterator", 0, ":num_stacks"),
+          (party_stack_get_troop_id, ":cur_troop_id", "p_main_party", ":troop_iterator"),
+          (troop_get_class, ":troop_class", ":cur_troop_id"),
+          (neq, "trp_player", ":cur_troop_id"),
+          (try_begin),
+            (eq, ":troop_class", 0),
+            (try_begin),
+              (neq, "$group0_has_troops", 1),
+              (val_add, "$num_classes", 1),
+            (try_end),
+            (assign, "$group0_has_troops", 1),
+          (else_try),
+            (eq, ":troop_class", 1),
+            (try_begin),
+              (neq, "$group1_has_troops", 1),
+              (val_add, "$num_classes", 1),
+            (try_end),
+            (assign, "$group1_has_troops", 1),
+          (else_try),
+            (eq, ":troop_class", 2),
+            (try_begin),
+              (neq, "$group2_has_troops", 1),
+              (val_add, "$num_classes", 1),
+            (try_end),
+            (assign, "$group2_has_troops", 1),
+          (else_try),
+            (eq, ":troop_class", 3),
+            (try_begin),
+              (neq, "$group3_has_troops", 1),
+              (val_add, "$num_classes", 1),
+            (try_end),
+            (assign, "$group3_has_troops", 1),
+          (else_try),
+            (eq, ":troop_class", 4),
+            (try_begin),
+              (neq, "$group4_has_troops", 1),
+              (val_add, "$num_classes", 1),
+            (try_end),
+            (assign, "$group4_has_troops", 1),
+          (else_try),
+            (eq, ":troop_class", 5),
+            (try_begin),
+              (neq, "$group5_has_troops", 1),
+              (val_add, "$num_classes", 1),
+            (try_end),
+            (assign, "$group5_has_troops", 1),
+          (else_try),
+            (eq, ":troop_class", 6),
+            (try_begin),
+              (neq, "$group6_has_troops", 1),
+              (val_add, "$num_classes", 1),
+            (try_end),
+            (assign, "$group6_has_troops", 1),
+          (else_try),
+            (eq, ":troop_class", 7),
+            (try_begin),
+              (neq, "$group7_has_troops", 1),
+              (val_add, "$num_classes", 1),
+            (try_end),
+            (assign, "$group7_has_troops", 1),
+          (else_try),
+            (eq, ":troop_class", 8),
+            (try_begin),
+              (neq, "$group8_has_troops", 1),
+              (val_add, "$num_classes", 1),
+            (try_end),
+            (assign, "$group8_has_troops", 1),
+          (try_end),
+        (try_end),
+
+        (assign, ":stat_position_x", 0),
+        (assign, ":stat_position_y", 653),
+        (assign, ":stat_position_check_x", 20),
+        (assign, ":stat_position_check_y", 662),
+        (assign, ":stat_position_name_x", 50),
+        (assign, ":stat_position_name_y", 660),
+		(assign, ":stat_position_order_y", 660),
+        (try_begin),
+          (eq, "$group0_has_troops", 1),
+          (create_image_button_overlay, "$g_presentation_obj_battle_but0", "mesh_white_plane", "mesh_white_plane"),
+          (val_add, ":stat_position_x", 15),
+		  (position_set_x, pos1, ":stat_position_x"),
+          (position_set_y, pos1, ":stat_position_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_but0", pos1),
+		  (val_add, ":stat_position_x", -15),
+          (val_add, ":stat_position_y", -40),
+
+          (position_set_x, pos1, 32650),
+          (position_set_y, pos1, 2000),
+          (overlay_set_size, "$g_presentation_obj_battle_but0", pos1),
+          (overlay_set_alpha, "$g_presentation_obj_battle_but0", 0),
+          (overlay_set_color, "$g_presentation_obj_battle_but0", 0xFFFF00),
+
+          (create_check_box_overlay, "$g_presentation_obj_battle_check0", "mesh_checkbox_off", "mesh_checkbox_on"),
+          (position_set_x, pos2, ":stat_position_check_x"),
+          (position_set_y, pos2, ":stat_position_check_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_check0", pos2),
+          (val_add, ":stat_position_check_y", -40),
+
+          (str_store_class_name, s7, 0),
+		  (create_text_overlay, "$g_presentation_obj_battle_name0", s7, 0),
+          (position_set_x, pos3, ":stat_position_name_x"),
+          (position_set_y, pos3, ":stat_position_name_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_name0", pos3),
+        
+          (val_add, ":stat_position_name_y", -40),
+
+          (create_text_overlay, "$g_presentation_but0_movement", "str_space", tf_center_justify), #Initial
+          (create_text_overlay, "$g_presentation_but0_riding", "str_space", tf_center_justify), #Position 1
+          (create_text_overlay, "$g_presentation_but0_weapon_usage", "str_space", tf_center_justify), #Position 2
+		  (create_text_overlay, reg(6), "str_space", tf_center_justify), #Formations
+		  
+		  (create_text_overlay, reg(15), "str_space", tf_center_justify), #Native Weapon
+		  (create_text_overlay, reg(24), "str_space", tf_center_justify), #Caba'drin Weapon
+		  (create_text_overlay, reg(33), "str_space", tf_center_justify), #Caba'drin Shield	 
+          (create_text_overlay, reg(42), "str_space", tf_center_justify), #Caba'drin Skirmish			  
+		  
+		  (position_set_x, pos1, 950),
+		  (position_set_y, pos1, 950),
+		  (overlay_set_size, "$g_presentation_but0_movement", pos1),
+		  (overlay_set_size, "$g_presentation_but0_riding", pos1),
+		  (overlay_set_size, "$g_presentation_but0_weapon_usage", pos1),
+		  (overlay_set_size, reg(6), pos1),
+		  (overlay_set_size, reg(15), pos1),
+		  (overlay_set_size, reg(24), pos1),
+		  (overlay_set_size, reg(33), pos1),
+		  (overlay_set_size, reg(42), pos1),
+		  
+		  (overlay_set_display, reg(15), 0),
+		  (overlay_set_display, reg(24), 0),
+		  (overlay_set_display, reg(33), 0),
+          (overlay_set_display, reg(42), 0),		  
+
+		  (position_set_y, pos1, ":stat_position_order_y"),
+          (position_set_x, pos1, 225), 
+          (overlay_set_position, "$g_presentation_but0_movement", pos1),
+          (position_set_x, pos1, 355), #350 ; 380 ; 400
+          (overlay_set_position, "$g_presentation_but0_riding", pos1),
+          (position_set_x, pos1, 485), #475 ; 500; 570
+          (overlay_set_position, "$g_presentation_but0_weapon_usage", pos1),
+		  (position_set_x, pos1, 605), #
+          (overlay_set_position, reg(6), pos1),
+		  
+		  (position_set_x, pos1, 225),
+          (overlay_set_position, reg(15), pos1),
+		  (position_set_x, pos1, 355), #350
+          (overlay_set_position, reg(24), pos1),
+          (position_set_x, pos1, 485), #475
+          (overlay_set_position, reg(33), pos1),
+		  (position_set_x, pos1, 605), #600  
+		  (overlay_set_position, reg(42), pos1),
+          (val_add, ":stat_position_order_y", -40),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_1", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_1", pos1),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_11", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_11", pos1),
+        (try_end),
+        (try_begin),
+          (eq, "$group1_has_troops", 1),
+          (create_image_button_overlay, "$g_presentation_obj_battle_but1", "mesh_white_plane", "mesh_white_plane"),
+		  (val_add, ":stat_position_x", 15),
+          (position_set_x, pos1, ":stat_position_x"),
+          (position_set_y, pos1, ":stat_position_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_but1", pos1),
+          (val_add, ":stat_position_y", -40),
+		  (val_add, ":stat_position_x", -15),
+
+          (position_set_x, pos1, 32650),
+          (position_set_y, pos1, 2000),
+          (overlay_set_size, "$g_presentation_obj_battle_but1", pos1),
+          (overlay_set_alpha, "$g_presentation_obj_battle_but1", 0),
+          (overlay_set_color, "$g_presentation_obj_battle_but1", 0xFFFF00),
+
+          (create_check_box_overlay, "$g_presentation_obj_battle_check1", "mesh_checkbox_off", "mesh_checkbox_on"),
+          (position_set_x, pos2, ":stat_position_check_x"),
+          (position_set_y, pos2, ":stat_position_check_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_check1", pos2),
+          (val_add, ":stat_position_check_y", -40),        
+
+		  (str_store_class_name, s7, 1),
+          (create_text_overlay, "$g_presentation_obj_battle_name1", s7, 0),
+          (position_set_x, pos3, ":stat_position_name_x"),
+          (position_set_y, pos3, ":stat_position_name_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_name1", pos3),
+          (val_add, ":stat_position_name_y", -40),
+
+          (create_text_overlay, "$g_presentation_but1_movement", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but1_riding", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but1_weapon_usage", "str_space", tf_center_justify),
+		  (create_text_overlay, reg(7), "str_space", tf_center_justify), #Formations
+		  
+		  (create_text_overlay, reg(16), "str_space", tf_center_justify), #Native Weapon
+		  (create_text_overlay, reg(25), "str_space", tf_center_justify), #Caba'drin Weapon
+		  (create_text_overlay, reg(34), "str_space", tf_center_justify), #Caba'drin Shield	 
+          (create_text_overlay, reg(43), "str_space", tf_center_justify), #Caba'drin Skirmish	
+		  
+		  (position_set_x, pos1, 950),
+		  (position_set_y, pos1, 950),
+		  (overlay_set_size, "$g_presentation_but1_movement", pos1),
+		  (overlay_set_size, "$g_presentation_but1_riding", pos1),
+		  (overlay_set_size, "$g_presentation_but1_weapon_usage", pos1),
+		  (overlay_set_size, reg(7), pos1),
+		  (overlay_set_size, reg(16), pos1),
+		  (overlay_set_size, reg(25), pos1),
+		  (overlay_set_size, reg(34), pos1),
+		  (overlay_set_size, reg(43), pos1),
+		  
+		  (overlay_set_display, reg(16), 0),
+		  (overlay_set_display, reg(25), 0),
+		  (overlay_set_display, reg(34), 0),
+          (overlay_set_display, reg(43), 0),
+
+		  (position_set_y, pos1, ":stat_position_order_y"),
+          (position_set_x, pos1, 225),
+          (overlay_set_position, "$g_presentation_but1_movement", pos1),
+          (position_set_x, pos1, 355), #350 ; 380 ; 400
+          (overlay_set_position, "$g_presentation_but1_riding", pos1),
+          (position_set_x, pos1, 485), #475 ; 500 ; 570
+          (overlay_set_position, "$g_presentation_but1_weapon_usage", pos1),
+		  (position_set_x, pos1, 605),
+          (overlay_set_position, reg(7), pos1),
+		  
+		  (position_set_x, pos1, 225),
+          (overlay_set_position, reg(16), pos1),
+		  (position_set_x, pos1, 355), #350
+          (overlay_set_position, reg(25), pos1),
+          (position_set_x, pos1, 485), #475
+          (overlay_set_position, reg(34), pos1),
+		  (position_set_x, pos1, 605), #600  
+		  (overlay_set_position, reg(43), pos1),
+          (val_add, ":stat_position_order_y", -40),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_2", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_2", pos1),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_12", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_12", pos1),
+        (try_end),
+        (try_begin),
+          (eq, "$group2_has_troops", 1),
+          (create_image_button_overlay, "$g_presentation_obj_battle_but2", "mesh_white_plane", "mesh_white_plane"),
+		  (val_add, ":stat_position_x", 15),
+          (position_set_x, pos1, ":stat_position_x"),
+          (position_set_y, pos1, ":stat_position_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_but2", pos1),
+          (val_add, ":stat_position_y", -40),
+		  (val_add, ":stat_position_x", -15),
+
+          (position_set_x, pos1, 32650),
+          (position_set_y, pos1, 2000),
+          (overlay_set_size, "$g_presentation_obj_battle_but2", pos1),
+          (overlay_set_alpha, "$g_presentation_obj_battle_but2", 0),
+          (overlay_set_color, "$g_presentation_obj_battle_but2", 0xFFFF00),
+
+          (create_check_box_overlay, "$g_presentation_obj_battle_check2", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (position_set_x, pos2, ":stat_position_check_x"),
+          (position_set_y, pos2, ":stat_position_check_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_check2", pos2),
+          (val_add, ":stat_position_check_y", -40),        
+
+		  (str_store_class_name, s7, 2),
+          (create_text_overlay, "$g_presentation_obj_battle_name2", s7, 0),
+          (position_set_x, pos3, ":stat_position_name_x"),
+          (position_set_y, pos3, ":stat_position_name_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_name2", pos3),
+          (val_add, ":stat_position_name_y", -40),
+
+          (create_text_overlay, "$g_presentation_but2_movement", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but2_riding", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but2_weapon_usage", "str_space", tf_center_justify),
+		  (create_text_overlay, reg(8), "str_space", tf_center_justify), #Formations
+		  
+		  (create_text_overlay, reg(17), "str_space", tf_center_justify), #Native Weapon
+		  (create_text_overlay, reg(26), "str_space", tf_center_justify), #Caba'drin Weapon
+		  (create_text_overlay, reg(35), "str_space", tf_center_justify), #Caba'drin Shield	 
+          (create_text_overlay, reg(44), "str_space", tf_center_justify), #Caba'drin Skirmish	
+		  
+		  (position_set_x, pos1, 950),
+		  (position_set_y, pos1, 950),
+		  (overlay_set_size, "$g_presentation_but2_movement", pos1),
+		  (overlay_set_size, "$g_presentation_but2_riding", pos1),
+		  (overlay_set_size, "$g_presentation_but2_weapon_usage", pos1),
+		  (overlay_set_size, reg(8), pos1),
+		  (overlay_set_size, reg(17), pos1),
+		  (overlay_set_size, reg(26), pos1),
+		  (overlay_set_size, reg(35), pos1),
+		  (overlay_set_size, reg(44), pos1),
+		  
+		  (overlay_set_display, reg(17), 0),
+		  (overlay_set_display, reg(26), 0),
+		  (overlay_set_display, reg(35), 0),
+          (overlay_set_display, reg(44), 0),
+		  
+		  (position_set_y, pos1, ":stat_position_order_y"),
+          (position_set_x, pos1, 225),
+          (overlay_set_position, "$g_presentation_but2_movement", pos1),
+          (position_set_x, pos1, 355), #350 ; 380
+          (overlay_set_position, "$g_presentation_but2_riding", pos1),
+          (position_set_x, pos1, 485), #475 ; 500
+          (overlay_set_position, "$g_presentation_but2_weapon_usage", pos1),
+		  (position_set_x, pos1, 605),
+          (overlay_set_position, reg(8), pos1),
+		  
+		  (position_set_x, pos1, 225),
+          (overlay_set_position, reg(17), pos1),
+		  (position_set_x, pos1, 355), #350
+          (overlay_set_position, reg(26), pos1),
+          (position_set_x, pos1, 485), #475
+          (overlay_set_position, reg(35), pos1),
+		  (position_set_x, pos1, 605), #600 
+		  (overlay_set_position, reg(44), pos1),
+          (val_add, ":stat_position_order_y", -40),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_3", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_3", pos1),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_13", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_13", pos1),
+        (try_end),
+        (try_begin),
+          (eq, "$group3_has_troops", 1),
+          (create_image_button_overlay, "$g_presentation_obj_battle_but3", "mesh_white_plane", "mesh_white_plane"),
+		  (val_add, ":stat_position_x", 15),
+          (position_set_x, pos1, ":stat_position_x"),
+          (position_set_y, pos1, ":stat_position_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_but3", pos1),
+          (val_add, ":stat_position_y", -40),
+		  (val_add, ":stat_position_x", -15),
+
+          (position_set_x, pos1, 32650),
+          (position_set_y, pos1, 2000),
+          (overlay_set_size, "$g_presentation_obj_battle_but3", pos1),
+          (overlay_set_alpha, "$g_presentation_obj_battle_but3", 0),
+          (overlay_set_color, "$g_presentation_obj_battle_but3", 0xFFFF00),
+
+          (create_check_box_overlay, "$g_presentation_obj_battle_check3", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (position_set_x, pos2, ":stat_position_check_x"),
+          (position_set_y, pos2, ":stat_position_check_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_check3", pos2),
+          (val_add, ":stat_position_check_y", -40),        
+
+		  (str_store_class_name, s7, 3),
+          (create_text_overlay, "$g_presentation_obj_battle_name3", s7, 0),
+          (position_set_x, pos3, ":stat_position_name_x"),
+          (position_set_y, pos3, ":stat_position_name_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_name3", pos3),
+          (val_add, ":stat_position_name_y", -40),
+
+          (create_text_overlay, "$g_presentation_but3_movement", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but3_riding", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but3_weapon_usage", "str_space", tf_center_justify),
+		  (create_text_overlay, reg(9), "str_space", tf_center_justify), #Formations
+		  
+          (create_text_overlay, reg(18), "str_space", tf_center_justify), #Native Weapon
+		  (create_text_overlay, reg(27), "str_space", tf_center_justify), #Caba'drin Weapon
+		  (create_text_overlay, reg(36), "str_space", tf_center_justify), #Caba'drin Shield	 
+          (create_text_overlay, reg(45), "str_space", tf_center_justify), #Caba'drin Skirmish			  
+
+          (position_set_x, pos1, 950),
+		  (position_set_y, pos1, 950),
+		  (overlay_set_size, "$g_presentation_but3_movement", pos1),
+		  (overlay_set_size, "$g_presentation_but3_riding", pos1),
+		  (overlay_set_size, "$g_presentation_but3_weapon_usage", pos1),
+		  (overlay_set_size, reg(9), pos1),
+		  (overlay_set_size, reg(18), pos1),
+          (overlay_set_size, reg(27), pos1),
+		  (overlay_set_size, reg(36), pos1),
+		  (overlay_set_size, reg(45), pos1),
+		  
+		  (overlay_set_display, reg(18), 0),
+		  (overlay_set_display, reg(27), 0),
+		  (overlay_set_display, reg(36), 0),
+          (overlay_set_display, reg(45), 0),		  
+		  
+		  (position_set_y, pos1, ":stat_position_order_y"),
+          (position_set_x, pos1, 225),
+          (overlay_set_position, "$g_presentation_but3_movement", pos1),
+          (position_set_x, pos1, 355), #350 ; 380
+          (overlay_set_position, "$g_presentation_but3_riding", pos1),
+          (position_set_x, pos1, 485), #475 ; 500
+          (overlay_set_position, "$g_presentation_but3_weapon_usage", pos1),
+		  (position_set_x, pos1, 605),
+          (overlay_set_position, reg(9), pos1),
+		  
+		  (position_set_x, pos1, 225),
+          (overlay_set_position, reg(18), pos1),
+		  (position_set_x, pos1, 355), #350
+          (overlay_set_position, reg(27), pos1),
+          (position_set_x, pos1, 485), #475
+          (overlay_set_position, reg(36), pos1),
+		  (position_set_x, pos1, 605), #600 
+		  (overlay_set_position, reg(45), pos1),
+          (val_add, ":stat_position_order_y", -40),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_4", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_4", pos1),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_14", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_14", pos1),
+        (try_end),
+        (try_begin),
+          (eq, "$group4_has_troops", 1),
+          (create_image_button_overlay, "$g_presentation_obj_battle_but4", "mesh_white_plane", "mesh_white_plane"),
+		  (val_add, ":stat_position_x", 15),
+          (position_set_x, pos1, ":stat_position_x"),
+          (position_set_y, pos1, ":stat_position_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_but4", pos1),
+          (val_add, ":stat_position_y", -40),
+		  (val_add, ":stat_position_x", -15),
+
+          (position_set_x, pos1, 32650),
+          (position_set_y, pos1, 2000),
+          (overlay_set_size, "$g_presentation_obj_battle_but4", pos1),
+          (overlay_set_alpha, "$g_presentation_obj_battle_but4", 0),
+          (overlay_set_color, "$g_presentation_obj_battle_but4", 0xFFFF00),
+
+          (create_check_box_overlay, "$g_presentation_obj_battle_check4", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (position_set_x, pos2, ":stat_position_check_x"),
+          (position_set_y, pos2, ":stat_position_check_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_check4", pos2),
+          (val_add, ":stat_position_check_y", -40),        
+
+		  (str_store_class_name, s7, 4), 
+          (create_text_overlay, "$g_presentation_obj_battle_name4", s7, 0),
+          (position_set_x, pos3, ":stat_position_name_x"),
+          (position_set_y, pos3, ":stat_position_name_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_name4", pos3),
+          (val_add, ":stat_position_name_y", -40),
+        
+          (create_text_overlay, "$g_presentation_but4_movement", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but4_riding", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but4_weapon_usage", "str_space", tf_center_justify),
+		  (create_text_overlay, reg(10), "str_space", tf_center_justify), #Formations
+		  
+		  (create_text_overlay, reg(19), "str_space", tf_center_justify), #Native Weapon
+		  (create_text_overlay, reg(28), "str_space", tf_center_justify), #Caba'drin Weapon
+		  (create_text_overlay, reg(37), "str_space", tf_center_justify), #Caba'drin Shield	 
+          (create_text_overlay, reg(46), "str_space", tf_center_justify), #Caba'drin Skirmish	
+		  
+		  (position_set_x, pos1, 950),
+		  (position_set_y, pos1, 950),
+		  (overlay_set_size, "$g_presentation_but4_movement", pos1),
+		  (overlay_set_size, "$g_presentation_but4_riding", pos1),
+		  (overlay_set_size, "$g_presentation_but4_weapon_usage", pos1),
+		  (overlay_set_size, reg(10), pos1),
+		  (overlay_set_size, reg(19), pos1),
+		  (overlay_set_size, reg(28), pos1),
+		  (overlay_set_size, reg(37), pos1),
+		  (overlay_set_size, reg(46), pos1),
+		  
+		  (overlay_set_display, reg(19), 0),
+		  (overlay_set_display, reg(28), 0),
+		  (overlay_set_display, reg(37), 0),
+          (overlay_set_display, reg(46), 0),
+		  
+		  (position_set_y, pos1, ":stat_position_order_y"),
+          (position_set_x, pos1, 225),
+          (overlay_set_position, "$g_presentation_but4_movement", pos1),
+          (position_set_x, pos1, 355), #350 ; 380
+          (overlay_set_position, "$g_presentation_but4_riding", pos1),
+          (position_set_x, pos1, 485), #475 ; 500
+          (overlay_set_position, "$g_presentation_but4_weapon_usage", pos1),
+		  (position_set_x, pos1, 605),
+          (overlay_set_position, reg(10), pos1),
+		  
+		  (position_set_x, pos1, 225),
+          (overlay_set_position, reg(19), pos1),
+		  (position_set_x, pos1, 355), #350
+          (overlay_set_position, reg(28), pos1),
+          (position_set_x, pos1, 485), #475
+          (overlay_set_position, reg(37), pos1),
+		  (position_set_x, pos1, 605), #600 
+		  (overlay_set_position, reg(46), pos1),
+          (val_add, ":stat_position_order_y", -40),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_5", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_5", pos1),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_15", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_15", pos1),
+        (try_end),
+        (try_begin),
+          (eq, "$group5_has_troops", 1),
+          (create_image_button_overlay, "$g_presentation_obj_battle_but5", "mesh_white_plane", "mesh_white_plane"),
+		  (val_add, ":stat_position_x", 15),
+          (position_set_x, pos1, ":stat_position_x"),
+          (position_set_y, pos1, ":stat_position_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_but5", pos1),
+          (val_add, ":stat_position_y", -40),
+		  (val_add, ":stat_position_x", -15),
+
+          (position_set_x, pos1, 32650),
+          (position_set_y, pos1, 2000),
+          (overlay_set_size, "$g_presentation_obj_battle_but5", pos1),
+          (overlay_set_alpha, "$g_presentation_obj_battle_but5", 0),
+          (overlay_set_color, "$g_presentation_obj_battle_but5", 0xFFFF00),
+
+          (create_check_box_overlay, "$g_presentation_obj_battle_check5", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (position_set_x, pos2, ":stat_position_check_x"),
+          (position_set_y, pos2, ":stat_position_check_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_check5", pos2),
+          (val_add, ":stat_position_check_y", -40),        
+
+		  (str_store_class_name, s7, 5),
+          (create_text_overlay, "$g_presentation_obj_battle_name5", s7, 0),
+          (position_set_x, pos3, ":stat_position_name_x"),
+          (position_set_y, pos3, ":stat_position_name_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_name5", pos3),
+          (val_add, ":stat_position_name_y", -40),
+
+          (create_text_overlay, "$g_presentation_but5_movement", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but5_riding", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but5_weapon_usage", "str_space", tf_center_justify),
+		  (create_text_overlay, reg(11), "str_space", tf_center_justify), #Formations
+		  
+		  (create_text_overlay, reg(20), "str_space", tf_center_justify), #Native Weapon
+		  (create_text_overlay, reg(29), "str_space", tf_center_justify), #Caba'drin Weapon
+		  (create_text_overlay, reg(38), "str_space", tf_center_justify), #Caba'drin Shield	 
+          (create_text_overlay, reg(47), "str_space", tf_center_justify), #Caba'drin Skirmish	
+		  
+		  (position_set_x, pos1, 950),
+		  (position_set_y, pos1, 950),
+		  (overlay_set_size, "$g_presentation_but5_movement", pos1),
+		  (overlay_set_size, "$g_presentation_but5_riding", pos1),
+		  (overlay_set_size, "$g_presentation_but5_weapon_usage", pos1),
+          (overlay_set_size, reg(11), pos1),		 
+		  (overlay_set_size, reg(20), pos1),
+		  (overlay_set_size, reg(29), pos1),
+		  (overlay_set_size, reg(38), pos1),
+		  (overlay_set_size, reg(47), pos1),
+		  
+		  (overlay_set_display, reg(20), 0),
+		  (overlay_set_display, reg(29), 0),
+		  (overlay_set_display, reg(38), 0),
+          (overlay_set_display, reg(47), 0),
+		  
+		  (position_set_y, pos1, ":stat_position_order_y"),
+          (position_set_x, pos1, 225),
+          (overlay_set_position, "$g_presentation_but5_movement", pos1),
+          (position_set_x, pos1, 355), #350 ; 380
+          (overlay_set_position, "$g_presentation_but5_riding", pos1),
+          (position_set_x, pos1, 485), #475 ; 500
+          (overlay_set_position, "$g_presentation_but5_weapon_usage", pos1),
+		  (position_set_x, pos1, 605),
+          (overlay_set_position, reg(11), pos1),
+		  
+		  (position_set_x, pos1, 225),
+          (overlay_set_position, reg(20), pos1),
+		  (position_set_x, pos1, 355), #350
+          (overlay_set_position, reg(29), pos1),
+          (position_set_x, pos1, 485), #475
+          (overlay_set_position, reg(38), pos1),
+		  (position_set_x, pos1, 605), #600 
+		  (overlay_set_position, reg(47), pos1),
+          (val_add, ":stat_position_order_y", -40),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_6", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_6", pos1),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_16", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_16", pos1),
+        (try_end),
+        (try_begin),
+          (eq, "$group6_has_troops", 1),
+          (create_image_button_overlay, "$g_presentation_obj_battle_but6", "mesh_white_plane", "mesh_white_plane"),
+		  (val_add, ":stat_position_x", 15),
+          (position_set_x, pos1, ":stat_position_x"),
+          (position_set_y, pos1, ":stat_position_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_but6", pos1),
+          (val_add, ":stat_position_y", -40),
+		  (val_add, ":stat_position_x", -15),
+
+          (position_set_x, pos1, 32650),
+          (position_set_y, pos1, 2000),
+          (overlay_set_size, "$g_presentation_obj_battle_but6", pos1),
+          (overlay_set_alpha, "$g_presentation_obj_battle_but6", 0),
+          (overlay_set_color, "$g_presentation_obj_battle_but6", 0xFFFF00),
+
+          (create_check_box_overlay, "$g_presentation_obj_battle_check6", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (position_set_x, pos2, ":stat_position_check_x"),
+          (position_set_y, pos2, ":stat_position_check_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_check6", pos2),
+          (val_add, ":stat_position_check_y", -40),        
+
+		  (str_store_class_name, s7, 6), 
+          (create_text_overlay, "$g_presentation_obj_battle_name6", s7, 0),
+          (position_set_x, pos3, ":stat_position_name_x"),
+          (position_set_y, pos3, ":stat_position_name_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_name6", pos3),
+          (val_add, ":stat_position_name_y", -40),
+
+          (create_text_overlay, "$g_presentation_but6_movement", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but6_riding", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but6_weapon_usage", "str_space", tf_center_justify),
+		  (create_text_overlay, reg(12), "str_space", tf_center_justify), #Formations
+		  
+		  (create_text_overlay, reg(21), "str_space", tf_center_justify), #Native Weapon
+		  (create_text_overlay, reg(30), "str_space", tf_center_justify), #Caba'drin Weapon
+		  (create_text_overlay, reg(39), "str_space", tf_center_justify), #Caba'drin Shield	 
+          (create_text_overlay, reg(48), "str_space", tf_center_justify), #Caba'drin Skirmish	
+
+		  (position_set_x, pos1, 950),
+		  (position_set_y, pos1, 950),
+		  (overlay_set_size, "$g_presentation_but6_movement", pos1),
+		  (overlay_set_size, "$g_presentation_but6_riding", pos1),
+		  (overlay_set_size, "$g_presentation_but6_weapon_usage", pos1),
+		  (overlay_set_size, reg(12), pos1),
+		  (overlay_set_size, reg(21), pos1),
+		  (overlay_set_size, reg(30), pos1),
+		  (overlay_set_size, reg(39), pos1),
+		  (overlay_set_size, reg(48), pos1),
+		  
+		  (overlay_set_display, reg(21), 0),
+		  (overlay_set_display, reg(30), 0),
+		  (overlay_set_display, reg(39), 0),
+          (overlay_set_display, reg(48), 0),
+		  
+		  (position_set_y, pos1, ":stat_position_order_y"),
+          (position_set_x, pos1, 225),
+          (overlay_set_position, "$g_presentation_but6_movement", pos1),
+          (position_set_x, pos1, 355), #350 ; 380
+          (overlay_set_position, "$g_presentation_but6_riding", pos1),
+          (position_set_x, pos1, 485), #475 ; 500
+          (overlay_set_position, "$g_presentation_but6_weapon_usage", pos1),
+		  (position_set_x, pos1, 605),
+          (overlay_set_position, reg(12), pos1),
+		  
+		  (position_set_x, pos1, 225),
+          (overlay_set_position, reg(21), pos1),
+		  (position_set_x, pos1, 355), #350
+          (overlay_set_position, reg(30), pos1),
+          (position_set_x, pos1, 485), #475
+          (overlay_set_position, reg(39), pos1),
+		  (position_set_x, pos1, 605), #600 
+		  (overlay_set_position, reg(48), pos1),
+          (val_add, ":stat_position_order_y", -40),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_7", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_7", pos1),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_17", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_17", pos1),
+        (try_end),
+        (try_begin),
+          (eq, "$group7_has_troops", 1),
+          (create_image_button_overlay, "$g_presentation_obj_battle_but7", "mesh_white_plane", "mesh_white_plane"),
+		  (val_add, ":stat_position_x", 15),
+          (position_set_x, pos1, ":stat_position_x"),
+          (position_set_y, pos1, ":stat_position_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_but7", pos1),
+          (val_add, ":stat_position_y", -40),
+		  (val_add, ":stat_position_x", -15),
+
+          (position_set_x, pos1, 32650),
+          (position_set_y, pos1, 2000),
+          (overlay_set_size, "$g_presentation_obj_battle_but7", pos1),
+          (overlay_set_alpha, "$g_presentation_obj_battle_but7", 0),
+          (overlay_set_color, "$g_presentation_obj_battle_but7", 0xFFFF00),
+
+          (create_check_box_overlay, "$g_presentation_obj_battle_check7", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (position_set_x, pos2, ":stat_position_check_x"),
+          (position_set_y, pos2, ":stat_position_check_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_check7", pos2),
+          (val_add, ":stat_position_check_y", -40),        
+
+		  (str_store_class_name, s7, 7),
+          (create_text_overlay, "$g_presentation_obj_battle_name7", s7, 0),
+          (position_set_x, pos3, ":stat_position_name_x"),
+          (position_set_y, pos3, ":stat_position_name_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_name7", pos3),
+          (val_add, ":stat_position_name_y", -40),
+
+          (create_text_overlay, "$g_presentation_but7_movement", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but7_riding", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but7_weapon_usage", "str_space", tf_center_justify),
+		  (create_text_overlay, reg(13), "str_space", tf_center_justify), #Formations
+		  
+		  (create_text_overlay, reg(22), "str_space", tf_center_justify), #Native Weapon
+		  (create_text_overlay, reg(31), "str_space", tf_center_justify), #Caba'drin Weapon
+		  (create_text_overlay, reg(40), "str_space", tf_center_justify), #Caba'drin Shield	 
+          (create_text_overlay, reg(49), "str_space", tf_center_justify), #Caba'drin Skirmish	
+		  
+		  (position_set_x, pos1, 950),
+		  (position_set_y, pos1, 950),
+		  (overlay_set_size, "$g_presentation_but7_movement", pos1),
+		  (overlay_set_size, "$g_presentation_but7_riding", pos1),
+		  (overlay_set_size, "$g_presentation_but7_weapon_usage", pos1),
+		  (overlay_set_size, reg(13), pos1),
+		  (overlay_set_size, reg(22), pos1),
+          (overlay_set_size, reg(31), pos1),
+		  (overlay_set_size, reg(40), pos1),
+		  (overlay_set_size, reg(49), pos1),
+		  
+		  (overlay_set_display, reg(22), 0),
+		  (overlay_set_display, reg(31), 0),
+		  (overlay_set_display, reg(40), 0),
+          (overlay_set_display, reg(49), 0),		  
+		  
+		  (position_set_y, pos1, ":stat_position_order_y"),
+          (position_set_x, pos1, 225),
+          (overlay_set_position, "$g_presentation_but7_movement", pos1),
+          (position_set_x, pos1, 355), #350 ; 380
+          (overlay_set_position, "$g_presentation_but7_riding", pos1),
+          (position_set_x, pos1, 485), #475 ; 500
+          (overlay_set_position, "$g_presentation_but7_weapon_usage", pos1),
+		  (position_set_x, pos1, 605), #475 ; 500
+          (overlay_set_position, reg(13), pos1),
+		  
+		  (position_set_x, pos1, 225),
+          (overlay_set_position, reg(22), pos1),
+		  (position_set_x, pos1, 355), #350
+          (overlay_set_position, reg(31), pos1),
+          (position_set_x, pos1, 485), #475
+          (overlay_set_position, reg(40), pos1),
+		  (position_set_x, pos1, 605), #600 
+		  (overlay_set_position, reg(49), pos1),
+          (val_add, ":stat_position_order_y", -40),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_8", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_8", pos1),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_18", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_18", pos1),
+        (try_end),
+        (try_begin),
+          (eq, "$group8_has_troops", 1),
+          (create_image_button_overlay, "$g_presentation_obj_battle_but8", "mesh_white_plane", "mesh_white_plane"),
+		  (val_add, ":stat_position_x", 15),
+          (position_set_x, pos1, ":stat_position_x"),
+          (position_set_y, pos1, ":stat_position_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_but8", pos1),
+          (val_add, ":stat_position_y", -40),
+		  (val_add, ":stat_position_x", -15),
+
+          (position_set_x, pos1, 32650),
+          (position_set_y, pos1, 2000),
+          (overlay_set_size, "$g_presentation_obj_battle_but8", pos1),
+          (overlay_set_alpha, "$g_presentation_obj_battle_but8", 0),
+          (overlay_set_color, "$g_presentation_obj_battle_but8", 0xFFFF00),
+
+          (create_check_box_overlay, "$g_presentation_obj_battle_check8", "mesh_checkbox_off", "mesh_checkbox_on"),          
+          (position_set_x, pos2, ":stat_position_check_x"),
+          (position_set_y, pos2, ":stat_position_check_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_check8", pos2),
+          (val_add, ":stat_position_check_y", -40),        
+
+		  (str_store_class_name, s7, 8),
+          (create_text_overlay, "$g_presentation_obj_battle_name8", s7, 0),
+          (position_set_x, pos3, ":stat_position_name_x"),
+          (position_set_y, pos3, ":stat_position_name_y"),
+          (overlay_set_position, "$g_presentation_obj_battle_name8", pos3),
+          (val_add, ":stat_position_name_y", -40),
+
+          (create_text_overlay, "$g_presentation_but8_movement", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but8_riding", "str_space", tf_center_justify),
+          (create_text_overlay, "$g_presentation_but8_weapon_usage", "str_space", tf_center_justify),
+		  (create_text_overlay, reg(14), "str_space", tf_center_justify), #Formations
+		  
+		  (create_text_overlay, reg(23), "str_space", tf_center_justify), #Native Weapon
+		  (create_text_overlay, reg(32), "str_space", tf_center_justify), #Caba'drin Weapon
+		  (create_text_overlay, reg(41), "str_space", tf_center_justify), #Caba'drin Shield	 
+          (create_text_overlay, reg(50), "str_space", tf_center_justify), #Caba'drin Skirmish	
+		  
+		  (position_set_x, pos1, 950),
+		  (position_set_y, pos1, 950),
+		  (overlay_set_size, "$g_presentation_but8_movement", pos1),
+		  (overlay_set_size, "$g_presentation_but8_riding", pos1),
+		  (overlay_set_size, "$g_presentation_but8_weapon_usage", pos1),
+		  (overlay_set_size, reg(14), pos1),
+		  (overlay_set_size, reg(23), pos1),
+          (overlay_set_size, reg(32), pos1),
+		  (overlay_set_size, reg(41), pos1),
+		  (overlay_set_size, reg(50), pos1),
+		  
+		  (overlay_set_display, reg(23), 0),
+		  (overlay_set_display, reg(32), 0),
+		  (overlay_set_display, reg(41), 0),
+          (overlay_set_display, reg(50), 0),		  
+		  
+		  (position_set_y, pos1, ":stat_position_order_y"),
+          (position_set_x, pos1, 225),
+          (overlay_set_position, "$g_presentation_but8_movement", pos1),
+          (position_set_x, pos1, 355), #350 ; 380
+          (overlay_set_position, "$g_presentation_but8_riding", pos1),
+          (position_set_x, pos1, 485), #475 ; 500
+          (overlay_set_position, "$g_presentation_but8_weapon_usage", pos1),
+		  (position_set_x, pos1, 605),
+          (overlay_set_position, reg(14), pos1),
+		  
+		  (position_set_x, pos1, 225),
+          (overlay_set_position, reg(23), pos1),
+		  (position_set_x, pos1, 355), #350
+          (overlay_set_position, reg(32), pos1),
+          (position_set_x, pos1, 485), #475
+          (overlay_set_position, reg(41), pos1),
+		  (position_set_x, pos1, 605), #600 
+		  (overlay_set_position, reg(50), pos1),
+          (val_add, ":stat_position_order_y", -40),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_9", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_9", pos1),
+		  
+		  (create_text_overlay, "$g_presentation_obj_custom_battle_designer_19", "str_space"),
+		  #(overlay_set_color, "$g_presentation_credits_obj_1", 0xAAAAAA),
+		  (position_set_x, pos1, 600),
+          (position_set_y, pos1, 600),
+          (overlay_set_size, "$g_presentation_obj_custom_battle_designer_19", pos1),
+        (try_end),
+		
+		(assign, ":y_position_for_order_buttons", 640),
+        (assign, ":addition_y_position", "$num_classes"),
+        (val_mul, ":addition_y_position", -40),
+        (val_add, ":y_position_for_order_buttons", ":addition_y_position"),
+		(val_sub, ":y_position_for_order_buttons", 50),
+
+        (create_listbox_overlay, "$g_presentation_obj_battle_10", "str_space", 0), #Positioning
+        (create_listbox_overlay, "$g_presentation_obj_battle_11", "str_space", 0), #Movement
+        (create_listbox_overlay, "$g_presentation_obj_battle_12", "str_space", 0), #Duplicate movement
+		(create_listbox_overlay, "$g_presentation_obj_battle_17", "str_space", 0), #Formations
+        (create_listbox_overlay, "$g_presentation_obj_battle_13", "str_space", 0), #Native Weapon
+		(create_listbox_overlay, "$g_presentation_obj_battle_14", "str_space", 0), #Caba'drin Weapon Type
+		(create_listbox_overlay, "$g_presentation_obj_battle_15", "str_space", 0), #Caba'drin Shield
+		(create_listbox_overlay, "$g_presentation_obj_battle_16", "str_space", 0), #Caba'drin Skirmish
+        
+        (overlay_add_item, "$g_presentation_obj_battle_10", "@Stand Ground"),
+        (overlay_add_item, "$g_presentation_obj_battle_10", "@Charge"),
+        (overlay_add_item, "$g_presentation_obj_battle_10", "@Follow Me"),
+        (overlay_add_item, "$g_presentation_obj_battle_10", "@Hold Position"),
+		(overlay_add_item, "$g_presentation_obj_battle_10", "@None"),
+       
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 600),
+        (overlay_set_size, "$g_presentation_obj_battle_10", pos1),
+
+        (position_set_x, pos1, 170),
+        (position_set_y, pos1, ":y_position_for_order_buttons"),
+        (overlay_set_position, "$g_presentation_obj_battle_10", pos1),
+		(overlay_set_color, "$g_presentation_obj_battle_10", 0xFF0000),
+        (overlay_set_alpha, "$g_presentation_obj_battle_10", 0x60),
+        (overlay_set_val, "$g_presentation_obj_battle_10", 4),
+		
+
+        (overlay_add_item, "$g_presentation_obj_battle_11", "@Dismount"),
+        (overlay_add_item, "$g_presentation_obj_battle_11", "@Mount"),
+		(overlay_add_item, "$g_presentation_obj_battle_11", "@Spread Out"),
+        (overlay_add_item, "$g_presentation_obj_battle_11", "@Stand Closer"),
+        (overlay_add_item, "$g_presentation_obj_battle_11", "@Back 10"),
+        (overlay_add_item, "$g_presentation_obj_battle_11", "@Forward 10"),
+		(overlay_add_item, "$g_presentation_obj_battle_11", "@None"),
+        
+        (position_set_x, pos1, 500), #500
+        (position_set_y, pos1, 600),
+        (overlay_set_size, "$g_presentation_obj_battle_11", pos1),
+
+        (position_set_x, pos1, 305), #290 ; 320 ; 340
+		(val_add, ":y_position_for_order_buttons", -35),
+        (position_set_y, pos1, ":y_position_for_order_buttons"),
+        (overlay_set_position, "$g_presentation_obj_battle_11", pos1),
+        (overlay_set_color, "$g_presentation_obj_battle_11", 0xFF6600),
+        (overlay_set_alpha, "$g_presentation_obj_battle_11", 0x60),
+        (overlay_set_val, "$g_presentation_obj_battle_11", 6),
+
+		(val_add, ":y_position_for_order_buttons", -50),		
+		(create_number_box_overlay, reg(51), 1, 5), #Repeat 1
+		(create_number_box_overlay, reg(52), 1, 5), #Repeat 1
+		(overlay_set_val, reg(51), 1),
+		(overlay_set_val, reg(52), 1),
+		(position_set_x, pos1, 320), #315 ; 355
+        (position_set_y, pos1, ":y_position_for_order_buttons"),
+		(overlay_set_position, reg(51), pos1),		
+		(position_set_x, pos1, 452), #437 ; 520
+		(overlay_set_position, reg(52), pos1),
+		(assign, reg53, 0), #Repeat 1 holder
+		(assign, reg54, 0), #Repeat 2 holder
+		
+		(create_text_overlay, reg0, "@Repeat x"),
+		(position_set_x, pos1, 900),
+		(position_set_y, pos1, 900),
+		(overlay_set_size, reg0, pos1),
+		(position_set_x, pos1, 295), #285 ; 325
+		(val_add, ":y_position_for_order_buttons", 25),
+		(position_set_y, pos1, ":y_position_for_order_buttons"),
+		(overlay_set_position, reg0, pos1),
+		(create_text_overlay, reg0, "@Repeat x"),
+		(position_set_x, pos1, 900),
+		(position_set_y, pos1, 900),
+		(overlay_set_size, reg0, pos1),
+		(position_set_x, pos1, 422), #407 ; 497
+		(position_set_y, pos1, ":y_position_for_order_buttons"),
+		(overlay_set_position, reg0, pos1),
+		(val_add, ":y_position_for_order_buttons", 25),
+
+        (overlay_add_item, "$g_presentation_obj_battle_12", "@Dismount"),
+        (overlay_add_item, "$g_presentation_obj_battle_12", "@Mount"),
+		(overlay_add_item, "$g_presentation_obj_battle_12", "@Spread Out"),
+        (overlay_add_item, "$g_presentation_obj_battle_12", "@Stand Closer"),
+        (overlay_add_item, "$g_presentation_obj_battle_12", "@Back 10"),
+        (overlay_add_item, "$g_presentation_obj_battle_12", "@Forward 10"),
+		(overlay_add_item, "$g_presentation_obj_battle_12", "@None"),
+		
+        (position_set_x, pos1, 500), #500
+        (position_set_y, pos1, 600),
+        (overlay_set_size, "$g_presentation_obj_battle_12", pos1),
+
+        (position_set_x, pos1, 430), #410 ; 450 ; 510
+        (position_set_y, pos1, ":y_position_for_order_buttons"),
+        (overlay_set_position, "$g_presentation_obj_battle_12", pos1),
+        (overlay_set_color, "$g_presentation_obj_battle_12", 0xFF6600),
+        (overlay_set_alpha, "$g_presentation_obj_battle_12", 0x60),
+        (overlay_set_val, "$g_presentation_obj_battle_12", 6),
+		(val_add, ":y_position_for_order_buttons", 35), 
+		
+		
+		(overlay_add_item, "$g_presentation_obj_battle_17", "@Square"),
+        (overlay_add_item, "$g_presentation_obj_battle_17", "@Wedge"),
+        (overlay_add_item, "$g_presentation_obj_battle_17", "@Shieldwall"),
+        (overlay_add_item, "$g_presentation_obj_battle_17", "@Ranks"),
+		(overlay_add_item, "$g_presentation_obj_battle_17", "@None"),
+		
+        (position_set_x, pos1, 500), #500
+        (position_set_y, pos1, 600),
+        (overlay_set_size, "$g_presentation_obj_battle_17", pos1),
+
+        (position_set_x, pos1, 555), #410 ; 450
+        (position_set_y, pos1, ":y_position_for_order_buttons"),
+        (overlay_set_position, "$g_presentation_obj_battle_17", pos1),
+        (overlay_set_color, "$g_presentation_obj_battle_17", 0xFF6600),
+        (overlay_set_alpha, "$g_presentation_obj_battle_17", 0x60),
+        (overlay_set_val, "$g_presentation_obj_battle_17", 4),
+		#(val_add, ":y_position_for_order_buttons", 35), 
+		
+
+        (overlay_add_item, "$g_presentation_obj_battle_13", "@Fire At Will"),
+        (overlay_add_item, "$g_presentation_obj_battle_13", "@Hold Your Fire"),
+        (overlay_add_item, "$g_presentation_obj_battle_13", "@Use Blunt Weapons"),
+        (overlay_add_item, "$g_presentation_obj_battle_13", "@Use Any Weapon"),
+		(overlay_add_item, "$g_presentation_obj_battle_13", "@None"),
+        
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 600),
+        (overlay_set_size, "$g_presentation_obj_battle_13", pos1),
+        (position_set_x, pos1, 175), #530 ; 170
+        (position_set_y, pos1, ":y_position_for_order_buttons"),
+        (overlay_set_position, "$g_presentation_obj_battle_13", pos1),
+        (overlay_set_alpha, "$g_presentation_obj_battle_13", 0x60),
+        (overlay_set_val, "$g_presentation_obj_battle_13", 4),
+		(overlay_set_display, "$g_presentation_obj_battle_13", 0),		
+		
+		(overlay_add_item, "$g_presentation_obj_battle_14", "@Ranged"),
+        (overlay_add_item, "$g_presentation_obj_battle_14", "@Polearms"),
+        (overlay_add_item, "$g_presentation_obj_battle_14", "@Two Handed"),
+        (overlay_add_item, "$g_presentation_obj_battle_14", "@One Handed"),
+		(overlay_add_item, "$g_presentation_obj_battle_14", "@None"),
+        
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 600),
+        (overlay_set_size, "$g_presentation_obj_battle_14", pos1),
+        (position_set_x, pos1, 305), #290
+        (position_set_y, pos1, ":y_position_for_order_buttons"),
+        (overlay_set_position, "$g_presentation_obj_battle_14", pos1),
+        (overlay_set_alpha, "$g_presentation_obj_battle_14", 0x60),
+        (overlay_set_val, "$g_presentation_obj_battle_14", 4),
+		(overlay_set_display, "$g_presentation_obj_battle_14", 0),
+		
+        (overlay_add_item, "$g_presentation_obj_battle_15", "@No Shields"),
+        (overlay_add_item, "$g_presentation_obj_battle_15", "@Use Shields"),
+		(overlay_add_item, "$g_presentation_obj_battle_15", "@None"),
+        
+		(val_add, ":y_position_for_order_buttons", 35),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 600),
+        (overlay_set_size, "$g_presentation_obj_battle_15", pos1),
+        (position_set_x, pos1, 430), #410
+        (position_set_y, pos1, ":y_position_for_order_buttons"),
+        (overlay_set_position, "$g_presentation_obj_battle_15", pos1),
+        (overlay_set_alpha, "$g_presentation_obj_battle_15", 0x60),
+        (overlay_set_val, "$g_presentation_obj_battle_15", 2),
+		(overlay_set_display, "$g_presentation_obj_battle_15", 0),
+		
+		#(overlay_add_item, "$g_presentation_obj_battle_16", "@Melee"),
+        (overlay_add_item, "$g_presentation_obj_battle_16", "@Avoid Melee"),
+		(overlay_add_item, "$g_presentation_obj_battle_16", "@None"),
+        
+		(val_add, ":y_position_for_order_buttons", 18),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 600),
+        (overlay_set_size, "$g_presentation_obj_battle_16", pos1),
+        (position_set_x, pos1, 555), #495 ; 530
+        (position_set_y, pos1, ":y_position_for_order_buttons"),
+        (overlay_set_position, "$g_presentation_obj_battle_16", pos1),
+        (overlay_set_alpha, "$g_presentation_obj_battle_16", 0x60),
+        (overlay_set_val, "$g_presentation_obj_battle_16", 1),
+		(overlay_set_display, "$g_presentation_obj_battle_16", 0),
+		
+		(val_sub, ":y_position_for_order_buttons", 53),
+		
+		(val_sub, ":y_position_for_order_buttons", 50),
+		(create_button_overlay, "$g_presentation_obj_battle_24", "@Turn to weapon orders..."),
+		(position_set_x, pos1, 900),
+		(position_set_y, pos1, 900),
+		(overlay_set_size, "$g_presentation_obj_battle_24", pos1),
+		(position_set_x, pos1, 450), #500
+        #(position_set_y, pos1, ":y_position_for_order_buttons"),
+		(position_set_y, pos1, 150),
+		(overlay_set_position,  "$g_presentation_obj_battle_24", pos1),	
+		
+		
+		(create_game_button_overlay, "$g_presentation_obj_battle_25", "@Reassess"), 
+        (position_set_x, pos1, 420),
+        (position_set_y, pos1, 8),
+        (overlay_set_position, "$g_presentation_obj_battle_25", pos1),
+		
+		(create_game_button_overlay, "$g_presentation_obj_battle_26", "@Scrap All"), 
+        (position_set_x, pos1, 580),
+        (position_set_y, pos1, 8),
+        (overlay_set_position, "$g_presentation_obj_battle_26", pos1),
+		
+		(create_game_button_overlay, "$g_presentation_obj_battle_27", "@Prepare Orders"),
+        (position_set_x, pos1, 740),
+        (position_set_y, pos1, 8),
+        (overlay_set_position, "$g_presentation_obj_battle_27", pos1),
+		
+		(create_game_button_overlay, "$g_presentation_obj_battle_28", "@Dispatch Orders"),
+        (position_set_x, pos1, 900),
+        (position_set_y, pos1, 8),
+        (overlay_set_position, "$g_presentation_obj_battle_28", pos1),
+				
+		(call_script, "script_prebattle_order_get_stored"),
+      
+		(presentation_set_duration, 999999),
+        ]),
+  
+     (ti_on_presentation_event_state_change,
+       [(store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":value"),
+		
+		(try_begin), #Buttons
+			(eq, ":object", "$g_presentation_obj_battle_25"),
+			(jump_to_menu, "$g_next_menu"),
+			(presentation_set_duration, 0),
+		(else_try),
+		    (eq, ":object", "$g_presentation_obj_battle_26"),
+			(party_set_slot, "p_main_party", slot_party_prebattle_plan, 0),
+			(call_script, "script_prebattle_order_clear_all"),
+		(else_try),
+		    (eq, ":object", "$g_presentation_obj_battle_27"),
+			(call_script, "script_prebattle_order_preview_orders"),
+		(else_try),
+		    (eq, ":object", "$g_presentation_obj_battle_28"),
+			(party_set_slot, "p_main_party", slot_party_prebattle_plan, 1),
+			(call_script, "script_prebattle_order_store_orders"),
+			(jump_to_menu, "$g_next_menu"),
+			(presentation_set_duration, 0),
+		(else_try),
+		    (eq, ":object", "$g_presentation_obj_battle_24"),
+			(overlay_get_position, pos1, "$g_presentation_obj_battle_24"),
+			(position_get_x, ":x", pos1),
+			(try_begin),
+			    (eq, ":x", 450),
+				#clear movement order overlays
+				(overlay_set_display, "$g_presentation_obj_battle_10", 0), #Order Selection Boxes
+				(overlay_set_display, "$g_presentation_obj_battle_11", 0),
+				(overlay_set_display, "$g_presentation_obj_battle_12", 0),
+				(overlay_set_display, "$g_presentation_obj_battle_17", 0),
+				(overlay_set_display,                         reg(51), 0), #Repeat Boxes
+				(overlay_set_display,                         reg(52), 0),
+				(overlay_set_display, "$g_presentation_credits_obj_2", 0), #Headings
+				(overlay_set_display, "$g_presentation_credits_obj_3", 0),
+				(overlay_set_display, "$g_presentation_credits_obj_4", 0),
+				(overlay_set_display, "$g_presentation_credits_obj_5", 0),
+				(store_add, ":overlay", reg(51), 2),
+				(overlay_set_display,                      ":overlay", 0),
+				(val_add, ":overlay", 1),
+				(overlay_set_display,                      ":overlay", 0),
+				#(overlay_set_display, "$g_presentation_credits_obj_5", 0),
+				#display weapon order overlays
+				(overlay_set_display, "$g_presentation_obj_battle_13", 1), #Order Selection Boxes
+				(overlay_set_display, "$g_presentation_obj_battle_14", 1),
+				(overlay_set_display, "$g_presentation_obj_battle_15", 1),
+				(overlay_set_display, "$g_presentation_obj_battle_16", 1),
+				(overlay_set_display, "$g_presentation_credits_obj_6", 1), #Headings
+				(overlay_set_display, "$g_presentation_credits_obj_7", 1), 
+				(overlay_set_display, "$g_presentation_credits_obj_8", 1),
+				(overlay_set_display, "$g_presentation_credits_obj_9", 1),
+				(try_begin), #Toggle by Division order display
+				    (eq, "$group0_has_troops", 1),
+                    (overlay_set_display, "$g_presentation_but0_movement", 0), #Initial
+                    (overlay_set_display, "$g_presentation_but0_riding", 0), #Position 1
+                    (overlay_set_display, "$g_presentation_but0_weapon_usage", 0), #Position 2
+					(overlay_set_display, reg(6), 0),  #Formation
+		            (overlay_set_display, reg(15), 1), #Native Weapon
+					(overlay_set_display, reg(24), 1), #Caba'drin Weapon
+					(overlay_set_display, reg(33), 1), #Caba'drin Shield
+					(overlay_set_display, reg(42), 1), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group1_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but1_movement", 0), #Initial
+                    (overlay_set_display, "$g_presentation_but1_riding", 0), #Position 1
+                    (overlay_set_display, "$g_presentation_but1_weapon_usage", 0), #Position 2
+					(overlay_set_display, reg(7), 0),  #Formation
+		            (overlay_set_display, reg(16), 1), #Native Weapon
+					(overlay_set_display, reg(25), 1), #Caba'drin Weapon
+					(overlay_set_display, reg(34), 1), #Caba'drin Shield
+					(overlay_set_display, reg(43), 1), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group2_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but2_movement", 0), #Initial
+                    (overlay_set_display, "$g_presentation_but2_riding", 0), #Position 1
+                    (overlay_set_display, "$g_presentation_but2_weapon_usage", 0), #Position 2
+					(overlay_set_display, reg(8), 0),  #Formation
+		            (overlay_set_display, reg(17), 1), #Native Weapon
+					(overlay_set_display, reg(26), 1), #Caba'drin Weapon
+					(overlay_set_display, reg(35), 1), #Caba'drin Shield
+					(overlay_set_display, reg(44), 1), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group3_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but3_movement", 0), #Initial
+                    (overlay_set_display, "$g_presentation_but3_riding", 0), #Position 1
+                    (overlay_set_display, "$g_presentation_but3_weapon_usage", 0), #Position 2
+					(overlay_set_display, reg(9), 0),  #Formation
+		            (overlay_set_display, reg(18), 1), #Native Weapon
+					(overlay_set_display, reg(27), 1), #Caba'drin Weapon
+					(overlay_set_display, reg(36), 1), #Caba'drin Shield
+					(overlay_set_display, reg(45), 1), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group4_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but4_movement", 0), #Initial
+                    (overlay_set_display, "$g_presentation_but4_riding", 0), #Position 1
+                    (overlay_set_display, "$g_presentation_but4_weapon_usage", 0), #Position 2
+					(overlay_set_display, reg(10), 0),  #Formation
+		            (overlay_set_display, reg(19), 1), #Native Weapon
+					(overlay_set_display, reg(28), 1), #Caba'drin Weapon
+					(overlay_set_display, reg(37), 1), #Caba'drin Shield
+					(overlay_set_display, reg(46), 1), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group5_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but5_movement", 0), #Initial
+                    (overlay_set_display, "$g_presentation_but5_riding", 0), #Position 1
+                    (overlay_set_display, "$g_presentation_but5_weapon_usage", 0), #Position 2
+					(overlay_set_display, reg(11), 0),  #Formation
+		            (overlay_set_display, reg(20), 1), #Native Weapon
+					(overlay_set_display, reg(29), 1), #Caba'drin Weapon
+					(overlay_set_display, reg(38), 1), #Caba'drin Shield
+					(overlay_set_display, reg(47), 1), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group6_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but6_movement", 0), #Initial
+                    (overlay_set_display, "$g_presentation_but6_riding", 0), #Position 1
+                    (overlay_set_display, "$g_presentation_but6_weapon_usage", 0), #Position 2
+					(overlay_set_display, reg(12), 0),  #Formation
+		            (overlay_set_display, reg(21), 1), #Native Weapon
+					(overlay_set_display, reg(30), 1), #Caba'drin Weapon
+					(overlay_set_display, reg(39), 1), #Caba'drin Shield
+					(overlay_set_display, reg(48), 1), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group7_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but7_movement", 0), #Initial
+                    (overlay_set_display, "$g_presentation_but7_riding", 0), #Position 1
+                    (overlay_set_display, "$g_presentation_but7_weapon_usage", 0), #Position 2
+					(overlay_set_display, reg(13), 0),  #Formation
+		            (overlay_set_display, reg(22), 1), #Native Weapon
+					(overlay_set_display, reg(31), 1), #Caba'drin Weapon
+					(overlay_set_display, reg(40), 1), #Caba'drin Shield
+					(overlay_set_display, reg(49), 1), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group8_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but8_movement", 0), #Initial
+                    (overlay_set_display, "$g_presentation_but8_riding", 0), #Position 1
+                    (overlay_set_display, "$g_presentation_but8_weapon_usage", 0), #Position 2
+					(overlay_set_display, reg(14), 0),  #Formation
+		            (overlay_set_display, reg(23), 1), #Native Weapon
+					(overlay_set_display, reg(32), 1), #Caba'drin Weapon
+					(overlay_set_display, reg(41), 1), #Caba'drin Shield
+					(overlay_set_display, reg(50), 1), #Caba'drin Skirmish
+				(try_end),
+				(position_set_x, pos1, 150),
+				(overlay_set_text, "$g_presentation_obj_battle_24", "@...Turn to positioning orders"),
+				(overlay_set_position, "$g_presentation_obj_battle_24", pos1),
+			(else_try),
+			    (eq, ":x", 150),
+				#clear weapon order overlays
+				(overlay_set_display, "$g_presentation_obj_battle_13", 0), #Order Selection Boxes
+				(overlay_set_display, "$g_presentation_obj_battle_14", 0),
+				(overlay_set_display, "$g_presentation_obj_battle_15", 0),
+				(overlay_set_display, "$g_presentation_obj_battle_16", 0),
+				(overlay_set_display, "$g_presentation_credits_obj_6", 0), #Headings
+				(overlay_set_display, "$g_presentation_credits_obj_7", 0), 
+				(overlay_set_display, "$g_presentation_credits_obj_8", 0),
+				(overlay_set_display, "$g_presentation_credits_obj_9", 0),
+				#display movement order overlays
+				(overlay_set_display, "$g_presentation_obj_battle_10", 1), #Order Selection Boxes
+				(overlay_set_display, "$g_presentation_obj_battle_11", 1),
+				(overlay_set_display, "$g_presentation_obj_battle_12", 1),
+				(overlay_set_display, "$g_presentation_obj_battle_17", 1),
+				(overlay_set_display,                         reg(51), 1), #Repeat Boxes
+				(overlay_set_display,                         reg(52), 1),
+				(overlay_set_display, "$g_presentation_credits_obj_2", 1), #Headings
+				(overlay_set_display, "$g_presentation_credits_obj_3", 1),
+				(overlay_set_display, "$g_presentation_credits_obj_4", 1),
+				(overlay_set_display, "$g_presentation_credits_obj_5", 1),
+				(store_add, ":overlay", reg(51), 2),
+				(overlay_set_display,                      ":overlay", 1),
+				(val_add, ":overlay", 1),
+				(overlay_set_display,                      ":overlay", 1),
+				#(overlay_set_display, "$g_presentation_credits_obj_5", 1),
+				(try_begin), #Toggle by Division order display
+				    (eq, "$group0_has_troops", 1),
+                    (overlay_set_display, "$g_presentation_but0_movement", 1), #Initial
+                    (overlay_set_display, "$g_presentation_but0_riding", 1), #Position 1
+                    (overlay_set_display, "$g_presentation_but0_weapon_usage", 1), #Position 2
+					(overlay_set_display, reg(6), 1),  #Formation
+		            (overlay_set_display, reg(15), 0), #Native Weapon
+					(overlay_set_display, reg(24), 0), #Caba'drin Weapon
+					(overlay_set_display, reg(33), 0), #Caba'drin Shield
+					(overlay_set_display, reg(42), 0), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+					(eq, "$group1_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but1_movement", 1), #Initial
+                    (overlay_set_display, "$g_presentation_but1_riding", 1), #Position 1
+                    (overlay_set_display, "$g_presentation_but1_weapon_usage", 1), #Position 2
+					(overlay_set_display, reg(7), 1),  #Formation
+		            (overlay_set_display, reg(16), 0), #Native Weapon
+					(overlay_set_display, reg(25), 0), #Caba'drin Weapon
+					(overlay_set_display, reg(34), 0), #Caba'drin Shield
+					(overlay_set_display, reg(43), 0), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+					(eq, "$group2_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but2_movement", 1), #Initial
+                    (overlay_set_display, "$g_presentation_but2_riding", 1), #Position 1
+                    (overlay_set_display, "$g_presentation_but2_weapon_usage", 1), #Position 2
+					(overlay_set_display, reg(8), 1),  #Formation
+		            (overlay_set_display, reg(17), 0), #Native Weapon
+					(overlay_set_display, reg(26), 0), #Caba'drin Weapon
+					(overlay_set_display, reg(35), 0), #Caba'drin Shield
+					(overlay_set_display, reg(44), 0), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group3_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but3_movement", 1), #Initial
+                    (overlay_set_display, "$g_presentation_but3_riding", 1), #Position 1
+                    (overlay_set_display, "$g_presentation_but3_weapon_usage", 1), #Position 2
+					(overlay_set_display, reg(9), 1),  #Formation
+		            (overlay_set_display, reg(18), 0), #Native Weapon
+					(overlay_set_display, reg(27), 0), #Caba'drin Weapon
+					(overlay_set_display, reg(36), 0), #Caba'drin Shield
+					(overlay_set_display, reg(45), 0), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group4_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but4_movement", 1), #Initial
+                    (overlay_set_display, "$g_presentation_but4_riding", 1), #Position 1
+                    (overlay_set_display, "$g_presentation_but4_weapon_usage", 1), #Position 2
+					(overlay_set_display, reg(10), 1),  #Formation
+		            (overlay_set_display, reg(19), 0), #Native Weapon
+					(overlay_set_display, reg(28), 0), #Caba'drin Weapon
+					(overlay_set_display, reg(37), 0), #Caba'drin Shield
+					(overlay_set_display, reg(46), 0), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group5_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but5_movement", 1), #Initial
+                    (overlay_set_display, "$g_presentation_but5_riding", 1), #Position 1
+                    (overlay_set_display, "$g_presentation_but5_weapon_usage", 1), #Position 2
+					(overlay_set_display, reg(11), 1),  #Formation
+		            (overlay_set_display, reg(20), 0), #Native Weapon
+					(overlay_set_display, reg(29), 0), #Caba'drin Weapon
+					(overlay_set_display, reg(38), 0), #Caba'drin Shield
+					(overlay_set_display, reg(47), 0), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group6_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but6_movement", 1), #Initial
+                    (overlay_set_display, "$g_presentation_but6_riding", 1), #Position 1
+                    (overlay_set_display, "$g_presentation_but6_weapon_usage", 1), #Position 2
+					(overlay_set_display, reg(12), 1),  #Formation
+		            (overlay_set_display, reg(21), 0), #Native Weapon
+					(overlay_set_display, reg(30), 0), #Caba'drin Weapon
+					(overlay_set_display, reg(39), 0), #Caba'drin Shield
+					(overlay_set_display, reg(48), 0), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group7_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but7_movement", 1), #Initial
+                    (overlay_set_display, "$g_presentation_but7_riding", 1), #Position 1
+                    (overlay_set_display, "$g_presentation_but7_weapon_usage", 1), #Position 2
+					(overlay_set_display, reg(13), 1),  #Formation
+		            (overlay_set_display, reg(22), 0), #Native Weapon
+					(overlay_set_display, reg(31), 0), #Caba'drin Weapon
+					(overlay_set_display, reg(40), 0), #Caba'drin Shield
+					(overlay_set_display, reg(49), 0), #Caba'drin Skirmish
+				(try_end),
+				(try_begin),
+				    (eq, "$group8_has_troops", 1),
+				    (overlay_set_display, "$g_presentation_but8_movement", 1), #Initial
+                    (overlay_set_display, "$g_presentation_but8_riding", 1), #Position 1
+                    (overlay_set_display, "$g_presentation_but8_weapon_usage", 1), #Position 2
+					(overlay_set_display, reg(14), 1),  #Formation
+		            (overlay_set_display, reg(23), 0), #Native Weapon
+					(overlay_set_display, reg(32), 0), #Caba'drin Weapon
+					(overlay_set_display, reg(41), 0), #Caba'drin Shield
+					(overlay_set_display, reg(50), 0), #Caba'drin Skirmish
+				(try_end),
+				(position_set_x, pos1, 450),
+				(overlay_set_text, "$g_presentation_obj_battle_24", "@Turn to weapon orders..."),
+				(overlay_set_position, "$g_presentation_obj_battle_24", pos1),
+			(try_end),			
+	    (else_try), #Division Selection, Order Selection
+          (eq, "$group0_has_troops", 1),
+          (eq, ":object", "$g_presentation_obj_battle_check0"),
+          (assign, "$g_formation_group0_selected", ":value"),
+          (try_begin),
+            (eq, ":value", 1),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but0", 250, 0x44),
+          (else_try),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but0", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, "$group1_has_troops", 1),
+          (eq, ":object", "$g_presentation_obj_battle_check1"),
+          (assign, "$g_formation_group1_selected", ":value"),
+          (try_begin),
+            (eq, ":value", 1),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but1", 250, 0x44),
+          (else_try),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but1", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, "$group2_has_troops", 1),
+          (eq, ":object", "$g_presentation_obj_battle_check2"),
+          (assign, "$g_formation_group2_selected", ":value"),
+          (try_begin),
+            (eq, ":value", 1),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but2", 250, 0x44),
+          (else_try),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but2", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, "$group3_has_troops", 1),
+          (eq, ":object", "$g_presentation_obj_battle_check3"),
+          (assign, "$g_formation_group3_selected", ":value"),
+          (try_begin),
+            (eq, ":value", 1),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but3", 250, 0x44),
+          (else_try),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but3", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, "$group4_has_troops", 1),
+          (eq, ":object", "$g_presentation_obj_battle_check4"),
+          (assign, "$g_formation_group4_selected", ":value"),
+          (try_begin),
+            (eq, ":value", 1),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but4", 250, 0x44),
+          (else_try),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but4", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, "$group5_has_troops", 1),
+          (eq, ":object", "$g_presentation_obj_battle_check5"),
+          (assign, "$g_formation_group5_selected", ":value"),
+          (try_begin),
+            (eq, ":value", 1),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but5", 250, 0x44),
+          (else_try),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but5", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, "$group6_has_troops", 1),
+          (eq, ":object", "$g_presentation_obj_battle_check6"),
+          (assign, "$g_formation_group6_selected", ":value"),
+          (try_begin),
+            (eq, ":value", 1),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but6", 250, 0x44),
+          (else_try),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but6", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, "$group7_has_troops", 1),
+          (eq, ":object", "$g_presentation_obj_battle_check7"),
+          (assign, "$g_formation_group7_selected", ":value"),
+          (try_begin),
+            (eq, ":value", 1),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but7", 250, 0x44),
+          (else_try),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but7", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, "$group8_has_troops", 1),
+          (eq, ":object", "$g_presentation_obj_battle_check8"),
+          (assign, "$g_formation_group8_selected", ":value"),
+          (try_begin),
+            (eq, ":value", 1),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0x44),
+          (else_try),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0),
+          (try_end),        
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but0"),
+        
+          (assign, "$g_formation_group0_selected", 1),
+          (overlay_animate_to_alpha, "$g_presentation_obj_battle_but0", 250, 0x44),
+          (overlay_set_val, "$g_presentation_obj_battle_check0", 1),
+
+          (try_begin),
+            (eq, "$group1_has_troops", 1),
+            (assign, "$g_formation_group1_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check1", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but1", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group2_has_troops", 1),
+            (assign, "$g_formation_group2_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check2", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but2", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group3_has_troops", 1),
+            (assign, "$g_formation_group3_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check3", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but3", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group4_has_troops", 1),
+            (assign, "$g_formation_group4_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check4", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but4", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group5_has_troops", 1),
+            (assign, "$g_formation_group5_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check5", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but5", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group6_has_troops", 1),
+            (assign, "$g_formation_group6_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check6", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but6", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group7_has_troops", 1),
+            (assign, "$g_formation_group7_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check7", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but7", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group8_has_troops", 1),
+            (assign, "$g_formation_group8_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check8", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but1"),
+
+          (assign, "$g_formation_group1_selected", 1),
+          (overlay_animate_to_alpha, "$g_presentation_obj_battle_but1", 250, 0x44),
+          (overlay_set_val, "$g_presentation_obj_battle_check1", 1),
+
+          (try_begin),
+            (eq, "$group0_has_troops", 1),
+            (assign, "$g_formation_group0_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check0", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but0", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group2_has_troops", 1),
+            (assign, "$g_formation_group2_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check2", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but2", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group3_has_troops", 1),
+            (assign, "$g_formation_group3_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check3", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but3", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group4_has_troops", 1),
+            (assign, "$g_formation_group4_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check4", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but4", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group5_has_troops", 1),
+            (assign, "$g_formation_group5_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check5", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but5", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group6_has_troops", 1),
+            (assign, "$g_formation_group6_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check6", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but6", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group7_has_troops", 1),
+            (assign, "$g_formation_group7_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check7", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but7", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group8_has_troops", 1),
+            (assign, "$g_formation_group8_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check8", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but2"),
+
+          (assign, "$g_formation_group2_selected", 1),
+          (overlay_animate_to_alpha, "$g_presentation_obj_battle_but2", 250, 0x44),
+          (overlay_set_val, "$g_presentation_obj_battle_check2", 1),
+
+          (try_begin),
+            (eq, "$group0_has_troops", 1),
+            (assign, "$g_formation_group0_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check0", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but0", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group1_has_troops", 1),
+            (assign, "$g_formation_group1_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check1", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but1", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group3_has_troops", 1),
+            (assign, "$g_formation_group3_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check3", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but3", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group4_has_troops", 1),
+            (assign, "$g_formation_group4_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check4", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but4", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group5_has_troops", 1),
+            (assign, "$g_formation_group5_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check5", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but5", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group6_has_troops", 1),
+            (assign, "$g_formation_group6_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check6", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but6", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group7_has_troops", 1),
+            (assign, "$g_formation_group7_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check7", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but7", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group8_has_troops", 1),
+            (assign, "$g_formation_group8_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check8", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but3"),
+
+          (assign, "$g_formation_group3_selected", 1),
+          (overlay_animate_to_alpha, "$g_presentation_obj_battle_but3", 250, 0x44),
+          (overlay_set_val, "$g_presentation_obj_battle_check3", 1),
+
+          (try_begin),
+            (eq, "$group0_has_troops", 1),
+            (assign, "$g_formation_group0_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check0", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but0", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group1_has_troops", 1),
+            (assign, "$g_formation_group1_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check1", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but1", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group2_has_troops", 1),
+            (assign, "$g_formation_group2_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check2", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but2", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group4_has_troops", 1),
+            (assign, "$g_formation_group4_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check4", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but4", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group5_has_troops", 1),
+            (assign, "$g_formation_group5_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check5", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but5", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group6_has_troops", 1),
+            (assign, "$g_formation_group6_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check6", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but6", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group7_has_troops", 1),
+            (assign, "$g_formation_group7_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check7", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but7", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group8_has_troops", 1),
+            (assign, "$g_formation_group8_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check8", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but4"),
+
+          (assign, "$g_formation_group4_selected", 1),
+          (overlay_animate_to_alpha, "$g_presentation_obj_battle_but4", 250, 0x44),
+          (overlay_set_val, "$g_presentation_obj_battle_check4", 1),
+
+          (try_begin),
+            (eq, "$group0_has_troops", 1),
+            (assign, "$g_formation_group0_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check0", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but0", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group1_has_troops", 1),
+            (assign, "$g_formation_group1_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check1", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but1", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group2_has_troops", 1),
+            (assign, "$g_formation_group2_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check2", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but2", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group3_has_troops", 1),
+            (assign, "$g_formation_group3_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check3", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but3", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group5_has_troops", 1),
+            (assign, "$g_formation_group5_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check5", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but5", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group6_has_troops", 1),
+            (assign, "$g_formation_group6_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check6", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but6", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group7_has_troops", 1),
+            (assign, "$g_formation_group7_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check7", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but7", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group8_has_troops", 1),
+            (assign, "$g_formation_group8_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check8", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but5"),
+
+          (assign, "$g_formation_group5_selected", 1),
+          (overlay_animate_to_alpha, "$g_presentation_obj_battle_but5", 250, 0x44),
+          (overlay_set_val, "$g_presentation_obj_battle_check5", 1),
+
+          (try_begin),
+            (eq, "$group0_has_troops", 1),
+            (assign, "$g_formation_group0_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check0", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but0", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group1_has_troops", 1),
+            (assign, "$g_formation_group1_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check1", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but1", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group2_has_troops", 1),
+            (assign, "$g_formation_group2_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check2", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but2", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group3_has_troops", 1),
+            (assign, "$g_formation_group3_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check3", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but3", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group4_has_troops", 1),
+            (assign, "$g_formation_group4_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check4", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but4", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group6_has_troops", 1),
+            (assign, "$g_formation_group6_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check6", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but6", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group7_has_troops", 1),
+            (assign, "$g_formation_group7_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check7", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but7", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group8_has_troops", 1),
+            (assign, "$g_formation_group8_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check8", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but6"),
+
+          (assign, "$g_formation_group6_selected", 1),
+          (overlay_animate_to_alpha, "$g_presentation_obj_battle_but6", 250, 0x44),
+          (overlay_set_val, "$g_presentation_obj_battle_check6", 1),
+
+          (try_begin),
+            (eq, "$group0_has_troops", 1),
+            (assign, "$g_formation_group0_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check0", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but0", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group1_has_troops", 1),
+            (assign, "$g_formation_group1_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check1", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but1", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group2_has_troops", 1),
+            (assign, "$g_formation_group2_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check2", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but2", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group3_has_troops", 1),
+            (assign, "$g_formation_group3_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check3", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but3", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group4_has_troops", 1),
+            (assign, "$g_formation_group4_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check4", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but4", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group5_has_troops", 1),
+            (assign, "$g_formation_group5_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check5", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but5", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group7_has_troops", 1),
+            (assign, "$g_formation_group7_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check7", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but7", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group8_has_troops", 1),
+            (assign, "$g_formation_group8_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check8", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but7"),
+
+          (assign, "$g_formation_group7_selected", 1),
+          (overlay_animate_to_alpha, "$g_presentation_obj_battle_but7", 250, 0x44),
+          (overlay_set_val, "$g_presentation_obj_battle_check7", 1),
+
+          (try_begin),
+            (eq, "$group0_has_troops", 1),
+            (assign, "$g_formation_group0_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check0", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but0", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group1_has_troops", 1),
+            (assign, "$g_formation_group1_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check1", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but1", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group2_has_troops", 1),
+            (assign, "$g_formation_group2_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check2", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but2", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group3_has_troops", 1),
+            (assign, "$g_formation_group3_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check3", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but3", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group4_has_troops", 1),
+            (assign, "$g_formation_group4_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check4", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but4", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group5_has_troops", 1),
+            (assign, "$g_formation_group5_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check5", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but5", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group6_has_troops", 1),
+            (assign, "$g_formation_group6_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check6", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but6", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group8_has_troops", 1),
+            (assign, "$g_formation_group8_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check8", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but8"),
+
+          (assign, "$g_formation_group8_selected", 1),
+          (overlay_animate_to_alpha, "$g_presentation_obj_battle_but8", 250, 0x44),
+          (overlay_set_val, "$g_presentation_obj_battle_check8", 1),
+
+          (try_begin),
+            (eq, "$group0_has_troops", 1),
+            (assign, "$g_formation_group0_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check0", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but0", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group1_has_troops", 1),
+            (assign, "$g_formation_group1_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check1", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but1", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group2_has_troops", 1),
+            (assign, "$g_formation_group2_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check2", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but2", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group3_has_troops", 1),
+            (assign, "$g_formation_group3_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check3", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but3", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group4_has_troops", 1),
+            (assign, "$g_formation_group4_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check4", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but4", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group5_has_troops", 1),
+            (assign, "$g_formation_group5_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check5", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but5", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group6_has_troops", 1),
+            (assign, "$g_formation_group6_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check6", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but6", 250, 0),
+          (try_end),
+          (try_begin),
+            (eq, "$group7_has_troops", 1),
+            (assign, "$g_formation_group7_selected", 0),
+            (overlay_set_val, "$g_presentation_obj_battle_check7", 0),
+            (overlay_animate_to_alpha, "$g_presentation_obj_battle_but7", 250, 0),
+          (try_end),
+        (else_try), #Order Selection
+          (eq, ":object", "$g_presentation_obj_battle_10"),
+		  (try_begin),
+            (eq, ":value", 4),
+			#(str_store_string, s1, "@-"),
+			(call_script, "script_prebattle_order_update_text_slot", 0, -1, 0),
+          (else_try),
+            (eq, ":value", 3),
+			#(str_store_string, s1, "@Hold"),
+			(call_script, "script_prebattle_order_update_text_slot", 0, 0, 0),
+          (else_try),
+            (eq, ":value", 2),
+			#(str_store_string, s1, "@Follow Me"),
+			(call_script, "script_prebattle_order_update_text_slot", 0, 1, 0),
+          (else_try),
+            (eq, ":value", 1),
+			#(str_store_string, s1, "@Charge"),
+			(call_script, "script_prebattle_order_update_text_slot", 0, 2, 0),
+		  (else_try),
+            (eq, ":value", 0),
+			#(str_store_string, s1, "@Stand Ground"),
+			(call_script, "script_prebattle_order_update_text_slot", 0, 3, 0),
+          (try_end),
+        (else_try),
+          (this_or_next|eq, ":object", "$g_presentation_obj_battle_11"),
+		  (eq, ":object", "$g_presentation_obj_battle_12"),
+		  (try_begin),
+		        (eq, ":object", "$g_presentation_obj_battle_11"),
+				(assign, ":column", 1),
+				(assign, ":repeat", reg53),
+		  (else_try),
+				(eq, ":object", "$g_presentation_obj_battle_12"),
+				(assign, ":column", 2),
+				(assign, ":repeat", reg54),
+		  (try_end),
+		  (try_begin),
+            (eq, ":value", 6),
+			#(str_store_string, s1, "@-"),
+			(call_script, "script_prebattle_order_update_text_slot", ":column", -1, 0),
+          (else_try),
+            (eq, ":value", 1),
+			#(str_store_string, s1, "@Mount"),
+			(call_script, "script_prebattle_order_update_text_slot", ":column", 3, 0),
+          (else_try),
+            (eq, ":value", 0),
+			#(str_store_string, s1, "@Dismount"),
+			(call_script, "script_prebattle_order_update_text_slot", ":column", 4, 0),
+          (else_try),
+            (eq, ":value", 5),
+			#(str_store_string, s1, "@Forward 10"),
+			(call_script, "script_prebattle_order_update_text_slot", ":column", 5, ":repeat"),
+			(call_script, "script_prebattle_order_update_text_slot", 0, 0, 0), #Also, hold
+          (else_try),
+            (eq, ":value", 4),
+			#(str_store_string, s1, "@Back 10"),
+			(call_script, "script_prebattle_order_update_text_slot", ":column", 6, ":repeat"),
+			(call_script, "script_prebattle_order_update_text_slot", 0, 0, 0), #Also, hold
+          (else_try),
+            (eq, ":value", 3),
+			#(str_store_string, s1, "@Stand Closer"),
+			(call_script, "script_prebattle_order_update_text_slot", ":column", 7, ":repeat"),
+          (else_try),
+            (eq, ":value", 2),
+		    #(str_store_string, s1, "@Spread Out"),
+			(call_script, "script_prebattle_order_update_text_slot", ":column", 8, ":repeat"),
+		  (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_17"),
+		  (try_begin),
+            (eq, ":value", 4),
+			#(str_store_string, s1, "@-"),
+			(call_script, "script_prebattle_order_update_text_slot", 3, -1, 0),
+          (else_try),        
+		    (eq, ":value", 3),
+			#(str_store_string, s1, "@Ranks"),
+			(call_script, "script_prebattle_order_update_text_slot", 3, formation_ranks, 0),
+			(call_script, "script_prebattle_order_update_text_slot", 0, 0, 0), #Also, hold
+          (else_try),
+            (eq, ":value", 2),
+			#(str_store_string, s1, "@Shieldwall"),
+			(call_script, "script_prebattle_order_update_text_slot", 3, formation_shield, 0),
+			(call_script, "script_prebattle_order_update_text_slot", 0, 0, 0), #Also, hold
+		 (else_try), 
+		    (eq, ":value", 1),
+			#(str_store_string, s1, "@Wedge"),
+			(call_script, "script_prebattle_order_update_text_slot", 3, formation_wedge, 0),
+			(call_script, "script_prebattle_order_update_text_slot", 0, 0, 0), #Also, hold
+          (else_try),
+            (eq, ":value", 0),
+			#(str_store_string, s1, "@Square"),
+			(call_script, "script_prebattle_order_update_text_slot", 3, formation_square, 0),
+			(call_script, "script_prebattle_order_update_text_slot", 0, 0, 0), #Also, hold
+          (try_end),		  
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_13"),
+		  (try_begin),
+            (eq, ":value", 4),
+			#(str_store_string, s1, "@-"),
+			(call_script, "script_prebattle_order_update_text_slot", 4, -1, 0),
+          (else_try),
+		    (eq, ":value", 1),
+			#(str_store_string, s1, "@Hold Fire"),
+			(call_script, "script_prebattle_order_update_text_slot", 4, 2, 0),
+          (else_try),
+            (eq, ":value", 0),
+			#(str_store_string, s1, "@Fire at Will"),
+			(call_script, "script_prebattle_order_update_text_slot", 4, 3, 0),
+          (else_try),         
+		    (eq, ":value", 3),
+			#(str_store_string, s1, "@Any Weapon"),
+			(call_script, "script_prebattle_order_update_text_slot", 4, 0, 0),
+          (else_try),
+            (eq, ":value", 2),
+			#(str_store_string, s1, "@Blunt Weapons"),
+			(call_script, "script_prebattle_order_update_text_slot", 4, 9, 0),
+          (try_end),
+		(else_try), 
+          (eq, ":object", "$g_presentation_obj_battle_14"),
+		  (try_begin),
+            (eq, ":value", 4),
+			#(str_store_string, s1, "@-"),
+			(call_script, "script_prebattle_order_update_text_slot", 5, -1, 0),
+          (else_try),
+            (eq, ":value", 3),
+			#(str_store_string, s1, "@One Handed),
+			(call_script, "script_prebattle_order_update_text_slot", 5, 1, 0),
+          (else_try),
+            (eq, ":value", 2),
+			#(str_store_string, s1, "@Two Handed"),
+			(call_script, "script_prebattle_order_update_text_slot", 5, 2, 0),
+          (else_try),
+            (eq, ":value", 1),
+			#(str_store_string, s1, "@Polearms"),
+			(call_script, "script_prebattle_order_update_text_slot", 5, 3, 0),
+		  (else_try),
+            (eq, ":value", 0),
+			#(str_store_string, s1, "@Ranged"),
+			(call_script, "script_prebattle_order_update_text_slot", 5, 0, 0),
+          (try_end),
+		(else_try), 
+          (eq, ":object", "$g_presentation_obj_battle_15"),
+		  (try_begin),
+            (eq, ":value", 2),
+			#(str_store_string, s1, "@-"),
+			(call_script, "script_prebattle_order_update_text_slot", 6, -1, 0),
+          (else_try),
+            (eq, ":value", 1),
+			#(str_store_string, s1, "@Use Shields"),
+			(call_script, "script_prebattle_order_update_text_slot", 6, 4, 0),
+          (else_try),
+            (eq, ":value", 0),
+			#(str_store_string, s1, "@No Shields"),
+			(call_script, "script_prebattle_order_update_text_slot", 6, 5, 0),
+          (try_end),
+		(else_try), 
+          (eq, ":object", "$g_presentation_obj_battle_16"),
+		  (try_begin),
+            (eq, ":value", 1),
+			#(str_store_string, s1, "@-"),
+			(call_script, "script_prebattle_order_update_text_slot", 7, -1, 0),
+          (else_try),
+            (eq, ":value", 0),
+			#(str_store_string, s1, "@Avoid Melee"),
+			(call_script, "script_prebattle_order_update_text_slot", 7, 1, 0),
+          (try_end),
+		(else_try), #Repeat Number Boxes
+		  (eq, ":object", reg51),
+		  	# (overlay_get_position, pos1, "$g_presentation_obj_battle_24"),
+		    # (position_get_x, ":x", pos1),
+		    # (eq, ":x", 450), #Only when position orders displayed
+		    (assign, reg53, ":value"),
+		(else_try),
+		  (eq, ":object", reg52),
+		    (assign, reg54, ":value"),
+	  (try_end),
+		 
+    ]),
+		
+	(ti_on_presentation_mouse_enter_leave,
+       [(store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":enter_leave"),
+        (try_begin),
+          (eq, ":object", "$g_presentation_obj_battle_but0"),
+          (try_begin),
+            (eq, ":enter_leave", 0),
+            (overlay_animate_to_color, "$g_presentation_but0_movement", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but0_riding", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but0_weapon_usage", 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(6), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(15), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(24), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(33), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(42), 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name0", 250, 0xFFFFFF),
+          (else_try),
+            (overlay_animate_to_color, "$g_presentation_but0_movement", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but0_riding", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but0_weapon_usage", 250, 0),
+			(overlay_animate_to_color, reg(6), 250, 0),
+			(overlay_animate_to_color, reg(15), 250, 0),
+			(overlay_animate_to_color, reg(24), 250, 0),
+			(overlay_animate_to_color, reg(33), 250, 0),
+			(overlay_animate_to_color, reg(42), 250, 0),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name0", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but1"),
+          (try_begin),
+            (eq, ":enter_leave", 0),
+            (overlay_animate_to_color, "$g_presentation_but1_movement", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but1_riding", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but1_weapon_usage", 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(7), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(16), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(25), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(34), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(43), 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name1", 250, 0xFFFFFF),
+          (else_try),
+            (overlay_animate_to_color, "$g_presentation_but1_movement", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but1_riding", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but1_weapon_usage", 250, 0),
+			(overlay_animate_to_color, reg(7), 250, 0),
+			(overlay_animate_to_color, reg(16), 250, 0),
+			(overlay_animate_to_color, reg(25), 250, 0),
+			(overlay_animate_to_color, reg(34), 250, 0),
+			(overlay_animate_to_color, reg(43), 250, 0),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name1", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but2"),
+          (try_begin),
+            (eq, ":enter_leave", 0),
+            (overlay_animate_to_color, "$g_presentation_but2_movement", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but2_riding", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but2_weapon_usage", 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(8), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(17), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(26), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(35), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(44), 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name2", 250, 0xFFFFFF),
+          (else_try),
+            (overlay_animate_to_color, "$g_presentation_but2_movement", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but2_riding", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but2_weapon_usage", 250, 0),
+			(overlay_animate_to_color, reg(8), 250, 0),
+			(overlay_animate_to_color, reg(17), 250, 0),
+			(overlay_animate_to_color, reg(26), 250, 0),
+			(overlay_animate_to_color, reg(35), 250, 0),
+			(overlay_animate_to_color, reg(44), 250, 0),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name2", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but3"),
+          (try_begin),
+            (eq, ":enter_leave", 0),
+            (overlay_animate_to_color, "$g_presentation_but3_movement", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but3_riding", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but3_weapon_usage", 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(9), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(18), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(27), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(36), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(45), 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name3", 250, 0xFFFFFF),
+          (else_try),
+            (overlay_animate_to_color, "$g_presentation_but3_movement", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but3_riding", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but3_weapon_usage", 250, 0),
+			(overlay_animate_to_color, reg(9), 250, 0),
+			(overlay_animate_to_color, reg(18), 250, 0),
+			(overlay_animate_to_color, reg(27), 250, 0),
+			(overlay_animate_to_color, reg(36), 250, 0),
+			(overlay_animate_to_color, reg(45), 250, 0),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name3", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but4"),
+          (try_begin),
+            (eq, ":enter_leave", 0),
+            (overlay_animate_to_color, "$g_presentation_but4_movement", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but4_riding", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but4_weapon_usage", 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(10), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(19), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(28), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(37), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(46), 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name4", 250, 0xFFFFFF),
+          (else_try),
+            (overlay_animate_to_color, "$g_presentation_but4_movement", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but4_riding", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but4_weapon_usage", 250, 0),
+			(overlay_animate_to_color, reg(10), 250, 0),
+			(overlay_animate_to_color, reg(19), 250, 0),
+			(overlay_animate_to_color, reg(28), 250, 0),
+			(overlay_animate_to_color, reg(37), 250, 0),
+			(overlay_animate_to_color, reg(46), 250, 0),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name4", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but5"),
+          (try_begin),
+            (eq, ":enter_leave", 0),
+            (overlay_animate_to_color, "$g_presentation_but5_movement", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but5_riding", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but5_weapon_usage", 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(11), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(20), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(29), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(38), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(47), 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name5", 250, 0xFFFFFF),
+          (else_try),
+            (overlay_animate_to_color, "$g_presentation_but5_movement", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but5_riding", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but5_weapon_usage", 250, 0),
+			(overlay_animate_to_color, reg(11), 250, 0),
+			(overlay_animate_to_color, reg(20), 250, 0),
+			(overlay_animate_to_color, reg(29), 250, 0),
+			(overlay_animate_to_color, reg(38), 250, 0),
+			(overlay_animate_to_color, reg(47), 250, 0),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name5", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but6"),
+          (try_begin),
+            (eq, ":enter_leave", 0),
+            (overlay_animate_to_color, "$g_presentation_but6_movement", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but6_riding", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but6_weapon_usage", 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(12), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(21), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(30), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(39), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(48), 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name6", 250, 0xFFFFFF),
+          (else_try),
+            (overlay_animate_to_color, "$g_presentation_but6_movement", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but6_riding", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but6_weapon_usage", 250, 0),
+			(overlay_animate_to_color, reg(12), 250, 0),
+			(overlay_animate_to_color, reg(21), 250, 0),
+			(overlay_animate_to_color, reg(30), 250, 0),
+			(overlay_animate_to_color, reg(39), 250, 0),
+			(overlay_animate_to_color, reg(48), 250, 0),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name6", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but7"),
+          (try_begin),
+            (eq, ":enter_leave", 0),
+            (overlay_animate_to_color, "$g_presentation_but7_movement", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but7_riding", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but7_weapon_usage", 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(13), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(22), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(31), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(40), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(49), 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name7", 250, 0xFFFFFF),
+          (else_try),
+            (overlay_animate_to_color, "$g_presentation_but7_movement", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but7_riding", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but7_weapon_usage", 250, 0),
+			(overlay_animate_to_color, reg(13), 250, 0),
+			(overlay_animate_to_color, reg(22), 250, 0),
+			(overlay_animate_to_color, reg(31), 250, 0),
+			(overlay_animate_to_color, reg(40), 250, 0),
+			(overlay_animate_to_color, reg(49), 250, 0),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name7", 250, 0),
+          (try_end),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_battle_but8"),
+          (try_begin),
+            (eq, ":enter_leave", 0),
+            (overlay_animate_to_color, "$g_presentation_but8_movement", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but8_riding", 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_but8_weapon_usage", 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(14), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(23), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(32), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(41), 250, 0xFFFFFF),
+			(overlay_animate_to_color, reg(50), 250, 0xFFFFFF),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name8", 250, 0xFFFFFF),
+          (else_try),
+            (overlay_animate_to_color, "$g_presentation_but8_movement", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but8_riding", 250, 0),
+            (overlay_animate_to_color, "$g_presentation_but8_weapon_usage", 250, 0),
+			(overlay_animate_to_color, reg(14), 250, 0),
+			(overlay_animate_to_color, reg(23), 250, 0),
+			(overlay_animate_to_color, reg(32), 250, 0),
+			(overlay_animate_to_color, reg(41), 250, 0),
+			(overlay_animate_to_color, reg(50), 250, 0),
+            (overlay_animate_to_color, "$g_presentation_obj_battle_name8", 250, 0),
+          (try_end),
+        (try_end),
+        ]),
+		
+      (ti_on_presentation_run,
+        [
+        (try_begin),
+	      (key_clicked, key_escape),
+		  (party_set_slot, "p_main_party", slot_party_prebattle_plan, 0),
+		  (jump_to_menu, "$g_next_menu"),
+		  (presentation_set_duration, 0),
+		(try_end),
+        ]),
+      ]),
+
+ ("prebattle_record_battle_size",0,mesh_load_window,[
+      (ti_on_presentation_load,
+       [(set_fixed_point_multiplier, 1000),
+        (str_store_string, s1, "@Record Battle Size as set in Options"),
+        (create_text_overlay, reg1, s1, tf_center_justify),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 500),
+        (overlay_set_position, reg1, pos1),
+        (overlay_set_text, reg1, s1),
+		(create_number_box_overlay, "$g_presentation_obj_name_kingdom_1", 30, max_battle_size + 1),
+        (position_set_x, pos1, 400),
+        (position_set_y, pos1, 400),
+        (overlay_set_position, "$g_presentation_obj_name_kingdom_1", pos1),
+		(party_get_slot, ":battle_size", "p_main_party", slot_party_prebattle_battle_size),
+        (overlay_set_val, "$g_presentation_obj_name_kingdom_1", ":battle_size"),
+
+        
+        (create_button_overlay, "$g_presentation_obj_name_kingdom_2", "@Continue...", tf_center_justify),
+        (position_set_x, pos1, 500),
+        (position_set_y, pos1, 300),
+        (overlay_set_position, "$g_presentation_obj_name_kingdom_2", pos1),
+        (presentation_set_duration, 999999),
+        ]),
+      (ti_on_presentation_event_state_change,
+       [(store_trigger_param_1, ":object"),
+	    (store_trigger_param_2, ":value"),
+        (try_begin),
+          (eq, ":object", "$g_presentation_obj_name_kingdom_1"),
+		  (party_set_slot, "p_main_party", slot_party_prebattle_battle_size, ":value"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_name_kingdom_2"),
+		  (party_get_slot, ":battle_size", "p_main_party", slot_party_prebattle_battle_size),
+		  (val_clamp, ":battle_size", 30, max_battle_size + 1),
+		  (party_set_slot, "p_main_party", slot_party_prebattle_battle_size, ":battle_size"),
+          (try_begin),
+		    (eq, "$g_presentation_credits_obj_1", 1),
+			(start_presentation, "prsnt_prebattle_custom_deployment"),
+		  (else_try),
+		    (presentation_set_duration, 0),
+		  (try_end),
+        (try_end),
+        ]),
+    ]),
+   
+ ("pbod_preferences", 0, mesh_load_window, [
+    (ti_on_presentation_load,
+      [
+        (presentation_set_duration, 999999),
+        (set_fixed_point_multiplier, 1000),
+		
+		(try_begin),
+			(party_slot_eq, "p_main_party", slot_party_pref_prefs_set, 0),
+			(call_script, "script_prebattle_set_default_prefs"),
+			(party_set_slot, "p_main_party", slot_party_pref_prefs_set, 1),
+		(try_end),
+		
+		(str_clear, s0),
+        (create_text_overlay, reg0, s0, tf_scrollable),
+        (position_set_x, pos1, 50),
+        (position_set_y, pos1, 50),
+        (overlay_set_position, reg0, pos1),
+        (position_set_x, pos1, 550),
+        (position_set_y, pos1, 630),
+        (overlay_set_area_size, reg0, pos1),
+        (set_container_overlay, reg0),
+		
+		(assign, ":num_options", 15),
+		(val_add, ":num_options", 2), #For extra space for headings
+		(assign, ":cur_y_shift", 50),
+		(store_div, ":line_y_shift", ":cur_y_shift", 2),
+		(store_mul, ":headings_y", ":cur_y_shift", ":num_options"),
+		(store_sub, ":inputs_y", ":headings_y", 5),
+		
+
+        ## Headings
+		(position_set_x, pos1, 50),
+        
+        (create_text_overlay, reg0, "@Record Battle Size as set in Options:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		
+		(store_sub, ":line_1_y", ":headings_y", ":line_y_shift"), #LINE 1 Here
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		(val_sub, ":headings_y", 30),		
+        
+        (create_text_overlay, reg0, "@The 'Weapon Use Fixes' change NPC decision-^making with the following weapon types.^^Un-tick the boxes if you dislike the behavior.", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		(val_sub, ":headings_y", 20),
+
+        (create_text_overlay, reg0, "@Use NPC Lancer Fix:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		(assign, "$g_presentation_obj_banner_selection_2", reg0), #For Mouse-Overs
+
+        (create_text_overlay, reg0, "@Use NPC Horse Archer Fix:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+
+        (create_text_overlay, reg0, "@Use NPC Spear/Polearm Fix:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		
+		(store_add, ":line_2_y", ":headings_y", ":line_y_shift"), #LINE 2 Here
+		
+		(create_text_overlay, reg0, "@Use Pike/Horse Damage Tweaks:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		
+		(create_text_overlay, reg0, "@Reassign De-horsed Cavalry to:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		
+		(create_text_overlay, reg0, "@Reassign No-Ammo Archers to:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		
+		(create_text_overlay, reg0, "@Enable Battle Continuation:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		
+		(create_text_overlay, reg0, "@Batt. Cont., Charge after KO:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		
+		(create_text_overlay, reg0, "@Formations Battle AI:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		
+		(create_text_overlay, reg0, "@Enable AI to use Special Orders:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		
+		(create_text_overlay, reg0, "@Enable Bodyguards in Towns/Villages:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		
+		(create_text_overlay, reg0, "@Enable ranged penalty from weather:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+		
+		(store_add, ":line_3_y", ":headings_y", ":line_y_shift"), #LINE 3 HERE
+
+        (create_text_overlay, reg0, "@Disable Companions' complaints:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+
+        (create_text_overlay, reg0, "@Enable the cheat menu:", tf_vertical_align_center),
+        (position_set_y, pos1, ":headings_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":headings_y", ":cur_y_shift"),
+
+        ## Lines
+		
+		(create_mesh_overlay, reg0, "mesh_white_plane"),
+        (position_set_x, pos1, 23500),
+        (position_set_y, pos1, 100),
+        (overlay_set_size, reg0, pos1),
+        (position_set_x, pos1, 50),
+        (position_set_y, pos1, ":line_1_y"),
+        (overlay_set_position, reg0, pos1),
+        (overlay_set_color, reg0, 0),
+		
+		(create_mesh_overlay, reg0, "mesh_white_plane"),
+        (position_set_x, pos1, 23500),
+        (position_set_y, pos1, 100),
+        (overlay_set_size, reg0, pos1),
+        (position_set_x, pos1, 50),
+        (position_set_y, pos1, ":line_2_y"),
+        (overlay_set_position, reg0, pos1),
+        (overlay_set_color, reg0, 0), #0x000000
+		
+		(create_mesh_overlay, reg0, "mesh_white_plane"),
+        (position_set_x, pos1, 23500),
+        (position_set_y, pos1, 100),
+        (overlay_set_size, reg0, pos1),
+        (position_set_x, pos1, 50),
+        (position_set_y, pos1, ":line_3_y"),
+        (overlay_set_position, reg0, pos1),
+        (overlay_set_color, reg0, 0), #0x000000
+        
+        ## Inputs
+        (position_set_x, pos1, 450),
+
+		(val_sub, ":inputs_y", 9),	
+        (create_number_box_overlay, "$g_presentation_obj_name_kingdom_1", 30, max_battle_size + 1),
+        (position_set_y, pos1, ":inputs_y"),
+        (overlay_set_position, "$g_presentation_obj_name_kingdom_1", pos1),
+        (party_get_slot, ":battle_size", "p_main_party", slot_party_prebattle_battle_size),
+        (overlay_set_val, "$g_presentation_obj_name_kingdom_1", ":battle_size"),
+		(val_sub, ":inputs_y", ":cur_y_shift"),
+		(val_sub, ":inputs_y", ":cur_y_shift"),
+		(val_sub, ":inputs_y", 41),
+
+        (create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"), #Lancer
+        (position_set_y, pos1, ":inputs_y"),
+        (overlay_set_position, reg0, pos1),
+		(val_sub, ":inputs_y", ":cur_y_shift"),
+
+        (create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"), #Horse Archer
+        (position_set_y, pos1, ":inputs_y"),
+        (overlay_set_position, reg0, pos1),  
+        (val_sub, ":inputs_y", ":cur_y_shift"),		
+
+        (create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"), #Spear/Polearm
+        (position_set_y, pos1, ":inputs_y"),
+        (overlay_set_position, reg0, pos1),  
+		(val_sub, ":inputs_y", ":cur_y_shift"),
+        
+		(create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"), #Damage
+        (position_set_y, pos1, ":inputs_y"),
+        (overlay_set_position, reg0, pos1),	
+        (val_sub, ":inputs_y", ":cur_y_shift"),		
+		
+		(create_combo_button_overlay, reg0), #De-Horsed Division Set
+		(position_set_x, pos1, 485),
+		(val_sub, ":inputs_y", 8),
+		(position_set_y, pos1, ":inputs_y"),
+		(overlay_set_position, reg0, pos1),
+		(position_set_x, pos1, 700),
+		(position_set_y, pos1, 800),
+		(overlay_set_size, reg0, pos1),
+		(try_for_range, ":i", 0, 9),
+		    (str_store_class_name, s1, ":i"),
+			(overlay_add_item, reg0, s1),
+		(try_end),
+		(overlay_add_item, reg0, "@{!}- Disabled -"),
+		(position_set_x, pos1, 450),
+		(val_add, ":inputs_y", 8),
+		(val_sub, ":inputs_y", ":cur_y_shift"),
+		
+		(create_combo_button_overlay, reg0), #Out of Ammo Archer Division Set
+		(position_set_x, pos1, 485),
+		(val_sub, ":inputs_y", 8),
+		(position_set_y, pos1, ":inputs_y"),
+		(overlay_set_position, reg0, pos1),
+		(position_set_x, pos1, 700),
+		(position_set_y, pos1, 800),
+		(overlay_set_size, reg0, pos1),
+		(try_for_range, ":i", 0, 9),
+		    (str_store_class_name, s1, ":i"),
+			(overlay_add_item, reg0, s1),
+		(try_end),
+		(overlay_add_item, reg0, "@{!}- Disabled -"),
+		(position_set_x, pos1, 450),
+		(val_add, ":inputs_y", 8),
+		(val_sub, ":inputs_y", ":cur_y_shift"),
+		
+		(create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"), #Battle Continuation
+        (position_set_y, pos1, ":inputs_y"),
+        (overlay_set_position, reg0, pos1),	
+        (val_sub, ":inputs_y", ":cur_y_shift"),	
+		
+		# (create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"), #Post-KD Charge
+        # (position_set_y, pos1, ":inputs_y"),
+        # (overlay_set_position, reg0, pos1),	
+        # (val_sub, ":inputs_y", ":cur_y_shift"),
+
+		(create_combo_button_overlay, reg0), #Post-KD Charge
+		(position_set_x, pos1, 485),
+		(val_sub, ":inputs_y", 8),
+		(position_set_y, pos1, ":inputs_y"),
+		(overlay_set_position, reg0, pos1),
+		(position_set_x, pos1, 700),
+		(position_set_y, pos1, 800),
+		(overlay_set_size, reg0, pos1),
+		(overlay_add_item, reg0, "@{!}- Disabled -"),
+		(overlay_add_item, reg0, "@Charge All"),
+		(overlay_add_item, reg0, "@Formations AI"),
+		(position_set_x, pos1, 450),
+		(val_add, ":inputs_y", 8),
+		(val_sub, ":inputs_y", ":cur_y_shift"),		
+		
+		# (create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"), #AI Formations
+        # (position_set_y, pos1, ":inputs_y"),
+        # (overlay_set_position, reg0, pos1),	
+        # (val_sub, ":inputs_y", ":cur_y_shift"),	
+		
+		(create_combo_button_overlay, reg0), #AI Formations
+		(position_set_x, pos1, 485),
+		(val_sub, ":inputs_y", 8),
+		(position_set_y, pos1, ":inputs_y"),
+		(overlay_set_position, reg0, pos1),
+		(position_set_x, pos1, 700),
+		(position_set_y, pos1, 800),
+		(overlay_set_size, reg0, pos1),
+		(overlay_add_item, reg0, "@{!}- Disabled -"),
+		(overlay_add_item, reg0, "@Formations AI"),
+		(overlay_add_item, reg0, "@Native AI, w/Formations"),
+		(position_set_x, pos1, 450),
+		(val_add, ":inputs_y", 8),
+		(val_sub, ":inputs_y", ":cur_y_shift"),	
+		
+		(create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"), #AI Spear Brace/Special Orders
+        (position_set_y, pos1, ":inputs_y"),
+        (overlay_set_position, reg0, pos1),	
+        (val_sub, ":inputs_y", ":cur_y_shift"),	
+		
+		(create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"), #Bodyguards
+        (position_set_y, pos1, ":inputs_y"),
+        (overlay_set_position, reg0, pos1),	
+        (val_sub, ":inputs_y", ":cur_y_shift"),	
+		
+		(create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"), #Weather Proficiency Penalty
+        (position_set_y, pos1, ":inputs_y"),
+        (overlay_set_position, reg0, pos1),	
+        (val_sub, ":inputs_y", ":cur_y_shift"),	
+		
+		(create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"),
+        (position_set_y, pos1, ":inputs_y"),
+        (overlay_set_position, reg0, pos1),
+        (overlay_set_val, reg0, "$disable_npc_complaints"),
+		(val_sub, ":inputs_y", ":cur_y_shift"),
+
+        (create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"),
+        (position_set_y, pos1, ":inputs_y"),
+        (overlay_set_position, reg0, pos1),
+        (overlay_set_val, reg0, "$cheat_mode"),   
+        (val_sub, ":inputs_y", ":cur_y_shift"),		
+        
+        (set_container_overlay, -1),
+		
+	    #Set Values of Caba'drin Order Preferences
+		(party_get_slot, ":pref_lancer", "p_main_party", slot_party_pref_wu_lance),
+        (party_get_slot, ":pref_harcher", "p_main_party", slot_party_pref_wu_harcher),
+        (party_get_slot, ":pref_spear", "p_main_party", slot_party_pref_wu_spear),
+		(party_get_slot, ":pref_damage", "p_main_party", slot_party_pref_dmg_tweaks),
+		
+		(party_get_slot, ":pref_bodyguard", "p_main_party", slot_party_pref_bodyguard),
+        (party_get_slot, ":pref_battcont", "p_main_party", slot_party_pref_bc_continue),
+        (party_get_slot, ":pref_KOcharge", "p_main_party", slot_party_pref_bc_charge_ko),
+		(party_get_slot, ":pref_dehorsed", "p_main_party", slot_party_pref_div_dehorse),
+		(party_get_slot, ":pref_outofammo", "p_main_party", slot_party_pref_div_no_ammo),
+		(party_get_slot, ":pref_formAI", "p_main_party", slot_party_pref_formations),
+		(party_get_slot, ":pref_spbrace", "p_main_party", slot_party_pref_spear_brace),
+		(party_get_slot, ":pref_wpnprofd", "p_main_party", slot_party_pref_wp_prof_decrease),
+		
+		(store_add, ":overlay", "$g_presentation_obj_name_kingdom_1", 1),
+		(overlay_set_val, ":overlay", ":pref_lancer"), 
+		(val_add, ":overlay", 1),
+		(overlay_set_val, ":overlay", ":pref_harcher"), 
+		(val_add, ":overlay", 1),
+		(overlay_set_val, ":overlay", ":pref_spear"), 
+		(val_add, ":overlay", 1),
+		(overlay_set_val, ":overlay", ":pref_damage"), 
+		(val_add, ":overlay", 1),
+		(overlay_set_val, ":overlay", ":pref_dehorsed"),
+		(val_add, ":overlay", 1),
+		(overlay_set_val, ":overlay", ":pref_outofammo"),
+		(val_add, ":overlay", 1),
+		(overlay_set_val, ":overlay", ":pref_battcont"),
+		(val_add, ":overlay", 1),
+		(overlay_set_val, ":overlay", ":pref_KOcharge"),
+		(val_add, ":overlay", 1),
+		(overlay_set_val, ":overlay", ":pref_formAI"),
+		(val_add, ":overlay", 1),
+		(overlay_set_val, ":overlay", ":pref_spbrace"),
+		(val_add, ":overlay", 1),
+		(overlay_set_val, ":overlay", ":pref_bodyguard"),
+		(val_add, ":overlay", 1),
+		(overlay_set_val, ":overlay", ":pref_wpnprofd"),
+
+		## Mouse-over Tips	
+		(create_text_overlay, reg0, "@PBOD Mod^Options", tf_center_justify|tf_with_outline),
+		(overlay_set_color, reg0, 0xFFFFFFFF),
+		(position_set_x, pos1, 800),
+        (position_set_y, pos1, 600),
+        (overlay_set_position, reg0, pos1),
+        (position_set_x, pos1, 2000),
+        (position_set_y, pos1, 2000),
+        (overlay_set_size, reg0, pos1),
+		
+        (str_store_string, s0, "@Mouse-over options for further information."),
+        (create_text_overlay, "$g_presentation_obj_banner_selection_1", s0, tf_double_space|tf_scrollable),
+        (position_set_x, pos1, 650),
+        (position_set_y, pos1, 400),
+        (overlay_set_position, "$g_presentation_obj_banner_selection_1", pos1),
+        (position_set_x, pos1, 800),
+        (position_set_y, pos1, 800),
+        (overlay_set_size, "$g_presentation_obj_banner_selection_1", pos1),
+        (position_set_x, pos1, 300),
+        (position_set_y, pos1, 150),
+        (overlay_set_area_size, "$g_presentation_obj_banner_selection_1", pos1),
+		
+		
+        ## Button
+		(position_set_x, pos1, 900),
+        (position_set_y, pos1, 25),
+        (create_game_button_overlay, "$g_presentation_obj_name_kingdom_2", "@Done", tf_center_justify),
+        (overlay_set_position, "$g_presentation_obj_name_kingdom_2", pos1),  
+
+		(position_set_x, pos1, 740),
+		(create_game_button_overlay, reg0, "@Restore Defaults", tf_center_justify),
+        (overlay_set_position, reg0, pos1),	
+
+		(position_set_x, pos1, 900),
+        (position_set_y, pos1, 75),
+		(create_game_button_overlay, reg0, "@Key Settings", tf_center_justify),
+		(overlay_set_position, reg0, pos1),
+      ]),
+
+	  (ti_on_presentation_event_state_change,
+      [
+        (store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":value"),
+
+		(try_begin),
+          (eq, ":object", "$g_presentation_obj_name_kingdom_1"),
+		  (party_set_slot, "p_main_party", slot_party_prebattle_battle_size, ":value"),
+        (else_try),
+          (eq, ":object", "$g_presentation_obj_name_kingdom_2"),
+		  
+		  (party_get_slot, ":battle_size", "p_main_party", slot_party_prebattle_battle_size),
+		  (val_clamp, ":battle_size", 30, max_battle_size + 1),
+		  (party_set_slot, "p_main_party", slot_party_prebattle_battle_size, ":battle_size"),
+		  
+          (presentation_set_duration, 0),	  
+		(else_try),
+		  (store_add, ":overlay", "$g_presentation_obj_name_kingdom_2", 1),
+		  (eq, ":object", ":overlay"),
+		  (call_script, "script_prebattle_set_default_prefs"),
+		  (start_presentation, "prsnt_pbod_preferences"),
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"),
+		  (start_presentation, "prsnt_pbod_redefine_keys"),
+		(else_try),
+		  (store_add, ":overlay", "$g_presentation_obj_name_kingdom_1", 1),
+		  (eq, ":object", ":overlay"), #Lancer		  
+		  (party_set_slot, "p_main_party", slot_party_pref_wu_lance, ":value"),	       
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"), #Horse Archer
+		  (party_set_slot, "p_main_party", slot_party_pref_wu_harcher, ":value"),	
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"), #Spear
+		  (party_set_slot, "p_main_party", slot_party_pref_wu_spear, ":value"),	
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"), #Damage
+		  (party_set_slot, "p_main_party", slot_party_pref_dmg_tweaks, ":value"),	
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"),  #De-horsed
+		  (party_set_slot, "p_main_party", slot_party_pref_div_dehorse, ":value"),	
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"), #Out of Ammo
+		  (party_set_slot, "p_main_party", slot_party_pref_div_no_ammo, ":value"),	
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"), #Battle Continuation
+		  (party_set_slot, "p_main_party", slot_party_pref_bc_continue, ":value"),
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"), #KO Charge
+		  (party_set_slot, "p_main_party", slot_party_pref_bc_charge_ko, ":value"),
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"), #AI Formations
+		  (party_set_slot, "p_main_party", slot_party_pref_formations, ":value"),
+        (else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"), #AI Spear Brace/Special Orders
+		  (party_set_slot, "p_main_party", slot_party_pref_spear_brace, ":value"),		  
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"), #Bodyguard
+		  (party_set_slot, "p_main_party", slot_party_pref_bodyguard, ":value"),
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"), #Weather Proficiency Penalty
+		  (party_set_slot, "p_main_party", slot_party_pref_wp_prof_decrease, ":value"),			  
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"), #NPC Complaints
+		  (assign, "$disable_npc_complaints", ":value"),
+		(else_try),
+		  (val_add, ":overlay", 1),
+		  (eq, ":object", ":overlay"), #Cheat Mode
+		  (assign, "$cheat_mode", ":value"),
+        (try_end),
+      ]),
+	  
+	  (ti_on_presentation_mouse_enter_leave, #Mouse-Over Pref-Tips
+	  [
+	    (store_trigger_param_1, ":object"),
+        (store_trigger_param_2, ":enter_leave"), #0 if mouse enters, 1 if mouse leaves
+		(try_begin),
+			(eq, ":enter_leave", 1),
+			#Clear String...or do nothing?
+		(else_try),
+			(eq, ":enter_leave", 0),
+			(store_add, ":overlay", "$g_presentation_obj_name_kingdom_1", 1), #Input
+			(assign, ":overlay_2", "$g_presentation_obj_banner_selection_2"), #Heading
+			(try_begin),
+			  (lt, ":object", ":overlay_2"),
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@Mouse-over options for further information."),
+			(else_try),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #Lancer		  
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@Weapon Use Fix for Lancers will force mounted bots with lances to use them unless they are surrounded by enemies."),       
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #Horse Archer
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@Weapon Use Fix for Horse Archers will force mounted bots with bows to use them until they run out of ammo."),       
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #Spear
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@Weapon Use Fix for Spear/Polearms will force infantry bots with polearms to use them unless they are surrounded by enemies."),       
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #Damage
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@Damage tweaks will give a flat boost to damage from spears to horses, and charge damage from horses to infantry, in an attempt to compensate for poor AI use of polearms and charges."),        
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"),  #De-horsed
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@Mounted bots, once their horse dies, can be re-assinged to a division of your choosing. If active, AI bots will be reassigned to infantry."),       	
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #Out of Ammo
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@Foot archer bots, once out of ammo, can be re-assinged to a division of your choosing. If active, AI bots will be reassigned to infantry."),	
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #Battle Continuation
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@Battle Continuation allows your troops to continue fighting after you are knocked out."),
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #KO Charge
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@If Battle Continuation is active, you can select what your troops will do after you get knocked out: Disabled has them continue their previous orders; Charge all will give everyone a charge order; Formations AI (if active for the AI) will allow the new AI to take over for you."),
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #AI Formations
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@Select your prefered Battle AI: Disabled is Native AI; Formations AI both allows the AI to use formations and changes their battle decision-making; Native AI w/Formations is Native AI but carries out the Native AI with basic formations."),
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #AI Spear Brace/Special Orders
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@Enabling AI Special Orders allows the AI teams to use volley fire (crossbows), skirmish mode (bow-users), and spear-bracing (polearm infantry)."),
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #Bodyguard
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@Bodyguards allows your companions to serve as your character's bodyguards in town and village scenes. The number of bodyguards depends on your character's leadership and renown."),
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #Weather Proficiency Penalty
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@The Weather Proficiency Penalties lowers the ranged weapons proficiencies of all troops while in battle in heavy fog, rain/snow, or at night to reflect the poor conditions for archery."),			  
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #NPC Complaints
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@Disabling NPC Complaints will mute your companion's complaints about eachother or your decisions. It will not remove the consequences of their opinions, however."),
+			(else_try),
+			  (val_add, ":overlay", 1),
+			  (val_add, ":overlay_2", 1),
+			  (this_or_next|eq, ":object", ":overlay_2"),
+			  (eq, ":object", ":overlay"), #Cheat Mode
+			  (overlay_set_text, "$g_presentation_obj_banner_selection_1", "@The cheat/debug mode activates debug messages as well as the 'cheatmenu' in your Camp Menu and additional options under Reports."),
+			(try_end),
+		(try_end),	  
+	  ]),
+    ]),
+
+ # Key configuration by Dunde
+ ("pbod_redefine_keys", 0, mesh_load_window, 
+  [(ti_on_presentation_load, 
+    [(presentation_set_duration, 999999),
+     (set_fixed_point_multiplier, 1000),
+     (assign, "$g_presentation_obj_custom_battle_designer_1", 0),                    
+     (call_script, "script_init_key_config"), #CABA-Initialize Slots to use TEMP troop
+	 (init_position, pos1),
+     # Tittle
+     (position_set_y, pos1, 650),  (position_set_x, pos1, 500),  # Tittle Position
+     (position_set_x, pos2, 2000), (position_set_y, pos2, 2000), # Tittle Size
+     (create_text_overlay, reg0, "@Keys Configuration", tf_center_justify),
+     (overlay_set_position, reg0, pos1), (overlay_set_size, reg0, pos2),
+     (position_set_y, pos1, 25), (position_set_x, pos1, 50),   # Notes' Position
+     (position_set_x, pos2, 750), (position_set_y, pos2, 750), # Note's Size
+     (create_text_overlay, "$g_presentation_obj_custom_battle_designer_2", "@Press Esc to^^Disable a key", tf_left_align),
+     (overlay_set_position, "$g_presentation_obj_custom_battle_designer_2", pos1), 
+	 (overlay_set_size, "$g_presentation_obj_custom_battle_designer_2", pos2),
+     (overlay_set_color, "$g_presentation_obj_custom_battle_designer_2", 0x600000),  # Note's Color  
+     (overlay_set_alpha, "$g_presentation_obj_custom_battle_designer_2", 0x00),      # Note's invisible  
+     (position_set_y, pos1, 600),                             # First KeyConfig's Label Position
+     (try_begin),
+        (le, number_of_keys, two_columns_limit),                 # KeyConfig's Labels Size
+        (position_set_x, pos2, 1000), (position_set_y, pos2, 1000), 
+        (position_set_x, pos1, 50),
+     (else_try),
+        (position_set_x, pos2, 750), (position_set_y, pos2, 750),   
+         (position_set_x, pos1, 25),
+     (try_end),     
+     (position_set_x, pos3, 120),  (position_set_y, pos3, 30),   # KeyConfig's Buttons Size     
+     (try_for_range, ":no", 0, number_of_keys),
+        (store_add, ":off_string", ":no", key_names_begin),             # Offset for Label String
+        (store_add, ":off_overlay2", ":no", slot_key_overlay_begin),    # Offset for Buttons Overlay
+        (store_add, ":off_overlay1", ":off_overlay2", number_of_keys),  # Offset for Labels Overlay
+        (create_text_overlay, reg1, ":off_string", tf_left_align),              # Creating,
+        (troop_set_slot, key_config_data, ":off_overlay1", reg1),               # Saving,
+        (overlay_set_position, reg1, pos1), (overlay_set_size, reg1, pos2),     # Positioning, and Resizing KeyConfig Labels
+        (try_begin),
+           (le, number_of_keys, two_columns_limit),
+           (position_move_x, pos1, 35),                                         # Move Right to give spave between labels and buttons
+        (else_try),
+           (position_move_x, pos1, 24), 
+        (try_end),   
+        (create_game_button_overlay, reg2, "str_no_string", tf_center_justify), # Creating,
+        (troop_set_slot, key_config_data, ":off_overlay2", reg2),               # Saving,
+        (overlay_set_position, reg2, pos1), (overlay_set_size, reg2, pos3),     # Positioning, and Resizing KeyConfig Buttons
+        (try_begin),
+           (le, number_of_keys, two_columns_limit),
+           (position_move_x, pos1, -35),                                        # Move Left
+        (else_try),
+           (position_move_x, pos1, -24), 
+        (try_end),   
+        (position_move_y, pos1, -4),              # Move left, and move down for next keyconfig's label and button
+        (try_begin),          
+            (le, number_of_keys, two_columns_limit), 
+            (try_begin),
+               (eq, number_of_keys/2, ":no"),                                   # Half of keyconfigs positions are moved up and right
+               (assign, ":move_y", number_of_keys/2+1), (val_mul, ":move_y", 4),
+               (position_move_y, pos1, ":move_y"),
+               (position_move_x, pos1, 50),
+            (try_end),
+        (else_try),          
+            (try_begin),
+               (eq, number_of_keys/3, ":no"),          # 2nd 1/3 part of keyconfigs positions are moved up and right
+               (assign, ":move_y", number_of_keys/3+1), (val_mul, ":move_y", 4),
+               (position_move_y, pos1, ":move_y"),
+               (position_move_x, pos1, 33),
+            (try_end),
+            (try_begin),
+               (eq, 2*number_of_keys/3, ":no"),        # 3nd 2/3 part of keyconfigs positions are moved up and right
+               (assign, ":move_y", number_of_keys/3+1), (val_mul, ":move_y", 4),
+               (position_move_y, pos1, ":move_y"),
+               (position_move_x, pos1, 33),
+            (try_end),
+        (try_end),  
+     (try_end),
+	 (call_script, "script_set_config_slot_key_config"),                        # Get Current KeyConfig
+     (call_script, "script_update_key_config_buttons"),                         # Writting the  Captions
+     # Other Buttons
+     (position_set_y, pos1, 25), (position_set_x, pos1, 900),                   
+     (create_game_button_overlay, "$g_presentation_obj_custom_battle_designer_3", "@OK", tf_center_justify),          # OK Button
+     (overlay_set_position, "$g_presentation_obj_custom_battle_designer_3", pos1),
+     (position_move_x, pos1, -16),
+     (create_game_button_overlay, "$g_presentation_obj_custom_battle_designer_4", "@Reset", tf_center_justify),       # RESET Button
+     (overlay_set_position, "$g_presentation_obj_custom_battle_designer_4", pos1),                       
+     (position_move_x, pos1, -16),
+     (create_game_button_overlay, "$g_presentation_obj_custom_battle_designer_5", "@Default", tf_center_justify),     # DEFAULT Button
+     (overlay_set_position, "$g_presentation_obj_custom_battle_designer_5", pos1),
+	 (create_game_button_overlay, "$g_presentation_obj_custom_battle_designer_6", "@PBOD Preferences"),
+     (position_set_x, pos1, 900),
+     (position_set_y, pos1, 75),
+     (overlay_set_position, "$g_presentation_obj_custom_battle_designer_6", pos1),
+	]),
+	
+   (ti_on_presentation_event_state_change, 
+    [(store_trigger_param_1, ":object"),
+     (assign, ":found", 0),
+     (store_add, ":upper_limit", slot_key_overlay_begin, number_of_keys),    #  Checking
+     (try_for_range, ":slot", slot_key_overlay_begin, ":upper_limit"),       # for all KeyConfigs Button Overlay
+        (troop_slot_eq, key_config_data, ":slot", ":object"),                # Found the Right Button Overlay?
+        (assign, "$g_presentation_obj_custom_battle_designer_1", 1),                              # Flag the event
+        (assign, "$g_presentation_credits_obj_1", ":object"),                                      # Get The Overlay 
+        (overlay_set_text, "$g_presentation_credits_obj_1", "@Press a key", tf_center_justify),    # Change it's caption & color
+        (overlay_set_color, "$g_presentation_credits_obj_1", 0x0000FF),
+        (overlay_set_hilight_color, "$g_presentation_credits_obj_1", 0x0000FF),
+        (store_sub, "$g_presentation_credits_obj_2", ":slot",  number_of_keys),
+        (assign, ":found", ":slot"), (assign, ":upper_limit", ":slot"),      # Break the Loops
+     (try_end),     
+     (try_begin),
+        (gt, ":found", 0),                                                  # Skip, the Object is a keyconfig button 
+     (else_try),    
+       (eq, ":object", "$g_presentation_obj_custom_battle_designer_3"),     # OK pressed?
+       (call_script, "script_set_global_var_key_config"),                   # Write the Config to Global Variable
+       (call_script, "script_update_key_config_buttons"), # it's not neccessary, just incase
+       (presentation_set_duration, 0),    # Quit from KeyConfig Presentation
+     (else_try),    
+       (eq, ":object", "$g_presentation_obj_custom_battle_designer_4"),     # RESET pressed? 
+       (call_script, "script_set_config_slot_key_config"),                  # Reload Current Config
+       (call_script, "script_update_key_config_buttons"),                   # Update Captions
+     (else_try),
+       (eq, ":object", "$g_presentation_obj_custom_battle_designer_5"),     # DEFAULT pressed?
+       (call_script, "script_reset_to_default_keys"),                       # Reload Default Config
+       (call_script, "script_update_key_config_buttons"),                   # Update Captions 
+     (else_try),
+       (eq, ":object", "$g_presentation_obj_custom_battle_designer_6"),     # RETURN TO PREFERENCES
+	   (call_script, "script_set_global_var_key_config"),                   # Write the Config to Global Variable
+	   (start_presentation, "prsnt_pbod_preferences"),                      # Go To Preferences
+     (try_end),
+     (try_begin),
+        (eq, "$g_presentation_obj_custom_battle_designer_1", 1),                    # if a Button's waiting to set 
+        (overlay_set_alpha, "$g_presentation_obj_custom_battle_designer_2", 0xFF),  # then make The Note visible
+     (try_end), ]),
+
+  (ti_on_presentation_run, 
+   [(eq, "$g_presentation_obj_custom_battle_designer_1", 1),                                     # if a Button's waiting to set 
+    (assign, "$g_presentation_obj_custom_battle_designer_1", 0),                                 #
+    (assign, ":found", 0),
+    (store_add, ":upper_limit", slot_key_defs_begin, number_of_all_keys),   # Checking
+    (try_for_range, ":no", slot_key_defs_begin,  ":upper_limit"),           # for all keys
+       (troop_get_slot, ":key", key_config_data, ":no"),                    # reload the key from slot
+       (key_clicked, ":key"),                                               # if that key's clicked?
+       (troop_set_slot, key_config_data, "$g_presentation_credits_obj_2", ":key"),                # Yes, then save the new config for the button
+       (assign, ":found", ":key"),                                          # Flag we found it
+       (assign, ":upper_limit", ":no"),                                     # Break the Loops
+    (try_end),
+    (try_begin),
+       (gt, ":found", 0),                                                   # We Found the key
+    (else_try),   
+       (key_clicked, key_escape),                                           # ESC clicked?
+       (troop_set_slot, key_config_data, "$g_presentation_credits_obj_2", 0xff),      # Disable the button
+    (else_try),
+       (assign, "$g_presentation_obj_custom_battle_designer_1", 1),          # else? do nothing. The Button's still waiting
+    (try_end),
+    (try_begin),
+       (eq, "$g_presentation_obj_custom_battle_designer_1", 0),                     # if there's new keyconfig for the button
+       (try_for_range, ":no", slot_keys_begin, slot_keys_begin + number_of_keys),   # Check if there is another button use the same key
+           (neq, ":no",  "$g_presentation_credits_obj_2"),
+           (troop_slot_eq, key_config_data, ":no", ":found"),                       # if there is, then disable the button
+           (troop_set_slot, key_config_data, ":no", 0xff),
+       (try_end),                          
+       (overlay_set_hilight_color, "$g_presentation_credits_obj_1", 0x00ff00),      # Set the button color back to normal
+       (overlay_set_alpha, "$g_presentation_obj_custom_battle_designer_2", 0x00),   # The Note must be dissapear again
+       (call_script, "script_update_key_config_buttons"),                           # Update Captions
+    (try_end), 
+    ]),  
+   ]),      
+	
+ ("caba_order_display", prsntf_read_only,0,[
+      (ti_on_presentation_load,
+       [(set_fixed_point_multiplier, 1000),
+		(try_for_range, ":i", slot_party_pref_prefs_set, slot_party_pref_prefs_set+9),
+		#(try_for_range, ":i", 0, 9),
+			#(troop_set_slot, "trp_temp_array_a", ":i", -1),
+			(party_set_slot, "p_temp_party", ":i", -1),
+            (try_end),
+            (try_end),
+            (create_text_overlay, reg1, s1, tf_right_align),
+            (position_set_x, pos1, 980),
+            (position_set_y, pos1, 415),
+            (overlay_set_position, reg1, pos1),
+            (overlay_set_size, reg1, pos2),
+		(try_end),
+            (create_text_overlay, reg1, s1, tf_right_align),
+            (position_set_x, pos1, 980),
+            (position_set_y, pos1, 415),
+            (overlay_set_position, reg1, pos1),
+            (overlay_set_size, reg1, pos2),
+		
+		(call_script, "script_init_key_config"),
+		# #WSE Operations - game_key_get_key
+		# (game_key_get_key, reg0, gk_order_4),
+		# (call_script, "script_str_store_key_name", s10, reg0), #F4
+		# (game_key_get_key, reg0, gk_order_5),
+		# (call_script, "script_str_store_key_name", s11, reg0), #F5
+		# (game_key_get_key, reg0, gk_order_6),
+		# (call_script, "script_str_store_key_name", s12, reg0), #F6
+		(str_store_string, s10, "str_0x3e"), #F4
+		(str_store_string, s11, "str_0x3f"), #F5
+		(str_store_string, s12, "str_0x40"), #F6...no way other than WSE to get the string for what is assigned to a game key
+		(call_script, "script_str_store_key_name", s13, "$key_order_7"), #F7
+		(call_script, "script_str_store_key_name", s14, "$key_order_8"), #F8
+		(call_script, "script_str_store_key_name", s15, "$key_order_9"), #F9
+		
+		(assign, ":y_position", 560),
+		(try_begin), #Figure out which orders to display, set strings
+			(party_slot_eq, "p_main_party", slot_party_gk_order, 0),
+			(try_begin),
+				(this_or_next|eq, "$g_next_menu", "mnu_simple_encounter"), #mst_lead_charge
+			    (eq, "$g_next_menu", "mnu_join_battle"),
+				(str_store_string, s1, "@{s10} - Formations orders"),
+				(str_store_string, s2, "@{s11} - Weapon orders"),
+				(str_store_string, s3, "@{s12} - Shield orders"),
+				(str_store_string, s4, "@{s13} - Attack orders"),
+			
+				(assign, ":num_orders", 4),
+			(else_try),
+				(str_store_string, s1, "@{s11} - Weapon orders"),
+				(str_store_string, s2, "@{s12} - Shield orders"),
+				(str_store_string, s3, "@{s13} - Attack orders"),
+			
+				(assign, ":num_orders", 3),
+			(try_end),
+			(assign, ":y_position", 473), #470
+		(else_try),
+		    (party_slot_eq, "p_main_party", slot_party_gk_order, gk_order_4),
+			(str_store_string, s1, "@{s10} - Ranks"),
+			(str_store_string, s2, "@{s11} - Shieldwall"),
+            (str_store_string, s3, "@{s12} - Wedge"),
+			(str_store_string, s4, "@{s13} - Square"),
+			(str_store_string, s5, "@{s14} - No Formation"),
+			(str_store_string, s6, "@{s15} - Escape Menu"),
+			
+            (assign, ":num_orders", 6),
+		(else_try),	
+			(party_slot_eq, "p_main_party", slot_party_gk_order, gk_order_5),
+			(str_store_string, s1, "@{s11} - One Handers"),
+			(str_store_string, s2, "@{s12} - Two Handers"),
+            (str_store_string, s3, "@{s13} - Polearms"),
+			(str_store_string, s4, "@{s14} - Ranged"),
+			(str_store_string, s5, "@{s15} - Escape Menu"),
+
+            (assign, ":num_orders", 5),
+		(else_try),
+			(party_slot_eq, "p_main_party", slot_party_gk_order, gk_order_6),
+			(str_store_string, s1, "@{s11} - Use Shields"),
+			(str_store_string, s2, "@{s12} - No Shields"),
+			(str_store_string, s3, "@{s13} - Free"),
+			(str_store_string, s4, "@{s15} - Escape Menu"),
+			
+            (assign, ":num_orders", 4),
+		(else_try),
+			(party_slot_eq, "p_main_party", slot_party_gk_order, "$key_order_7"),
+			(str_store_string, s1, "@{s10} - End Order"),
+			(str_store_string, s2, "@{s11} - Skirmish"),
+			(str_store_string, s3, "@{s12} - Volley Fire"),
+			(str_store_string, s4, "@{s13} - Brace Polearms"),
+			(str_store_string, s5, "@{s15} - Escape Menu"),
+			
+            (assign, ":num_orders", 5),
+		(try_end),
+		(party_get_slot, ":starting_order", "p_main_party", slot_party_gk_order),
+		(party_set_slot, "p_main_party_backup", slot_party_gk_order, ":starting_order"),
+
+		(try_for_range, ":i", 0, ":num_orders"),
+		    (store_add, ":string", ":i", 1),
+			(str_store_string_reg, s0, ":string"),
+
+		    (create_text_overlay, ":overlay", s0),
+			(overlay_set_color, ":overlay", 0xFFFFFF),
+			(position_set_x, pos1, 1000),
+			(position_set_y, pos1, 1000),
+			(overlay_set_size, ":overlay", pos1),
+			(position_set_x, pos1, 0),
+			(position_set_y, pos1, ":y_position"),
+			(overlay_set_position, ":overlay", pos1),
+			
+			#(troop_set_slot, "trp_temp_array_a", ":i", ":overlay"),
+			(store_add, ":slot", ":i", slot_party_pref_prefs_set),
+			(party_set_slot, "p_temp_party", ":slot", ":overlay"),
+			
+			(val_sub, ":y_position", 30),
+		(try_end),
+		(store_mul, ":add_back", 30, ":num_orders"),
+		(val_add, ":y_position", ":add_back"),
+		(val_sub, ":y_position", 3),
+		(try_for_range, ":i", 0, ":num_orders"),
+		    (create_mesh_overlay, ":overlay", "mesh_order_frame"),
+			(position_set_x, pos1, 700),#712
+			(position_set_y, pos1, 700),#780
+			(overlay_set_size, ":overlay", pos1),
+			
+			(position_set_x, pos1, 0),
+			(position_set_y, pos1, ":y_position"),
+			(overlay_set_position, ":overlay", pos1),
+			
+			(val_sub, ":y_position", 30),
+            (try_end),
+            (try_end),
+            (create_text_overlay, reg1, s1, tf_right_align),
+            (position_set_x, pos1, 980),
+            (position_set_y, pos1, 285),
+            (overlay_set_position, reg1, pos1),
+            (overlay_set_size, reg1, pos2),
+		(try_end),
+            (create_text_overlay, reg1, s1, tf_right_align),
+            (position_set_x, pos1, 980),
+            (position_set_y, pos1, 285),
+            (overlay_set_position, reg1, pos1),
+            (overlay_set_size, reg1, pos2),
+		
+		(try_begin),
+			(neg|party_slot_eq, "p_main_party", slot_party_gk_order, 0),
+			(create_mesh_overlay, ":overlay", "mesh_white_plane"),
+			(overlay_set_color, ":overlay", 0),
+			(overlay_set_alpha, ":overlay", 0x10),
+			(position_set_x, pos1, 14000),
+			(position_set_y, pos1, 4500),
+			(overlay_set_size, ":overlay", pos1),
+			
+			(position_set_x, pos1, 0),
+			(position_set_y, pos1, 498),
+			(overlay_set_position, ":overlay", pos1),
+		(try_end),    
+
+		(presentation_set_duration, 999999),
+	   ]),
+	(ti_on_presentation_run,
+       [(store_trigger_param_1, ":cur_time"),
+        (gt, ":cur_time", 250), #0.25 Second after Pres. Start
+        (try_begin),
+		  (this_or_next|key_clicked, "$key_order_9"), #current exit key
+		  (this_or_next|game_key_clicked, gk_order_1),
+          (this_or_next|game_key_clicked, gk_order_2),
+          (this_or_next|game_key_clicked, gk_order_3), #Order Keys not used by Expanded Orders
+          (this_or_next|game_key_clicked, gk_group0_hear),
+          (this_or_next|game_key_clicked, gk_group1_hear),
+          (this_or_next|game_key_clicked, gk_group2_hear),
+          (this_or_next|game_key_clicked, gk_group3_hear),
+          (this_or_next|game_key_clicked, gk_group4_hear),
+          (this_or_next|game_key_clicked, gk_group5_hear),
+          (this_or_next|game_key_clicked, gk_group6_hear),
+          (this_or_next|game_key_clicked, gk_group7_hear),
+          (this_or_next|game_key_clicked, gk_group8_hear),
+          (this_or_next|game_key_clicked, gk_everyone_hear),
+          (game_key_clicked, gk_reverse_order_group),
+		  (presentation_set_duration, 0),
+        (else_try),
+			(assign, ":key", -1),
+		    (try_begin),
+				(game_key_clicked, gk_order_4),
+			    (assign, ":key", 4),
+			(else_try),
+ 			    (game_key_clicked, gk_order_5),
+			    (assign, ":key", 5),
+		    (else_try),
+      			(game_key_clicked, gk_order_6),
+		    	(assign, ":key", 6),
+			(else_try),
+			    (key_clicked, "$key_order_7"),
+				(assign, ":key", 7),
+		    (else_try),
+			    (key_clicked, "$key_order_8"),
+				(assign, ":key", 8),
+			(try_end),
+			(neq, ":key", -1),
+			(try_begin),
+			    (party_slot_eq, "p_main_party_backup", slot_party_gk_order, 0),
+		        (presentation_set_duration, 0),
+			(else_try),
+			    (try_begin),
+					(party_slot_eq, "p_main_party_backup", slot_party_gk_order, gk_order_4),
+					(assign, ":min_key", 4),
+					(assign, ":max_key", 8),
+				(else_try),
+					(party_slot_eq, "p_main_party_backup", slot_party_gk_order, gk_order_5),
+					(assign, ":min_key", 5),
+					(assign, ":max_key", 8),
+				(else_try),
+				    (party_slot_eq, "p_main_party_backup", slot_party_gk_order, gk_order_6),
+					(assign, ":min_key", 5),
+					(assign, ":max_key", 7),
+				(else_try),
+				    (party_slot_eq, "p_main_party_backup", slot_party_gk_order, "$key_order_7"),
+					(assign, ":min_key", 4),
+					(assign, ":max_key", 7),
+				(try_end),
+				(store_sub, ":num_orders", ":max_key", ":min_key"),
+				(val_add, ":num_orders", 1),
+				(store_sub, ":key_pressed", ":key", ":min_key"),
+				(is_between, ":key_pressed", 0, ":num_orders"),
+				(val_add, ":num_orders", 1), #For the cancel box
+				(try_for_range, ":i", 0, ":num_orders"),
+    				#(troop_get_slot, ":overlay", "trp_temp_array_a", ":i"),
+					(store_add, ":slot", ":i", slot_party_pref_prefs_set),
+				    (party_get_slot, ":overlay", "p_temp_party", ":slot"), 
+					(neq, ":i", ":key_pressed"),
+					(overlay_animate_to_alpha, ":overlay", 400, 0x00),
+					(val_add, ":overlay", ":num_orders"),
+					(overlay_animate_to_alpha, ":overlay", 400, 0x00),
+				(else_try),				
+					(overlay_animate_to_alpha, ":overlay", 1100, 0x00),
+					(val_add, ":overlay", ":num_orders"),
+					(overlay_animate_to_alpha, ":overlay", 1100, 0x00),
+				(try_end),			
+				(presentation_set_duration, 200), #100
+			(try_end),
+        (try_end),
+        ]),
+	]),		
+
+ ("caba_camera_mode_display", prsntf_read_only, 0, [
+    (ti_on_presentation_load,
+      [
+        (set_fixed_point_multiplier, 1000),
+		(presentation_set_duration, 200),
+		
+		(try_begin),
+		    (main_hero_fallen),
+			(str_store_string, s0, "@DeathCam"),
+		(else_try),
+		    (str_store_string, s0, "@Camera"),
+		(try_end),
+		(try_begin),
+		    (eq, "$cam_mode", 0),
+			(str_store_string, s1, "@Default"),
+		(else_try),
+			(eq, "$cam_mode", 1),
+			(str_store_string, s1, "@Follow"),
+		(else_try),
+			(eq, "$cam_mode", 2),
+			(str_store_string, s1, "@Free"),
+		(try_end),
+		
+		(str_store_string, s0, "@{!}{s0} Mode: {s1}"),
+		
+		(create_text_overlay, "$g_presentation_obj_name_kingdom_1", s0),
+		(overlay_set_color, "$g_presentation_obj_name_kingdom_1", 0xFFFFFF),
+		(position_set_x, pos1, 1000),
+		(position_set_y, pos1, 1000),
+		(overlay_set_size, "$g_presentation_obj_name_kingdom_1", pos1),
+		(position_set_x, pos1, 750),
+		(position_set_y, pos1, 625),
+		(overlay_set_position, "$g_presentation_obj_name_kingdom_1", pos1),
+		
+		(create_mesh_overlay, "$g_presentation_obj_name_kingdom_2", "mesh_order_frame"), #order_frame" mp_ui_command_panel
+		(position_set_x, pos1, 570),
+		(position_set_y, pos1, 725),
+		(overlay_set_size, "$g_presentation_obj_name_kingdom_2", pos1),		
+		(position_set_x, pos1, 745),
+		(position_set_y, pos1, 622),
+		(overlay_set_position, "$g_presentation_obj_name_kingdom_2", pos1),
+	   ]),
+	(ti_on_presentation_run,
+      [   
+	    (store_trigger_param_1, ":time"),
+		(ge, ":time", 1000),		
+		(overlay_animate_to_alpha, "$g_presentation_obj_name_kingdom_1", 200, 0x00),
+		(overlay_animate_to_alpha, "$g_presentation_obj_name_kingdom_2", 200, 0x00),
+       ]),
+    ]),
+	
+ ("prebattle_custom_divisions", 0, mesh_load_window, [ #diff mesh?
+    (ti_on_presentation_load,
+     [(set_fixed_point_multiplier, 1000),
+	 
+	  (try_for_range, ":i", soldiers_begin, soldiers_end),
+	    (troop_set_slot, "trp_temp_array_a", ":i", -1), #Overlays
+		(troop_set_slot, "trp_temp_array_b", ":i", -1), #Split- Percent
+		(troop_set_slot, "trp_temp_array_c", ":i", -1), #Split- Division
+	  (try_end),
+	
+	  #Headers
+	  (create_text_overlay, reg0, "@Troop Assignments", tf_center_justify|tf_single_line|tf_with_outline),
+      (overlay_set_color, reg0, 0xFFFFFFFF),
+      (position_set_x, pos1, 1500),
+      (position_set_y, pos1, 1500),
+      (overlay_set_size, reg0, pos1),
+      (position_set_x, pos1, 500),
+      (position_set_y, pos1, 680),
+      (overlay_set_position, reg0, pos1),
+
+	  (create_text_overlay, reg0, "@Split Troops into Secondary Divisions", tf_center_justify|tf_single_line),
+      (position_set_x, pos1, 500),
+      (position_set_y, pos1, 650),
+      (overlay_set_position, reg0, pos1),
+	  
+      (create_text_overlay, reg0, "@Troops by^ Primary Division",  tf_center_justify),
+      (position_set_x, pos1, 170),
+      (position_set_y, pos1, 600),
+      (overlay_set_position, reg0, pos1),
+
+	  (position_set_x, pos2, 800),
+      (position_set_y, pos2, 800),
+	  
+      (create_text_overlay, reg0, "@# in^Main Division", tf_center_justify),
+      (position_set_x, pos1, 352),
+      #(position_set_y, pos1, 600),
+      (overlay_set_position, reg0, pos1),
+	  (overlay_set_size, reg0, pos2),
+	  
+	  (create_text_overlay, reg0, "@Show/^Hide", tf_center_justify),
+      (position_set_x, pos1, 425),
+      #(position_set_y, pos1, 600),
+      (overlay_set_position, reg0, pos1),
+	  (overlay_set_size, reg0, pos2),
+	  
+	  (create_text_overlay, reg0, "@# in^Secondary Division", tf_center_justify),
+      (position_set_x, pos1, 630),
+      #(position_set_y, pos1, 600),
+      (overlay_set_position, reg0, pos1),
+	  (overlay_set_size, reg0, pos2),
+	  
+	  (create_text_overlay, reg0, "@Secondary^Division", tf_center_justify),
+      (position_set_x, pos1, 755), #added 55 to all
+      #(position_set_y, pos1, 600),
+      (overlay_set_position, reg0, pos1),
+	  (overlay_set_size, reg0, pos2),
+
+	  #Container
+      (str_clear, s0),
+      (create_text_overlay, "$g_presentation_obj_bugdet_report_container", s0, tf_scrollable_style_2),
+      (position_set_x, pos1, 105),
+      (position_set_y, pos1, 80),
+      (overlay_set_position, "$g_presentation_obj_bugdet_report_container", pos1),
+      (position_set_x, pos1, 750),
+      (position_set_y, pos1, 500),
+      (overlay_set_area_size, "$g_presentation_obj_bugdet_report_container", pos1),
+      (set_container_overlay, "$g_presentation_obj_bugdet_report_container"),
+   
+	  #Count Classes to Set Proper Size
+	  (party_get_num_companion_stacks, ":num_of_stacks", "p_main_party"),
+	  (assign, ":num_of_classes", 0),
+	  (try_for_range, ":class", 0, 9),
+		(assign, ":end", ":num_of_stacks"),
+		(try_for_range, ":i", 0, ":end"),
+			(party_stack_get_troop_id, ":troop_id", "p_main_party", ":i"),
+			(neq, ":troop_id", "trp_player"),
+			(neg|troop_is_hero, ":troop_id"),
+			(troop_get_class, ":trp_class", ":troop_id"),
+			(eq, ":trp_class", ":class"),
+
+			(val_add, ":num_of_classes", 1),
+			(assign, ":end", 0), #Break
+		(try_end),
+	  (try_end),
+	  
+	  #Calculate Container Size
+      (assign, ":cur_y_adder", 20),
+	  (store_mul, ":cur_y", ":num_of_stacks", ":cur_y_adder"),
+	  (store_mul, ":class_y_addition", ":num_of_classes", 3), #For spaces, headings, lines
+	  (val_mul, ":class_y_addition", ":cur_y_adder"),
+	  (val_add, ":cur_y", ":class_y_addition"),
+	  
+	  #Troop List and Setting Controls
+	  (try_for_range, ":class", 0, 9),
+	    (assign, ":class_has_troops", 0),
+		(assign, ":every_other", 0),
+		(assign, ":title_y", ":cur_y"),
+
+		(try_for_range, ":i", 0, ":num_of_stacks"),
+			(party_stack_get_troop_id, ":troop_id", "p_main_party", ":i"),
+			(neq, ":troop_id", "trp_player"),
+			(neg|troop_is_hero, ":troop_id"),
+			(troop_get_class, ":trp_class", ":troop_id"),
+			(eq, ":trp_class", ":class"),
+			
+			(party_stack_get_size, ":stack_size", "p_main_party", ":i"),
+			(party_stack_get_num_wounded, ":stack_wounded", "p_main_party", ":i"),
+			(val_sub, ":stack_size", ":stack_wounded"),
+			(gt, ":stack_size", 0),
+			(assign, ":class_has_troops", 1),
+			
+			(val_sub, ":cur_y", ":cur_y_adder"),
+			
+			(try_begin), #Shade every other row
+				(eq, ":every_other", 1),
+				(create_mesh_overlay, reg0, "mesh_white_plane"),
+				(position_set_x, pos1, 36200),
+				(position_set_y, pos1, 1000),
+				(overlay_set_size, reg0, pos1),
+				(position_set_x, pos1, 15),
+				(position_set_y, pos1, ":cur_y"),
+				(overlay_set_position, reg0, pos1),
+				(overlay_set_color, reg0, 0xFFFFFF),
+				(overlay_set_alpha, reg0, 0x50),
+				(assign, ":every_other", 0),
+			(else_try),
+				(assign, ":every_other", 1),
+			(try_end),
+			
+			(str_store_troop_name, s1, ":troop_id"),
+			(create_text_overlay, reg0, s1),
+			(position_set_x, pos2, 900),
+			(position_set_y, pos2, 900),
+			(overlay_set_size, reg0, pos2),
+			(position_set_x, pos1, 15),
+			(position_set_y, pos1, ":cur_y"),
+			(overlay_set_position, reg0, pos1),
+			
+			(assign, reg0, ":stack_size"),
+			(str_store_string, s1, "str_reg0"), #Number in Primary Division
+			(create_text_overlay, reg0, s1),
+			(position_set_x, pos1, 240),
+			(position_set_y, pos1, ":cur_y"),
+			(overlay_set_position, reg0, pos1),
+			(overlay_set_size, reg0, pos2),
+			
+			#Tick box to activate alternate division
+			(create_check_box_overlay, reg0, "mesh_checkbox_off", "mesh_checkbox_on"), 
+			(position_set_x, pos1, 315),
+			(position_set_y, pos1, ":cur_y"),
+			(overlay_set_position, reg0, pos1),						
+							
+			(create_slider_overlay, reg0, 0, 51), #Percentage
+			(position_set_x, pos1, 465),
+			(position_set_y, pos1, ":cur_y"),
+			(overlay_set_position, reg0, pos1),	
+            (position_set_x, pos1, 500),
+			(position_set_y, pos1, 500),
+			(overlay_set_size, reg0, pos1),				
+			(troop_set_slot, "trp_temp_array_a", ":troop_id", reg0), #store overlay ID for tracking changes
+				
+			(create_text_overlay, reg0, "@{!}% to split"), #Percent Value
+			(position_set_x, pos1, 700),
+			(position_set_y, pos1, 700),
+			(overlay_set_size, reg0, pos1),
+			(position_set_x, pos1, 465),
+			(position_set_y, pos1, ":cur_y"),
+			(overlay_set_position, reg0, pos1),
+						
+			(str_clear, s0),
+			(create_text_overlay, reg0, s0), #Number in alt division
+			(overlay_set_size, reg0, pos2),
+			(position_set_x, pos1, 520),
+			(position_set_y, pos1, ":cur_y"),
+			(overlay_set_position, reg0, pos1),
+			
+			(create_combo_button_overlay, reg0), #Which alt division
+			(try_for_range, ":button_class", 0, 9),
+				(str_store_class_name, s0, ":button_class"),
+				(overlay_add_item, reg0, s0),			
+			(try_end),
+			(overlay_add_item, reg0, "@{!}- Disabled -"),
+			(position_set_x, pos1, 700),
+			(position_set_y, pos1, ":cur_y"),
+			(overlay_set_position, reg0, pos1),	
+			(position_set_x, pos1, 600),
+			(position_set_y, pos1, 600),
+			(overlay_set_size, reg0, pos1),	
+			(overlay_set_val, reg0, 9),
+			
+
+			#Check for saved values, set things appropriately
+			(troop_get_slot, ":alt_percent", ":troop_id", slot_troop_prebattle_alt_division_percent),
+			(troop_get_slot, ":alt_division", ":troop_id", slot_troop_prebattle_alt_division),
+			(assign, ":display", 0),
+			(try_begin),
+				(this_or_next|gt, ":alt_percent", 0),
+				(is_between, ":alt_division", 1, 9), #skip 0 if it is an empty slot
+				(assign, ":display", 1),
+			(try_end),
+			(troop_get_slot, ":slider", "trp_temp_array_a", ":troop_id"),
+			(store_add, ":end", ":slider", 4),
+			(try_for_range, ":overlay", ":slider", ":end"),
+			    (overlay_set_display, ":overlay", ":display"),	
+			(try_end),
+			(eq, ":display", 1),
+			(store_sub, ":overlay", ":slider", 1),
+			(overlay_set_val, ":overlay", 1), #Tick box ticked
+			
+			(try_begin),
+				(is_between, ":alt_division", 0, 9), #skip 0 if it is an empty slot
+				(val_add, ":overlay", 4),
+				(overlay_set_val, ":overlay", ":alt_division"),
+			(try_end),
+			
+			#Calculate/display saved split
+			(gt, ":alt_percent", 0),
+			(overlay_set_val, ":slider", ":alt_percent"),
+			(store_add, ":overlay", ":slider", 1),
+			(assign, reg0, ":alt_percent"),
+			(overlay_set_text, ":overlay", "str_reg0_percent"),
+			(store_mul, ":alt_num", ":alt_percent", ":stack_size"),
+			(val_div, ":alt_num", 100),
+			(val_sub, ":stack_size", ":alt_num"),
+			(val_sub, ":overlay", 3),
+			(assign, reg0, ":stack_size"),
+			(overlay_set_text, ":overlay", "str_reg0"),
+			(val_add, ":overlay", 4),
+			(assign, reg0, ":alt_num"),
+			(overlay_set_text, ":overlay", "str_reg0"),
+		(try_end), #End Stack/Troop Loop
+		(eq, ":class_has_troops", 1),
+		
+		(str_store_class_name, s1, ":class"),
+		(create_text_overlay, reg0, s1, tf_with_outline), 
+		(position_set_x, pos1, 1000),
+		(position_set_y, pos1, 1000),
+		(overlay_set_size, reg0, pos1),
+		(position_set_x, pos1, 25),
+		(position_set_y, pos1, ":title_y"),
+		(overlay_set_position, reg0, pos1),
+		
+		(val_sub, ":cur_y", ":cur_y_adder"),
+		
+		#Draw Line
+		(create_mesh_overlay, reg0, "mesh_white_plane"),
+        (position_set_x, pos1, 37000),
+        (position_set_y, pos1, 150),
+        (overlay_set_size, reg0, pos1),
+        (position_set_x, pos1, 5),
+        (position_set_y, pos1, ":cur_y"),
+        (overlay_set_position, reg0, pos1),
+        (overlay_set_color, reg0, 0),
+		
+		(val_sub, ":cur_y", ":cur_y_adder"),
+		(val_sub, ":cur_y", ":cur_y_adder"),
+	 (try_end), #End Class Loop
+
+	 (set_container_overlay, -1),
+	 
+	 	#Tick box to activate/disable splitting divisions
+		(create_check_box_overlay, "$g_presentation_obj_custom_battle_designer_20", "mesh_checkbox_off", "mesh_checkbox_on"), 
+		(position_set_x, pos1, 830),
+		(position_set_y, pos1, 680),
+		(overlay_set_position, "$g_presentation_obj_custom_battle_designer_20", pos1),	
+		(party_get_slot, ":value", "p_main_party", slot_party_prebattle_customized_divisions),
+		(overlay_set_val, "$g_presentation_obj_custom_battle_designer_20", ":value"),
+		(str_store_string, s0, "@Disabled"),
+		(str_store_string, s1, "@Split Active"),
+		(str_store_string_reg, s2, ":value"),
+		
+	 	(create_text_overlay, reg0, s2),
+		(position_set_x, pos1, 850),
+		(position_set_y, pos1, 675),
+		(overlay_set_position, reg0, pos1),
+			
+		#Bottom Buttons
+	  	(create_game_button_overlay, "$g_presentation_obj_battle_25", "@Clear All"), 
+        (position_set_x, pos1, 420),
+        (position_set_y, pos1, 25),
+        (overlay_set_position, "$g_presentation_obj_battle_25", pos1),
+		
+		(create_game_button_overlay, "$g_presentation_obj_battle_26", "@Discard Changes"), 
+        (position_set_x, pos1, 580),
+        (position_set_y, pos1, 25),
+        (overlay_set_position, "$g_presentation_obj_battle_26", pos1),
+		
+		(create_game_button_overlay, "$g_presentation_obj_battle_27", "@Save"),
+        (position_set_x, pos1, 740),
+        (position_set_y, pos1, 25),
+        (overlay_set_position, "$g_presentation_obj_battle_27", pos1),
+		
+		(create_game_button_overlay, "$g_presentation_obj_battle_28", "@Done"),
+        (position_set_x, pos1, 900),
+        (position_set_y, pos1, 25),
+        (overlay_set_position, "$g_presentation_obj_battle_28", pos1),	 
+	 
+	 (presentation_set_duration, 999999),
+     ]),
+	(ti_on_presentation_run,
+      [	
+	    (try_begin),
+			(key_clicked, key_escape),
+			(presentation_set_duration, 0),
+			(party_set_slot, "p_main_party", slot_party_prebattle_customized_divisions, 0),
+        (try_end),
+      ]),
+    (ti_on_presentation_event_state_change,
+     [
+       (store_trigger_param_1, ":object"),
+       (store_trigger_param_2, ":value"),
+	   
+	    (try_begin), #Done
+			(eq, ":object", "$g_presentation_obj_battle_28"),
+			(presentation_set_duration, 0),
+		(else_try), #Save
+			(eq, ":object", "$g_presentation_obj_battle_27"),
+			#Loop to Set Troop Slots from Temp Arrays
+			(party_get_num_companion_stacks, ":num_of_stacks", "p_main_party"),
+			(try_for_range, ":i", 0, ":num_of_stacks"),
+				(party_stack_get_troop_id, ":troop_id", "p_main_party", ":i"),
+				(troop_get_slot, ":percent", "trp_temp_array_b", ":troop_id"),
+				(try_begin),
+					(gt, ":percent", -1),
+					(troop_set_slot, ":troop_id", slot_troop_prebattle_alt_division_percent, ":percent"),
+				(try_end),
+				(troop_get_slot, ":division", "trp_temp_array_c", ":troop_id"),	
+				(try_begin),
+					(gt, ":division", -1),
+					(troop_set_slot, ":troop_id", slot_troop_prebattle_alt_division, ":division"),
+				(try_end),				
+			(try_end),			
+			(party_set_slot, "p_main_party", slot_party_prebattle_customized_divisions, 1),
+			(overlay_set_val, "$g_presentation_obj_custom_battle_designer_20", 1),
+			(store_add, ":overlay", "$g_presentation_obj_custom_battle_designer_20", 1),
+			(overlay_set_text, ":overlay", "@Split Active"),		
+		(else_try), #Discard (reload saved)
+		    (eq, ":object", "$g_presentation_obj_battle_26"),
+			(start_presentation, "prsnt_prebattle_custom_divisions"), 
+	    (else_try), #Clear All(&Disable)
+		    (eq, ":object", "$g_presentation_obj_battle_25"),
+		    (try_for_range, ":troop_id", soldiers_begin, soldiers_end), 
+				(troop_set_slot, ":troop_id", slot_troop_prebattle_alt_division, -1),
+				(troop_set_slot, ":troop_id", slot_troop_prebattle_alt_division_percent, -1),
+		    (try_end),
+		    (party_set_slot, "p_main_party", slot_party_prebattle_customized_divisions, 0),
+			(start_presentation, "prsnt_prebattle_custom_divisions"), 	
+        (else_try),	#Active/Disable Tick Box
+			(eq, ":object", "$g_presentation_obj_custom_battle_designer_20"),
+			(str_store_string, s1, "@Split Active"),
+			(str_store_string, s0, "@Disabled"),
+			(str_store_string_reg, s2, ":value"),
+			(store_add, ":overlay", ":object", 1),
+			(overlay_set_text, ":overlay", s2),	 
+			(party_set_slot, "p_main_party", slot_party_prebattle_customized_divisions, ":value"),
+		(else_try), #Troop-specific settings
+		    (party_get_num_companion_stacks, ":num_of_stacks", "p_main_party"),
+			(try_for_range, ":i", 0, ":num_of_stacks"),
+				(party_stack_get_troop_id, ":troop_id", "p_main_party", ":i"),
+				(troop_get_slot, ":overlay", "trp_temp_array_a", ":troop_id"), 
+				(eq, ":object", ":overlay"), #Slider
+				(is_between, ":value", 0, 51),
+				(troop_set_slot, "trp_temp_array_b", ":troop_id", ":value"), #temp storage until 'save' is clicked
+				
+				(overlay_set_val, ":object", ":value"), #looks cleaner
+				(store_add, ":other_overlay", ":overlay", 1),
+				(assign, reg0, ":value"),
+				(overlay_set_text, ":other_overlay", "str_reg0_percent"),	
+				
+				(party_stack_get_size, ":stack_size", "p_main_party", ":i"),
+				(party_stack_get_num_wounded, ":stack_wounded", "p_main_party", ":i"),
+				(val_sub, ":stack_size", ":stack_wounded"),
+				
+				#Calculate/display new split
+				(store_mul, ":alt_num", ":value", ":stack_size"),
+				(val_div, ":alt_num", 100),
+				(val_sub, ":stack_size", ":alt_num"),
+				(val_sub, ":other_overlay", 3),
+				(assign, reg0, ":stack_size"),
+				(overlay_set_text, ":other_overlay", "str_reg0"),
+				(val_add, ":other_overlay", 4),
+				(assign, reg0, ":alt_num"),
+				(overlay_set_text, ":other_overlay", "str_reg0"),				
+			(else_try),
+			    (val_sub, ":overlay", 1),
+				(eq, ":object", ":overlay"), #Check Box
+				(store_add, ":begin", ":overlay", 1),
+				(store_add, ":end", ":overlay", 5),
+				(try_for_range, ":other_overlay", ":begin", ":end"),
+					(overlay_set_display, ":other_overlay", ":value"),
+				(try_end),
+			(else_try),
+				(val_add, ":overlay", 4), #Division combo box
+				(eq, ":object", ":overlay"),				
+				(troop_set_slot, "trp_temp_array_c", ":troop_id", ":value"), #temp storage until 'save' is clicked
+			(try_end),	#Troop Loop
+        (try_end),			
+	 ]),
+    ]),			
+	
+## Prebattle Orders & Deployment End
+	
+   #INVASION MODE START
 	("multiplayer_flag_projection_display_ccoop", prsntf_read_only|prsntf_manual_end_only, 0, [
       (ti_on_presentation_load, 
       [
