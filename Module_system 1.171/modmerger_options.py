@@ -24,6 +24,8 @@ options={
 
 mods_active = [
     "freelancer",
+    "formations",   # motomataru's formations v3    
+    "formAI",       # motomataru's formations v3 AI extension.  Comment this line out if you don't want ai to use formations
 # insert the active mod names here
 #    "mod1",
 #    "mymod",
