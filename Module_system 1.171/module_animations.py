@@ -235,7 +235,7 @@ animations = [
 ##   [0.8, "run_crossright_onehanded", 0, 24, arf_use_walk_progress|arf_cyclic|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 0, 0), 0.4], 
    [0.8, "run_man_forward_right_onehanded", 0, 24, arf_use_walk_progress|arf_cyclic|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 0, 0), 0.4], 
  ],
- ["run_forward_right_staff", arf_make_custom_sound, amf_use_cycle_period|amf_client_prediction,
+ ["run_forward_right_staff", acf_enforce_lowerbody, amf_use_cycle_period|amf_client_prediction,
 ##   [0.8, "run_crossright_staff", 0, 24, arf_use_walk_progress|arf_cyclic|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 0, 0), 0.4], 
    [0.8, "run_man_forward_right_stuff", 0, 24, arf_use_walk_progress|arf_cyclic|blend_in_walk|arf_make_walk_sound,pack2f(0.4,0.9), (0, 0, 0), 0.4], 
  ],
