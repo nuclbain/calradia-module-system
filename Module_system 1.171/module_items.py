@@ -2055,6 +2055,11 @@ items = [
 ["m_brigandine_f", "Heavy Brigandine", [("brigandine_red",0), ("brigandine_red.1",0), ("brigandine_red.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1199 , weight(24)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(20)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
 ["m_brigandine_g", "Heavy Brigandine with Mail", [("brigandine_red_mail",0), ("brigandine_red_mail.1",0), ("brigandine_red_mail.2",0), ("brigandine_red_mail.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1359 , weight(26)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(19)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
 
+["m_yeomen_a", "Aketon with Hood", [("yeomen_a",0), ("yeomen_a.1",0), ("yeomen_a.2",0), ("yeomen_a.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,299 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_7] ], 
+["m_yeomen_b", "Aketon with Hood", [("yeomen_b",0), ("yeomen_b.1",0), ("yeomen_b.2",0), ("yeomen_b.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,399 , weight(17)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(17)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_7] ], 
+
+["m_trickshot_a", "Heavy Brigandine with Hood", [("trickshot_a",0), ("trickshot_a.1",0), ("trickshot_a.2",0), ("trickshot_a.3",0),("trickshot_a.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,399 , weight(26)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(19)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
+
 ["m_corrazina_a", "Corrazina", [("corrazina_red",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1599 , weight(24)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(19)|difficulty(10) ,imodbits_armor, [], [fac_kingdom_5, fac_kingdom_9] ], 
 ["m_corrazina_b", "Corrazina", [("corrazina_grey",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1599 , weight(24)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(19)|difficulty(10) ,imodbits_armor, [], [fac_kingdom_5, fac_kingdom_9] ], 
 ["m_corrazina_c", "Corrazina", [("corrazina_green",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1599 , weight(24)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(19)|difficulty(10) ,imodbits_armor, [], [fac_kingdom_5, fac_kingdom_9] ], 

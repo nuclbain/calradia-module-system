@@ -132,7 +132,7 @@ party_templates = [
   ("kingdom_6_reinforcements_c", "{!}kingdom_6_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_sarranid_horseman,3,5)]),
 
   ("kingdom_7_reinforcements_a", "{!}kingdom_7_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_nerpa_recruit,5,12),(trp_nerpa_footman,3,5)]),
-  ("kingdom_7_reinforcements_b", "{!}kingdom_7_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_nerpa_soldier,2,4),(trp_nerpa_captain,2,3),(trp_nerpa_ranger,2,4)]),
+  ("kingdom_7_reinforcements_b", "{!}kingdom_7_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_nerpa_soldier,2,4),(trp_nerpa_captain,2,3),(trp_nerpa_ranger,2,4),(trp_nerpa_yeoman,2,4)]),
   ("kingdom_7_reinforcements_c", "{!}kingdom_7_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_nerpa_master_ranger,3,5), (trp_nerpa_army_veteran,3,5), (trp_nerpa_mounted_veteran,3,5), (trp_nerpa_commader,1,2), (trp_nerpa_black_head,1,2)]),
 
   ("kingdom_8_reinforcements_a", "{!}kingdom_8_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_hairako_nomad,5,15),(trp_hairako_footman,3,8)]),
