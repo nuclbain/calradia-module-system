@@ -1961,10 +1961,25 @@ animations = [
  ["unequip_pistol_melee", 0, amf_priority_equip|amf_play|amf_restart|amf_client_prediction,
    [0.3, "equip_pistol", 0, 10, arf_blend_in_0],
  ],
- ["unused_human_anim_44", 0, 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_45", 0, 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_46", 0, 0, [1.0, "anim_human", 0, 1, 0]],
- ["unused_human_anim_47", 0, 0, [1.0, "anim_human", 0, 1, 0]],
+
+##Spear Bracing by Caba, animations by Papa Larazou
+["spearwall_bracing", acf_thrust|acf_enforce_all|acf_align_with_ground, amf_priority_kick|amf_keep, #acf_rot_vertical_sword acf_thrust|acf_enforce_all|acf_align_with_ground |acf_lock_camera, amf_keep |amf_client_prediction amf_priority_kick amf_rider_rot_defend |amf_rider_rot_couched_lance
+   [2.5, "pike_brace", 0, 190, arf_blend_in_1], #blend_in_ready
+ ],
+["spearwall_bracing_low", acf_thrust|acf_enforce_all|acf_align_with_ground, amf_priority_kick|amf_keep, #acf_thrust|acf_enforce_all|acf_align_with_ground |acf_lock_camera, amf_keep |amf_client_prediction amf_priority_kick
+   [3.0, "pike_brace", 329, 535, arf_blend_in_1], #blend_in_ready
+ ], 
+["spearwall_bracing_recover", acf_enforce_all|acf_align_with_ground, amf_play|amf_priority_die, #acf_thrust|acf_enforce_all|acf_align_with_ground |acf_lock_camera, amf_keep |amf_client_prediction amf_priority_kick
+   [1.5, "pike_brace", 191, 329, blend_in_ready], #blend_in_ready  |amf_start_instantly
+ ],
+["spearwall_bracing_recoil", acf_rot_vertical_bow|acf_anim_length(100), amf_priority_kick|amf_use_weapon_speed|amf_play, #acf_thrust|acf_enforce_all|acf_align_with_ground |acf_lock_camera, amf_keep |amf_client_prediction amf_priority_kick
+ [attack_parried_duration_thrust, "anim_human", combat+7316, combat+7313, arf_blend_in_2], 
+ ],
+
+#  ["unused_human_anim_44", 0, 0, [1.0, "anim_human", 0, 1, 0]],
+#  ["unused_human_anim_45", 0, 0, [1.0, "anim_human", 0, 1, 0]],
+#  ["unused_human_anim_46", 0, 0, [1.0, "anim_human", 0, 1, 0]],
+#  ["unused_human_anim_47", 0, 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_48", 0, 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_49", 0, 0, [1.0, "anim_human", 0, 1, 0]],
  ["unused_human_anim_50", 0, 0, [1.0, "anim_human", 0, 1, 0]],

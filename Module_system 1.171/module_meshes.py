@@ -610,6 +610,40 @@ meshes = [
   ("mp_ui_host_maps_20", 0, "mp_ui_host_maps_e1", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("mp_ui_host_maps_21", 0, "mp_ui_host_maps_cold_cost", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 
+
+##diplomacy begin
+  ("longer_button", 0, "longer_button", 0, 0, 0, 0, 0, 0, 0.4, 0.5, 0.5),
+  ("longer_button_down", 0, "longer_button_down", 0, 0, 0, 0, 0, 0, 0.4, 0.5, 0.5),
+
+  # Jrider + REPORTS PRESENTATIONS 1.0
+  ("message_window", 0, "message_window", 0, 0, 0, 0, 0, 0, 0.8, 0.5, 0.5), # in core_ui_meshes.brf, same one as in 1st presentation
+  ("face_gen_window", 0, "face_gen_window", 0, 0, 0, 0, 0, 0, 1, 1, 1), # in user_interface_b.brf, automatically loaded
+  # Jrider -
+
+##diplomacy end
+##diplomacy start+
+##Additional meshes, used by components ported from rubik's Custom Commander
+  ("options_window", 0, "options_window", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("note_window", 0, "note_window", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+
+  ("drop_button", 0, "button_drop", 0, 0, 0, 0, 0, 0, 1, 0.5, 0.5),
+  ("drop_button_down", 0, "button_drop_clicked", 0, 0, 0, 0, 0, 0, 1, 0.5, 0.5),
+  ("drop_button_hl", 0, "button_drop_hl", 0, 0, 0, 0, 0, 0, 1, 0.5, 0.5),
+  ("drop_button_child", 0, "button_drop_child", 0, 0, 0, 0, 0, 0, 1.0, 0.5, 0.5),
+  ("drop_button_child_down", 0, "button_drop_child_clicked", 0, 0, 0, 0, 0, 0, 1.0, 0.5, 0.5),
+  ("drop_button_child_hl", 0, "button_drop_child_hl", 0, 0, 0, 0, 0, 0, 1.0, 0.5, 0.5),
+##diplomacy start+
+ 
+  ## Prebatle Orders & Deployment Begin
+  ("order_frame", 0, "order_frame", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("flag4", 0, "flag4", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("flag5", 0, "flag5", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("flag6", 0, "flag6", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("flag7", 0, "flag7", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("flag8", 0, "flag8", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("flag9", 0, "flag9", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ## Prebattle Orders & Deployment End
+
 #INVASION MODE START  
   ("incoming_enemy", 0, "cb_ui_icon_infantry", 0, 0, 0, 0, 0, 0, 2, 2, 2),
   ("prison_cart_pos", 0, "ccoop_prison_cart", 0, 0, 0, 0, 0, 0, 2, 2, 2),
