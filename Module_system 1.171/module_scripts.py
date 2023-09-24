@@ -924,6 +924,13 @@ scripts = [
         (spawn_around_party, ":cur_village", "pt_heretics"),
       (try_end),
 
+      (set_spawn_radius, 5),
+      (try_for_range, ":cur_village", villages_begin, villages_end),
+        (store_random_in_range, ":random_value", 0, 5),               
+        (eq, ":random_value", 0),
+        (spawn_around_party, ":cur_village", "pt_awakened_party"),
+      (try_end),
+
       (call_script, "script_update_mercenary_units_of_towns"),
       (call_script, "script_update_companion_candidates_in_taverns"),
       (call_script, "script_update_ransom_brokers"),
@@ -7967,7 +7974,7 @@ scripts = [
            (assign, "$team_1_flag_scene_prop", "spr_ctf_flag_kingdom_5"),
          (else_try),
            (eq, ":team_faction_no", "fac_kingdom_6"),
-           (assign, "$team_1_flag_scene_prop", "spr_ctf_flag_kingdom_6"),
+           (assign, "$team_1_flag_scene_prop", "spr_ctf_flag_kingdom_6"),         
          (try_end),
        (else_try),
          (team_get_faction, ":team_faction_no", 1),
@@ -48263,6 +48270,12 @@ scripts = [
                
      #(set_visitor, 3, ":bandit_troop"),
      (set_visitor, 3, "trp_bandit"),
+     (set_visitor, 3, "trp_looter"),
+     (set_visitor, 3, "trp_looter"),
+     (set_visitor, 3, "trp_looter"),
+     (set_visitor, 3, "trp_looter"),
+     (set_visitor, 3, "trp_looter"),
+     (set_visitor, 3, "trp_looter"),
 
      (assign, "$talked_with_merchant", 0),
      (set_jump_mission, "mt_alley_fight"),

@@ -2681,6 +2681,9 @@ items = [
 ["ms_dark_gauntlets_a","Doom Lord Gauntlets", [("twilight_gloves_L",0)], itp_type_hand_armor,0, 9999, weight(0.75)|abundance(5)|body_armor(15)|difficulty(12),imodbits_armor],
 ["ms_demonic_gauntlets_a","Heretic Gauntlets", [("demonic_gauntlets_L",0)], itp_type_hand_armor,0, 9999, weight(0.75)|abundance(5)|body_armor(15)|difficulty(12),imodbits_armor],
 
+["surcoat_over_mail_undead_a", "Surcoat over Mail", [("surcoat_over_mail_undead_a",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1720 , weight(22)|abundance(1)|head_armor(0)|body_armor(43)|leg_armor(14)|difficulty(7) ,imodbits_armor ],
+["surcoat_over_mail_undead_b", "Surcoat over Mail", [("surcoat_over_mail_undead_b",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1720 , weight(22)|abundance(1)|head_armor(0)|body_armor(43)|leg_armor(14)|difficulty(7) ,imodbits_armor ],
+
 ["items_end", "Items End", [("shield_round_a",0)], 0, 0, 1, 0, 0],
 
 ##INVASION MODE START

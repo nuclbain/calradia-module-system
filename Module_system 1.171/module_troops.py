@@ -224,6 +224,9 @@ refugee_face2 = woman_face_2
 girl_face1    = woman_face_1
 girl_face2    = woman_face_2
 
+skeleton_face1 = 0x0000000180000000000000000000000000000000000000000000000000000000
+skeleton_face2 = 0x0000000180000000000000000000000000000000000000000000000000000000
+
 mercenary_face_1 = 0x0000000000000000000000000000000000000000001c00000000000000000000
 mercenary_face_2 = 0x0000000cff00730b6db6db6db7fbffff00000000001efffe0000000000000000
 
@@ -780,6 +783,8 @@ troops = [
   ["cultist_acolyte","Cultist Acolyte","Cultist Acolytes",tf_guarantee_all,0,0,fac_outlaws, [itm_mt_leather_boots_e, itm_mt_leather_gloves_a, itm_mt_hood_a3, itm_ms_armor_doom_cult_a, itm_ms_armor_doom_cult_b, itm_winged_mace, itm_one_handed_battle_axe_c, itm_tab_shield_heater_cav_a], def_attrib|str_15|agi_15|level(12),wp(100),knows_common|knows_ironflesh_3,bandit_face1, bandit_face2],
   ["dark_cultist","Dark Cultist","Dark Cultists",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_outlaws, [itm_ms_doom_cult_greaves_a, itm_ms_doom_cult_greaves_b, itm_ms_doom_cult_greaves_c, itm_ms_doom_cult_gauntlets_a, itm_ms_helmet_cult_a, itm_ms_helmet_cult_a2, itm_ms_armor_doom_cult_c, itm_ms_armor_doom_cult_c2, itm_ms_armor_doom_cult_c3, itm_ms_armor_doom_cult_c4, itm_ms_armor_doom_cult_c5, itm_winged_mace, itm_one_handed_battle_axe_c, itm_tab_shield_heater_cav_b, itm_ms_flamberg, itm_ms_flamberg_great], def_attrib|str_20|agi_20|level(24), wp(120), knows_common|knows_ironflesh_10, bandit_face1, bandit_face2],
 
+  ["skeleton_newborn","Newborn Skeleton","Newborn Skeletons",tf_awakened|tf_allways_fall_dead|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_outlaws,[itm_m_swadia_common_helmet_a, itm_m_swadia_common_helmet_b, itm_m_swadia_common_helmet_c, itm_surcoat_over_mail_undead_a, itm_surcoat_over_mail_undead_b, itm_surcoat_over_mail, itm_m_swadia_gloves_a, itm_m_swadia_mail_gloves_a, itm_m_swadia_mail_boots_a, itm_m_swadia_mail_boots_b, itm_shield_heater_d, itm_shield_kite_k, itm_longsword, itm_english_longsword, itm_german_bastard_sword, itm_grosse_messer_b, itm_irish_sword],def_attrib|str_25|agi_25|level(25),wp(250),knows_common,0,0],
+
   ["brigand","Brigand","Brigands",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_outlaws,
    [itm_arrows,itm_spiked_mace,itm_sword_viking_1,itm_falchion,itm_wooden_shield,itm_hide_covered_round_shield,itm_long_bow,itm_leather_cap,itm_leather_jerkin,itm_nomad_boots,itm_saddle_horse],
    def_attrib|level(16),wp(90),knows_common|knows_power_draw_3,bandit_face1, bandit_face2],
@@ -855,8 +860,6 @@ troops = [
 #  ["hell_knight","hell_knight","hell_knights",tf_undead|tf_allways_fall_dead|tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_undeads,
 #   [], 
 #   def_attrib|level(23),wp(100),knows_common|knows_riding_3,undead_face1, undead_face2],
-
-
 
   ["follower_woman","Camp Follower","Camp Follower",tf_female|tf_guarantee_armor,0,0,fac_commoners,
    [itm_bolts,itm_light_crossbow,itm_short_bow,itm_crossbow,itm_nordic_shield,itm_hide_covered_round_shield,itm_hatchet,itm_hand_axe,itm_voulge,itm_fighting_pick,itm_club,itm_dress,itm_woolen_dress, itm_skullcap, itm_wrapping_boots],

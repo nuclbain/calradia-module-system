@@ -184,36 +184,36 @@ skins = [
     psys_game_blood,psys_game_blood_2,
   ),
   
-#  (
-#    "undead", 0,
-#    "undead_body", "undead_calf_l", "undead_handL",
-#    "undead_head", undead_face_keys,
-#    [],
-#    [],
-#    [],
-#    [],
-#    [("undeadface_a",0xffffffff,[]),
-#     ("undeadface_b",0xffcaffc0,[]),
-#     ], #undead_face_textures
-#    [], #voice sounds
-#    "skel_human", 1.0,
-#  ),
+ (
+   "undead", 0,
+   "undead_body", "undead_calf_l", "undead_handL",
+   "undead_head", undead_face_keys,
+   [],
+   [],
+   [],
+   [],
+   [("undeadface_a",0xffffffff,[]),
+    ("undeadface_b",0xffcaffc0,[]),
+    ], #undead_face_textures
+   [], #voice sounds
+   "skel_human", 1.0,
+ ),
 
-  # (
-  #   "skeleton", 0,
-  #   "barf_skeleton", "barf_skeleton_calf_l", "barf_skeleton_handL",
-  #   "barf_skull", skeletal_face_keys,
-  #   [], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
-  #   [], #beard meshes ,"beard_q"
-  #   ["hair_blonde", "hair_red", "hair_brunette", "hair_black", "hair_white"], #hair textures
-  #   ["beard_blonde","beard_red","beard_brunette","beard_black","beard_white"], #beard_materials
-  #   [("barf_skull",0xffcbe0e0,["hair_blonde"],[0xffff88ff, 0xffb04717, 0xff88ff19]),
-  #    ], #man_face_textures,
-  #   [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_man_yell"),(voice_stun,"snd_man_stun"),(voice_victory,"snd_man_victory")], #voice sounds
-  #   "skel_human", 1.0,
-  #   psys_war_smoke_tall,psys_war_smoke_tall,
-  #   []
-  # ),
+  (
+    "awakened", 0,
+    "Body_Skeleton_01", "Legs_Skeleton_01_L", "Hand_Skeleton_02_L",
+    "Head_Skeleton_01", skeletal_face_keys,
+    ["man_hair_s","man_hair_m","man_hair_n","man_hair_o", "man_hair_y10", "man_hair_y12","man_hair_p","man_hair_r","man_hair_q","man_hair_v","man_hair_t","man_hair_y6","man_hair_y3","man_hair_y7","man_hair_y9","man_hair_y11","man_hair_u","man_hair_y","man_hair_y2","man_hair_y4"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
+    ["beard_e","beard_d","beard_k","beard_l","beard_i","beard_j","beard_z","beard_m","beard_n","beard_y","beard_p","beard_o",   "beard_v", "beard_f", "beard_b", "beard_c","beard_t","beard_u","beard_r","beard_s","beard_a","beard_h","beard_g",], #beard meshes ,"beard_q"
+    ["hair_blonde", "hair_red", "hair_brunette", "hair_black", "hair_white"], #hair textures
+    ["beard_blonde","beard_red","beard_brunette","beard_black","beard_white"], #beard_materials
+    [("Skeleton_Head_Diffuse_01",0xffffffff,["hair_blonde"],[0xff120808, 0xff007080c]),
+     ], #man_face_textures,
+    [(voice_die,"snd_man_die"),(voice_hit,"snd_man_hit"),(voice_grunt,"snd_man_grunt"),(voice_grunt_long,"snd_man_grunt_long"),(voice_yell,"snd_man_yell"),(voice_stun,"snd_man_stun"),(voice_victory,"snd_man_victory")], #voice sounds
+    "skel_human", 1.0,
+    psys_war_smoke_tall,psys_war_smoke_tall,
+    []
+  ),
 ]
 
 # modmerger_start version=201 type=2
