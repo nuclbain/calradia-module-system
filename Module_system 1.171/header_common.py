@@ -340,6 +340,7 @@ multiplayer_spawn_min_enemy_dist_limit = 45 #while finding most suitable spawn p
 multiplayer_poll_disable_period = 900 #15 minutes
 
 #INVASION MODE START
+multi_dist_to_capt_spawn_point = 15*100
 multi_distance_to_captain_spaw_point = 15*100
 multi_killer_captain_add = 60
 multi_captain_recomended_players_max = 16

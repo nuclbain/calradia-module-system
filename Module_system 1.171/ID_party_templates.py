@@ -81,3 +81,6 @@ pt_sea_raider_lair = 79
 pt_looter_lair = 80
 pt_bandit_lair_templates_end = 81
 pt_leaded_looters = 82
+pt_dplmc_spouse = 83
+pt_dplmc_gift_caravan = 84
+pt_dplmc_recruiter = 85
