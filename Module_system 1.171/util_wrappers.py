@@ -6,6 +6,22 @@
 ## a specific dialog similar to FindTrigger (though it isn't within a class)
 ## and a function to find the first "i" list item whose ID contains a value
 
+##Notes from Caba'drin testing:
+# The full Animations, Meshes, Dialogs, factions, troops, items, etc can be
+# wrapped with the OpBlockWrapper (since they are lists of tuples) to access
+# the additional InsertBefore/After type functions for lists
+# Also, animations and dialogs are lists with nested lists, not tuples and can be treated
+# as such.
+#
+# Changing elements in "immutable" tuples is possible by directly converting the
+# object to a list, setting the element, and reverting back to a tuple, like so:
+# ##Change re-arm interval to 0 (using work around to edit immutable tuple)
+# orig_mission_templates[mt_i][5][trigger_i] = list(orig_mission_templates[mt_i][5][trigger_i])
+# orig_mission_templates[mt_i][5][trigger_i][2] = 0
+# orig_mission_templates[mt_i][5][trigger_i] = tuple(orig_mission_templates[mt_i][5][trigger_i])
+# using a reference (for instance trigger = orig_mission_templates[mt_i][5][trigger_i] ) and then
+# trying to convert the trigger reference to/from a list/tuple will NOT work
+
 from types import *
 
 class BaseWrapper:
