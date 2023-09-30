@@ -23,11 +23,11 @@ options={
 # for example, the mod content corresponding to "items", for mod "fc" should be in the file "fc_items.py"
 
 mods_active = [
-    "freelancer",
 # insert the active mod names here
-#    "mod1",
-#    "mymod",
-#    "anothermod",
+    "freelancer",   # Play as a regular soldier in a lord's army.  v1.51
+    "pbod",         # Caba'drin's Pre-Battle Orders & Deployment v0.92
+	"formations",   # motomataru's formations v4beta    
+	"formAI",       # motomataru's formations v4beta AI extension.
 ]
 
 
@@ -52,4 +52,4 @@ try:
     module_sys_info["version"]
 except KeyError:
     # assume version to be latest version that modmerger was tested on
-    module_sys_info["version"] = 1143
+    module_sys_info["version"] = 1127
