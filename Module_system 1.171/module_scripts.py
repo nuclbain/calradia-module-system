@@ -669,6 +669,7 @@ scripts = [
       (call_script, "script_give_center_to_faction_aux", "p_castle_46", "fac_kingdom_11"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_47", "fac_kingdom_6"),
       (call_script, "script_give_center_to_faction_aux", "p_castle_48", "fac_kingdom_6"),
+      (call_script, "script_give_center_to_faction_aux", "p_castle_49", "fac_kingdom_7"),
       
 
 	  #Now give towns to great lords
