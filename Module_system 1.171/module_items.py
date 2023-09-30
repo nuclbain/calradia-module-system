@@ -2684,6 +2684,11 @@ items = [
 ["surcoat_over_mail_undead_a", "Surcoat over Mail", [("surcoat_over_mail_undead_a",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1720 , weight(22)|abundance(1)|head_armor(0)|body_armor(43)|leg_armor(14)|difficulty(7) ,imodbits_armor ],
 ["surcoat_over_mail_undead_b", "Surcoat over Mail", [("surcoat_over_mail_undead_b",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1720 , weight(22)|abundance(1)|head_armor(0)|body_armor(43)|leg_armor(14)|difficulty(7) ,imodbits_armor ],
 
+##diplomacy begin
+["dplmc_coat_of_plates_red_constable", "Constable Coat of Plates", [("coat_of_plates_red",0)], itp_unique|itp_type_body_armor|itp_covers_legs|itp_civilian,0,
+ 3828 , weight(25)|abundance(100)|head_armor(0)|body_armor(52)|leg_armor(16)|difficulty(0) ,imodbits_armor, [], []],
+##diplomacy end
+
 ["items_end", "Items End", [("shield_round_a",0)], 0, 0, 1, 0, 0],
 
 ##INVASION MODE START
