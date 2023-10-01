@@ -352,6 +352,17 @@ troops = [
   ["mercenary_cavalry","Mercenary Cavalry","Mercenary Cavalry",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,no_scene,reserved,fac_commoners,
    [itm_crusader_sword,itm_longsword,itm_english_longsword,itm_german_bastard_sword,itm_lance,itm_shield_heater_d,itm_mail_short_surcoat_new_heraldic,itm_heraldic_tunic_new,itm_m_crusader_helm_a,itm_m_crusader_helm_b,itm_m_crusader_helm_c,itm_m_crusader_helm_d,itm_m_crusader_helm_e,itm_m_crusader_helm_f,itm_m_leather_boots_a,itm_m_greaves_a,itm_m_greaves_b,itm_m_gloves_a,itm_m_gauntlets_a,itm_m_gauntlets_b,itm_warhorse,itm_charger],
    def_attrib|level(25),wp(130),knows_common|knows_riding_5|knows_ironflesh_4|knows_shield_5|knows_power_strike_4,mercenary_face_1, mercenary_face_2],
+
+  ["delgay_mercenary","Delgay Mercenary","Delgay Mercenaries",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_shield,no_scene,0,fac_commoners,
+   [itm_mkk_turban_a, itm_mkk_turban_b, itm_mkk_turban_c, itm_mkk_scale_vest_f, itm_mkk_scale_vest_alt_b, itm_mkk_leather_boots_a, itm_mkk_leather_boots_b, itm_mkk_gauntlets_sar_a, itm_mkk_gauntlets_sar_b, itm_maa_camel_rider_shield_a, itm_maa_camel_rider_shield_b, itm_maa_camel_rider_shield_c, itm_maa_camel_rider_shield_d, itm_maa_camel_rider_shield_e, itm_maa_camel_rider_shield_f, itm_sarranid_mace_1, itm_sarranid_axe_a, itm_sarranid_axe_b, itm_falshion_2, itm_falshion_1],
+   def_attrib|level(14),wp(85),knows_common|knows_riding_2|knows_ironflesh_1|knows_shield_3,mercenary_face_1, mercenary_face_2],
+  ["delgay_mercenary_assasin","Delgay Mercenary Assasin","Delgay Mercenaries Assasin",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_shield,no_scene,0,fac_commoners,
+   [itm_mkk_turban_c, itm_mkk_infantry_armor_b, itm_mkk_infantry_armor_a, itm_mkk_leather_boots_a, itm_mkk_leather_boots_b, itm_mkk_gauntlets_sar_a, itm_mkk_gauntlets_sar_b, itm_maa_camel_rider_shield_a, itm_maa_camel_rider_shield_b, itm_maa_camel_rider_shield_c, itm_maa_camel_rider_shield_d, itm_maa_camel_rider_shield_e, itm_maa_camel_rider_shield_f, itm_falshion_2, itm_falshion_1, itm_throwing_daggers, itm_throwing_daggers],
+   def_attrib|agi_25|level(24),wp(150)|wp_throwing(220),knows_common|knows_riding_2|knows_ironflesh_9|knows_power_strike_4|knows_power_throw_10|knows_athletics_10|knows_shield_3,mercenary_face_1, mercenary_face_2],
+  ["delgay_mercenary_rajas_killer","Delgay Mercenary Rajas Killer","Delgay Mercenaries Rajas Killers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_shield,no_scene,0,fac_commoners,
+   [itm_ms_helmet_assasin_a, itm_ms_helmet_assasin_a2, itm_mkk_black_scale_a, itm_mkk_black_scale_b, itm_mkk_black_scale_c, itm_mkk_leather_boots_a, itm_mkk_leather_boots_b, itm_mkk_gauntlets_sar_a, itm_mkk_gauntlets_sar_b, itm_maa_camel_rider_shield_a, itm_maa_camel_rider_shield_b, itm_maa_camel_rider_shield_c, itm_maa_camel_rider_shield_d, itm_maa_camel_rider_shield_e, itm_maa_camel_rider_shield_f, itm_falshion_2, itm_falshion_1, itm_throwing_daggers, itm_throwing_daggers],
+   def_attrib|agi_30|str_30|level(34),wp(250)|wp_throwing(420),knows_common|knows_riding_2|knows_ironflesh_10|knows_power_strike_8|knows_power_throw_10|knows_athletics_10|knows_shield_3,mercenary_face_1, mercenary_face_2],
+
   ["mercenaries_end","mercenaries_end","mercenaries_end",0,no_scene,reserved,fac_commoners,
    [],
    def_attrib|level(4),wp(60),knows_common,mercenary_face_1, mercenary_face_2],
@@ -3018,6 +3029,9 @@ upgrade2(troops,"watchman","caravan_guard","mercenary_crossbowman")
 upgrade2(troops,"caravan_guard","mercenary_swordsman","mercenary_horseman")
 upgrade(troops,"mercenary_swordsman","hired_blade")
 upgrade(troops,"mercenary_horseman","mercenary_cavalry")
+
+upgrade(troops,"delgay_mercenary","delgay_mercenary_assasin")
+upgrade(troops,"delgay_mercenary_assasin","delgay_mercenary_rajas_killer")
 
 #  nerpa troop tree
 upgrade(troops,"nerpa_recruit","nerpa_footman")
