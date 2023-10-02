@@ -49,20 +49,29 @@ party_templates = [
 # TODO: Check troops distribution and rebalance if needed
   (
     "looters","Looters Party",icon_axeman|carries_goods(8),0,fac_outlaws,bandit_personality,
-    [(trp_marauder,0,10),(trp_outlaw,0,10),(trp_highwayman,0,5),(trp_bandit,0,100),(trp_pillager,0,10),(trp_looter,1,120)]
+    [(trp_bandit,0,10),(trp_looter,1,95)]
   ),
+  (
+    "warband_bandits","Bandits Warband",icon_axeman|carries_goods(8),0,fac_outlaws,bandit_personality,
+    [(trp_bandit,20,30),(trp_looter,10,95)]
+  ),
+  # TODO:
+  # (
+  #   "outlawed_mercenary_company","Outlawed Mercenaries",icon_gray_knight|carries_goods(8),0,fac_outlaws,bandit_personality,
+  #   [(trp_mercenary_cavalry,0,5),(trp_hired_blade,0,7),(trp_watchman,10,35),(trp_mercenary_crossbowman,10,30),(trp_mercenary_swordsman,2,12),(trp_mercenary_horseman,0,10)]
+  # ),
   ("heretics","Doomcult Heretics",icon_gray_knight|carries_goods(20),0,fac_heretics,bandit_personality,[(trp_dark_cultist,0,20),(trp_cultist_acolyte,0,50)]),
 # Ryan END
   ("manhunters","Manhunters",icon_gray_knight,0,fac_manhunters,soldier_personality,[(trp_manhunter,19,100)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
 
 #  ("black_khergit_raiders","Black Khergit Raiders",icon_khergit_horseman_b|carries_goods(2),0,fac_black_khergits,bandit_personality,[(trp_black_khergit_guard,1,10),(trp_black_khergit_horseman,5,5)]),
-  ("steppe_bandits","Steppe Bandits",icon_khergit|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_steppe_bandit,14,580)]),
-  ("taiga_bandits","Tundra Bandits",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_taiga_bandit,14,580)]),
-  ("desert_bandits","Desert Bandits",icon_vaegir_knight|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_desert_bandit,14,508)]),
-  ("forest_bandits","Forest Bandits",icon_axeman|carries_goods(2),0,fac_forest_bandits,bandit_personality,[(trp_forest_bandit,14,502)]),
+  ("steppe_bandits","Steppe Bandits",icon_khergit|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_steppe_bandit,14,50)]),
+  ("taiga_bandits","Tundra Bandits",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_taiga_bandit,14,65)]),
+  ("desert_bandits","Desert Bandits",icon_vaegir_knight|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_desert_bandit,14,65)]),
+  ("forest_bandits","Forest Bandits",icon_axeman|carries_goods(2),0,fac_forest_bandits,bandit_personality,[(trp_forest_bandit,14,65)]),
   ("mountain_bandits","Mountain Bandits",icon_axeman|carries_goods(2),0,fac_mountain_bandits,bandit_personality,[(trp_mountain_bandit,14,600)]),
-  ("sea_raiders","Sea Raiders",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_sea_raider,15,500)]),
+  ("sea_raiders","Sea Raiders",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_sea_raider,15,60)]),
   ("awakened_party","Awakened Party",icon_gray_knight|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_skeleton_newborn,15,120)]),
 
   ("deserters","Deserters",icon_vaegir_knight|carries_goods(3),0,fac_deserters,bandit_personality,[]),

@@ -20,7 +20,7 @@ default_kingdom_relations = [("outlaws",-0.05),("peasant_rebels", -0.1),("desert
 factions = [
   ("no_faction","No Faction",0, 0.9, [], []),
   ("commoners","Commoners",0, 0.1,[("player_faction",0.1)], []),
-  ("outlaws","Outlaws", max_player_rating(-30), 0.5,[("commoners",-0.6),("player_faction",-0.15)], [], 0x888888),
+  ("outlaws","Outlaws", max_player_rating(-30), 0.5,[("commoners",-0.6),("player_faction",-0.15)], [], 0x338888),
   ("heretics","Heretics", max_player_rating(-90), 0.5,[("commoners",-0.6),("player_faction",-0.15)], [], 0x881111),
 # Factions before this point are hardwired into the game end their order should not be changed.
 

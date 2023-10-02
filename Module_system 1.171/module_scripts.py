@@ -1121,6 +1121,13 @@ scripts = [
 
       (set_spawn_radius, 5),
       (try_for_range, ":cur_village", villages_begin, villages_end),
+        (store_random_in_range, ":random_value", 0, 5),
+        (eq, ":random_value", 0),
+        (spawn_around_party, ":cur_village", "pt_warband_bandits"),
+      (try_end),
+
+      (set_spawn_radius, 5),
+      (try_for_range, ":cur_village", villages_begin, villages_end),
         (store_random_in_range, ":random_value", 0, 5),               
         (eq, ":random_value", 0),
         (spawn_around_party, ":cur_village", "pt_heretics"),
