@@ -1450,9 +1450,8 @@ items = [
 ["m_swadia_knight_plated_old_a", "Old Plated Knight Armor", [("swadia_coat_a",0),("swadia_coat_a.1",0),("swadia_coat_a.2",0),("swadia_coat_a.3",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 5899 , weight(25)|abundance(100)|head_armor(0)|body_armor(49)|leg_armor(23)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_1] ],
 ["m_swadia_knight_plated_old_b", "Old Plated Knight Armor", [("swadia_coat_b",0),("swadia_coat_b.1",0),("swadia_coat_b.2",0),("swadia_coat_b.3",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 5899 , weight(25)|abundance(100)|head_armor(0)|body_armor(49)|leg_armor(23)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_1] ],
 
-["m_old_helmet_a", "Old Helmet", [("dethertir_helm_a",0)], itp_type_head_armor|itp_merchandise   ,0, 864 , weight(1)|abundance(100)|head_armor(39)|difficulty(0) ,imodbits_armor, [], [] ],
-["m_old_helmet_b", "Old Helmet", [("dethertir_helm_b",0)], itp_type_head_armor|itp_merchandise   ,0, 599 , weight(1)|abundance(100)|head_armor(30)|difficulty(0) ,imodbits_armor, [], [] ],
-["m_old_helmet_c", "Old Helmet", [("dethertir_helm_c",0)], itp_type_head_armor|itp_merchandise   ,0, 599 , weight(1)|abundance(100)|head_armor(30)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_coif_cloth_a", "Black Coif", [("koif_monie_a",0)], itp_type_head_armor|itp_merchandise   ,0, 89 , weight(0.5)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
+["m_coif_cloth_b", "Light Coif", [("koif_monie_b",0)], itp_type_head_armor|itp_merchandise   ,0, 89 , weight(0.5)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
 
 ["m_swadia_common_helmet_a", "Old Helmet", [("dethertir_helm_a",0),("dethertir_helm_a.1",0)], itp_type_head_armor|itp_merchandise   ,0, 864 , weight(1)|abundance(100)|head_armor(39)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 ["m_swadia_common_helmet_b", "Old Helmet", [("dethertir_helm_b",0),("dethertir_helm_b.1",0)], itp_type_head_armor|itp_merchandise   ,0, 599 , weight(1)|abundance(100)|head_armor(30)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
