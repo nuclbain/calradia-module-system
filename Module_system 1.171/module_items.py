@@ -2096,6 +2096,11 @@ items = [
 
 ["m_hauberk_black_a", "Black Hauberk", [("hauberk_black",0), ("hauberk_black.1",0), ("hauberk_black.2",0), ("hauberk_black.3",0), ("hauberk_black.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,899 , weight(24)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(9)|difficulty(0) ,imodbits_armor, [], [] ], 
 
+["m_hauberk_mountain_a", "Mountain Hauberk", [("hauberk_mountain_a",0), ("hauberk_mountain_a.1",0), ("hauberk_mountain_a.2",0), ("hauberk_mountain_a.3",0), ("hauberk_mountain_a.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,309 , weight(18)|abundance(100)|head_armor(0)|body_armor(34)|leg_armor(6)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_hauberk_mountain_b", "Mountain Hauberk", [("hauberk_mountain_b",0), ("hauberk_mountain_b.1",0), ("hauberk_mountain_b.2",0), ("hauberk_mountain_b.3",0), ("hauberk_mountain_b.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,309 , weight(18)|abundance(100)|head_armor(0)|body_armor(34)|leg_armor(6)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_hauberk_mountain_c", "Mountain Hauberk", [("hauberk_mountain_c",0), ("hauberk_mountain_c.1",0), ("hauberk_mountain_c.2",0), ("hauberk_mountain_c.3",0), ("hauberk_mountain_c.4",0), ("hauberk_mountain_c.5",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,405 , weight(19)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(6)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_hauberk_mountain_d", "Mountain Hauberk", [("hauberk_mountain_d",0), ("hauberk_mountain_d.1",0), ("hauberk_mountain_d.2",0), ("hauberk_mountain_d.3",0), ("hauberk_mountain_d.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,399 , weight(19)|abundance(100)|head_armor(0)|body_armor(39)|leg_armor(6)|difficulty(0) ,imodbits_armor, [], [] ],
+
 ["m_aketon_a", "Aketon", [("aketon",0), ("aketon.1",0), ("aketon.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_7] ], 
 ["m_aketon_b", "Aketon with Kneekops", [("aketon_kneecops",0), ("aketon_kneecops.1",0), ("aketon_kneecops.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,389 , weight(17)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(17)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_7] ], 
 
