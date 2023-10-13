@@ -613,6 +613,12 @@ items = [
 ["nordic_helmet", "Nordic Helmet", [("helmet_w_eyeguard_new",0)], itp_merchandise| itp_type_head_armor   ,0, 340 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 ["khergit_lady_hat", "Khergit Lady Hat", [("khergit_lady_hat",0)],  itp_type_head_armor   |itp_civilian |itp_doesnt_cover_hair | itp_fit_to_head,0, 1 , weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["khergit_lady_hat_b", "Khergit Lady Leather Hat", [("khergit_lady_hat_b",0)], itp_type_head_armor  | itp_doesnt_cover_hair | itp_fit_to_head  |itp_civilian ,0, 1 , weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+
+["m_bandit_turban_a", "Turban", [("beduin_turban_a",0)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(10)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["m_bandit_turban_b", "Turban", [("beduin_turban_b",0)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(11)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["m_bandit_turban_c", "Turban", [("beduin_turban_c",0),("beduin_turban_c.1",0)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["m_bandit_turban_d", "Turban", [("beduin_turban_d",0),("beduin_turban_d.1",0)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+
 ["sarranid_felt_hat", "Sarranid Felt Hat", [("sar_helmet3",0)], itp_merchandise| itp_type_head_armor   ,0, 16 , weight(2)|abundance(100)|head_armor(5)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_cloth ],
 ["turban", "Turban", [("tuareg_open",0)], itp_merchandise| itp_type_head_armor   ,0, 28 , weight(1)|abundance(100)|head_armor(11)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_cloth ],
 ["desert_turban", "Desert Turban", [("tuareg",0)], itp_merchandise| itp_type_head_armor | itp_covers_beard ,0, 38 , weight(1.50)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_cloth ],
@@ -2076,6 +2082,11 @@ items = [
 ["m_onion_bascinet_a", "Onion Top Bascinet", [("onion-top_bascinet",0)], itp_merchandise|itp_type_head_armor, 0, 459, weight(2.5)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate, [], [fac_kingdom_7, fac_kingdom_5] ],
 ["m_onion_bascinet_b", "Onion Top Bascinet with Visor", [("pigface_klappvisor",0)], itp_merchandise|itp_type_head_armor, 0, 499, weight(2.5)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate, [], [fac_kingdom_7, fac_kingdom_5] ],
 ["m_onion_bascinet_c", "Onion Top Bascinet with Visor (Opened)", [("pigface_klappvisor_open",0)], itp_merchandise|itp_type_head_armor, 0, 499, weight(2.5)|abundance(100)|head_armor(45)|body_armor(0)|leg_armor(0)|difficulty(9) ,imodbits_plate, [], [fac_kingdom_7, fac_kingdom_5] ],
+
+["m_desert_bandit_a", "Desert Bandit Padded Vest", [("turk_bandit_a",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 345 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(11)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_desert_bandit_b", "Desert Bandit Mail", [("turk_bandit_b",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 561 , weight(17)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(11)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_desert_bandit_c", "Desert Bandit Scale Armor", [("turk_bandit_c",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 489 , weight(15)|abundance(100)|head_armor(0)|body_armor(32)|leg_armor(11)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_desert_bandit_d", "Desert Bandit Leather Vest", [("turk_bandit_d",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 351 , weight(13)|abundance(100)|head_armor(0)|body_armor(29)|leg_armor(11)|difficulty(0) ,imodbits_armor, [], [] ],
 
 ["m_padded_dark_a", "Black Padded Vest", [("padded_black",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
 ["m_padded_dark_b", "Gray Padded Vest", [("padded_gray",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
