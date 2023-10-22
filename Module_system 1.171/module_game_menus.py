@@ -270,10 +270,10 @@ game_menus = [
          (troop_raise_skill, "trp_player", skl_leadership, 7),
          (troop_raise_skill, "trp_player", skl_prisoner_management, 5),
          (troop_raise_skill, "trp_player", skl_inventory_management, 10),
-         (party_add_members, "p_main_party", "trp_swadian_knight", 10),
+         (party_add_members, "p_main_party", "trp_silver_rose_knight", 10),
          (party_add_members, "p_main_party", "trp_vaegir_knight", 10),
          (party_add_members, "p_main_party", "trp_vaegir_archer", 10),
-         (party_add_members, "p_main_party", "trp_swadian_sharpshooter", 10),
+         (party_add_members, "p_main_party", "trp_silver_rose_sharpshooter", 10),
          (troop_add_item, "trp_player","itm_scale_armor",0),
          (troop_add_item, "trp_player","itm_full_helm",0),
 
@@ -901,10 +901,10 @@ game_menus = [
 ###       (troop_equip_items, "trp_player"),
 ##
 ##       (set_visitors, 1, "trp_farmer", 13),
-##       (set_visitors, 2, "trp_swadian_sergeant", 5),
-##       (set_visitors, 3, "trp_swadian_sharpshooter", 4),
-##       (set_visitors, 4, "trp_swadian_man_at_arms", 8),
-##       (set_visitors, 5, "trp_swadian_knight", 3),
+##       (set_visitors, 2, "trp_silver_rose_sergeant", 5),
+##       (set_visitors, 3, "trp_silver_rose_sharpshooter", 4),
+##       (set_visitors, 4, "trp_silver_rose_man_at_arms", 8),
+##       (set_visitors, 5, "trp_silver_rose_knight", 3),
 ##       (set_visitors, 6, "trp_peasant_woman", 7),
 ##
 ####     Enemy
@@ -992,11 +992,11 @@ game_menus = [
 ##       (set_visitors, 8, "trp_vaegir_archer", 3),
 ##
 #### ENEMY
-##       (set_visitors, 16, "trp_swadian_footman", 8),
-##       (set_visitors, 17, "trp_swadian_crossbowman", 9),
-##       (set_visitors, 18, "trp_swadian_sergeant", 7),
-##       (set_visitors, 19, "trp_swadian_sharpshooter", 8),
-##       (set_visitors, 20, "trp_swadian_militia", 13),
+##       (set_visitors, 16, "trp_silver_rose_footman", 8),
+##       (set_visitors, 17, "trp_silver_rose_trained_crossbowman", 9),
+##       (set_visitors, 18, "trp_silver_rose_sergeant", 7),
+##       (set_visitors, 19, "trp_silver_rose_sharpshooter", 8),
+##       (set_visitors, 20, "trp_silver_rose_milita", 13),
 ##       (str_store_string, s16, "str_custom_battle_3"),
 ##
 ####   Scene 5 START
@@ -1010,11 +1010,11 @@ game_menus = [
 ##       (set_visitor, 0, "$g_player_troop"),
 ##
 #### US
-##       (set_visitors, 1, "trp_swadian_knight", 3),
-##       (set_visitors, 2, "trp_swadian_sergeant", 4),
-##       (set_visitors, 3, "trp_swadian_sharpshooter", 8),
-##       (set_visitors, 4, "trp_swadian_man_at_arms", 8),
-##       (set_visitors, 5, "trp_swadian_knight", 2),
+##       (set_visitors, 1, "trp_silver_rose_knight", 3),
+##       (set_visitors, 2, "trp_silver_rose_sergeant", 4),
+##       (set_visitors, 3, "trp_silver_rose_sharpshooter", 8),
+##       (set_visitors, 4, "trp_silver_rose_man_at_arms", 8),
+##       (set_visitors, 5, "trp_silver_rose_knight", 2),
 ##
 ####     enemy
 ##       (set_visitors, 16, "trp_vaegir_infantry", 8),
@@ -10791,7 +10791,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 50),
           (troop_remove_gold, "trp_player", 50),
-          (party_add_members, "$g_encountered_party", "trp_swadian_recruit", 1),
+          (party_add_members, "$g_encountered_party", "trp_silver_rose_levy", 1),
         ]
       ),
       (
@@ -10805,7 +10805,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 250),
           (troop_remove_gold, "trp_player", 250),
-          (party_add_members, "$g_encountered_party", "trp_swadian_recruit", 5),
+          (party_add_members, "$g_encountered_party", "trp_silver_rose_levy", 5),
         ]
       ),
       (
@@ -10819,7 +10819,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 500),
           (troop_remove_gold, "trp_player", 500),
-          (party_add_members, "$g_encountered_party", "trp_swadian_recruit", 10),
+          (party_add_members, "$g_encountered_party", "trp_silver_rose_levy", 10),
         ]
       ),
       (
@@ -10849,7 +10849,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 100),
           (troop_remove_gold, "trp_player", 100),
-          (party_add_members, "$g_encountered_party", "trp_swadian_horseman", 1),
+          (party_add_members, "$g_encountered_party", "trp_silver_rose_horseman", 1),
         ]
 			),
       (
@@ -10863,7 +10863,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 500),
           (troop_remove_gold, "trp_player", 500),
-          (party_add_members, "$g_encountered_party", "trp_swadian_horseman", 5),
+          (party_add_members, "$g_encountered_party", "trp_silver_rose_horseman", 5),
         ]
 			),
       (
@@ -10877,7 +10877,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 1000),
           (troop_remove_gold, "trp_player", 1000),
-          (party_add_members, "$g_encountered_party", "trp_swadian_horseman", 10),
+          (party_add_members, "$g_encountered_party", "trp_silver_rose_horseman", 10),
         ]
 			),
 			(

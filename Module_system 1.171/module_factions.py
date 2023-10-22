@@ -48,7 +48,7 @@ factions = [
 
   ("player_faction","Player Faction",0, 0.9, [], []),
   ("player_supporters_faction","Player's Supporters",0, 0.9, [("player_faction",1.00),("outlaws",-0.05),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xFF4433), #changed name so that can tell difference if shows up on map
-  ("kingdom_1",  "The Eldritch Dominion of Swadia", 0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xEE7744),
+  ("kingdom_1",  "The Order of the Silver Rose", 0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xA83234),
   ("kingdom_2",  "Vaegirs Tzhardom",    0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xCCBB99),
   ("kingdom_3",  "Khergit Khanate", 0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xCC99FF),
   ("kingdom_4",  "Kingdom of Nords",    0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x33DDDD),

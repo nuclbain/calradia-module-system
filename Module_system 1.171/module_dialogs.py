@@ -8212,11 +8212,11 @@ What kind of recruits do you want?", "dplmc_constable_recruit_select",
 [
  (store_party_size_wo_prisoners, ":garrison_size", "p_main_party"),
  (le, ":garrison_size", 0),
- (party_add_members, "p_main_party", "trp_swadian_militia", 1), #zerilius included otherwise gives errors
+ (party_add_members, "p_main_party", "trp_silver_rose_milita", 1), #zerilius included otherwise gives errors
 ],
 "You didn't choose any soldiers. Seems like you changed your mind.", "dplmc_constable_pretalk",
 [
-(party_remove_members, "p_main_party", "trp_swadian_militia", 1),
+(party_remove_members, "p_main_party", "trp_silver_rose_milita", 1),
 (call_script, "script_party_add_party", "p_main_party", "p_temp_party"),
 (assign, "$g_move_heroes", 0),
 ]],

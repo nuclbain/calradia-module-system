@@ -15967,7 +15967,7 @@ mission_templates = [
                   (assign, ":sound_id", "snd_encounter_steppe_bandits"),
                 (try_end),
               (else_try), #SB : prison guards
-                (this_or_next|is_between, ":attacker_troop_id", "trp_swadian_prison_guard", "trp_swadian_recruit"),
+                (this_or_next|is_between, ":attacker_troop_id", "trp_swadian_prison_guard", "trp_silver_rose_levy"),
                 (this_or_next|is_between, ":attacker_troop_id", "trp_vaegir_prison_guard", "trp_khergit_tribesman"),
                 (this_or_next|is_between, ":attacker_troop_id", "trp_khergit_prison_guard", "trp_nord_recruit"),
                 (this_or_next|is_between, ":attacker_troop_id", "trp_nord_prison_guard", "trp_rhodok_tribesman"),
@@ -15980,7 +15980,7 @@ mission_templates = [
                 (try_end),
               (else_try), #SB : encounter_vaegir, use for high-level knights
                 (this_or_next|eq, ":attacker_troop_id", "trp_vaegir_knight"),
-                (this_or_next|eq, ":attacker_troop_id", "trp_swadian_knight"),
+                (this_or_next|eq, ":attacker_troop_id", "trp_silver_rose_knight"),
                 (eq, ":attacker_troop_id", "trp_sarranid_mamluke"),
                 (is_between, ":attacker_troop_id", bandits_begin, bandits_end),
                 # (store_random_in_range, ":random", 0, 60),

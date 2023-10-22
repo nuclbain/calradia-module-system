@@ -467,52 +467,46 @@ troops = [
 
 
 
-  ["swadian_peasant","Swadian Armed Peasant","Swadian Armed Peasants",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_1,[itm_scythe,itm_hatchet,itm_pitch_fork,itm_stones,itm_tab_shield_heater_a,itm_tab_shield_round_a,itm_m_swadia_common_a,itm_m_swadia_common_b,itm_m_swadia_common_helmet_a,itm_m_swadia_common_helmet_b,itm_m_swadia_common_helmet_c,itm_m_swadia_milita_boots_a,itm_m_swadia_milita_boots_b,itm_m_swadia_gloves_a], def_attrib|level(4),wp(60),knows_common,swadian_face_younger_1, swadian_face_middle_2],
-  ["swadian_huntsman","Swadian Huntsman","Swadian Huntsmans",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_1,[itm_falchion,itm_hatchet,itm_hunting_bow,itm_arrows,itm_tab_shield_heater_a,itm_tab_shield_round_a,itm_m_swadia_common_a,itm_m_swadia_common_b,itm_m_swadia_common_helmet_a,itm_m_swadia_common_helmet_b,itm_m_swadia_common_helmet_c,itm_m_swadia_milita_boots_a,itm_m_swadia_milita_boots_b,itm_m_swadia_gloves_a], def_attrib|level(8),wp(80),knows_common|knows_power_draw_3,swadian_face_younger_1, swadian_face_middle_2],
-  ["swadian_peasant_milita","Swadian Peasant Milita","Swadian Peasant Militas",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield,0,0,fac_kingdom_1,[itm_falchion,itm_hatchet,itm_spiked_club,itm_boar_spear,itm_scythe,itm_pitch_fork,itm_tab_shield_heater_a,itm_m_swadia_common_mail_a,itm_m_swadia_common_mail_b,itm_m_swadia_leather_boots_a,itm_m_swadia_leather_boots_b,itm_m_light_infantry_helmet_a,itm_m_light_infantry_helmet_b,itm_m_light_infantry_helmet_c,itm_m_light_infantry_helmet_d,itm_m_light_infantry_helmet_e], def_attrib|level(8),wp(80),knows_common|knows_ironflesh_3|knows_shield_2,swadian_face_younger_1, swadian_face_middle_2],
-  ["swadian_guardian","Swadian Armored Guardian","Swadian Armored Guardians",tf_guarantee_all,0,0,fac_kingdom_1,[itm_milanese_sword, itm_glaive, itm_tab_shield_pavise_a, itm_tab_shield_pavise_b, itm_m_swadia_knight_plated_old_a, itm_m_swadia_knight_plated_old_b,itm_m_swadia_common_helmet_a,itm_m_swadia_common_helmet_b,itm_m_swadia_common_helmet_c,itm_m_swadia_milita_boots_a,itm_m_swadia_milita_boots_b,itm_m_swadia_gloves_a], def_attrib|level(12),wp(100),knows_common|knows_ironflesh_4|knows_shield_3,swadian_face_younger_1, swadian_face_middle_2],
-  ["swadian_retired_veteran","Swadian Peasant Milita Veteran","Swadian Peasant Milita Veterans",tf_guarantee_all,0,0,fac_kingdom_1,[itm_tab_shield_heater_b, itm_grosse_messer_b, itm_morningstar, itm_m_swadia_common_plated_a, itm_m_swadia_common_plated_b,itm_m_swadia_common_plated_c,itm_m_light_infantry_helmet_a,itm_m_light_infantry_helmet_b,itm_m_light_infantry_helmet_c,itm_m_light_infantry_helmet_d,itm_m_light_infantry_helmet_e,itm_m_swadia_leather_boots_a,itm_m_swadia_leather_boots_b,itm_m_swadia_gloves_a,itm_m_swadia_mail_gloves_a], def_attrib|level(12),wp(100),knows_common|knows_ironflesh_4|knows_power_strike_3,swadian_face_younger_1, swadian_face_middle_2],
+  ["silver_rose_novice","Silver Rose Novice","Silver Rose Novice",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_1,[itm_scythe,itm_hatchet,itm_pitch_fork,itm_stones,itm_pickaxe,itm_tab_shield_heater_a,itm_tab_shield_round_a,itm_m_aketon_silver_rose_a,itm_m_aketon_silver_rose_b,itm_m_leather_silver_rose_b,itm_woolen_cap_new_c,itm_woolen_cap_new_f,itm_m_arming_cap_b,itm_m_hose_d,itm_m_swadia_gloves_a], def_attrib|level(4),wp(60),knows_common,swadian_face_younger_1, swadian_face_middle_2],
 
 #peasant - retainer - footman - man-at-arms -  knight
-  ["swadian_recruit","Swadian Regular Army Recruit","Swadian Regular Army Recruits",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_1,
-   [itm_glaive,itm_guisarme,itm_german_hunting_spear,itm_m_swadia_recruit_a,itm_m_infantry_coif_a,itm_m_swadia_common_helmet_a,itm_m_swadia_common_helmet_b,itm_m_swadia_common_helmet_c,itm_m_swadia_light_boots_a,itm_m_swadia_light_boots_b,itm_leather_gloves,itm_m_gloves_a,itm_m_swadia_gloves_a],
-   def_attrib|level(4),wp(60),knows_common,swadian_face_younger_1, swadian_face_middle_2],
-  ["swadian_militia","Swadian Army Militia","Swadian Army Militia",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield,0,0,fac_kingdom_1,
-   [itm_bolts,itm_glaive,itm_guisarme,itm_german_hunting_spear,itm_hunting_crossbow, itm_m_swadia_milita_boots_a,itm_m_swadia_milita_boots_b,itm_m_swadia_recruit_plated_a,itm_m_swadia_recruit_plated_b,itm_m_swadia_recruit_plated_c,itm_m_light_infantry_helmet_a,itm_m_light_infantry_helmet_b,itm_m_light_infantry_helmet_c,itm_m_light_infantry_helmet_d,itm_m_light_infantry_helmet_e,itm_leather_gloves,itm_m_gloves_a,itm_m_swadia_gloves_a], def_attrib|level(9),wp(75),knows_common,swadian_face_young_1, swadian_face_old_2],
-  ["swadian_footman","Swadian Footman","Swadian Footmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield,0,0,fac_kingdom_1,
-   [itm_spear,itm_fighting_pick,itm_sword_medieval_b_small,itm_sword_medieval_a,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_swadia_footman_shield_3,itm_swadia_footman_shield_4,
-    itm_m_swadia_infantry_plated_a,itm_m_swadia_infantry_plated_b,itm_m_swadia_infantry_plated_kneekops_a,itm_m_swadia_infantry_plated_kneekops_b,itm_m_swadia_infantry_boots_a,itm_m_swadia_infantry_boots_b,itm_m_light_infantry_helmet_a,itm_m_light_infantry_helmet_b,itm_m_light_infantry_helmet_c,itm_m_light_infantry_helmet_d,itm_m_light_infantry_helmet_e,itm_leather_gloves,itm_m_gloves_a,itm_m_swadia_gloves_a],
-   def_attrib|level(14),wp_melee(85),knows_common|knows_ironflesh_2|knows_shield_2|knows_athletics_2|knows_power_strike_2,swadian_face_young_1, swadian_face_old_2],
-  ["swadian_guard","Swadian Castle Guard","Swadian Castle Guards",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1, [itm_english_bill,itm_m_swadia_guardian_armor_a,itm_m_swadia_guardian_armor_b,itm_m_swadia_guardian_armor_c,itm_m_swadia_leather_boots_a,itm_leather_gloves,itm_m_gloves_a,itm_m_swadia_gloves_a,itm_m_swadia_leather_boots_b,itm_m_infantry_coif_a,itm_mt_gauntlets_b], def_attrib|level(20),wp_melee(125),knows_common|knows_ironflesh_4|knows_power_strike_2|knows_athletics_5,swadian_face_middle_1, swadian_face_old_2],
-  ["swadian_infantry","Swadian Infantry","Swadian Infantry",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1,
-   [itm_pike,itm_fighting_pick,itm_bastard_sword_a,itm_sword_medieval_a,itm_sword_medieval_b_small,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_swadia_footman_shield_3,itm_swadia_footman_shield_4, itm_m_swadia_infantry_heavy_a,itm_m_swadia_infantry_heavy_b,itm_m_swadia_leather_boots_a,itm_m_swadia_leather_boots_b,itm_m_leather_boots_a,itm_m_greaves_a,itm_m_infantry_helmet_a,itm_m_infantry_helmet_b,itm_m_infantry_helmet_c,itm_m_infantry_helmet_d,itm_m_infantry_helmet_e,itm_m_swadia_mail_gloves_a,itm_m_gloves_a,itm_m_swadia_gloves_a],
-   def_attrib|level(20),wp_melee(105),knows_common|knows_riding_3|knows_ironflesh_2|knows_power_strike_2|knows_shield_3|knows_athletics_3,swadian_face_middle_1, swadian_face_old_2],
-  ["swadian_sergeant","Swadian Sergeant","Swadian Sergeants",tf_mounted|tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1,
-   [itm_awlpike,itm_bastard_sword_b,itm_morningstar,itm_sword_medieval_c,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_swadia_footman_shield_3,itm_swadia_footman_shield_4,
-    itm_m_sergant_helmet_a,itm_m_swadia_knight_plated_a,itm_m_swadia_knight_plated_b,itm_m_greaves_a,itm_m_greaves_b,itm_m_gloves_a,itm_m_gauntlets_a],
-   def_attrib|level(25),wp_melee(135),knows_common|knows_shield_4|knows_ironflesh_4|knows_power_strike_4|knows_athletics_4,swadian_face_middle_1, swadian_face_older_2],
-  ["swadian_skirmisher","Swadian Skirmisher","Swadian Skirmishers",tf_guarantee_all,0,0,fac_kingdom_1,
-   [itm_bolts,itm_light_crossbow,itm_hunting_crossbow,itm_club,itm_voulge,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,
-    itm_m_swadia_infantry_a,itm_m_swadia_infantry_b,itm_m_light_capelina_a,itm_m_light_capelina_b,itm_m_swadia_milita_boots_a,itm_m_swadia_milita_boots_b],
+  ["silver_rose_levy","Silver Rose Levy","Silver Rose Levy",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_1,
+   [itm_falshion_1, itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_m_swadia_recruit_a,itm_m_arming_cap_b,itm_leather_boots,itm_m_spiked_helmet_a,itm_footman_helmet,itm_silver_rose_footman_helmet,itm_leather_gloves],
+   def_attrib|level(5),wp(65),knows_common,swadian_face_younger_1, swadian_face_middle_2],
+
+  ["silver_rose_scout","Silver Rose Scout","Silver Rose Scouts",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,
+   [itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_m_swadia_recruit_a,itm_leather_boots,itm_silver_rose_scout_helmet_a,itm_leather_gloves,itm_m_swadia_light_horse_a], def_attrib|level(9),wp(87),knows_common|knows_riding_3,swadian_face_young_1, swadian_face_old_2],
+
+  ["silver_rose_milita","Silver Rose Militia","Silver Rose Militia",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_1,
+   [itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_crusader_spear_inf_a,itm_crusader_spear_inf_b,itm_crusader_spear_inf_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_m_swadia_recruit_plated_a,itm_m_swadia_recruit_plated_b,itm_m_swadia_recruit_plated_c,itm_leather_boots,itm_silver_rose_spiked_helmet_a,itm_silver_rose_spiked_helmet_b,itm_spiked_helmet,itm_silver_rose_footman_helmet,itm_leather_gloves, itm_m_gloves_a], def_attrib|level(9),wp(87),knows_common,swadian_face_young_1, swadian_face_old_2],
+  ["silver_rose_footman","Silver Rose Footman","Silver Rose Footmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_1,
+   [itm_crusader_long_sword_a,itm_shortened_bill,itm_winged_mace,itm_flanged_mace,itm_crusader_spear_inf_a,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_m_silver_rose_mail_a,itm_m_silver_rose_mail_b,itm_leather_boots,itm_silver_rose_spiked_helmet_a,itm_silver_rose_spiked_helmet_b,itm_spiked_helmet,itm_silver_rose_footman_helmet_cloth,itm_silver_rose_footman_helmet,itm_silver_rose_mask,itm_leather_gloves, itm_m_gloves_a],
+   def_attrib|level(14),wp_melee(98),knows_common|knows_ironflesh_3|knows_shield_2|knows_athletics_2|knows_power_strike_2,swadian_face_young_1, swadian_face_old_2],
+  ["silver_rose_hacker","Silver Rose Hacker","Silver Rose Hackers",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1, [itm_shortened_bill,itm_m_mace_knight,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_m_silver_rose_breastplate_heavy_a,itm_leather_boots,itm_silver_rose_mask,itm_m_infantry_coif_a,itm_silver_rose_mask_mail,itm_leather_gloves, itm_m_gloves_a], def_attrib|str_22|agi_25|level(25),wp_melee(235),knows_common|knows_ironflesh_5|knows_power_strike_4|knows_athletics_5,swadian_face_middle_1, swadian_face_old_2],
+  ["silver_rose_infantry","Silver Rose Infantry","Silver Rose Infantry",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1,
+   [itm_pike,itm_fighting_pick,itm_bastard_sword_a,itm_sword_medieval_a,itm_sword_medieval_b_small,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_swadia_footman_shield_3,itm_swadia_footman_shield_4, itm_m_silver_rose_brigandine_a,itm_silver_rose_mask_mail,itm_m_silver_rose_brigandine_b,itm_leather_boots,itm_m_leather_boots_a,itm_m_greaves_a,itm_m_swadia_mail_gloves_a,itm_m_gloves_a],
+   def_attrib|level(21),wp_melee(179),knows_common|knows_riding_3|knows_ironflesh_4|knows_power_strike_3|knows_shield_3|knows_athletics_3,swadian_face_middle_1, swadian_face_old_2],
+  ["silver_rose_sergeant","Silver Rose Sergeant","Silver Rose Sergeants",tf_mounted|tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1,
+   [itm_axe_crusader_a,itm_axe_crusader_b,itm_crusader_long_sword_c,itm_crusader_long_sword_b,itm_crusader_spear_inf_a,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_swadia_footman_shield_3,itm_swadia_footman_shield_4,
+    itm_m_sergant_helmet_a,itm_m_silver_rose_breastplate_heavy_a,itm_m_silver_rose_breastplate_heavy_b,itm_m_greaves_a,itm_m_greaves_b,itm_m_gloves_a,itm_m_gauntlets_a],
+   def_attrib|str_30|agi_20|level(25),wp_melee(278),knows_common|knows_shield_4|knows_ironflesh_4|knows_power_strike_4|knows_athletics_4,swadian_face_middle_1, swadian_face_older_2],
+  ["silver_rose_crossbowman","Silver Rose Crossbowman","Silver Rose Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
+   [itm_bolts,itm_light_crossbow,itm_hunting_crossbow,itm_shortened_bill,itm_winged_mace,itm_flanged_mace,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_m_silver_rose_gambeson_a,itm_m_arming_cap_b,itm_m_hose_d],
    def_attrib|level(14),wp(80),knows_common|knows_riding_2|knows_ironflesh_1,swadian_face_young_1, swadian_face_middle_2],
-  ["swadian_crossbowman","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_1,
-   [itm_bolts,itm_crossbow,itm_light_crossbow,itm_fighting_pick,itm_sword_medieval_a,itm_voulge,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,
-    itm_m_swadia_armor_light_a,itm_m_swadia_armor_light_b,itm_m_capelina_a,itm_m_capelina_b,itm_m_swadia_milita_boots_a,itm_m_swadia_milita_boots_b],
+  ["silver_rose_trained_crossbowman","Silver Rose Trained Crossbowman","Silver Rose Trained Crossbowmen",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_1,
+   [itm_bolts,itm_crossbow,itm_light_crossbow,itm_shortened_bill,itm_winged_mace,itm_flanged_mace,itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_m_silver_rose_gambeson_a,itm_silver_rose_capelina_a,itm_silver_rose_capelina_b,itm_m_hose_d, itm_leather_boots, itm_leather_gloves],
    def_attrib|level(19),wp_one_handed (90) | wp_two_handed (90) | wp_polearm (90) | wp_archery (90) | wp_crossbow (100) | wp_throwing (90),knows_common|knows_riding_2|knows_ironflesh_1|knows_athletics_1,swadian_face_young_1, swadian_face_old_2],
-  ["swadian_sharpshooter","Swadian Sharpshooter","Swadian Sharpshooters",tf_guarantee_all,0,0,fac_kingdom_1,
-   [itm_bolts,itm_arrows,itm_crossbow,itm_crossbow,itm_heavy_crossbow,itm_sword_medieval_b_small,itm_sword_medieval_a,itm_voulge,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,
-    itm_m_swadia_sergant_armor_a,itm_m_swadia_sergant_armor_b,itm_m_capelina_a,itm_m_capelina_b,itm_m_swadia_leather_boots_a,itm_m_swadia_leather_boots_b,itm_m_gloves_a],
+  ["silver_rose_sharpshooter","Silver Rose Sharpshooter","Silver Rose Sharpshooters",tf_guarantee_all,0,0,fac_kingdom_1,
+   [itm_bolts,itm_crossbow,itm_crossbow,itm_heavy_crossbow,itm_shortened_bill,itm_m_mace_knight,itm_axe_crusader_1,itm_winged_mace,itm_flanged_mace,itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_m_silver_rose_breastplate_a,itm_silver_rose_capelina_mail_a,itm_silver_rose_capelina_mail_b,itm_m_hose_d, itm_leather_boots, itm_leather_gloves, itm_m_gloves_a],
    str_14 | agi_10 | int_4 | cha_4|level(24),wp_one_handed (100) | wp_two_handed (100) | wp_polearm (100) | wp_archery (100) | wp_crossbow (120) | wp_throwing (100),knows_common|knows_power_draw_3|knows_ironflesh_1|knows_power_strike_1|knows_athletics_2,swadian_face_middle_1, swadian_face_older_2],
 
-  ["swadian_horseman","Swadian Horseman","Swadian Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,[itm_morningstar,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_m_swadia_sergant_armor_a,itm_m_swadia_sergant_armor_b,itm_m_leather_boots_a,itm_m_cavalry_helmet_a,itm_m_cavalry_helmet_b,itm_m_cavalry_helmet_c,itm_m_cavalry_helmet_d,itm_m_cavalry_helmet_e,itm_m_cavalry_helmet_f,itm_m_cavalry_helmet_g,itm_m_swadia_light_horse_a,itm_m_swadia_light_horse_b,itm_m_swadia_light_horse_c,itm_m_swadia_light_horse_d,itm_m_swadia_light_horse_e,itm_m_swadia_light_horse_f,itm_m_gloves_a], def_attrib|level(19),wp_melee(100),knows_common|knows_riding_3|knows_ironflesh_2|knows_power_strike_2|knows_shield_3|knows_athletics_3,swadian_face_middle_1, swadian_face_old_2],
-  ["swadian_man_at_arms","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,
-   [itm_lance,itm_fighting_pick,itm_bastard_sword_b,itm_sword_medieval_b,itm_sword_medieval_c_small,itm_swadia_kite_shield_1,itm_swadia_kite_shield_2,
-    itm_m_swadia_knight_armor_a,itm_m_swadia_knight_armor_b,itm_m_swadia_knight_armor_c,itm_m_crusader_helm_a,itm_m_crusader_helm_b,itm_m_crusader_helm_c,itm_m_crusader_helm_d,itm_m_crusader_helm_e,itm_m_crusader_helm_f,itm_m_swadia_leather_boots_a,itm_m_swadia_leather_boots_b,itm_m_gloves_a,itm_m_swadia_light_horse_a,itm_m_swadia_light_horse_b,itm_m_swadia_light_horse_c,itm_m_swadia_light_horse_d,itm_m_swadia_light_horse_e,itm_m_swadia_light_horse_f],
-   def_attrib|level(21),wp_melee(100),knows_common|knows_riding_4|knows_ironflesh_2|knows_shield_2|knows_power_strike_3,swadian_face_young_1, swadian_face_old_2],
-  ["swadian_knight","Swadian Knight","Swadian Knights",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,
-   [itm_heavy_lance,itm_sword_two_handed_b,itm_sword_medieval_d_long,itm_morningstar,itm_morningstar,itm_sword_medieval_d_long,itm_swadia_heater_shield_1,itm_swadia_heater_shield_2,
-    itm_m_swadia_knight_armor_a_cloaked,itm_m_swadia_knight_armor_b_cloaked,itm_m_swadia_knight_armor_c_cloaked,itm_m_knigh_helm_a,itm_m_knigh_helm_b,itm_m_knigh_helm_c,itm_m_knigh_helm_d,itm_m_knigh_helm_e,itm_m_knigh_helm_f,itm_m_swadia_mail_boots_a,itm_m_swadia_mail_boots_b,itm_m_gauntlets_a,itm_m_swadia_heavy_horse_a,itm_m_swadia_heavy_horse_b,itm_m_swadia_heavy_horse_c],
-   def_attrib|level(28),wp_one_handed (150) | wp_two_handed (130) | wp_polearm (130) | wp_archery (75) | wp_crossbow (75) | wp_throwing (75),knows_common|knows_riding_5|knows_shield_5|knows_ironflesh_5|knows_power_strike_5,swadian_face_middle_1, swadian_face_older_2],
+  ["silver_rose_horseman","Silver Rose Horseman","Silver Rose Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,[itm_morningstar,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_m_silver_rose_breastplate_a,itm_m_leather_boots_a,itm_m_cavalry_helmet_a,itm_m_cavalry_helmet_b,itm_m_cavalry_helmet_c,itm_m_cavalry_helmet_d,itm_m_cavalry_helmet_e,itm_m_cavalry_helmet_f,itm_m_cavalry_helmet_g,itm_m_swadia_light_horse_a,itm_m_swadia_light_horse_b,itm_m_swadia_light_horse_c,itm_m_swadia_light_horse_d,itm_m_swadia_light_horse_e,itm_m_swadia_light_horse_f,itm_m_gloves_a], def_attrib|level(21),wp_melee(150),knows_common|knows_riding_3|knows_ironflesh_4|knows_power_strike_4|knows_shield_3|knows_athletics_3,swadian_face_middle_1, swadian_face_old_2],
+  ["silver_rose_man_at_arms","Silver Rose Man at Arms","Silver Rose Men at Arms",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,
+   [itm_lance,itm_crusader_long_sword_a,itm_crusader_long_sword_b,itm_crusader_long_sword_c,itm_swadia_kite_shield_1,itm_swadia_kite_shield_2,itm_m_silver_rose_brigandine_a,itm_m_silver_rose_brigandine_b,itm_m_silver_rose_breastplate_a,itm_m_crusader_helm_a,itm_m_crusader_helm_b,itm_m_crusader_helm_c,itm_m_crusader_helm_d,itm_m_crusader_helm_e,itm_m_crusader_helm_f,itm_leather_boots,itm_m_gloves_a,itm_m_swadia_light_horse_a,itm_m_swadia_light_horse_b,itm_m_swadia_light_horse_c,itm_m_swadia_light_horse_d,itm_m_swadia_light_horse_e,itm_m_swadia_light_horse_f],
+   def_attrib|str_20|agi_20|level(25),wp_melee(179),knows_common|knows_riding_4|knows_ironflesh_5|knows_shield_2|knows_power_strike_5,swadian_face_young_1, swadian_face_old_2],
+  ["silver_rose_knight","Silver Rose Knight","Silver Rose Knights",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,
+   [itm_crusader_knight_spear_a,itm_k_long_sword_a,itm_k_long_sword_b,itm_k_long_sword_c,itm_swadia_heater_shield_1,itm_swadia_heater_shield_2,itm_m_silver_rose_breastplate_heavy_a,itm_m_silver_rose_breastplate_heavy_b,itm_m_knigh_helm_a,itm_m_knigh_helm_b,itm_m_knigh_helm_c,itm_m_knigh_helm_d,itm_m_knigh_helm_e,itm_m_knigh_helm_f,itm_m_swadia_mail_boots_a,itm_m_swadia_mail_boots_b,itm_m_gauntlets_a,itm_m_swadia_heavy_horse_a,itm_m_swadia_heavy_horse_b,itm_m_swadia_heavy_horse_c],
+   def_attrib|str_25|agi_25|level(31),wp_one_handed (220) | wp_two_handed (220) | wp_polearm (300) | wp_archery (75) | wp_crossbow (75) | wp_throwing (75),knows_common|knows_riding_5|knows_shield_5|knows_ironflesh_8|knows_power_strike_8,swadian_face_middle_1, swadian_face_older_2],
 
   ["swadian_young_lion", "Swadian Young Lion", "Swadian Young Lions", tf_guarantee_all,0,0,fac_kingdom_1, [itm_grosse_messer,itm_grosse_messer_b, itm_irish_sword, itm_tab_shield_heater_cav_b,itm_shield_heater_c,itm_shield_heater_d,itm_mace_3,itm_mace_4, itm_m_swadia_elite_recruit_a,itm_m_swadia_elite_recruit_plated_a,itm_m_swadia_elite_recruit_plated_b,itm_m_swadia_elite_recruit_plated_c,itm_m_swadia_elite_recruit_plated_d,itm_m_swadia_elite_helmet_a,itm_m_light_infantry_helmet_e,itm_m_leather_boots_a,itm_m_swadia_leather_boots_a,itm_m_swadia_leather_boots_b,itm_m_gauntlets_a], def_attrib|str_17|agi_11|level(25),wp_melee(160),knows_common|knows_shield_5|knows_ironflesh_5|knows_power_strike_5,swadian_face_middle_1, swadian_face_older_2],
   ["swadian_guild_initiate", "Swadian Guild Initiate", "Swadian Guild Initiates", tf_guarantee_all,0,0,fac_kingdom_1, [itm_grosse_messer_b, itm_crusader_sword, itm_german_bastard_sword, itm_danish_greatsword, itm_longsword, itm_morningstar, itm_shield_heater_d, itm_m_swadia_elite_sergant_plated_a,itm_m_swadia_elite_sergant_plated_b,itm_m_swadia_elite_sergant_plated_c,itm_m_swadia_elite_sergant_plated_d,itm_m_swadia_elite_helmet_b, itm_m_knigh_helm_f,itm_m_swadia_elite_helmet_a,itm_m_leather_boots_a,itm_m_swadia_leather_boots_a,itm_m_swadia_leather_boots_b,itm_m_gauntlets_a,itm_leather_gloves, itm_m_gloves_a], def_attrib|str_18|agi_15|level(28),wp_melee(200),knows_common|knows_shield_7|knows_ironflesh_7|knows_power_strike_5,swadian_face_middle_1, swadian_face_older_2],
@@ -2274,15 +2268,15 @@ troops = [
   ["quick_battle_6_player", "{!}quick_battle_6_player", "{!}quick_battle_6_player", tf_hero, 0, reserved,  fac_player_faction, [itm_padded_cloth,itm_nomad_boots, itm_splinted_leather_greaves, itm_skullcap, itm_sword_medieval_b,  itm_crossbow, itm_bolts, itm_plate_covered_round_shield],    knight_attrib_1,wp(130),knight_skills_1, 0x000000000008010b01f041a9249f65fd],
 
 #Multiplayer ai troops
-  ["swadian_crossbowman_multiplayer_ai","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_trained_crossbowman_multiplayer_ai","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_bolts,itm_crossbow,itm_sword_medieval_a,itm_tab_shield_heater_b,
     itm_leather_jerkin,itm_leather_armor,itm_ankle_boots,itm_footman_helmet],
    def_attrib|level(19),wp_melee(90)|wp_crossbow(100),knows_common|knows_ironflesh_4|knows_athletics_6|knows_shield_5|knows_power_strike_3,swadian_face_young_1, swadian_face_old_2],
-  ["swadian_infantry_multiplayer_ai","Swadian Infantry","Swadian Infantry",tf_guarantee_all_wo_ranged,0,0,fac_kingdom_1,
+  ["silver_rose_infantry_multiplayer_ai","Swadian Infantry","Swadian Infantry",tf_guarantee_all_wo_ranged,0,0,fac_kingdom_1,
    [itm_pike,itm_bastard_sword_a,itm_tab_shield_heater_c,
     itm_studded_leather_coat,itm_ankle_boots,itm_flat_topped_helmet],
    def_attrib|level(19),wp_melee(105),knows_common|knows_ironflesh_5|knows_shield_4|knows_power_strike_5|knows_athletics_4,swadian_face_middle_1, swadian_face_old_2],
-  ["swadian_man_at_arms_multiplayer_ai","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all_wo_ranged,0,0,fac_kingdom_1,
+  ["silver_rose_man_at_arms_multiplayer_ai","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all_wo_ranged,0,0,fac_kingdom_1,
    [itm_lance,itm_bastard_sword_a,itm_tab_shield_heater_cav_a,
     itm_mail_with_surcoat,itm_hide_boots,itm_norman_helmet,itm_hunter],
    def_attrib|level(19),wp_melee(100),knows_common|knows_riding_4|knows_ironflesh_4|knows_shield_4|knows_power_strike_4|knows_athletics_1,swadian_face_young_1, swadian_face_old_2],
@@ -2348,13 +2342,13 @@ troops = [
    
    
 #Multiplayer troops (they must have the base items only, nothing else)
-  ["swadian_crossbowman_multiplayer","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_trained_crossbowman_multiplayer","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_bolts,itm_crossbow,itm_sword_medieval_b_small,itm_tab_shield_heater_a,itm_red_shirt,itm_ankle_boots],
    str_14 | agi_15 |def_attrib_multiplayer|level(19),wpe(90,60,180,90),knows_common_multiplayer|knows_ironflesh_2|knows_athletics_4|knows_shield_5|knows_power_strike_2|knows_riding_1,swadian_face_young_1, swadian_face_old_2],
-  ["swadian_infantry_multiplayer","Swadian Infantry","Swadian Infantry",tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_infantry_multiplayer","Swadian Infantry","Swadian Infantry",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_sword_medieval_a,itm_tab_shield_heater_a,itm_red_tunic,itm_ankle_boots],
    str_15 | agi_15 |def_attrib_multiplayer|level(20),wpex(105,130,110,40,60,110),knows_common_multiplayer|knows_ironflesh_5|knows_shield_4|knows_power_strike_4|knows_power_throw_2|knows_athletics_6|knows_riding_1,swadian_face_middle_1, swadian_face_old_2],
-  ["swadian_man_at_arms_multiplayer","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_man_at_arms_multiplayer","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_lance,itm_sword_medieval_a,itm_tab_shield_heater_a,
     itm_red_tunic,itm_ankle_boots,itm_saddle_horse],
    str_14 | agi_16 |def_attrib_multiplayer|level(20),wp_melee(110),knows_common_multiplayer|knows_riding_5|knows_ironflesh_3|knows_shield_2|knows_power_throw_2|knows_power_strike_3|knows_athletics_3,swadian_face_young_1, swadian_face_old_2],
@@ -2505,13 +2499,13 @@ troops = [
    
   ["relative_of_merchants_end","relative_of_merchants_end","relative_of_merchants_end",tf_hero, 0,0, fac_commoners,[],def_attrib|level(2),wp(20),knows_inventory_management_10,0],     
 
-  ["swadian_crossbowman_multiplayer_coop_tier_1","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_trained_crossbowman_multiplayer_coop_tier_1","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_hunting_crossbow,itm_bolts,itm_fighting_pick,itm_tab_shield_heater_a,itm_arming_cap,itm_padded_cloth,itm_ankle_boots],
     level(4)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["swadian_infantry_multiplayer_coop_tier_1","Swadian Infantry","Swadian Infantry",tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_infantry_multiplayer_coop_tier_1","Swadian Infantry","Swadian Infantry",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_spiked_club,itm_tab_shield_heater_b,itm_felt_hat,itm_leather_apron,itm_wrapping_boots],
     level(4)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["swadian_man_at_arms_multiplayer_coop_tier_1","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_man_at_arms_multiplayer_coop_tier_1","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_light_lance,itm_sword_medieval_b_small,itm_tab_shield_heater_a,itm_leather_cap,itm_leather_gloves,itm_padded_cloth,itm_wrapping_boots,itm_warhorse],
     level(4)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
   ["vaegir_archer_multiplayer_coop_tier_1","Vaegir Archer","Vaegir Archers",tf_guarantee_all,0,0,fac_kingdom_2,
@@ -2560,13 +2554,13 @@ troops = [
    [itm_lance,itm_tab_shield_small_round_a,itm_sarranid_cloth_robe, itm_sarranid_boots_b,itm_arabian_horse_a],
     level(4)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
 
-  ["swadian_crossbowman_multiplayer_coop_tier_2","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_trained_crossbowman_multiplayer_coop_tier_2","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_spiked_club,itm_crossbow,itm_bolts,itm_tab_shield_heater_b,itm_arming_cap,itm_red_gambeson,itm_ankle_boots],
     level(5)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["swadian_infantry_multiplayer_coop_tier_2","Swadian Infantry","Swadian Infantry",tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_infantry_multiplayer_coop_tier_2","Swadian Infantry","Swadian Infantry",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_sword_medieval_b,itm_tab_shield_heater_c,itm_spear,itm_mail_coif,itm_leather_gloves,itm_mail_with_tunic_red,itm_ankle_boots],
     level(5)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["swadian_man_at_arms_multiplayer_coop_tier_2","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_man_at_arms_multiplayer_coop_tier_2","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_lance,itm_sword_medieval_a,itm_tab_shield_heater_b,itm_helmet_with_neckguard,itm_leather_gloves,itm_haubergeon,itm_leather_boots,itm_warhorse],
     level(5)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
   ["vaegir_archer_multiplayer_coop_tier_2","Vaegir Archer","Vaegir Archers",tf_guarantee_all,0,0,fac_kingdom_2,
@@ -2615,13 +2609,13 @@ troops = [
    [itm_heavy_lance,itm_tab_shield_small_round_b,itm_javelin,itm_archers_vest, itm_sarranid_warrior_cap,itm_leather_gloves,itm_sarranid_boots_b,itm_arabian_horse_a],
     level(5)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
 
-  ["swadian_crossbowman_multiplayer_coop_tier_3","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_trained_crossbowman_multiplayer_coop_tier_3","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_sword_medieval_b,itm_heavy_crossbow,itm_steel_bolts,itm_tab_shield_heater_c,itm_segmented_helmet,itm_leather_jerkin,itm_leather_boots],
     level(6)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["swadian_infantry_multiplayer_coop_tier_3","Swadian Infantry","Swadian Infantry",tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_infantry_multiplayer_coop_tier_3","Swadian Infantry","Swadian Infantry",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_bastard_sword_a,itm_awlpike,itm_tab_shield_heater_c,itm_bascinet,itm_mail_mittens,itm_mail_with_surcoat,itm_mail_chausses],
     level(6)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["swadian_man_at_arms_multiplayer_coop_tier_3","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_man_at_arms_multiplayer_coop_tier_3","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_heavy_lance,itm_bastard_sword_b,itm_tab_shield_heater_cav_a,itm_flat_topped_helmet,itm_mail_mittens,itm_mail_with_surcoat,itm_mail_chausses,itm_warhorse],
     level(6)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
   ["vaegir_archer_multiplayer_coop_tier_3","Vaegir Archer","Vaegir Archers",tf_guarantee_all,0,0,fac_kingdom_2,
@@ -2670,13 +2664,13 @@ troops = [
    [itm_heavy_lance,itm_tab_shield_small_round_b,itm_jarid,itm_sarranid_cavalry_robe,itm_sarranid_horseman_helmet,itm_mail_mittens,itm_sarranid_boots_c,itm_arabian_horse_a],
     level(6)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
 
-  ["swadian_crossbowman_multiplayer_coop_tier_4","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_trained_crossbowman_multiplayer_coop_tier_4","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_sword_medieval_b,itm_sniper_crossbow,itm_steel_bolts,itm_tab_shield_heater_c,itm_helmet_with_neckguard,itm_leather_gloves,itm_haubergeon,itm_mail_chausses],
     level(7)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["swadian_infantry_multiplayer_coop_tier_4","Swadian Infantry","Swadian Infantry",tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_infantry_multiplayer_coop_tier_4","Swadian Infantry","Swadian Infantry",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_bastard_sword_b,itm_awlpike_long,itm_tab_shield_heater_d,itm_guard_helmet,itm_gauntlets,itm_coat_of_plates,itm_iron_greaves],
     level(7)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["swadian_man_at_arms_multiplayer_coop_tier_4","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_1,
+  ["silver_rose_man_at_arms_multiplayer_coop_tier_4","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_great_lance,itm_morningstar,itm_tab_shield_heater_cav_b,itm_great_helmet,itm_gauntlets,itm_coat_of_plates_red,itm_plate_boots,itm_warhorse],
     level(7)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
   ["vaegir_archer_multiplayer_coop_tier_4","Vaegir Archer","Vaegir Archers",tf_guarantee_all,0,0,fac_kingdom_2,
@@ -3104,27 +3098,24 @@ upgrade2(troops,"stormguard_avalanche_warrior","stormguard_lightning_rider","sto
 upgrade(troops,"stormguard_tempest_sentinel","stormguard_elite_stormguard")
 
 # new troop trees for native factions
-upgrade2(troops,"swadian_peasant","swadian_peasant_milita","swadian_huntsman")
-upgrade2(troops,"swadian_peasant_milita","swadian_guardian","swadian_retired_veteran")
-upgrade(troops,"swadian_retired_veteran","swadian_recruit")
-upgrade(troops,"swadian_huntsman","swadian_skirmisher")
+upgrade(troops,"silver_rose_novice","silver_rose_levy")
 
 upgrade(troops,"swadian_young_lion","swadian_guild_initiate")
 upgrade(troops,"swadian_guild_initiate","swadian_guild_knight")
 upgrade(troops,"swadian_guild_knight","swadian_lionheart")
 
 # native
-upgrade(troops,"swadian_recruit","swadian_militia")
+upgrade2(troops,"silver_rose_levy","silver_rose_milita","silver_rose_scout")
 
-upgrade2(troops,"swadian_militia","swadian_footman","swadian_skirmisher")
-upgrade2(troops,"swadian_footman","swadian_guard","swadian_infantry")
-upgrade(troops,"swadian_infantry","swadian_sergeant")
-upgrade(troops,"swadian_skirmisher","swadian_crossbowman")
+upgrade2(troops,"silver_rose_milita","silver_rose_footman","silver_rose_crossbowman")
+upgrade2(troops,"silver_rose_footman","silver_rose_hacker","silver_rose_infantry")
+upgrade2(troops,"silver_rose_infantry","silver_rose_sergeant","silver_rose_horseman")
+upgrade(troops,"silver_rose_crossbowman","silver_rose_trained_crossbowman")
 
-upgrade(troops,"swadian_crossbowman","swadian_sharpshooter")
+upgrade(troops,"silver_rose_trained_crossbowman","silver_rose_sharpshooter")
 
-upgrade(troops,"swadian_horseman","swadian_man_at_arms")
-upgrade(troops,"swadian_man_at_arms","swadian_knight")
+upgrade(troops,"silver_rose_horseman","silver_rose_man_at_arms")
+upgrade(troops,"silver_rose_man_at_arms","silver_rose_knight")
 
 upgrade(troops,"vaegir_watchman","vaegir_night_watch")
 upgrade(troops,"vaegir_night_watch","vaegir_watch_cheif")
@@ -3219,7 +3210,7 @@ upgrade(troops,"cultist_acolyte","dark_cultist")
 
 #new tree connections
 upgrade(troops,"mountain_bandit","rhodok_tribesman")
-upgrade(troops,"forest_bandit","swadian_recruit")
+upgrade(troops,"forest_bandit","silver_rose_levy")
 upgrade(troops,"steppe_bandit","khergit_tribesman")
 upgrade(troops,"taiga_bandit","vaegir_recruit")
 upgrade(troops,"sea_raider","nord_recruit")
