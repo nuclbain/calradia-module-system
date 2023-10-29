@@ -271,8 +271,8 @@ game_menus = [
          (troop_raise_skill, "trp_player", skl_prisoner_management, 5),
          (troop_raise_skill, "trp_player", skl_inventory_management, 10),
          (party_add_members, "p_main_party", "trp_silver_rose_knight", 10),
-         (party_add_members, "p_main_party", "trp_vaegir_knight", 10),
-         (party_add_members, "p_main_party", "trp_vaegir_archer", 10),
+         (party_add_members, "p_main_party", "trp_chornovalley_knight", 10),
+         (party_add_members, "p_main_party", "trp_chornovalley_longbowman", 10),
          (party_add_members, "p_main_party", "trp_silver_rose_sharpshooter", 10),
          (troop_add_item, "trp_player","itm_scale_armor",0),
          (troop_add_item, "trp_player","itm_full_helm",0),
@@ -594,10 +594,10 @@ game_menus = [
 ##      [
 ##        (modify_visitors_at_site,"scn_tutorial_5"),(reset_visitors,0),
 ##        (set_visitor,0,"trp_player"),
-##        (set_visitor,1,"trp_vaegir_infantry"),
-##        (set_visitor,2,"trp_vaegir_infantry"),
-##        (set_visitor,3,"trp_vaegir_infantry"),
-##        (set_visitor,4,"trp_vaegir_infantry"),
+##        (set_visitor,1,"trp_chornovalley_sheriff"),
+##        (set_visitor,2,"trp_chornovalley_sheriff"),
+##        (set_visitor,3,"trp_chornovalley_sheriff"),
+##        (set_visitor,4,"trp_chornovalley_sheriff"),
 ##        (set_jump_mission,"mt_tutorial_5"),
 ##        (jump_to_scene,"scn_tutorial_5"),
 ##        (change_screen_mission),
@@ -908,11 +908,11 @@ game_menus = [
 ##       (set_visitors, 6, "trp_peasant_woman", 7),
 ##
 ####     Enemy
-##       (set_visitors, 16, "trp_vaegir_infantry", 6),
-##       (set_visitors, 17, "trp_vaegir_archer", 6),
-##       (set_visitors, 18, "trp_vaegir_horseman", 4),
-##       (set_visitors, 19, "trp_vaegir_knight", 10),
-##       (set_visitors, 20, "trp_vaegir_guard", 6),
+##       (set_visitors, 16, "trp_chornovalley_sheriff", 6),
+##       (set_visitors, 17, "trp_chornovalley_longbowman", 6),
+##       (set_visitors, 18, "trp_chornovalley_horseman", 4),
+##       (set_visitors, 19, "trp_chornovalley_knight", 10),
+##       (set_visitors, 20, "trp_chornovalley_gunslider", 6),
 ##       (str_store_string, s16, "str_custom_battle_1"),
 ##
 ####   SCENE 3 Start "Mountain Bandit Hunt"
@@ -925,12 +925,12 @@ game_menus = [
 ##       (modify_visitors_at_site, "$g_custom_battle_scene"),
 ##       (set_visitor, 0, "$g_player_troop"),
 ##
-##       (set_visitors, 1, "trp_vaegir_archer", 4),
-##       (set_visitors, 2, "trp_vaegir_archer", 5),
-##       (set_visitors, 3, "trp_vaegir_veteran", 4),
-##       (set_visitors, 4, "trp_vaegir_horseman", 4),
-##       (set_visitors, 5, "trp_vaegir_footman", 2),
-##       (set_visitors, 6, "trp_vaegir_knight", 4),
+##       (set_visitors, 1, "trp_chornovalley_longbowman", 4),
+##       (set_visitors, 2, "trp_chornovalley_longbowman", 5),
+##       (set_visitors, 3, "trp_chornovalley_warrior", 4),
+##       (set_visitors, 4, "trp_chornovalley_horseman", 4),
+##       (set_visitors, 5, "trp_chornovalley_scout", 2),
+##       (set_visitors, 6, "trp_chornovalley_knight", 4),
 #### ENEMY
 ##
 ##       (set_visitors, 16, "trp_mountain_bandit", 4),
@@ -982,14 +982,14 @@ game_menus = [
 ##       (troop_add_item, "$g_player_troop","itm_sword_medieval_b_small",0),
 ##       (troop_equip_items, "$g_player_troop"),
 #### US
-##       (set_visitors, 1, "trp_vaegir_infantry", 4),
-##       (set_visitors, 2, "trp_vaegir_archer", 3),
-##       (set_visitors, 3, "trp_vaegir_infantry", 4),
-##       (set_visitors, 4, "trp_vaegir_archer", 3),
-##       (set_visitors, 5, "trp_vaegir_infantry", 3),
-##       (set_visitors, 6, "trp_vaegir_footman", 5),
-##       (set_visitors, 7, "trp_vaegir_footman", 4),
-##       (set_visitors, 8, "trp_vaegir_archer", 3),
+##       (set_visitors, 1, "trp_chornovalley_sheriff", 4),
+##       (set_visitors, 2, "trp_chornovalley_longbowman", 3),
+##       (set_visitors, 3, "trp_chornovalley_sheriff", 4),
+##       (set_visitors, 4, "trp_chornovalley_longbowman", 3),
+##       (set_visitors, 5, "trp_chornovalley_sheriff", 3),
+##       (set_visitors, 6, "trp_chornovalley_scout", 5),
+##       (set_visitors, 7, "trp_chornovalley_scout", 4),
+##       (set_visitors, 8, "trp_chornovalley_longbowman", 3),
 ##
 #### ENEMY
 ##       (set_visitors, 16, "trp_silver_rose_footman", 8),
@@ -1017,11 +1017,11 @@ game_menus = [
 ##       (set_visitors, 5, "trp_silver_rose_knight", 2),
 ##
 ####     enemy
-##       (set_visitors, 16, "trp_vaegir_infantry", 8),
-##       (set_visitors, 17, "trp_vaegir_archer", 10),
-##       (set_visitors, 18, "trp_vaegir_horseman", 4),
-##       (set_visitors, 19, "trp_vaegir_knight", 10),
-##       (set_visitors, 20, "trp_vaegir_guard", 7),
+##       (set_visitors, 16, "trp_chornovalley_sheriff", 8),
+##       (set_visitors, 17, "trp_chornovalley_longbowman", 10),
+##       (set_visitors, 18, "trp_chornovalley_horseman", 4),
+##       (set_visitors, 19, "trp_chornovalley_knight", 10),
+##       (set_visitors, 20, "trp_chornovalley_gunslider", 7),
 ##       (str_store_string, s16, "str_custom_battle_4"),
 ##
 ##     (else_try),
@@ -1045,18 +1045,18 @@ game_menus = [
 ##       (set_visitors, 6, "trp_nord_trained_footman", 8),
 ##
 #### ENEMY
-##       (set_visitors, 11, "trp_vaegir_knight", 2),
-##       (set_visitors, 12, "trp_vaegir_guard", 6),
-##       (set_visitors, 13, "trp_vaegir_infantry", 8),
-##       (set_visitors, 14, "trp_vaegir_veteran", 10),
-##       (set_visitors, 16, "trp_vaegir_skirmisher", 5),
-##       (set_visitors, 17, "trp_vaegir_archer", 4),
+##       (set_visitors, 11, "trp_chornovalley_knight", 2),
+##       (set_visitors, 12, "trp_chornovalley_gunslider", 6),
+##       (set_visitors, 13, "trp_chornovalley_sheriff", 8),
+##       (set_visitors, 14, "trp_chornovalley_warrior", 10),
+##       (set_visitors, 16, "trp_chornovalley_hunter", 5),
+##       (set_visitors, 17, "trp_chornovalley_longbowman", 4),
 ##       (set_visitors, 18, "trp_vaegir_marksman", 2),
-##       (set_visitors, 19, "trp_vaegir_skirmisher", 4),
-##       (set_visitors, 20, "trp_vaegir_skirmisher", 3),
-##       (set_visitors, 21, "trp_vaegir_skirmisher", 3),
-##       (set_visitors, 22, "trp_vaegir_skirmisher", 3),
-##       (set_visitors, 23, "trp_vaegir_archer", 2),
+##       (set_visitors, 19, "trp_chornovalley_hunter", 4),
+##       (set_visitors, 20, "trp_chornovalley_hunter", 3),
+##       (set_visitors, 21, "trp_chornovalley_hunter", 3),
+##       (set_visitors, 22, "trp_chornovalley_hunter", 3),
+##       (set_visitors, 23, "trp_chornovalley_longbowman", 2),
 ##       (str_store_string, s16, "str_custom_battle_5"),
 ##     (try_end),
 ##     (set_show_messages, 1),
@@ -10647,17 +10647,17 @@ TOTAL:  {reg5}"),
         ]
       ),
       (
-        "center_build_vaegir_archery",
+        "center_build_chornovalley_longbowmany",
         [
           (eq, reg6, 0),
           (this_or_next|party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_castle),
-          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_archery, 0),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_chornovalley_longbowmany, 0),
 					(party_slot_eq, "$g_encountered_party", slot_center_culture, "fac_culture_2")
         ],
         "[Archers] Build a Vaegir archery.",
         [
-          (assign, "$g_improvement_type", slot_center_has_vaegir_archery),
+          (assign, "$g_improvement_type", slot_center_has_chornovalley_longbowmany),
           (jump_to_menu, "mnu_center_improve"),
         ]
       ),
@@ -10907,7 +10907,7 @@ TOTAL:  {reg5}"),
 					(store_troop_gold, ":gold", "trp_player"),
 					(ge, ":gold", 500),
 					(troop_remove_gold, "trp_player", 500),
-					(party_add_members, "$g_encountered_party", "trp_swadian_young_lion", 1),
+					(party_add_members, "$g_encountered_party", "trp_silver_rose_hacker", 1),
 				]
 			),
 			(
@@ -10921,7 +10921,7 @@ TOTAL:  {reg5}"),
 					(store_troop_gold, ":gold", "trp_player"),
 					(ge, ":gold", 2500),
 					(troop_remove_gold, "trp_player", 2500),
-					(party_add_members, "$g_encountered_party", "trp_swadian_young_lion", 5),
+					(party_add_members, "$g_encountered_party", "trp_silver_rose_hacker", 5),
 				]
 			),
 			(
@@ -10935,7 +10935,7 @@ TOTAL:  {reg5}"),
 					(store_troop_gold, ":gold", "trp_player"),
 					(ge, ":gold", 5000),
 					(troop_remove_gold, "trp_player", 5000),
-					(party_add_members, "$g_encountered_party", "trp_swadian_young_lion", 10),
+					(party_add_members, "$g_encountered_party", "trp_silver_rose_hacker", 10),
 				]
 			),
 			(
@@ -10965,7 +10965,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 50),
           (troop_remove_gold, "trp_player", 50),
-          (party_add_members, "$g_encountered_party", "trp_vaegir_recruit", 1),
+          (party_add_members, "$g_encountered_party", "trp_chornovalley_recruit", 1),
         ]
       ),
       (
@@ -10979,7 +10979,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 250),
           (troop_remove_gold, "trp_player", 250),
-          (party_add_members, "$g_encountered_party", "trp_vaegir_recruit", 5),
+          (party_add_members, "$g_encountered_party", "trp_chornovalley_recruit", 5),
         ]
       ),
       (
@@ -10993,7 +10993,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 500),
           (troop_remove_gold, "trp_player", 500),
-          (party_add_members, "$g_encountered_party", "trp_vaegir_recruit", 10),
+          (party_add_members, "$g_encountered_party", "trp_chornovalley_recruit", 10),
         ]
       ),
       (
@@ -11007,55 +11007,55 @@ TOTAL:  {reg5}"),
     ],
   ),
   (
-    "center_vaegir_archery",0,
+    "center_chornovalley_longbowmany",0,
     "Here you can hire soldiers for your garrison. (Troops will be added to the town's garrison, not your party)",
     "none",
     [],
     [
       (
-        "center_vaegir_archery_recruit_volunteers_1",
+        "center_chornovalley_longbowmany_recruit_volunteers_1",
         [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_archery, 1),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_chornovalley_longbowmany, 1),
         ],
         "[1x Vaegir Archers] Hire. (50 denars)",
         [
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 50),
           (troop_remove_gold, "trp_player", 50),
-          (party_add_members, "$g_encountered_party", "trp_vaegir_archer", 1),
+          (party_add_members, "$g_encountered_party", "trp_chornovalley_longbowman", 1),
         ]
       ),
       (
-        "center_vaegir_archery_recruit_volunteers_5",
+        "center_chornovalley_longbowmany_recruit_volunteers_5",
         [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_archery, 1),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_chornovalley_longbowmany, 1),
         ],
         "[5x Vaegir Archers] Hire. (250 denars)",
         [
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 250),
           (troop_remove_gold, "trp_player", 250),
-          (party_add_members, "$g_encountered_party", "trp_vaegir_archer", 5),
+          (party_add_members, "$g_encountered_party", "trp_chornovalley_longbowman", 5),
         ]
       ),
       (
         "center_swadia_archery_recruit_volunteers_10",
         [
           (party_slot_eq, "$g_encountered_party", slot_party_type, spt_town),
-          (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_archery, 1),
+          (party_slot_eq, "$g_encountered_party", slot_center_has_chornovalley_longbowmany, 1),
         ],
         "[10x Vaegir Archers] Hire. (500 denars)",
         [
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 500),
           (troop_remove_gold, "trp_player", 500),
-          (party_add_members, "$g_encountered_party", "trp_vaegir_archer", 10),
+          (party_add_members, "$g_encountered_party", "trp_chornovalley_longbowman", 10),
         ]
       ),
       (
-        "escape_vaegir_archery",
+        "escape_chornovalley_longbowmany",
         [],
         "Leave...",
         [
@@ -11081,7 +11081,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 50),
           (troop_remove_gold, "trp_player", 50),
-          (party_add_members, "$g_encountered_party", "trp_vaegir_horseman", 1),
+          (party_add_members, "$g_encountered_party", "trp_chornovalley_horseman", 1),
         ]
       ),
       (
@@ -11095,7 +11095,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 250),
           (troop_remove_gold, "trp_player", 250),
-          (party_add_members, "$g_encountered_party", "trp_vaegir_horseman", 5),
+          (party_add_members, "$g_encountered_party", "trp_chornovalley_horseman", 5),
         ]
       ),
       (
@@ -11109,7 +11109,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 500),
           (troop_remove_gold, "trp_player", 500),
-          (party_add_members, "$g_encountered_party", "trp_vaegir_horseman", 10),
+          (party_add_members, "$g_encountered_party", "trp_chornovalley_horseman", 10),
         ]
       ),
       (
@@ -11139,7 +11139,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 400),
           (troop_remove_gold, "trp_player", 400),
-          (party_add_members, "$g_encountered_party", "trp_vaegir_gryden", 1),
+          (party_add_members, "$g_encountered_party", "trp_chornovalley_sergeant", 1),
         ]
       ),
       (
@@ -11153,7 +11153,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 2000),
           (troop_remove_gold, "trp_player", 2000),
-          (party_add_members, "$g_encountered_party", "trp_vaegir_gryden", 5),
+          (party_add_members, "$g_encountered_party", "trp_chornovalley_sergeant", 5),
         ]
       ),
       (
@@ -11167,7 +11167,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 4000),
           (troop_remove_gold, "trp_player", 4000),
-          (party_add_members, "$g_encountered_party", "trp_vaegir_gryden", 10),
+          (party_add_members, "$g_encountered_party", "trp_chornovalley_sergeant", 10),
         ]
       ),
       (
@@ -12724,10 +12724,10 @@ TOTAL:  {reg5}"),
              (assign,reg2,":tier_2_troop"),
              (assign,reg3,":tier_2_troop"),
            (else_try), #SB : wtf is this
-             (assign,reg0,"trp_vaegir_infantry"),
-             (assign,reg1,"trp_vaegir_infantry"),
-             (assign,reg2,"trp_vaegir_archer"),
-             (assign,reg3,"trp_vaegir_footman"),
+             (assign,reg0,"trp_chornovalley_sheriff"),
+             (assign,reg1,"trp_chornovalley_sheriff"),
+             (assign,reg2,"trp_chornovalley_longbowman"),
+             (assign,reg3,"trp_chornovalley_scout"),
            (try_end),
            (shuffle_range,0,4),
 
@@ -13498,16 +13498,16 @@ TOTAL:  {reg5}"),
         (set_background_mesh, "mesh_pic_recruits"),
         (jump_to_menu, "mnu_center_vaegir_barracks"),
       ]),
-      ("wallet_vaegir_archery",
+      ("wallet_chornovalley_longbowmany",
       [
         (party_slot_eq, "$current_town", slot_town_lord, "trp_player"),
-        (party_slot_eq, "$g_encountered_party", slot_center_has_vaegir_archery, 1),
+        (party_slot_eq, "$g_encountered_party", slot_center_has_chornovalley_longbowmany, 1),
       ],
       "[Hire] Visit archery range.",
       [
         (assign, "$g_next_menu", "mnu_town"),
         (set_background_mesh, "mesh_pic_recruits"),
-        (jump_to_menu, "mnu_center_vaegir_archery"),
+        (jump_to_menu, "mnu_center_chornovalley_longbowmany"),
       ]),
       ("wallet_vaegir_stables",
       [
