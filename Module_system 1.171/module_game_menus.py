@@ -11197,7 +11197,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 50),
           (troop_remove_gold, "trp_player", 50),
-          (party_add_members, "$g_encountered_party", "trp_khergit_tribesman", 1),
+          (party_add_members, "$g_encountered_party", "trp_celestial_recruit", 1),
         ]
       ),
       (
@@ -11211,7 +11211,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 250),
           (troop_remove_gold, "trp_player", 250),
-          (party_add_members, "$g_encountered_party", "trp_khergit_tribesman", 5),
+          (party_add_members, "$g_encountered_party", "trp_celestial_recruit", 5),
         ]
       ),
       (
@@ -11225,7 +11225,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 500),
           (troop_remove_gold, "trp_player", 500),
-          (party_add_members, "$g_encountered_party", "trp_khergit_tribesman", 10),
+          (party_add_members, "$g_encountered_party", "trp_celestial_recruit", 10),
         ]
       ),
       (
@@ -11255,7 +11255,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 100),
           (troop_remove_gold, "trp_player", 100),
-          (party_add_members, "$g_encountered_party", "trp_khergit_skirmisher", 1),
+          (party_add_members, "$g_encountered_party", "trp_celestial_hunter", 1),
         ]
       ),
       (
@@ -11269,7 +11269,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 500),
           (troop_remove_gold, "trp_player", 500),
-          (party_add_members, "$g_encountered_party", "trp_khergit_skirmisher", 5),
+          (party_add_members, "$g_encountered_party", "trp_celestial_hunter", 5),
         ]
       ),
       (
@@ -11283,7 +11283,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 1000),
           (troop_remove_gold, "trp_player", 1000),
-          (party_add_members, "$g_encountered_party", "trp_khergit_skirmisher", 10),
+          (party_add_members, "$g_encountered_party", "trp_celestial_hunter", 10),
         ]
       ),
       (
@@ -11313,7 +11313,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 500),
           (troop_remove_gold, "trp_player", 500),
-          (party_add_members, "$g_encountered_party", "trp_khergit_khevtuul", 1),
+          (party_add_members, "$g_encountered_party", "trp_celestial_lancer", 1),
         ]
       ),
       (
@@ -11327,7 +11327,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 2500),
           (troop_remove_gold, "trp_player", 2500),
-          (party_add_members, "$g_encountered_party", "trp_khergit_khevtuul", 5),
+          (party_add_members, "$g_encountered_party", "trp_celestial_lancer", 5),
         ]
       ),
       (
@@ -11341,7 +11341,7 @@ TOTAL:  {reg5}"),
           (store_troop_gold, ":gold", "trp_player"),
           (ge, ":gold", 5000),
           (troop_remove_gold, "trp_player", 5000),
-          (party_add_members, "$g_encountered_party", "trp_khergit_khevtuul", 10),
+          (party_add_members, "$g_encountered_party", "trp_celestial_lancer", 10),
         ]
       ),
       (

@@ -1523,7 +1523,7 @@ npc_kingdoms_begin = "fac_kingdom_1"
 npc_kingdoms_end = kingdoms_end
 
 bandits_begin = "trp_bandit"
-bandits_end = "trp_black_khergit_horseman"
+bandits_end = "trp_black_celestial_armsman"
 
 kingdom_ladies_begin = "trp_knight_1_1_wife"
 kingdom_ladies_end = "trp_heroes_end"
@@ -1617,9 +1617,9 @@ captain_multiplayer_troops_begin = "trp_farmer"
 captain_multiplayer_troops_end = "trp_silver_rose_trained_crossbowman"
 
 captain_multiplayer_new_troops_begin = "trp_silver_rose_trained_crossbowman"
-captain_multiplayer_new_troops_end = "trp_khergit_lancer"
+captain_multiplayer_new_troops_end = "trp_celestial_lancer"
 
-captain_multiplayer_coop_new_troops_begin = "trp_khergit_lancer"
+captain_multiplayer_coop_new_troops_begin = "trp_celestial_lancer"
 captain_multiplayer_coop_new_troops_end = "trp_slaver_chief"
 #INVASION MODE END
 
