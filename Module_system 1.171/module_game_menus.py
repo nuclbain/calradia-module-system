@@ -1812,7 +1812,7 @@ game_menus = [
        # (troop_remove_item, "trp_player","itm_hide_boots"),
        # (try_end),
        #store crap gear here, this depends on Native's item ordering
-       (store_random_in_range, ":helmet_item", "itm_byzantion_helmet_a", "itm_tunic_with_green_cape"),
+       (store_random_in_range, ":helmet_item", "itm_byzantion_helmet_a", "itm_keys"),
        (store_random_in_range, ":weapon_item", "itm_sword_medieval_a", "itm_club_with_spike_head"),
        (store_random_in_range, ":armor_item", "itm_leather_jerkin", "itm_lamellar_vest"),
        (store_random_in_range, ":boots_item", "itm_hunter_boots", "itm_splinted_greaves"),
