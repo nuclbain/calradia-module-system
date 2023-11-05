@@ -1018,38 +1018,38 @@ troops = [
    str_9|agi_10|int_9|cha_10|level(7),wp(90),knows_warrior_npc|
    knows_weapon_master_3|knows_power_strike_2|knows_athletics_2|knows_leadership_3|knows_tactics_1,
    0x0000000ffe08000300db6db6496208d400000000001d86fc0000000000000000],
-  ["npc9","Aduhash","Aduhash",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_tabard,itm_nomad_boots, itm_sword_medieval_b_small],
-   str_11|agi_8|int_7|cha_8|level(2),wp(100),knows_warrior_npc|
-   knows_weapon_master_1|knows_riding_1|knows_athletics_1|knows_leadership_1|knows_tactics_1|knows_power_strike_1,
-   0x000000030100300f499d5b391b6db8d300000000001dc2e10000000000000000],
-  ["npc10","Bunduk","Bunduk",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_padded_leather,itm_nomad_boots, itm_crossbow, itm_bolts, itm_pickaxe],
-   str_12|agi_8|int_9|cha_11|level(9),wp(105),knows_warrior_npc|
-   knows_weapon_master_3|knows_tactics_1|knows_leadership_1|knows_ironflesh_3|knows_trainer_2|knows_first_aid_2,
-   0x0000000a3f081006572c91c71c8d46cb00000000001e468a0000000000000000],
+  ["npc9","Aduhash","Aduhash",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_mkk_mamluke_a,itm_m_swadia_leather_boots_b, itm_mkk_gauntlets_sar_a, itm_sarranid_two_handed_mace_1, itm_m_bandit_turban_a],
+   str_25|agi_17|int_12|cha_14|level(16),wp(200),knows_warrior_npc|
+   knows_weapon_master_5|knows_riding_3|knows_athletics_3|knows_leadership_1|knows_power_strike_6,
+   0x00000001900471c6125b69fcdb6dbeff00000000001db6fb0000000000000000],
+  ["npc10","Zela","Zela",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_coat_of_plates,itm_leather_boots, itm_medium_rifle_f, itm_cartridges, itm_scottish_sword, itm_tab_shield_pavise_d, itm_m_gauntlets_a],
+   str_15|agi_13|int_9|cha_11|level(8),wp(105)|wp_firearm(300),knows_warrior_npc|
+   knows_weapon_master_5|knows_tactics_1|knows_leadership_1|knows_ironflesh_5|knows_trainer_4|knows_first_aid_2,
+   0x0000000190042348058365c91c7d8eff00000000001de6fb0000000000000000],
   ["npc11","Jane","Jane",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_studded_leather_coat, itm_falshion_1, itm_m_hose_e],
    str_8|agi_11|int_10|cha_10|level(2),wp(70),knows_merchant_npc|
    knows_weapon_master_1|knows_first_aid_1|knows_wound_treatment_2,
    0x00000006000c000206186196918db8e400000000001d48c40000000000000000],
-  ["npc12","Jeremus","Jeremus",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_pilgrim_disguise,itm_nomad_boots, itm_staff],
-   str_8|agi_7|int_13|cha_7|level(4),wp(30),   knows_merchant_npc|
+  ["npc12","Pai Khoi-Kao","Pai Khoi-Kao",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_lamellar_vest,itm_ankle_boots, itm_light_rifle_d, itm_cartridges, itm_flanged_mace, itm_m_gloves_a],
+   str_12|agi_17|int_13|cha_7|level(4),wp(85)|wp_firearm(200),   knows_merchant_npc|
    knows_ironflesh_1|knows_power_strike_1|knows_surgery_4|knows_wound_treatment_3|knows_first_aid_3,
-   0x000000078000500e4f8ba62a9cd5d36d00000000001e36250000000000000000],
-  ["npc13","Nizar","Nizar",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_nomad_robe,itm_nomad_boots, itm_scimitar, itm_courser],
-   str_7|agi_7|int_12|cha_8|level(3),wp(80),knows_warrior_npc|
+   0x00000001bf044383201d6a24da6dbcff00000000001db6f80000000000000000],
+  ["npc13","Dondo","Dondo",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_m_hauberk_mountain_d,itm_m_leather_boots_a, itm_m_gloves_a, itm_m_scimitar_a],
+   str_9|agi_13|int_12|cha_8|level(3),wp(80),knows_warrior_npc|
    knows_riding_2|knows_leadership_2|knows_athletics_2|knows_ironflesh_2|knows_power_strike_1|knows_weapon_master_1,
-   0x00000004bf0475c85f4e9592de4e574c00000000001e369c0000000000000000],
-  ["npc14","Lezalit","Lezalit",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_nobleman_outfit,itm_nomad_boots, itm_sword_medieval_b_small],
+   0x00000001bf0474d420dc6a36ea6dbcff00000000001db6f80000000000000000],
+  ["npc14","Elrel","Elrel",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_shirt,itm_woolen_hose, itm_sword_medieval_b_small],
    str_9|agi_8|int_11|cha_8|level(5),wp(100),knows_warrior_npc|
-   knows_trainer_4|knows_weapon_master_3|knows_leadership_2|knows_power_strike_1,
-   0x00000001a410259144d5d1d6eb55e96a00000000001db0db0000000000000000],
-  ["npc15","Artimenner","Artimenner",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_rich_outfit,itm_nomad_boots, itm_sword_medieval_b_small],
+   knows_trainer_4|knows_weapon_master_3|knows_power_strike_1,
+   0x00000001be00024545136dc11b79fcdb00000000001db6e80000000000000000],
+  ["npc15","Phamas","Phamas",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_robe,itm_m_leather_boots_a, itm_maul, itm_mkk_gauntlets_sar_b],
    str_9|agi_9|int_12|cha_8|level(7),wp(80),knows_warrior_npc|
    knows_tactics_2|knows_engineer_4|knows_trade_3|knows_tracking_1|knows_spotting_1,
-   0x0000000f2e1021862b4b9123594eab5300000000001d55360000000000000000],
-  ["npc16","Klethi","Klethi",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_peasant_dress,itm_nomad_boots, itm_dagger, itm_throwing_knives],
-   str_7|agi_11|int_8|cha_7|level(2),wp(80),knows_tracker_npc|
-   knows_power_throw_3|knows_athletics_2|knows_power_strike_1,
-   0x00000000000c100739ce9c805d2f381300000000001cc7ad0000000000000000],
+   0x0000000fb110600020db6dd9226dbf7f00000000001db6f80000000000000000],
+  ["npc16","Kina","Kina",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_short_tunic, itm_leather_boots, itm_battle_trident],
+   str_12|agi_11|int_8|cha_7|level(2),wp(80),knows_tracker_npc|
+   knows_power_strike_4|knows_athletics_2,
+   0x00000000000c3001009849a2494288cb00000000001da6830000000000000000],
 #NPC system changes end
 
 # Special NPCs
@@ -2715,35 +2715,35 @@ troops = [
   ["npc9_1","Aduhash","Aduhash",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_tabard,itm_nomad_boots, itm_sword_medieval_b_small, itm_courser],
    str_22|agi_19|int_6|cha_30|level(25),wpex(80,230,130,220,70,160),knows_tracking_10|knows_engineer_10|knows_first_aid_10|knows_surgery_10|knows_wound_treatment_10|knows_tactics_10|knows_trainer_10|knows_looting_10|
    knows_weapon_master_1|knows_riding_4|knows_athletics_6|knows_leadership_1|knows_tactics_1|knows_power_strike_4|knows_power_draw_7|knows_power_throw_5,
-   0x000000030100300f499d5b391b6db8d300000000001dc2e10000000000000000],
-  ["npc10_1","Bunduk","Bunduk",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_padded_leather,itm_nomad_boots, itm_crossbow, itm_bolts, itm_pickaxe, itm_saddle_horse],
+   0x00000001900471c6125b69fcdb6dbeff00000000001db6fb0000000000000000],
+  ["npc10_1","Zela","Zela",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_padded_leather,itm_nomad_boots, itm_crossbow, itm_bolts, itm_pickaxe, itm_saddle_horse],
    str_24|agi_19|int_6|cha_30|level(25),wpex(170,80,80,160,290,150),knows_tracking_10|knows_engineer_10|knows_first_aid_10|knows_surgery_10|knows_wound_treatment_10|knows_tactics_10|knows_trainer_10|knows_looting_10|
    knows_weapon_master_3|knows_tactics_1|knows_leadership_1|knows_ironflesh_3|knows_trainer_2|knows_first_aid_2|knows_riding_4|knows_power_strike_5|knows_power_draw_5|knows_power_throw_5|knows_athletics_7,
-   0x0000000a3f081006572c91c71c8d46cb00000000001e468a0000000000000000],
+   0x0000000190042348058365c91c7d8eff00000000001de6fb0000000000000000],
   ["npc11_1","Jane","Jane",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_leather_apron, itm_falchion, itm_wrapping_boots, itm_sumpter_horse],
    str_16|agi_17|int_6|cha_30|level(25),wpex(140,230,130,80,210,170),knows_tracking_10|knows_engineer_10|knows_first_aid_10|knows_surgery_10|knows_wound_treatment_10|knows_tactics_10|knows_trainer_10|knows_looting_10|
    knows_weapon_master_1|knows_first_aid_1|knows_wound_treatment_2|knows_ironflesh_3|knows_inventory_management_5|knows_riding_4|knows_power_strike_5|knows_power_draw_2|knows_power_throw_7|knows_athletics_5,
    0x00000006000c000206186196918db8e400000000001d48c40000000000000000],
-  ["npc12_1","Jeremus","Jeremus",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_pilgrim_disguise,itm_nomad_boots, itm_staff, itm_sumpter_horse],
+  ["npc12_1","Pai Khoi-Kao","Pai Khoi-Kao",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_pilgrim_disguise,itm_nomad_boots, itm_staff, itm_sumpter_horse],
    str_16|agi_17|int_6|cha_30|level(25),wpex(120,110,290,80,110,120),   knows_tracking_10|knows_engineer_10|knows_first_aid_10|knows_surgery_10|knows_wound_treatment_10|knows_tactics_10|knows_trainer_10|knows_looting_10|
    knows_ironflesh_1|knows_power_strike_7|knows_surgery_4|knows_wound_treatment_3|knows_first_aid_3|knows_riding_4|knows_power_draw_2|knows_power_throw_3|knows_athletics_7,
-   0x000000078000500e4f8ba62a9cd5d36d00000000001e36250000000000000000],
-  ["npc13_1","Nizar","Nizar",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_nomad_robe,itm_nomad_boots, itm_scimitar, itm_courser],
+   0x00000001bf044383201d6a24da6dbcff00000000001db6f80000000000000000],
+  ["npc13_1","Dondo","Dondo",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_nomad_robe,itm_nomad_boots, itm_scimitar, itm_courser],
    str_14|agi_17|int_6|cha_30|level(25),wpex(250,80,140,210,110,140),knows_tracking_10|knows_engineer_10|knows_first_aid_10|knows_surgery_10|knows_wound_treatment_10|knows_tactics_10|knows_trainer_10|knows_looting_10|
    knows_riding_9|knows_leadership_2|knows_athletics_5|knows_ironflesh_2|knows_power_strike_6|knows_weapon_master_1|knows_power_draw_7|knows_power_throw_4,
-   0x00000004bf0475c85f4e9592de4e574c00000000001e369c0000000000000000],
-  ["npc14_1","Lezalit","Lezalit",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_nobleman_outfit,itm_nomad_boots, itm_sword_medieval_b_small, itm_courser],
+   0x00000001bf0474d420dc6a36ea6dbcff00000000001db6f80000000000000000],
+  ["npc14_1","Elrel","Elrel",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_nobleman_outfit,itm_nomad_boots, itm_sword_medieval_b_small, itm_courser],
    str_18|agi_19|int_6|cha_30|level(25),wpex(280,170,170,170,170,180),knows_tracking_10|knows_engineer_10|knows_first_aid_10|knows_surgery_10|knows_wound_treatment_10|knows_tactics_10|knows_trainer_10|knows_looting_10|
    knows_trainer_4|knows_weapon_master_3|knows_leadership_2|knows_power_strike_1|knows_riding_7|knows_power_strike_7|knows_power_draw_6|knows_power_throw_6|knows_athletics_8,
-   0x00000001a410259144d5d1d6eb55e96a00000000001db0db0000000000000000],
-  ["npc15_1","Artimenner","Artimenner",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_rich_outfit,itm_nomad_boots, itm_sword_medieval_b_small, itm_hunter],
+   0x00000001be00024545136dc11b79fcdb00000000001db6e80000000000000000],
+  ["npc15_1","Phamas","Phamas",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_rich_outfit,itm_nomad_boots, itm_sword_medieval_b_small, itm_hunter],
    str_18|agi_13|int_6|cha_30|level(25),wpex(190,290,130,210,90,90),knows_tracking_10|knows_engineer_10|knows_first_aid_10|knows_surgery_10|knows_wound_treatment_10|knows_tactics_10|knows_trainer_10|knows_looting_10|
    knows_tactics_2|knows_engineer_4|knows_trade_3|knows_tracking_1|knows_spotting_1|knows_riding_6|knows_power_strike_7|knows_power_draw_7|knows_power_throw_3|knows_athletics_5,
-   0x0000000f2e1021862b4b9123594eab5300000000001d55360000000000000000],
-  ["npc16_1","Klethi","Klethi",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_peasant_dress,itm_nomad_boots, itm_dagger, itm_throwing_knives, itm_saddle_horse],
+   0x0000000fb110600020db6dd9226dbf7f00000000001db6f80000000000000000],
+  ["npc16_1","Kina","Kina",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_peasant_dress,itm_nomad_boots, itm_dagger, itm_throwing_knives, itm_saddle_horse],
    str_14|agi_17|int_6|cha_30|level(25),wpex(260,10,100,160,30,300),knows_tracking_10|knows_engineer_10|knows_first_aid_10|knows_surgery_10|knows_wound_treatment_10|knows_tactics_10|knows_trainer_10|knows_looting_10|
    knows_power_throw_10|knows_athletics_10|knows_power_strike_8|knows_riding_4|knows_power_draw_5,
-   0x00000000000c100739ce9c805d2f381300000000001cc7ad0000000000000000],
+   0x00000000000c3001009849a2494288cb00000000001da6830000000000000000],
    
     #tier 2
   ["npc1_2","Hurey","Hurey",tf_hero|tf_unmoveable_in_party_window, 0, reserved, fac_commoners,[itm_leather_steppe_cap_c,itm_leather_gloves,itm_nomad_robe,itm_hide_boots,itm_sword_medieval_b_small, itm_courser],
@@ -2781,35 +2781,35 @@ troops = [
   ["npc9_2","Aduhash","Aduhash",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_medieval_c, itm_vaegir_fur_cap, itm_leather_vest, itm_nomad_boots, itm_courser],
    str_22|agi_19|int_7|cha_8|level(17),wp(100),knows_warrior_npc|
    knows_weapon_master_1|knows_riding_1|knows_athletics_1|knows_leadership_1|knows_tactics_1|knows_power_strike_1,
-   0x000000030100300f499d5b391b6db8d300000000001dc2e10000000000000000],
-  ["npc10_2","Bunduk","Bunduk",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_military_sickle_a, itm_heavy_crossbow, itm_bolts, itm_mail_coif, itm_leather_gloves, itm_aketon_green, itm_leather_boots, itm_saddle_horse],
+   0x00000001900471c6125b69fcdb6dbeff00000000001db6fb0000000000000000],
+  ["npc10_2","Zela","Zela",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_military_sickle_a, itm_heavy_crossbow, itm_bolts, itm_mail_coif, itm_leather_gloves, itm_aketon_green, itm_leather_boots, itm_saddle_horse],
    str_24|agi_19|int_9|cha_11|level(27),wp(105),knows_warrior_npc|
    knows_weapon_master_3|knows_tactics_1|knows_leadership_1|knows_ironflesh_3|knows_trainer_2|knows_first_aid_2,
-   0x0000000a3f081006572c91c71c8d46cb00000000001e468a0000000000000000],
+   0x0000000190042348058365c91c7d8eff00000000001de6fb0000000000000000],
   ["npc11_2","Jane","Jane",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sarranid_axe_a, itm_arming_cap, itm_leather_gloves, itm_padded_cloth, itm_ankle_boots, itm_sumpter_horse],
    str_16|agi_17|int_10|cha_10|level(26),wp(70),knows_merchant_npc|
    knows_weapon_master_1|knows_first_aid_1|knows_wound_treatment_2|knows_ironflesh_3|knows_inventory_management_5,
    0x00000006000c000206186196918db8e400000000001d48c40000000000000000],
-  ["npc12_2","Jeremus","Jeremus",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_iron_staff, itm_padded_coif, itm_leather_gloves, itm_pilgrim_disguise, itm_leather_boots, itm_sumpter_horse],
+  ["npc12_2","Pai Khoi-Kao","Pai Khoi-Kao",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_iron_staff, itm_padded_coif, itm_leather_gloves, itm_pilgrim_disguise, itm_leather_boots, itm_sumpter_horse],
    str_16|agi_17|int_13|cha_7|level(20),wp(30),   knows_merchant_npc|
    knows_ironflesh_1|knows_power_strike_1|knows_surgery_4|knows_wound_treatment_3|knows_first_aid_3,
-   0x000000078000500e4f8ba62a9cd5d36d00000000001e36250000000000000000],
-  ["npc13_2","Nizar","Nizar",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_scimitar, itm_tab_shield_small_round_b, itm_sarranid_warrior_cap, itm_sarranid_leather_armor, itm_sarranid_boots_b, itm_courser],
+   0x00000001bf044383201d6a24da6dbcff00000000001db6f80000000000000000],
+  ["npc13_2","Dondo","Dondo",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_scimitar, itm_tab_shield_small_round_b, itm_sarranid_warrior_cap, itm_sarranid_leather_armor, itm_sarranid_boots_b, itm_courser],
    str_14|agi_17|int_12|cha_8|level(19),wp(80),knows_warrior_npc|
    knows_riding_2|knows_leadership_2|knows_athletics_2|knows_ironflesh_2|knows_power_strike_1|knows_weapon_master_1,
-   0x00000004bf0475c85f4e9592de4e574c00000000001e369c0000000000000000],
-  ["npc14_2","Lezalit","Lezalit",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_medieval_b, itm_tab_shield_heater_c, itm_mail_coif, itm_studded_leather_coat, itm_leather_boots, itm_courser],
+   0x00000001bf0474d420dc6a36ea6dbcff00000000001db6f80000000000000000],
+  ["npc14_2","Elrel","Elrel",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_medieval_b, itm_tab_shield_heater_c, itm_mail_coif, itm_studded_leather_coat, itm_leather_boots, itm_courser],
    str_18|agi_19|int_11|cha_8|level(23),wp(100),knows_warrior_npc|
    knows_trainer_4|knows_weapon_master_3|knows_leadership_2|knows_power_strike_1,
-   0x00000001a410259144d5d1d6eb55e96a00000000001db0db0000000000000000],
-  ["npc15_2","Artimenner","Artimenner",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_long_axe, itm_helmet_with_neckguard, itm_leather_gloves, itm_red_gambeson, itm_leather_boots, itm_hunter],
+   0x00000001be00024545136dc11b79fcdb00000000001db6e80000000000000000],
+  ["npc15_2","Phamas","Phamas",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_long_axe, itm_helmet_with_neckguard, itm_leather_gloves, itm_red_gambeson, itm_leather_boots, itm_hunter],
    str_18|agi_13|int_12|cha_8|level(25),wp(80),knows_warrior_npc|
    knows_tactics_2|knows_engineer_4|knows_trade_3|knows_tracking_1|knows_spotting_1,
-   0x0000000f2e1021862b4b9123594eab5300000000001d55360000000000000000],
-  ["npc16_2","Klethi","Klethi",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_viking_2_small, itm_light_throwing_axes, itm_helmet_with_neckguard, itm_leather_gloves, itm_leather_jerkin, itm_ankle_boots, itm_saddle_horse],
+   0x0000000fb110600020db6dd9226dbf7f00000000001db6f80000000000000000],
+  ["npc16_2","Kina","Kina",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_viking_2_small, itm_light_throwing_axes, itm_helmet_with_neckguard, itm_leather_gloves, itm_leather_jerkin, itm_ankle_boots, itm_saddle_horse],
    str_14|agi_17|int_8|cha_7|level(17),wp(80),knows_tracker_npc|
    knows_power_throw_3|knows_athletics_2|knows_power_strike_1,
-   0x00000000000c100739ce9c805d2f381300000000001cc7ad0000000000000000],
+   0x00000000000c3001009849a2494288cb00000000001da6830000000000000000],
 
   #tier 3
   ["npc1_3","Hurey","Hurey",tf_hero|tf_unmoveable_in_party_window, 0, reserved, fac_commoners,[itm_khergit_war_helmet,itm_lamellar_gauntlets,itm_lamellar_vest_khergit,itm_khergit_leather_boots,itm_sword_medieval_c_small, itm_courser],
@@ -2847,35 +2847,35 @@ troops = [
   ["npc9_3","Aduhash","Aduhash",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_medieval_c_long, itm_vaegir_lamellar_helmet, itm_leather_gloves, itm_lamellar_vest, itm_leather_boots, itm_courser],
    str_22|agi_19|int_7|cha_8|level(17),wp(100),knows_warrior_npc|
    knows_weapon_master_1|knows_riding_1|knows_athletics_1|knows_leadership_1|knows_tactics_1|knows_power_strike_1,
-   0x000000030100300f499d5b391b6db8d300000000001dc2e10000000000000000],
-  ["npc10_3","Bunduk","Bunduk",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_military_pick, itm_heavy_crossbow, itm_steel_bolts, itm_kettle_hat, itm_leather_gloves, itm_mail_with_tunic_green, itm_leather_boots, itm_saddle_horse],
+   0x00000001900471c6125b69fcdb6dbeff00000000001db6fb0000000000000000],
+  ["npc10_3","Zela","Zela",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_military_pick, itm_heavy_crossbow, itm_steel_bolts, itm_kettle_hat, itm_leather_gloves, itm_mail_with_tunic_green, itm_leather_boots, itm_saddle_horse],
    str_24|agi_19|int_9|cha_11|level(27),wp(105),knows_warrior_npc|
    knows_weapon_master_3|knows_tactics_1|knows_leadership_1|knows_ironflesh_3|knows_trainer_2|knows_first_aid_2,
-   0x0000000a3f081006572c91c71c8d46cb00000000001e468a0000000000000000],
+   0x0000000190042348058365c91c7d8eff00000000001de6fb0000000000000000],
   ["npc11_3","Jane","Jane",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sarranid_axe_b, itm_arming_cap, itm_leather_gloves, itm_mail_with_surcoat, itm_mail_chausses, itm_sumpter_horse],
    str_16|agi_17|int_10|cha_10|level(26),wp(70),knows_merchant_npc|
    knows_weapon_master_1|knows_first_aid_1|knows_wound_treatment_2|knows_ironflesh_3|knows_inventory_management_5,
    0x00000006000c000206186196918db8e400000000001d48c40000000000000000],
-  ["npc12_3","Jeremus","Jeremus",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_iron_staff, itm_mail_coif, itm_mail_mittens, itm_pilgrim_disguise, itm_mail_chausses, itm_sumpter_horse],
+  ["npc12_3","Pai Khoi-Kao","Pai Khoi-Kao",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_iron_staff, itm_mail_coif, itm_mail_mittens, itm_pilgrim_disguise, itm_mail_chausses, itm_sumpter_horse],
    str_16|agi_17|int_13|cha_7|level(20),wp(30),   knows_merchant_npc|
    knows_ironflesh_1|knows_power_strike_1|knows_surgery_4|knows_wound_treatment_3|knows_first_aid_3,
-   0x000000078000500e4f8ba62a9cd5d36d00000000001e36250000000000000000],
-  ["npc13_3","Nizar","Nizar",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_scimitar, itm_tab_shield_small_round_c, itm_sarranid_mail_coif, itm_arabian_armor_b, itm_sarranid_boots_c, itm_courser],
+   0x00000001bf044383201d6a24da6dbcff00000000001db6f80000000000000000],
+  ["npc13_3","Dondo","Dondo",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_scimitar, itm_tab_shield_small_round_c, itm_sarranid_mail_coif, itm_arabian_armor_b, itm_sarranid_boots_c, itm_courser],
    str_14|agi_17|int_12|cha_8|level(19),wp(80),knows_warrior_npc|
    knows_riding_2|knows_leadership_2|knows_athletics_2|knows_ironflesh_2|knows_power_strike_1|knows_weapon_master_1,
-   0x00000004bf0475c85f4e9592de4e574c00000000001e369c0000000000000000],
-  ["npc14_3","Lezalit","Lezalit",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_medieval_c, itm_tab_shield_heater_c, itm_bascinet_2, itm_leather_gloves, itm_surcoat_over_mail, itm_mail_chausses, itm_courser],
+   0x00000001bf0474d420dc6a36ea6dbcff00000000001db6f80000000000000000],
+  ["npc14_3","Elrel","Elrel",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_medieval_c, itm_tab_shield_heater_c, itm_bascinet_2, itm_leather_gloves, itm_surcoat_over_mail, itm_mail_chausses, itm_courser],
    str_18|agi_19|int_11|cha_8|level(23),wp(100),knows_warrior_npc|
    knows_trainer_4|knows_weapon_master_3|knows_leadership_2|knows_power_strike_1,
-   0x00000001a410259144d5d1d6eb55e96a00000000001db0db0000000000000000],
-  ["npc15_3","Artimenner","Artimenner",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_long_axe_b, itm_guard_helmet, itm_mail_mittens, itm_haubergeon, itm_mail_chausses, itm_hunter],
+   0x00000001be00024545136dc11b79fcdb00000000001db6e80000000000000000],
+  ["npc15_3","Phamas","Phamas",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_long_axe_b, itm_guard_helmet, itm_mail_mittens, itm_haubergeon, itm_mail_chausses, itm_hunter],
    str_18|agi_13|int_12|cha_8|level(25),wp(80),knows_warrior_npc|
    knows_tactics_2|knows_engineer_4|knows_trade_3|knows_tracking_1|knows_spotting_1,
-   0x0000000f2e1021862b4b9123594eab5300000000001d55360000000000000000],
-  ["npc16_3","Klethi","Klethi",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_viking_2_small, itm_throwing_axes, itm_vaegir_fur_helmet, itm_leather_gloves, itm_lamellar_vest, itm_leather_boots, itm_saddle_horse],
+   0x0000000fb110600020db6dd9226dbf7f00000000001db6f80000000000000000],
+  ["npc16_3","Kina","Kina",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_viking_2_small, itm_throwing_axes, itm_vaegir_fur_helmet, itm_leather_gloves, itm_lamellar_vest, itm_leather_boots, itm_saddle_horse],
    str_14|agi_17|int_8|cha_7|level(17),wp(80),knows_tracker_npc|
    knows_power_throw_3|knows_athletics_2|knows_power_strike_1,
-   0x00000000000c100739ce9c805d2f381300000000001cc7ad0000000000000000],
+   0x00000000000c3001009849a2494288cb00000000001da6830000000000000000],
 
    #tier 4
   ["npc1_4","Hurey","Hurey",tf_hero|tf_unmoveable_in_party_window, 0, reserved, fac_commoners,[itm_khergit_guard_helmet,itm_lamellar_gauntlets,itm_khergit_guard_armor,itm_khergit_guard_boots,itm_sword_viking_3_small, itm_courser],
@@ -2913,35 +2913,35 @@ troops = [
   ["npc9_4","Aduhash","Aduhash",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_bastard_sword_b, itm_vaegir_war_helmet, itm_lamellar_gauntlets, itm_banded_armor, itm_iron_greaves, itm_courser],
    str_22|agi_19|int_7|cha_8|level(17),wp(100),knows_warrior_npc|
    knows_weapon_master_1|knows_riding_1|knows_athletics_1|knows_leadership_1|knows_tactics_1|knows_power_strike_1,
-   0x000000030100300f499d5b391b6db8d300000000001dc2e10000000000000000],
-  ["npc10_4","Bunduk","Bunduk",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_military_pick, itm_sniper_crossbow, itm_steel_bolts, itm_full_helm, itm_mail_mittens, itm_surcoat_over_mail, itm_splinted_leather_greaves, itm_saddle_horse],
+   0x00000001900471c6125b69fcdb6dbeff00000000001db6fb0000000000000000],
+  ["npc10_4","Zela","Zela",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_military_pick, itm_sniper_crossbow, itm_steel_bolts, itm_full_helm, itm_mail_mittens, itm_surcoat_over_mail, itm_splinted_leather_greaves, itm_saddle_horse],
    str_24|agi_19|int_9|cha_11|level(27),wp(105),knows_warrior_npc|
    knows_weapon_master_3|knows_tactics_1|knows_leadership_1|knows_ironflesh_3|knows_trainer_2|knows_first_aid_2,
-   0x0000000a3f081006572c91c71c8d46cb00000000001e468a0000000000000000],
+   0x0000000190042348058365c91c7d8eff00000000001de6fb0000000000000000],
   ["npc11_4","Jane","Jane",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sarranid_two_handed_axe_a, itm_great_helmet, itm_gauntlets, itm_brigandine_red, itm_plate_boots, itm_sumpter_horse],
    str_16|agi_17|int_10|cha_10|level(26),wp(70),knows_merchant_npc|
    knows_weapon_master_1|knows_first_aid_1|knows_wound_treatment_2|knows_ironflesh_3|knows_inventory_management_5,
    0x00000006000c000206186196918db8e400000000001d48c40000000000000000],
-  ["npc12_4","Jeremus","Jeremus",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_iron_staff, itm_kettle_hat, itm_gauntlets, itm_surcoat_over_mail, itm_plate_boots, itm_sumpter_horse],
+  ["npc12_4","Pai Khoi-Kao","Pai Khoi-Kao",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_iron_staff, itm_kettle_hat, itm_gauntlets, itm_surcoat_over_mail, itm_plate_boots, itm_sumpter_horse],
    str_16|agi_17|int_13|cha_7|level(20),wp(30),   knows_merchant_npc|
    knows_ironflesh_1|knows_power_strike_1|knows_surgery_4|knows_wound_treatment_3|knows_first_aid_3,
-   0x000000078000500e4f8ba62a9cd5d36d00000000001e36250000000000000000],
-  ["npc13_4","Nizar","Nizar",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_scimitar_b, itm_tab_shield_small_round_c, itm_sarranid_veiled_helmet, itm_scale_gauntlets, itm_mamluke_mail, itm_sarranid_boots_d, itm_courser],
+   0x00000001bf044383201d6a24da6dbcff00000000001db6f80000000000000000],
+  ["npc13_4","Dondo","Dondo",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_scimitar_b, itm_tab_shield_small_round_c, itm_sarranid_veiled_helmet, itm_scale_gauntlets, itm_mamluke_mail, itm_sarranid_boots_d, itm_courser],
    str_14|agi_17|int_12|cha_8|level(19),wp(80),knows_warrior_npc|
    knows_riding_2|knows_leadership_2|knows_athletics_2|knows_ironflesh_2|knows_power_strike_1|knows_weapon_master_1,
-   0x00000004bf0475c85f4e9592de4e574c00000000001e369c0000000000000000],
-  ["npc14_4","Lezalit","Lezalit",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_medieval_d_long, itm_tab_shield_heater_d, itm_great_helmet, itm_gauntlets, itm_heraldic_mail_with_surcoat, itm_plate_boots, itm_courser],
+   0x00000001bf0474d420dc6a36ea6dbcff00000000001db6f80000000000000000],
+  ["npc14_4","Elrel","Elrel",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_medieval_d_long, itm_tab_shield_heater_d, itm_great_helmet, itm_gauntlets, itm_heraldic_mail_with_surcoat, itm_plate_boots, itm_courser],
    str_18|agi_19|int_11|cha_8|level(23),wp(100),knows_warrior_npc|
    knows_trainer_4|knows_weapon_master_3|knows_leadership_2|knows_power_strike_1,
-   0x00000001a410259144d5d1d6eb55e96a00000000001db0db0000000000000000],
-  ["npc15_4","Artimenner","Artimenner",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_long_axe_c, itm_full_helm, itm_scale_gauntlets, itm_heraldic_mail_with_surcoat, itm_iron_greaves, itm_hunter],
+   0x00000001be00024545136dc11b79fcdb00000000001db6e80000000000000000],
+  ["npc15_4","Phamas","Phamas",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_long_axe_c, itm_full_helm, itm_scale_gauntlets, itm_heraldic_mail_with_surcoat, itm_iron_greaves, itm_hunter],
    str_18|agi_13|int_12|cha_8|level(25),wp(80),knows_warrior_npc|
    knows_tactics_2|knows_engineer_4|knows_trade_3|knows_tracking_1|knows_spotting_1,
-   0x0000000f2e1021862b4b9123594eab5300000000001d55360000000000000000],
-  ["npc16_4","Klethi","Klethi",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_viking_3_small, itm_heavy_throwing_axes, itm_vaegir_lamellar_helmet, itm_lamellar_gauntlets, itm_lamellar_armor, itm_khergit_guard_boots, itm_saddle_horse],
+   0x0000000fb110600020db6dd9226dbf7f00000000001db6f80000000000000000],
+  ["npc16_4","Kina","Kina",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_viking_3_small, itm_heavy_throwing_axes, itm_vaegir_lamellar_helmet, itm_lamellar_gauntlets, itm_lamellar_armor, itm_khergit_guard_boots, itm_saddle_horse],
    str_14|agi_17|int_8|cha_7|level(17),wp(80),knows_tracker_npc|
    knows_power_throw_3|knows_athletics_2|knows_power_strike_1,
-   0x00000000000c100739ce9c805d2f381300000000001cc7ad0000000000000000],
+   0x00000000000c3001009849a2494288cb00000000001da6830000000000000000],
 
    ["coop_companion_equipment_ui_0","{!}multiplayer_end","{!}multiplayer_end", 0, 0, 0, fac_kingdom_5, [], 0, 0, 0, 0, 0],
    ["coop_companion_equipment_ui_0_f","{!}multiplayer_end","{!}multiplayer_end", tf_female, 0, 0, fac_kingdom_5, [], 0, 0, 0, 0, 0],
