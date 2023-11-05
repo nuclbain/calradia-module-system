@@ -40679,7 +40679,7 @@ scripts = [
         (troop_set_slot, "trp_npc1", slot_troop_personalityclash2_object, "trp_npc16"),  #borcha - klethi
         (troop_set_slot, "trp_npc1", slot_troop_personalitymatch_object, "trp_npc2"),  #borcha - marnid
         (troop_set_slot, "trp_npc1", slot_troop_home, "p_village_25"), #Dashbiga
-        (troop_set_slot, "trp_npc1", slot_troop_payment_request, 300),
+        (troop_set_slot, "trp_npc1", slot_troop_payment_request, 600),
 		(troop_set_slot, "trp_npc1", slot_troop_kingsupport_argument, argument_ruler),
 		(troop_set_slot, "trp_npc1", slot_troop_kingsupport_opponent, "trp_npc14"), #lezalit
 		(troop_set_slot, "trp_npc1", slot_troop_town_with_contacts, "p_town_17"),
@@ -40729,7 +40729,7 @@ scripts = [
         (troop_set_slot, "trp_npc4", slot_troop_personalityclash2_object, "trp_npc7"), #Rolf - deshavi
         (troop_set_slot, "trp_npc4", slot_troop_personalitymatch_object, "trp_npc5"), #Rolf - beheshtur
         (troop_set_slot, "trp_npc4", slot_troop_home, "p_village_34"), #Ehlerdah
-        (troop_set_slot, "trp_npc4", slot_troop_payment_request, 300),
+        (troop_set_slot, "trp_npc4", slot_troop_payment_request, 700),
         (troop_set_slot, "trp_npc4", slot_troop_renown, 100), #SB : renown
 		(troop_set_slot, "trp_npc4", slot_troop_kingsupport_argument, argument_claim),
 		(troop_set_slot, "trp_npc4", slot_troop_kingsupport_opponent, "trp_npc6"), #firentis
@@ -40746,7 +40746,7 @@ scripts = [
         (troop_set_slot, "trp_npc5", slot_troop_personalityclash2_object, "trp_npc11"),  #beheshtur- katrin
         (troop_set_slot, "trp_npc5", slot_troop_personalitymatch_object, "trp_npc4"),  #beheshtur - rolf
         (troop_set_slot, "trp_npc5", slot_troop_home, "p_town_14"), #Halmar
-        (troop_set_slot, "trp_npc5", slot_troop_payment_request, 400),
+        (troop_set_slot, "trp_npc5", slot_troop_payment_request, 2100),
         (troop_set_slot, "trp_npc5", slot_troop_renown, 100), #SB : renown
 		(troop_set_slot, "trp_npc5", slot_troop_kingsupport_argument, argument_ruler),
 		(troop_set_slot, "trp_npc5", slot_troop_kingsupport_opponent, "trp_npc9"), #firentis
