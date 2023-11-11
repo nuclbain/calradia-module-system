@@ -430,7 +430,7 @@ presentations = [
         (assign, ":cur_troop", "trp_celestial_sergeant"),
       (else_try),
         (eq, "$g_quick_battle_team_2_faction", "fac_kingdom_4"),
-        (assign, ":cur_troop", "trp_nord_champion"),
+        (assign, ":cur_troop", "trp_iron_crown_champion"),
       (else_try),
         (eq, "$g_quick_battle_team_2_faction", "fac_kingdom_5"),
         (assign, ":cur_troop", "trp_rhodok_sergeant"),

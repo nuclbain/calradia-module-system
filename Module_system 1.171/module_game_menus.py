@@ -1037,12 +1037,12 @@ game_menus = [
 ##       (modify_visitors_at_site, "$g_custom_battle_scene"),
 ##       (set_visitor, 0, "$g_player_troop"),
 ##
-##       (set_visitors, 1, "trp_nord_archer", 4),
-##       (set_visitors, 2, "trp_nord_archer", 4),
-##       (set_visitors, 3, "trp_nord_champion", 4),
-##       (set_visitors, 4, "trp_nord_veteran", 5),
-##       (set_visitors, 5, "trp_nord_warrior", 5),
-##       (set_visitors, 6, "trp_nord_trained_footman", 8),
+##       (set_visitors, 1, "trp_iron_crown_trained_skirmisher", 4),
+##       (set_visitors, 2, "trp_iron_crown_trained_skirmisher", 4),
+##       (set_visitors, 3, "trp_iron_crown_champion", 4),
+##       (set_visitors, 4, "trp_iron_crown_vetaran", 5),
+##       (set_visitors, 5, "trp_iron_crown_man_at_arms", 5),
+##       (set_visitors, 6, "trp_iron_crown_footman", 8),
 ##
 #### ENEMY
 ##       (set_visitors, 11, "trp_chornovalley_knight", 2),

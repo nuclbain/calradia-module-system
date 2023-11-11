@@ -425,9 +425,9 @@ items = [
 ["sarranid_lady_dress_b", "Sarranid Lady Dress", [("sarranid_lady_dress_b",0)], itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 500 , weight(3)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0) ,imodbits_cloth],
 ["sarranid_common_dress", "Sarranid Dress", [("sarranid_common_dress",0)], itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 500 , weight(3)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0) ,imodbits_cloth],
 ["sarranid_common_dress_b", "Sarranid Dress", [("sarranid_common_dress_b",0)], itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 500 , weight(3)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0) ,imodbits_cloth],
-["courtly_outfit", "Courtly Outfit", [("rich_surcoat_b",0),("rich_surcoat_b.1",0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
-["nobleman_outfit", "Nobleman Outfit", [("rich_surcoat_a",0),], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(12)|difficulty(0) ,imodbits_cloth ], 
-["nobleman_outfit_a", "Nobleman Outfit", [("rich_surcoat_c",0),], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(12)|difficulty(0) ,imodbits_cloth ], 
+["courtly_outfit", "Courtly Outfit", [("Rich_Surcoat_B",0),("Rich_Surcoat_B.1",0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
+["nobleman_outfit", "Nobleman Outfit", [("Rich_Surcoat_A",0),], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(12)|difficulty(0) ,imodbits_cloth ], 
+["nobleman_outfit_a", "Nobleman Outfit", [("Rich_Surcoat_C",0),], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(12)|difficulty(0) ,imodbits_cloth ], 
 ["nomad_armor", "Nomad Armor", [("nomad_armor_new",0)], itp_merchandise| itp_type_body_armor |itp_covers_legs   ,0, 25 , weight(2)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["khergit_armor", "Khergit Armor", [("khergit_armor_new",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs ,0, 38 , weight(2)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["leather_jacket", "Leather Jacket", [("leather_jacket_new",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs  |itp_civilian ,0, 50 , weight(3)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
@@ -503,26 +503,41 @@ items = [
  146 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(7)|difficulty(0) ,imodbits_cloth ],
 ["steppe_armor", "Steppe Armor", [("lamellar_leather",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  195 , weight(5)|abundance(100)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
-["gambeson", "Gambeson", [("new_gambeson_a",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
+["gambeson", "Light Blue Gambeson", [("Gambeson_One_Tone_A",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
  260 , weight(5)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(5)|difficulty(0) ,imodbits_cloth ],
-["blue_gambeson", "Blue Gambeson", [("new_gambeson_b",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
+["blue_gambeson", "Blue & Red Gambeson", [("Gambeson_Two_Tones_A",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
  270 , weight(5)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(5)|difficulty(0) ,imodbits_cloth ],
 #NEW: was red_gambeson
-["red_gambeson", "Red Gambeson", [("red_gambeson_a",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
+["red_gambeson", "Red & Yellow Gambeson", [("Gambeson_Two_Tones_B",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
  275 , weight(5)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(5)|difficulty(0) ,imodbits_cloth ],
-["blue_padded_vest", "Blue Padded Vest", [("blue_padded_vest",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
- 270 , weight(5)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(5)|difficulty(0) ,imodbits_cloth ],
+
+["m_padded_dark_a", "Black Padded Vest", [("padded_black",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_padded_dark_b", "Gray Padded Vest", [("padded_gray",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_padded_dark_c", "Light Gray Padded Vest", [("padded_light_gray",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_padded_dark_a_mail", "Black Padded Vest with Mail", [("padded_black_mail",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 461 , weight(10)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
+
 #NEW: was aketon_a
 ["padded_cloth", "Aketon", [("Padded_Cloth_Cloacked_A",0),("Padded_Cloth_Cloacked_A.1",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
 #NEW:
  ["aketon_green", "Padded Cloth", [("padded_cloth_b",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
- 
-["m_padded_dark_a", "Black Padded Vest", [("padded_black",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
-["m_padded_dark_b", "Gray Padded Vest", [("padded_gray",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
-["m_padded_dark_c", "Light Gray Padded Vest", [("padded_light_gray",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
-["m_padded_dark_a_mail", "Black Padded Vest with Mail", [("padded_black_mail",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 461 , weight(10)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
+
+["m_iron_crown_aketon_a", "Iron Crown Aketon", [("Iron_Crown_Aketon_A",0), ("Iron_Crown_Aketon_A.1",0), ("Iron_Crown_Aketon_A.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,211 , weight(10)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ], 
+["m_iron_crown_aketon_b", "Iron Crown Aketon", [("Iron_Crown_Aketon_B",0), ("Iron_Crown_Aketon_B.1",0), ("Iron_Crown_Aketon_B.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,211 , weight(10)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ], 
+
+["m_iron_crown_scale_vest_a", "Iron Crown Scale Vest", [("Iron_Crown_Scale_Vest_A",0), ("Iron_Crown_Scale_Vest_A.1",0), ("Iron_Crown_Scale_Vest_A.2",0),("Iron_Crown_Scale_Vest_A.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,381 , weight(15)|abundance(100)|head_armor(0)|body_armor(31)|leg_armor(6)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ], 
+["m_iron_crown_scale_vest_b", "Iron Crown Scale Vest", [("Iron_Crown_Scale_Vest_B",0), ("Iron_Crown_Scale_Vest_B.1",0), ("Iron_Crown_Scale_Vest_B.2",0),("Iron_Crown_Scale_Vest_B.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,407 , weight(15)|abundance(100)|head_armor(0)|body_armor(33)|leg_armor(6)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ], 
+["m_iron_crown_scale_vest_c", "Iron Crown Scale Vest", [("Iron_Crown_Scale_Vest_C",0), ("Iron_Crown_Scale_Vest_C.1",0), ("Iron_Crown_Scale_Vest_C.2",0),("Iron_Crown_Scale_Vest_C.3",0),("Iron_Crown_Scale_Vest_C.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,497 , weight(16)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(6)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ],
+
+["m_iron_crown_brigandine_a", "Iron Crown Brigandine", [("Iron_Crown_Brigandine_A",0), ("Iron_Crown_Brigandine_A.1",0), ("Iron_Crown_Brigandine_A.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,471 , weight(16)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(6)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ],
+["m_iron_crown_brigandine_b", "Iron Crown Brigandine", [("Iron_Crown_Brigandine_B",0), ("Iron_Crown_Brigandine_B.1",0), ("Iron_Crown_Brigandine_B.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,499 , weight(16)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(6)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ],
+
+["m_iron_crown_brigandine_mail_a", "Iron Crown Brigandine with Mail", [("Iron_Crown_Brigandine_C",0), ("Iron_Crown_Brigandine_C.1",0), ("Iron_Crown_Brigandine_C.2",0), ("Iron_Crown_Brigandine_C.3",0), ("Iron_Crown_Brigandine_C.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,638 , weight(18)|abundance(100)|head_armor(0)|body_armor(41)|leg_armor(9)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
+["m_iron_crown_brigandine_mail_b", "Iron Crown Brigandine with Mail", [("Iron_Crown_Brigandine_D",0), ("Iron_Crown_Brigandine_D.1",0), ("Iron_Crown_Brigandine_D.2",0), ("Iron_Crown_Brigandine_D.3",0), ("Iron_Crown_Brigandine_D.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,819 , weight(19)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(16)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
+
+["m_iron_crown_scale_a", "Iron Crown Scale Armor", [("Iron_Crown_Scale_A",0), ("Iron_Crown_Scale_A.1",0), ("Iron_Crown_Scale_A.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1299 , weight(19)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(17)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_4] ],
+["m_iron_crown_scale_b", "Iron Crown Scale Armor", [("Iron_Crown_Scale_B",0), ("Iron_Crown_Scale_B.1",0), ("Iron_Crown_Scale_B.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1569 , weight(21)|abundance(100)|head_armor(0)|body_armor(49)|leg_armor(20)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_4] ],
 
 ["m_celestial_padded_cloth_a", "Padded Cloth", [("Celestial_Padded_Cloth_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_3] ],
 ["m_celestial_mail_a", "Mail Shirt", [("Celestial_Padded_Cloth_Mail_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 359 , weight(16)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(8)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_3] ],
@@ -636,7 +651,7 @@ items = [
 ["mail_shirt", "Mail Shirt", [("mail_shirt_a",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  1040 , weight(19)|abundance(100)|head_armor(0)|body_armor(37)|leg_armor(12)|difficulty(7) ,imodbits_armor ],
 
-["mail_hauberk", "Mail Hauberk", [("hauberk_revised",0),("hauberk_revised.1",0),("hauberk_revised.2",0),("hauberk_revised.3",0),("hauberk_revised.4",0),("hauberk_revised.5",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+["mail_hauberk", "Mail Hauberk", [("Hauberk_Revised_A",0),("Hauberk_Revised_A.1",0),("Hauberk_Revised_A.2",0),("Hauberk_Revised_A.3",0),("Hauberk_Revised_A.4",0),("Hauberk_Revised_A.5",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  1320 , weight(19)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(12)|difficulty(7) ,imodbits_armor ],
 
 ["m_hauberk_old_a", "Hauberk on Old Aketon", [("hauberk_old",0), ("hauberk_old.1",0), ("hauberk_old.2",0), ("hauberk_old.3",0), ("hauberk_old.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,899 , weight(24)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(9)|difficulty(0) ,imodbits_armor, [], [] ], 
@@ -793,6 +808,23 @@ items = [
 ["skullcap", "Skullcap", [("skull_cap_new_a",0)], itp_merchandise| itp_type_head_armor   ,0, 60 , weight(1.0)|abundance(100)|head_armor(20)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
 ["mail_coif", "Mail Coif", [("mail_coif_new",0)], itp_merchandise| itp_type_head_armor   ,0, 71 , weight(1.25)|abundance(100)|head_armor(22)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_armor ],
 
+["iron_crown_scullcap_a", "Iron Crown Skullcap", [("Iron_Crown_Skull_Cap_A",0), ("Iron_Crown_Skull_Cap_A.1",0),("Iron_Crown_Skull_Cap_A",ixmesh_inventory), ("Iron_Crown_Skull_Cap_A.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 83 , weight(1.0)|abundance(100)|head_armor(24)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+["iron_crown_scullcap_b", "Iron Crown Skullcap", [("Iron_Crown_Skull_Cap_B",0), ("Iron_Crown_Skull_Cap_B.1",0),("Iron_Crown_Skull_Cap_B",ixmesh_inventory), ("Iron_Crown_Skull_Cap_B.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 83 , weight(1.0)|abundance(100)|head_armor(24)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+
+["iron_crown_nasal_a", "Iron Crown Nasal Helmet", [("Iron_Crown_Nasal_D",0), ("Iron_Crown_Nasal_D.1",0),("Iron_Crown_Nasal_D",ixmesh_inventory), ("Iron_Crown_Nasal_D.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 138 , weight(1.5)|abundance(100)|head_armor(29)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+["iron_crown_nasal_b", "Iron Crown Nasal Helmet", [("Iron_Crown_Nasal_E",0), ("Iron_Crown_Nasal_E.1",0),("Iron_Crown_Nasal_E",ixmesh_inventory), ("Iron_Crown_Nasal_E.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 145 , weight(1.5)|abundance(100)|head_armor(31)|body_armor(3)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+["iron_crown_nasal_c", "Iron Crown Nasal Helmet", [("Iron_Crown_Nasal_F",0), ("Iron_Crown_Nasal_F.1",0),("Iron_Crown_Nasal_F",ixmesh_inventory), ("Iron_Crown_Nasal_F.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 201 , weight(1.75)|abundance(100)|head_armor(34)|body_armor(5)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+
+["iron_crown_nasal_reinforced_a", "Reinforced Iron Crown Nasal Helmet", [("Iron_Crown_Nasal_A",0), ("Iron_Crown_Nasal_A.1",0),("Iron_Crown_Nasal_A",ixmesh_inventory), ("Iron_Crown_Nasal_A.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 156 , weight(1.5)|abundance(100)|head_armor(33)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+["iron_crown_nasal_reinforced_b", "Reinforced Iron Crown Nasal Helmet", [("Iron_Crown_Nasal_B",0), ("Iron_Crown_Nasal_B.1",0),("Iron_Crown_Nasal_B",ixmesh_inventory), ("Iron_Crown_Nasal_B.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 201 , weight(1.5)|abundance(100)|head_armor(35)|body_armor(2)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+["iron_crown_nasal_reinforced_c", "Reinforced Iron Crown Nasal Helmet", [("Iron_Crown_Nasal_C",0), ("Iron_Crown_Nasal_C.1",0),("Iron_Crown_Nasal_C",ixmesh_inventory), ("Iron_Crown_Nasal_C.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 291 , weight(1.75)|abundance(100)|head_armor(38)|body_armor(5)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+
+["iron_crown_footman_helmet_a", "Iron Crown Footman Helmet", [("Iron_Crown_Footman_Helmet_A",0), ("Iron_Crown_Footman_Helmet_A.1",0),("Iron_Crown_Footman_Helmet_A",ixmesh_inventory), ("Iron_Crown_Footman_Helmet_A.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 238 , weight(1.5)|abundance(100)|head_armor(36)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+["iron_crown_footman_helmet_b", "Iron Crown Footman Helmet", [("Iron_Crown_Footman_Helmet_B",0), ("Iron_Crown_Footman_Helmet_B.1",0),("Iron_Crown_Footman_Helmet_B",ixmesh_inventory), ("Iron_Crown_Footman_Helmet_B.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 308 , weight(1.5)|abundance(100)|head_armor(39)|body_armor(2)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+["iron_crown_footman_helmet_c", "Iron Crown Footman Helmet", [("Iron_Crown_Footman_Helmet_C",0), ("Iron_Crown_Footman_Helmet_C.1",0),("Iron_Crown_Footman_Helmet_C",ixmesh_inventory), ("Iron_Crown_Footman_Helmet_C.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 457 , weight(1.75)|abundance(100)|head_armor(43)|body_armor(5)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
+
+["iron_crown_king_helmet_a", "Iron Crown King Helmet", [("Iron_Crown_King_Helmet_A",0), ("Iron_Crown_King_Helmet_A.1",0),("Iron_Crown_King_Helmet_A",ixmesh_inventory), ("Iron_Crown_King_Helmet_A.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 2899 , weight(1.5)|abundance(1)|head_armor(48)|body_armor(6)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
+
 ["chornovalley_skullcap_helmet_a", "Chornovalley Nasal Helmet", [("Chornovalley_Skullcap_A",0), ("Chornovalley_Skullcap_A.1",0),("Chornovalley_Skullcap_A",ixmesh_inventory), ("Chornovalley_Skullcap_A.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1.0)|abundance(100)|head_armor(20)|body_armor(3)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
 ["chornovalley_skullcap_helmet_b", "Chornovalley Nasal Helmet", [("Chornovalley_Skullcap_B",0), ("Chornovalley_Skullcap_B.1",0),("Chornovalley_Skullcap_B.2",0),("Chornovalley_Skullcap_B",ixmesh_inventory), ("Chornovalley_Skullcap_B.1",ixmesh_inventory),("Chornovalley_Skullcap_B.2",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 69 , weight(1.0)|abundance(100)|head_armor(23)|body_armor(3)|leg_armor(0)|difficulty(0) ,imodbits_plate ],
 
@@ -823,7 +855,7 @@ items = [
 ["segmented_helmet", "Segmented Helmet", [("segmented_helm_new",0)], itp_merchandise| itp_type_head_armor   ,0, 174 , weight(1.25)|abundance(100)|head_armor(31)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 ["helmet_with_neckguard", "Helmet with Neckguard", [("neckguard_helm_new",0)], itp_merchandise| itp_type_head_armor   ,0, 
 190 , weight(1.5)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
-["flat_topped_helmet", "Flat Topped Helmet", [("Flattop_A",0),("Flattop_A.1",0),("Flattop_A_inv",ixmesh_inventory), ("Flattop_A_inv.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 
+["flat_topped_helmet", "Flat Topped Helmet", [("Flattop_Helmet_A",0),("Flattop_Helmet_A.1",0),("Flattop_Helmet_A.2",0),("Flattop_Helmet_A_inv",ixmesh_inventory), ("Flattop_Helmet_A_inv.1",ixmesh_inventory), ("Flattop_Helmet_A_inv.2",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 
 203 , weight(1.75)|abundance(100)|head_armor(33)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 ["kettle_hat", "Kettle Hat", [("kettle_hat_new",0)], itp_merchandise| itp_type_head_armor,0, 
 240 , weight(1.75)|abundance(100)|head_armor(35)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
@@ -839,10 +871,10 @@ items = [
 ["khergit_lady_hat", "Khergit Lady Hat", [("khergit_lady_hat",0)],  itp_type_head_armor   |itp_civilian |itp_doesnt_cover_hair | itp_fit_to_head,0, 1 , weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["khergit_lady_hat_b", "Khergit Lady Leather Hat", [("khergit_lady_hat_b",0)], itp_type_head_armor  | itp_doesnt_cover_hair | itp_fit_to_head  |itp_civilian ,0, 1 , weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 
-["m_bandit_turban_a", "Turban", [("beduin_turban_a",0)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(10)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["m_bandit_turban_b", "Turban", [("beduin_turban_b",0)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(11)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["m_bandit_turban_c", "Turban", [("beduin_turban_c",0),("beduin_turban_c.1",0)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-["m_bandit_turban_d", "Turban", [("beduin_turban_d",0),("beduin_turban_d.1",0)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["m_bandit_turban_a", "Turban", [("beduin_turban_a",0),("beduin_turban_a_mark",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(10)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["m_bandit_turban_b", "Turban", [("beduin_turban_b",0),("beduin_turban_b_mark",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(11)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["m_bandit_turban_c", "Turban", [("beduin_turban_c",0),("beduin_turban_c.1",0),("beduin_turban_c_mark",ixmesh_inventory),("beduin_turban_c_mark.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["m_bandit_turban_d", "Turban", [("beduin_turban_d",0),("beduin_turban_d.1",0),("beduin_turban_d_mark",ixmesh_inventory),("beduin_turban_d_mark.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 
 ["sarranid_felt_hat", "Sarranid Felt Hat", [("sar_helmet3",0)], itp_merchandise| itp_type_head_armor   ,0, 16 , weight(2)|abundance(100)|head_armor(5)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_cloth ],
 ["turban", "Turban", [("tuareg_open",0)], itp_merchandise| itp_type_head_armor   ,0, 28 , weight(1)|abundance(100)|head_armor(11)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_cloth ],
@@ -1615,7 +1647,7 @@ items = [
 ["strange_great_sword",  "Strange Great Sword", [("no_dachi",0),("no_dachi_scabbard",ixmesh_carry)], itp_type_two_handed_wpn|itp_two_handed|itp_primary, itc_nodachi|itcf_carry_sword_back|itcf_show_holster_when_drawn, 920 , weight(3.5)|difficulty(11)|spd_rtng(92) | weapon_length(125)|swing_damage(38 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
 ["strange_short_sword", "Strange Short Sword", [("wakizashi",0),("wakizashi_scabbard",ixmesh_carry)], itp_type_one_handed_wpn|itp_primary, itc_longsword|itcf_carry_wakizashi|itcf_show_holster_when_drawn, 321 , weight(1.25)|difficulty(0)|spd_rtng(108) | weapon_length(65)|swing_damage(25 , cut) | thrust_damage(19 ,  pierce),imodbits_sword ],
 ["court_dress", "Court Dress", [("court_dress",0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(4)|difficulty(0) ,imodbits_cloth ],
-["rich_outfit", "Rich Outfit", [("rich_surcoat_d",0),("rich_surcoat_d.1",0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(16)|leg_armor(4)|difficulty(0) ,imodbits_cloth ],
+["rich_outfit", "Rich Outfit", [("Rich_Surcoat_D",0),("Rich_Surcoat_D.1",0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(16)|leg_armor(4)|difficulty(0) ,imodbits_cloth ],
 ["khergit_guard_armor", "Khergit Guard Armor", [("lamellar_armor_a",0)], itp_type_body_armor|itp_covers_legs   ,0, 
 3048 , weight(25)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(18)|difficulty(0) ,imodbits_armor ],
 #["leather_steppe_cap_c", "Leather Steppe Cap", [("leather_steppe_cap_c",0)], itp_type_head_armor   ,0, 51 , weight(2)|abundance(100)|head_armor(18)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
@@ -1863,50 +1895,6 @@ items = [
 
 ["m_buckler_a", "Steel Buckler", [("steel_buckler1",0)], itp_merchandise|itp_type_shield, itcf_carry_buckler_left,  699 , weight(2)|hit_points(700)|body_armor(12)|spd_rtng(125)|shield_width(30),imodbits_shield ],
 ["m_buckler_b", "Steel Buckler", [("steel_buckler2",0)], itp_merchandise|itp_type_shield, itcf_carry_buckler_left,  699 , weight(2)|hit_points(700)|body_armor(12)|spd_rtng(125)|shield_width(30),imodbits_shield ],
-
-# Highlander Pack
- ["a_h1",  "Highlander Costume", [("a_h1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 259 , weight(3)|abundance(5)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ],
- ["a_h1_1",  "Highlander Costume", [("a_h1_1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 259 , weight(3)|abundance(5)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ],
- ["a_h2",  "Highlander Armor", [("a_h2",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 1000 , weight(15)|abundance(5)|head_armor(0)|body_armor(34)|leg_armor(14)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
- ["a_h2_1",  "Highlander Armor", [("a_h2_1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 1000 , weight(15)|abundance(5)|head_armor(0)|body_armor(34)|leg_armor(14)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
- ["a_h3",  "Elite Highlander Armor", [("a_h3",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 3000 , weight(3)|abundance(5)|head_armor(0)|body_armor(46)|leg_armor(18)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
- ["a_h3_1",  "Elite Highlander Armor", [("a_h3_1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 3000 , weight(3)|abundance(5)|head_armor(0)|body_armor(46)|leg_armor(18)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
- ["a_h4",  "Highlander Costume", [("a_h4",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 300 , weight(3)|abundance(5)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
- ["a_h4_1",  "Highlander Costume", [("a_h4_1",0)], itp_merchandise|itp_type_body_armor  |itp_covers_legs ,0, 300 , weight(3)|abundance(5)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
-
-["h_h1", "Highlander Beret", [("h_h1",0)], itp_type_head_armor| itp_attach_armature|itp_fit_to_head   ,0, 278 , weight(2)|abundance(5)|head_armor(20)|body_armor(0)|leg_armor(0) ,imodbits_cloth, [], [fac_kingdom_4] ],
-["h_h1_1", "Highlander Beret", [("h_h1_1",0)], itp_type_head_armor | itp_attach_armature|itp_fit_to_head   ,0, 278 , weight(2)|abundance(5)|head_armor(20)|body_armor(0)|leg_armor(0) ,imodbits_cloth, [], [fac_kingdom_4] ],
-["h_h2", "Highlander Beret", [("h_h2",0)], itp_type_head_armor | itp_attach_armature|itp_fit_to_head   ,0, 350 , weight(2)|abundance(5)|head_armor(25)|body_armor(0)|leg_armor(0) ,imodbits_cloth, [], [fac_kingdom_4] ],
-["h_h2_1", "Highlander Beret", [("h_h2_1",0)], itp_type_head_armor | itp_attach_armature|itp_fit_to_head   ,0, 350 , weight(2)|abundance(5)|head_armor(25)|body_armor(0)|leg_armor(0) ,imodbits_cloth, [], [fac_kingdom_4] ],
- 
-["b_h1", "Highlander Boots", [("b_h1",0)], itp_merchandise| itp_type_foot_armor | itp_attach_armature,0, 1500 , weight(2.5)|abundance(5)|head_armor(0)|body_armor(0)|leg_armor(23)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
-["b_h1_1", "Highlander Boots", [("b_h1_1",0)], itp_merchandise| itp_type_foot_armor | itp_attach_armature,0, 1500 , weight(2.5)|abundance(5)|head_armor(0)|body_armor(0)|leg_armor(23)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
-["b_h2", "Highlander Boots", [("b_h2",0)], itp_merchandise| itp_type_foot_armor | itp_attach_armature,0, 1770 , weight(2.5)|abundance(5)|head_armor(0)|body_armor(0)|leg_armor(28)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
-["b_h2_1", "Highlander Boots", [("b_h2_1",0)], itp_merchandise| itp_type_foot_armor | itp_attach_armature,0, 1770 , weight(2.5)|abundance(5)|head_armor(0)|body_armor(0)|leg_armor(28)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_4] ],
-
-["s_h1", "Improved Highlander Shield", [("s_h1",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield ,  2000 , weight(3.5)|hit_points(350)|body_armor(2)|spd_rtng(100)|shield_width(60),imodbits_shield, [], [fac_kingdom_4] ],
-["s_h1_1", "Improved Highlander Shield", [("s_h1_1",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield ,  2500 , weight(3.5)|hit_points(360)|body_armor(2)|spd_rtng(100)|shield_width(60),imodbits_shield, [], [fac_kingdom_4] ],
-["s_h1_2", "Improved Highlander Shield", [("s_h1_2",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield ,  3000 , weight(3.5)|hit_points(370)|body_armor(2)|spd_rtng(100)|shield_width(60),imodbits_shield, [], [fac_kingdom_4] ],
-["s_h2", "Highlander Shield", [("s_h2",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield ,  1000 , weight(3.5)|hit_points(300)|body_armor(2)|spd_rtng(100)|shield_width(60),imodbits_shield, [], [fac_kingdom_4] ],
-["s_h2_1", "Highlander Shield", [("s_h2_1",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield ,  1500 , weight(3.5)|hit_points(315)|body_armor(2)|spd_rtng(100)|shield_width(60),imodbits_shield, [], [fac_kingdom_4] ],
-["s_h2_2", "Highlander Shield", [("s_h2_2",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield ,  1800 , weight(3.5)|hit_points(330)|body_armor(2)|spd_rtng(100)|shield_width(60),imodbits_shield, [], [fac_kingdom_4] ],
-
-["dirk", "Dirk",[("dirk",0),("dirk_scabbard", ixmesh_carry)], itp_type_one_handed_wpn|itp_primary, itc_dagger|itcf_carry_dagger_front_right|itcf_show_holster_when_drawn, 183 , weight(1.25)|difficulty(0)|spd_rtng(103) | weapon_length(75)|swing_damage(25 , cut) | thrust_damage(19 ,  pierce),imodbits_sword, [], [fac_kingdom_4] ],
-
-["2h_claymore", "Claymore", [("2h_claymore",0)], itp_type_two_handed_wpn|itp_merchandise| itp_primary, itc_bastardsword|itcf_carry_sword_back, 294 , weight(2.0)|difficulty(9)|spd_rtng(98) | weapon_length(101)|swing_damage(35 , cut) | thrust_damage(26 ,  pierce),imodbits_sword_high, [], [fac_kingdom_4] ],
-
-["highlad_broadsword", "Highlad Broadsword", [("highlad_broadsword",0),("highlad_broadsword_scabbard", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 163 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(95)|swing_damage(27 , cut) | thrust_damage(22 ,  pierce),imodbits_sword_high, [], [fac_kingdom_4] ],
-# Higlander Pack end
-
-["cervelliere", "Cervelliere", [("cervelliere",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 4 , weight(0.6)|abundance(0)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-
-# ["chionite_hat", "Chionite Hat", [("chionite_hat",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 4 , weight(0.5)|abundance(0)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-
-# ["chionite_hat_b", "Chionite b", [("chionite_hat_b",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 4 , weight(0.5)|abundance(0)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-# ["chionite_hat_c", "Chionite c", [("chionite_hat_c",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 4 , weight(0.5)|abundance(0)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-# ["chionite_hat_d", "Chionite d", [("chionite_hat_d",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 4 , weight(0.5)|abundance(0)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-# ["chionite_hat_e", "Chionite e", [("chionite_hat_e",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 4 , weight(0.5)|abundance(0)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
-# ["chionite_hat_f", "Chionite f", [("chionite_hat_f",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 4 , weight(0.5)|abundance(0)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 
 # Combined armors
 # shirt_a_new
@@ -2281,39 +2269,14 @@ items = [
 # The Stormguard items
 
 # REMOVE THESE ITEMS FROM THE GAME
-["ms_helmet_light", "Mountaineer Helmet", [("helm37",0)], itp_merchandise|itp_type_head_armor, 0, 299, weight(1)|abundance(100)|head_armor(24)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate ],
 ["ms_helmet_a", "Thunderguard Helmet", [("helm34",0)], itp_merchandise|itp_type_head_armor, 0, 499, weight(2)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate ],
-["ms_helmet_a2", "Thunderguard Helmet", [("helm33",0)], itp_merchandise|itp_type_head_armor, 0, 499, weight(2)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate ],
-["ms_helmet_b", "Stormbringers Helmet", [("helm35",0)], itp_merchandise|itp_type_head_armor, 0, 599, weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate ],
 ["ms_helmet_c", "Stormbringers Helmet", [("helm36",0)], itp_merchandise|itp_type_head_armor, 0, 699, weight(2)|abundance(100)|head_armor(48)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate ],
 ["ms_helmet_d", "Avalanche Warriors Helmet", [("helm9",0)], itp_merchandise|itp_type_head_armor, 0, 799, weight(2)|abundance(100)|head_armor(52)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate ],
 ["ms_helmet_e", "Lightning Riders Helmet", [("helm24",0)], itp_merchandise|itp_type_head_armor, 0, 1299, weight(2)|abundance(100)|head_armor(56)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
 
 ["ms_facemask_a", "Tempest Sentinels Facemask", [("mask_1",0)], itp_merchandise|itp_type_head_armor, 0, 1099, weight(2)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
-["ms_facemask_b", "Tempest Sentinels Facemask", [("mask_2",0)], itp_merchandise|itp_type_head_armor, 0, 1099, weight(2)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate ],
 
 ["ms_facemask_elite", "Elite Tempest Sentinels Facemask", [("nord_ornate_visored_helmet",0),("nord_ornate_visored_helmet.1",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 2299, weight(2)|abundance(100)|head_armor(60)|body_armor(0)|leg_armor(0)|difficulty(12) ,imodbits_plate ],
-
-#  Nordic Helmets - Some of them have broken mesh and should be either fixed or removed
-["ms_hat_a", "Birka", [("birka_cap",0)], itp_merchandise|itp_type_head_armor, 0, 59, weight(0.2)|abundance(100)|head_armor(3)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_4, fac_kingdom_2] ],
-
-["ms_ridge_helmet_c", "Ridge Helmet With Mail", [("ridge_helmet_mail",0),("ridge_helmet_mail.1",0),("ridge_helmet_mail.2",0),("ridge_helmet_mail.3",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 599, weight(1.5)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_4] ],
-
-["ms_conical_helmet_padded_a", "Conical Helmet with Padded Neckguard", [("english_conical_helmet_padded",0),("english_conical_helmet_padded.1",0),("english_conical_helmet_padded.2",0),("english_conical_helmet_padded.3",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 399, weight(1)|abundance(100)|head_armor(31)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_4] ],
-
-["ms_conical_helmet_mail_a", "Conical Helmet with Mail Neckguard", [("english_conical_helmet_mail",0),("english_conical_helmet_mail.1",0),("english_conical_helmet_mail.2",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 599, weight(2)|abundance(100)|head_armor(37)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_4] ],
-["ms_conical_helmet_mail_b", "Conical Helmet with Mail Neckguard", [("english_conical_helmet_veiled",0),("english_conical_helmet_veiled.1",0),("english_conical_helmet_veiled.2",0),("english_conical_helmet_veiled.3",0),("english_conical_helmet_veiled.4",0),("english_conical_helmet_veiled.5",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 659, weight(2)|abundance(100)|head_armor(39)|body_armor(0)|leg_armor(0)|difficulty(5),imodbits_plate, [], [fac_kingdom_4] ],
-
-["ms_gjermundbu_helm_a", "Gjermundbu Helmet", [("gjermundbu_helmet",0),("gjermundbu_helmet.1",0),("gjermundbu_helmet.2",0),("gjermundbu_helmet.3",0),("gjermundbu_helmet.4",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 589, weight(1)|abundance(100)|head_armor(36)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_4] ],
-["ms_gjermundbu_helm_b", "Gjermundbu Helmet", [("gjermundbu_helmet_b",0),("gjermundbu_helmet_b.1",0),("gjermundbu_helmet_b.2",0),("gjermundbu_helmet_b.3",0),("gjermundbu_helmet_b.4",0),("gjermundbu_helmet_b.5",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 419, weight(1)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_4] ],
-["ms_gjermundbu_helm_c", "Gjermundbu Helmet", [("gjermundbu_helmet_c",0),("gjermundbu_helmet_c.1",0),("gjermundbu_helmet_c.2",0),("gjermundbu_helmet_c.3",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 699, weight(1)|abundance(100)|head_armor(42)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_4] ],
-
-["ms_pointed_helmet_a", "Pointed Helmet", [("viking_pointed_helmet",0),("viking_pointed_helmet.1",0),("viking_pointed_helmet.2",0),("viking_pointed_helmet.3",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 499, weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_4] ],
-
-["ms_spangen_helmet_a", "Decorated Spangen Helmet with Mail", [("vikingr_spangen_helmet_decorated_mail",0),("vikingr_spangen_helmet_decorated_mail.1",0),("vikingr_spangen_helmet_decorated_mail.2",0),("vikingr_spangen_helmet_decorated_mail.3",0),("vikingr_spangen_helmet_decorated_mail.4",0),("vikingr_spangen_helmet_decorated_mail.5",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 559, weight(2.3)|abundance(100)|head_armor(39)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_4] ],
-["ms_spangen_helmet_b", "Spangen Helmet with Mail", [("vikingr_spangen_helmet_mail",0),("vikingr_spangen_helmet_mail.1",0),("vikingr_spangen_helmet_mail.2",0),("vikingr_spangen_helmet_mail.3",0),("vikingr_spangen_helmet_mail.4",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 519, weight(2.3)|abundance(100)|head_armor(39)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_4] ],
-["ms_spangen_helmet_c", "Padded Spangen Helmet", [("vikingr_spangen_helmet_padded",0),("vikingr_spangen_helmet_padded.1",0),("vikingr_spangen_helmet_padded.2",0),("vikingr_spangen_helmet_padded.3",0),("vikingr_spangen_helmet_padded.4",0),("vikingr_spangen_helmet_padded.5",0)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 499, weight(1.3)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_4] ],
-
 
 ["ms_byrnie_a", "Stormguard Byrnie", [("english_byrne",0)], itp_merchandise|itp_type_body_armor, 0, 899, weight(20)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(13)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_12] ],
 ["ms_byrnie_a_light", "Stormguard Battle Byrnie", [("english_byrne_light_a",0),("english_byrne_light_a.1",0),("english_byrne_light_a.2",0),("english_byrne_light_a.3",0)], itp_merchandise|itp_type_body_armor, 0, 2399, weight(22)|abundance(100)|head_armor(0)|body_armor(41)|leg_armor(18)|difficulty(10) ,imodbits_plate, [], [fac_kingdom_12] ],
@@ -2322,8 +2285,6 @@ items = [
 ["ms_byrnie_a_plated_mail_pelt", "Stormguard Plated Byrnie with Pelt", [("english_byrne_knee_c",0),("english_byrne_knee_c.1",0),("english_byrne_knee_c.2",0),("english_byrne_knee_c.3",0)], itp_merchandise|itp_type_body_armor, 0, 2469, weight(24)|abundance(100)|head_armor(0)|body_armor(49)|leg_armor(18)|difficulty(11) ,imodbits_plate, [], [fac_kingdom_12] ],
 ["ms_byrnie_a_plated_mail_fur", "Stormguard Plated Byrnie with Fur", [("english_byrne_knee_d",0),("english_byrne_knee_d.1",0),("english_byrne_knee_d.2",0),("english_byrne_knee_d.3",0)], itp_merchandise|itp_type_body_armor, 0, 2469, weight(24)|abundance(100)|head_armor(0)|body_armor(49)|leg_armor(18)|difficulty(11) ,imodbits_plate, [], [fac_kingdom_12] ],
 
-["ms_byrnie_b", "Byrnie", [("viking_byrnie_b",0), ("viking_byrnie_b.1",0)], itp_merchandise|itp_type_body_armor, 0, 899, weight(20)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(13)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_12] ],
-["ms_byrnie_c", "Byrnie", [("viking_byrnie_c",0)], itp_merchandise|itp_type_body_armor, 0, 899, weight(20)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(13)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_12] ],
 ["ms_byrnie_d", "Byrnie", [("viking_byrnie_new",0)], itp_merchandise|itp_type_body_armor, 0, 899, weight(20)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(13)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_12] ],
 
 ["ms_byrnie_d_plated", "Stormguard Plated Byrnie", [("viking_byrnie_knee_a",0),("viking_byrnie_knee_a.1",0),("viking_byrnie_knee_a.2",0)], itp_merchandise|itp_type_body_armor, 0, 2181, weight(23)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(18)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_12] ],
@@ -2333,10 +2294,6 @@ items = [
 
 ["ms_byrnie_d_heavy", "Stormguard Heavy Armor", [("viking_byrnie_heavy_a",0),("viking_byrnie_heavy_a.1",0),("viking_byrnie_heavy_a.2",0),("viking_byrnie_heavy_a.3",0),("viking_byrnie_heavy_a.4",0),("viking_byrnie_heavy_a.5",0)], itp_merchandise|itp_type_body_armor, 0, 3869, weight(26)|abundance(100)|head_armor(5)|body_armor(52)|leg_armor(26)|difficulty(12) ,imodbits_plate, [], [fac_kingdom_12] ],
 ["ms_byrnie_d_heavy_plate", "Stormguard Heavy Plate Armor", [("viking_byrnie_heavy_b",0),("viking_byrnie_heavy_b.1",0),("viking_byrnie_heavy_b.2",0),("viking_byrnie_heavy_b.3",0),("viking_byrnie_heavy_b.4",0),("viking_byrnie_heavy_b.5",0),("viking_byrnie_heavy_b.6",0)], itp_merchandise|itp_type_body_armor, 0, 4399, weight(27)|abundance(100)|head_armor(5)|body_armor(59)|leg_armor(26)|difficulty(12) ,imodbits_plate, [], [fac_kingdom_12] ],
-
-["ms_mail_shirt_a", "Mail Shirt", [("mail_shirt_viking",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(23)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(22)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_12] ],
-["ms_mail_shirt_b", "Mail Shirt", [("mail_shirt_viking_blue",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(23)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(22)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_12] ],
-["ms_mail_shirt_c", "Mail Shirt", [("mail_shirt_viking_green",0)], itp_merchandise|itp_type_body_armor, 0, 1299, weight(23)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(22)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_12] ],
 
 ["ms_mail_shirt_heavy_a", "Stormguard Heavy Mail Shirt with Fur", [("mail_shirt_heavy_a",0),("mail_shirt_heavy_a.1",0),("mail_shirt_heavy_a.2",0),("mail_shirt_heavy_a.3",0),("mail_shirt_heavy_a.4",0),("mail_shirt_heavy_a.5",0),("mail_shirt_heavy_a.6",0)], itp_merchandise|itp_type_body_armor, 0, 4799, weight(25)|abundance(100)|head_armor(5)|body_armor(55)|leg_armor(30)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_12] ],
 ["ms_mail_shirt_heavy_b", "Stormguard Heavy Mail Shirt", [("mail_shirt_heavy_b",0),("mail_shirt_heavy_b.1",0),("mail_shirt_heavy_b.2",0),("mail_shirt_heavy_b.3",0),("mail_shirt_heavy_b.4",0),("mail_shirt_heavy_b.5",0),("mail_shirt_heavy_b.6",0)], itp_merchandise|itp_type_body_armor, 0, 4699, weight(25)|abundance(100)|head_armor(5)|body_armor(55)|leg_armor(30)|difficulty(5) ,imodbits_plate, [], [fac_kingdom_12] ],
@@ -2358,48 +2315,6 @@ items = [
 ["ms_coat_of_plates_b", "Coat of Plates", [("nord_coat_of_plates_pelt",0),("nord_coat_of_plates_pelt.1",0)], itp_merchandise|itp_type_body_armor, 0, 8999, weight(30)|abundance(1)|head_armor(0)|body_armor(60)|leg_armor(25)|difficulty(12) ,imodbits_plate, [], [fac_kingdom_4, fac_kingdom_2, fac_kingdom_12] ],
 
 ["ms_greaves_a", "Nordic Splinted Greaves", [("nord_splinted_greaves",0)], itp_merchandise|itp_type_foot_armor, 0, 2099, weight(2)|abundance(1)|head_armor(0)|body_armor(0)|leg_armor(30)|difficulty(12) ,imodbits_cloth, [], [fac_kingdom_4, fac_kingdom_2, fac_kingdom_12] ],
-
-["nord_lamellar_a", "Light Lamellar Vest", [("leather_lamellar_blk_small",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 592, weight(15)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(5)|difficulty(0) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_lamellar_b", "Light Lamellar Vest with Decoration", [("nord_a",0),("nord_a.1",0),("nord_a.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 599, weight(16)|abundance(100)|head_armor(0)|body_armor(32)|leg_armor(5)|difficulty(0) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_lamellar_c", "Light Lamellar Vest with Decoration", [("nord_b",0),("nord_b.1",0),("nord_b.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 599, weight(16)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(5)|difficulty(0) ,imodbits_plate, [], [fac_kingdom_4] ],
-
-["nord_light_a", "Light Nordic Armor", [("nord_light_a",0),("nord_light_a.1",0),("nord_light_a.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 993, weight(18)|abundance(100)|head_armor(0)|body_armor(26)|leg_armor(14)|difficulty(7) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_light_b", "Light Nordic Armor with Mail", [("nord_light_b",0),("nord_light_b.1",0),("nord_light_b.2",0),("nord_light_b.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 1344, weight(20)|abundance(100)|head_armor(0)|body_armor(33)|leg_armor(14)|difficulty(9) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_light_c", "Light Nordic Armor with Mail", [("nord_light_c",0),("nord_light_c.1",0),("nord_light_c.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 1344, weight(20)|abundance(100)|head_armor(0)|body_armor(33)|leg_armor(14)|difficulty(9) ,imodbits_plate, [], [fac_kingdom_4] ],
-
-["nord_padded_a", "Padded Armor", [("nord_padd_a",0),("nord_padd_a.1",0),("nord_padd_a.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 1642, weight(20)|abundance(100)|head_armor(0)|body_armor(39)|leg_armor(19)|difficulty(9) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_padded_b", "Padded Armor", [("nord_padd_b",0),("nord_padd_b.1",0),("nord_padd_b.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 1983, weight(21)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(19)|difficulty(11) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_padded_c", "Padded Armor with Decorations", [("nord_padd_c",0),("nord_padd_c.1",0),("nord_padd_c.2",0),("nord_padd_c.3",0),("nord_padd_c.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 1699, weight(20)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(19)|difficulty(9) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_padded_d", "Padded Armor with Bag", [("nord_padd_d",0),("nord_padd_d.1",0),("nord_padd_d.2",0),("nord_padd_d.3",0),("nord_padd_d.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 1983, weight(21)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(19)|difficulty(11) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_padded_lam_a", "Padded Armor with Lamellar Vest", [("nord_padd_lam_a",0),("nord_padd_lam_a.1",0),("nord_padd_lam_a.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 1769, weight(21)|abundance(100)|head_armor(0)|body_armor(41)|leg_armor(19)|difficulty(10) ,imodbits_plate, [], [fac_kingdom_4] ],
-
-["nord_archer_a", "Padded Armor with Hood", [("nord_tracer_a",0),("nord_tracer_a.1",0),("nord_tracer_a.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 1599, weight(18)|abundance(100)|head_armor(0)|body_armor(39)|leg_armor(19)|difficulty(9) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_archer_b", "Padded Armor with Hood on Mail", [("nord_tracer_b",0),("nord_tracer_b.1",0),("nord_tracer_b.2",0),("nord_tracer_b.3",0),("nord_tracer_b.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 1899, weight(20)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(19)|difficulty(10) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_archer_c", "Padded Armor with Hood", [("nord_tracer_c",0),("nord_tracer_c.1",0),("nord_tracer_c.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 1799, weight(19)|abundance(100)|head_armor(0)|body_armor(41)|leg_armor(19)|difficulty(9) ,imodbits_plate, [], [fac_kingdom_4] ],
-
-["nord_mail_a", "Nordic Mail Shirt", [("nord_mail_a",0),("nord_mail_a.1",0),("nord_mail_a.2",0),("nord_mail_a.3",0),("nord_mail_a.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 3581, weight(25)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(19)|difficulty(11) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_mail_b", "Nordic Mail Shirt", [("nord_mail_b",0),("nord_mail_b.1",0),("nord_mail_b.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 3681, weight(25)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(19)|difficulty(11) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_mail_c", "Nordic Mail Shirt", [("nord_mail_c",0),("nord_mail_c.1",0),("nord_mail_c.2",0),("nord_mail_c.3",0),("nord_mail_c.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 3681, weight(25)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(19)|difficulty(11) ,imodbits_plate, [], [fac_kingdom_4] ],
-
-["nord_plate_a", "Nordic Light Plate", [("nord_plate_a",0),("nord_plate_a.1",0),("nord_plate_a.2",0),("nord_plate_a.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 3981, weight(25)|abundance(100)|head_armor(2)|body_armor(49)|leg_armor(19)|difficulty(12) ,imodbits_plate, [], [fac_kingdom_4] ],
-["nord_plate_b", "Nordic Light Plate", [("nord_plate_b",0),("nord_plate_b.1",0),("nord_plate_b.2",0),("nord_plate_b.3",0),("nord_plate_b.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 4139, weight(25)|abundance(100)|head_armor(2)|body_armor(51)|leg_armor(19)|difficulty(13) ,imodbits_plate, [], [fac_kingdom_4] ],
-
-# New nordic weapons
-["nordic_hand_axe_a", "Hand Axe", [("axe_e",0),("axe_e.1",0)], itp_type_one_handed_wpn|itp_merchandise| itp_primary|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip, 399 , weight(2)|difficulty(7)|spd_rtng(99) | weapon_length(65)|swing_damage(29 , cut) | thrust_damage(0 ,  pierce),imodbits_axe, [], [fac_kingdom_4] ],
-["nordic_hand_axe_b", "Hand Axe", [("axe_f",0),("axe_f.1",0)], itp_type_one_handed_wpn|itp_merchandise| itp_primary|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip, 399 , weight(2)|difficulty(7)|spd_rtng(99) | weapon_length(65)|swing_damage(29 , cut) | thrust_damage(0 ,  pierce),imodbits_axe, [], [fac_kingdom_4] ],
-["nordic_hand_axe_c", "Hand Axe", [("heavy_cutting_axe",0)], itp_type_one_handed_wpn|itp_merchandise| itp_primary|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip, 399 , weight(2)|difficulty(7)|spd_rtng(99) | weapon_length(65)|swing_damage(29 , cut) | thrust_damage(0 ,  pierce),imodbits_axe, [], [fac_kingdom_4] ],
-["nordic_hand_axe_d", "Slim Hand Axe", [("slim_axe",0)], itp_type_one_handed_wpn|itp_merchandise| itp_primary|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip, 569 , weight(2)|difficulty(9)|spd_rtng(99) | weapon_length(75)|swing_damage(35 , cut) | thrust_damage(0 ,  pierce),imodbits_axe, [], [fac_kingdom_4] ],
-
-["nordic_spear_a", "Hewing Spear", [("hewing_spear",0)], itp_type_polearm|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry,itc_staff|itcf_carry_spear, 619 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(165)|swing_damage(31 , cut) | thrust_damage(26 ,  pierce),imodbits_polearm, [], [fac_kingdom_4] ],
-
-["nord_sword_a", "Nordic Sword", [("london1_sword",0),("london1_sword.1",0),("london1_sword.2",0),("london1_sword_scab", ixmesh_carry),("london1_sword_scab.1", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 299 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(80)|swing_damage(29 , cut) | thrust_damage(25 ,  pierce),imodbits_sword_high, [], [fac_kingdom_4] ],
-["nord_sword_b", "Nordic Sword", [("london_sword_2",0),("london_sword_2_scab", ixmesh_carry),("london_sword_2_scab.1", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 399 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(90)|swing_damage(29 , cut) | thrust_damage(25 ,  pierce),imodbits_sword_high, [], [fac_kingdom_4] ],
-["nord_sword_c", "Nordic Sword", [("norman_short_sword",0),("norman_short_sword_scab", ixmesh_carry),("norman_short_sword_scab.1", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 399 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(90)|swing_damage(29 , cut) | thrust_damage(25 ,  pierce),imodbits_sword_high, [], [fac_kingdom_4] ],
-["nord_sword_d", "Nordic Sword", [("short_rus_sword",0),("scab_short_rus_sword", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 399 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(90)|swing_damage(29 , cut) | thrust_damage(25 ,  pierce),imodbits_sword_high, [], [fac_kingdom_4] ],
-
-# ["saex_a", "Seax", [("gaelic_seax",0),("gaelic_seax_scab",ixmesh_carry),("gaelic_seax_scab.1",ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary|itp_secondary, itc_dagger|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 379 , weight(0.75)|difficulty(0)|spd_rtng(109) | weapon_length(70)|swing_damage(28 , cut) | thrust_damage(26 ,  pierce),imodbits_sword_high ],
-# ["saex_b", "Seax", [("heavy_seax",0),("heavy_seax_scab",ixmesh_carry),("heavy_seax_scab.1",ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary|itp_secondary, itc_dagger|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 379 , weight(0.75)|difficulty(0)|spd_rtng(109) | weapon_length(70)|swing_damage(28 , cut) | thrust_damage(26 ,  pierce),imodbits_sword_high ],
-# ["saex_c", "Seax", [("norman_seax",0),("norman_seax_scab",ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary|itp_secondary, itc_dagger|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 379 , weight(0.75)|difficulty(0)|spd_rtng(109) | weapon_length(70)|swing_damage(28 , cut) | thrust_damage(26 ,  pierce),imodbits_sword_high ],
 
 # black horde items
 ["mh_helmet_heavy_a", "Heavy Hairako Helmet", [("mask_helmet1",0), ("mask_helmet1.1",0)], itp_merchandise|itp_type_head_armor, 0, 899, weight(2)|abundance(100)|head_armor(50)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate, [], [fac_kingdom_8] ],
