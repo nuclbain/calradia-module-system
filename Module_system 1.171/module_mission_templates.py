@@ -15970,7 +15970,7 @@ mission_templates = [
                 (this_or_next|is_between, ":attacker_troop_id", "trp_swadian_prison_guard", "trp_silver_rose_levy"),
                 (this_or_next|is_between, ":attacker_troop_id", "trp_vaegir_prison_guard", "trp_celestial_recruit"),
                 (this_or_next|is_between, ":attacker_troop_id", "trp_khergit_prison_guard", "trp_iron_crown_recruit"),
-                (this_or_next|is_between, ":attacker_troop_id", "trp_nord_prison_guard", "trp_rhodok_tribesman"),
+                (this_or_next|is_between, ":attacker_troop_id", "trp_nord_prison_guard", "trp_alpine_recruit"),
                 (this_or_next|is_between, ":attacker_troop_id", "trp_rhodok_prison_guard", "trp_sarranid_recruit"),
                 (is_between, ":attacker_troop_id", "trp_sarranid_prison_guard", "trp_looter"),
                 # (store_random_in_range, ":random", 0, 60),

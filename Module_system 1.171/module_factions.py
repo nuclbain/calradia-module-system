@@ -52,7 +52,7 @@ factions = [
   ("kingdom_2",  "The Chornovalley Clans",    0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x4287F5),
   ("kingdom_3",  "Celestial", 0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x4D6F8A),
   ("kingdom_4",  "The Iron Crown",    0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x249164),
-  ("kingdom_5",  "The Eldritch Dominion of Rhodoks",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x33DD33),
+  ("kingdom_5",  "The Alpine Dominion",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xFCBA03),
   ("kingdom_6",  "Sarranid Sultanate",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xDDDD33),
   ("kingdom_7",  "Great Kingdom of Nerpa",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05),("kingdom_1", -0.2)], [], 0xFF11FF),
   ("kingdom_8",  "Horde of Hairako",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xCC55FF),
