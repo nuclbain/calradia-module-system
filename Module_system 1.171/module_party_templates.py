@@ -137,9 +137,9 @@ party_templates = [
   ("kingdom_5_reinforcements_b", "{!}kingdom_5_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_alpine_crossbowman,3,6),(trp_alpine_trained_crossbowman,2,4)]),
   ("kingdom_5_reinforcements_c", "{!}kingdom_5_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_alpine_veteran_spearman,2,3),(trp_alpine_veteran_crossbowman,1,2)]), 
 
-  ("kingdom_6_reinforcements_a", "{!}kingdom_6_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_sarranid_recruit,5,10),(trp_sarranid_footman,2,4)]),
-  ("kingdom_6_reinforcements_b", "{!}kingdom_6_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_sarranid_skirmisher,2,4),(trp_sarranid_veteran_footman,2,3),(trp_sarranid_footman,1,3)]),
-  ("kingdom_6_reinforcements_c", "{!}kingdom_6_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_sarranid_horseman,3,5)]),
+  ("kingdom_6_reinforcements_a", "{!}kingdom_6_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_solarian_recruit,5,10),(trp_solarian_footman,2,4)]),
+  ("kingdom_6_reinforcements_b", "{!}kingdom_6_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_solarian_skirmisher,2,4),(trp_solarian_veteran_footman,2,3),(trp_solarian_footman,1,3)]),
+  ("kingdom_6_reinforcements_c", "{!}kingdom_6_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_solarian_horseman,3,5)]),
 
   ("kingdom_7_reinforcements_a", "{!}kingdom_7_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_nerpa_recruit,5,12),(trp_nerpa_footman,3,5)]),
   ("kingdom_7_reinforcements_b", "{!}kingdom_7_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_nerpa_soldier,2,4),(trp_nerpa_captain,2,3),(trp_nerpa_ranger,2,4),(trp_nerpa_yeoman,2,4)]),

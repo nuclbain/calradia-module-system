@@ -544,7 +544,7 @@ troops = [
    [itm_m_two_handed_heavy_axe_a,itm_m_two_handed_heavy_axe_b,itm_norman_shield_2,itm_battle_trident,itm_chornovalley_infantry_helmet_a,itm_chornovalley_infantry_helmet_b,itm_chornovalley_infantry_helmet_c,itm_m_leather_boots_a,itm_m_chornovalley_heavy_mail_a,itm_m_chornovalley_heavy_mail_b,itm_leather_gloves,itm_m_gloves_a,itm_mt_scale_gloves_a,itm_mt_scale_gloves_b],
    def_attrib|str_19|agi_17|level(19),wp_melee(177),knows_athletics_3|knows_ironflesh_5|knows_power_strike_3|knows_shield_2,vaegir_face_young_1, vaegir_face_older_2],
   ["chornovalley_sergeant","Chornovalley Sergeant","Chornovalley Sergeants",tf_guarantee_all,0,0,fac_kingdom_2,
-   [itm_m_two_handed_heavy_axe_a,itm_m_two_handed_heavy_axe_b,itm_norman_shield_2,itm_battle_trident,itm_chornovalley_infantry_helmet_a,itm_chornovalley_infantry_helmet_b,itm_chornovalley_infantry_helmet_c,itm_m_greaves_a,itm_m_greaves_b,itm_m_chornovalley_heavy_lamellar_a,itm_m_chornovalley_heavy_lamellar_b,itm_mt_scale_gloves_a,itm_mt_scale_gloves_b],
+   [itm_m_two_handed_heavy_axe_a,itm_m_two_handed_heavy_axe_b,itm_norman_shield_2,itm_battle_trident,itm_chornovalley_infantry_helmet_a,itm_chornovalley_infantry_helmet_b,itm_chornovalley_infantry_helmet_c,itm_m_greaves_a,itm_m_greaves_b,itm_m_chornovalley_heavy_lamellar_a,itm_m_chornovalley_heavy_lamellar_b, itm_m_chornovalley_heavy_lamellar_c,itm_mt_scale_gloves_a,itm_mt_scale_gloves_b],
    def_attrib|str_24|agi_20|level(24),wp_melee(240),knows_athletics_7|knows_ironflesh_9|knows_power_strike_7|knows_shield_2,vaegir_face_young_1, vaegir_face_older_2],
   ["chornovalley_gunslider","Chornovalley Gunslider","Chornovalley Gunsliders",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_2,
    [itm_heavy_infantry_axe,itm_chornovalley_infantry_helmet_a,itm_chornovalley_infantry_helmet_b,itm_chornovalley_infantry_helmet_c,itm_m_chornovalley_lamellar_vest_b,itm_leather_boots,itm_m_gloves_a,itm_pistol_a,itm_pistol_b,itm_cartridges],
@@ -684,20 +684,20 @@ troops = [
 #peasant - retainer - footman - man-at-arms -  knight
 
 
- ["sarranid_recruit","Sarranid Recruit","Sarranid Recruits",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_6,[itm_scythe,itm_hatchet,itm_pickaxe,itm_club,itm_stones,itm_tab_shield_heater_a,itm_mkk_turban_a,itm_mkk_turban_b,itm_mkk_turban_c,itm_mkk_boots_common_a,itm_mkk_boots_common_b,itm_mkk_boots_common_c,itm_mkk_robe_a,itm_mkk_robe_b,itm_mkk_robe_c],def_attrib|level(4),wp(60),knows_common|knows_athletics_1,swadian_face_younger_1, swadian_face_middle_2],
- ["sarranid_footman","Sarranid Footman","Sarranid Footmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield,0,0,fac_kingdom_6,[itm_bamboo_spear,itm_arabian_sword_a,itm_tab_shield_kite_a,
+ ["solarian_recruit","Solarian Recruit","Solarian Recruits",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_6,[itm_solarian_spear_a,itm_hatchet,itm_club,itm_stones,itm_solarian_round_shield_a,itm_mkk_turban_a,itm_mkk_turban_b,itm_mkk_turban_c,itm_mkk_boots_common_a,itm_mkk_boots_common_b,itm_mkk_boots_common_c,itm_mkk_robe_a,itm_mkk_robe_b,itm_mkk_robe_c],def_attrib|level(4),wp(60),knows_common|knows_athletics_1,swadian_face_younger_1, swadian_face_middle_2],
+ ["solarian_footman","Solarian Footman","Solarian Footmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield,0,0,fac_kingdom_6,[itm_solarian_spear_b,itm_falshion_2,itm_solarian_round_shield_a,
     itm_mkk_midi_robe_a,itm_mkk_midi_robe_b,itm_mkk_midi_robe_c,itm_mkk_midi_robe_d,itm_mkk_midi_robe_e,itm_mkk_midi_robe_f,itm_mkk_helm_warrior_a,itm_mkk_helm_warrior_b,itm_mkk_helm_warrior_c,itm_mkk_boots_common_b,itm_mkk_boots_common_a,itm_mkk_boots_common_c,itm_mkk_boots_b,itm_mkk_boots_a,itm_mkk_gloves_a],
    def_attrib|level(9),wp(75),knows_common|knows_athletics_2,swadian_face_young_1, swadian_face_old_2],
- ["sarranid_veteran_footman","Sarranid Veteran Footman","Sarranid Veteran Footmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_6,[itm_bamboo_spear,itm_arabian_sword_a,itm_arabian_sword_b,itm_tab_shield_kite_b,itm_mkk_leather_boots_a,itm_mkk_helm_warrior_a,itm_mkk_helm_warrior_b,itm_mkk_helm_warrior_c,itm_mkk_scale_vest_a,itm_mkk_scale_vest_b,itm_mkk_scale_vest_c,itm_mkk_scale_vest_d,itm_mkk_scale_vest_e,itm_mkk_scale_vest_f,itm_jarid,itm_arabian_sword_a,itm_mace_3,itm_mkk_gloves_a,itm_mkk_gauntlets_sar_a],def_attrib|level(14),wp_one_handed (85) | wp_two_handed (85) | wp_polearm (85) | wp_archery (75) | wp_crossbow (75) | wp_throwing (100),knows_common|knows_athletics_2|knows_power_throw_2|knows_ironflesh_1|knows_power_strike_2|knows_shield_2,swadian_face_young_1, swadian_face_old_2],
- ["sarranid_infantry","Sarranid Infantry","Sarranid Infantries",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,[itm_jarid,itm_sarranid_axe_a,itm_arabian_sword_b,itm_mace_3,itm_spear,itm_tab_shield_kite_c,itm_mkk_semi_heavy_helmet_a,itm_mkk_semi_heavy_helmet_b,itm_mkk_semi_heavy_helmet_c,itm_mkk_semi_heavy_helmet_d,itm_mkk_semi_heavy_helmet_e,itm_mkk_semi_heavy_helmet_f,itm_mkk_archer_armor_a,itm_mkk_archer_armor_b,itm_mkk_archer_armor_c,itm_mkk_archer_armor_d,itm_mkk_leather_boots_a,itm_mkk_leather_boots_b,itm_mkk_gauntlets_sar_a],def_attrib|level(20),wp_one_handed (105) | wp_two_handed (105) | wp_polearm (105) | wp_archery (75) | wp_crossbow (75) | wp_throwing (110),knows_common|knows_riding_3|knows_ironflesh_2|knows_power_strike_3|knows_shield_3 | knows_power_throw_3|knows_athletics_3,swadian_face_middle_1, swadian_face_old_2],
- ["sarranid_guard","Sarranid Guard","Sarranid Guards",tf_mounted|tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,
-   [itm_military_pick,itm_sarranid_two_handed_axe_a,itm_jarid,itm_scimitar_b,itm_war_spear,itm_mace_4,itm_tab_shield_kite_d,itm_mkk_semi_heavy_helmet_a,itm_mkk_semi_heavy_helmet_b,itm_mkk_semi_heavy_helmet_c,itm_mkk_semi_heavy_helmet_d,itm_mkk_semi_heavy_helmet_e,itm_mkk_semi_heavy_helmet_f,itm_mkk_infantry_armor_a,itm_mkk_infantry_armor_b,itm_mkk_heavy_boots_a,itm_mkk_gauntlets_sar_b],def_attrib|level(25),wp_one_handed (135) | wp_two_handed (135) | wp_polearm (135) | wp_archery (75) | wp_crossbow (75) | wp_throwing (140),knows_common|knows_shield_3|knows_ironflesh_3|knows_power_strike_4|knows_power_throw_4|knows_athletics_5,swadian_face_middle_1, swadian_face_older_2],
- ["sarranid_skirmisher","Sarranid Skirmisher","Sarranid Skirmishers",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_6,[itm_jarid,itm_jarid,itm_arabian_sword_a,itm_spiked_club,itm_tab_shield_small_round_a,itm_mkk_helm_sar_a,itm_mkk_helm_light_sarranid,itm_mkk_boots_common_a,itm_mkk_boots_common_b,itm_mkk_boots_common_c,itm_mkk_robe_a,itm_mkk_robe_b,itm_mkk_robe_c],def_attrib|level(14),wp(80),knows_common|knows_riding_2|knows_power_throw_2|knows_ironflesh_1|knows_athletics_3,swadian_face_young_1, swadian_face_middle_2],
- ["sarranid_archer","Sarranid Archer","Sarranid Archers",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_6,[itm_arrows,itm_arrows,itm_nomad_bow,itm_arabian_sword_a,itm_mkk_scale_vest_a,itm_mkk_scale_vest_b,itm_mkk_scale_vest_c,itm_mkk_scale_vest_d,itm_mkk_scale_vest_e,itm_mkk_scale_vest_f,itm_mkk_helm_mail_a,itm_mkk_helm_mail_b,itm_mkk_helm_mail_c,itm_mkk_helm_mail_d,itm_mkk_helm_mail_e,itm_mkk_leather_boots_a,itm_mkk_gloves_a],
-   def_attrib|level(19),wp_one_handed (90) | wp_two_handed (90) | wp_polearm (90) | wp_archery (100) | wp_crossbow (90) | wp_throwing (100),knows_common|knows_power_draw_3|knows_ironflesh_2|knows_power_throw_3|knows_athletics_4,swadian_face_young_1, swadian_face_old_2],
- ["sarranid_master_archer","Sarranid Master Archer","Sarranid Master Archers",tf_guarantee_ranged|tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,[itm_barbed_arrows,itm_barbed_arrows,itm_arabian_sword_b,itm_mace_3,itm_strong_bow,itm_nomad_bow,itm_mkk_helm_mail_a,itm_mkk_helm_mail_b,itm_mkk_helm_mail_c,itm_mkk_helm_mail_d,itm_mkk_helm_mail_e,itm_mkk_leather_boots_a,itm_mkk_gloves_a,itm_mkk_archer_armor_a,itm_mkk_archer_armor_b,itm_mkk_archer_armor_c,itm_mkk_archer_armor_d],str_14 | agi_5 | int_4 | cha_4|level(24),wp_one_handed (100) | wp_two_handed (100) | wp_polearm (100) | wp_archery (130) | wp_crossbow (100) | wp_throwing (130),knows_common|knows_power_draw_4|knows_power_throw_4|knows_ironflesh_3|knows_athletics_5,swadian_face_middle_1, swadian_face_older_2],
- ["sarranid_horseman","Sarranid Horseman","Sarranid Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_6,[itm_lance,itm_arabian_sword_b,itm_scimitar_b,itm_mace_4,itm_tab_shield_small_round_b,itm_saracin_hard_horses_a_v1,itm_saracin_hard_horses_b_v1,itm_saracin_hard_horses_c_v1,itm_saracin_hard_horses_d_v1,itm_mkk_scale_vest_alt_a,itm_mkk_scale_vest_alt_b,itm_mkk_gulam_helm_a,itm_mkk_gulam_helm_b,itm_mkk_gulam_helm_c,itm_mkk_gulam_helm_d,itm_mkk_gulam_helm_f,itm_mkk_gauntlets_sar_a,itm_mkk_gauntlets_mail_a,itm_mkk_leather_boots_a,itm_mkk_leather_boots_b],def_attrib|level(20),wp_melee(100),knows_common|knows_riding_4|knows_ironflesh_2|knows_shield_2|knows_power_strike_3,swadian_face_young_1, swadian_face_old_2],
- ["sarranid_mamluke","Sarranid Mamluke","Sarranid Mamlukes",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_6,[itm_heavy_lance,itm_scimitar_b,itm_sarranid_two_handed_mace_1,itm_sarranid_cavalry_sword,itm_tab_shield_small_round_c,itm_saracin_hard_horses_a,itm_saracin_hard_horses_b,itm_saracin_hard_horses_c,itm_saracin_hard_horses_d,itm_mkk_heavy_boots_a,itm_mkk_heavy_boots_a,itm_mkk_mamluke_a,itm_mkk_mamluke_b,itm_mkk_mamluke_c,itm_mkk_gauntlets_sar_b,itm_mkk_gauntlets_sar_a,itm_mkk_heavy_helmet_a,itm_mkk_heavy_helmet_b,itm_mkk_heavy_helmet_c],def_attrib|level(27),wp_one_handed (150) | wp_two_handed (130) | wp_polearm (130) | wp_archery (75) | wp_crossbow (75) | wp_throwing (110),knows_common|knows_riding_6|knows_shield_5|knows_ironflesh_5|knows_power_strike_5,swadian_face_middle_1, swadian_face_older_2],
+ ["solarian_veteran_footman","Solarian Veteran Footman","Solarian Veteran Footmen",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_6,[itm_solarian_spear_b,itm_arabian_sword_a,itm_arabian_sword_b,itm_solarian_round_shield_a,itm_mkk_leather_boots_a,itm_mkk_helm_warrior_a,itm_mkk_helm_warrior_b,itm_mkk_helm_warrior_c,itm_mkk_scale_vest_a,itm_mkk_scale_vest_b,itm_mkk_scale_vest_c,itm_mkk_scale_vest_d,itm_mkk_scale_vest_e,itm_mkk_scale_vest_f,itm_jarid,itm_arabian_sword_a,itm_mace_3,itm_mkk_gloves_a,itm_mkk_gauntlets_sar_a],def_attrib|level(14),wp_one_handed (85) | wp_two_handed (85) | wp_polearm (85) | wp_archery (75) | wp_crossbow (75) | wp_throwing (100),knows_common|knows_athletics_2|knows_power_throw_2|knows_ironflesh_1|knows_power_strike_2|knows_shield_2,swadian_face_young_1, swadian_face_old_2],
+ ["solarian_infantry","Solarian Infantry","Solarian Infantries",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,[itm_jarid,itm_sarranid_axe_a,itm_arabian_sword_b,itm_mace_3,itm_solarian_spear_b,itm_solarian_round_shield_a,itm_mkk_semi_heavy_helmet_a,itm_mkk_semi_heavy_helmet_b,itm_mkk_semi_heavy_helmet_c,itm_mkk_semi_heavy_helmet_d,itm_mkk_semi_heavy_helmet_e,itm_mkk_semi_heavy_helmet_f,itm_mkk_archer_armor_a,itm_mkk_archer_armor_b,itm_mkk_archer_armor_c,itm_mkk_archer_armor_d,itm_mkk_leather_boots_a,itm_mkk_leather_boots_b,itm_mkk_gauntlets_sar_a],def_attrib|level(20),wp_one_handed (105) | wp_two_handed (105) | wp_polearm (105) | wp_archery (75) | wp_crossbow (75) | wp_throwing (110),knows_common|knows_riding_3|knows_ironflesh_2|knows_power_strike_3|knows_shield_3 | knows_power_throw_3|knows_athletics_3,swadian_face_middle_1, swadian_face_old_2],
+ ["solarian_guard","Solarian Guard","Solarian Guards",tf_mounted|tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,
+   [itm_military_pick,itm_sarranid_two_handed_axe_a,itm_jarid,itm_scimitar_b,itm_solarian_spear_b,itm_mace_4,itm_solarian_oval_shield_a, itm_solarian_oval_shield_b,itm_mkk_semi_heavy_helmet_a,itm_mkk_semi_heavy_helmet_b,itm_mkk_semi_heavy_helmet_c,itm_mkk_semi_heavy_helmet_d,itm_mkk_semi_heavy_helmet_e,itm_mkk_semi_heavy_helmet_f,itm_mkk_infantry_armor_a,itm_mkk_infantry_armor_b,itm_mkk_heavy_boots_a,itm_mkk_gauntlets_sar_b],def_attrib|str_33|agi_35|level(25),wp_one_handed (300) | wp_two_handed (300) | wp_polearm (230) | wp_archery (75) | wp_crossbow (75) | wp_throwing (240),knows_common|knows_shield_3|knows_ironflesh_10|knows_power_strike_8|knows_power_throw_4|knows_athletics_9,swadian_face_middle_1, swadian_face_older_2],
+ ["solarian_skirmisher","Solarian Skirmisher","Solarian Skirmishers",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_6,[itm_jarid,itm_jarid,itm_arabian_sword_a,itm_spiked_club,itm_solarian_oval_shield_a,itm_mkk_helm_sar_a,itm_mkk_helm_light_sarranid,itm_mkk_boots_common_a,itm_mkk_boots_common_b,itm_mkk_boots_common_c,itm_mkk_robe_a,itm_mkk_robe_b,itm_mkk_robe_c],def_attrib|level(14),wp(80),knows_common|knows_riding_2|knows_power_throw_2|knows_ironflesh_1|knows_athletics_3,swadian_face_young_1, swadian_face_middle_2],
+ ["solarian_archer","Solarian Archer","Solarian Archers",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_6,[itm_arrows,itm_arrows,itm_nomad_bow,itm_arabian_sword_a,itm_mkk_scale_vest_a,itm_mkk_scale_vest_b,itm_mkk_scale_vest_c,itm_mkk_scale_vest_d,itm_mkk_scale_vest_e,itm_mkk_scale_vest_f,itm_mkk_helm_mail_a,itm_mkk_helm_mail_b,itm_mkk_helm_mail_c,itm_mkk_helm_mail_d,itm_mkk_helm_mail_e,itm_mkk_leather_boots_a,itm_mkk_gloves_a],
+   def_attrib|level(19),wp_one_handed (90) | wp_two_handed (90) | wp_polearm (90) | wp_archery (150) | wp_crossbow (90) | wp_throwing (180),knows_common|knows_power_draw_3|knows_ironflesh_2|knows_power_throw_3|knows_athletics_4,swadian_face_young_1, swadian_face_old_2],
+ ["solarian_master_archer","Solarian Master Archer","Solarian Master Archers",tf_guarantee_ranged|tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,[itm_barbed_arrows,itm_barbed_arrows,itm_arabian_sword_b,itm_mace_3,itm_strong_bow,itm_nomad_bow,itm_mkk_helm_mail_a,itm_mkk_helm_mail_b,itm_mkk_helm_mail_c,itm_mkk_helm_mail_d,itm_mkk_helm_mail_e,itm_mkk_leather_boots_a,itm_mkk_gloves_a,itm_mkk_archer_armor_a,itm_mkk_archer_armor_b,itm_mkk_archer_armor_c,itm_mkk_archer_armor_d],str_14 | agi_5 | int_4 | cha_4|level(24),wp_one_handed (100) | wp_two_handed (100) | wp_polearm (100) | wp_archery (220) | wp_crossbow (100) | wp_throwing (130),knows_common|knows_power_draw_4|knows_power_throw_4|knows_ironflesh_3|knows_athletics_5,swadian_face_middle_1, swadian_face_older_2],
+ ["solarian_horseman","Solarian Horseman","Solarian Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_6,[itm_arabian_sword_b,itm_scimitar_b,itm_mace_4,itm_solarian_lance_a, itm_solarian_lance_b,itm_solarian_oval_shield_c,itm_saracin_hard_horses_a_v1,itm_saracin_hard_horses_b_v1,itm_saracin_hard_horses_c_v1,itm_saracin_hard_horses_d_v1,itm_mkk_scale_vest_alt_a,itm_mkk_scale_vest_alt_b,itm_mkk_gulam_helm_a,itm_mkk_gulam_helm_b,itm_mkk_gulam_helm_c,itm_mkk_gulam_helm_d,itm_mkk_gulam_helm_f,itm_mkk_gauntlets_sar_a,itm_mkk_gauntlets_mail_a,itm_mkk_leather_boots_a,itm_mkk_leather_boots_b],def_attrib|str_17|agi_21|level(20),wp_melee(200),knows_common|knows_riding_4|knows_ironflesh_2|knows_shield_2|knows_power_strike_3,swadian_face_young_1, swadian_face_old_2],
+ ["solarian_knight","Solarian Knight","Solarian Knights",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_6,[itm_solarian_lance_c, itm_solarian_lance_d,itm_scimitar_b,itm_sarranid_two_handed_mace_1,itm_sarranid_cavalry_sword,itm_solarian_oval_shield_d,itm_solarian_oval_shield_c,itm_saracin_hard_horses_a,itm_saracin_hard_horses_b,itm_saracin_hard_horses_c,itm_saracin_hard_horses_d,itm_mkk_heavy_boots_a,itm_mkk_heavy_boots_a,itm_mkk_mamluke_a,itm_mkk_mamluke_b,itm_mkk_mamluke_c,itm_mkk_gauntlets_sar_b,itm_mkk_gauntlets_sar_a,itm_mkk_heavy_helmet_a,itm_mkk_heavy_helmet_b,itm_mkk_heavy_helmet_c],def_attrib|str_23|agi_30|level(27),wp_one_handed (240) | wp_two_handed (300) | wp_polearm (300) | wp_archery (75) | wp_crossbow (75) | wp_throwing (110),knows_common|knows_riding_6|knows_shield_5|knows_ironflesh_8|knows_power_strike_9,swadian_face_middle_1, swadian_face_older_2],
 
    ["sarranid_messenger","Sarranid Messenger","Sarranid Messengers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_kingdom_6,
    [itm_lance,itm_arabian_sword_b,itm_scimitar_b,itm_mace_4,itm_tab_shield_small_round_b,
@@ -708,10 +708,10 @@ troops = [
     itm_sarranid_mail_shirt,itm_mail_chausses,itm_desert_turban,itm_arabian_horse_a],
    def_attrib|level(20),wp_melee(100),knows_common|knows_riding_4|knows_ironflesh_2|knows_shield_2|knows_power_strike_3,swadian_face_young_1, swadian_face_old_2],
   ["sarranid_prison_guard","Prison Guard","Prison Guards",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,
-   [itm_arabian_sword_b,itm_scimitar_b,itm_war_spear,itm_mace_4,itm_sarranid_boots_c,itm_arabian_armor_b,itm_sarranid_mail_coif,itm_sarranid_helmet1,itm_sarranid_horseman_helmet,itm_mail_boots,itm_iron_greaves,itm_mail_mittens,itm_leather_gloves,itm_tab_shield_kite_d],
+   [itm_arabian_sword_b,itm_scimitar_b,itm_war_spear,itm_mace_4,itm_sarranid_boots_c,itm_arabian_armor_b,itm_sarranid_mail_coif,itm_sarranid_helmet1,itm_solarian_horseman_helmet,itm_mail_boots,itm_iron_greaves,itm_mail_mittens,itm_leather_gloves,itm_tab_shield_kite_d],
    def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|knows_ironflesh_3|knows_power_strike_3,swadian_face_middle_1, swadian_face_older_2],
   ["sarranid_castle_guard","Castle Guard","Castle Guards",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,
-   [itm_arabian_sword_b,itm_scimitar_b,itm_war_spear,itm_mace_4,itm_sarranid_boots_c, itm_sarranid_boots_d,itm_arabian_armor_b,itm_sarranid_mail_coif,itm_sarranid_helmet1,itm_sarranid_horseman_helmet,itm_mail_boots,itm_iron_greaves,itm_mail_mittens,itm_leather_gloves,itm_tab_shield_kite_d],
+   [itm_arabian_sword_b,itm_scimitar_b,itm_war_spear,itm_mace_4,itm_sarranid_boots_c, itm_sarranid_boots_d,itm_arabian_armor_b,itm_sarranid_mail_coif,itm_sarranid_helmet1,itm_solarian_horseman_helmet,itm_mail_boots,itm_iron_greaves,itm_mail_mittens,itm_leather_gloves,itm_tab_shield_kite_d],
    def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|knows_ironflesh_3|knows_power_strike_3,swadian_face_middle_1, swadian_face_older_2],
 
   #        Looter
@@ -724,10 +724,10 @@ troops = [
   ["looter","Looter","Looters",tf_guarantee_armor|tf_guarantee_boots,0,0,fac_outlaws,
    [itm_m_hose_a, itm_m_hose_b, itm_m_hose_c, itm_m_hose_d, itm_m_hose_e, itm_mt_leather_boots_e, itm_leather_boots, itm_m_padded_dark_a, itm_m_padded_dark_b, itm_m_padded_dark_c, itm_m_aketon_a, itm_m_aketon_old_a, itm_m_aketon_old_b, itm_m_aketon_black_a, itm_m_aketon_black_b, itm_m_plain_round_shield_a, itm_m_plain_round_shield_b, itm_m_plain_round_shield_c, itm_m_plain_round_shield_d, itm_m_plain_round_shield_e, itm_grosse_messer, itm_falchion, itm_italian_falchion, itm_boar_spear, itm_head_wrappings, itm_leather_cap, itm_black_hood, itm_black_hood, itm_m_arming_cap_c, itm_m_arming_cap_a, itm_m_coif_cloth_a, itm_m_coif_cloth_b, itm_m_swadia_common_helmet_b, itm_m_padded_coif_a, itm_m_padded_coif_b, itm_leather_gloves],
    def_attrib|level(4),wp(20),knows_common,bandit_face1, bandit_face2],
-  ["bandit","Bandit","Bandits",tf_guarantee_armor|tf_guarantee_boots,0,0,fac_outlaws, [itm_mt_leather_boots_e, itm_m_leather_boots_a, itm_leather_boots, itm_m_aketon_black_b, itm_m_aketon_old_c, itm_m_hauberk_black_a, itm_m_hauberk_old_a, itm_m_plain_round_shield_a, itm_m_plain_round_shield_b, itm_m_plain_round_shield_c, itm_m_plain_round_shield_d, itm_m_plain_round_shield_e,itm_grosse_messer_b, itm_italian_falchion, itm_partisan, itm_guisarme, itm_german_hunting_spear, itm_hunting_crossbow, itm_bolts, itm_m_swadia_common_helmet_b, itm_m_swadia_common_helmet_a, itm_m_swadia_common_helmet_c, itm_m_coif_alternate_a, itm_leather_gloves, itm_m_gloves_a], def_attrib|level(10),wp(60),knows_common|knows_power_draw_1,bandit_face1, bandit_face2],
+  ["bandit","Bandit","Bandits",tf_guarantee_armor|tf_guarantee_boots,0,0,fac_outlaws, [itm_mt_leather_boots_e, itm_m_leather_boots_a, itm_leather_boots, itm_m_padded_dark_a_mail, itm_m_aketon_black_b, itm_m_aketon_old_c, itm_m_hauberk_black_a, itm_m_hauberk_old_a, itm_m_plain_round_shield_a, itm_m_plain_round_shield_b, itm_m_plain_round_shield_c, itm_m_plain_round_shield_d, itm_m_plain_round_shield_e,itm_grosse_messer_b, itm_italian_falchion, itm_partisan, itm_guisarme, itm_german_hunting_spear, itm_hunting_crossbow, itm_bolts, itm_m_swadia_common_helmet_b, itm_m_swadia_common_helmet_a, itm_m_swadia_common_helmet_c, itm_m_coif_alternate_a, itm_leather_gloves, itm_m_gloves_a], def_attrib|level(10),wp(60),knows_common|knows_power_draw_1,bandit_face1, bandit_face2],
 
   ["pillager","Pillager","Pillagers",tf_guarantee_all,0,0,fac_outlaws, [itm_m_leather_boots_a, itm_m_hauberk_a, itm_m_hauberk_b, itm_m_hauberk_c, itm_m_gloves_a, itm_tab_shield_heater_b, itm_grosse_messer, itm_italian_falchion, itm_italian_sword, itm_heavy_crossbow, itm_steel_bolts, itm_padded_coif, itm_mail_coif, itm_kettle_hat], def_attrib|level(12),wp(70),knows_common|knows_power_draw_1|knows_riding_2,bandit_face1, bandit_face2],
-  
+
   ["marauder","Marauder","Marauders",tf_guarantee_all,0,0,fac_outlaws, [itm_m_greaves_b, itm_m_brigandine_b, itm_german_poleaxe, itm_simple_poleaxe, itm_elegant_poleaxe, itm_english_bill, itm_swiss_halberd, itm_ms_great_helmet_b], def_attrib|level(16),wp(90),knows_common|knows_power_draw_1|knows_riding_2,bandit_face1, bandit_face2],
 
   ["outlaw","Outlaw","Outlaws",tf_guarantee_all,0,0,fac_outlaws, [itm_m_hose_a, itm_m_hose_b, itm_m_hose_c, itm_m_hose_d, itm_m_hose_e, itm_m_aketon_a, itm_m_aketon_b, itm_m_hauberk_a, itm_tab_shield_small_round_a, itm_tab_shield_small_round_b, itm_grosse_messer, itm_espada_eslavona_a,itm_espada_eslavona_b, itm_milanese_sword, itm_spear, itm_hunting_crossbow, itm_bolts, itm_saddle_horse], def_attrib|level(10),wp(60),knows_common|knows_riding_2,bandit_face1, bandit_face2],
@@ -2279,15 +2279,15 @@ troops = [
    [itm_sword_medieval_a,itm_tab_shield_heater_cav_a,itm_light_lance,itm_skullcap,itm_aketon_green,
     itm_ragged_outfit,itm_nomad_boots,itm_ankle_boots,itm_saddle_horse],
    def_attrib|level(19),wp(100),knows_riding_5|knows_ironflesh_2|knows_power_strike_2|knows_shield_1|knows_horse_archery_2|knows_power_throw_3,rhodok_face_young_1, rhodok_face_older_2],
-  ["sarranid_infantry_multiplayer_ai","Sarranid Infantry","Sarranid Infantries",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,
-   [itm_sarranid_mail_shirt,itm_sarranid_horseman_helmet,itm_sarranid_boots_b,itm_sarranid_boots_c,itm_splinted_leather_greaves,itm_arabian_sword_b,itm_mace_3,itm_spear,itm_tab_shield_kite_c],
+  ["solarian_infantry_multiplayer_ai","Sarranid Infantry","Sarranid Infantries",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_6,
+   [itm_sarranid_mail_shirt,itm_solarian_horseman_helmet,itm_sarranid_boots_b,itm_sarranid_boots_c,itm_splinted_leather_greaves,itm_arabian_sword_b,itm_mace_3,itm_spear,itm_tab_shield_kite_c],
    def_attrib|level(20),wp_melee(105),knows_common|knows_riding_3|knows_ironflesh_2|knows_shield_3,swadian_face_middle_1, swadian_face_old_2],
-  ["sarranid_archer_multiplayer_ai","Sarranid Archer","Sarranid Archers",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_6,
+  ["solarian_archer_multiplayer_ai","Sarranid Archer","Sarranid Archers",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_kingdom_6,
    [itm_arrows,itm_nomad_bow,itm_arabian_sword_a,itm_archers_vest,itm_sarranid_boots_b,itm_sarranid_helmet1,itm_turban,itm_desert_turban],
    def_attrib|level(19),wp_melee(90)|wp_archery(100),knows_common|knows_riding_2|knows_ironflesh_1,swadian_face_young_1, swadian_face_old_2],
-  ["sarranid_horseman_multiplayer_ai","Sarranid Horseman","Sarranid Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_6,
+  ["solarian_horseman_multiplayer_ai","Sarranid Horseman","Sarranid Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_6,
    [itm_lance,itm_arabian_sword_b,itm_scimitar_b,itm_mace_4,itm_tab_shield_small_round_b,
-    itm_sarranid_mail_shirt,itm_sarranid_boots_b,itm_sarranid_boots_c,itm_sarranid_horseman_helmet,itm_courser,itm_hunter],
+    itm_sarranid_mail_shirt,itm_sarranid_boots_b,itm_sarranid_boots_c,itm_solarian_horseman_helmet,itm_courser,itm_hunter],
    def_attrib|level(20),wp_melee(100),knows_common|knows_riding_4|knows_ironflesh_2|knows_shield_2|knows_power_strike_3,swadian_face_young_1, swadian_face_old_2],
 
    
@@ -2355,15 +2355,15 @@ troops = [
    [itm_sword_medieval_a,itm_tab_shield_heater_cav_a, itm_light_lance, 
     itm_green_tunic,itm_ankle_boots,itm_saddle_horse],
    str_15 | agi_15 |def_attrib_multiplayer|level(20),wp(100),knows_common_multiplayer|knows_riding_4|knows_ironflesh_3|knows_shield_3|knows_power_strike_3|knows_power_throw_1|knows_athletics_3,rhodok_face_middle_1, rhodok_face_older_2],
-  ["sarranid_archer_multiplayer","Sarranid Archer","Sarranid Archers",tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_archer_multiplayer","Sarranid Archer","Sarranid Archers",tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_arrows,itm_arabian_sword_a,itm_nomad_bow,
     itm_sarranid_cloth_robe, itm_sarranid_boots_b],
    str_15 | agi_16 |def_attrib_multiplayer|str_12|level(19),wpe(80,150,60,80),knows_common_multiplayer|knows_ironflesh_4|knows_power_draw_5|knows_athletics_3|knows_shield_2|knows_riding_1|knows_weapon_master_1,vaegir_face_young_1, vaegir_face_older_2],
-  ["sarranid_footman_multiplayer","Sarranid Footman","Sarranid footman",tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_footman_multiplayer","Sarranid Footman","Sarranid footman",tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_bamboo_spear, itm_tab_shield_kite_a, itm_arabian_sword_a,
     itm_sarranid_cloth_robe, itm_sarranid_boots_b],
    str_14 | agi_15 |def_attrib_multiplayer|str_12|level(19),wpex(110,100,130,30,50,120),knows_common_multiplayer|knows_ironflesh_4|knows_shield_2|knows_power_throw_3|knows_power_strike_4|knows_athletics_6|knows_riding_1,vaegir_face_young_1, vaegir_face_older_2],
-  ["sarranid_mamluke_multiplayer","Sarranid Mamluke","Sarranid Mamluke",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_knight_multiplayer","Sarranid Mamluke","Sarranid Mamluke",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_arabian_sword_a,itm_lance,itm_tab_shield_small_round_a,
     itm_sarranid_cloth_robe, itm_sarranid_boots_b,itm_saddle_horse],
    str_15 | agi_14 |def_attrib_multiplayer|level(19),wpe(110,90,60,110),knows_common_multiplayer|knows_riding_5|knows_ironflesh_3|knows_power_strike_2|knows_shield_3|knows_power_throw_2|knows_weapon_master_1,vaegir_face_young_1, vaegir_face_older_2],
@@ -2495,13 +2495,13 @@ troops = [
   ["rhodok_horseman_multiplayer_coop_tier_1","Rhodok Horseman","Rhodok Horsemen",tf_guarantee_all,0,0,fac_kingdom_5,
    [itm_tab_shield_heater_cav_a, itm_light_lance, itm_green_tunic,itm_ankle_boots,itm_padded_coif,itm_saddle_horse],
     level(4)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["sarranid_archer_multiplayer_coop_tier_1","Sarranid Archer","Sarranid Archers",tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_archer_multiplayer_coop_tier_1","Sarranid Archer","Sarranid Archers",tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_arrows,itm_sarranid_mace_1,itm_short_bow,itm_sarranid_cloth_robe, itm_sarranid_boots_b],
     level(4)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["sarranid_footman_multiplayer_coop_tier_1","Sarranid Footman","Sarranid footman",tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_footman_multiplayer_coop_tier_1","Sarranid Footman","Sarranid footman",tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_tab_shield_kite_a, itm_sarranid_axe_a,itm_sarranid_cloth_robe, itm_sarranid_boots_b],
     level(4)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["sarranid_mamluke_multiplayer_coop_tier_1","Sarranid Mamluke","Sarranid Mamluke",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_knight_multiplayer_coop_tier_1","Sarranid Mamluke","Sarranid Mamluke",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_lance,itm_tab_shield_small_round_a,itm_sarranid_cloth_robe, itm_sarranid_boots_b,itm_arabian_horse_a],
     level(4)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
 
@@ -2550,13 +2550,13 @@ troops = [
   ["rhodok_horseman_multiplayer_coop_tier_2","Rhodok Horseman","Rhodok Horsemen",tf_guarantee_all,0,0,fac_kingdom_5,
    [itm_tab_shield_heater_cav_b, itm_heavy_lance,itm_javelin,itm_padded_cloth,itm_leather_boots,itm_leather_gloves,itm_footman_helmet,itm_saddle_horse],
     level(5)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["sarranid_archer_multiplayer_coop_tier_2","Sarranid Archer","Sarranid Archers",tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_archer_multiplayer_coop_tier_2","Sarranid Archer","Sarranid Archers",tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_barbed_arrows,itm_sarranid_mace_1,itm_nomad_bow,itm_archers_vest,itm_desert_turban,itm_leather_gloves,itm_sarranid_boots_b],
     level(5)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["sarranid_footman_multiplayer_coop_tier_2","Sarranid Footman","Sarranid footman",tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_footman_multiplayer_coop_tier_2","Sarranid Footman","Sarranid footman",tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_tab_shield_kite_b, itm_sarranid_axe_b,itm_javelin,itm_archers_vest,itm_sarranid_warrior_cap,itm_leather_gloves,itm_sarranid_boots_b],
     level(5)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["sarranid_mamluke_multiplayer_coop_tier_2","Sarranid Mamluke","Sarranid Mamluke",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_knight_multiplayer_coop_tier_2","Sarranid Mamluke","Sarranid Mamluke",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_heavy_lance,itm_tab_shield_small_round_b,itm_javelin,itm_archers_vest, itm_sarranid_warrior_cap,itm_leather_gloves,itm_sarranid_boots_b,itm_arabian_horse_a],
     level(5)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
 
@@ -2605,14 +2605,14 @@ troops = [
   ["rhodok_horseman_multiplayer_coop_tier_3","Rhodok Horseman","Rhodok Horsemen",tf_guarantee_all,0,0,fac_kingdom_5,
    [itm_javelin,itm_tab_shield_heater_cav_b, itm_heavy_lance, itm_ragged_outfit,itm_splinted_greaves,itm_bascinet_2,itm_mail_mittens,itm_saddle_horse],
     level(6)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["sarranid_archer_multiplayer_coop_tier_3","Sarranid Archer","Sarranid Archers",tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_archer_multiplayer_coop_tier_3","Sarranid Archer","Sarranid Archers",tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_khergit_arrows,itm_sarranid_mace_1,itm_nomad_bow,itm_archers_vest,itm_sarranid_mail_coif,itm_leather_gloves,itm_sarranid_boots_c],
     level(6)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["sarranid_footman_multiplayer_coop_tier_3","Sarranid Footman","Sarranid footman",tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_footman_multiplayer_coop_tier_3","Sarranid Footman","Sarranid footman",tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_jarid, itm_tab_shield_kite_c, itm_sarranid_axe_b,itm_sarranid_mail_shirt,itm_sarranid_mail_coif,itm_mail_mittens,itm_sarranid_boots_c],
     level(6)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["sarranid_mamluke_multiplayer_coop_tier_3","Sarranid Mamluke","Sarranid Mamluke",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_6,
-   [itm_heavy_lance,itm_tab_shield_small_round_b,itm_jarid,itm_sarranid_cavalry_robe,itm_sarranid_horseman_helmet,itm_mail_mittens,itm_sarranid_boots_c,itm_arabian_horse_a],
+  ["solarian_knight_multiplayer_coop_tier_3","Sarranid Mamluke","Sarranid Mamluke",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_6,
+   [itm_heavy_lance,itm_tab_shield_small_round_b,itm_jarid,itm_sarranid_cavalry_robe,itm_solarian_horseman_helmet,itm_mail_mittens,itm_sarranid_boots_c,itm_arabian_horse_a],
     level(6)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
 
   ["silver_rose_trained_crossbowman_multiplayer_coop_tier_4","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
@@ -2660,13 +2660,13 @@ troops = [
   ["rhodok_horseman_multiplayer_coop_tier_4","Rhodok Horseman","Rhodok Horsemen",tf_guarantee_all,0,0,fac_kingdom_5,
    [itm_javelin,itm_tab_shield_heater_cav_b, itm_great_lance, itm_surcoat_over_mail,itm_iron_greaves,itm_gauntlets,itm_full_helm,itm_saddle_horse],
     level(7)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["sarranid_archer_multiplayer_coop_tier_4","Sarranid Archer","Sarranid Archers",tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_archer_multiplayer_coop_tier_4","Sarranid Archer","Sarranid Archers",tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_khergit_arrows,itm_sarranid_two_handed_mace_1,itm_strong_bow,itm_sarranid_mail_shirt,itm_sarranid_mail_coif,itm_leather_gloves,itm_sarranid_boots_d],
     level(7)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["sarranid_footman_multiplayer_coop_tier_4","Sarranid Footman","Sarranid footman",tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_footman_multiplayer_coop_tier_4","Sarranid Footman","Sarranid footman",tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_bamboo_spear, itm_tab_shield_kite_c, itm_arabian_sword_a,itm_sarranid_elite_armor,itm_sarranid_veiled_helmet,itm_scale_gauntlets, itm_sarranid_boots_d],
     level(7)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
-  ["sarranid_mamluke_multiplayer_coop_tier_4","Sarranid Mamluke","Sarranid Mamluke",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_6,
+  ["solarian_knight_multiplayer_coop_tier_4","Sarranid Mamluke","Sarranid Mamluke",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_6,
    [itm_arabian_sword_a,itm_lance,itm_tab_shield_small_round_c,itm_mamluke_mail,itm_sarranid_veiled_helmet,itm_scale_gauntlets, itm_sarranid_boots_d,itm_arabian_horse_a],
     level(7)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
 
@@ -3103,16 +3103,16 @@ upgrade(troops,"alpine_trained_crossbowman","alpine_veteran_crossbowman") #new 1
 upgrade(troops,"alpine_veteran_crossbowman","alpine_sharpshooter")
 
 
-upgrade(troops,"sarranid_recruit","sarranid_footman")
+upgrade(troops,"solarian_recruit","solarian_footman")
 
-upgrade2(troops,"sarranid_footman","sarranid_veteran_footman","sarranid_skirmisher")
-upgrade2(troops,"sarranid_veteran_footman","sarranid_horseman","sarranid_infantry")
-upgrade(troops,"sarranid_infantry","sarranid_guard")
-upgrade(troops,"sarranid_skirmisher","sarranid_archer")
+upgrade2(troops,"solarian_footman","solarian_veteran_footman","solarian_skirmisher")
+upgrade2(troops,"solarian_veteran_footman","solarian_horseman","solarian_infantry")
+upgrade(troops,"solarian_infantry","solarian_guard")
+upgrade(troops,"solarian_skirmisher","solarian_archer")
 
-upgrade(troops,"sarranid_archer","sarranid_master_archer")
+upgrade(troops,"solarian_archer","solarian_master_archer")
 
-upgrade(troops,"sarranid_horseman","sarranid_mamluke")
+upgrade(troops,"solarian_horseman","solarian_knight")
 
 
 #        Looter
@@ -3137,7 +3137,7 @@ upgrade(troops,"forest_bandit","silver_rose_levy")
 upgrade(troops,"steppe_bandit","celestial_recruit")
 upgrade(troops,"taiga_bandit","chornovalley_recruit")
 upgrade(troops,"sea_raider","iron_crown_recruit")
-upgrade(troops,"desert_bandit","sarranid_recruit")
+upgrade(troops,"desert_bandit","solarian_recruit")
 #new tree connections ended
 
 upgrade2(troops,"bandit","brigand","mercenary_swordsman")

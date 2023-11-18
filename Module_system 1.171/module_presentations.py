@@ -436,7 +436,7 @@ presentations = [
         (assign, ":cur_troop", "trp_alpine_man_at_arms"),
       (else_try),
         (eq, "$g_quick_battle_team_2_faction", "fac_kingdom_6"),
-        (assign, ":cur_troop", "trp_sarranid_mamluke"),
+        (assign, ":cur_troop", "trp_solarian_knight"),
       (else_try),
         (assign, ":cur_troop", "trp_taiga_bandit"),
       (try_end),

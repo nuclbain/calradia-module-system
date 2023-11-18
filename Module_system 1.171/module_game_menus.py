@@ -1846,7 +1846,7 @@ game_menus = [
          (eq, ":faction_no", "fac_kingdom_6"), #a fairly complete set of gear
          (troop_add_item, "trp_player","itm_sarranid_warrior_cap",imod_hardened),
          (store_random_in_range, ":boots_item", "itm_sarranid_boots_a", "itm_sarranid_boots_d"),
-         (store_random_in_range, ":helmet_item", "itm_sarranid_felt_hat", "itm_sarranid_horseman_helmet"),
+         (store_random_in_range, ":helmet_item", "itm_sarranid_felt_hat", "itm_solarian_horseman_helmet"),
          # (assign, ":weapon_item","itm_sarranid_two_handed_mace_1"),
        (try_end),
        (try_begin),

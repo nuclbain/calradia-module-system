@@ -468,7 +468,7 @@ items = [
 ["peasant_dress", "Peasant Dress", [("peasant_dress_b_new",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 6 , weight(1)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(2)|difficulty(0) ,imodbits_cloth ], 
 ["woolen_dress", "Woolen Dress", [("woolen_dress",0)], itp_merchandise| itp_type_body_armor|itp_civilian  |itp_covers_legs ,0,
  10 , weight(1.75)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(2)|difficulty(0) ,imodbits_cloth ],
-["shirt", "Shirt", [("shirt",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0,
+["shirt", "Shirt", [("Shirt_B",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0,
  3 , weight(1)|abundance(100)|head_armor(0)|body_armor(5)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
  #NEW: was "linen_tunic"
 ["linen_tunic", "Linen Tunic", [("shirt_a",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
@@ -503,18 +503,18 @@ items = [
  146 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(7)|difficulty(0) ,imodbits_cloth ],
 ["steppe_armor", "Steppe Armor", [("lamellar_leather",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  195 , weight(5)|abundance(100)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
-["gambeson", "Light Blue Gambeson", [("Gambeson_One_Tone_A",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
- 260 , weight(5)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(5)|difficulty(0) ,imodbits_cloth ],
+
 ["blue_gambeson", "Blue & Red Gambeson", [("Gambeson_Two_Tones_A",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
  270 , weight(5)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(5)|difficulty(0) ,imodbits_cloth ],
-#NEW: was red_gambeson
 ["red_gambeson", "Red & Yellow Gambeson", [("Gambeson_Two_Tones_B",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
  275 , weight(5)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(5)|difficulty(0) ,imodbits_cloth ],
+["gambeson", "Light Blue Gambeson", [("Gambeson_One_Tone_A",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
+ 260 , weight(5)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(5)|difficulty(0) ,imodbits_cloth ],
 
-["m_padded_dark_a", "Black Padded Vest", [("padded_black",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
-["m_padded_dark_b", "Gray Padded Vest", [("padded_gray",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
-["m_padded_dark_c", "Light Gray Padded Vest", [("padded_light_gray",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
-["m_padded_dark_a_mail", "Black Padded Vest with Mail", [("padded_black_mail",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 461 , weight(10)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_padded_dark_a", "Black Padded Vest", [("Gambeson_One_Tone_B",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_padded_dark_b", "Gray Padded Vest", [("Gambeson_One_Tone_C",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_padded_dark_c", "Light Gray Padded Vest", [("Gambeson_One_Tone_D",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 299 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
+["m_padded_dark_a_mail", "Black Padded Vest with Mail", [("Gambeson_Mail_A",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 461 , weight(10)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(7)|difficulty(0) ,imodbits_armor, [], [] ],
 
 #NEW: was aketon_a
 ["padded_cloth", "Aketon", [("Padded_Cloth_Cloacked_A",0),("Padded_Cloth_Cloacked_A.1",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
@@ -591,6 +591,7 @@ items = [
 
 ["m_chornovalley_heavy_lamellar_a", "Chornovalley Lamellar Armor", [("Chornovalley_Heavy_Lamellar_A",0), ("Chornovalley_Heavy_Lamellar_A.1",0), ("Chornovalley_Heavy_Lamellar_A.2",0), ("Chornovalley_Heavy_Lamellar_A.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1343 , weight(19)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(23)|difficulty(10) ,imodbits_armor, [], [fac_kingdom_2] ],
 ["m_chornovalley_heavy_lamellar_b", "Chornovalley Lamellar Armor", [("Chornovalley_Heavy_Lamellar_B",0), ("Chornovalley_Heavy_Lamellar_B.1",0), ("Chornovalley_Heavy_Lamellar_B.2",0), ("Chornovalley_Heavy_Lamellar_B.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1455 , weight(21)|abundance(100)|head_armor(0)|body_armor(57)|leg_armor(23)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_2] ],
+["m_chornovalley_heavy_lamellar_c", "Chornovalley Lamellar Armor", [("Chornovalley_Heavy_Lamellar_C",0), ("Chornovalley_Heavy_Lamellar_C.1",0), ("Chornovalley_Heavy_Lamellar_C.2",0), ("Chornovalley_Heavy_Lamellar_C.3",0), ("Chornovalley_Heavy_Lamellar_C.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1455 , weight(21)|abundance(100)|head_armor(0)|body_armor(57)|leg_armor(23)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_2] ],
 
 ["m_aketon_silver_rose_a", "Silver Rose Aketon", [("Silver_Rose_Aketon_Basic_A",0), ("Silver_Rose_Aketon_Basic_A.1",0), ("Silver_Rose_Aketon_Basic_A.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,251 , weight(12)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [] ], 
 ["m_aketon_silver_rose_b", "Silver Rose Aketon", [("Silver_Rose_Aketon_Basic_B",0), ("Silver_Rose_Aketon_Basic_B.1",0), ("Silver_Rose_Aketon_Basic_B.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,251 , weight(12)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [] ], 
@@ -637,9 +638,9 @@ items = [
 ["ragged_outfit", "Ragged Outfit", [("Padded_Cloth_Cloacked_B",0),("Padded_Cloth_Cloacked_B.1",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
  390 , weight(7)|abundance(100)|head_armor(0)|body_armor(23)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
  #NEW: was padded_leather
-["padded_leather", "Padded Leather", [("padded_leather_vest",0), ("padded_leather_vest.1",0), ("padded_leather_vest.2",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian,0, 454 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
-["m_leather_vest_a", "Leather Vest", [("new_leather_vest",0), ("new_leather_vest.1",0), ("new_leather_vest.2",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian,0, 454 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
-["heavy_leather_vest", "Heavy Leather Vest", [("heavy_leather_vest",0), ("heavy_leather_vest.1",0), ("heavy_leather_vest.2",0), ("heavy_leather_vest.3",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian,0, 454 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
+["padded_leather", "Padded Leather", [("Leather_Vest_A",0), ("Leather_Vest_A.1",0), ("Leather_Vest_A.2",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian,0, 454 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
+["m_leather_vest_a", "Leather Vest", [("Leather_Vest_B",0), ("Leather_Vest_B.1",0), ("Leather_Vest_B.2",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian,0, 454 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
+["heavy_leather_vest", "Heavy Leather Vest", [("Leather_Cuirass_A",0), ("Leather_Cuirass_A.1",0), ("Leather_Cuirass_A.2",0), ("Leather_Cuirass_A.3",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian,0, 454 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["tribal_warrior_outfit", "Tribal Warrior Outfit", [("Rough_Leather_Fur_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0,
  520 , weight(14)|abundance(100)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["nomad_robe", "Nomad Robe", [("khergit_vest_c",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs |itp_civilian,0,
@@ -751,7 +752,7 @@ items = [
 2900 , weight(24)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(16)|difficulty(8) ,imodbits_armor ],
 
 #Quest-specific - perhaps can be used for prisoners, 
-["burlap_tunic", "Burlap Tunic", [("shirt",0)], itp_type_body_armor  |itp_covers_legs ,0,
+["burlap_tunic", "Burlap Tunic", [("Shirt_B",0)], itp_type_body_armor  |itp_covers_legs ,0,
  5 , weight(1)|abundance(100)|head_armor(0)|body_armor(3)|leg_armor(1)|difficulty(0) ,imodbits_armor ],
 
 
@@ -940,7 +941,7 @@ items = [
 ["turban", "Turban", [("tuareg_open",0)], itp_merchandise| itp_type_head_armor   ,0, 28 , weight(1)|abundance(100)|head_armor(11)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_cloth ],
 ["desert_turban", "Desert Turban", [("tuareg",0)], itp_merchandise| itp_type_head_armor | itp_covers_beard ,0, 38 , weight(1.50)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_cloth ],
 ["sarranid_warrior_cap", "Sarranid Warrior Cap", [("tuareg_helmet",0)], itp_merchandise| itp_type_head_armor | itp_covers_beard  ,0, 90 , weight(2)|abundance(100)|head_armor(19)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
-["sarranid_horseman_helmet", "Horseman Helmet", [("sar_helmet2",0)], itp_merchandise| itp_type_head_armor   ,0, 180 , weight(2.75)|abundance(100)|head_armor(25)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
+["solarian_horseman_helmet", "Horseman Helmet", [("sar_helmet2",0)], itp_merchandise| itp_type_head_armor   ,0, 180 , weight(2.75)|abundance(100)|head_armor(25)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 ["sarranid_helmet1", "Sarranid Keffiyeh Helmet", [("sar_helmet1",0)], itp_merchandise| itp_type_head_armor   ,0, 290 , weight(2.50)|abundance(100)|head_armor(35)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 ["sarranid_mail_coif", "Sarranid Mail Coif", [("tuareg_helmet2",0)], itp_merchandise| itp_type_head_armor ,0, 430 , weight(3)|abundance(100)|head_armor(41)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 ["sarranid_veiled_helmet", "Sarranid Veiled Helmet", [("sar_helmet4",0)], itp_merchandise| itp_type_head_armor | itp_covers_beard  ,0, 810 , weight(3.50)|abundance(100)|head_armor(47)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
@@ -1083,15 +1084,11 @@ items = [
 290 , weight(1.5)|difficulty(0)|spd_rtng(100) | weapon_length(103)|swing_damage(32 , cut) | thrust_damage(0 ,  pierce),imodbits_sword_high ],
 ["m_scimitar_a", "Zulfiqar", [("luc_zulfiqar",0)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_scimitar|itcf_carry_sword_left_hip, 308 , weight(1.5)|difficulty(9)|spd_rtng(100) | weapon_length(99)|swing_damage(33 , cut) | thrust_damage(0 ,  pierce),imodbits_sword_high ],
 
-["arabian_sword_a",         "Sarranid Sword", [("arabian_sword_a",0),("scab_arabian_sword_a", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 
-108 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(97)|swing_damage(26 , cut) | thrust_damage(19 ,  pierce),imodbits_sword_high ],
-["arabian_sword_b",         "Sarranid Arming Sword", [("arabian_sword_b",0),("scab_arabian_sword_b", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 
-218 , weight(1.7)|difficulty(0)|spd_rtng(99) | weapon_length(97)|swing_damage(28 , cut) | thrust_damage(19 ,  pierce),imodbits_sword_high ],
-["sarranid_cavalry_sword",         "Sarranid Cavalry Sword", [("arabian_sword_c",0),("scab_arabian_sword_c", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 
-310 , weight(1.5)|difficulty(0)|spd_rtng(98) | weapon_length(105)|swing_damage(28 , cut) | thrust_damage(19 ,  pierce),imodbits_sword_high ],
-["arabian_sword_d",         "Sarranid Guard Sword", [("arabian_sword_d",0),("scab_arabian_sword_d", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 
-420 , weight(1.7)|difficulty(0)|spd_rtng(99) | weapon_length(97)|swing_damage(30 , cut) | thrust_damage(20 ,  pierce),imodbits_sword_high ],
-
+["arabian_sword_a",         "Solarian Sword", [("saracin_sword_a",0),("scab_saracin_sword_a", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 108 , weight(1.5)|difficulty(0)|spd_rtng(99) | weapon_length(97)|swing_damage(26 , cut) | thrust_damage(19 ,  pierce),imodbits_sword_high ],
+["arabian_sword_b",         "Solarian Arming Sword", [("saracin_sword_b",0),("scab_saracin_sword_b", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 218 , weight(1.7)|difficulty(0)|spd_rtng(99) | weapon_length(97)|swing_damage(28 , cut) | thrust_damage(19 ,  pierce),imodbits_sword_high ],
+["sarranid_cavalry_sword",         "Solarian Cavalry Sword", [("saracin_sword_d",0),("scab_saracin_sword_d", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 310 , weight(1.5)|difficulty(0)|spd_rtng(98) | weapon_length(103)|swing_damage(28 , cut) | thrust_damage(19 ,  pierce),imodbits_sword_high ],
+["arabian_sword_d",         "Solarian Guard Sword", [("saracin_sword_c",0),("scab_saracin_sword_c", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,  420 , weight(1.7)|difficulty(0)|spd_rtng(99) | weapon_length(103)|swing_damage(30 , cut) | thrust_damage(20 ,  pierce),imodbits_sword_high ],
+["arabian_sword_c", "Solarian Guard Sword", [("saracin_sword_e",0),("scab_saracin_sword_e", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_longsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 460 , weight(1.7)|difficulty(0)|spd_rtng(99) | weapon_length(103)|swing_damage(32 , cut) | thrust_damage(20 ,  pierce),imodbits_sword_high ],
 
 #["nomad_sabre",         "Nomad Sabre", [("shashqa",0),("scab_shashqa", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_scimitar|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 115 , weight(1.75)|difficulty(0)|spd_rtng(101) | weapon_length(100)|swing_damage(27 , cut) | thrust_damage(0 ,  pierce),imodbits_sword ],
 #["bastard_sword", "Bastard Sword", [("bastard_sword",0),("scab_bastardsw", ixmesh_carry)], itp_type_two_handed_wpn|itp_merchandise| itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 279 , weight(2.25)|difficulty(9)|spd_rtng(102) | weapon_length(120)|swing_damage(33 , cut) | thrust_damage(27 ,  pierce),imodbits_sword ],
@@ -1144,6 +1141,12 @@ items = [
  294 , weight(2.0)|difficulty(9)|spd_rtng(98) | weapon_length(101)|swing_damage(35 , cut) | thrust_damage(26 ,  pierce),imodbits_sword_high ],
 ["bastard_sword_b", "Heavy Bastard Sword", [("bastard_sword_b",0),("bastard_sword_b_scabbard", ixmesh_carry)], itp_type_two_handed_wpn|itp_merchandise| itp_primary, itc_bastardsword|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn,
  526 , weight(2.25)|difficulty(9)|spd_rtng(97) | weapon_length(105)|swing_damage(37 , cut) | thrust_damage(27 ,  pierce),imodbits_sword_high ],
+
+["axe_crusader_a","Knight War Axe", [("axe_crusader_a", 0)], itp_type_one_handed_wpn|itp_merchandise|itp_wooden_parry|itp_primary|itp_secondary|itp_bonus_against_shield, itcf_carry_axe_left_hip|itc_scimitar,550, weight(2)|abundance(100)|difficulty(9)|spd_rtng(95)|weapon_length(80)|thrust_damage(0, pierce)|swing_damage(36, cut), imodbits_none, [], [fac_kingdom_1]],
+["axe_crusader_b","Knight War Axe", [("axe_crusader_b", 0)], itp_type_one_handed_wpn|itp_merchandise|itp_wooden_parry|itp_primary|itp_secondary|itp_bonus_against_shield, itcf_carry_axe_left_hip|itc_scimitar,650, weight(2)|abundance(100)|difficulty(9)|spd_rtng(98)|weapon_length(73)|thrust_damage(0, pierce)|swing_damage(34, cut), imodbits_none, [], [fac_kingdom_1]],
+["axe_crusader_c","Knight War Axe", [("axe_crusader_c", 0)], itp_type_one_handed_wpn|itp_merchandise|itp_wooden_parry|itp_primary|itp_secondary|itp_bonus_against_shield, itcf_carry_axe_left_hip|itc_scimitar,750, weight(2)|abundance(100)|difficulty(9)|spd_rtng(90)|weapon_length(85)|thrust_damage(0, pierce)|swing_damage(38, cut), imodbits_none, [], [fac_kingdom_1]],
+["axe_crusader_d","Knight War Axe", [("axe_crusader_d", 0)], itp_type_one_handed_wpn|itp_merchandise|itp_wooden_parry|itp_primary|itp_secondary|itp_bonus_against_shield|itp_crush_through|itp_can_knock_down, itcf_carry_axe_left_hip|itc_scimitar,850, weight(4.75)|abundance(100)|difficulty(9)|spd_rtng(90)|weapon_length(90)|thrust_damage(0, pierce)|swing_damage(44, cut), imodbits_none, [], [fac_kingdom_1]],
+["axe_crusader_1","Knight War Axe", [("axe_crusader_1", 0)], itp_type_one_handed_wpn|itp_merchandise|itp_wooden_parry|itp_primary|itp_secondary|itp_bonus_against_shield|itp_crush_through|itp_can_knock_down, itcf_carry_axe_left_hip|itc_scimitar,1000, weight(4.25)|abundance(100)|difficulty(9)|spd_rtng(88)|weapon_length(88)|thrust_damage(0, pierce)|swing_damage(48, cut), imodbits_none, [], [fac_kingdom_1]],
 
 ["one_handed_war_axe_a", "One Handed Axe", [("one_handed_war_axe_a",0)], itp_type_one_handed_wpn|itp_merchandise| itp_primary|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,
  87 , weight(1.5)|difficulty(9)|spd_rtng(98) | weapon_length(71)|swing_damage(32 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
@@ -1388,6 +1391,13 @@ items = [
 ["crusader_spear_inf_b","Infantry Spear", [("crusader_spear_inf_b", 0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_wooden_parry, itc_staff|itcf_carry_spear,140, weight(2.5)|abundance(100)|spd_rtng(100)|weapon_length(160)|thrust_damage(27, pierce)|swing_damage(20, blunt), imodbits_none, []],
 ["crusader_spear_inf_c","Infantry Spear", [("crusader_spear_inf_c", 0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_wooden_parry, itc_staff|itcf_carry_spear,140, weight(2.5)|abundance(100)|spd_rtng(100)|weapon_length(175)|thrust_damage(27, pierce)|swing_damage(20, blunt), imodbits_none, []],
 
+["solarian_spear_a","Infantry Spear", [("saracin_spears_a_v_1", 0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_wooden_parry, itc_staff|itcf_carry_spear,140, weight(2.0)|abundance(100)|spd_rtng(110)|weapon_length(125)|thrust_damage(25, pierce)|swing_damage(20, blunt), imodbits_none, []],
+["solarian_spear_b","Infantry Spear", [("saracin_spears_a", 0)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_wooden_parry, itc_staff|itcf_carry_spear,197, weight(2.0)|abundance(100)|spd_rtng(110)|weapon_length(165)|thrust_damage(27, pierce)|swing_damage(20, blunt), imodbits_none, []],
+
+["solarian_lance_a", "Solarian Lance", [("mameluk_spears_a",0)], itp_couchable|itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear, 334 , weight(3.5)|difficulty(0)|spd_rtng(90) | weapon_length(185)|swing_damage(21 , blunt) | thrust_damage(27 ,  pierce),imodbits_polearm ],
+["solarian_lance_b", "Solarian Lance", [("mameluk_spears_b",0)], itp_couchable|itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear, 270 , weight(2.5)|difficulty(0)|spd_rtng(99) | weapon_length(185)|swing_damage(16 , blunt) | thrust_damage(26 ,  pierce),imodbits_polearm ],
+["solarian_lance_c", "Solarian Lance", [("mameluk_spears_c",0)], itp_couchable|itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear, 270 , weight(2.5)|difficulty(0)|spd_rtng(99) | weapon_length(180)|swing_damage(16 , blunt) | thrust_damage(26 ,  pierce),imodbits_polearm ],
+["solarian_lance_d", "Solarian Lance", [("mameluk_spears_c_v_1",0)], itp_couchable|itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_cutting_spear, 345 , weight(3.5)|difficulty(0)|spd_rtng(99) | weapon_length(200)|swing_damage(20 , blunt) | thrust_damage(28 ,  pierce),imodbits_polearm ],
 
 ["military_scythe",         "Military Scythe", [("luc_bohemian_war_scythe",0),("spear_c_2-5m",imodbits_bad)], itp_type_polearm|itp_offset_lance|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry, itc_staff|itcf_carry_spear,
  155 , weight(2.5)|difficulty(0)|spd_rtng(90) | weapon_length(155)|swing_damage(36 , cut) | thrust_damage(25 ,  pierce),imodbits_polearm ],
@@ -1573,10 +1583,10 @@ items = [
 ["tab_shield_small_round_a", "Plain Cavalry Shield", [("tableau_shield_small_round_3",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,  
 96 , weight(2)|hit_points(160)|body_armor(8)|spd_rtng(105)|shield_width(40),imodbits_shield,
  [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_small_round_shield_3", ":agent_no", ":troop_no")])]],
-["tab_shield_small_round_b", "Round Cavalry Shield", [("tableau_shield_small_round_1",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,  
+["tab_shield_small_round_b", "Round Cavalry Shield", [("tableau_shield_small_round_1",0)], itp_merchandise|itp_type_shield|itp_wooden_parry, itcf_carry_round_shield,
 195 , weight(2.5)|hit_points(200)|body_armor(14)|spd_rtng(103)|shield_width(40),imodbits_shield,
  [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_small_round_shield_1", ":agent_no", ":troop_no")])]],
-["tab_shield_small_round_c", "Elite Cavalry Shield", [("tableau_shield_small_round_2",0)], itp_merchandise|itp_type_shield, itcf_carry_round_shield,  
+["tab_shield_small_round_c", "Elite Cavalry Shield", [("tableau_shield_small_round_2",0)], itp_merchandise|itp_type_shield, itcf_carry_round_shield,
 370 , weight(3)|hit_points(250)|body_armor(22)|spd_rtng(100)|shield_width(40),imodbits_shield,
  [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_small_round_shield_2", ":agent_no", ":troop_no")])]],
 
@@ -1591,11 +1601,25 @@ items = [
 ["swadia_heater_shield_1","Swadia Heater Shield", [("shield_knight_tripoli_a", 0),("shield_knight_tripoli_c", imodbit_reinforced)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_kite_shield,500, weight(3)|abundance(100)|body_armor(17)|hit_points(300)|spd_rtng(98)|shield_height(50)|shield_width(32), imodbit_reinforced, [], [fac_kingdom_1]],
 ["swadia_heater_shield_2","Swadia Heater Shield", [("shield_knight_tripoli_b", 0),("shield_knight_tripoli_d", imodbit_reinforced)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_kite_shield,500, weight(3)|abundance(100)|body_armor(17)|hit_points(300)|spd_rtng(98)|shield_height(50)|shield_width(32), imodbit_reinforced, [], [fac_kingdom_1]],
 
+["solarian_oval_shield_a","Solarian Oval Shield", [("saracin_shield_a", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,330, weight(2)|abundance(100)|body_armor(17)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced|imodbit_lordly, [], [fac_kingdom_6]],
+["solarian_oval_shield_b","Solarian Oval Shield", [("saracin_shield_b", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,330, weight(2)|abundance(100)|body_armor(17)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced|imodbit_lordly, [], [fac_kingdom_6]],
+["solarian_oval_shield_c","Solarian Oval Shield", [("saracin_shield_f", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,330, weight(2)|abundance(100)|body_armor(17)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced|imodbit_lordly, [], [fac_kingdom_6]],
+["solarian_oval_shield_d","Solarian Oval Shield", [("saracin_shield_m", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,330, weight(2)|abundance(100)|body_armor(17)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced|imodbit_lordly, [], [fac_kingdom_6]],
+["solarian_oval_shield_e","Solarian Oval Shield", [("saracin_shield_n", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,330, weight(2)|abundance(100)|body_armor(17)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced|imodbit_lordly, [], [fac_kingdom_6]],
+["solarian_oval_shield_f","Solarian Oval Shield", [("securiti_caravan_crusader_shield", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,330, weight(2)|abundance(100)|body_armor(17)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced|imodbit_lordly, [], [fac_kingdom_6]],
+
+["solarian_round_shield_a","Solarian Round Shield", [("saracin_shield_c", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,295, weight(2)|abundance(100)|body_armor(5)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced, [], [fac_kingdom_6]],
+["solarian_round_shield_b","Solarian Round Shield", [("saracin_shield_d", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,295, weight(2)|abundance(100)|body_armor(5)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced, [], [fac_kingdom_6]],
+["solarian_round_shield_c","Solarian Round Shield", [("saracin_shield_e", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,295, weight(2)|abundance(100)|body_armor(5)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced, [], [fac_kingdom_6]],
+["solarian_round_shield_d","Solarian Round Shield", [("saracin_shield_g", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,295, weight(2)|abundance(100)|body_armor(5)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced, [], [fac_kingdom_6]],
+["solarian_round_shield_e","Solarian Round Shield", [("saracin_shield_h", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,295, weight(2)|abundance(100)|body_armor(5)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced, [], [fac_kingdom_6]],
+["solarian_round_shield_f","Solarian Round Shield", [("saracin_shield_k", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,295, weight(2)|abundance(100)|body_armor(5)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced, [], [fac_kingdom_6]],
+["solarian_round_shield_g","Solarian Round Shield", [("saracin_shield_k", 0)], itp_type_shield|itp_merchandise|itp_wooden_parry, itcf_carry_round_shield,295, weight(2)|abundance(100)|body_armor(5)|hit_points(165)|spd_rtng(96)|shield_height(70)|shield_width(36), imodbit_reinforced, [], [fac_kingdom_6]],
  #RANGED
 
 
 #TODO:
-["darts",         "Darts", [("dart_b",0),("dart_b_bag", ixmesh_carry)], itp_type_thrown |itp_merchandise|itp_primary ,itcf_throw_javelin|itcf_carry_quiver_right_vertical|itcf_show_holster_when_drawn, 
+["darts",         "Darts", [("dart_b",0),("dart_b_bag", ixmesh_carry)], itp_type_thrown |itp_merchandise|itp_primary ,itcf_throw_javelin|itcf_carry_quiver_right_vertical|itcf_show_holster_when_drawn,
 155 , weight(4)|difficulty(1)|spd_rtng(95) | shoot_speed(28) | thrust_damage(22 ,  pierce)|max_ammo(7)|weapon_length(32),imodbits_thrown ],
 ["war_darts",         "War Darts", [("dart_a",0),("dart_a_bag", ixmesh_carry)], itp_type_thrown |itp_merchandise|itp_primary ,itcf_throw_javelin|itcf_carry_quiver_back|itcf_show_holster_when_drawn, 
 285 , weight(5)|difficulty(1)|spd_rtng(93) | shoot_speed(27) | thrust_damage(25 ,  pierce)|max_ammo(7)|weapon_length(45),imodbits_thrown ],
@@ -1844,26 +1868,6 @@ items = [
  [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_heraldic_short_tunic_new", ":agent_no", ":troop_no")])]],
 
 # CWA Stuff
-["axe_crusader_a","Knight War Axe", [("axe_crusader_a", 0)], itp_type_one_handed_wpn|itp_merchandise|itp_wooden_parry|itp_primary|itp_secondary|itp_bonus_against_shield, itcf_carry_axe_left_hip|itc_scimitar,550, weight(2)|abundance(100)|difficulty(9)|spd_rtng(95)|weapon_length(80)|thrust_damage(0, pierce)|swing_damage(36, cut), imodbits_none, [], [fac_kingdom_1]],
-["axe_crusader_b","Knight War Axe", [("axe_crusader_b", 0)], itp_type_one_handed_wpn|itp_merchandise|itp_wooden_parry|itp_primary|itp_secondary|itp_bonus_against_shield, itcf_carry_axe_left_hip|itc_scimitar,650, weight(2)|abundance(100)|difficulty(9)|spd_rtng(98)|weapon_length(73)|thrust_damage(0, pierce)|swing_damage(34, cut), imodbits_none, [], [fac_kingdom_1]],
-["axe_crusader_c","Knight War Axe", [("axe_crusader_c", 0)], itp_type_one_handed_wpn|itp_merchandise|itp_wooden_parry|itp_primary|itp_secondary|itp_bonus_against_shield, itcf_carry_axe_left_hip|itc_scimitar,750, weight(2)|abundance(100)|difficulty(9)|spd_rtng(90)|weapon_length(85)|thrust_damage(0, pierce)|swing_damage(38, cut), imodbits_none, [], [fac_kingdom_1]],
-["axe_crusader_d","Knight War Axe", [("axe_crusader_d", 0)], itp_type_one_handed_wpn|itp_merchandise|itp_wooden_parry|itp_primary|itp_secondary|itp_bonus_against_shield|itp_crush_through|itp_can_knock_down, itcf_carry_axe_left_hip|itc_scimitar,850, weight(4.75)|abundance(100)|difficulty(9)|spd_rtng(90)|weapon_length(90)|thrust_damage(0, pierce)|swing_damage(44, cut), imodbits_none, [], [fac_kingdom_1]],
-["axe_crusader_1","Knight War Axe", [("axe_crusader_1", 0)], itp_type_one_handed_wpn|itp_merchandise|itp_wooden_parry|itp_primary|itp_secondary|itp_bonus_against_shield|itp_crush_through|itp_can_knock_down, itcf_carry_axe_left_hip|itc_scimitar,1000, weight(4.25)|abundance(100)|difficulty(9)|spd_rtng(88)|weapon_length(88)|thrust_damage(0, pierce)|swing_damage(48, cut), imodbits_none, [], [fac_kingdom_1]],
-
-["mameluk_spears_a","Mameluk Spear", [("mameluk_spears_a", 0),("invalid_item", ixmesh_carry),("mameluk_spears_a", ixmesh_carry|imodbit_cheap)], itp_type_polearm|itp_merchandise|itp_wooden_parry|itp_primary|itp_offset_lance, itcf_carry_revolver_right|itc_poleaxe|itcf_thrust_onehanded_lance|itcf_thrust_onehanded_lance_horseback,140, weight(3.5)|abundance(100)|spd_rtng(90)|weapon_length(185)|thrust_damage(27, pierce)|swing_damage(20, blunt), imodbits_none, [], [fac_kingdom_6]],
-["mameluk_spears_b","Mameluk Spear", [("mameluk_spears_b", 0),("invalid_item", ixmesh_carry),("mameluk_spears_b", ixmesh_carry|imodbit_cheap)], itp_type_polearm|itp_merchandise|itp_wooden_parry|itp_primary|itp_offset_lance, itcf_carry_revolver_right|itc_poleaxe|itcf_thrust_onehanded_lance|itcf_thrust_onehanded_lance_horseback,140, weight(2.5)|abundance(100)|spd_rtng(90)|weapon_length(185)|thrust_damage(27, pierce)|swing_damage(20, blunt), imodbits_none, [], [fac_kingdom_6]],
-["mameluk_spears_c_v_1","Mameluk Spear", [("mameluk_spears_c_v_1", 0),("invalid_item", ixmesh_carry),("mameluk_spears_c_v_1", ixmesh_carry|imodbit_cheap)], itp_type_polearm|itp_merchandise|itp_wooden_parry|itp_primary|itp_offset_lance, itcf_carry_revolver_right|itc_cutting_spear,140, weight(4)|abundance(100)|spd_rtng(80)|weapon_length(200)|thrust_damage(32, pierce), imodbits_none, [], [fac_kingdom_6]],
-["mameluk_spears_c","Mameluk Spear", [("mameluk_spears_c", 0),("invalid_item", ixmesh_carry),("mameluk_spears_c", ixmesh_carry|imodbit_cheap)], itp_type_polearm|itp_merchandise|itp_wooden_parry|itp_primary|itp_offset_lance, itcf_carry_revolver_right|itc_cutting_spear,140, weight(3.5)|abundance(100)|spd_rtng(80)|weapon_length(185)|thrust_damage(32, pierce), imodbits_none, [], [fac_kingdom_6]],
-
-["saracin_spears_a","Footman Spear", [("saracin_spears_a", 0),("invalid_item", ixmesh_carry),("saracin_spears_a", ixmesh_carry|imodbit_cheap)], 0, itcf_carry_spear|itc_poleaxe|itcf_thrust_onehanded_lance|itcf_thrust_onehanded_lance_horseback,140, weight(3)|abundance(100)|spd_rtng(85)|weapon_length(165)|thrust_damage(27, pierce)|swing_damage(19, blunt), imodbits_none, [], [fac_kingdom_6]],
-["saracin_spears_a_v_1","Shortened Footman Spear", [("saracin_spears_a_v_1", 0)], itp_type_polearm|itp_merchandise|itp_wooden_parry|itp_primary|itp_offset_lance, itcf_carry_spear|itc_poleaxe|itcf_thrust_onehanded_lance|itcf_thrust_onehanded_lance_horseback,53, weight(2)|abundance(100)|spd_rtng(102)|weapon_length(125)|thrust_damage(25, pierce)|swing_damage(19, blunt), imodbits_none, [], [fac_kingdom_6]],
-
-["saracin_sword_a","Sarranid Sword", [("saracin_sword_a", 0),("scab_saracin_sword_a", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itcf_carry_sword_left_hip|itc_scimitar|itcf_show_holster_when_drawn,110, weight(1.25)|abundance(100)|spd_rtng(100)|weapon_length(100)|swing_damage(30, cut), imodbits_none, [], [fac_kingdom_6]],
-["saracin_sword_b","Sarranid Sword", [("saracin_sword_b", 0),("scab_saracin_sword_b", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itcf_carry_sword_left_hip|itc_scimitar|itcf_show_holster_when_drawn,110, weight(1.25)|abundance(100)|spd_rtng(100)|weapon_length(90)|swing_damage(30, cut), imodbits_none, [], [fac_kingdom_6]],
-["saracin_sword_d","Sarranid Sword", [("saracin_sword_d", 0),("scab_saracin_sword_d", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itcf_carry_sword_left_hip|itc_scimitar|itcf_show_holster_when_drawn,105, weight(1.25)|abundance(100)|spd_rtng(100)|weapon_length(103)|swing_damage(30, cut), imodbits_none, [], [fac_kingdom_6]],
-["saracin_sword_c","Sarranid Sword", [("saracin_sword_c", 0),("scab_saracin_sword_c", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itcf_carry_sword_left_hip|itc_scimitar|itcf_show_holster_when_drawn,110, weight(1.25)|abundance(100)|spd_rtng(100)|weapon_length(103)|swing_damage(30, cut), imodbits_none, [], [fac_kingdom_6]],
-["saracin_sword_e","Sarranid Sword", [("saracin_sword_e", 0),("scab_saracin_sword_e", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itcf_carry_sword_left_hip|itc_scimitar|itcf_show_holster_when_drawn,110, weight(1.25)|abundance(100)|spd_rtng(100)|weapon_length(103)|swing_damage(30, cut), imodbits_none, [], [fac_kingdom_6]],
-
 ["m_swadia_common_helmet_a", "Old Helmet", [("dethertir_helm_a",0),("dethertir_helm_a.1",0)], itp_type_head_armor|itp_merchandise   ,0, 864 , weight(1)|abundance(100)|head_armor(39)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 ["m_swadia_common_helmet_b", "Old Helmet", [("dethertir_helm_b",0),("dethertir_helm_b.1",0)], itp_type_head_armor|itp_merchandise   ,0, 599 , weight(1)|abundance(100)|head_armor(30)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 ["m_swadia_common_helmet_c", "Old Helmet", [("dethertir_helm_c",0),("dethertir_helm_c.1",0)], itp_type_head_armor|itp_merchandise   ,0, 599 , weight(1)|abundance(100)|head_armor(30)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
@@ -2170,7 +2174,7 @@ items = [
 ["mh_pike_b", "Horde Hafted Blade", [("mongol_pike_b",0), ("mongol_pike_b.1",0)], itp_type_polearm|itp_merchandise| itp_primary|itp_two_handed|itp_penalty_with_shield|itp_wooden_parry, itcf_carry_spear|itc_guandao,399 , weight(2.25)|difficulty(0)|spd_rtng(115) | weapon_length(130)|swing_damage(40 , cut) | thrust_damage(15 ,  pierce),imodbits_polearm, [], [fac_kingdom_8] ],
 
 ["mh_spear_a", "Horde Spear", [("mongol_spear_x",0), ("mongol_spear_x.1",0)], itp_type_polearm|itp_merchandise| itp_primary|itp_penalty_with_shield|itp_wooden_parry,itc_staff|itcf_carry_spear,399 , weight(2.25)|difficulty(0)|spd_rtng(90) | weapon_length(192)|swing_damage(23 , cut) | thrust_damage(28 ,  pierce),imodbits_polearm, [], [fac_kingdom_8] ],
- 
+
 ["mh_sword_a", "Horde Sabre", [("mongol_saber_a",0),("mongol_saber_a_scab", ixmesh_carry)], itp_type_one_handed_wpn|itp_merchandise|itp_primary, itc_scimitar|itcf_carry_sword_left_hip|itcf_show_holster_when_drawn, 159, weight(1.25)|difficulty(0)|spd_rtng(100) | weapon_length(90)|swing_damage(32 , cut),imodbits_sword_high, [], [fac_kingdom_8] ],
 
 ["mkk_gauntlets_sar_a","Sarranid Scale Gloves", [("gauntlets_arabs_a_L", 0)], itp_type_hand_armor|itp_merchandise, 0,710, weight(0.75)|abundance(100)|body_armor(5), imodbit_lordly, [], [fac_kingdom_6]],
