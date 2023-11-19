@@ -56,7 +56,7 @@ factions = [
   ("kingdom_6",  "The Solarian Empire",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x916229),
   ("kingdom_7",  "Great Kingdom of Nerpa",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05),("kingdom_1", -0.2)], [], 0x673E7A),
   ("kingdom_8",  "Horde of Hairako",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xCC55FF),
-  ("kingdom_9",  "Holy Kingdon of Tauria",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x884488),
+  ("kingdom_9",  "Holy Kingdon of Tauria",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xA83262),
   ("kingdom_10",  "The Theocracy of Elen",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xFFAA99),
   ("kingdom_11",  "Adid Sultanate",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xDDDD99),
   ("kingdom_12",  "Kingdom of Stormguard",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05),("kingdom_4", -0.5)], [], 0x99DD99),

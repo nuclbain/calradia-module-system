@@ -365,6 +365,46 @@ tableaus = [
        (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
        ]),
 
+###
+  ("sarranid_shield_a", 0, "sample_tableau_shield_sarranid_a", 512, 512, 0, 0, 0, 0,
+   [   (store_script_param, ":banner_mesh", 1),
+       (set_fixed_point_multiplier, 100),
+       (init_position, pos1),
+       (position_set_x, pos1, -50),
+       (position_set_y, pos1, 153),
+       (cur_tableau_add_mesh, ":banner_mesh", pos1, 122, 0),#120
+       (init_position, pos1),
+       (position_set_z, pos1, 10),
+       (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_sarranids_a", pos1, 0, 0),
+       (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+       ]),
+
+  ("sarranid_shield_b", 0, "sample_tableau_shield_sarranid_b", 1024, 1024, 0, 0, 0, 0,
+   [   (store_script_param, ":banner_mesh", 1),
+       (set_fixed_point_multiplier, 100),
+       (init_position, pos1),
+       (position_set_x, pos1, -43),
+       (position_set_y, pos1, 150),
+       (cur_tableau_add_mesh, ":banner_mesh", pos1, 127, 0),#118
+       (init_position, pos1),
+       (position_set_z, pos1, 10),
+       (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_sarranids_b", pos1, 0, 0),
+       (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+       ]),
+
+  ("sarranid_shield_c", 0, "sample_tableau_shield_sarranid_c", 1024, 1024, 0, 0, 0, 0,
+   [   (store_script_param, ":banner_mesh", 1),
+       (set_fixed_point_multiplier, 100),
+       (init_position, pos1),
+       (position_set_x, pos1, -50),
+       (position_set_y, pos1, 150),
+       (cur_tableau_add_mesh, ":banner_mesh", pos1, 116, 0),
+       (init_position, pos1),
+       (position_set_z, pos1, 10),
+       (cur_tableau_add_mesh, "mesh_tableau_mesh_shield_sarranids_c", pos1, 0, 0),
+       (cur_tableau_set_camera_parameters, 0, 200, 200, 0, 100000),
+       ]),
+###
 
 
   ("heraldic_armor_a", 0, "sample_heraldic_armor_a", 512, 512, 0, 0, 0, 0,
