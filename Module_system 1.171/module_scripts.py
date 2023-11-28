@@ -215,11 +215,11 @@ scripts = [
       (faction_set_slot, "fac_culture_9", slot_faction_tier_4_troop, "trp_tauria_man_at_arms"),
       (faction_set_slot, "fac_culture_9", slot_faction_tier_5_troop, "trp_tauria_noble_knight"),
 
-      (faction_set_slot, "fac_culture_10", slot_faction_tier_1_troop, "trp_elen_forester"),
+      (faction_set_slot, "fac_culture_10", slot_faction_tier_1_troop, "trp_elen_novice"),
       (faction_set_slot, "fac_culture_10", slot_faction_tier_2_troop, "trp_elen_footman"),
       (faction_set_slot, "fac_culture_10", slot_faction_tier_3_troop, "trp_elen_light_infantry"),
       (faction_set_slot, "fac_culture_10", slot_faction_tier_4_troop, "trp_elen_sniper"),
-      (faction_set_slot, "fac_culture_10", slot_faction_tier_5_troop, "trp_elen_white_hood"),
+      (faction_set_slot, "fac_culture_10", slot_faction_tier_5_troop, "trp_elen_cheif"),
 
       (faction_set_slot, "fac_culture_11", slot_faction_tier_1_troop, "trp_adid_nomad_scout"),
       (faction_set_slot, "fac_culture_11", slot_faction_tier_2_troop, "trp_adid_desert_vanguard"),

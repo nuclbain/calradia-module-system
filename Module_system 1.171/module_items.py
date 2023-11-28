@@ -2055,33 +2055,11 @@ items = [
 ["m_brigandine_f", "Heavy Brigandine", [("brigandine_red",0), ("brigandine_red.1",0), ("brigandine_red.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1199 , weight(24)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(20)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
 ["m_brigandine_g", "Heavy Brigandine with Mail", [("brigandine_red_mail",0), ("brigandine_red_mail.1",0), ("brigandine_red_mail.2",0), ("brigandine_red_mail.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1359 , weight(26)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(19)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ],
 
-# tauria items
-["mt_armet_a", "Armet", [("helm19",0)], itp_merchandise|itp_type_head_armor|itp_covers_head, 0, 1199, weight(2.5)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate, [], [fac_kingdom_10] ],
-["mt_armet_a2", "Armet with Decorations", [("helm20",0), ("helm20.1",0)], itp_merchandise|itp_type_head_armor|itp_covers_head, 0, 1199, weight(2.5)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate, [], [fac_kingdom_10] ],
-
-["mt_coat_a", "Coat", [("armor9",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,159 , weight(5)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(9)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_10] ], 
-
-["mt_leather_armor_a", "Light Leather Armor", [("armor15",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs|itp_civilian,0 ,299 , weight(11)|abundance(100)|head_armor(0)|body_armor(13)|leg_armor(9)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_9, fac_kingdom_10] ], 
-["mt_leather_armor_b", "Light Leather Armor", [("armor31",0),("armor31.1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,299 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(9)|difficulty(0) ,imodbits_cloth, [], [ fac_kingdom_10] ], 
-["mt_leather_armor_c", "Ranger Leather Armor", [("armor8",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,599 , weight(9)|abundance(100)|head_armor(0)|body_armor(32)|leg_armor(12)|difficulty(0) ,imodbits_cloth, [], [ fac_kingdom_10] ], 
-["mt_leather_armor_c2", "Ranger Leather Armor", [("armor8_g",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,599 , weight(9)|abundance(100)|head_armor(0)|body_armor(32)|leg_armor(12)|difficulty(0) ,imodbits_cloth, [], [ fac_kingdom_10] ], 
-["mt_leather_armor_c3", "Ranger Leather Armor", [("armor8_w",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,599 , weight(9)|abundance(100)|head_armor(0)|body_armor(32)|leg_armor(12)|difficulty(0) ,imodbits_cloth, [], [ fac_kingdom_10] ], 
-
-["mt_special_a", "Leather Armor of Elen", [("armor22",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,299 , weight(9)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(11)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_10] ], 
-["mt_special_b", "Mail with Plates of Elen", [("armor21",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1359 , weight(17)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(17)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_10] ], 
-["mt_special_c", "Heavy Plates of Elen", [("armor23",0), ("armor23.1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,2399 , weight(21)|abundance(100)|head_armor(0)|body_armor(55)|leg_armor(21)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_10] ], 
-
-["mt_wrapping_a", "Wrapping Boots", [("boot17",0)], itp_merchandise|itp_type_foot_armor|itp_civilian|itp_attach_armature, 0, 99, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_10] ],
-["mt_wrapping_a2", "Wrapping Boots", [("boot18",0)], itp_merchandise|itp_type_foot_armor|itp_civilian|itp_attach_armature, 0, 99, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_10] ],
-
 ["mt_leather_boots_a", "Leather Boots", [("boot13",0)], itp_merchandise|itp_type_foot_armor|itp_civilian|itp_attach_armature,0, 179 , weight(1.25)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_9, fac_kingdom_10] ],
 ["mt_leather_boots_b", "Leather Boots", [("boot4",0)], itp_merchandise|itp_type_foot_armor|itp_civilian|itp_attach_armature,0, 179 , weight(1.25)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_9, fac_kingdom_10] ],
 ["mt_leather_boots_c", "Leather Boots", [("boot6",0)], itp_merchandise|itp_type_foot_armor|itp_civilian|itp_attach_armature,0, 179 , weight(1.25)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_9, fac_kingdom_10] ],
 ["mt_leather_boots_d", "Leather Boots", [("boot7",0)], itp_merchandise|itp_type_foot_armor|itp_civilian|itp_attach_armature,0, 179 , weight(1.25)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_9, fac_kingdom_10] ],
 ["mt_leather_boots_e", "Leather Boots", [("boot8",0)], itp_merchandise|itp_type_foot_armor|itp_civilian|itp_attach_armature,0, 179 , weight(1.25)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_9, fac_kingdom_10] ],
-
-["mt_greaves_light_a", "Splinted Greaves", [("boot11",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature,0, 699 , weight(2)|abundance(15)|head_armor(0)|body_armor(0)|leg_armor(28)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_10] ],
-["mt_greaves_light_b", "Splinted Greaves", [("boot9",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature,0, 699 , weight(2)|abundance(15)|head_armor(0)|body_armor(0)|leg_armor(28)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_10] ],
 
 # The Stormguard items
 

@@ -153,9 +153,9 @@ party_templates = [
   ("kingdom_9_reinforcements_b", "{!}kingdom_9_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_tauria_soldier,2,8),(trp_tauria_foot_knight,1,3),(trp_tauria_crossbowman,2,7)]),
   ("kingdom_9_reinforcements_c", "{!}kingdom_9_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_tauria_siege_crossbowman,3,5), (trp_tauria_man_at_arms,3,5), (trp_tauria_horseman,3,5), (trp_tauria_knight,1,2), (trp_tauria_noble_knight,1,2)]),
 
-  ("kingdom_10_reinforcements_a", "{!}kingdom_10_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_elen_forester,5,15),(trp_elen_footman,3,4)]),
+  ("kingdom_10_reinforcements_a", "{!}kingdom_10_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_elen_novice,5,15),(trp_elen_footman,3,4)]),
   ("kingdom_10_reinforcements_b", "{!}kingdom_10_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_elen_fighter,2,8),(trp_elen_light_infantry,1,3),(trp_elen_archer,2,7)]),
-  ("kingdom_10_reinforcements_c", "{!}kingdom_10_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_elen_heavy_infantry,3,5), (trp_elen_cheif,3,5), (trp_elen_sniper,3,5), (trp_elen_white_hood,1,2)]),
+  ("kingdom_10_reinforcements_c", "{!}kingdom_10_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_elen_heavy_infantry,3,5), (trp_elen_cheif,3,5), (trp_elen_sniper,3,5)]),
 
   # Kingdom 11 troops
   # Tier 1
