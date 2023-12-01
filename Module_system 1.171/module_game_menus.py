@@ -274,7 +274,7 @@ game_menus = [
          (party_add_members, "p_main_party", "trp_chornovalley_knight", 10),
          (party_add_members, "p_main_party", "trp_chornovalley_longbowman", 10),
          (party_add_members, "p_main_party", "trp_silver_rose_sharpshooter", 10),
-         (troop_add_item, "trp_player","itm_scale_armor",0),
+         (troop_add_item, "trp_player","itm_mkk_archer_armor_d",0),
          (troop_add_item, "trp_player","itm_full_helm",0),
 
          (troop_add_item, "trp_player","itm_hafted_blade_b",0),
@@ -891,7 +891,7 @@ game_menus = [
 ##       (set_visitor, 0, "$g_player_troop"),
 ##
 ###       (troop_add_item, "trp_player","itm_bascinet",0),
-###       (troop_add_item, "trp_player","itm_mail_with_surcoat",0),
+###       (troop_add_item, "trp_player","itm_m_celestial_breastplate_heavy_b",0),
 ###       (troop_add_item, "trp_player","itm_bastard_sword_a",0),
 ###       (troop_add_item, "trp_player","itm_war_bow",0),
 ###       (troop_add_item, "trp_player","itm_khergit_arrows",0),
