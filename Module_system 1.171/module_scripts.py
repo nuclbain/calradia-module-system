@@ -1133,13 +1133,6 @@ scripts = [
         (spawn_around_party, ":cur_village", "pt_heretics"),
       (try_end),
 
-      (set_spawn_radius, 5),
-      (try_for_range, ":cur_village", villages_begin, villages_end),
-        (store_random_in_range, ":random_value", 0, 5),               
-        (eq, ":random_value", 0),
-        (spawn_around_party, ":cur_village", "pt_awakened_party"),
-      (try_end),
-
       (call_script, "script_update_mercenary_units_of_towns"),
       (call_script, "script_update_companion_candidates_in_taverns"),
       (call_script, "script_update_ransom_brokers"),
@@ -37994,7 +37987,7 @@ scripts = [
     [(try_for_range, ":town_no", towns_begin, towns_end),
       (store_random_in_range, ":troop_no", mercenary_troops_begin, mercenary_troops_end),
       (party_set_slot, ":town_no", slot_center_mercenary_troop_type, ":troop_no"),
-      (store_random_in_range, ":amount", 3, 8),
+      (store_random_in_range, ":amount", 18, 80),
 	  ##diplomacy start+
 	  #OPTIONAL CHANGE: The same way that lord party sizes increase as the player
 	  #progresses, also increase mercenary party sizes to maintain their relevance.
@@ -38044,12 +38037,12 @@ scripts = [
          (assign, ":volunteer_troop", ":upgrade_troop_no"),
        (try_end),
 
-       (assign, ":upper_limit", 8),
+       (assign, ":upper_limit", 32),
        (try_begin),
          (ge, ":player_relation", 4),
          (assign, ":upper_limit", ":player_relation"),
          (val_div, ":upper_limit", 2),
-         (val_add, ":upper_limit", 6),
+         (val_add, ":upper_limit", 32),
        (else_try),
          (lt, ":player_relation", 0),
          (assign, ":upper_limit", 0),

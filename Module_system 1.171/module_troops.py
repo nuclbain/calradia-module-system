@@ -737,10 +737,8 @@ troops = [
   #               /               /        \
   #      Shadowblade  Dark Cavalier  Shadow Rider
   # TODO: Complete troop tree for cultists
-  ["cultist_acolyte","Cultist Acolyte","Cultist Acolytes",tf_guarantee_all,0,0,fac_outlaws, [itm_mt_leather_boots_e, itm_mt_leather_gloves_a, itm_mt_hood_a3, itm_winged_mace, itm_one_handed_battle_axe_c, itm_tab_shield_heater_cav_a], def_attrib|str_15|agi_15|level(12),wp(100),knows_common|knows_ironflesh_3,bandit_face1, bandit_face2],
-  ["dark_cultist","Dark Cultist","Dark Cultists",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_outlaws, [itm_winged_mace, itm_one_handed_battle_axe_c, itm_tab_shield_heater_cav_b], def_attrib|str_20|agi_20|level(24), wp(120), knows_common|knows_ironflesh_10, bandit_face1, bandit_face2],
-
-  ["skeleton_newborn","Newborn Skeleton","Newborn Skeletons",tf_awakened|tf_allways_fall_dead|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_outlaws,[itm_m_swadia_common_helmet_a, itm_m_swadia_common_helmet_b, itm_m_swadia_common_helmet_c, itm_surcoat_over_mail_undead_a, itm_surcoat_over_mail_undead_b, itm_m_celestial_plate_b, itm_old_leather_gloves, itm_old_mail_gloves, itm_mail_chausses, itm_shield_heater_d, itm_shield_kite_k, itm_longsword, itm_english_longsword, itm_german_bastard_sword, itm_grosse_messer_b, itm_irish_sword],def_attrib|str_25|agi_25|level(25),wp(250),knows_common,0,0],
+  ["cultist_acolyte","Cultist Acolyte","Cultist Acolytes",tf_guarantee_all,0,0,fac_outlaws, [itm_mt_leather_boots_e, itm_old_leather_gloves, itm_robe, itm_pilgrim_disguise, itm_mt_hood_a3, itm_pilgrim_hood, itm_winged_mace, itm_one_handed_battle_axe_c, itm_tab_shield_pavise_a], def_attrib|str_15|agi_15|level(12),wp(100),knows_common|knows_ironflesh_3,bandit_face1, bandit_face2],
+  ["dark_cultist","Dark Cultist","Dark Cultists",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_outlaws, [itm_mt_leather_boots_e, itm_old_mail_gloves, itm_robe, itm_pilgrim_disguise, itm_mt_hood_a3, itm_pilgrim_hood, itm_winged_mace, itm_morningstar, itm_one_handed_battle_axe_c, itm_tab_shield_pavise_a], def_attrib|str_20|agi_20|level(24), wp(120), knows_common|knows_ironflesh_10, bandit_face1, bandit_face2],
 
   ["brigand","Brigand","Brigands",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_outlaws,
    [itm_arrows,itm_spiked_mace,itm_sword_viking_1,itm_falchion,itm_wooden_shield,itm_hide_covered_round_shield,itm_long_bow,itm_leather_cap,itm_leather_jerkin,itm_nomad_boots,itm_saddle_horse],
