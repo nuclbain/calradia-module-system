@@ -457,7 +457,7 @@ slot_center_has_swadia_barracks        = 1136 #town, castle
 slot_center_has_swadia_stables         = 1137 #town, castle
 slot_center_has_swadia_lion_guild      = 1138 #town, castle
 slot_center_has_vaegir_barracks        = 1139
-slot_center_has_vaegir_archery         = 1140
+slot_center_has_chornovalley_longbowmany         = 1140
 slot_center_has_vaegir_stables         = 1141
 slot_center_has_vaegir_elders_house    = 1142
 slot_center_has_khergit_barracks       = 1143
@@ -1523,7 +1523,7 @@ npc_kingdoms_begin = "fac_kingdom_1"
 npc_kingdoms_end = kingdoms_end
 
 bandits_begin = "trp_bandit"
-bandits_end = "trp_black_khergit_horseman"
+bandits_end = "trp_black_celestial_armsman"
 
 kingdom_ladies_begin = "trp_knight_1_1_wife"
 kingdom_ladies_end = "trp_heroes_end"
@@ -1580,7 +1580,7 @@ ransom_brokers_end   = tavern_travelers_begin
 mercenary_troops_begin = "trp_watchman"
 mercenary_troops_end = "trp_mercenaries_end"
 
-multiplayer_troops_begin = "trp_swadian_crossbowman_multiplayer"
+multiplayer_troops_begin = "trp_silver_rose_trained_crossbowman_multiplayer"
 multiplayer_troops_end = "trp_multiplayer_end"
 
 #INVASION MODE start
@@ -1599,7 +1599,7 @@ ccoop_bandit_sounds_end = "snd_ccoop_sea_raider_taunt_0"
 ccoop_sea_raider_sounds_start = "snd_ccoop_sea_raider_taunt_0"
 ccoop_sea_raider_sounds_end = "snd_sounds_end"
 
-multiplayer_coop_class_templates_begin = "trp_swadian_crossbowman_multiplayer_coop_tier_1"
+multiplayer_coop_class_templates_begin = "trp_silver_rose_trained_crossbowman_multiplayer_coop_tier_1"
 multiplayer_coop_class_templates_end = "trp_coop_faction_troop_templates_end"
 
 multiplayer_coop_companion_equipment_sets_begin = "trp_npc1_1"
@@ -1609,17 +1609,17 @@ multiplayer_coop_companion_equipment_sets_end = "trp_coop_companion_equipment_se
 multiplayer_coop_companion_description_strings_begin = "str_npc1_1"
 #INVASION MODE end
 
-multiplayer_ai_troops_begin = "trp_swadian_crossbowman_multiplayer_ai"
+multiplayer_ai_troops_begin = "trp_silver_rose_trained_crossbowman_multiplayer_ai"
 multiplayer_ai_troops_end = multiplayer_troops_begin
 
 #INVASION MODE START
 captain_multiplayer_troops_begin = "trp_farmer"
-captain_multiplayer_troops_end = "trp_swadian_crossbowman"
+captain_multiplayer_troops_end = "trp_silver_rose_trained_crossbowman"
 
-captain_multiplayer_new_troops_begin = "trp_swadian_crossbowman"
-captain_multiplayer_new_troops_end = "trp_khergit_lancer"
+captain_multiplayer_new_troops_begin = "trp_silver_rose_trained_crossbowman"
+captain_multiplayer_new_troops_end = "trp_celestial_lancer"
 
-captain_multiplayer_coop_new_troops_begin = "trp_khergit_lancer"
+captain_multiplayer_coop_new_troops_begin = "trp_celestial_lancer"
 captain_multiplayer_coop_new_troops_end = "trp_slaver_chief"
 #INVASION MODE END
 

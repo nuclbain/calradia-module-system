@@ -20,7 +20,7 @@ default_kingdom_relations = [("outlaws",-0.05),("peasant_rebels", -0.1),("desert
 factions = [
   ("no_faction","No Faction",0, 0.9, [], []),
   ("commoners","Commoners",0, 0.1,[("player_faction",0.1)], []),
-  ("outlaws","Outlaws", max_player_rating(-30), 0.5,[("commoners",-0.6),("player_faction",-0.15)], [], 0x888888),
+  ("outlaws","Outlaws", max_player_rating(-30), 0.5,[("commoners",-0.6),("player_faction",-0.15)], [], 0x338888),
   ("heretics","Heretics", max_player_rating(-90), 0.5,[("commoners",-0.6),("player_faction",-0.15)], [], 0x881111),
 # Factions before this point are hardwired into the game end their order should not be changed.
 
@@ -48,15 +48,15 @@ factions = [
 
   ("player_faction","Player Faction",0, 0.9, [], []),
   ("player_supporters_faction","Player's Supporters",0, 0.9, [("player_faction",1.00),("outlaws",-0.05),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xFF4433), #changed name so that can tell difference if shows up on map
-  ("kingdom_1",  "The Eldritch Dominion of Swadia", 0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xEE7744),
-  ("kingdom_2",  "Vaegirs Tzhardom",    0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xCCBB99),
-  ("kingdom_3",  "Khergit Khanate", 0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xCC99FF),
-  ("kingdom_4",  "Kingdom of Nords",    0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x33DDDD),
-  ("kingdom_5",  "The Eldritch Dominion of Rhodoks",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x33DD33),
-  ("kingdom_6",  "Sarranid Sultanate",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xDDDD33),
-  ("kingdom_7",  "Great Kingdom of Nerpa",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05),("kingdom_1", -0.2)], [], 0xFF11FF),
+  ("kingdom_1",  "The Order of the Silver Rose", 0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xA83234),
+  ("kingdom_2",  "The Chornovalley Clans",    0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x4287F5),
+  ("kingdom_3",  "Celestial", 0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x4D6F8A),
+  ("kingdom_4",  "The Iron Crown",    0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x249164),
+  ("kingdom_5",  "The Alpine Dominion",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xFCBA03),
+  ("kingdom_6",  "The Solarian Empire",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x916229),
+  ("kingdom_7",  "Great Kingdom of Nerpa",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05),("kingdom_1", -0.2)], [], 0x673E7A),
   ("kingdom_8",  "Horde of Hairako",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xCC55FF),
-  ("kingdom_9",  "Holy Kingdon of Tauria",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0x884488),
+  ("kingdom_9",  "Holy Kingdon of Tauria",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xA83262),
   ("kingdom_10",  "The Theocracy of Elen",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xFFAA99),
   ("kingdom_11",  "Adid Sultanate",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05)], [], 0xDDDD99),
   ("kingdom_12",  "Kingdom of Stormguard",  0, 0.9, [("outlaws",-0.05),("heretics",-0.5),("peasant_rebels", -0.1),("deserters", -0.02),("mountain_bandits", -0.05),("forest_bandits", -0.05),("kingdom_4", -0.5)], [], 0x99DD99),
@@ -77,9 +77,9 @@ factions = [
 ##  ("rebel_peasants","Rebel Peasants", 0, 0.5,[("vaegirs",-0.5),("player_faction",0.0)], []),
 
   ("manhunters","Manhunters", 0, 0.5,[("outlaws",-0.6),("player_faction",0.1)], []),
-  ("deserters","Deserters", 0, 0.5,[("manhunters",-0.6),("merchants",-0.5),("player_faction",-0.1)], [], 0x888888),
-  ("mountain_bandits","Mountain Bandits", 0, 0.5,[("commoners",-0.2),("merchants",-0.5),("manhunters",-0.6),("player_faction",-0.15)], [], 0x888888),
-  ("forest_bandits","Forest Bandits", 0, 0.5,[("commoners",-0.2),("merchants",-0.5),("manhunters",-0.6),("player_faction",-0.15)], [], 0x888888),
+  ("deserters","Deserters", 0, 0.5,[("manhunters",-0.6),("merchants",-0.5),("player_faction",-0.1)], [], 0x488538),
+  ("mountain_bandits","Mountain Bandits", 0, 0.5,[("commoners",-0.2),("merchants",-0.5),("manhunters",-0.6),("player_faction",-0.15)], [], 0x224488),
+  ("forest_bandits","Forest Bandits", 0, 0.5,[("commoners",-0.2),("merchants",-0.5),("manhunters",-0.6),("player_faction",-0.15)], [], 0x228822),
 
   ("undeads","{!}Undeads", max_player_rating(-30), 0.5,[("commoners",-0.7),("player_faction",-0.5)], []),
   ("slavers","{!}Slavers", 0, 0.1, [], []),

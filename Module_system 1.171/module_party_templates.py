@@ -32,13 +32,13 @@ party_templates = [
 ####################################################################################################################
 # Party templates before this point are hard-wired into the game and should not be changed. 
 ####################################################################################################################
-##  ("old_garrison","Old Garrison",icon_vaegir_knight,0,fac_neutral,merchant_personality,[]),
+##  ("old_garrison","Old Garrison",icon_chornovalley_knight,0,fac_neutral,merchant_personality,[]),
   ("village_defenders","Village Defenders",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,10,20),(trp_peasant_woman,0,4)]),
 
   ("cattle_herd","Cattle Herd",icon_cattle|carries_goods(10),0,fac_neutral,merchant_personality,[(trp_cattle,80,120)]),
 
-##  ("vaegir_nobleman","Vaegir Nobleman",icon_vaegir_knight|carries_goods(10)|pf_quest_party,0,fac_commoners,merchant_personality,[(trp_nobleman,1,1),(trp_vaegir_knight,2,6),(trp_vaegir_horseman,4,12)]),
-##  ("swadian_nobleman","Swadian Nobleman",icon_gray_knight|carries_goods(10)|pf_quest_party,0,fac_commoners,merchant_personality,[(trp_nobleman,1,1),(trp_swadian_knight,2,6),(trp_swadian_man_at_arms,4,12)]),
+##  ("vaegir_nobleman","Vaegir Nobleman",icon_chornovalley_knight|carries_goods(10)|pf_quest_party,0,fac_commoners,merchant_personality,[(trp_nobleman,1,1),(trp_chornovalley_knight,2,6),(trp_chornovalley_horseman,4,12)]),
+##  ("swadian_nobleman","Swadian Nobleman",icon_gray_knight|carries_goods(10)|pf_quest_party,0,fac_commoners,merchant_personality,[(trp_nobleman,1,1),(trp_silver_rose_knight,2,6),(trp_silver_rose_man_at_arms,4,12)]),
 # Ryan BEGIN
 # bandit 0 - 100
 # pillager 0 - 10
@@ -49,20 +49,29 @@ party_templates = [
 # TODO: Check troops distribution and rebalance if needed
   (
     "looters","Looters Party",icon_axeman|carries_goods(8),0,fac_outlaws,bandit_personality,
-    [(trp_marauder,0,10),(trp_outlaw,0,10),(trp_highwayman,0,5),(trp_bandit,0,100),(trp_pillager,0,10),(trp_looter,1,120)]
+    [(trp_bandit,0,10),(trp_looter,1,95)]
   ),
+  (
+    "warband_bandits","Bandits Warband",icon_axeman|carries_goods(8),0,fac_outlaws,bandit_personality,
+    [(trp_bandit,20,30),(trp_looter,10,95)]
+  ),
+  # TODO:
+  # (
+  #   "outlawed_mercenary_company","Outlawed Mercenaries",icon_gray_knight|carries_goods(8),0,fac_outlaws,bandit_personality,
+  #   [(trp_mercenary_cavalry,0,5),(trp_hired_blade,0,7),(trp_watchman,10,35),(trp_mercenary_crossbowman,10,30),(trp_mercenary_swordsman,2,12),(trp_mercenary_horseman,0,10)]
+  # ),
   ("heretics","Doomcult Heretics",icon_gray_knight|carries_goods(20),0,fac_heretics,bandit_personality,[(trp_dark_cultist,0,20),(trp_cultist_acolyte,0,50)]),
 # Ryan END
   ("manhunters","Manhunters",icon_gray_knight,0,fac_manhunters,soldier_personality,[(trp_manhunter,19,100)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),
 
 #  ("black_khergit_raiders","Black Khergit Raiders",icon_khergit_horseman_b|carries_goods(2),0,fac_black_khergits,bandit_personality,[(trp_black_khergit_guard,1,10),(trp_black_khergit_horseman,5,5)]),
-  ("steppe_bandits","Steppe Bandits",icon_khergit|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_steppe_bandit,14,580)]),
-  ("taiga_bandits","Tundra Bandits",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_taiga_bandit,14,580)]),
-  ("desert_bandits","Desert Bandits",icon_vaegir_knight|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_desert_bandit,14,508)]),
-  ("forest_bandits","Forest Bandits",icon_axeman|carries_goods(2),0,fac_forest_bandits,bandit_personality,[(trp_forest_bandit,14,502)]),
-  ("mountain_bandits","Mountain Bandits",icon_axeman|carries_goods(2),0,fac_mountain_bandits,bandit_personality,[(trp_mountain_bandit,14,600)]),
-  ("sea_raiders","Sea Raiders",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_sea_raider,15,500)]),
+  ("steppe_bandits","Steppe Bandits",icon_khergit|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_steppe_bandit,14,50)]),
+  ("taiga_bandits","Tundra Bandits",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_taiga_bandit,14,65)]),
+  ("desert_bandits","Piaktu Bandits",icon_vaegir_knight|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_desert_bandit,14,65)]),
+  ("forest_bandits","Forest Bandits",icon_axeman|carries_goods(2),0,fac_forest_bandits,bandit_personality,[(trp_forest_bandit,14,65)]),
+  ("mountain_bandits","Mountain Bandits",icon_axeman|carries_goods(2),0,fac_mountain_bandits,bandit_personality,[(trp_mountain_bandit,14,60)]),
+  ("sea_raiders","Sea Raiders",icon_axeman|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_sea_raider,15,60)]),
   ("awakened_party","Awakened Party",icon_gray_knight|carries_goods(2),0,fac_outlaws,bandit_personality,[(trp_skeleton_newborn,15,120)]),
 
   ("deserters","Deserters",icon_vaegir_knight|carries_goods(3),0,fac_deserters,bandit_personality,[]),
@@ -108,29 +117,29 @@ party_templates = [
   # med-modernised templates are generally includes 5-10 troops in total, 
   # high-modernised templates are generally includes 3-5 troops in total
 
-  ("kingdom_1_reinforcements_a", "{!}kingdom_1_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_swadian_recruit,5,10),(trp_swadian_militia,2,4)]),
-  ("kingdom_1_reinforcements_b", "{!}kingdom_1_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_swadian_footman,3,6),(trp_swadian_skirmisher,2,4)]),
-  ("kingdom_1_reinforcements_c", "{!}kingdom_1_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_swadian_man_at_arms,2,4),(trp_swadian_crossbowman,1,2)]), #Swadians are a bit less-powered thats why they have a bit more troops in their modernised party template (3-6, others 3-5)
+  ("kingdom_1_reinforcements_a", "{!}kingdom_1_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_silver_rose_levy,5,10),(trp_silver_rose_milita,2,4)]),
+  ("kingdom_1_reinforcements_b", "{!}kingdom_1_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_silver_rose_footman,3,6),(trp_silver_rose_crossbowman,2,4)]),
+  ("kingdom_1_reinforcements_c", "{!}kingdom_1_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_silver_rose_man_at_arms,2,4),(trp_silver_rose_trained_crossbowman,1,2)]), #Swadians are a bit less-powered thats why they have a bit more troops in their modernised party template (3-6, others 3-5)
 
-  ("kingdom_2_reinforcements_a", "{!}kingdom_2_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_vaegir_watchman,15,40),(trp_vaegir_recruit,5,10),(trp_vaegir_footman,2,4)]),
-  ("kingdom_2_reinforcements_b", "{!}kingdom_2_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_vaegir_veteran,2,4),(trp_vaegir_skirmisher,2,4),(trp_vaegir_footman,1,2)]),
-  ("kingdom_2_reinforcements_c", "{!}kingdom_2_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_vaegir_horseman,2,3),(trp_vaegir_infantry,1,2),(trp_vaegir_gryden,1,2)]),
+  ("kingdom_2_reinforcements_a", "{!}kingdom_2_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_chornovalley_recruit,5,10),(trp_chornovalley_scout,2,4)]),
+  ("kingdom_2_reinforcements_b", "{!}kingdom_2_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_chornovalley_warrior,2,4),(trp_chornovalley_hunter,2,4),(trp_chornovalley_scout,1,2)]),
+  ("kingdom_2_reinforcements_c", "{!}kingdom_2_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_chornovalley_horseman,2,3),(trp_chornovalley_sheriff,1,2),(trp_chornovalley_knight,1,2)]),
 
-  ("kingdom_3_reinforcements_a", "{!}kingdom_3_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_khergit_tribesman,3,5),(trp_khergit_skirmisher,4,9)]), #Khergits are a bit less-powered thats why they have a bit more 2nd upgraded(trp_khergit_skirmisher) than non-upgraded one(trp_khergit_tribesman).
-  ("kingdom_3_reinforcements_b", "{!}kingdom_3_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_khergit_horseman,2,4),(trp_khergit_horse_archer,2,4),(trp_khergit_skirmisher,1,2)]),
-  ("kingdom_3_reinforcements_c", "{!}kingdom_3_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_khergit_horseman,2,4),(trp_khergit_veteran_horse_archer,2,3)]), #Khergits are a bit less-powered thats why they have a bit more troops in their modernised party template (4-7, others 3-5)
+  ("kingdom_3_reinforcements_a", "{!}kingdom_3_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_celestial_recruit,3,5),(trp_celestial_hunter,4,9)]), #Khergits are a bit less-powered thats why they have a bit more 2nd upgraded(trp_celestial_hunter) than non-upgraded one(trp_celestial_recruit).
+  ("kingdom_3_reinforcements_b", "{!}kingdom_3_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_celestial_armsman,2,4),(trp_celestial_foot_knight,2,4),(trp_celestial_hunter,1,2)]),
+  ("kingdom_3_reinforcements_c", "{!}kingdom_3_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_celestial_lancer,2,4),(trp_celestial_sergeant,2,3)]), #Khergits are a bit less-powered thats why they have a bit more troops in their modernised party template (4-7, others 3-5)
 
-  ("kingdom_4_reinforcements_a", "{!}kingdom_4_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_nord_footman,5,10),(trp_nord_recruit,2,4)]),
-  ("kingdom_4_reinforcements_b", "{!}kingdom_4_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_nord_huntsman,2,5),(trp_nord_archer,2,3),(trp_nord_footman,1,2)]),
-  ("kingdom_4_reinforcements_c", "{!}kingdom_4_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_nord_warrior,3,5),(trp_nord_tracer,3,5),(trp_nord_guard,1,5),(trp_nord_veteran,1,5)]),
+  ("kingdom_4_reinforcements_a", "{!}kingdom_4_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_iron_crown_raider,5,10),(trp_iron_crown_recruit,2,4)]),
+  ("kingdom_4_reinforcements_b", "{!}kingdom_4_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_iron_crown_skirmisher,2,5),(trp_iron_crown_trained_skirmisher,2,3),(trp_iron_crown_raider,1,2)]),
+  ("kingdom_4_reinforcements_c", "{!}kingdom_4_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_iron_crown_man_at_arms,3,7),(trp_iron_crown_halberdier,1,5),(trp_iron_crown_vetaran,1,7)]),
 
-  ("kingdom_5_reinforcements_a", "{!}kingdom_5_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_rhodok_tribesman,5,10),(trp_rhodok_spearman,2,4)]),
-  ("kingdom_5_reinforcements_b", "{!}kingdom_5_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_rhodok_crossbowman,3,6),(trp_rhodok_trained_crossbowman,2,4)]),
-  ("kingdom_5_reinforcements_c", "{!}kingdom_5_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_rhodok_veteran_spearman,2,3),(trp_rhodok_veteran_crossbowman,1,2)]), 
+  ("kingdom_5_reinforcements_a", "{!}kingdom_5_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_alpine_recruit,5,10),(trp_alpine_spearman,2,4)]),
+  ("kingdom_5_reinforcements_b", "{!}kingdom_5_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_alpine_crossbowman,3,6),(trp_alpine_trained_crossbowman,2,4)]),
+  ("kingdom_5_reinforcements_c", "{!}kingdom_5_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_alpine_veteran_spearman,2,3),(trp_alpine_veteran_crossbowman,1,2)]), 
 
-  ("kingdom_6_reinforcements_a", "{!}kingdom_6_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_sarranid_recruit,5,10),(trp_sarranid_footman,2,4)]),
-  ("kingdom_6_reinforcements_b", "{!}kingdom_6_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_sarranid_skirmisher,2,4),(trp_sarranid_veteran_footman,2,3),(trp_sarranid_footman,1,3)]),
-  ("kingdom_6_reinforcements_c", "{!}kingdom_6_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_sarranid_horseman,3,5)]),
+  ("kingdom_6_reinforcements_a", "{!}kingdom_6_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_solarian_recruit,5,10),(trp_solarian_footman,2,4)]),
+  ("kingdom_6_reinforcements_b", "{!}kingdom_6_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_solarian_skirmisher,2,4),(trp_solarian_veteran_footman,2,3),(trp_solarian_footman,1,3)]),
+  ("kingdom_6_reinforcements_c", "{!}kingdom_6_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_solarian_horseman,3,5)]),
 
   ("kingdom_7_reinforcements_a", "{!}kingdom_7_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_nerpa_recruit,5,12),(trp_nerpa_footman,3,5)]),
   ("kingdom_7_reinforcements_b", "{!}kingdom_7_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_nerpa_soldier,2,4),(trp_nerpa_captain,2,3),(trp_nerpa_ranger,2,4),(trp_nerpa_yeoman,2,4)]),
@@ -144,9 +153,9 @@ party_templates = [
   ("kingdom_9_reinforcements_b", "{!}kingdom_9_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_tauria_soldier,2,8),(trp_tauria_foot_knight,1,3),(trp_tauria_crossbowman,2,7)]),
   ("kingdom_9_reinforcements_c", "{!}kingdom_9_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_tauria_siege_crossbowman,3,5), (trp_tauria_man_at_arms,3,5), (trp_tauria_horseman,3,5), (trp_tauria_knight,1,2), (trp_tauria_noble_knight,1,2)]),
 
-  ("kingdom_10_reinforcements_a", "{!}kingdom_10_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_elen_forester,5,15),(trp_elen_footman,3,4)]),
+  ("kingdom_10_reinforcements_a", "{!}kingdom_10_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_elen_novice,5,15),(trp_elen_footman,3,4)]),
   ("kingdom_10_reinforcements_b", "{!}kingdom_10_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_elen_fighter,2,8),(trp_elen_light_infantry,1,3),(trp_elen_archer,2,7)]),
-  ("kingdom_10_reinforcements_c", "{!}kingdom_10_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_elen_heavy_infantry,3,5), (trp_elen_cheif,3,5), (trp_elen_sniper,3,5), (trp_elen_white_hood,1,2)]),
+  ("kingdom_10_reinforcements_c", "{!}kingdom_10_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_elen_heavy_infantry,3,5), (trp_elen_cheif,3,5), (trp_elen_sniper,3,5)]),
 
   # Kingdom 11 troops
   # Tier 1
@@ -171,25 +180,25 @@ party_templates = [
   ("kingdom_12_reinforcements_b", "{!}kingdom_12_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_elen_fighter,2,8),(trp_stormguard_stormbringer,1,3),(trp_stormguard_avalanche_warrior,2,7)]),
   ("kingdom_12_reinforcements_c", "{!}kingdom_12_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_stormguard_tempest_sentinel,3,5), (trp_stormguard_lightning_rider,3,5), (trp_stormguard_elite_stormguard,3,5)]),
 
-##  ("kingdom_1_reinforcements_a", "kingdom_1_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_swadian_footman,3,7),(trp_swadian_skirmisher,5,10),(trp_swadian_militia,11,26)]),
-##  ("kingdom_1_reinforcements_b", "kingdom_1_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_swadian_man_at_arms,5,10),(trp_swadian_infantry,5,10),(trp_swadian_crossbowman,3,8)]),
-##  ("kingdom_1_reinforcements_c", "kingdom_1_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_swadian_knight,2,6),(trp_swadian_sergeant,2,5),(trp_swadian_sharpshooter,2,5)]),
+##  ("kingdom_1_reinforcements_a", "kingdom_1_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_silver_rose_footman,3,7),(trp_silver_rose_crossbowman,5,10),(trp_silver_rose_milita,11,26)]),
+##  ("kingdom_1_reinforcements_b", "kingdom_1_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_silver_rose_man_at_arms,5,10),(trp_silver_rose_infantry,5,10),(trp_silver_rose_trained_crossbowman,3,8)]),
+##  ("kingdom_1_reinforcements_c", "kingdom_1_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_silver_rose_knight,2,6),(trp_silver_rose_sergeant,2,5),(trp_silver_rose_sharpshooter,2,5)]),
 ##
-##  ("kingdom_2_reinforcements_a", "kingdom_2_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_vaegir_veteran,3,7),(trp_vaegir_skirmisher,5,10),(trp_vaegir_footman,11,26)]),
-##  ("kingdom_2_reinforcements_b", "kingdom_2_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_vaegir_horseman,4,9),(trp_vaegir_infantry,5,10),(trp_vaegir_archer,3,8)]),
-##  ("kingdom_2_reinforcements_c", "kingdom_2_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_vaegir_knight,3,7),(trp_vaegir_guard,2,5),(trp_vaegir_marksman,2,5)]),
+##  ("kingdom_2_reinforcements_a", "kingdom_2_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_chornovalley_warrior,3,7),(trp_chornovalley_hunter,5,10),(trp_chornovalley_scout,11,26)]),
+##  ("kingdom_2_reinforcements_b", "kingdom_2_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_chornovalley_horseman,4,9),(trp_chornovalley_sheriff,5,10),(trp_chornovalley_longbowman,3,8)]),
+##  ("kingdom_2_reinforcements_c", "kingdom_2_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_chornovalley_knight,3,7),(trp_chornovalley_gunslider,2,5),(trp_vaegir_marksman,2,5)]),
 ##
-##  ("kingdom_3_reinforcements_a", "kingdom_3_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_khergit_horseman,3,7),(trp_khergit_skirmisher,5,10),(trp_khergit_tribesman,11,26)]),
-##  ("kingdom_3_reinforcements_b", "kingdom_3_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_khergit_veteran_horse_archer,4,9),(trp_khergit_horse_archer,5,10),(trp_khergit_horseman,3,8)]),
-##  ("kingdom_3_reinforcements_c", "kingdom_3_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_khergit_lancer,3,7),(trp_khergit_veteran_horse_archer,2,5),(trp_khergit_horse_archer,2,5)]),
+##  ("kingdom_3_reinforcements_a", "kingdom_3_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_khergit_horseman,3,7),(trp_celestial_hunter,5,10),(trp_celestial_recruit,11,26)]),
+##  ("kingdom_3_reinforcements_b", "kingdom_3_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_celestial_sergeant,4,9),(trp_celestial_foot_knight,5,10),(trp_khergit_horseman,3,8)]),
+##  ("kingdom_3_reinforcements_c", "kingdom_3_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_celestial_lancer,3,7),(trp_celestial_sergeant,2,5),(trp_celestial_foot_knight,2,5)]),
 ##
-##  ("kingdom_4_reinforcements_a", "kingdom_4_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_nord_trained_footman,3,7),(trp_nord_footman,5,10),(trp_nord_recruit,11,26)]),
-##  ("kingdom_4_reinforcements_b", "kingdom_4_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_nord_veteran,4,9),(trp_nord_warrior,5,10),(trp_nord_footman,3,8)]),
-##  ("kingdom_4_reinforcements_c", "kingdom_4_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_nord_champion,1,3),(trp_nord_veteran,2,5),(trp_nord_warrior,2,5)]),
+##  ("kingdom_4_reinforcements_a", "kingdom_4_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_iron_crown_footman,3,7),(trp_iron_crown_raider,5,10),(trp_iron_crown_recruit,11,26)]),
+##  ("kingdom_4_reinforcements_b", "kingdom_4_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_iron_crown_vetaran,4,9),(trp_iron_crown_man_at_arms,5,10),(trp_iron_crown_raider,3,8)]),
+##  ("kingdom_4_reinforcements_c", "kingdom_4_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_iron_crown_champion,1,3),(trp_iron_crown_vetaran,2,5),(trp_iron_crown_man_at_arms,2,5)]),
 ##
-##  ("kingdom_5_reinforcements_a", "kingdom_5_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_rhodok_spearman,3,7),(trp_rhodok_crossbowman,5,10),(trp_rhodok_tribesman,11,26)]),
-##  ("kingdom_5_reinforcements_b", "kingdom_5_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_rhodok_trained_spearman,4,9),(trp_rhodok_spearman,5,10),(trp_rhodok_crossbowman,3,8)]),
-##  ("kingdom_5_reinforcements_c", "kingdom_5_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_rhodok_sergeant,3,7),(trp_rhodok_veteran_spearman,2,5),(trp_rhodok_veteran_crossbowman,2,5)]),
+##  ("kingdom_5_reinforcements_a", "kingdom_5_reinforcements_a", 0, 0, fac_commoners, 0, [(trp_alpine_spearman,3,7),(trp_alpine_crossbowman,5,10),(trp_alpine_recruit,11,26)]),
+##  ("kingdom_5_reinforcements_b", "kingdom_5_reinforcements_b", 0, 0, fac_commoners, 0, [(trp_alpine_trained_spearman,4,9),(trp_alpine_spearman,5,10),(trp_alpine_crossbowman,3,8)]),
+##  ("kingdom_5_reinforcements_c", "kingdom_5_reinforcements_c", 0, 0, fac_commoners, 0, [(trp_alpine_man_at_arms,3,7),(trp_alpine_veteran_spearman,2,5),(trp_alpine_veteran_crossbowman,2,5)]),
 
 
 

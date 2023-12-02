@@ -40,7 +40,7 @@ pilgrim_disguise = [itm_pilgrim_hood,itm_pilgrim_disguise,itm_practice_staff, it
 farmer_disguise = [itm_felt_hat, itm_coarse_tunic, itm_cleaver, itm_battle_fork, itm_stones, itm_nomad_boots]
 hunter_disguise = [itm_hunting_bow,itm_barbed_arrows, itm_black_hood, itm_leather_gloves, itm_light_leather, itm_sword_khergit_1, itm_light_leather_boots]
 merchant_disguise = [itm_leather_jacket,itm_woolen_hose,itm_felt_steppe_cap,itm_dagger]
-guard_disguise = [itm_mail_chausses,itm_mail_shirt,itm_mail_mittens,itm_footman_helmet,itm_tab_shield_round_c,itm_fighting_pick,itm_war_spear]
+guard_disguise = [itm_mail_chausses,itm_m_hauberk_black_a,itm_mail_mittens,itm_footman_helmet,itm_tab_shield_round_c,itm_fighting_pick,itm_war_spear]
 bard_disguise = [itm_leather_boots,itm_lyre,itm_linen_tunic,itm_winged_mace]
 #note that these are usually male clothing, especially farmer_disguise, need some female ones as well
 
@@ -8991,9 +8991,9 @@ mission_templates = [
                    (val_add, "$tutorial_5_state", 1),
                    (modify_visitors_at_site,"scn_tutorial_5"),
                    (reset_visitors),
-                   (set_visitor,5,"trp_vaegir_archer"),
-                   (set_visitor,6,"trp_vaegir_archer"),
-                   (set_visitor,7,"trp_vaegir_archer"),
+                   (set_visitor,5,"trp_chornovalley_longbowman"),
+                   (set_visitor,6,"trp_chornovalley_longbowman"),
+                   (set_visitor,7,"trp_chornovalley_longbowman"),
                    (entry_point_get_position, pos1, 11),
                    (scene_prop_get_instance, ":flag_object", "spr_tutorial_flag_yellow", 0),
                    (prop_instance_animate_to_position, ":flag_object", pos1, 1),
@@ -15967,11 +15967,11 @@ mission_templates = [
                   (assign, ":sound_id", "snd_encounter_steppe_bandits"),
                 (try_end),
               (else_try), #SB : prison guards
-                (this_or_next|is_between, ":attacker_troop_id", "trp_swadian_prison_guard", "trp_swadian_recruit"),
-                (this_or_next|is_between, ":attacker_troop_id", "trp_vaegir_prison_guard", "trp_khergit_tribesman"),
-                (this_or_next|is_between, ":attacker_troop_id", "trp_khergit_prison_guard", "trp_nord_recruit"),
-                (this_or_next|is_between, ":attacker_troop_id", "trp_nord_prison_guard", "trp_rhodok_tribesman"),
-                (this_or_next|is_between, ":attacker_troop_id", "trp_rhodok_prison_guard", "trp_sarranid_recruit"),
+                (this_or_next|is_between, ":attacker_troop_id", "trp_swadian_prison_guard", "trp_silver_rose_levy"),
+                (this_or_next|is_between, ":attacker_troop_id", "trp_vaegir_prison_guard", "trp_celestial_recruit"),
+                (this_or_next|is_between, ":attacker_troop_id", "trp_khergit_prison_guard", "trp_iron_crown_recruit"),
+                (this_or_next|is_between, ":attacker_troop_id", "trp_nord_prison_guard", "trp_alpine_recruit"),
+                (this_or_next|is_between, ":attacker_troop_id", "trp_rhodok_prison_guard", "trp_solarian_recruit"),
                 (is_between, ":attacker_troop_id", "trp_sarranid_prison_guard", "trp_looter"),
                 # (store_random_in_range, ":random", 0, 60),
                 (try_begin),
@@ -15979,9 +15979,9 @@ mission_templates = [
                   (assign, ":sound_id", "snd_sneak_town_halt"),
                 (try_end),
               (else_try), #SB : encounter_vaegir, use for high-level knights
-                (this_or_next|eq, ":attacker_troop_id", "trp_vaegir_knight"),
-                (this_or_next|eq, ":attacker_troop_id", "trp_swadian_knight"),
-                (eq, ":attacker_troop_id", "trp_sarranid_mamluke"),
+                (this_or_next|eq, ":attacker_troop_id", "trp_chornovalley_knight"),
+                (this_or_next|eq, ":attacker_troop_id", "trp_silver_rose_knight"),
+                (eq, ":attacker_troop_id", "trp_solarian_knight"),
                 (is_between, ":attacker_troop_id", bandits_begin, bandits_end),
                 # (store_random_in_range, ":random", 0, 60),
                 (try_begin),
