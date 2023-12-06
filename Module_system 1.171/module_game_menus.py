@@ -61,6 +61,17 @@ game_menus = [
           (store_random_in_range, "$background_answer_3", dplmc_cb3_bravo, cb3_student + 1),
           (store_random_in_range, "$background_answer_4", cb4_revenge, cb4_greed + 1),
           (str_store_string, s13, "@Perhaps you have forgotten the face of your father."),
+
+          # For crafting test
+          (troop_add_items, "trp_player", "itm_weaponsmith_tools", 1),
+          (troop_add_items, "trp_player", "itm_armorer_tools", 1),
+          (troop_add_items, "trp_player", "itm_cheap_smithing_material", 10),
+          (troop_add_items, "trp_player", "itm_regular_smithing_material", 10),
+          (troop_add_items, "trp_player", "itm_expensive_smithing_material", 1),
+
+          (troop_raise_skill, "trp_player", skl_inventory_management, 10),
+          (troop_raise_skill, "trp_player", skl_engineer, 2),
+
           (assign, "$cheat_mode", 1),
           (jump_to_menu, "mnu_choose_skill"),
         (else_try),
@@ -4078,7 +4089,24 @@ TOTAL:  {reg5}"),
        [(jump_to_menu, "mnu_camp_action_read_book"),
         ]
        ),
-       
+      
+      # CRAFTING BEGIN
+
+      (
+        "action_crafting",
+        [
+          (store_skill_level, ":crafting", skl_engineer, "trp_player"),
+          (ge, ":crafting", 2),
+        ],
+        "Crafting menu",
+        [
+          # (jump_to_menu, "mnu_crafting"),
+          (start_presentation, "prsnt_crafting_menu")
+        ]
+      ),
+
+      # CRAFTING END
+
       #SB : rename changes
       ("camp_change_name",[],"Change the name of your party.",
        [(assign, "$g_presentation_state", rename_party),

@@ -18491,6 +18491,433 @@ presentations = [
         ]),
     ]),
 
+  # CRAFTING BEGIN
+
+  (
+    "crafting_menu",
+    0,
+    0,
+    [
+      (
+        ti_on_presentation_load,
+        [
+          (presentation_set_duration, 999999),
+          (set_fixed_point_multiplier, 1000),
+
+          (create_mesh_overlay, reg1, "mesh_load_window"),
+          (position_set_x, pos1, 0),
+          (position_set_y, pos1, 0),
+          (overlay_set_position, reg1, pos1),
+
+          # Combo button for crafting types
+          (create_combo_button_overlay, "$g_presentation_obj_1"),
+          (position_set_x, pos1, 180),
+          (position_set_y, pos1, 685),
+          (overlay_set_position, "$g_presentation_obj_1", pos1),
+          (position_set_x, pos1, 800),
+          (position_set_y, pos1, 800),
+          (overlay_set_size, "$g_presentation_obj_1", pos1),
+
+          (overlay_add_item, "$g_presentation_obj_1", "@None"),
+          (overlay_add_item, "$g_presentation_obj_1", "@One Handed"),
+          (overlay_add_item, "$g_presentation_obj_1", "@Two Handed"),
+          (overlay_add_item, "$g_presentation_obj_1", "@Polearms"),
+          (overlay_add_item, "$g_presentation_obj_1", "@Throwing"),
+          (overlay_add_item, "$g_presentation_obj_1", "@Shields"),
+          (overlay_add_item, "$g_presentation_obj_1", "@Body"),
+          (overlay_add_item, "$g_presentation_obj_1", "@Head"),
+          (overlay_add_item, "$g_presentation_obj_1", "@Feet"),
+          (overlay_add_item, "$g_presentation_obj_1", "@Hand"),
+
+          (overlay_set_val, "$g_presentation_obj_1", "$g_selected_crafting_type"),
+          # Combo button for crafting types end
+
+          # Combo button for crafting materials
+          (create_combo_button_overlay, "$g_presentation_obj_4"),
+          (position_set_x, pos1, 180),
+          (position_set_y, pos1, 645),
+          (overlay_set_position, "$g_presentation_obj_4", pos1),
+          (position_set_x, pos1, 800),
+          (position_set_y, pos1, 800),
+          (overlay_set_size, "$g_presentation_obj_4", pos1),
+
+          (overlay_add_item, "$g_presentation_obj_4", "@None"),
+          (overlay_add_item, "$g_presentation_obj_4", "@Common Materials"),
+          (overlay_add_item, "$g_presentation_obj_4", "@Uncommon Materials"),
+          (overlay_add_item, "$g_presentation_obj_4", "@Rare Materials"),
+
+          (overlay_set_val, "$g_presentation_obj_4", "$g_selected_crafting_material"),
+          # Combo button for crafting materials end
+
+          (create_mesh_overlay, reg1, "mesh_pic_crafting"),
+          (position_set_x, pos1, 500),
+          (position_set_y, pos1, 300),
+          (overlay_set_position, reg1, pos1),
+          (position_set_x, pos1, 800),
+          (position_set_y, pos1, 800),
+          (overlay_set_size, reg1, pos1),
+
+          # Hint
+          (create_text_overlay, reg1, "@Crafting requires materials and tools.^You can buy them from special merchants in taverns.", tf_left_align),
+          (position_set_x, pos1, 800),
+          (position_set_y, pos1, 800),
+          (overlay_set_size, reg1, pos1),
+          (position_set_x, pos1, 50),
+          (position_set_y, pos1, 150),
+          (overlay_set_position, reg1, pos1),
+
+          (store_item_kind_count, reg1, "itm_cheap_smithing_material", "trp_player"),
+          (store_item_kind_count, reg2, "itm_regular_smithing_material", "trp_player"),
+          (store_item_kind_count, reg3, "itm_expensive_smithing_material", "trp_player"),
+
+          (create_text_overlay, reg1, "@{reg1}x Common Materials^{reg2}x Uncommon Materials^{reg3}x Rare Materials", tf_left_align),
+          (position_set_x, pos1, 800),
+          (position_set_y, pos1, 800),
+          (overlay_set_size, reg1, pos1),
+          (position_set_x, pos1, 50),
+          (position_set_y, pos1, 100),
+          (overlay_set_position, reg1, pos1),
+
+          (try_begin),
+            (player_has_item, "itm_weaponsmith_tools"),
+            (create_text_overlay, reg1, "@You have a weapon smithing tools.", tf_left_align),
+            (position_set_x, pos1, 800),
+            (position_set_y, pos1, 800),
+            (overlay_set_size, reg1, pos1),
+            (position_set_x, pos1, 50),
+            (position_set_y, pos1, 80),
+            (overlay_set_position, reg1, pos1),
+          (else_try),
+            (create_text_overlay, reg1, "@You don't have a weapon smithing tools.", tf_left_align),
+            (position_set_x, pos1, 800),
+            (position_set_y, pos1, 800),
+            (overlay_set_size, reg1, pos1),
+            (position_set_x, pos1, 50),
+            (position_set_y, pos1, 80),
+            (overlay_set_position, reg1, pos1),
+          (try_end),
+
+          (try_begin),
+            (player_has_item, "itm_armorer_tools"),
+            (create_text_overlay, reg1, "@You have armorer tools.", tf_left_align),
+            (position_set_x, pos1, 800),
+            (position_set_y, pos1, 800),
+            (overlay_set_size, reg1, pos1),
+            (position_set_x, pos1, 50),
+            (position_set_y, pos1, 70),
+            (overlay_set_position, reg1, pos1),
+          (else_try),
+            (create_text_overlay, reg1, "@You don't have armorer tools.", tf_left_align),
+            (position_set_x, pos1, 800),
+            (position_set_y, pos1, 800),
+            (overlay_set_size, reg1, pos1),
+            (position_set_x, pos1, 50),
+            (position_set_y, pos1, 70),
+            (overlay_set_position, reg1, pos1),
+          (try_end),
+          # Hint end
+
+          # Exit button
+          (create_game_button_overlay, "$g_presentation_obj_2", "@Close", tf_right_align),
+          (position_set_x, pos1, 870),
+          (position_set_y, pos1, 685),
+          (overlay_set_position, "$g_presentation_obj_2", pos1),
+          # Exit button end
+
+          # Items list
+          (try_begin),
+            (ge, "$g_selected_crafting_type", 1),
+
+            # Craft button
+            (create_game_button_overlay, "$g_presentation_obj_5", "@Craft", tf_right_align),
+            (position_set_x, pos1, 870),
+            (position_set_y, pos1, 635),
+            (overlay_set_position, "$g_presentation_obj_5", pos1),
+            # Craft button end
+
+            # Posible crafting outcomes
+            (create_text_overlay, reg1, "@Craftable items:", tf_left_align),
+            (position_set_x, pos1, 840),
+            (position_set_y, pos1, 235),
+            (position_set_x, pos3, 900),
+            (position_set_y, pos3, 900),
+            (overlay_set_position, reg1, pos1),
+            (overlay_set_size, reg1, pos3),
+            (str_clear, s0),
+            (create_text_overlay, "$g_presentation_obj_3", s0, tf_scrollable),
+            (position_set_x, pos1, 840),
+            (position_set_y, pos1, 30),
+            (overlay_set_position, "$g_presentation_obj_3", pos1),
+            (position_set_x, pos1, 138),
+            (position_set_y, pos1, 202),
+            (overlay_set_area_size, "$g_presentation_obj_3", pos1),
+            (set_container_overlay, "$g_presentation_obj_3"),
+            
+            (troop_clear_inventory, "trp_temp_array_a"),
+
+            # Setting up trp_temp_array_a for possible crafting outcomes
+            # to display them on presentation and to get random item from them
+            # when crafting begins
+            (store_skill_level, ":crafting_level", skl_engineer, "trp_player"),
+
+            # Craftable items window generation.
+            # Basically its 21 items for each type of matrial
+            # with default offset 10 which will hide 10 most valuable crafting outcomes
+            # with each level of engineering skill offset will be decreased by 1
+            # which will show more valuable crafting outcomes
+            (store_sub, ":top_offset", 10, ":crafting_level"),
+            (store_add, ":bottom_offset", ":top_offset", 21),
+
+            (try_begin),
+              (eq, "$g_selected_crafting_material", 1), # Common materials
+              # Increase offset by 30 to show less valuable crafting outcomes
+              (val_add, ":top_offset", 30),
+              (val_add, ":bottom_offset", 30),
+            (else_try),
+              (eq, "$g_selected_crafting_material", 2), # Uncommon materials
+              # Increase offset by 15 to show less valuable crafting outcomes
+              (val_add, ":top_offset", 15),
+              (val_add, ":bottom_offset", 15),
+            (try_end),
+
+            (troop_get_inventory_capacity, ":inv_cap", "trp_temp_array_a"),
+
+            (try_for_range, ":item_no", itm_arrows, itm_items_end),
+              (item_get_type, ":item_type", ":item_no"),
+
+              (try_begin),
+                (eq, ":item_type", "$g_selected_crafting_item_property"),
+                (item_has_property, ":item_no", itp_craftable),
+
+                (troop_add_item, "trp_temp_array_a", ":item_no"),
+              (try_end),
+            (try_end),
+
+            (troop_sort_inventory, "trp_temp_array_a"),
+            (val_add, ":top_offset", 10),
+            (val_add, ":bottom_offset", 10),
+
+            (try_for_range, ":slot_no", ek_food + 1, ":inv_cap"),
+              (neg|is_between, ":slot_no", ":top_offset", ":bottom_offset"),
+              (troop_get_inventory_slot, ":item_no", "trp_temp_array_a", ":slot_no"),
+              (troop_remove_item, "trp_temp_array_a", ":item_no"),
+            (try_end),
+
+            (troop_sort_inventory, "trp_temp_array_a"),
+
+            (assign, ":pos_x", 0),
+            (assign, ":pos_y", 280),
+            (assign, ":slot_no", 10),
+            (try_for_range, ":unused_height", 0, 8),
+              (try_for_range, ":unused_width", 0, 3),
+                (create_mesh_overlay, reg1, "mesh_mp_inventory_choose"),
+                (position_set_x, pos1, 320),
+                (position_set_y, pos1, 320),
+                (overlay_set_size, reg1, pos1),
+                (position_set_x, pos1, ":pos_x"),
+                (position_set_y, pos1, ":pos_y"),
+                (overlay_set_position, reg1, pos1),
+                (troop_set_slot, "trp_temp_array_a", ":slot_no", reg1),
+                (create_mesh_overlay, reg1, "mesh_inv_slot"),
+                (position_set_x, pos1, 400),
+                (position_set_y, pos1, 400),
+                (overlay_set_size, reg1, pos1),
+                (position_set_x, pos1, ":pos_x"),
+                (position_set_y, pos1, ":pos_y"),
+                (overlay_set_position, reg1, pos1),
+                (troop_get_inventory_slot, ":item_no", "trp_temp_array_a", ":slot_no"),
+                (val_max, ":item_no", 0),
+                (create_mesh_overlay_with_item_id, reg1, ":item_no"),
+                (position_set_x, pos1, 400),
+                (position_set_y, pos1, 400),
+                (overlay_set_size, reg1, pos1),
+                (store_add, ":item_x", ":pos_x", 20),
+                (store_add, ":item_y", ":pos_y", 20),
+                (position_set_x, pos1, ":item_x"),
+                (position_set_y, pos1, ":item_y"),
+                (overlay_set_position, reg1, pos1),
+                (troop_set_slot, "trp_temp_array_b", ":slot_no", reg1),
+                (val_add, ":pos_x", 40),
+                (val_add, ":slot_no", 1),
+              (try_end),
+              (assign, ":pos_x", 0),
+              (val_sub, ":pos_y", 40),
+            (try_end),
+            (set_container_overlay, -1),
+            # Posible crafting outcomes end
+          (try_end),
+          # Items list end
+        ]
+      ),
+
+      (
+        ti_on_presentation_event_state_change,
+        [
+          (store_trigger_param_1, ":object"),
+          (store_trigger_param_2, ":value"),
+
+          (try_begin),
+            (eq, ":object", "$g_presentation_obj_2"),
+            (presentation_set_duration, 0),
+          (else_try),
+            (eq, ":object", "$g_presentation_obj_1"),
+            (assign, "$g_selected_crafting_type", ":value"),
+            (assign, "$g_selected_crafting_material", 0),
+            (assign, "$g_selected_crafting_material_item_number", 0),
+
+            # Setting up $g_selected_crafting_item_property
+            (try_begin),
+              (eq, "$g_selected_crafting_type", 1),
+              (assign, "$g_selected_crafting_item_property", itp_type_one_handed_wpn),
+            (else_try),
+              (eq, "$g_selected_crafting_type", 2),
+              (assign, "$g_selected_crafting_item_property", itp_type_two_handed_wpn),
+            (else_try),
+              (eq, "$g_selected_crafting_type", 3),
+              (assign, "$g_selected_crafting_item_property", itp_type_polearm),
+            (else_try),
+              (eq, "$g_selected_crafting_type", 4),
+              (assign, "$g_selected_crafting_item_property", itp_type_thrown),
+            (else_try),
+              (eq, "$g_selected_crafting_type", 5),
+              (assign, "$g_selected_crafting_item_property", itp_type_shield),
+            (else_try),
+              (eq, "$g_selected_crafting_type", 6),
+              (assign, "$g_selected_crafting_item_property", itp_type_body_armor),
+            (else_try),
+              (eq, "$g_selected_crafting_type", 7),
+              (assign, "$g_selected_crafting_item_property", itp_type_head_armor),
+            (else_try),
+              (eq, "$g_selected_crafting_type", 8),
+              (assign, "$g_selected_crafting_item_property", itp_type_foot_armor),
+            (else_try),
+              (eq, "$g_selected_crafting_type", 9),
+              (assign, "$g_selected_crafting_item_property", itp_type_hand_armor),
+            (try_end),
+
+            (assign, reg1, "$g_selected_crafting_item_property"),
+            (display_message, "@Selected crafting type: {reg1}"),
+
+            (try_begin),
+              (ge, "$g_selected_crafting_type", 1),
+              (start_presentation, "prsnt_crafting_menu"),
+            (try_end),
+          (else_try),
+            (eq, ":object", "$g_presentation_obj_4"),
+            (assign, "$g_selected_crafting_material", ":value"),
+
+            (try_begin),
+              (eq, "$g_selected_crafting_material", 1),
+              (assign, "$g_selected_crafting_material_item_number", itm_cheap_smithing_material),
+              (start_presentation, "prsnt_crafting_menu"),
+            (else_try),
+              (eq, "$g_selected_crafting_material", 2),
+              (assign, "$g_selected_crafting_material_item_number", itm_regular_smithing_material),
+              (start_presentation, "prsnt_crafting_menu"),
+            (else_try),
+              (eq, "$g_selected_crafting_material", 3),
+              (assign, "$g_selected_crafting_material_item_number", itm_expensive_smithing_material),
+              (start_presentation, "prsnt_crafting_menu"),
+            (try_end),
+          (else_try),
+            (eq, ":object", "$g_presentation_obj_5"),
+
+            (try_begin),
+              (ge, "$g_selected_crafting_type", 1),
+              (ge, "$g_selected_crafting_material", 1),
+
+              (store_item_kind_count, ":item_count", "$g_selected_crafting_material_item_number", "trp_player"),
+
+              (try_begin),
+                (is_between, "$g_selected_crafting_type", 1, 5),
+                (store_item_kind_count, ":dedicated_tools_count", "itm_weaponsmith_tools", "trp_player"),
+              (else_try),
+                (is_between, "$g_selected_crafting_type", 5, 9),
+                (store_item_kind_count, ":dedicated_tools_count", "itm_armorer_tools", "trp_player"),
+              (try_end),
+
+              (try_begin),
+                (gt, ":item_count", 0),
+                (gt, ":dedicated_tools_count", 0),
+                
+                # At this point we have all crafting outcomes in trp_temp_array_a
+                # so we can get random item from it and craft it
+                (troop_get_inventory_capacity, ":inv_cap", "trp_temp_array_a"),
+                (store_random_in_range, ":random_slot", 0, ":inv_cap"),
+                (troop_get_inventory_slot, ":item_no", "trp_temp_array_a", ":random_slot"),
+                (store_skill_level, ":crafting_level", skl_engineer, "trp_player"),
+
+                (troop_remove_item, "trp_player", "$g_selected_crafting_material_item_number"),
+
+                (try_begin),
+                  (gt, ":item_no", -1),
+
+                  (troop_add_item, "trp_player", ":item_no"),
+                  (str_store_item_name, s0, ":item_no"),
+                  (store_random_in_range, reg1, 0, 100),
+                  (val_mul, reg1, ":crafting_level"),
+
+                  (display_message, "@You have crafted {s0}!", 0x5FB404),
+                  (display_message, "@You have gained {reg1} experience.", 0x5FB404),
+                  (play_sound, "snd_distant_blacksmith"),
+                (else_try),
+                  (display_message, "@You have failed to craft an item.", 0xA83234),
+                  (display_message, "@You have lost your materials.", 0xA83234),
+
+                  (play_sound, "snd_quest_cancelled"),
+
+                  (store_random_in_range, reg1, 1, 50),
+                  (val_mul, reg1, ":crafting_level"),
+
+                  (add_xp_to_troop, reg1, "trp_player"),
+                  (display_message, "@You have learned from your mistakes and gained additional {reg1} experience.", 0x249164),
+                (try_end),
+              (else_try),
+                (display_message, "@You don't have enough materials or/and dedicated tools.", 0xA83234),
+              (try_end),
+
+              (start_presentation, "prsnt_crafting_menu"),
+            (try_end),
+          (try_end),
+        ]
+      ),
+
+      (
+        ti_on_presentation_mouse_enter_leave,
+        [
+          (store_trigger_param_1, ":object"),
+          (store_trigger_param_2, ":enter_leave"),
+          
+          (try_begin),
+            (eq, ":enter_leave", 0),
+            (try_for_range, ":slot_no", 10, 106),
+              (troop_slot_eq, "trp_temp_array_a", ":slot_no", ":object"),
+              (troop_get_inventory_slot, ":item_no", "trp_temp_array_a", ":slot_no"),
+              (troop_get_inventory_slot_modifier, ":cur_imod", "trp_temp_array_a", ":slot_no"),
+              (try_begin),
+                (gt, ":item_no", -1),
+                (troop_get_slot, ":target_obj", "trp_temp_array_b", ":slot_no"),
+                (overlay_get_position, pos0, ":target_obj"),
+                (show_item_details_with_modifier, ":item_no", ":cur_imod", pos0, 100),
+                (assign, "$g_current_opened_item_details", ":slot_no"),
+              (try_end),
+            (try_end),
+          (else_try),
+            (try_for_range, ":slot_no", 10, 106),
+              (troop_slot_eq, "trp_temp_array_a", ":slot_no", ":object"),
+              (try_begin),
+                (eq, "$g_current_opened_item_details", ":slot_no"),
+                (close_item_details),
+              (try_end),
+            (try_end),
+          (try_end),
+        ]
+      ),
+    ]
+  ),
+
+  # CRAFTING END
+
 #### JART ####
 	("adv_diplomacy_preferences", 0, mesh_load_window,
 		[
