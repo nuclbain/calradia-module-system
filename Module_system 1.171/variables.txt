@@ -1287,3 +1287,12 @@ g_selected_crafting_type
 g_selected_crafting_item_property
 g_selected_crafting_material
 g_selected_crafting_material_item_number
+g_combat_abilities_active
+g_skill_applied_time_1
+g_skill_applied_time_2
+g_skill_applied_time_3
+g_skill_applied_time_4
+g_skill_cooldown_1
+g_skill_cooldown_2
+g_skill_cooldown_3
+g_skill_cooldown_4

@@ -54,7 +54,7 @@ game_menus = [
           (this_or_next|key_is_down, key_left_shift),
           (key_is_down, key_right_shift),
           (assign, "$g_disable_condescending_comments", 4),
-          (store_random_in_range, "$character_gender", tf_male, tf_female + 1),
+          (assign, "$character_gender", tf_male),
           (troop_set_type, "trp_player", "$character_gender"),
           (store_random_in_range, "$background_type", cb_noble, cb_priest + 1),
           (store_random_in_range, "$background_answer_2", cb2_page, dplmc_cb2_acolyte + 1),
@@ -63,11 +63,12 @@ game_menus = [
           (str_store_string, s13, "@Perhaps you have forgotten the face of your father."),
 
           # For crafting test
+          (troop_add_items, "trp_player", "itm_helper_staff", 1),
           (troop_add_items, "trp_player", "itm_weaponsmith_tools", 1),
           (troop_add_items, "trp_player", "itm_armorer_tools", 1),
-          (troop_add_items, "trp_player", "itm_cheap_smithing_material", 10),
-          (troop_add_items, "trp_player", "itm_regular_smithing_material", 10),
-          (troop_add_items, "trp_player", "itm_expensive_smithing_material", 1),
+          (troop_add_items, "trp_player", "itm_cheap_smithing_material", 5),
+          (troop_add_items, "trp_player", "itm_regular_smithing_material", 5),
+          (troop_add_items, "trp_player", "itm_expensive_smithing_material", 5),
 
           (troop_raise_skill, "trp_player", skl_inventory_management, 10),
           (troop_raise_skill, "trp_player", skl_engineer, 2),

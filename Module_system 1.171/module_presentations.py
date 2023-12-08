@@ -18918,6 +18918,107 @@ presentations = [
 
   # CRAFTING END
 
+  # COMBAT ABILITIES BEGIN
+
+  (
+    "combat_abilities",
+    prsntf_read_only,
+    0,
+    [
+      (
+        ti_on_presentation_load,
+        [
+          (set_fixed_point_multiplier, 1000),
+
+          (create_text_overlay, reg1, "@Combat Abilities", tf_center_justify),
+          (position_set_x, pos1, 500),
+          (position_set_y, pos1, 680),
+          (overlay_set_position, reg1, pos1),
+          (position_set_x, pos1, 800),
+          (position_set_y, pos1, 800),
+          (overlay_set_size, reg1, pos1),
+          (overlay_set_color, reg1, 0xA83234),
+
+          (create_mesh_overlay, reg1, "mesh_pic_spells"),
+          (position_set_x, pos1, 65),
+          (position_set_y, pos1, 115),
+          (overlay_set_position, reg1, pos1),
+          (position_set_x, pos1, 300),
+          (position_set_y, pos1, 300),
+          (overlay_set_size, reg1, pos1),
+
+          (store_mission_timer_a, ":mission_time"),
+          (store_sub, ":time_since_last_cast_1", ":mission_time", "$g_skill_applied_time_1"),
+          (store_sub, ":time_to_next_cast_1", "$g_skill_cooldown_1", ":time_since_last_cast_1"),
+
+          (try_begin),
+            (ge, ":time_to_next_cast_1", 0),
+            (assign, reg58, ":time_to_next_cast_1"),
+          (try_end),
+
+          (create_text_overlay, reg1, "@[Z] Ignite | Set in fire all enemies near you! | {reg58}", tf_left_align),
+          (position_set_x, pos1, 100),
+          (position_set_y, pos1, 150),
+          (overlay_set_position, reg1, pos1),
+          (position_set_x, pos1, 800),
+          (position_set_y, pos1, 800),
+          (overlay_set_size, reg1, pos1),
+          (overlay_set_color, reg1, 0xFFFFFF),
+
+          (store_mission_timer_a, ":mission_time"),
+          (store_sub, ":time_since_last_cast_2", ":mission_time", "$g_skill_applied_time_2"),
+          (store_sub, ":time_to_next_cast_2", "$g_skill_cooldown_2", ":time_since_last_cast_2"),
+
+          (try_begin),
+            (ge, ":time_to_next_cast_2", 0),
+            (assign, reg59, ":time_to_next_cast_2"),
+          (try_end),
+
+          (create_text_overlay, reg1, "@[X] Firespeed | Increase your speed for 20 seconds! | {reg59}", tf_left_align),
+          (position_set_x, pos1, 110),
+          (position_set_y, pos1, 125),
+          (overlay_set_position, reg1, pos1),
+          (position_set_x, pos1, 800),
+          (position_set_y, pos1, 800),
+          (overlay_set_size, reg1, pos1),
+          (overlay_set_color, reg1, 0xFFFFFF),
+
+          (store_mission_timer_a, ":mission_time"),
+          (store_sub, ":time_since_last_cast_3", ":mission_time", "$g_skill_applied_time_3"),
+          (store_sub, ":time_to_next_cast_3", "$g_skill_cooldown_3", ":time_since_last_cast_3"),
+
+          (try_begin),
+            (ge, ":time_to_next_cast_3", 0),
+            (assign, reg60, ":time_to_next_cast_3"),
+          (try_end),
+
+          (create_text_overlay, reg1, "@[V] Call Serpents | Call serpents to help you in battle! | {reg60}", tf_left_align),
+          (position_set_x, pos1, 110),
+          (position_set_y, pos1, 100),
+          (overlay_set_position, reg1, pos1),
+          (position_set_x, pos1, 800),
+          (position_set_y, pos1, 800),
+          (overlay_set_size, reg1, pos1),
+          (overlay_set_color, reg1, 0xFFFFFF),
+
+          (create_text_overlay, reg1, "@[B] Nothing", tf_left_align),
+          (position_set_x, pos1, 100),
+          (position_set_y, pos1, 75),
+          (overlay_set_position, reg1, pos1),
+          (position_set_x, pos1, 800),
+          (position_set_y, pos1, 800),
+          (overlay_set_size, reg1, pos1),
+          (overlay_set_color, reg1, 0xFFFFFF),
+        ],
+      ),
+      (
+        ti_on_presentation_run,
+        []
+      )
+    ]
+  ),
+
+  # COMBAT ABILITIES END
 #### JART ####
 	("adv_diplomacy_preferences", 0, mesh_load_window,
 		[

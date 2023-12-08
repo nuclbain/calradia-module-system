@@ -764,6 +764,8 @@ troops = [
    [itm_arrows,itm_arabian_sword_a,itm_winged_mace,itm_spear, itm_light_lance,itm_jarid,itm_nomad_bow,itm_short_bow,itm_jarid,itm_m_desert_bandit_a, itm_m_desert_bandit_b, itm_m_desert_bandit_c, itm_m_desert_bandit_d, itm_m_bandit_turban_a, itm_m_bandit_turban_b, itm_m_bandit_turban_c, itm_m_bandit_turban_d, itm_mkk_leather_boots_a, itm_civil_rich_boots_a, itm_civil_rich_boots_b, itm_leather_covered_round_shield,itm_leather_covered_round_shield,itm_arabian_horse_a],
    def_attrib|level(12),wp(100),knows_riding_4|knows_horse_archery_3|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],
   
+  ["minor_summoned_entity","Minor Summoned Entity","Minor Summoned Entities",tf_awakened,0,0,fac_outlaws,[itm_hunting_bow, itm_arrows, itm_stones, itm_hunting_crossbow, itm_bolts, itm_falchion, itm_dagger, itm_cleaver, itm_knife, itm_wooden_stick, itm_shortened_spear, itm_tab_shield_round_a, itm_tab_shield_tauria_a], def_attrib|level(1),wp(50),knows_common|knows_power_draw_2|knows_power_throw_2,skeleton_face1, skeleton_face1],
+
   ["black_celestial_armsman","Black Khergit Horseman","Black Khergit Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_black_khergits,
    [itm_arrows,itm_sword_khergit_2,itm_scimitar,itm_scimitar,itm_winged_mace,itm_spear,itm_lance,itm_khergit_bow,itm_khergit_bow,itm_nomad_bow,itm_nomad_bow,itm_steppe_cap,itm_nomad_cap,itm_khergit_war_helmet,itm_khergit_war_helmet,itm_mail_hauberk,itm_m_chornovalley_heavy_mail_b,itm_hide_boots,itm_plate_covered_round_shield,itm_plate_covered_round_shield,itm_saddle_horse,itm_steppe_horse],
    def_attrib|level(21),wp(100),knows_riding_3|knows_ironflesh_3|knows_horse_archery_3|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],

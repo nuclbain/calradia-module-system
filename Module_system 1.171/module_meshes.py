@@ -74,6 +74,7 @@ meshes = [
   ("pic_villageriot", 0, "pic_villageriot", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("pic_sarranid_encounter", 0, "pic_sarranid_encounter", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("pic_crafting", 0, "pic_crafting", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("pic_spells", 0, "pic_spells", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   
   ("mp_score_a", 0, "mp_score_a", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("mp_score_b", 0, "mp_score_b", 0, 0, 0, 0, 0, 0, 1, 1, 1),

@@ -1738,6 +1738,157 @@ common_siege_check_defeat_condition = (
     ##diplomacy end
     ])
 
+# COMBAT ABILITIES BEGIN
+
+special_abillities_menu = (
+  0, 0, 0, [],
+  [
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_wielded_item, ":cur_staff", ":player_agent", 0),
+
+    (try_begin),
+      (gt, ":cur_staff", 0),
+      (eq, ":cur_staff", "itm_helper_staff"),
+      (start_presentation, "prsnt_combat_abilities"),
+    (try_end),
+  ]
+)
+
+special_ability_ignite = (
+  0, 0, 20, [
+    (key_clicked, key_z),
+  ],
+  [
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_wielded_item, ":cur_staff", ":player_agent", 0),
+
+    (try_begin),
+      (gt, ":cur_staff", 0),
+      (eq, ":cur_staff", "itm_helper_staff"),
+      (agent_get_position, pos1, ":player_agent"),
+      (position_move_z, pos1, 50, 0),
+      (position_move_x, pos1, 100, 0),
+      (position_move_y, pos1, 100, 0),
+      (particle_system_burst, "psys_spell_fire", pos1, 100),
+      (position_move_x, pos1, -200, 0),
+      (particle_system_burst, "psys_spell_fire", pos1, 100),
+      (position_move_y, pos1, -200, 0),
+      (particle_system_burst, "psys_spell_fire", pos1, 100),
+      (position_move_x, pos1, 200, 0),
+      (particle_system_burst, "psys_spell_fire", pos1, 100),
+
+      (agent_play_sound, ":player_agent", "snd_man_warcry"),
+      (agent_set_animation, ":player_agent", "anim_spell_casting"),
+      (agent_get_position, pos2, ":player_agent"),
+
+      (try_for_agents, ":enemy_agent"),
+        (agent_is_alive, ":enemy_agent"),
+        (agent_is_human, ":enemy_agent"),
+        (agent_get_team, ":enemy_team", ":enemy_agent"),
+        (agent_get_team, ":player_team", ":player_agent"),
+        (teams_are_enemies, ":enemy_team", ":player_team"),
+        (agent_get_position, pos3, ":enemy_agent"),
+        (get_distance_between_positions, ":distance", pos2, pos3),
+        (le, ":distance", 1000),
+        (agent_deliver_damage_to_agent, ":player_agent", ":enemy_agent", 0, itm_helper_staff),
+        (agent_play_sound, ":enemy_agent", "snd_man_hit"),
+        (particle_system_burst, "psys_spell_fire", pos3, 100),
+      (try_end),
+
+      (store_mission_timer_a, "$g_skill_applied_time_1"),
+      (assign, "$g_skill_cooldown_1", 20),
+      (display_message, "@Spell casted!", 0x5FB404),
+    (try_end),
+  ]
+)
+
+special_ability_haste = (
+  0, 0, 30, [
+    (key_clicked, key_x),
+  ],
+  [
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_wielded_item, ":cur_staff", ":player_agent", 0),
+    (try_begin),
+      (gt, ":cur_staff", 0),
+      (eq, ":cur_staff", "itm_helper_staff"),
+      (agent_get_team, ":player_team", ":player_agent"),
+      (agent_set_speed_modifier, ":player_agent", 200),
+      (agent_get_position, pos1, ":player_agent"),
+
+      (try_for_range, ":counter", 0, 50),
+        (agent_get_position, pos1, ":player_agent"),
+        (store_random_in_range, ":random", -100, 100),
+        (store_random_in_range, ":random_2", -100, 100),
+        (position_move_x, pos1, ":random", 0),
+        (position_move_y, pos1, ":random_2", 0),
+        (position_move_z, pos1, 100, 0),
+
+        (particle_system_burst, "psys_spell_fire", pos1, 100),
+        (particle_system_burst, "psys_war_smoke_tall", pos1, 100),
+      (try_end),
+
+      (agent_play_sound, ":player_agent", "snd_man_warcry"),
+      (agent_set_animation, ":player_agent", "anim_spell_casting"),
+      (store_mission_timer_a, "$g_skill_applied_time_2"),
+      (assign, "$g_skill_cooldown_2", 30),
+      (display_message, "@Spell casted!", 0x5FB404),
+    (try_end),
+  ]
+)
+
+special_ability_serpent_call = (
+  0, 0, 60, [
+    (key_clicked, key_v),
+  ],
+  [
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_wielded_item, ":cur_staff", ":player_agent", 0),
+    (try_begin),
+      (gt, ":cur_staff", 0),
+      (eq, ":cur_staff", "itm_helper_staff"),
+      (agent_get_team, ":player_team", ":player_agent"),
+      (agent_get_position, pos1, ":player_agent"),
+
+      (try_for_range, ":counter", 0, 10),
+        (store_random_in_range, ":random", -100, 100),
+        (store_random_in_range, ":random_2", -100, 100),
+        (position_move_x, pos1, ":random", 0),
+        (position_move_y, pos1, ":random_2", 0),
+
+        (set_spawn_position, pos1),
+        (spawn_agent, "trp_minor_summoned_entity"),
+        (agent_set_team, reg0, ":player_team"),
+        (agent_set_slot, reg0, slot_agent_is_not_reinforcement, 1),
+        (agent_set_is_alarmed, reg0, 1),
+        (particle_system_burst, "psys_game_hoof_dust_mud", pos1, 100),
+      (try_end),
+
+      (agent_play_sound, ":player_agent", "snd_man_warcry"),
+      (agent_set_animation, ":player_agent", "anim_spell_casting"),
+      (store_mission_timer_a, "$g_skill_applied_time_3"),
+      (assign, "$g_skill_cooldown_3", 60),
+      (display_message, "@Spell casted!", 0x5FB404),
+    (try_end),
+  ]
+)
+
+special_abilities_timer_check = (
+  0, 0, 0, [
+    (gt, "$g_skill_applied_time_2", 0),
+    (store_mission_timer_a, ":cur_time"),
+    (store_sub, ":time_diff", ":cur_time", "$g_skill_applied_time_2"),
+    (ge, ":time_diff", 20),
+  ],
+  [
+    (get_player_agent_no, ":player_agent"),
+    (agent_set_speed_modifier, ":player_agent", 100),
+    (assign, "$g_skill_applied_time_2", 0),
+  ]
+)
+
+# COMBAT ABILITIES END
+
 common_battle_order_panel = (
   0, 0, 0, [
     (game_key_clicked, gk_view_orders),
@@ -3398,6 +3549,11 @@ mission_templates = [
          ]),
 
       common_battle_init_banner,
+      special_abillities_menu,
+      special_ability_ignite,
+      special_ability_haste,
+      special_ability_serpent_call,
+      special_abilities_timer_check,
 
       (ti_on_agent_killed_or_wounded, 0, 0, [],
        [
@@ -5347,6 +5503,11 @@ mission_templates = [
 
       common_battle_order_panel,
       common_battle_order_panel_tick,
+      special_abillities_menu,
+      special_ability_ignite,
+      special_ability_haste,
+      special_ability_serpent_call,
+      special_abilities_timer_check,
 
 ##      (0, 0, ti_once,
 ##       [
