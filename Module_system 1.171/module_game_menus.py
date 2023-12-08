@@ -287,7 +287,7 @@ game_menus = [
          (party_add_members, "p_main_party", "trp_chornovalley_longbowman", 10),
          (party_add_members, "p_main_party", "trp_silver_rose_sharpshooter", 10),
          (troop_add_item, "trp_player","itm_mkk_archer_armor_d",0),
-         (troop_add_item, "trp_player","itm_full_helm",0),
+         (troop_add_item, "trp_player","itm_m_bascinet_b",0),
 
          (troop_add_item, "trp_player","itm_hafted_blade_b",0),
          (troop_add_item, "trp_player","itm_hafted_blade_a",0),
