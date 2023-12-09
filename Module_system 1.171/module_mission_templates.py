@@ -1757,6 +1757,10 @@ special_abillities_menu = (
 special_ability_ignite = (
   0, 0, 20, [
     (key_clicked, key_z),
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_wielded_item, ":cur_staff", ":player_agent", 0),
+    (gt, ":cur_staff", 0),
+    (eq, ":cur_staff", "itm_helper_staff"),
   ],
   [
     (get_player_agent_no, ":player_agent"),
@@ -1805,6 +1809,10 @@ special_ability_ignite = (
 special_ability_haste = (
   0, 0, 30, [
     (key_clicked, key_x),
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_wielded_item, ":cur_staff", ":player_agent", 0),
+    (gt, ":cur_staff", 0),
+    (eq, ":cur_staff", "itm_helper_staff"),
   ],
   [
     (get_player_agent_no, ":player_agent"),
