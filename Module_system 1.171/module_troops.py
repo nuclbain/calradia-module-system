@@ -763,8 +763,6 @@ troops = [
   ["desert_bandit","Piaktu Bandit","Piaktu Bandits",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse|tf_mounted,0,0,fac_outlaws,
    [itm_arrows,itm_arabian_sword_a,itm_winged_mace,itm_spear, itm_light_lance,itm_jarid,itm_nomad_bow,itm_short_bow,itm_jarid,itm_m_desert_bandit_a, itm_m_desert_bandit_b, itm_m_desert_bandit_c, itm_m_desert_bandit_d, itm_m_bandit_turban_a, itm_m_bandit_turban_b, itm_m_bandit_turban_c, itm_m_bandit_turban_d, itm_mkk_leather_boots_a, itm_civil_rich_boots_a, itm_civil_rich_boots_b, itm_leather_covered_round_shield,itm_leather_covered_round_shield,itm_arabian_horse_a],
    def_attrib|level(12),wp(100),knows_riding_4|knows_horse_archery_3|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],
-  
-  ["minor_summoned_entity","Minor Summoned Entity","Minor Summoned Entities",tf_awakened,0,0,fac_outlaws,[itm_hunting_bow, itm_arrows, itm_stones, itm_hunting_crossbow, itm_bolts, itm_falchion, itm_dagger, itm_cleaver, itm_knife, itm_wooden_stick, itm_shortened_spear, itm_tab_shield_round_a, itm_tab_shield_tauria_a], def_attrib|level(1),wp(50),knows_common|knows_power_draw_2|knows_power_throw_2,skeleton_face1, skeleton_face1],
 
   ["black_celestial_armsman","Black Khergit Horseman","Black Khergit Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_black_khergits,
    [itm_arrows,itm_sword_khergit_2,itm_scimitar,itm_scimitar,itm_winged_mace,itm_spear,itm_lance,itm_khergit_bow,itm_khergit_bow,itm_nomad_bow,itm_nomad_bow,itm_steppe_cap,itm_nomad_cap,itm_khergit_war_helmet,itm_khergit_war_helmet,itm_mail_hauberk,itm_m_chornovalley_heavy_mail_b,itm_hide_boots,itm_plate_covered_round_shield,itm_plate_covered_round_shield,itm_saddle_horse,itm_steppe_horse],
@@ -773,14 +771,6 @@ troops = [
   ["manhunter","Manhunter","Manhunters",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_manhunters,
    [itm_mace_3,itm_winged_mace,itm_nasal_helmet,itm_padded_cloth,itm_aketon_green,itm_aketon_green,itm_wooden_shield,itm_nomad_boots,itm_wrapping_boots,itm_sumpter_horse],
    def_attrib|level(10),wp(50),knows_common,bandit_face1, bandit_face2],
-##  ["deserter","Deserter","Deserters",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_swadian_deserters,
-##   [itm_arrows,itm_spear,itm_fighting_pick,itm_short_bow,itm_sword,itm_voulge,itm_nordic_shield,itm_round_shield,itm_kettle_hat,itm_leather_cap,itm_padded_cloth,itm_leather_armor,itm_mkk_archer_armor_d,itm_saddle_horse],
-##   def_attrib|level(12),wp(60),knows_common,bandit_face1, bandit_face2],
-
-#fac_slavers
-##  ["slave_keeper","Slave Keeper","Slave Keepers",tf_guarantee_armor ,0,0,fac_slavers,
-##   [itm_cudgel,itm_club,itm_woolen_cap,itm_rawhide_coat,itm_coarse_tunic,itm_nomad_armor,itm_nordic_shield,itm_nomad_boots,itm_wrapping_boots,itm_sumpter_horse],
-##   def_attrib|level(10),wp(60),knows_common,bandit_face1, bandit_face2],
   ["slave_driver","Slave Driver","Slave Drivers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse ,0,0,fac_slavers,
    [itm_club_with_spike_head,itm_segmented_helmet,itm_tribal_warrior_outfit,itm_nordic_shield,itm_leather_boots,itm_leather_gloves,itm_khergit_leather_boots,itm_steppe_horse],
    def_attrib|level(14),wp(80),knows_common,bandit_face1, bandit_face2],
@@ -794,28 +784,9 @@ troops = [
    [itm_military_hammer,itm_warhammer,itm_brigandine_red,itm_steel_shield,itm_scale_gauntlets,itm_mail_mittens,itm_bascinet_3,itm_plate_boots,itm_mail_chausses,itm_warhorse],
    def_attrib|level(26),wp(130),knows_common|knows_riding_4|knows_power_strike_5,bandit_face1, bandit_face2],
 
-#Rhodok tribal, Hunter, warrior, veteran, warchief
-
-
-
-
-
-
-#  ["undead_walker","undead_walker","undead_walkers",tf_undead|tf_allways_fall_dead,0,0,fac_undeads,
-#   [], 
-#   def_attrib|level(3),wp(60),knows_common,undead_face1, undead_face2],
-#  ["undead_horseman","undead_horseman","undead_horsemen",tf_undead|tf_allways_fall_dead|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse,0,0,fac_undeads,
-#   [], 
-#   def_attrib|level(19),wp(100),knows_common,undead_face1, undead_face2],
-#  ["undead_nomad","undead_nomad","undead_nomads",tf_undead|tf_allways_fall_dead|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_black_khergits,
-#   [], 
-#   def_attrib|level(21),wp(100),knows_common|knows_riding_4,khergit_face1, khergit_face2],
-#  ["undead","undead","undead",tf_undead|tf_allways_fall_dead,0,0,fac_undeads,
-#   [], 
-#   def_attrib|level(3),wp(60),knows_common,undead_face1, undead_face2],
-#  ["hell_knight","hell_knight","hell_knights",tf_undead|tf_allways_fall_dead|tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_undeads,
-#   [], 
-#   def_attrib|level(23),wp(100),knows_common|knows_riding_3,undead_face1, undead_face2],
+  # SUMMONED TROOPS BEGIN
+  ["minor_summoned_entity","Minor Summoned Entity","Minor Summoned Entities",tf_awakened,0,0,fac_outlaws,[itm_hunting_bow, itm_arrows, itm_stones, itm_hunting_crossbow, itm_bolts, itm_falchion, itm_dagger, itm_cleaver, itm_knife, itm_wooden_stick, itm_shortened_spear, itm_tab_shield_round_a, itm_tab_shield_tauria_a], def_attrib|level(1),wp(50),knows_common|knows_power_draw_2|knows_power_throw_2,skeleton_face1, skeleton_face1],
+  # SUMMONED TROOPS END
 
   ["follower_woman","Camp Follower","Camp Follower",tf_female|tf_guarantee_armor,0,0,fac_commoners,
    [itm_bolts,itm_light_crossbow,itm_short_bow,itm_crossbow,itm_nordic_shield,itm_hide_covered_round_shield,itm_hatchet,itm_hand_axe,itm_voulge,itm_fighting_pick,itm_club,itm_dress,itm_woolen_dress, itm_skullcap, itm_wrapping_boots],
