@@ -54,13 +54,25 @@ game_menus = [
           (this_or_next|key_is_down, key_left_shift),
           (key_is_down, key_right_shift),
           (assign, "$g_disable_condescending_comments", 4),
-          (store_random_in_range, "$character_gender", tf_male, tf_female + 1),
+          (assign, "$character_gender", tf_male),
           (troop_set_type, "trp_player", "$character_gender"),
           (store_random_in_range, "$background_type", cb_noble, cb_priest + 1),
           (store_random_in_range, "$background_answer_2", cb2_page, dplmc_cb2_acolyte + 1),
           (store_random_in_range, "$background_answer_3", dplmc_cb3_bravo, cb3_student + 1),
           (store_random_in_range, "$background_answer_4", cb4_revenge, cb4_greed + 1),
           (str_store_string, s13, "@Perhaps you have forgotten the face of your father."),
+
+          # For crafting test
+          (troop_add_items, "trp_player", "itm_helper_staff", 1),
+          (troop_add_items, "trp_player", "itm_weaponsmith_tools", 1),
+          (troop_add_items, "trp_player", "itm_armorer_tools", 1),
+          (troop_add_items, "trp_player", "itm_cheap_smithing_material", 5),
+          (troop_add_items, "trp_player", "itm_regular_smithing_material", 5),
+          (troop_add_items, "trp_player", "itm_expensive_smithing_material", 5),
+
+          (troop_raise_skill, "trp_player", skl_inventory_management, 10),
+          (troop_raise_skill, "trp_player", skl_engineer, 2),
+
           (assign, "$cheat_mode", 1),
           (jump_to_menu, "mnu_choose_skill"),
         (else_try),
@@ -275,7 +287,7 @@ game_menus = [
          (party_add_members, "p_main_party", "trp_chornovalley_longbowman", 10),
          (party_add_members, "p_main_party", "trp_silver_rose_sharpshooter", 10),
          (troop_add_item, "trp_player","itm_mkk_archer_armor_d",0),
-         (troop_add_item, "trp_player","itm_full_helm",0),
+         (troop_add_item, "trp_player","itm_m_bascinet_b",0),
 
          (troop_add_item, "trp_player","itm_hafted_blade_b",0),
          (troop_add_item, "trp_player","itm_hafted_blade_a",0),
@@ -974,7 +986,7 @@ game_menus = [
 ##       (troop_clear_inventory, "$g_player_troop"),
 ##       (troop_add_item, "$g_player_troop","itm_helmet_with_neckguard",0),
 ##       (troop_add_item, "$g_player_troop","itm_plate_armor",0),
-##       (troop_add_item, "$g_player_troop","itm_iron_greaves",0),
+##       (troop_add_item, "$g_player_troop","itm_m_greaves_a",0),
 ##       (troop_add_item, "$g_player_troop","itm_mail_chausses",0),
 ##       (troop_add_item, "$g_player_troop","itm_tab_shield_small_round_c",0),
 ##       (troop_add_item, "$g_player_troop","itm_heavy_crossbow",0),
@@ -1828,7 +1840,7 @@ game_menus = [
          (store_random_in_range, ":weapon_item", "itm_awlpike", "itm_bec_de_corbin_a"),
        (else_try),
          (eq, ":faction_no", "fac_kingdom_2"),
-         (store_random_in_range, ":helmet_item", "itm_vaegir_fur_cap", "itm_vaegir_lamellar_helmet"),
+         (store_random_in_range, ":helmet_item", "itm_chornovalley_skullcap_helmet_a", "itm_chornovalley_footman_helmet_b"),
        (else_try),
          (eq, ":faction_no", "fac_kingdom_3"), #original items
          (assign, ":helmet_item", "itm_khergit_guard_helmet"),
@@ -1844,9 +1856,9 @@ game_menus = [
          (store_random_in_range, ":weapon_item","itm_military_hammer", "itm_sickle"),
        (else_try),
          (eq, ":faction_no", "fac_kingdom_6"), #a fairly complete set of gear
-         (troop_add_item, "trp_player","itm_sarranid_warrior_cap",imod_hardened),
-         (store_random_in_range, ":boots_item", "itm_sarranid_boots_a", "itm_sarranid_boots_d"),
-         (store_random_in_range, ":helmet_item", "itm_sarranid_felt_hat", "itm_solarian_horseman_helmet"),
+         (troop_add_item, "trp_player","itm_mkk_helm_sar_a",imod_hardened),
+         (store_random_in_range, ":boots_item", "itm_mkk_boots_a", "itm_eastern_mail_boots_a"),
+         (store_random_in_range, ":helmet_item", "itm_mkk_turban_a", "itm_mkk_helm_warrior_a"),
          # (assign, ":weapon_item","itm_sarranid_two_handed_mace_1"),
        (try_end),
        (try_begin),
@@ -4078,7 +4090,24 @@ TOTAL:  {reg5}"),
        [(jump_to_menu, "mnu_camp_action_read_book"),
         ]
        ),
-       
+      
+      # CRAFTING BEGIN
+
+      (
+        "action_crafting",
+        [
+          (store_skill_level, ":crafting", skl_engineer, "trp_player"),
+          (ge, ":crafting", 2),
+        ],
+        "Crafting menu",
+        [
+          # (jump_to_menu, "mnu_crafting"),
+          (start_presentation, "prsnt_crafting_menu")
+        ]
+      ),
+
+      # CRAFTING END
+
       #SB : rename changes
       ("camp_change_name",[],"Change the name of your party.",
        [(assign, "$g_presentation_state", rename_party),

@@ -40,7 +40,7 @@ pilgrim_disguise = [itm_pilgrim_hood,itm_pilgrim_disguise,itm_practice_staff, it
 farmer_disguise = [itm_felt_hat, itm_coarse_tunic, itm_cleaver, itm_battle_fork, itm_stones, itm_nomad_boots]
 hunter_disguise = [itm_hunting_bow,itm_barbed_arrows, itm_black_hood, itm_leather_gloves, itm_light_leather, itm_sword_khergit_1, itm_light_leather_boots]
 merchant_disguise = [itm_leather_jacket,itm_woolen_hose,itm_felt_steppe_cap,itm_dagger]
-guard_disguise = [itm_mail_chausses,itm_m_hauberk_black_a,itm_mail_mittens,itm_footman_helmet,itm_tab_shield_round_c,itm_fighting_pick,itm_war_spear]
+guard_disguise = [itm_mail_chausses,itm_m_hauberk_black_a,itm_mail_mittens,itm_iron_crown_nasal_a,itm_tab_shield_round_c,itm_fighting_pick,itm_war_spear]
 bard_disguise = [itm_leather_boots,itm_lyre,itm_linen_tunic,itm_winged_mace]
 #note that these are usually male clothing, especially farmer_disguise, need some female ones as well
 
@@ -110,7 +110,7 @@ dplmc_random_mixed_gender = (ti_on_agent_spawn, 0, 0, [
   (agent_is_human, ":agent_no"),
   (agent_get_troop_id, ":troop_no", ":agent_no"),
   (neg|troop_is_hero, ":troop_no"),
-  (is_between, ":troop_no", soldiers_begin, "trp_follower_woman", "trp_caravan_master"), #skip refugee line, town walkers
+  (is_between, ":troop_no", soldiers_begin, "trp_minor_summoned_entity", "trp_caravan_master"), #skip refugee line, town walkers, summoned entities
   #SB : check non-native troop genders
 
   #get individual faction chances
@@ -1737,6 +1737,168 @@ common_siege_check_defeat_condition = (
       (try_end),
     ##diplomacy end
     ])
+
+# COMBAT ABILITIES BEGIN
+
+special_abillities_menu = (
+  0, 0, 0, [],
+  [
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_wielded_item, ":cur_staff", ":player_agent", 0),
+
+    (try_begin),
+      (gt, ":cur_staff", 0),
+      (eq, ":cur_staff", "itm_helper_staff"),
+      (start_presentation, "prsnt_combat_abilities"),
+    (try_end),
+  ]
+)
+
+special_ability_ignite = (
+  0, 0, 20, [
+    (key_clicked, key_z),
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_wielded_item, ":cur_staff", ":player_agent", 0),
+    (gt, ":cur_staff", 0),
+    (eq, ":cur_staff", "itm_helper_staff"),
+  ],
+  [
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_wielded_item, ":cur_staff", ":player_agent", 0),
+
+    (try_begin),
+      (gt, ":cur_staff", 0),
+      (eq, ":cur_staff", "itm_helper_staff"),
+      (agent_get_position, pos1, ":player_agent"),
+      (position_move_z, pos1, 50, 0),
+      (position_move_x, pos1, 100, 0),
+      (position_move_y, pos1, 100, 0),
+      (particle_system_burst, "psys_spell_fire", pos1, 100),
+      (position_move_x, pos1, -200, 0),
+      (particle_system_burst, "psys_spell_fire", pos1, 100),
+      (position_move_y, pos1, -200, 0),
+      (particle_system_burst, "psys_spell_fire", pos1, 100),
+      (position_move_x, pos1, 200, 0),
+      (particle_system_burst, "psys_spell_fire", pos1, 100),
+
+      (agent_play_sound, ":player_agent", "snd_man_warcry"),
+      (agent_set_animation, ":player_agent", "anim_spell_casting"),
+      (agent_get_position, pos2, ":player_agent"),
+
+      (try_for_agents, ":enemy_agent"),
+        (agent_is_alive, ":enemy_agent"),
+        (agent_is_human, ":enemy_agent"),
+        (agent_get_team, ":enemy_team", ":enemy_agent"),
+        (agent_get_team, ":player_team", ":player_agent"),
+        (teams_are_enemies, ":enemy_team", ":player_team"),
+        (agent_get_position, pos3, ":enemy_agent"),
+        (get_distance_between_positions, ":distance", pos2, pos3),
+        (le, ":distance", 1000),
+        (agent_deliver_damage_to_agent, ":player_agent", ":enemy_agent", 0, itm_helper_staff),
+        (agent_play_sound, ":enemy_agent", "snd_man_hit"),
+        (particle_system_burst, "psys_spell_fire", pos3, 100),
+      (try_end),
+
+      (store_mission_timer_a, "$g_skill_applied_time_1"),
+      (assign, "$g_skill_cooldown_1", 20),
+      (display_message, "@Spell casted!", 0x5FB404),
+    (try_end),
+  ]
+)
+
+special_ability_haste = (
+  0, 0, 30, [
+    (key_clicked, key_x),
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_wielded_item, ":cur_staff", ":player_agent", 0),
+    (gt, ":cur_staff", 0),
+    (eq, ":cur_staff", "itm_helper_staff"),
+  ],
+  [
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_wielded_item, ":cur_staff", ":player_agent", 0),
+    (try_begin),
+      (gt, ":cur_staff", 0),
+      (eq, ":cur_staff", "itm_helper_staff"),
+      (agent_get_team, ":player_team", ":player_agent"),
+      (agent_set_speed_modifier, ":player_agent", 200),
+      (agent_get_position, pos1, ":player_agent"),
+
+      (try_for_range, ":counter", 0, 50),
+        (agent_get_position, pos1, ":player_agent"),
+        (store_random_in_range, ":random", -100, 100),
+        (store_random_in_range, ":random_2", -100, 100),
+        (position_move_x, pos1, ":random", 0),
+        (position_move_y, pos1, ":random_2", 0),
+        (position_move_z, pos1, 100, 0),
+
+        (particle_system_burst, "psys_spell_fire", pos1, 100),
+        (particle_system_burst, "psys_war_smoke_tall", pos1, 100),
+      (try_end),
+
+      (agent_play_sound, ":player_agent", "snd_man_warcry"),
+      (agent_set_animation, ":player_agent", "anim_spell_casting"),
+      (store_mission_timer_a, "$g_skill_applied_time_2"),
+      (assign, "$g_skill_cooldown_2", 30),
+      (display_message, "@Spell casted!", 0x5FB404),
+    (try_end),
+  ]
+)
+
+special_ability_serpent_call = (
+  0, 0, 60, [
+    (key_clicked, key_v),
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_wielded_item, ":cur_staff", ":player_agent", 0),
+    (gt, ":cur_staff", 0),
+    (eq, ":cur_staff", "itm_helper_staff"),
+  ],
+  [
+    (get_player_agent_no, ":player_agent"),
+    (agent_get_position, pos1, ":player_agent"),
+
+    (store_attribute_level, ":int_cap", "trp_player", ca_intelligence),
+
+    (try_for_range, ":counter", 0, ":int_cap"),
+      (get_player_agent_no, ":player_agent"),
+      (agent_get_team, ":player_team", ":player_agent"),
+
+      (store_random_in_range, ":random", -100, 100),
+      (store_random_in_range, ":random_2", -100, 100),
+      (position_move_x, pos1, ":random", 0),
+      (position_move_y, pos1, ":random_2", 0),
+
+      (set_spawn_position, pos1),
+      (spawn_agent, "trp_minor_summoned_entity"),
+      (agent_set_team, reg0, ":player_team"),
+      (agent_set_slot, reg0, slot_agent_is_not_reinforcement, 1),
+      (agent_set_is_alarmed, reg0, 1),
+      (particle_system_burst, "psys_game_hoof_dust_mud", pos1, 100),
+    (try_end),
+
+    (agent_play_sound, ":player_agent", "snd_man_warcry"),
+    (agent_set_animation, ":player_agent", "anim_spell_casting"),
+    (store_mission_timer_a, "$g_skill_applied_time_3"),
+    (assign, "$g_skill_cooldown_3", 60),
+    (display_message, "@Spell casted!", 0x5FB404),
+  ]
+)
+
+special_abilities_timer_check = (
+  0, 0, 0, [
+    (gt, "$g_skill_applied_time_2", 0),
+    (store_mission_timer_a, ":cur_time"),
+    (store_sub, ":time_diff", ":cur_time", "$g_skill_applied_time_2"),
+    (ge, ":time_diff", 20),
+  ],
+  [
+    (get_player_agent_no, ":player_agent"),
+    (agent_set_speed_modifier, ":player_agent", 100),
+    (assign, "$g_skill_applied_time_2", 0),
+  ]
+)
+
+# COMBAT ABILITIES END
 
 common_battle_order_panel = (
   0, 0, 0, [
@@ -3369,35 +3531,52 @@ mission_templates = [
      (4,mtef_attackers|mtef_team_1,0,aif_start_alarmed,0,[]),
      ],
     [
-      (ti_on_agent_spawn, 0, 0, [],
-       [
-         (store_trigger_param_1, ":agent_no"),
-         (call_script, "script_agent_reassign_team", ":agent_no"),
+      (
+        ti_on_agent_spawn, 0, 0, [],
+        [
+          (store_trigger_param_1, ":agent_no"),
+          (call_script, "script_agent_reassign_team", ":agent_no"),
 
-         (assign, ":initial_courage_score", 5000),
+          (assign, ":initial_courage_score", 5000),
 
-         (agent_get_troop_id, ":troop_id", ":agent_no"),
-         (store_character_level, ":troop_level", ":troop_id"),
-         (val_mul, ":troop_level", 35),
-         (val_add, ":initial_courage_score", ":troop_level"), #average : 20 * 35 = 700
+          (agent_get_troop_id, ":troop_id", ":agent_no"),
 
-         (store_random_in_range, ":randomized_addition_courage", 0, 3000), #average : 1500
-         (val_add, ":initial_courage_score", ":randomized_addition_courage"),
+          # For summoned creatures, set their courage score to 8700
+          # beacuse they are not affected by morale  
+          (try_begin),
+            # TODO: change to is_between when we will have more summoned creatures
+            (neq, ":troop_id", "trp_minor_summoned_entity"),
 
-         (agent_get_party_id, ":agent_party", ":agent_no"),
-         (party_get_morale, ":cur_morale", ":agent_party"),
+            (store_character_level, ":troop_level", ":troop_id"),
+            (val_mul, ":troop_level", 35),
+            (val_add, ":initial_courage_score", ":troop_level"), #average : 20 * 35 = 700
 
-         (store_sub, ":morale_effect_on_courage", ":cur_morale", 70),
-         (val_mul, ":morale_effect_on_courage", 30), #this can effect morale with -2100..900
-         (val_add, ":initial_courage_score", ":morale_effect_on_courage"),
+            (store_random_in_range, ":randomized_addition_courage", 0, 3000), #average : 1500
+            (val_add, ":initial_courage_score", ":randomized_addition_courage"),
 
-         #average = 5000 + 700 + 1500 = 7200; min : 5700, max : 8700
-         #morale effect = min : -2100(party morale is 0), average : 0(party morale is 70), max : 900(party morale is 100)
-         #min starting : 3600, max starting  : 9600, average starting : 7200
-         (agent_set_slot, ":agent_no", slot_agent_courage_score, ":initial_courage_score"),
-         ]),
+            (agent_get_party_id, ":agent_party", ":agent_no"),
+            (party_get_morale, ":cur_morale", ":agent_party"),
+
+            (store_sub, ":morale_effect_on_courage", ":cur_morale", 70),
+            (val_mul, ":morale_effect_on_courage", 30), #this can effect morale with -2100..900
+            (val_add, ":initial_courage_score", ":morale_effect_on_courage"),
+          (else_try),
+            (assign, ":initial_courage_score", 8700),
+          (try_end),
+
+          #average = 5000 + 700 + 1500 = 7200; min : 5700, max : 8700
+          #morale effect = min : -2100(party morale is 0), average : 0(party morale is 70), max : 900(party morale is 100)
+          #min starting : 3600, max starting  : 9600, average starting : 7200
+          (agent_set_slot, ":agent_no", slot_agent_courage_score, ":initial_courage_score"),
+        ]
+      ),
 
       common_battle_init_banner,
+      special_abillities_menu,
+      special_ability_ignite,
+      special_ability_haste,
+      special_ability_serpent_call,
+      special_abilities_timer_check,
 
       (ti_on_agent_killed_or_wounded, 0, 0, [],
        [
@@ -5347,6 +5526,11 @@ mission_templates = [
 
       common_battle_order_panel,
       common_battle_order_panel_tick,
+      special_abillities_menu,
+      special_ability_ignite,
+      special_ability_haste,
+      special_ability_serpent_call,
+      special_abilities_timer_check,
 
 ##      (0, 0, ti_once,
 ##       [
