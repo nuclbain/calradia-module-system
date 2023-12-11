@@ -12616,7 +12616,7 @@ TOTAL:  {reg5}"),
         (gt, "$sneaked_into_town", disguise_none), #SB : condition for disguise
       ],
       "Take a walk around the streets.",
-       [
+      [
          #If the player is fighting his or her way out
          (try_begin),
            (eq, "$talk_context", tc_prison_break),
@@ -12773,6 +12773,9 @@ TOTAL:  {reg5}"),
              (set_visitor,28,reg3),
            (try_end),
 
+           (set_visitor, 48, "trp_beggar_female"),
+           (set_visitor, 49, "trp_beggar_male"),
+           
            (party_get_slot, ":spawned_troop", "$current_town", slot_town_armorer),
            (set_visitor, 9, ":spawned_troop"),
            (party_get_slot, ":spawned_troop", "$current_town", slot_town_weaponsmith),

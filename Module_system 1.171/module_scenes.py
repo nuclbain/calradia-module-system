@@ -202,7 +202,7 @@ scenes = [
   ("town_5_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x00000000300214100003ecfb00002b930000051900002c29",
     [],["bonus_chest_2"],"outer_terrain_plain"),
   ("town_6_center",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000002300491830004a529000036230000312a00003653",
-    [],[],"outer_terrain_plain"),
+    [],["bonus_chest_4", "bonus_chest_5"],"outer_terrain_plain"),
   ("town_7_center",sf_generate,"none", "none", (0,0),(100,100),-100,"0x00000001300785320004c93200002bc700005e48000008d2",
     [],[],"outer_terrain_plain"),
   ("town_8_center",sf_generate,"none", "none",(0,0),(100,100),-100,"0x3000148000025896000074e600006c260000125a",

@@ -43943,13 +43943,138 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
   [anyone,"merchant_gossip", [], "Well, nothing new lately. Prices, weather, the war, the same old things.", "town_merchant_talk",[]],
   [anyone|plyr,"town_merchant_talk", [], "Good-bye.", "close_window",[]],
 
+  # BEGGAR DIALOGUE BEGIN
+  # Will ask a player to spare a coin.
+  # Can give item or teach player a new skill or weapon prof with small chance.
+  [
+    anyone,
+    "start",
+    [
+      (eq, "$talk_context", 0),
+      (is_between, "$g_talk_troop", beggars_begin, beggars_end),
+    ],
+    "My {lord/lady}, can you spare a coin?",
+    "town_beggar_talk",
+    [
+      (assign, "$beggar_positive_outcome", 0),
+      (assign, "$beggar_outcome_variant", 0),
+    ]
+  ],
 
+  # Player response to beggar.
+  [
+    anyone|plyr,
+    "town_beggar_talk",
+    [
+      (eq, "$coin_spared", 0),
+      (store_troop_gold, ":player_gold", "trp_player"),
+      (ge, ":player_gold", 50),
+    ],
+    "Here, take this.",
+    "town_beggar_spare_coin",
+    [
+      (assign, "$coin_spared", 1),
+      (troop_remove_gold, "trp_player", 50),
 
+      # There is a 5% chance that the player will lose relation with the town.
+      # There is a 5% chance that the player will get any of the positive outcomes
+      (store_random_in_range, ":random", 0, 100),
 
-##  [anyone,"start", [(eq, "$talk_context", 0),
-##                    (is_between,"$g_talk_troop",walkers_begin, walkers_end),
-##                    (gt, "$sneaked_into_town", disguise_none),
-##                     ], "Stay away beggar!", "close_window",[]],
+      (try_begin),
+        (lt, ":random", 5),
+        (call_script, "script_change_player_relation_with_center", "$current_town", -1),
+        (display_message, "@People are not happy with your generosity.", 0xFF0000),
+        (display_message, "@You have lost relation with the town.", 0xFF0000),
+      (else_try),
+        (ge, ":random", 95),
+        (assign, "$beggar_positive_outcome", 1),
+
+        (store_random_in_range, ":random_positive_outcome", 1, 4),
+        (assign, "$beggar_outcome_variant", ":random_positive_outcome"),
+      (try_end),
+
+      # 100% chance if cheat mode is enabled
+      (try_begin),
+        (ge, "$cheat_mode", 1),
+        (assign, "$beggar_positive_outcome", 1),
+        (store_random_in_range, ":random_positive_outcome", 1, 4),
+        (assign, "$beggar_outcome_variant", ":random_positive_outcome"),
+      (try_end),
+    ]
+  ],
+
+  [
+    anyone|plyr,
+    "town_beggar_talk",
+    [],
+    "*Ignore the beggar*",
+    "close_window",
+    [],
+  ],
+
+  [
+    anyone,
+    "town_beggar_spare_coin",
+    [
+      (eq, "$beggar_positive_outcome", 1),
+      (eq, "$beggar_outcome_variant", 1),
+    ],
+    "Thank you, {sir/madame}. I can see the arms you carry. Once I was a soldier myself but this war has left me crippled. I can't even hold a sword anymore. But I can teach you a thing or two about fighting.",
+    "close_window",
+    [
+      (store_random_in_range, ":weapon_prof", wpt_one_handed_weapon, wpt_firearm),
+      (troop_raise_proficiency_linear, "trp_player", ":weapon_prof", 10),
+
+      (display_message, "@You have gained weapon proficiency.", 0x00FF00),
+    ]    
+  ],
+
+  [
+    anyone,
+    "town_beggar_spare_coin",
+    [
+      (eq, "$beggar_positive_outcome", 1),
+      (eq, "$beggar_outcome_variant", 2),
+    ],
+    "Thank you, {sir/madame}. I can see that you're a commander of an army. Ah... once I was a sergeant of local garisson but single mistake cost me my career. I'm really thankful for your generosity. I can teach you a thing or two about commanding troops.",
+    "close_window",
+    [
+      (store_random_in_range, ":skill", skl_spotting, skl_trainer),
+      (troop_raise_skill, "trp_player", ":skill", 1),
+
+      (display_message, "@You have gained skill.", 0x00FF00),
+    ]
+  ],
+
+  [
+    anyone,
+    "town_beggar_spare_coin",
+    [
+      (eq, "$beggar_positive_outcome", 1),
+      (eq, "$beggar_outcome_variant", 3),
+    ],
+    "Thank you, {sir/madame}. You know, I was a trader once, a long time ago. Untill... untill concurrent traders decided to get rid of me. I can give you some tips about negotiating with local merchants if you don't mind.",
+    "close_window",
+    [
+      (troop_raise_skill, "trp_player", skl_trade, 1),
+      (troop_raise_skill, "trp_player", skl_inventory_management, 1),
+
+      (display_message, "@Your trade and inventory management skills have increased.", 0x00FF00),
+    ]
+  ],
+
+  [
+    anyone,
+    "town_beggar_spare_coin",
+    [
+      (eq, "$beggar_positive_outcome", 0),
+    ],
+    "Thank you, {sir/madame}.",
+    "close_window",
+    [],
+  ],
+
+  # BEGGAR DIALOGUE END
 
   [anyone,"start", [(eq, "$talk_context", 0),
                     (is_between,"$g_talk_troop",walkers_begin, walkers_end),

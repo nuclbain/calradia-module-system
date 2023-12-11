@@ -855,6 +855,10 @@ troops = [
  ["spy_walker_2","Townswoman","Townswomen",tf_female|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_commoners,
    [itm_blue_dress, itm_dress, itm_woolen_dress, itm_peasant_dress, itm_woolen_hose, itm_blue_hose, itm_wimple_a, itm_wimple_with_veil, itm_female_hood],
    def_attrib|level(2),wp(40),knows_common,woman_face_1,woman_face_2],
+
+["beggar_male","Beggar","Beggars",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners, [itm_robe, itm_pilgrim_disguise, itm_pilgrim_hood], def_attrib|level(4),wp(60),knows_common,swadian_face_younger_1, swadian_face_middle_2],
+["beggar_female","Beggar","Beggars",tf_female|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_commoners, [itm_robe, itm_pilgrim_disguise, itm_pilgrim_hood], def_attrib|level(4),wp(60),knows_common,woman_face_1,woman_face_2],
+
 # Ryan END
 
 #This troop is the troop marked as spy_walkers_end
@@ -2095,6 +2099,10 @@ troops = [
   ["bonus_chest_1","{!}Bonus Chest","{!}Bonus Chest",tf_hero|tf_inactive, 0,reserved,  fac_neutral,[itm_strange_armor,itm_strange_short_sword],def_attrib|level(18),wp(60),knows_common, 0],
   ["bonus_chest_2","{!}Bonus Chest","{!}Bonus Chest",tf_hero|tf_inactive, 0,reserved,  fac_neutral,[itm_strange_boots,itm_strange_sword],def_attrib|level(18),wp(60),knows_common, 0],
   ["bonus_chest_3","{!}Bonus Chest","{!}Bonus Chest",tf_hero|tf_inactive, 0,reserved,  fac_neutral,[itm_strange_helmet,itm_strange_great_sword],def_attrib|level(18),wp(60),knows_common, 0],
+
+  # New chests
+  ["bonus_chest_4", "{!}Bonus Chest", "{!}Bonus Chest", tf_hero|tf_inactive, 0, reserved, fac_neutral, [itm_m_silver_rose_breastplate_heavy_b], def_attrib|level(18), wp(60), knows_common, 0],
+  ["bonus_chest_5", "{!}Bonus Chest", "{!}Bonus Chest", tf_hero|tf_inactive, 0, reserved, fac_neutral, [itm_black_helmet, itm_axe_crusader_1], def_attrib|level(18), wp(60), knows_common, 0],
 
   ["household_possessions","{!}household_possessions","{!}household_possessions",tf_hero|tf_inactive|tf_is_merchant, 0,reserved,  fac_neutral,[],def_attrib|level(18),wp(60),knows_inventory_management_10, 0],  
   
