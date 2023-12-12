@@ -162,6 +162,7 @@ sounds = [
 ## not adequate, removed: "man_yell_b_21.ogg","man_yell_b_22.ogg","man_yell_b_23.ogg"]),
 #TODONOW:
  ("man_warcry",sf_priority_5, ["man_insult_2.ogg","man_insult_3.ogg","man_insult_7.ogg","man_insult_9.ogg","man_insult_13.ogg","man_insult_15.ogg","man_insult_16.ogg"]),
+ ("man_spell",sf_priority_5, ["man_spell_1.ogg", "man_spell_2.ogg", "man_spell_3.ogg", "man_spell_4.ogg", "man_spell_5.ogg"]),
 
  ("encounter_looters",sf_2d|sf_vol_8, ["encounter_river_pirates_5.ogg","encounter_river_pirates_6.ogg","encounter_river_pirates_9.ogg","encounter_river_pirates_10.ogg","encounter_river_pirates_4.ogg"]),
 

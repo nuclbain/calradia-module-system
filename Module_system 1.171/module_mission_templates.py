@@ -1781,7 +1781,7 @@ special_ability_ignite = (
       (position_move_x, pos1, 200, 0),
       (particle_system_burst, "psys_spell_fire", pos1, 100),
 
-      (agent_play_sound, ":player_agent", "snd_man_warcry"),
+      (agent_play_sound, ":player_agent", "snd_man_spell"),
       (agent_set_animation, ":player_agent", "anim_spell_casting"),
       (agent_get_position, pos2, ":player_agent"),
 
@@ -1836,7 +1836,7 @@ special_ability_haste = (
         (particle_system_burst, "psys_war_smoke_tall", pos1, 100),
       (try_end),
 
-      (agent_play_sound, ":player_agent", "snd_man_warcry"),
+      (agent_play_sound, ":player_agent", "snd_man_spell"),
       (agent_set_animation, ":player_agent", "anim_spell_casting"),
       (store_mission_timer_a, "$g_skill_applied_time_2"),
       (assign, "$g_skill_cooldown_2", 30),
@@ -1876,7 +1876,7 @@ special_ability_serpent_call = (
       (particle_system_burst, "psys_game_hoof_dust_mud", pos1, 100),
     (try_end),
 
-    (agent_play_sound, ":player_agent", "snd_man_warcry"),
+    (agent_play_sound, ":player_agent", "snd_man_spell"),
     (agent_set_animation, ":player_agent", "anim_spell_casting"),
     (store_mission_timer_a, "$g_skill_applied_time_3"),
     (assign, "$g_skill_cooldown_3", 60),
