@@ -506,6 +506,13 @@ simple_triggers = [
 
      ]),
 
+  # Once per day give ability to spare a coin to a beggar
+  (
+    24,
+    [
+      (assign, "$coin_spared", 0),
+    ]
+  ),
 
   # Banner selection menu
   (24,

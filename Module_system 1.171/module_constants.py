@@ -1752,10 +1752,13 @@ village_walkers_begin = "trp_village_walker_1"
 village_walkers_end   = "trp_spy_walker_1"
 
 spy_walkers_begin = "trp_spy_walker_1"
-spy_walkers_end = "trp_tournament_master"
+spy_walkers_end = "trp_beggar_male"
 
 walkers_begin = town_walkers_begin
 walkers_end   = spy_walkers_end
+
+beggars_begin = "trp_beggar_male"
+beggars_end = "trp_tournament_master"
 
 armor_merchants_begin  = "trp_town_1_armorer"
 armor_merchants_end    = "trp_town_1_weaponsmith"

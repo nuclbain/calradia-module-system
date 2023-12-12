@@ -1296,3 +1296,6 @@ g_skill_cooldown_1
 g_skill_cooldown_2
 g_skill_cooldown_3
 g_skill_cooldown_4
+coin_spared
+beggar_positive_outcome
+beggar_outcome_variant
