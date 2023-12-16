@@ -513,13 +513,13 @@ troops = [
    [itm_sword_medieval_a,itm_leather_jerkin,itm_leather_boots,itm_courser,itm_leather_gloves,itm_light_crossbow,itm_bolts],
    str_7 | agi_21 | int_4 | cha_4|level(25),wp(130),knows_common|knows_riding_7|knows_horse_archery_5,swadian_face_young_1, swadian_face_old_2],
   ["swadian_deserter","Swadian Deserter","Swadian Deserters",tf_guarantee_ranged|tf_guarantee_boots|tf_guarantee_armor,0,0,fac_deserters,
-   [itm_bolts,itm_light_crossbow,itm_hunting_crossbow,itm_dagger,itm_club,itm_voulge,itm_wooden_shield,itm_leather_jerkin,itm_padded_cloth,itm_hide_boots,itm_padded_coif,itm_nasal_helmet,itm_iron_crown_nasal_a],
+   [itm_bolts,itm_light_crossbow,itm_hunting_crossbow,itm_dagger,itm_club,itm_voulge,itm_wooden_shield,itm_leather_jerkin,itm_padded_cloth,itm_hide_boots,itm_padded_coif,itm_footman_helmet,itm_iron_crown_nasal_a],
    def_attrib|level(14),wp(80),knows_common|knows_riding_2|knows_ironflesh_1,swadian_face_young_1, swadian_face_old_2],
   ["swadian_prison_guard","Prison Guard","Prison Guards",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1,
-   [itm_awlpike,itm_pike,itm_great_sword,itm_morningstar,itm_sword_medieval_b,itm_tab_shield_heater_c,itm_coat_of_plates,itm_plate_armor,itm_plate_boots,itm_bascinet_3,itm_helmet_with_neckguard,itm_bascinet,itm_bascinet_3,itm_leather_gloves],
+   [itm_awlpike,itm_pike,itm_great_sword,itm_morningstar,itm_sword_medieval_b,itm_tab_shield_heater_c,itm_coat_of_plates,itm_plate_armor,itm_plate_boots,itm_bascinet_3,itm_black_helmet,itm_bascinet,itm_bascinet_3,itm_leather_gloves],
    def_attrib|level(25),wp(130),knows_common|knows_shield_3|knows_ironflesh_3|knows_power_strike_3,swadian_face_young_1, swadian_face_old_2],
   ["swadian_castle_guard","Castle Guard","Castle Guards",tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1,
-   [itm_awlpike,itm_pike,itm_great_sword,itm_morningstar,itm_sword_medieval_b,itm_tab_shield_heater_c,itm_tab_shield_heater_d,itm_coat_of_plates,itm_plate_armor,itm_plate_boots,itm_bascinet_3,itm_helmet_with_neckguard,itm_bascinet,itm_bascinet_3,itm_leather_gloves],
+   [itm_awlpike,itm_pike,itm_great_sword,itm_morningstar,itm_sword_medieval_b,itm_tab_shield_heater_c,itm_tab_shield_heater_d,itm_coat_of_plates,itm_plate_armor,itm_plate_boots,itm_bascinet_3,itm_black_helmet,itm_bascinet,itm_bascinet_3,itm_leather_gloves],
    def_attrib|level(25),wp(130),knows_common|knows_shield_3|knows_ironflesh_3|knows_power_strike_3,swadian_face_young_1, swadian_face_old_2],
 
 # Vaegir watchman?
@@ -773,10 +773,10 @@ troops = [
    def_attrib|level(21),wp(100),knows_riding_3|knows_ironflesh_3|knows_horse_archery_3|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],
 
   ["manhunter","Manhunter","Manhunters",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_manhunters,
-   [itm_mace_3,itm_winged_mace,itm_nasal_helmet,itm_padded_cloth,itm_aketon_green,itm_aketon_green,itm_wooden_shield,itm_nomad_boots,itm_wrapping_boots,itm_sumpter_horse],
+   [itm_mace_3,itm_winged_mace,itm_footman_helmet,itm_padded_cloth,itm_aketon_green,itm_aketon_green,itm_wooden_shield,itm_nomad_boots,itm_wrapping_boots,itm_sumpter_horse],
    def_attrib|level(10),wp(50),knows_common,bandit_face1, bandit_face2],
   ["slave_driver","Slave Driver","Slave Drivers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse ,0,0,fac_slavers,
-   [itm_club_with_spike_head,itm_segmented_helmet,itm_tribal_warrior_outfit,itm_nordic_shield,itm_leather_boots,itm_leather_gloves,itm_khergit_leather_boots,itm_steppe_horse],
+   [itm_club_with_spike_head,itm_bascinet_3,itm_tribal_warrior_outfit,itm_nordic_shield,itm_leather_boots,itm_leather_gloves,itm_khergit_leather_boots,itm_steppe_horse],
    def_attrib|level(14),wp(80),knows_common,bandit_face1, bandit_face2],
   ["slave_hunter","Slave Hunter","Slave Hunters",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield ,0,0,fac_slavers,
    [itm_winged_mace,itm_maul,itm_kettle_hat,itm_m_hauberk_black_a,itm_tab_shield_round_c,itm_leather_boots,itm_leather_gloves,itm_courser],
@@ -802,7 +802,7 @@ troops = [
    [itm_bolts,itm_arrows,itm_light_crossbow,itm_short_bow,itm_crossbow,itm_fur_covered_shield,itm_hide_covered_round_shield,itm_hatchet,itm_voulge,itm_m_hauberk_black_a,itm_m_hauberk_navy_c, itm_skullcap, itm_wrapping_boots],
    def_attrib|level(16),wp(100),knows_common|knows_riding_3|knows_power_strike_2|knows_athletics_2|knows_ironflesh_1,refugee_face1,refugee_face2],
   ["sword_sister","Sword Sister","Sword Sisters",tf_female|tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_shield|tf_guarantee_horse,0,0,fac_commoners,
-   [itm_bolts,itm_sword_medieval_b,itm_sword_khergit_3,itm_plate_covered_round_shield,itm_tab_shield_small_round_c, itm_crossbow,itm_plate_armor,itm_coat_of_plates,itm_plate_boots,itm_bascinet_3,itm_helmet_with_neckguard,itm_courser,itm_leather_gloves],
+   [itm_bolts,itm_sword_medieval_b,itm_sword_khergit_3,itm_plate_covered_round_shield,itm_tab_shield_small_round_c, itm_crossbow,itm_plate_armor,itm_coat_of_plates,itm_plate_boots,itm_bascinet_3,itm_black_helmet,itm_courser,itm_leather_gloves],
    def_attrib|level(22),wp(140),knows_common|knows_power_strike_3|knows_riding_5|knows_athletics_3|knows_ironflesh_2|knows_shield_2,refugee_face1,refugee_face2],
 
   ["refugee","Refugee","Refugees",tf_female|tf_guarantee_armor,0,0,fac_commoners,
@@ -1323,7 +1323,7 @@ troops = [
   ["kingdom_2_pretender",  "Prince Valdym the Bastard", "Valdym",  tf_hero|tf_unmoveable_in_party_window, 0,reserved,  fac_kingdom_2,[itm_hunter,    itm_courtly_outfit,      itm_leather_boots,              itm_mail_chausses,              itm_m_chornovalley_heavy_mail_b,       itm_military_pick,      itm_tab_shield_heater_b,      itm_flat_topped_helmet],    lord_attrib,wp(220),knight_skills_5, 0x00000000200412142452ed631b30365c00000000001c94e80000000000000000, vaegir_face_middle_2],
 #had his patrimony falsified
 
-  ["kingdom_3_pretender",  "Dustum Khan",               "Dustum",  tf_hero|tf_unmoveable_in_party_window, 0,reserved,  fac_kingdom_3,[itm_courser,   itm_nomad_robe,             itm_leather_boots,              itm_splinted_greaves,           itm_khergit_guard_armor,         itm_sword_khergit_2,              itm_tab_shield_small_round_c,       itm_segmented_helmet],      lord_attrib,wp(220),knight_skills_5, 0x000000065504310b30d556b51238f66100000000001c256d0000000000000000, khergit_face_middle_2],
+  ["kingdom_3_pretender",  "Dustum Khan",               "Dustum",  tf_hero|tf_unmoveable_in_party_window, 0,reserved,  fac_kingdom_3,[itm_courser,   itm_nomad_robe,             itm_leather_boots,              itm_splinted_greaves,           itm_khergit_guard_armor,         itm_sword_khergit_2,              itm_tab_shield_small_round_c,       itm_bascinet_3],      lord_attrib,wp(220),knight_skills_5, 0x000000065504310b30d556b51238f66100000000001c256d0000000000000000, khergit_face_middle_2],
 #of the family
 
   ["kingdom_4_pretender",  "Lethwin Far-Seeker",   "Lethwin",  tf_hero|tf_unmoveable_in_party_window, 0,reserved,  fac_kingdom_4,[itm_hunter,    itm_tabard,    itm_leather_boots,              itm_mail_chausses,                 itm_brigandine_red,           itm_sword_medieval_c,           itm_tab_shield_heater_cav_a,    itm_kettle_hat],            lord_attrib,wp(220),knight_skills_5, 0x00000004340c01841d89949529a6776a00000000001c910a0000000000000000, nord_face_young_2],
@@ -2204,7 +2204,7 @@ troops = [
    def_attrib|level(19),wp_melee(105),knows_common|knows_ironflesh_5|knows_shield_4|knows_power_strike_5|knows_athletics_4,swadian_face_middle_1, swadian_face_old_2],
   ["silver_rose_man_at_arms_multiplayer_ai","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all_wo_ranged,0,0,fac_kingdom_1,
    [itm_lance,itm_bastard_sword_a,itm_tab_shield_heater_cav_a,
-    itm_m_celestial_breastplate_heavy_b,itm_hide_boots,itm_norman_helmet,itm_hunter],
+    itm_m_celestial_breastplate_heavy_b,itm_hide_boots,itm_elen_nasal_padded_b,itm_hunter],
    def_attrib|level(19),wp_melee(100),knows_common|knows_riding_4|knows_ironflesh_4|knows_shield_4|knows_power_strike_4|knows_athletics_1,swadian_face_young_1, swadian_face_old_2],
   ["chornovalley_longbowman_multiplayer_ai","Vaegir Archer","Vaegir Archers",tf_guarantee_all,0,0,fac_kingdom_2,
    [itm_arrows,itm_scimitar,itm_nomad_bow,
@@ -2239,7 +2239,7 @@ troops = [
    def_attrib|level(19),wp(100),knows_riding_5|knows_ironflesh_2|knows_power_strike_2|knows_shield_1|knows_horse_archery_2|knows_power_throw_3,nord_face_young_1, nord_face_older_2],
   ["iron_crown_trained_skirmisher_multiplayer_ai","Nord Archer","Nord Archers",tf_guarantee_all,0,0,fac_kingdom_4,
    [itm_arrows,itm_two_handed_axe,itm_sword_viking_2,itm_short_bow,
-    itm_leather_jerkin,itm_blue_tunic,itm_leather_boots,itm_nasal_helmet,itm_leather_cap],
+    itm_leather_jerkin,itm_blue_tunic,itm_leather_boots,itm_footman_helmet,itm_leather_cap],
    def_attrib|str_11|level(19),wp_melee(80)|wp_archery(110),knows_ironflesh_4|knows_power_strike_2|knows_shield_1|knows_power_draw_5|knows_athletics_6,nord_face_young_1, nord_face_old_2],
   ["alpine_veteran_crossbowman_multiplayer_ai","Rhodok Crossbowman","Rhodok Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_5,
    [itm_fighting_pick,itm_club_with_spike_head,itm_maul,itm_tab_shield_pavise_c,itm_heavy_crossbow,itm_bolts,
@@ -2410,7 +2410,7 @@ troops = [
  
   ["sea_raider_leader","Sea Raider Captain","Sea Raider Captains",tf_hero|tf_guarantee_all_wo_ranged,0,0,fac_outlaws,
    [itm_arrows,itm_sword_viking_1,itm_sword_viking_2,itm_fighting_axe,itm_battle_axe,itm_spear,itm_nordic_shield,itm_nordic_shield,itm_nordic_shield,itm_wooden_shield,itm_long_bow,itm_javelin,itm_throwing_axes,
-    itm_mail_coif,itm_mail_coif,itm_nasal_helmet,itm_m_hauberk_black_a,itm_m_hauberk_navy_c,itm_mail_hauberk,itm_leather_boots, itm_nomad_boots],
+    itm_mail_coif,itm_mail_coif,itm_footman_helmet,itm_m_hauberk_black_a,itm_m_hauberk_navy_c,itm_mail_hauberk,itm_leather_boots, itm_nomad_boots],
    def_attrib|level(24),wp(110),knows_ironflesh_2|knows_power_strike_2|knows_power_draw_3|knows_power_throw_2|knows_riding_1|knows_athletics_2,nord_face_young_1, nord_face_old_2],
 
   ["looter_leader","Robber","Looters",tf_hero,0,0,fac_outlaws,
@@ -2487,7 +2487,7 @@ troops = [
    [itm_sword_medieval_b,itm_tab_shield_heater_c,itm_spear,itm_mail_coif,itm_leather_gloves,itm_mail_with_tunic_red,itm_ankle_boots],
     level(5)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
   ["silver_rose_man_at_arms_multiplayer_coop_tier_2","Swadian Man at Arms","Swadian Men at Arms",tf_mounted|tf_guarantee_all,0,0,fac_kingdom_1,
-   [itm_lance,itm_sword_medieval_a,itm_tab_shield_heater_b,itm_helmet_with_neckguard,itm_leather_gloves,itm_m_hauberk_mountain_c,itm_leather_boots,itm_warhorse],
+   [itm_lance,itm_sword_medieval_a,itm_tab_shield_heater_b,itm_black_helmet,itm_leather_gloves,itm_m_hauberk_mountain_c,itm_leather_boots,itm_warhorse],
     level(5)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
   ["chornovalley_longbowman_multiplayer_coop_tier_2","Vaegir Archer","Vaegir Archers",tf_guarantee_all,0,0,fac_kingdom_2,
    [itm_barbed_arrows,itm_axe,itm_nomad_bow,itm_leather_vest,itm_nomad_boots,itm_chornovalley_skullcap_helmet_b],
@@ -2536,7 +2536,7 @@ troops = [
     level(5)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
 
   ["silver_rose_trained_crossbowman_multiplayer_coop_tier_3","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
-   [itm_sword_medieval_b,itm_heavy_crossbow,itm_steel_bolts,itm_tab_shield_heater_c,itm_segmented_helmet,itm_leather_jerkin,itm_leather_boots],
+   [itm_sword_medieval_b,itm_heavy_crossbow,itm_steel_bolts,itm_tab_shield_heater_c,itm_bascinet_3,itm_leather_jerkin,itm_leather_boots],
     level(6)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
   ["silver_rose_infantry_multiplayer_coop_tier_3","Swadian Infantry","Swadian Infantry",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_bastard_sword_a,itm_awlpike,itm_tab_shield_heater_c,itm_bascinet,itm_mail_mittens,itm_m_celestial_breastplate_heavy_b,itm_mail_chausses],
@@ -2591,7 +2591,7 @@ troops = [
     level(6)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
 
   ["silver_rose_trained_crossbowman_multiplayer_coop_tier_4","Swadian Crossbowman","Swadian Crossbowmen",tf_guarantee_all,0,0,fac_kingdom_1,
-   [itm_sword_medieval_b,itm_sniper_crossbow,itm_steel_bolts,itm_tab_shield_heater_c,itm_helmet_with_neckguard,itm_leather_gloves,itm_m_hauberk_mountain_c,itm_mail_chausses],
+   [itm_sword_medieval_b,itm_sniper_crossbow,itm_steel_bolts,itm_tab_shield_heater_c,itm_black_helmet,itm_leather_gloves,itm_m_hauberk_mountain_c,itm_mail_chausses],
     level(7)|str_20, wp(300), knows_power_draw_10|knows_power_throw_10|knows_riding_10, 0, 0],
   ["silver_rose_infantry_multiplayer_coop_tier_4","Swadian Infantry","Swadian Infantry",tf_guarantee_all,0,0,fac_kingdom_1,
    [itm_bastard_sword_b,itm_awlpike_long,itm_tab_shield_heater_d,itm_bascinet_3,itm_m_gauntlets_b,itm_coat_of_plates,itm_m_greaves_a],
@@ -2717,7 +2717,7 @@ troops = [
    str_16|agi_17|int_12|cha_7|level(14),wp(60),knows_tracker_npc|
    knows_ironflesh_1|knows_power_strike_1|knows_pathfinding_3|knows_athletics_2|knows_tracking_1|knows_riding_2, #skills 2/3 player at that level
    0x0000000e730065c420db6db6db6ddeff00000000001db6f00000000000000000],
-  ["npc2_2","Mesym","Mesym", tf_hero|tf_unmoveable_in_party_window, 0,reserved, fac_commoners,[itm_nasal_helmet,itm_padded_leather,itm_leather_boots,itm_mace_2,itm_tab_shield_small_round_a, itm_saddle_horse],
+  ["npc2_2","Mesym","Mesym", tf_hero|tf_unmoveable_in_party_window, 0,reserved, fac_commoners,[itm_footman_helmet,itm_padded_leather,itm_leather_boots,itm_mace_2,itm_tab_shield_small_round_a, itm_saddle_horse],
    str_14|agi_17|int_11|cha_6|level(14),wp(40),knows_merchant_npc|
    knows_trade_2|knows_weapon_master_1|knows_ironflesh_1|knows_wound_treatment_1|knows_athletics_2|knows_first_aid_1|knows_leadership_1,
    0x0000000bff003440209b6e38e06dbeff00000000001f36e10000000000000000],
@@ -2769,11 +2769,11 @@ troops = [
    str_18|agi_19|int_11|cha_8|level(23),wp(100),knows_warrior_npc|
    knows_trainer_4|knows_weapon_master_3|knows_leadership_2|knows_power_strike_1,
    0x00000001be00024545136dc11b79fcdb00000000001db6e80000000000000000],
-  ["npc15_2","Phamas","Phamas",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_long_axe, itm_helmet_with_neckguard, itm_leather_gloves, itm_red_gambeson, itm_leather_boots, itm_hunter],
+  ["npc15_2","Phamas","Phamas",tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_long_axe, itm_black_helmet, itm_leather_gloves, itm_red_gambeson, itm_leather_boots, itm_hunter],
    str_18|agi_13|int_12|cha_8|level(25),wp(80),knows_warrior_npc|
    knows_tactics_2|knows_engineer_4|knows_trade_3|knows_tracking_1|knows_spotting_1,
    0x0000000fb110600020db6dd9226dbf7f00000000001db6f80000000000000000],
-  ["npc16_2","Kina","Kina",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_viking_2_small, itm_light_throwing_axes, itm_helmet_with_neckguard, itm_leather_gloves, itm_leather_jerkin, itm_ankle_boots, itm_saddle_horse],
+  ["npc16_2","Kina","Kina",tf_female|tf_hero|tf_unmoveable_in_party_window, 0, reserved,  fac_commoners,[itm_sword_viking_2_small, itm_light_throwing_axes, itm_black_helmet, itm_leather_gloves, itm_leather_jerkin, itm_ankle_boots, itm_saddle_horse],
    str_14|agi_17|int_8|cha_7|level(17),wp(80),knows_tracker_npc|
    knows_power_throw_3|knows_athletics_2|knows_power_strike_1,
    0x00000000000c3001009849a2494288cb00000000001da6830000000000000000],

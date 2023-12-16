@@ -984,7 +984,7 @@ game_menus = [
 ##       (set_visitor, 0, "$g_player_troop"),
 ##
 ##       (troop_clear_inventory, "$g_player_troop"),
-##       (troop_add_item, "$g_player_troop","itm_helmet_with_neckguard",0),
+##       (troop_add_item, "$g_player_troop","itm_black_helmet",0),
 ##       (troop_add_item, "$g_player_troop","itm_plate_armor",0),
 ##       (troop_add_item, "$g_player_troop","itm_m_greaves_a",0),
 ##       (troop_add_item, "$g_player_troop","itm_mail_chausses",0),
@@ -1836,7 +1836,7 @@ game_menus = [
        (store_random_in_range, ":faction_no", npc_kingdoms_begin, npc_kingdoms_end),
        (try_begin),
          (eq, ":faction_no", "fac_kingdom_1"),
-         (store_random_in_range, ":helmet_item", "itm_norman_helmet", "itm_kettle_hat"),
+         (store_random_in_range, ":helmet_item", "itm_elen_nasal_padded_b", "itm_kettle_hat"),
          (store_random_in_range, ":weapon_item", "itm_awlpike", "itm_bec_de_corbin_a"),
        (else_try),
          (eq, ":faction_no", "fac_kingdom_2"),

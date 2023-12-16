@@ -355,7 +355,7 @@ items = [
 #footwear
 ["civil_poor_boots_a","Sandals", [("civil_poor_boots_a", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,75, weight(1)|abundance(100)|leg_armor(1), imodbits_cloth, [], [fac_kingdom_6]],
 
-["wrapping_boots", "Wrapping Boots", [("wrapping_boots_a",0)], itp_merchandise| itp_type_foot_armor |itp_civilian | itp_attach_armature ,0,
+["wrapping_boots", "Wrapping Boots", [("Wrapping_A",0), ("Wrapping_A.1",0)], itp_merchandise| itp_type_foot_armor |itp_civilian | itp_attach_armature ,0,
  3 , weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(3)|difficulty(0) ,imodbits_cloth ],
 ["woolen_hose", "Woolen Hose", [("Woolen_Hose_A",0),("Woolen_Hose_A.1",0)], itp_merchandise| itp_type_foot_armor |itp_civilian | itp_attach_armature ,0,
  6 , weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(4)|difficulty(0) ,imodbits_cloth ],
@@ -375,14 +375,12 @@ items = [
 ["mkk_boots_a","Desert Boots", [("saracin_light_boot_a", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,159, weight(1)|abundance(100)|leg_armor(12), imodbits_cloth, [], [fac_kingdom_6]],
 ["mkk_boots_b","Desert Boots", [("saracin_light_boot_b", 0)], itp_type_foot_armor|itp_attach_armature|itp_civilian, 0,159, weight(1)|abundance(100)|leg_armor(12), imodbits_cloth, [], [fac_kingdom_6]],
 
-["hunter_boots", "Hunter Boots", [("hunter_boots_a",0)], itp_merchandise| itp_type_foot_armor |itp_civilian | itp_attach_armature,0,
+["hunter_boots", "Hunter Boots", [("Hunter_Boots_A",0), ("Hunter_Boots_A.1",0)], itp_merchandise| itp_type_foot_armor |itp_civilian | itp_attach_armature,0,
  19 , weight(1.25)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
-["hide_boots", "Hide Boots", [("hide_boots_a",0)], itp_merchandise| itp_type_foot_armor |itp_civilian  | itp_attach_armature,0,
+["hide_boots", "Hide Boots", [("Hide_Boots_A",0), ("Hide_Boots_A.1",0)], itp_merchandise| itp_type_foot_armor |itp_civilian  | itp_attach_armature,0,
  34 , weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["ankle_boots", "Ankle Boots", [("hosen_yellow",0), ("hosen_yellow.1",0)], itp_merchandise| itp_type_foot_armor |itp_civilian  | itp_attach_armature,0,
  75 , weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(12)|difficulty(0) ,imodbits_cloth ],
-["m_swadia_light_boots_a", "Ankle Boots", [("boot_light_crusader_a",0)], itp_type_foot_armor|itp_merchandise   ,0, 100 , weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(4)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
-["m_swadia_light_boots_b", "Ankle Boots", [("boot_light_crusader_b",0)], itp_type_foot_armor|itp_merchandise   ,0, 100 , weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(4)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1] ],
 ["nomad_boots", "Nomad Boots", [("nomad_boots_new",0),("nomad_boots_new.1",0),("nomad_boots_new.2",0)], itp_merchandise| itp_type_foot_armor  |itp_civilian | itp_attach_armature,0,
  90 , weight(1.25)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth ],
 
@@ -1117,19 +1115,12 @@ items = [
 ["silver_rose_capelina_mail_a", "Silver Rose Capelina on Mail", [("Silver_Rose_Capelina_C",0), ("Silver_Rose_Capelina_C.1",0),("Silver_Rose_Capelina_C_inv",ixmesh_inventory), ("Silver_Rose_Capelina_B_inv.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 231 , weight(2.0)|abundance(100)|head_armor(36)|body_armor(5)|leg_armor(0)|difficulty(7) ,imodbits_plate, [], [fac_kingdom_1]],
 ["silver_rose_capelina_mail_b", "Silver Rose Capelina with Mask", [("Silver_Rose_Capelina_D",0), ("Silver_Rose_Capelina_D.1",0),("Silver_Rose_Capelina_D.2",0),("Silver_Rose_Capelina_D_inv",ixmesh_inventory), ("Silver_Rose_Capelina_D_inv.1",ixmesh_inventory), ("Silver_Rose_Capelina_D_inv.2",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 317 , weight(3.0)|abundance(100)|head_armor(44)|body_armor(5)|leg_armor(0)|difficulty(9) ,imodbits_plate, [], [fac_kingdom_1]],
 
-["silver_rose_mask", "Mask Helmet", [("Silver_Rose_Mask_A",0), ("Silver_Rose_Mask_A.1",0),("Silver_Rose_Mask_A_inv",ixmesh_inventory), ("Silver_Rose_Mask_A_inv.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 280 , weight(2.5)|abundance(100)|head_armor(41)|body_armor(2)|leg_armor(0)|difficulty(8) ,imodbits_plate, [], [fac_kingdom_1]],
-["silver_rose_mask_mail", "Mask Helmet with Mail", [("Silver_Rose_Mask_B",0), ("Silver_Rose_Mask_B.1",0),("Silver_Rose_Mask_B_inv",ixmesh_inventory), ("Silver_Rose_Mask_B_inv.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 357 , weight(3.0)|abundance(100)|head_armor(45)|body_armor(5)|leg_armor(0)|difficulty(9) ,imodbits_plate, [], [fac_kingdom_1]],
+["silver_rose_mask", "Mask Helmet", [("Silver_Rose_Mask_A",0), ("Silver_Rose_Mask_A.1",0), ("Silver_Rose_Mask_A.2",0), ("Silver_Rose_Mask_A_inv",ixmesh_inventory), ("Silver_Rose_Mask_A_inv.1",ixmesh_inventory), ("Silver_Rose_Mask_A_inv.2",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 280 , weight(2.5)|abundance(100)|head_armor(41)|body_armor(2)|leg_armor(0)|difficulty(8) ,imodbits_plate, [], [fac_kingdom_1]],
+["silver_rose_mask_mail", "Mask Helmet with Mail", [("Silver_Rose_Mask_B",0), ("Silver_Rose_Mask_B.1",0), ("Silver_Rose_Mask_B.2",0), ("Silver_Rose_Mask_B_inv",ixmesh_inventory), ("Silver_Rose_Mask_B_inv.1",ixmesh_inventory), ("Silver_Rose_Mask_B_inv.2",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 357 , weight(3.0)|abundance(100)|head_armor(45)|body_armor(5)|leg_armor(0)|difficulty(9) ,imodbits_plate, [], [fac_kingdom_1]],
 
-#missing...
-["nasal_helmet", "Nasal Helmet", [("nasal_helmet_b",0)], itp_merchandise| itp_type_head_armor   ,0, 121 , weight(1.25)|abundance(100)|head_armor(26)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
-["norman_helmet", "Helmet with Cap", [("norman_helmet_a",0)], itp_merchandise| itp_type_head_armor|itp_fit_to_head ,0, 147 , weight(1.25)|abundance(100)|head_armor(28)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
-["segmented_helmet", "Segmented Helmet", [("segmented_helm_new",0)], itp_merchandise| itp_type_head_armor   ,0, 174 , weight(1.25)|abundance(100)|head_armor(31)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
-["helmet_with_neckguard", "Helmet with Neckguard", [("neckguard_helm_new",0)], itp_merchandise| itp_type_head_armor   ,0, 
-190 , weight(1.5)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 ["flat_topped_helmet", "Flat Topped Helmet", [("Flattop_Helmet_A",0),("Flattop_Helmet_A.1",0),("Flattop_Helmet_A.2",0),("Flattop_Helmet_A_inv",ixmesh_inventory), ("Flattop_Helmet_A_inv.1",ixmesh_inventory), ("Flattop_Helmet_A_inv.2",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 
 203 , weight(1.75)|abundance(100)|head_armor(33)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate, [], [fac_kingdom_1]],
-["kettle_hat", "Kettle Hat", [("kettle_hat_new",0)], itp_merchandise| itp_type_head_armor,0, 
-240 , weight(1.75)|abundance(100)|head_armor(35)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
+["kettle_hat", "Kettle Hat", [("Eyeslot_Kettlehat_A",0), ("Eyeslot_Kettlehat_A.1",0), ("Eyeslot_Kettlehat_A_inv",ixmesh_inventory), ("Eyeslot_Kettlehat_A_inv.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor,0, 240 , weight(1.75)|abundance(100)|head_armor(35)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate ],
 ["m_spiked_helmet_a", "Spiked Helmet on Padded", [("Spiked_Helmet_A",0), ("Spiked_Helmet_A.1",0),("Spiked_Helmet_A_inv",ixmesh_inventory), ("Spiked_Helmet_A_inv.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 209 , weight(1.75)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate, [], [fac_kingdom_1]],
 ["silver_rose_spiked_helmet_a", "Spiked Helmet on Padded", [("Silver_Rose_Spiked_Helmet_A",0), ("Silver_Rose_Spiked_Helmet_A.1",0),("Silver_Rose_Spiked_Helmet_A_inv",ixmesh_inventory), ("Silver_Rose_Spiked_Helmet_A_inv.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 209 , weight(1.75)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate, [], [fac_kingdom_1]],
 ["silver_rose_spiked_helmet_b", "Spiked Helmet on Padded", [("Silver_Rose_Spiked_Helmet_B",0), ("Silver_Rose_Spiked_Helmet_B.1",0),("Silver_Rose_Spiked_Helmet_B_inv",ixmesh_inventory), ("Silver_Rose_Spiked_Helmet_B_inv.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 209 , weight(1.75)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate, [], [fac_kingdom_1]],
