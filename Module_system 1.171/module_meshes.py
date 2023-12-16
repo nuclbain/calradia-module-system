@@ -265,6 +265,9 @@ meshes = [
   ("tableau_mesh_shield_sarranids_b", 0, "tableau_mesh_shield_sarranids_b",  0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("tableau_mesh_shield_sarranids_c", 0, "tableau_mesh_shield_sarranids_c",  0, 0, 0, 0, 0, 0, 10, 10, 10),
 ###
+  ("tableau_mesh_shield_player_a", 0, "Tableu_Player_Shield_Veteran_Heraldic",  0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("tableau_mesh_shield_player_b", 0, "Tableu_Player_Shield_Veteran_Heraldic_Reinforced",  0, 0, 0, 0, 0, 0, 10, 10, 10),
+###
 
   ("outer_terrain_plain_1", 0, "ter_border_a", -90, 0, 0, 0, 0, 0, 1, 1, 1),
   ("banner_a01", 0, "banner_a01", 0, 0, 0, -90, 0, 0, 1, 1, 1),
