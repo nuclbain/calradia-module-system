@@ -363,6 +363,10 @@ troops = [
    [itm_mkk_turban_c, itm_mkk_black_scale_a, itm_mkk_black_scale_b, itm_mkk_black_scale_c, itm_mkk_leather_boots_a, itm_mkk_leather_boots_b, itm_eastern_scale_gloves_a, itm_eastern_scale_gloves_b, itm_maa_camel_rider_shield_a, itm_maa_camel_rider_shield_b, itm_maa_camel_rider_shield_c, itm_maa_camel_rider_shield_d, itm_maa_camel_rider_shield_e, itm_maa_camel_rider_shield_f, itm_falshion_2, itm_falshion_1, itm_throwing_daggers, itm_throwing_daggers],
    def_attrib|agi_30|str_30|level(34),wp(250)|wp_throwing(420),knows_common|knows_riding_2|knows_ironflesh_10|knows_power_strike_8|knows_power_throw_10|knows_athletics_10|knows_shield_3,mercenary_face_1, mercenary_face_2],
 
+  ["menegras_halberdier", "Menegras Halberdier", "Menegras Halberdiers", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet, no_scene, reserved, fac_commoners, [itm_player_skull_helmet_a, itm_player_skull_helmet_b, itm_m_aketon_a, itm_m_aketon_b, itm_woolen_hose, itm_leather_boots, itm_m_leather_boots_a, itm_leather_gloves, itm_old_leather_gloves, itm_m_gloves_a, itm_guisarme, itm_swiss_halberd, itm_english_bill], def_attrib|level(14), wp(135), knows_common|knows_power_strike_2|knows_ironflesh_2|knows_athletics_2, mercenary_face_1, mercenary_face_2],
+  ["experienced_menegras_halberdier", "Experienced Menegras Halberdier", "Experienced Menegras Halberdiers", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet, no_scene, reserved, fac_commoners, [itm_player_skull_helmet_c, itm_player_skull_helmet_d, itm_m_hauberk_b, itm_m_hauberk_c, itm_mail_chausses, itm_m_leather_boots_a, itm_mail_mittens, itm_old_mail_gloves, itm_m_gloves_a, itm_guisarme, itm_swiss_halberd, itm_english_bill], def_attrib|level(20), wp(175), knows_common|knows_power_strike_3|knows_ironflesh_3|knows_athletics_3, mercenary_face_1, mercenary_face_2],
+  ["menegras_halberdier_veteran", "Menegras Halberdier Veteran", "Menegras Halberdiers Veterans", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet, no_scene, reserved, fac_commoners, [itm_player_skull_helmet_c, itm_player_skull_helmet_d, itm_m_brigandine_f, itm_m_brigandine_g, itm_mail_chausses, itm_m_greaves_a, itm_m_greaves_b, itm_mail_mittens, itm_m_gauntlets_a, itm_m_gauntlets_b, itm_guisarme, itm_swiss_halberd, itm_english_bill], def_attrib|level(26), wp(215), knows_common|knows_power_strike_4|knows_ironflesh_4|knows_athletics_4, mercenary_face_1, mercenary_face_2],
+
   ["mercenaries_end","mercenaries_end","mercenaries_end",0,no_scene,reserved,fac_commoners,
    [],
    def_attrib|level(4),wp(60),knows_common,mercenary_face_1, mercenary_face_2],
@@ -2947,6 +2951,9 @@ upgrade(troops,"mercenary_horseman","mercenary_cavalry")
 
 upgrade(troops,"delgay_mercenary","delgay_mercenary_assasin")
 upgrade(troops,"delgay_mercenary_assasin","delgay_mercenary_rajas_killer")
+
+upgrade(troops,"menegras_halberdier","experienced_menegras_halberdier")
+upgrade(troops,"experienced_menegras_halberdier","menegras_halberdier_veteran")
 
 #  nerpa troop tree
 upgrade(troops,"nerpa_recruit","nerpa_footman")
