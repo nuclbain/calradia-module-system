@@ -2038,9 +2038,6 @@ items = [
 ["m_knigh_helm_e", "Knight Helmet", [("crusader_knight_helm_e",0)], itp_type_head_armor|itp_merchandise   ,0, 1699 , weight(2.75)|abundance(100)|head_armor(48)|body_armor(0)|leg_armor(0)|difficulty(11) ,imodbits_armor, [], [fac_kingdom_1] ],
 ["m_knigh_helm_f", "Knight Helmet", [("crusader_knight_helm_f",0)], itp_type_head_armor|itp_merchandise   ,0, 1699 , weight(2.75)|abundance(100)|head_armor(48)|body_armor(0)|leg_armor(0)|difficulty(11) ,imodbits_armor, [], [fac_kingdom_1] ],
 
-["m_light_capelina_a", "Light Capelina", [("light_capelina_crusader_a",0)], itp_type_head_armor|itp_merchandise   ,0, 519 , weight(1.5)|abundance(100)|head_armor(29)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1, fac_kingdom_12] ],
-["m_light_capelina_b", "Light Capelina", [("light_capelina_crusader_b",0)], itp_type_head_armor|itp_merchandise   ,0, 519 , weight(1.5)|abundance(100)|head_armor(29)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_1, fac_kingdom_12] ],
-
 ["m_light_infantry_helmet_a", "Light Infantry Helmet", [("light_crusader_helm_a",0)], itp_type_head_armor|itp_merchandise   ,0, 872 , weight(2)|abundance(100)|head_armor(34)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_1, fac_kingdom_12] ],
 ["m_light_infantry_helmet_b", "Light Infantry Helmet", [("light_crusader_helm_b",0)], itp_type_head_armor|itp_merchandise   ,0, 872 , weight(2)|abundance(100)|head_armor(34)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_1, fac_kingdom_12] ],
 ["m_light_infantry_helmet_c", "Light Infantry Helmet", [("light_crusader_helm_c",0)], itp_type_head_armor|itp_merchandise   ,0, 872 , weight(2)|abundance(100)|head_armor(34)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_1, fac_kingdom_12] ],
