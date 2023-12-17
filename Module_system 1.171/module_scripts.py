@@ -29557,6 +29557,7 @@ scripts = [
           (val_add, ":num_men", ":stack_size"),
         (try_end),
       (try_end),
+      (store_div, ":num_men", ":num_men", 2), # make party size effect on morale twice as small
       (assign, "$g_player_party_morale_modifier_party_size", ":num_men"),
 
       (store_skill_level, ":player_leadership", "skl_leadership", "trp_player"),
