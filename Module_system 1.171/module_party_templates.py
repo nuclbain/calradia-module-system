@@ -40,12 +40,6 @@ party_templates = [
 ##  ("vaegir_nobleman","Vaegir Nobleman",icon_chornovalley_knight|carries_goods(10)|pf_quest_party,0,fac_commoners,merchant_personality,[(trp_nobleman,1,1),(trp_chornovalley_knight,2,6),(trp_chornovalley_horseman,4,12)]),
 ##  ("swadian_nobleman","Swadian Nobleman",icon_gray_knight|carries_goods(10)|pf_quest_party,0,fac_commoners,merchant_personality,[(trp_nobleman,1,1),(trp_silver_rose_knight,2,6),(trp_silver_rose_man_at_arms,4,12)]),
 # Ryan BEGIN
-# bandit 0 - 100
-# pillager 0 - 10
-# marauder 0 - 10
-# outlaw 0 - 10
-# highwayman 0 - 5
-# bandit_lord 0 - 1
 # TODO: Check troops distribution and rebalance if needed
   (
     "looters","Looters Party",icon_axeman|carries_goods(8),0,fac_outlaws,bandit_personality,
@@ -55,12 +49,8 @@ party_templates = [
     "warband_bandits","Bandits Warband",icon_axeman|carries_goods(8),0,fac_outlaws,bandit_personality,
     [(trp_bandit,20,30),(trp_looter,10,95)]
   ),
-  # TODO:
-  # (
-  #   "outlawed_mercenary_company","Outlawed Mercenaries",icon_gray_knight|carries_goods(8),0,fac_outlaws,bandit_personality,
-  #   [(trp_mercenary_cavalry,0,5),(trp_hired_blade,0,7),(trp_watchman,10,35),(trp_mercenary_crossbowman,10,30),(trp_mercenary_swordsman,2,12),(trp_mercenary_horseman,0,10)]
-  # ),
-  ("heretics","Doomcult Heretics",icon_gray_knight|carries_goods(20),0,fac_heretics,bandit_personality,[(trp_dark_cultist,0,20),(trp_cultist_acolyte,0,50)]),
+  ("heretics","Twilight Veil Heretics",icon_gray_knight|carries_goods(20),0,fac_heretics,bandit_personality,[(trp_dark_cultist,0,20),(trp_cultist_acolyte,0,50)]),
+  ("heretics_army","Twilight Veil Warband",icon_gray_knight|carries_goods(20),0,fac_heretics,bandit_personality,[(trp_dark_cultist,15,30), (trp_cultist_acolyte,20,50), (trp_occultist,3,20), (trp_veilweaver,3,15), (trp_veiled_inquisitor,1,15)]),
 # Ryan END
   ("manhunters","Manhunters",icon_gray_knight,0,fac_manhunters,soldier_personality,[(trp_manhunter,19,100)]),
 ##  ("peasant","Peasant",icon_peasant,0,fac_commoners,merchant_personality,[(trp_farmer,1,6),(trp_peasant_woman,0,7)]),

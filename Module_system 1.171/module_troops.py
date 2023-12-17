@@ -735,14 +735,12 @@ troops = [
   ["highwayman","Highwayman","Highwaymen",tf_guarantee_all,0,0,fac_outlaws, [itm_m_leather_boots_a, itm_m_hauberk_a, itm_m_hauberk_b, itm_m_hauberk_c, itm_m_brigandine_c, itm_m_brigandine_e, itm_tab_shield_small_round_c, itm_grosse_messer_b, itm_italian_falchion, itm_italian_sword, itm_partisan, itm_guisarme, itm_lance, itm_hunting_crossbow, itm_bolts, itm_saddle_horse], def_attrib|level(16),wp(90),knows_common|knows_riding_5|knows_riding_2,bandit_face1, bandit_face2],
   ["bandit_lord","Bandit Lord","Bandit Lords",tf_guarantee_all,0,0,fac_outlaws, [itm_m_greaves_a, itm_m_gauntlets_a, itm_shirt, itm_hunting_crossbow, itm_bolts, itm_warhorse], knight_attrib_5|level(25),wp(245),knows_common|knows_power_draw_1|knows_riding_5|knows_ironflesh_10|knows_power_strike_6,bandit_face1, bandit_face2],
 
-  #                     Cultist Acolyte
-  #                      /            \
-  #              Dark Cultist     Occultist
-  #               /               /        \
-  #      Shadowblade  Dark Cavalier  Shadow Rider
-  # TODO: Complete troop tree for cultists
-  ["cultist_acolyte","Cultist Acolyte","Cultist Acolytes",tf_guarantee_all,0,0,fac_outlaws, [itm_mt_leather_boots_e, itm_old_leather_gloves, itm_robe, itm_pilgrim_disguise, itm_mt_hood_a3, itm_pilgrim_hood, itm_winged_mace, itm_one_handed_battle_axe_c, itm_tab_shield_pavise_a], def_attrib|str_15|agi_15|level(12),wp(100),knows_common|knows_ironflesh_3,bandit_face1, bandit_face2],
-  ["dark_cultist","Dark Cultist","Dark Cultists",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_outlaws, [itm_mt_leather_boots_e, itm_old_mail_gloves, itm_robe, itm_pilgrim_disguise, itm_mt_hood_a3, itm_pilgrim_hood, itm_winged_mace, itm_morningstar, itm_one_handed_battle_axe_c, itm_tab_shield_pavise_a], def_attrib|str_20|agi_20|level(24), wp(120), knows_common|knows_ironflesh_10, bandit_face1, bandit_face2],
+  ["cultist_acolyte","Twilight Veil Acolyte","Twilight Veil Acolytes",tf_guarantee_all,0,0,fac_outlaws, [itm_mt_leather_boots_e, itm_old_leather_gloves, itm_robe, itm_pilgrim_disguise, itm_mt_hood_a3, itm_pilgrim_hood, itm_studded_club, itm_pickaxe, itm_one_handed_battle_axe_c, itm_tab_shield_pavise_a], def_attrib|str_15|agi_15|level(12),wp(100),knows_common|knows_ironflesh_3,bandit_face1, bandit_face2],
+  ["dark_cultist","Twilight Veil Cultist","Twilight Veil Cultists",tf_guarantee_boots|tf_guarantee_armor,0,0,fac_outlaws, [itm_mt_leather_boots_e, itm_old_mail_gloves, itm_robe, itm_pilgrim_disguise, itm_mt_hood_a3, itm_pilgrim_hood, itm_winged_mace, itm_morningstar, itm_one_handed_battle_axe_c, itm_tab_shield_pavise_a], def_attrib|str_15|agi_15|level(17), wp(140), knows_common|knows_ironflesh_3, bandit_face1, bandit_face2],
+  ["occultist","Twilight Veil Occultist","Twilight Veil Occultists",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_outlaws, [itm_mail_chausses, itm_old_mail_gloves, itm_robe, itm_pilgrim_disguise, itm_heretics_coif_a, itm_heretics_coif_b, itm_winged_mace, itm_morningstar, itm_one_handed_battle_axe_c, itm_crusader_spear_inf_a, itm_crusader_spear_inf_b, itm_crusader_spear_inf_c, itm_tab_shield_pavise_a, itm_tab_shield_pavise_b], def_attrib|str_20|agi_20|level(24), wp(240), knows_common|knows_ironflesh_5, bandit_face1, bandit_face2],
+  ["veilweaver", "Veilweaver", "Veilweavers", tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_outlaws, [itm_mail_chausses, itm_old_mail_gloves, itm_robe_on_mail_a, itm_robe_on_mail_b, itm_heretics_coif_a, itm_heretics_coif_b, itm_winged_mace, itm_morningstar, itm_one_handed_battle_axe_c, itm_crusader_spear_inf_a, itm_crusader_spear_inf_b, itm_crusader_spear_inf_c, itm_tab_shield_pavise_c, itm_tab_shield_pavise_b], def_attrib|str_26|agi_25|level(28), wp(320), knows_common|knows_ironflesh_10|knows_power_strike_8, bandit_face1, bandit_face2],
+  ["veiled_inquisitor", "Veiled Inquisitor", "Veiled Inquisitors", tf_mounted|tf_guarantee_horse|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_outlaws, [itm_mt_greaves_a, itm_mt_gauntlets_a, itm_robe_on_mail_a, itm_robe_on_mail_b, itm_great_helmet_heretics, itm_winged_mace, itm_morningstar, itm_one_handed_battle_axe_c, itm_lance, itm_tab_shield_tauria_a, itm_black_knight_horse_a], def_attrib|str_30|agi_25|level(28), wp(320), knows_common|knows_ironflesh_10|knows_power_strike_8, bandit_face1, bandit_face2],
+
 
   ["brigand","Brigand","Brigands",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_outlaws,
    [itm_arrows,itm_spiked_mace,itm_sword_viking_1,itm_falchion,itm_wooden_shield,itm_hide_covered_round_shield,itm_long_bow,itm_leather_cap,itm_leather_jerkin,itm_nomad_boots,itm_saddle_horse],
@@ -3106,6 +3104,8 @@ upgrade(troops,"highwayman","bandit_lord")
 
 # Cultists
 upgrade(troops,"cultist_acolyte","dark_cultist")
+upgrade(troops,"dark_cultist","occultist")
+upgrade2(troops,"occultist","veilweaver","veiled_inquisitor")
 
 #new tree connections
 upgrade(troops,"mountain_bandit","alpine_recruit")

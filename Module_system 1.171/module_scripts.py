@@ -1133,6 +1133,13 @@ scripts = [
         (spawn_around_party, ":cur_village", "pt_heretics"),
       (try_end),
 
+      (set_spawn_radius, 5),
+      (try_for_range, ":cur_village", villages_begin, villages_end),
+        (store_random_in_range, ":random_value", 0, 2),               
+        (eq, ":random_value", 0),
+        (spawn_around_party, ":cur_village", "pt_heretics_army"),
+      (try_end),
+
       (call_script, "script_update_mercenary_units_of_towns"),
       (call_script, "script_update_companion_candidates_in_taverns"),
       (call_script, "script_update_ransom_brokers"),
