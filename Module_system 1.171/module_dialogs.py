@@ -25093,6 +25093,32 @@ I will use this to make amends to those you have wronged, and I will let it be k
 [anyone,"lord_talk_ask_skill", [], "Let me show you...", "lord_pretalk",[(change_screen_view_character)]],
 ##diplomacy end+
 
+[
+  anyone|plyr,
+  "lord_talk_ask_something_2",
+  [
+    (neg|troop_slot_ge, "$g_talk_troop", slot_troop_prisoner_of_party, 0),
+    (ge, "$g_talk_troop_effective_relation", 0),
+    (neg|troop_slot_eq, "$g_talk_troop", slot_troop_playerparty_history, dplmc_pp_history_nonplayer_entry),
+    (this_or_next|is_between, "$g_talk_troop", companions_begin, companions_end),
+    (is_between, "$g_talk_troop", pretenders_begin, pretenders_end),
+  ],
+  "I wish to check your equipment.",
+  "lord_talk_ask_equipment",
+  []
+],
+
+[
+  anyone,
+  "lord_talk_ask_equipment",
+  [],
+  "Let me show you...",
+  "lord_pretalk",
+  [
+    (change_screen_equip_other)
+  ]
+],
+
 [anyone,"lord_talk_ask_something_again", [],
 "Is there anything else?", "lord_talk_ask_something_2",[]],
 
