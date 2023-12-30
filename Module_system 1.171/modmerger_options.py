@@ -5,7 +5,7 @@
 # -1 : print errors and warnings
 # 0 : print errors, warnings and info
 # 1 : print all
-DEBUG_MODE = -1
+DEBUG_MODE = -2
 
 # fill this in yourself with the module system you are using, so that some mods can make smarter decisions on how to merge with your source.
 module_sys_info = {
