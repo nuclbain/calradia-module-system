@@ -1811,7 +1811,7 @@ scripts = [
 
       (item_set_slot, "itm_banded_armor", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
       (item_set_slot, "itm_cuir_bouilli", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
-      (item_set_slot, "itm_mkk_archer_armor_d", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
+      (item_set_slot, "itm_eastern_guard_armor_d", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
 
       (item_set_slot, "itm_padded_leather", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
       (item_set_slot, "itm_green_tunic", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
@@ -1820,14 +1820,14 @@ scripts = [
       (item_set_slot, "itm_ragged_outfit", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
       (item_set_slot, "itm_m_celestial_plate_b", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
 
-      (item_set_slot, "itm_mkk_infantry_armor_b", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
-      (item_set_slot, "itm_mkk_robe_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
-      (item_set_slot, "itm_mkk_midi_robe_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
-      (item_set_slot, "itm_mkk_midi_robe_f", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
-      (item_set_slot, "itm_mkk_robe_b", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
-      (item_set_slot, "itm_mkk_infantry_armor_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
-      (item_set_slot, "itm_mkk_scale_vest_alt_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
-      (item_set_slot, "itm_mkk_archer_armor_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
+      (item_set_slot, "itm_eastern_infantry_armor_b", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
+      (item_set_slot, "itm_eastern_robe_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
+      (item_set_slot, "itm_eastern_mail_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
+      (item_set_slot, "itm_eastern_robe_alternate_d", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
+      (item_set_slot, "itm_eastern_robe_b", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
+      (item_set_slot, "itm_eastern_infantry_armor_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
+      (item_set_slot, "itm_eastern_scale_armor_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
+      (item_set_slot, "itm_eastern_guard_armor_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
       (item_set_slot, "itm_mkk_mamluke_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
       (item_set_slot, "itm_m_chornovalley_heavy_lamellar_c", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
       (item_set_slot, "itm_m_chornovalley_heavy_lamellar_c", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
@@ -2527,10 +2527,10 @@ scripts = [
 
       #6-Sarranid Warriors
       #5a-Sarranid archer
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_robe_b", "trp_solarian_archer_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_robe_a", "trp_solarian_archer_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_midi_robe_a", "trp_solarian_archer_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_archer_armor_a", "trp_solarian_archer_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_robe_b", "trp_solarian_archer_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_robe_a", "trp_solarian_archer_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_mail_a", "trp_solarian_archer_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_guard_armor_a", "trp_solarian_archer_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_turban_a", "trp_solarian_archer_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_turban_b", "trp_solarian_archer_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_turban_c", "trp_solarian_archer_multiplayer"),
@@ -2554,13 +2554,13 @@ scripts = [
 
 
 	  #Sarranid footman
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_robe_b", "trp_solarian_footman_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_robe_a", "trp_solarian_footman_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_midi_robe_a", "trp_solarian_footman_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_midi_robe_f", "trp_solarian_footman_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_archer_armor_a", "trp_solarian_footman_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_robe_b", "trp_solarian_footman_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_robe_a", "trp_solarian_footman_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_mail_a", "trp_solarian_footman_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_robe_alternate_d", "trp_solarian_footman_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_guard_armor_a", "trp_solarian_footman_multiplayer"),
 
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_infantry_armor_b", "trp_solarian_footman_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_infantry_armor_b", "trp_solarian_footman_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_turban_a", "trp_solarian_footman_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_turban_b", "trp_solarian_footman_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_turban_c", "trp_solarian_footman_multiplayer"),
@@ -2600,13 +2600,13 @@ scripts = [
 
 
 	  #Sarranid mamluke
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_robe_b", "trp_solarian_knight_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_robe_a", "trp_solarian_knight_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_midi_robe_a", "trp_solarian_knight_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_infantry_armor_a", "trp_solarian_knight_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_scale_vest_alt_a", "trp_solarian_knight_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_robe_b", "trp_solarian_knight_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_robe_a", "trp_solarian_knight_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_mail_a", "trp_solarian_knight_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_infantry_armor_a", "trp_solarian_knight_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_scale_armor_a", "trp_solarian_knight_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_mamluke_a", "trp_solarian_knight_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_infantry_armor_b", "trp_solarian_knight_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_eastern_infantry_armor_b", "trp_solarian_knight_multiplayer"),
 
 
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mkk_turban_b", "trp_solarian_knight_multiplayer"),
