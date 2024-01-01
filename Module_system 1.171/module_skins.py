@@ -131,7 +131,7 @@ comp_greater_than = 1;
 skins = [
   (
     "man", 0,
-    "man_body", "man_calf_l", "m_handL",
+    "Male_Body_A", "invisible", "m_handL",
     "male_head", man_face_keys,
     ["man_hair_s","man_hair_m","man_hair_n","man_hair_o", "man_hair_y10", "man_hair_y12","man_hair_p","man_hair_r","man_hair_q","man_hair_v","man_hair_t","man_hair_y6","man_hair_y3","man_hair_y7","man_hair_y9","man_hair_y11","man_hair_u","man_hair_y","man_hair_y2","man_hair_y4"], #man_hair_meshes ,"man_hair_y5","man_hair_y8",
     ["beard_e","beard_d","beard_k","beard_l","beard_i","beard_j","beard_z","beard_m","beard_n","beard_y","beard_p","beard_o",   "beard_v", "beard_f", "beard_b", "beard_c","beard_t","beard_u","beard_r","beard_s","beard_a","beard_h","beard_g",], #beard meshes ,"beard_q"
@@ -165,7 +165,7 @@ skins = [
   
   (
     "woman", skf_use_morph_key_10,
-    "woman_body",  "woman_calf_l", "f_handL",
+    "woman_body",  "invisible", "f_handL",
     "female_head", woman_face_keys,
     ["woman_hair_p","woman_hair_n","woman_hair_o","woman_hair_q","woman_hair_r","woman_hair_t","woman_hair_s"], #woman_hair_meshes
 #    ["woman_hair_a","woman_hair_b","woman_hair_c","woman_hair_d","woman_hair_e","woman_hair_f","woman_hair_g"], #woman_hair_meshes
