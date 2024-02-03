@@ -495,8 +495,10 @@ items = [
 ["padded_cloth", "Aketon", [("Gambeson_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
 #NEW:
- ["aketon_green", "Padded Cloth", [("Padded_Cloth_Revised_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
+["aketon_green", "Padded Cloth", [("Padded_Cloth_Revised_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
+["m_aketon_a", "Aketon", [("Aketon_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,337 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [] ],
+["m_aketon_b", "Aketon with Kneekops", [("Aketon_Kneecops_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,489 , weight(17)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(7) ,imodbits_cloth, [], [] ],
 
 ["m_iron_crown_aketon_a", "Iron Crown Aketon", [("Iron_Crown_Aketon_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,261 , weight(10)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(14)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ],
 ["m_iron_crown_aketon_b", "Iron Crown Aketon", [("Iron_Crown_Aketon_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,261 , weight(10)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(14)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ],
@@ -777,6 +779,10 @@ items = [
 ["lamellar_vest_khergit", "Lamellar Vest", [("Lamellar_Vest_B",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
  970 , weight(18)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(8)|difficulty(7) ,imodbits_cloth ],
 
+["m_hauberk_a", "Hauberk", [("Hauberk_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,899 , weight(22)|abundance(100)|head_armor(0)|body_armor(41)|leg_armor(9)|difficulty(0) ,imodbits_armor, [], [] ], 
+["m_hauberk_b", "Hauberk with Plates", [("Hauberk_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1199 , weight(25)|abundance(100)|head_armor(0)|body_armor(49)|leg_armor(19)|difficulty(0) ,imodbits_armor, [], [] ], 
+["m_hauberk_c", "Hauberk with Kneekops", [("Hauberk_C",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1059 , weight(22)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(16)|difficulty(0) ,imodbits_armor, [], [] ], 
+
 ["mail_hauberk", "Mail Hauberk", [("Hauberk_Revised_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  1320 , weight(19)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(18)|difficulty(8) ,imodbits_armor ],
 
@@ -799,6 +805,16 @@ items = [
 
 ["brigandine_red", "Brigandine", [("brigandine_b",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs,0,
  1830 , weight(19)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(12)|difficulty(0) ,imodbits_armor ],
+
+["m_brigandine_d", "Brigandine", [("Brigandine_Green_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,826 , weight(20)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(10)|difficulty(6) ,imodbits_armor, [], [] ], 
+["m_brigandine_e", "Brigandine with Mail", [("Brigandine_Green_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1559 , weight(25)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(24)|difficulty(8) ,imodbits_armor, [], [] ], 
+
+["m_brigandine_f", "Heavy Brigandine", [("Brigandine_Red_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1799 , weight(24)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(25)|difficulty(8) ,imodbits_armor, [], [] ], 
+["m_brigandine_g", "Heavy Brigandine with Mail", [("Brigandine_Red_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1959 , weight(26)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(25)|difficulty(9) ,imodbits_armor, [], [] ],
+
+["m_brigandine_a", "Heavy Brigandine with Mail", [("Brigandine_Black_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,2199 , weight(27)|abundance(100)|head_armor(0)|body_armor(54)|leg_armor(25)|difficulty(10) ,imodbits_armor, [], [] ], 
+["m_brigandine_b", "Heavy Brigandine", [("Brigandine_Blue_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1599 , weight(24)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(25)|difficulty(9) ,imodbits_armor, [], [] ], 
+["m_brigandine_c", "Brigandine with Mail", [("Brigandine_Brown_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1091 , weight(21)|abundance(100)|head_armor(0)|body_armor(42)|leg_armor(10)|difficulty(7) ,imodbits_armor, [], [] ], 
 
 ["m_brigandine_navy_c", "Rider Brigandine", [("Brigandine_Navy_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1699 , weight(32)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(18)|difficulty(10) ,imodbits_armor, [], [] ],
 
@@ -2043,22 +2059,6 @@ items = [
 ["m_swadia_elite_helmet_c", "Swadian Elite Helmet", [("fracia_knight_helm_a",0)], itp_type_head_armor|itp_merchandise   ,0, 1522 , weight(2.5)|abundance(100)|head_armor(49)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_armor, [], [fac_kingdom_1] ],
 
 ["m_swadia_lord_helmet_a", "Swadian High Knight Helmet", [("helm_king_Jerusalem",0),("helm_king_Jerusalem_market",ixmesh_inventory)], itp_type_head_armor|itp_merchandise|itp_attach_armature   ,0, 1995 , weight(2.5)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(13) ,imodbits_armor, [], [fac_kingdom_1] ],
-
-# Custom mod armors
-["m_aketon_a", "Aketon", [("aketon",0), ("aketon.1",0), ("aketon.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_7] ],
-["m_aketon_b", "Aketon with Kneekops", [("aketon_kneecops",0), ("aketon_kneecops.1",0), ("aketon_kneecops.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,389 , weight(17)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(17)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_7] ], 
-
-["m_hauberk_a", "Hauberk", [("hauberk",0), ("hauberk.1",0), ("hauberk.2",0), ("hauberk.3",0), ("hauberk.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,899 , weight(22)|abundance(100)|head_armor(0)|body_armor(41)|leg_armor(9)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
-["m_hauberk_b", "Hauberk with Plates", [("hauberk2",0), ("hauberk2.1",0), ("hauberk2.2",0), ("hauberk2.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1199 , weight(25)|abundance(100)|head_armor(0)|body_armor(49)|leg_armor(19)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
-["m_hauberk_c", "Hauberk with Kneekops", [("hauberk3",0), ("hauberk3.1",0), ("hauberk3.2",0), ("hauberk3.3",0), ("hauberk3.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1059 , weight(22)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(16)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
-
-["m_brigandine_a", "Heavy Brigandine with Mail", [("brigandine_black_mail",0), ("brigandine_black_mail.1",0), ("brigandine_black_mail.2",0), ("brigandine_black_mail.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1299 , weight(25)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(19)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
-["m_brigandine_b", "Heavy Brigandine", [("brigandine_blue",0), ("brigandine_blue.1",0), ("brigandine_blue.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,999 , weight(21)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(19)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
-["m_brigandine_c", "Brigandine with Mail", [("brigandine_brown_mail",0), ("brigandine_brown_mail.1",0), ("brigandine_brown_mail.2",0), ("brigandine_brown_mail.3",0), ("brigandine_brown_mail.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,999 , weight(23)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(10)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
-["m_brigandine_d", "Brigandine", [("brigandine_green",0), ("brigandine_green.1",0), ("brigandine_green.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,799 , weight(20)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(10)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
-["m_brigandine_e", "Brigandine with Mail", [("brigandine_green_mail",0), ("brigandine_green_mail.1",0), ("brigandine_green_mail.2",0), ("brigandine_green_mail.3",0), ("brigandine_green_mail.4",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1159 , weight(25)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(19)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
-["m_brigandine_f", "Heavy Brigandine", [("brigandine_red",0), ("brigandine_red.1",0), ("brigandine_red.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1199 , weight(24)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(20)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ], 
-["m_brigandine_g", "Heavy Brigandine with Mail", [("brigandine_red_mail",0), ("brigandine_red_mail.1",0), ("brigandine_red_mail.2",0), ("brigandine_red_mail.3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1359 , weight(26)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(19)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ],
 
 ["saracin_hard_horses_a","Heavy Eastern Horse", [("saracin_hard_horses_a", 0),("saracin_hard_horses_a", imodbit_heavy|imodbit_spirited)], itp_type_horse|itp_merchandise, 0,5000, weight(0)|abundance(10)|body_armor(40)|difficulty(3)|hit_points(200)|horse_maneuver(37)|horse_speed(45)|weapon_length(110)|horse_charge(50), imodbit_champion, [], [fac_kingdom_6]],
 ["saracin_hard_horses_b","Heavy Eastern Horse", [("saracin_hard_horses_b", 0),("saracin_hard_horses_b", imodbit_heavy|imodbit_spirited)], itp_type_horse|itp_merchandise, 0,5000, weight(0)|abundance(10)|body_armor(40)|difficulty(3)|hit_points(200)|horse_maneuver(37)|horse_speed(45)|weapon_length(110)|horse_charge(50), imodbit_champion, [], [fac_kingdom_6]],
