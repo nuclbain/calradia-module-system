@@ -8701,7 +8701,6 @@ What kind of recruits do you want?", "dplmc_constable_recruit_select",
   (troop_get_inventory_slot, ":item_no", "$g_talk_troop", ":slots"),
   (gt, ":item_no", 0), #item found
   (neq, ":item_no", "itm_dplmc_coat_of_plates_red_constable"), #item found
-  (neq, ":item_no", "itm_leather_boots"), #item found
   (assign, ":cap", -1), #break
 (try_end),
 (eq, ":cap", -1),
@@ -9758,7 +9757,6 @@ What kind of recruits do you want?", "dplmc_constable_recruit_select",
   (troop_get_inventory_slot, ":item_no", "$g_talk_troop", ":slots"),
   (gt, ":item_no", 0), #item found
   (neq, ":item_no", "itm_tabard"), #item found
-  (neq, ":item_no", "itm_leather_boots"), #item found
   (assign, ":cap", -1), #break
 (try_end),
 (eq, ":cap", -1),
@@ -31359,7 +31357,6 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         # let's add some objects to this adventurous wife
         (troop_add_item, "$g_talk_troop","itm_hunter", imod_spirited),
         (troop_add_item, "$g_talk_troop","itm_tribal_warrior_outfit", imod_lordly),
-        (troop_add_item, "$g_talk_troop","itm_leather_boots", imod_lordly),
         (troop_add_item, "$g_talk_troop","itm_leather_gloves", imod_lordly),
         # (troop_add_item, "$g_talk_troop","itm_female_hood", imod_lordly),
         (troop_add_item, "$g_talk_troop","itm_hunting_bow", imod_masterwork),
@@ -31420,7 +31417,6 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         # let's add some objects to this otherworldly wife
         (troop_add_item, "$g_talk_troop","itm_saddle_horse", imod_spirited),
         (troop_add_item, "$g_talk_troop","itm_lady_dress_ruby", imod_lordly),
-        (troop_add_item, "$g_talk_troop","itm_light_leather_boots", imod_lordly),
         (troop_add_item, "$g_talk_troop","itm_female_hood", imod_lordly),
         
         # ..and some proficiencies
