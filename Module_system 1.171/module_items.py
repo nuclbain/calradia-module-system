@@ -812,8 +812,8 @@ items = [
 ["black_breastplate_b", "Black Breastplate", [("Black_Breastplate_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,971 , weight(20)|abundance(100)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_12] ],
 ["black_breastplate_c", "Black Breastplate", [("Black_Breastplate_C",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1095 , weight(22)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(18)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_12] ],
 
-["brigandine_red", "Brigandine", [("brigandine_b",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs,0,
- 1830 , weight(19)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(12)|difficulty(0) ,imodbits_armor ],
+["brigandine_red", "Brigandine", [("Default_Brigandine",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs,0,
+ 1830 , weight(23)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(20)|difficulty(0) ,imodbits_armor ],
 
 ["m_brigandine_d", "Brigandine", [("Brigandine_Green_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,826 , weight(20)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(10)|difficulty(6) ,imodbits_armor, [], [] ], 
 ["m_brigandine_e", "Brigandine with Mail", [("Brigandine_Green_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1559 , weight(25)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(24)|difficulty(8) ,imodbits_armor, [], [] ], 
