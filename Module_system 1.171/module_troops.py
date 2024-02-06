@@ -776,9 +776,22 @@ troops = [
   ["taiga_bandit","Taiga Bandit","Taiga Bandits",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_ranged,0,0,fac_outlaws,
    [itm_arrows, itm_sword_khergit_1, itm_winged_mace, itm_spear, itm_light_lance, itm_nomad_bow, itm_nomad_bow,itm_short_bow, itm_jarid, itm_javelin, itm_nomad_cap, itm_fur_hat, itm_nomad_cap_b, itm_pilgrim_hood, itm_padded_coif, itm_leather_vest, itm_leather_vest_reinfoced, itm_rough_gambeson, itm_red_tunic, itm_ragged_outfit, itm_tribal_warrior_outfit, itm_leather_hood_a, itm_peasant_hood_a, itm_peasant_hood_b, itm_nomad_fur_a, itm_nomad_fur_b, itm_leather_covered_round_shield, itm_leather_covered_round_shield],
    def_attrib|level(15),wp(110),knows_common|knows_power_draw_4|knows_power_throw_3,vaegir_face_young_1, vaegir_face_old_2],
-  ["desert_bandit","Piaktu Bandit","Piaktu Bandits",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse|tf_mounted,0,0,fac_outlaws,
-   [itm_arrows,itm_arabian_sword_a,itm_winged_mace,itm_spear, itm_light_lance,itm_jarid,itm_nomad_bow,itm_short_bow,itm_jarid,itm_m_desert_bandit_a, itm_m_desert_bandit_b, itm_m_desert_bandit_c, itm_m_desert_bandit_d, itm_m_bandit_turban_a, itm_m_bandit_turban_b, itm_m_bandit_turban_c, itm_m_bandit_turban_d, itm_leather_covered_round_shield,itm_leather_covered_round_shield,itm_arabian_horse_a],
-   def_attrib|level(12),wp(100),knows_riding_4|knows_horse_archery_3|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],
+
+  ["desert_bandit","Piaktu Bandit","Piaktu Bandits",tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_outlaws,
+   [itm_arrows, itm_arabian_sword_a, itm_winged_mace, itm_spear, itm_jarid, itm_nomad_bow, itm_short_bow, itm_jarid, itm_m_desert_bandit_a, itm_m_desert_bandit_b, itm_m_desert_bandit_c, itm_m_desert_bandit_d, itm_m_bandit_turban_a, itm_m_bandit_turban_b, itm_m_bandit_turban_c, itm_m_bandit_turban_d, itm_leather_gloves, itm_leather_covered_round_shield, itm_leather_covered_round_shield],
+   def_attrib|level(12),wp(100),knows_riding_4|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],
+  ["desert_bandit_master","Piaktu Assasin","Piaktu Assasins",tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_outlaws,
+   [itm_arrows, itm_arabian_sword_a, itm_arabian_sword_b, itm_arabian_sword_c, itm_solarian_spear_a, itm_solarian_spear_b, itm_jarid, itm_nomad_bow, itm_short_bow, itm_jarid, itm_m_desert_bandit_a, itm_m_desert_bandit_b, itm_m_desert_bandit_c, itm_m_desert_bandit_d, itm_piaktu_mask_a, itm_piaktu_mask_b, itm_decorated_leather_gloves_a, itm_decorative_fur_a, itm_solarian_oval_shield_a, itm_solarian_oval_shield_b, itm_solarian_round_shield_a, itm_solarian_round_shield_b],
+   def_attrib|level(18),wp(160),knows_riding_4|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],
+  ["desert_bandit_horseman","Piaktu Horseman","Piaktu Horsemen",tf_guarantee_armor|tf_guarantee_helmet|tf_mounted|tf_guarantee_horse,0,0,fac_outlaws,
+   [itm_arabian_sword_a, itm_arabian_sword_b, itm_arabian_sword_c, itm_solarian_lance_a, itm_solarian_lance_b, itm_piaktu_coat_a, itm_piaktu_coat_b, itm_piaktu_mask_d, itm_piaktu_mask_c, itm_mail_mittens, itm_m_gloves_a, itm_decorative_fur_a, itm_decorative_fur_b, itm_solarian_oval_shield_a, itm_solarian_oval_shield_b, itm_solarian_round_shield_a, itm_solarian_round_shield_b, itm_arabian_horse_a, itm_arabian_horse_b],
+   def_attrib|level(21),wp(180),knows_riding_4|knows_power_strike_3|knows_ironflesh_4,khergit_face_young_1, khergit_face_old_2],
+  ["desert_bandit_ronin","Piaktu Ronin","Piaktu Ronins",tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_outlaws,
+   [itm_khergit_sword_two_handed_a, itm_khergit_sword_two_handed_b, itm_piaktu_ronin_armor_a, itm_piaktu_ronin_armor_b, itm_piaktu_helmet_a, itm_piaktu_helmet_b, itm_piaktu_helmet_c, itm_eastern_scale_gloves_a, itm_eastern_scale_gloves_b, itm_decorative_fur_a, itm_decorative_fur_b],
+   def_attrib|level(21),wp(180),knows_athletics_4|knows_power_strike_3|knows_ironflesh_5,khergit_face_young_1, khergit_face_old_2],
+  ["desert_bandit_leader","Piaktu Leader","Piaktu Leaders",tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_mounted|tf_guarantee_horse,0,0,fac_outlaws,
+   [itm_khergit_sword_two_handed_a, itm_khergit_sword_two_handed_b, itm_sarranid_cavalry_sword, itm_arabian_sword_d, itm_arabian_sword_c, itm_solarian_lance_c, itm_solarian_lance_d, itm_piaktu_leader_armor_a, itm_piaktu_leader_helmet_a, itm_eastern_scale_gloves_a, itm_eastern_scale_gloves_b, itm_decorative_fur_c, itm_decorative_fur_b, itm_solarian_oval_shield_a, itm_solarian_oval_shield_b, itm_solarian_round_shield_a, itm_solarian_round_shield_b, itm_saracin_hard_horses_a, itm_saracin_hard_horses_d],
+   def_attrib|level(27),wp(240),knows_riding_4|knows_athletics_4|knows_power_strike_3|knows_ironflesh_5,khergit_face_young_1, khergit_face_old_2],
 
   ["black_celestial_armsman","Black Khergit Horseman","Black Khergit Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_black_khergits,
    [itm_arrows,itm_sword_khergit_2,itm_scimitar,itm_scimitar,itm_winged_mace,itm_spear,itm_lance,itm_khergit_bow,itm_khergit_bow,itm_nomad_bow,itm_nomad_bow,itm_steppe_cap,itm_nomad_cap,itm_khergit_war_helmet,itm_khergit_war_helmet,itm_mail_hauberk,itm_m_chornovalley_heavy_mail_b,itm_plate_covered_round_shield,itm_plate_covered_round_shield,itm_saddle_horse,itm_steppe_horse],
@@ -3083,10 +3096,12 @@ upgrade(troops,"forest_bandit","silver_rose_levy")
 upgrade(troops,"steppe_bandit","celestial_recruit")
 upgrade(troops,"taiga_bandit","chornovalley_recruit")
 upgrade(troops,"sea_raider","iron_crown_recruit")
-upgrade(troops,"desert_bandit","solarian_recruit")
+upgrade(troops,"desert_bandit","desert_bandit_master")
+upgrade2(troops,"desert_bandit_master","desert_bandit_horseman","desert_bandit_ronin")
+upgrade(troops,"desert_bandit_horseman","desert_bandit_leader")
 #new tree connections ended
 
-upgrade2(troops,"bandit","brigand","mercenary_swordsman")
+# upgrade2(troops,"bandit","brigand","mercenary_swordsman")
 upgrade(troops,"manhunter","slave_driver")
 
 #upgrade(troops,"forest_bandit","mercenary_crossbowman")

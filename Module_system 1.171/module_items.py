@@ -374,6 +374,7 @@ items = [
 
 ["decorative_fur_a",  "Fur", [("Fur_Decor_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature,0, 63 , weight(1)|abundance(100)|head_armor(2)|body_armor(3)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["decorative_fur_b",  "Fur", [("Fur_Decor_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature,0, 93 , weight(1)|abundance(100)|head_armor(2)|body_armor(3)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["decorative_fur_c",  "Piaktu Leader Cloak", [("Fur_Decor_C",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature,0, 299 , weight(1.5)|abundance(2)|head_armor(6)|body_armor(13)|leg_armor(0)|difficulty(7) ,imodbits_cloth ],
 
 ["bear_fur_a",  "Bear Fur", [("Bear_Fur_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature,0, 171 , weight(2)|abundance(100)|head_armor(4)|body_armor(8)|leg_armor(0)|difficulty(7) ,imodbits_cloth ],
 ["bear_fur_b",  "Bear Fur", [("Bear_Fur_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature,0, 218 , weight(2)|abundance(100)|head_armor(4)|body_armor(11)|leg_armor(0)|difficulty(7) ,imodbits_cloth ],
@@ -696,6 +697,14 @@ items = [
 
 ["m_nerpa_coat_of_plates_heavy_a", "Nerpa Heavy Coat of Plates", [("Nerpa_Coat_Of_Plates_E",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1017 , weight(21)|abundance(100)|head_armor(0)|body_armor(44)|leg_armor(17)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_7] ],
 ["m_nerpa_coat_of_plates_heavy_b", "Nerpa Heavy Coat of Plates", [("Nerpa_Coat_Of_Plates_F",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1569 , weight(22)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(17)|difficulty(10) ,imodbits_armor, [], [fac_kingdom_7] ],
+
+["piaktu_coat_a", "Piaktu Armor", [("Piaktu_Coat_A",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 545 , weight(16)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_11] ],
+["piaktu_coat_b", "Piaktu Armor", [("Piaktu_Coat_B",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 713 , weight(22)|abundance(100)|head_armor(0)|body_armor(41)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_11] ],
+
+["piaktu_ronin_armor_a", "Piaktu Ronin Armor", [("Piaktu_Ronin_A",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 1019 , weight(22)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(20)|difficulty(10) ,imodbits_armor, [], [fac_kingdom_11] ],
+["piaktu_ronin_armor_b", "Piaktu Ronin Armor", [("Piaktu_Ronin_B",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 845 , weight(22)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(20)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_11] ],
+
+["piaktu_leader_armor_a", "Piaktu Leader Armor", [("Piaktu_Leader_A",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise, 0, 1845, weight(22)|abundance(3)|head_armor(0)|body_armor(52)|leg_armor(20)|difficulty(11) ,imodbits_armor, [], [fac_kingdom_11, fac_kingdom_6] ],
 
 ["m_desert_bandit_a", "Desert Padded Vest", [("Adid_Coat_A",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 445 , weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(17)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_11] ],
 ["m_desert_bandit_b", "Desert Mail", [("Adid_Coat_B",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 661 , weight(17)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(17)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_11] ],
@@ -1151,6 +1160,17 @@ items = [
 ["m_bandit_turban_b", "Turban", [("beduin_turban_b",0),("beduin_turban_b_mark",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(11)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_11]],
 ["m_bandit_turban_c", "Turban", [("beduin_turban_c",0),("beduin_turban_c.1",0),("beduin_turban_c_mark",ixmesh_inventory),("beduin_turban_c_mark.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_11]],
 ["m_bandit_turban_d", "Turban", [("beduin_turban_d",0),("beduin_turban_d.1",0),("beduin_turban_d_mark",ixmesh_inventory),("beduin_turban_d_mark.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_11]],
+
+["piaktu_mask_a", "Piaktu Mask", [("Piaktu_Mask_A",0)], itp_merchandise|itp_type_head_armor, 0, 145, weight(1.5)|abundance(100)|head_armor(20)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_plate, [], [fac_kingdom_11]],
+["piaktu_mask_b", "Piaktu Mask", [("Piaktu_Mask_B",0)], itp_merchandise|itp_type_head_armor, 0, 165, weight(1.75)|abundance(100)|head_armor(22)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_plate, [], [fac_kingdom_11]],
+["piaktu_mask_c", "Piaktu Mask", [("Piaktu_Mask_C",0)], itp_merchandise|itp_type_head_armor, 0, 267, weight(2)|abundance(100)|head_armor(27)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_plate, [], [fac_kingdom_11]],
+["piaktu_mask_d", "Piaktu Mask", [("Piaktu_Mask_D",0)], itp_merchandise|itp_type_head_armor, 0, 277, weight(2.25)|abundance(100)|head_armor(29)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_plate, [], [fac_kingdom_11]],
+
+["piaktu_helmet_a", "Piaktu Helmet", [("Piaktu_Helmet_A",0)], itp_merchandise|itp_type_head_armor, 0, 789, weight(3.25)|abundance(100)|head_armor(51)|body_armor(0)|leg_armor(0)|difficulty(8), imodbits_plate, [], [fac_kingdom_11]],
+["piaktu_helmet_b", "Piaktu Helmet", [("Piaktu_Helmet_B",0)], itp_merchandise|itp_type_head_armor, 0, 917, weight(4)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_plate, [], [fac_kingdom_11]],
+["piaktu_helmet_c", "Piaktu Helmet", [("Piaktu_Helmet_C",0)], itp_merchandise|itp_type_head_armor, 0, 793, weight(3)|abundance(100)|head_armor(48)|body_armor(0)|leg_armor(0)|difficulty(7), imodbits_plate, [], [fac_kingdom_11]],
+
+["piaktu_leader_helmet_a", "Piaktu Leader Helmet", [("Piaktu_Helmet_Leader_A",0)], itp_merchandise|itp_type_head_armor, 0, 1303, weight(4)|abundance(3)|head_armor(52)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_plate, [], [fac_kingdom_11, fac_kingdom_6]],
 
 ["adid_cavalry_helmet_a","Adid Cavalry Helmet", [("gulam_helm_a", 0)], itp_type_head_armor|itp_merchandise|itp_fit_to_head, 0,519, weight(2)|abundance(100)|head_armor(45)|difficulty(7), imodbits_none, [], [fac_kingdom_11]],
 ["adid_helmet_a","Adid Helmet", [("gulam_helm_b", 0),("gulam_helm_b_market", ixmesh_inventory)], itp_type_head_armor|itp_attach_armature|itp_merchandise|itp_fit_to_head, 0,390, weight(2)|abundance(100)|head_armor(38)|difficulty(7), imodbits_none, [], [fac_kingdom_11]],
