@@ -401,12 +401,10 @@ items = [
 ["courtly_outfit", "Courtly Outfit", [("Rich_Surcoat_B",0),("Rich_Surcoat_B.1",0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["nobleman_outfit", "Nobleman Outfit", [("Rich_Surcoat_A",0),], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(12)|difficulty(0) ,imodbits_cloth ], 
 ["nobleman_outfit_a", "Nobleman Outfit", [("Rich_Surcoat_C",0),], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(12)|difficulty(0) ,imodbits_cloth ], 
-["nomad_armor", "Nomad Armor", [("Robe_B",0)], itp_merchandise| itp_type_body_armor |itp_covers_legs   ,0, 25 , weight(2)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
-["khergit_armor", "Nomad Jacket", [("Robe_D",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs ,0, 38 , weight(2)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["leather_jacket", "Merchant Jacket", [("Leather_Jacket_A",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs  |itp_civilian ,0, 250 , weight(3)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(15)|difficulty(0) ,imodbits_cloth ],
 
 #NEW:
-["rawhide_coat", "Rawhide Coat", [("coat_of_plates_b",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0, 12 , weight(5)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+["rawhide_coat", "Rawhide Coat", [("Rawhide_Coat_A",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0, 12 , weight(5)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 #NEW: was lthr_armor_a
 ["leather_armor", "Leather Armor", [("Leather_Cuirass_A",0)], itp_merchandise| itp_type_body_armor |itp_covers_legs  ,0, 65 , weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["heavy_leather_vest_mail", "Heavy Leather Armor", [("Leather_Cuirass_B",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian,0, 1099 , weight(20)|abundance(100)|head_armor(0)|body_armor(41)|leg_armor(10)|difficulty(9) ,imodbits_cloth ],
@@ -777,6 +775,19 @@ items = [
  520 , weight(14)|abundance(100)|head_armor(0)|body_armor(30)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["nomad_robe", "Nomad Robe", [("Robe_A",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs |itp_civilian,0,
  610 , weight(15)|abundance(100)|head_armor(0)|body_armor(32)|leg_armor(18)|difficulty(7) ,imodbits_cloth ],
+["nomad_armor", "Nomad Armor", [("Robe_B",0)], itp_merchandise| itp_type_body_armor |itp_covers_legs   ,0, 25 , weight(2)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
+["nomad_robe_b", "Nomad Robe", [("Robe_C",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs |itp_civilian,0, 610 , weight(15)|abundance(100)|head_armor(0)|body_armor(32)|leg_armor(18)|difficulty(7) ,imodbits_cloth ],
+["khergit_armor", "Nomad Jacket", [("Robe_D",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs ,0, 38 , weight(2)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
+
+["tribe_vest_a", "Black Tribal Vest", [("Steppe_Nomad_Vest_A",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs ,0, 255 , weight(10)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
+["tribe_vest_b", "Black Tribal Vest", [("Steppe_Nomad_Vest_B",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs ,0, 319 , weight(14)|abundance(100)|head_armor(0)|body_armor(26)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
+["tribe_vest_c", "Black Tribal Armed Vest", [("Steppe_Nomad_Vest_C",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs ,0, 517 , weight(15)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(7) ,imodbits_cloth ],
+
+["tribe_armor_a", "Leather Tribal Armor", [("Steppe_Nomad_Leather_A",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs ,0, 499 , weight(16)|abundance(100)|head_armor(0)|body_armor(32)|leg_armor(15)|difficulty(7) ,imodbits_cloth ],
+["tribe_armor_b", "Leather Tribal Armor", [("Steppe_Nomad_Leather_B",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs ,0, 599 , weight(18)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(15)|difficulty(7) ,imodbits_cloth ],
+["tribe_armor_c", "Leather Tribal Armor", [("Steppe_Nomad_Leather_C",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs ,0, 819 , weight(20)|abundance(100)|head_armor(0)|body_armor(44)|leg_armor(20)|difficulty(9) ,imodbits_cloth ],
+["tribe_armor_d", "Black Leather Tribal Armor", [("Steppe_Nomad_Leather_D",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs ,0, 1193 , weight(22)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(24)|difficulty(10) ,imodbits_cloth ],
+
 #["heraldric_armor", "Heraldric Armor", [("tourn_armor_a",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 442 , weight(17)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(8)|difficulty(7) ,imodbits_armor ],
 #NEW: was "std_lthr_coat"
 ["studded_leather_coat", "Studded Leather Coat", [("Rough_Leather_Jerkin_Mail_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
@@ -1155,6 +1166,12 @@ items = [
 ["spiked_helmet", "Spiked Helmet", [("Spiked_Helmet_B",0), ("Spiked_Helmet_B.1",0),("Spiked_Helmet_B_inv",ixmesh_inventory), ("Spiked_Helmet_B_inv.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 278 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_plate, [], [fac_kingdom_1]],
 
 ["silver_rose_scout_helmet_a", "Silver Rose Scout Helmet", [("Silver_Rose_Scout_Helmet_A",0), ("Silver_Rose_Scout_Helmet_A.1",0),("Silver_Rose_Scout_Helmet_A.2",0),("Silver_Rose_Scout_Helmet_A_inv",ixmesh_inventory), ("Silver_Rose_Scout_Helmet_A_inv.1",ixmesh_inventory), ("Silver_Rose_Scout_Helmet_A_inv.2",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 209 , weight(1.75)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate, [], [fac_kingdom_1]],
+
+["stepper_nomad_helmet_a", "Nomad Helmet", [("Steppe_Nomad_Helmet_A",0)], itp_merchandise|itp_type_head_armor, 0, 185, weight(1.75)|abundance(100)|head_armor(25)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_plate, [], []],
+["stepper_nomad_helmet_b", "Nomad Helmet", [("Steppe_Nomad_Helmet_B",0)], itp_merchandise|itp_type_head_armor, 0, 185, weight(1.75)|abundance(100)|head_armor(25)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_plate, [], []],
+["stepper_nomad_helmet_c", "Nomad Helmet", [("Steppe_Nomad_Helmet_C",0)], itp_merchandise|itp_type_head_armor, 0, 244, weight(2)|abundance(100)|head_armor(29)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_plate, [], []],
+["stepper_nomad_helmet_d", "Nomad Helmet", [("Steppe_Nomad_Helmet_D",0)], itp_merchandise|itp_type_head_armor, 0, 244, weight(2)|abundance(100)|head_armor(29)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_plate, [], []],
+["stepper_nomad_helmet_e", "Nomad Helmet", [("Steppe_Nomad_Helmet_E",0)], itp_merchandise|itp_type_head_armor, 0, 661, weight(2)|abundance(100)|head_armor(43)|body_armor(0)|leg_armor(0)|difficulty(8), imodbits_plate, [], []],
 
 ["m_bandit_turban_a", "Turban", [("beduin_turban_a",0),("beduin_turban_a_mark",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(10)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_11]],
 ["m_bandit_turban_b", "Turban", [("beduin_turban_b",0),("beduin_turban_b_mark",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 56 , weight(1)|abundance(100)|head_armor(11)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_11]],

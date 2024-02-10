@@ -770,9 +770,15 @@ troops = [
   ["sea_raider","Sea Raider","Sea Raiders",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_shield,0,0,fac_outlaws,
    [itm_arrows,itm_sword_viking_1,itm_sword_viking_2,itm_fighting_axe,itm_war_axe,itm_battle_axe,itm_spear,itm_war_spear,itm_tab_shield_round_b,itm_tab_shield_round_c,itm_long_bow,itm_javelin,itm_throwing_axes,itm_m_hauberk_navy_a,itm_m_hauberk_navy_b,itm_m_hauberk_navy_c,itm_m_brigandine_navy_c],
    def_attrib|level(16),wp(110),knows_ironflesh_2|knows_power_strike_2|knows_power_draw_3|knows_power_throw_2|knows_riding_1|knows_athletics_2,nord_face_young_1, nord_face_old_2],
-  ["steppe_bandit","Steppe Bandit","Steppe Bandits",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_ranged|tf_mounted,0,0,fac_outlaws,
-   [itm_arrows,itm_sword_khergit_1,itm_winged_mace,itm_spear, itm_light_lance,itm_nomad_bow,itm_nomad_bow,itm_short_bow,itm_jarid,itm_nomad_cap,itm_nomad_cap_b,itm_khergit_armor,itm_steppe_armor,itm_leather_covered_round_shield,itm_leather_covered_round_shield,itm_saddle_horse,itm_steppe_horse,itm_steppe_horse],
+  ["steppe_bandit","Steppe Bandit","Steppe Bandits",tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_ranged|tf_guarantee_helmet|tf_mounted,0,0,fac_outlaws,
+   [itm_arrows,itm_sword_khergit_1,itm_winged_mace,itm_spear, itm_light_lance,itm_nomad_bow,itm_nomad_bow,itm_short_bow,itm_jarid,itm_stepper_nomad_helmet_a,itm_stepper_nomad_helmet_b,itm_tribe_vest_a,itm_tribe_vest_b,itm_leather_covered_round_shield,itm_leather_covered_round_shield, itm_decorative_fur_a, itm_saddle_horse,itm_steppe_horse,itm_steppe_horse],
    def_attrib|level(12),wp(100),knows_riding_4|knows_horse_archery_3|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],
+  ["steppe_bandit_warrior","Steppe Warrior Bandit","Steppe Warrior Bandits",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_ranged|tf_guarantee_helmet|tf_mounted,0,0,fac_outlaws,
+   [itm_arrows,itm_sword_khergit_1, itm_sword_khergit_2, itm_winged_mace, itm_spear, itm_light_lance,itm_nomad_bow,itm_nomad_bow,itm_short_bow,itm_jarid,itm_stepper_nomad_helmet_c,itm_stepper_nomad_helmet_d,itm_tribe_vest_c,itm_tribe_armor_a, itm_tribe_armor_b, itm_leather_covered_round_shield,itm_leather_covered_round_shield, itm_decorative_fur_a, itm_steppe_horse,itm_steppe_horse_b],
+   def_attrib|level(15),wp(130),knows_riding_4|knows_horse_archery_5|knows_power_draw_5,khergit_face_young_1, khergit_face_old_2],
+  ["steppe_bandit_leader","Steppe Bandit Leader","Steppe Bandit Leaders",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_ranged|tf_guarantee_helmet|tf_mounted,0,0,fac_outlaws,
+   [itm_khergit_arrows, itm_barbed_arrows, itm_sword_khergit_3, itm_sword_khergit_4, itm_lance, itm_khergit_bow,itm_nomad_bow, itm_strong_bow, itm_jarid, itm_stepper_nomad_helmet_e , itm_tribe_armor_c, itm_tribe_armor_d, itm_leather_covered_round_shield,itm_leather_covered_round_shield, itm_decorative_fur_a,itm_steppe_horse,itm_steppe_horse_b],
+   def_attrib|level(25),wp(230),knows_riding_6|knows_horse_archery_6|knows_power_draw_6|knows_ironflesh_6,khergit_face_young_1, khergit_face_old_2],
   ["taiga_bandit","Taiga Bandit","Taiga Bandits",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_ranged,0,0,fac_outlaws,
    [itm_arrows, itm_sword_khergit_1, itm_winged_mace, itm_spear, itm_light_lance, itm_nomad_bow, itm_nomad_bow,itm_short_bow, itm_jarid, itm_javelin, itm_nomad_cap, itm_fur_hat, itm_nomad_cap_b, itm_pilgrim_hood, itm_padded_coif, itm_leather_vest, itm_leather_vest_reinfoced, itm_rough_gambeson, itm_red_tunic, itm_ragged_outfit, itm_tribal_warrior_outfit, itm_leather_hood_a, itm_peasant_hood_a, itm_peasant_hood_b, itm_nomad_fur_a, itm_nomad_fur_b, itm_leather_covered_round_shield, itm_leather_covered_round_shield],
    def_attrib|level(15),wp(110),knows_common|knows_power_draw_4|knows_power_throw_3,vaegir_face_young_1, vaegir_face_old_2],
@@ -3093,7 +3099,9 @@ upgrade2(troops,"occultist","veilweaver","veiled_inquisitor")
 #new tree connections
 upgrade(troops,"mountain_bandit","alpine_recruit")
 upgrade(troops,"forest_bandit","silver_rose_levy")
-upgrade(troops,"steppe_bandit","celestial_recruit")
+upgrade(troops,"steppe_bandit","steppe_bandit_warrior")
+upgrade(troops,"steppe_bandit_warrior","steppe_bandit_leader")
+
 upgrade(troops,"taiga_bandit","chornovalley_recruit")
 upgrade(troops,"sea_raider","iron_crown_recruit")
 upgrade(troops,"desert_bandit","desert_bandit_master")
