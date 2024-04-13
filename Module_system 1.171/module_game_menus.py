@@ -1157,6 +1157,13 @@ game_menus = [
          (jump_to_menu, "mnu_start_character_1"),
        ]
        ),
+      ("start_undead",[],"Undead",
+       [
+         (troop_set_type, "trp_player", 4),
+         (assign, "$character_gender", tf_undead),
+         (jump_to_menu, "mnu_start_character_1"),
+       ]
+       ),
 	  ("go_back",[],"Go back",
        [
 	     (jump_to_menu,"mnu_start_game_0"),
