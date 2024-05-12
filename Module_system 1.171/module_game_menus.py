@@ -286,7 +286,7 @@ game_menus = [
          (party_add_members, "p_main_party", "trp_chornovalley_knight", 10),
          (party_add_members, "p_main_party", "trp_chornovalley_longbowman", 10),
          (party_add_members, "p_main_party", "trp_silver_rose_sharpshooter", 10),
-         (troop_add_item, "trp_player","itm_eastern_guard_armor_d",0),
+         (troop_add_item, "trp_player","itm_solarian_armor_c",0),
          (troop_add_item, "trp_player","itm_m_bascinet_b",0),
 
          (troop_add_item, "trp_player","itm_hafted_blade_b",0),
@@ -1842,8 +1842,8 @@ game_menus = [
          (store_random_in_range, ":weapon_item","itm_military_hammer", "itm_sickle"),
        (else_try),
          (eq, ":faction_no", "fac_kingdom_6"), #a fairly complete set of gear
-         (troop_add_item, "trp_player","itm_mkk_helm_sar_a",imod_hardened),
-         (store_random_in_range, ":helmet_item", "itm_mkk_turban_a", "itm_mkk_helm_warrior_a"),
+         (troop_add_item, "trp_player","itm_solarian_turban_c",imod_hardened),
+         (store_random_in_range, ":helmet_item", "itm_solarian_turban_a", "itm_solarian_ridge_helmet_c"),
          # (assign, ":weapon_item","itm_sarranid_two_handed_mace_1"),
        (try_end),
        (try_begin),
