@@ -424,6 +424,8 @@ troops = [
   0,
   fac_kingdom_8,
   [
+    itm_hairako_fur_hat_a,
+    itm_hairako_fur_hat_b,
     itm_hairako_helmet_a,
     itm_hairako_helmet_b,
     itm_hairako_helmet_c,
@@ -457,6 +459,8 @@ troops = [
   0,
   fac_kingdom_8,
   [
+    itm_hairako_fur_hat_a,
+    itm_hairako_fur_hat_b,
     itm_hairako_helmet_a,
     itm_hairako_helmet_b,
     itm_hairako_helmet_c,
@@ -534,6 +538,9 @@ troops = [
     itm_hairako_mail_helmet_b,
     itm_hairako_nasal_helmet_d,
     itm_hairako_nasal_helmet_e,
+    itm_hairako_full_helmet_a,
+    itm_hairako_full_helmet_b,
+    itm_hairako_full_helmet_c,
     itm_hairako_full_mail_a,
     itm_hairako_full_mail_b,
     itm_m_gloves_a,
@@ -563,6 +570,8 @@ troops = [
   0,
   fac_kingdom_8,
   [
+    itm_hairako_fur_hat_a,
+    itm_hairako_fur_hat_b,
     itm_hairako_helmet_a,
     itm_hairako_helmet_b,
     itm_hairako_helmet_c,
@@ -673,6 +682,8 @@ troops = [
   0,
   fac_kingdom_8,
   [
+    itm_hairako_fur_hat_a,
+    itm_hairako_fur_hat_b,
     itm_hairako_helmet_b,
     itm_hairako_helmet_a,
     itm_hairako_helmet_c,
@@ -703,6 +714,8 @@ troops = [
   0,
   fac_kingdom_8,
   [
+    itm_hairako_fur_hat_a,
+    itm_hairako_fur_hat_b,
     itm_hairako_helmet_b,
     itm_hairako_nasal_helmet_e,
     itm_hairako_infantry_vest_a,
