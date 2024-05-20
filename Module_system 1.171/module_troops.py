@@ -1887,45 +1887,45 @@ troops = [
 ["stormguard_elite_stormguard","Stormguard Elite","Stormguard Elite",tf_guarantee_armor|tf_guarantee_boots|tf_guarantee_shield|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_kingdom_12, [itm_stormguard_elite_helmet_a, itm_stormguard_elite_helmet_b, itm_stormguard_elite_helmet_c, itm_black_armor, itm_black_plate, itm_m_gauntlets_b, itm_crusader_long_sword_a, itm_k_long_sword_c, itm_k_long_sword_b,itm_axe_crusader_1,itm_tab_shield_tauria_b,itm_bec_de_corbin_a,itm_bec_de_corbin,itm_simple_poleaxe,itm_heavy_throwing_axes,itm_throwing_spears], def_attrib|level(30),wp(210)|wp_polearm(50),knows_common|knows_power_throw_9,swadian_face_young_1, swadian_face_middle_2],
 
 # silver rose units
-["silver_rose_novice","Silver Rose Novice","Silver Rose Novice",tf_guarantee_armor,0,0,fac_kingdom_1,[itm_scythe,itm_hatchet,itm_pitch_fork,itm_stones,itm_pickaxe,itm_tab_shield_heater_a,itm_tab_shield_round_a,itm_aketon_silver_rose_a,itm_aketon_silver_rose_b,itm_aketon_silver_rose_c,itm_leather_silver_rose_a,itm_leather_silver_rose_b,itm_m_arming_cap_b, itm_cervelliere_light_a,itm_cervelliere_light_b,itm_old_leather_gloves, itm_leather_hood_a, itm_peasant_hood_b], def_attrib|level(5),wp(60),knows_common,swadian_face_younger_1, swadian_face_middle_2],
+["silver_rose_novice","Silver Rose Novice","Silver Rose Novice",tf_guarantee_armor,0,0,fac_kingdom_1,[itm_scythe,itm_hatchet,itm_pitch_fork,itm_stones,itm_pickaxe,itm_tab_shield_heater_a,itm_tab_shield_round_a,itm_aketon_silver_rose_a,itm_aketon_silver_rose_b,itm_aketon_silver_rose_c,itm_leather_silver_rose_a,itm_leather_silver_rose_b,itm_m_arming_cap_b, itm_cervelliere_light_a,itm_cervelliere_light_b,itm_old_leather_gloves], def_attrib|level(5),wp(60),knows_common,swadian_face_younger_1, swadian_face_middle_2],
 
 #peasant - retainer - footman - man-at-arms -  knight
   ["silver_rose_levy","Silver Rose Levy","Silver Rose Levy",tf_guarantee_armor,0,0,fac_kingdom_1,
-   [itm_falshion_1, itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_leather_silver_rose_c,itm_leather_silver_rose_d,itm_silver_rose_recruit_plated_a,itm_silver_rose_recruit_plated_b,itm_cervelliere_light_a,itm_cervelliere_light_b,itm_cervelliere_a,itm_cervelliere_b,itm_cervelliere_c,itm_cervelliere_d,itm_cervelliere_e,itm_cervelliere_f,itm_cervelliere_g,itm_cervelliere_h,itm_cervelliere_i,itm_cervelliere_j,itm_cervelliere_k,itm_cervelliere_l,itm_cervelliere_m,itm_cervelliere_n,itm_cervelliere_o,itm_leather_gloves,itm_silver_rose_decor_a,itm_silver_rose_decor_b,itm_silver_rose_decor_c],
+   [itm_falshion_1, itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_leather_silver_rose_c,itm_leather_silver_rose_d,itm_silver_rose_recruit_plated_a,itm_silver_rose_recruit_plated_b,itm_cervelliere_light_a,itm_cervelliere_light_b,itm_cervelliere_a,itm_cervelliere_b,itm_cervelliere_c,itm_cervelliere_d,itm_cervelliere_e,itm_cervelliere_f,itm_cervelliere_g,itm_cervelliere_h,itm_cervelliere_i,itm_cervelliere_j,itm_cervelliere_k,itm_cervelliere_l,itm_cervelliere_m,itm_cervelliere_n,itm_cervelliere_o,itm_leather_gloves],
    def_attrib|level(10),wp(90),knows_common,swadian_face_younger_1, swadian_face_middle_2],
 
   ["silver_rose_scout","Silver Rose Scout","Silver Rose Scouts",tf_mounted|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,
-   [itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_silver_rose_recruit_plated_a,itm_silver_rose_scout_helmet_a,itm_silver_rose_scout_helmet_b,itm_leather_gloves,itm_leather_hood_a,itm_hunter], def_attrib|level(15),wp(120),knows_common|knows_riding_3,swadian_face_young_1, swadian_face_old_2],
+   [itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_silver_rose_recruit_plated_a,itm_silver_rose_scout_helmet_a,itm_silver_rose_scout_helmet_b,itm_leather_gloves,itm_hunter], def_attrib|level(15),wp(120),knows_common|knows_riding_3,swadian_face_young_1, swadian_face_old_2],
 
   ["silver_rose_milita","Silver Rose Militia","Silver Rose Militia",tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_1,
-   [itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_crusader_spear_inf_a,itm_crusader_spear_inf_b,itm_crusader_spear_inf_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_silver_rose_recruit_plated_c,itm_silver_rose_recruit_plated_d,itm_cervelliere_a, itm_cervelliere_b, itm_cervelliere_c,itm_silver_rose_sallet_a,itm_silver_rose_sallet_b,itm_silver_rose_sallet_c,itm_leather_gloves,itm_m_gloves_a,itm_silver_rose_decor_a,itm_silver_rose_decor_b,itm_silver_rose_decor_c,itm_silver_rose_bevor_a,itm_silver_rose_bevor_b,itm_silver_rose_bevor_c,itm_silver_rose_bevor_d], def_attrib|level(15),wp(120),knows_common,swadian_face_young_1, swadian_face_old_2],
+   [itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_crusader_spear_inf_a,itm_crusader_spear_inf_b,itm_crusader_spear_inf_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_silver_rose_recruit_plated_c,itm_silver_rose_recruit_plated_d,itm_cervelliere_a, itm_cervelliere_b, itm_cervelliere_c,itm_silver_rose_sallet_a,itm_silver_rose_sallet_b,itm_silver_rose_sallet_c,itm_leather_gloves,itm_m_gloves_a], def_attrib|level(15),wp(120),knows_common,swadian_face_young_1, swadian_face_old_2],
 
   ["silver_rose_footman","Silver Rose Footman","Silver Rose Footmen",tf_guarantee_armor|tf_guarantee_shield|tf_guarantee_helmet,0,0,fac_kingdom_1,
-   [itm_crusader_long_sword_a,itm_shortened_bill,itm_winged_mace,itm_flanged_mace,itm_crusader_spear_inf_a,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_silver_rose_mail_a,itm_silver_rose_mail_b,itm_silver_rose_sallet_closed_a,itm_silver_rose_sallet_closed_b,itm_silver_rose_sallet_closed_c,itm_silver_rose_kettle_hat_a,itm_silver_rose_kettle_hat_b,itm_leather_gloves,itm_m_gloves_a,itm_silver_rose_decor_a,itm_silver_rose_decor_b,itm_silver_rose_decor_c,itm_silver_rose_bevor_a,itm_silver_rose_bevor_b,itm_silver_rose_bevor_c,itm_silver_rose_bevor_d],
+   [itm_crusader_long_sword_a,itm_shortened_bill,itm_winged_mace,itm_flanged_mace,itm_crusader_spear_inf_a,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_silver_rose_mail_a,itm_silver_rose_mail_b,itm_silver_rose_sallet_closed_a,itm_silver_rose_sallet_closed_b,itm_silver_rose_sallet_closed_c,itm_silver_rose_kettle_hat_a,itm_silver_rose_kettle_hat_b,itm_leather_gloves,itm_m_gloves_a],
    def_attrib|level(20),wp_melee(150),knows_common|knows_ironflesh_3|knows_shield_2|knows_athletics_2|knows_power_strike_2,swadian_face_young_1, swadian_face_old_2],
-  ["silver_rose_hacker","Silver Rose Hacker","Silver Rose Hackers",tf_guarantee_shield|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1, [itm_shortened_bill,itm_m_mace_knight,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_silver_rose_mail_a,itm_silver_rose_mail_b,itm_silver_rose_brigandine_a,itm_silver_rose_brigandine_b,itm_silver_rose_kettle_hat_a,itm_silver_rose_kettle_hat_b, itm_mail_coif, itm_cervelliere_mail_a, itm_cervelliere_mail_b,itm_cervelliere_mail_c,itm_cervelliere_coif_a,itm_cervelliere_coif_b,itm_cervelliere_coif_mail_a,itm_cervelliere_coif_mail_b,itm_leather_gloves,itm_m_gloves_a,itm_silver_rose_decor_d,itm_silver_rose_decor_e,itm_silver_rose_decor_f,itm_silver_rose_decor_g], def_attrib|str_22|agi_25|level(25),wp_melee(180)|wp_one_handed(50),knows_common|knows_ironflesh_5|knows_power_strike_4|knows_athletics_5,swadian_face_middle_1, swadian_face_old_2],
+  ["silver_rose_hacker","Silver Rose Hacker","Silver Rose Hackers",tf_guarantee_shield|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1, [itm_shortened_bill,itm_m_mace_knight,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_silver_rose_mail_a,itm_silver_rose_mail_b,itm_silver_rose_brigandine_a,itm_silver_rose_brigandine_b,itm_silver_rose_kettle_hat_a,itm_silver_rose_kettle_hat_b, itm_mail_coif, itm_cervelliere_mail_a, itm_cervelliere_mail_b,itm_cervelliere_mail_c,itm_cervelliere_coif_a,itm_cervelliere_coif_b,itm_cervelliere_coif_mail_a,itm_cervelliere_coif_mail_b,itm_leather_gloves,itm_m_gloves_a], def_attrib|str_22|agi_25|level(25),wp_melee(180)|wp_one_handed(50),knows_common|knows_ironflesh_5|knows_power_strike_4|knows_athletics_5,swadian_face_middle_1, swadian_face_old_2],
   ["silver_rose_infantry","Silver Rose Infantry","Silver Rose Infantry",tf_guarantee_shield|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1,
-   [itm_pike,itm_fighting_pick,itm_bastard_sword_a,itm_sword_medieval_a,itm_sword_medieval_b_small,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_swadia_footman_shield_3,itm_swadia_footman_shield_4, itm_silver_rose_brigandine_a,itm_silver_rose_brigandine_b,itm_silver_rose_brigandine_c,itm_silver_rose_sallet_mail_a,itm_silver_rose_sallet_mail_b,itm_cervelliere_mail_c,itm_silver_rose_sallet_mail_a,itm_silver_rose_sallet_mail_b,itm_silver_rose_sallet_mail_c,itm_old_mail_gloves,itm_m_gloves_a,itm_silver_rose_bevor_a,itm_silver_rose_bevor_b,itm_silver_rose_bevor_c,itm_silver_rose_bevor_d],
+   [itm_pike,itm_fighting_pick,itm_bastard_sword_a,itm_sword_medieval_a,itm_sword_medieval_b_small,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_swadia_footman_shield_3,itm_swadia_footman_shield_4, itm_silver_rose_brigandine_a,itm_silver_rose_brigandine_b,itm_silver_rose_brigandine_c,itm_silver_rose_sallet_mail_a,itm_silver_rose_sallet_mail_b,itm_cervelliere_mail_c,itm_silver_rose_sallet_mail_a,itm_silver_rose_sallet_mail_b,itm_silver_rose_sallet_mail_c,itm_old_mail_gloves,itm_m_gloves_a],
    def_attrib|level(25),wp_melee(180),knows_common|knows_riding_3|knows_ironflesh_4|knows_power_strike_3|knows_shield_3|knows_athletics_3,swadian_face_middle_1, swadian_face_old_2],
   ["silver_rose_sergeant","Silver Rose Sergeant","Silver Rose Sergeants",tf_mounted|tf_guarantee_shield|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1,
    [itm_axe_crusader_a,itm_axe_crusader_b,itm_crusader_long_sword_c,itm_crusader_long_sword_b,itm_crusader_spear_inf_a,itm_swadia_footman_shield_1,itm_swadia_footman_shield_2,itm_swadia_footman_shield_3,itm_swadia_footman_shield_4,
-    itm_m_sergant_helmet_a,itm_silver_rose_plate_a,itm_silver_rose_plate_b,itm_silver_rose_recruit_plated_e,itm_m_gloves_a,itm_m_gauntlets_a,itm_silver_rose_bevor_a,itm_silver_rose_bevor_b,itm_silver_rose_bevor_c,itm_silver_rose_bevor_d],
+    itm_m_sergant_helmet_a,itm_silver_rose_plate_a,itm_silver_rose_plate_b,itm_silver_rose_recruit_plated_e,itm_m_gloves_a,itm_m_gauntlets_a],
    def_attrib|str_30|agi_20|level(30),wp_melee(210)|wp_one_handed(50)|wp_polearm(50),knows_common|knows_shield_4|knows_ironflesh_4|knows_power_strike_4|knows_athletics_4,swadian_face_middle_1, swadian_face_older_2],
 
   ["silver_rose_crossbowman","Silver Rose Crossbowman","Silver Rose Crossbowmen",tf_guarantee_ranged|tf_guarantee_armor,0,0,fac_kingdom_1,
-   [itm_bolts,itm_light_crossbow,itm_hunting_crossbow,itm_shortened_bill,itm_winged_mace,itm_flanged_mace,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_silver_rose_gambeson_a,itm_leather_hood_a],
+   [itm_bolts,itm_light_crossbow,itm_hunting_crossbow,itm_shortened_bill,itm_winged_mace,itm_flanged_mace,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_silver_rose_gambeson_a],
    def_attrib|level(20),wp(150),knows_common|knows_riding_2|knows_ironflesh_1,swadian_face_young_1, swadian_face_middle_2],
   ["silver_rose_trained_crossbowman","Silver Rose Trained Crossbowman","Silver Rose Trained Crossbowmen",tf_guarantee_ranged|tf_guarantee_armor,0,0,fac_kingdom_1,
-   [itm_bolts,itm_crossbow,itm_light_crossbow,itm_shortened_bill,itm_winged_mace,itm_flanged_mace,itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_silver_rose_gambeson_a,itm_silver_rose_capelina_a,itm_silver_rose_capelina_b, itm_leather_gloves,itm_leather_hood_a], def_attrib|level(25),wp(180)|wp_crossbow(50),knows_common|knows_riding_2|knows_ironflesh_1|knows_athletics_1,swadian_face_young_1, swadian_face_old_2],
+   [itm_bolts,itm_crossbow,itm_light_crossbow,itm_shortened_bill,itm_winged_mace,itm_flanged_mace,itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_silver_rose_gambeson_a,itm_silver_rose_capelina_a,itm_silver_rose_capelina_b, itm_leather_gloves], def_attrib|level(25),wp(180)|wp_crossbow(50),knows_common|knows_riding_2|knows_ironflesh_1|knows_athletics_1,swadian_face_young_1, swadian_face_old_2],
   ["silver_rose_sharpshooter","Silver Rose Sharpshooter","Silver Rose Sharpshooters",tf_guarantee_ranged|tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_kingdom_1,
-   [itm_bolts,itm_crossbow,itm_crossbow,itm_heavy_crossbow,itm_shortened_bill,itm_m_mace_knight,itm_axe_crusader_1,itm_winged_mace,itm_flanged_mace,itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_silver_rose_capelina_c,itm_silver_rose_capelina_mail_a, itm_leather_gloves, itm_m_gloves_a,itm_leather_hood_a], def_attrib|level(30),wp(210)|wp_crossbow(50),knows_common|knows_power_draw_3|knows_ironflesh_1|knows_power_strike_1|knows_athletics_2,swadian_face_middle_1, swadian_face_older_2],
+   [itm_bolts,itm_crossbow,itm_crossbow,itm_heavy_crossbow,itm_shortened_bill,itm_m_mace_knight,itm_axe_crusader_1,itm_winged_mace,itm_flanged_mace,itm_crusader_sword_a,itm_crusader_sword_b,itm_crusader_sword_c,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_silver_rose_capelina_c,itm_silver_rose_capelina_mail_a, itm_leather_gloves, itm_m_gloves_a], def_attrib|level(30),wp(210)|wp_crossbow(50),knows_common|knows_power_draw_3|knows_ironflesh_1|knows_power_strike_1|knows_athletics_2,swadian_face_middle_1, swadian_face_older_2],
 
-  ["silver_rose_horseman","Silver Rose Horseman","Silver Rose Horsemen",tf_mounted|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,[itm_morningstar,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_silver_rose_sallet_a, itm_silver_rose_sallet_b, itm_silver_rose_sallet_c,itm_hunter, itm_hunter, itm_hunter_b, itm_hunter_c,itm_m_gloves_a,itm_silver_rose_bevor_a,itm_silver_rose_bevor_b,itm_silver_rose_bevor_c,itm_silver_rose_bevor_d], def_attrib|level(30),wp_melee(210),knows_common|knows_riding_3|knows_ironflesh_4|knows_power_strike_4|knows_shield_3|knows_athletics_3,swadian_face_middle_1, swadian_face_old_2],
+  ["silver_rose_horseman","Silver Rose Horseman","Silver Rose Horsemen",tf_mounted|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,[itm_morningstar,itm_swadia_oval_shield_1,itm_swadia_oval_shield_2,itm_silver_rose_sallet_a, itm_silver_rose_sallet_b, itm_silver_rose_sallet_c,itm_hunter, itm_hunter, itm_hunter_b, itm_hunter_c,itm_m_gloves_a], def_attrib|level(30),wp_melee(210),knows_common|knows_riding_3|knows_ironflesh_4|knows_power_strike_4|knows_shield_3|knows_athletics_3,swadian_face_middle_1, swadian_face_old_2],
   ["silver_rose_man_at_arms","Silver Rose Man at Arms","Silver Rose Men at Arms",tf_mounted|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,
-   [itm_lance,itm_crusader_long_sword_a,itm_crusader_long_sword_b,itm_crusader_long_sword_c,itm_swadia_kite_shield_1,itm_swadia_kite_shield_2,itm_silver_rose_brigandine_a,itm_silver_rose_brigandine_b,itm_silver_rose_sallet_a, itm_silver_rose_sallet_b, itm_silver_rose_sallet_c, itm_silver_rose_sallet_d, itm_silver_rose_sallet_e, itm_silver_rose_sallet_f,itm_m_gloves_a,itm_silver_rose_cloak_a,itm_silver_rose_cloak_b,itm_hunter,itm_hunter_b, itm_hunter_c, itm_hunter_d],
+   [itm_lance,itm_crusader_long_sword_a,itm_crusader_long_sword_b,itm_crusader_long_sword_c,itm_swadia_kite_shield_1,itm_swadia_kite_shield_2,itm_silver_rose_brigandine_a,itm_silver_rose_brigandine_b,itm_silver_rose_sallet_a, itm_silver_rose_sallet_b, itm_silver_rose_sallet_c, itm_silver_rose_sallet_d, itm_silver_rose_sallet_e, itm_silver_rose_sallet_f,itm_m_gloves_a,itm_hunter,itm_hunter_b, itm_hunter_c, itm_hunter_d],
    def_attrib|level(35),wp_melee(240),knows_common|knows_riding_4|knows_ironflesh_5|knows_shield_2|knows_power_strike_5,swadian_face_young_1, swadian_face_old_2],
   ["silver_rose_knight","Silver Rose Knight","Silver Rose Knights",tf_mounted|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_helmet|tf_guarantee_horse|tf_guarantee_shield,0,0,fac_kingdom_1,
-   [itm_crusader_knight_spear_a,itm_k_long_sword_a,itm_k_long_sword_b,itm_k_long_sword_c,itm_swadia_heater_shield_1,itm_swadia_heater_shield_2,itm_silver_rose_plate_a,itm_silver_rose_plate_b,itm_silver_rose_plate_c,itm_silver_rose_sallet_f, itm_silver_rose_sallet_mail_c,itm_m_gauntlets_a,itm_silver_rose_cloak_a,itm_silver_rose_cloak_b,itm_silver_rose_cloak_c,itm_silver_rose_cloak_d,itm_silver_rose_heavy_horse_a],
+   [itm_crusader_knight_spear_a,itm_k_long_sword_a,itm_k_long_sword_b,itm_k_long_sword_c,itm_swadia_heater_shield_1,itm_swadia_heater_shield_2,itm_silver_rose_plate_a,itm_silver_rose_plate_b,itm_silver_rose_plate_c,itm_silver_rose_sallet_f, itm_silver_rose_sallet_mail_c,itm_m_gauntlets_a,itm_silver_rose_heavy_horse_a],
    def_attrib|level(40),wp_melee(270),knows_common|knows_riding_5|knows_shield_5|knows_ironflesh_8|knows_power_strike_8,swadian_face_middle_1, swadian_face_older_2],
 
   ["swadian_messenger","Swadian Messenger","Swadian Messengers",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_gloves|tf_guarantee_horse|tf_guarantee_ranged,0,0,fac_kingdom_1,
@@ -2126,8 +2126,7 @@ troops = [
       itm_m_iron_crown_armor_b,
       itm_m_gloves_a,
       itm_mail_mittens,
-      itm_old_mail_gloves,
-      itm_decorative_fur_a
+      itm_old_mail_gloves
     ],
     def_attrib|level(15),
     wp(120),
@@ -2165,9 +2164,7 @@ troops = [
       itm_mail_mittens,
       itm_old_mail_gloves,
       itm_scale_gauntlets,
-      itm_lamellar_gauntlets,
-      itm_decorative_fur_a,
-      itm_leather_hood_a
+      itm_lamellar_gauntlets
     ],
     def_attrib|level(20),
     wp(150),
@@ -2198,8 +2195,7 @@ troops = [
       itm_m_iron_crown_brigandine_mail_b,
       itm_old_mail_gloves,
       itm_scale_gauntlets,
-      itm_lamellar_gauntlets,
-      itm_decorative_fur_a
+      itm_lamellar_gauntlets
     ],
     def_attrib|level(25),
     wp(180),
@@ -2235,8 +2231,7 @@ troops = [
       itm_m_iron_crown_scale_b,
       itm_old_mail_gloves,
       itm_scale_gauntlets,
-      itm_lamellar_gauntlets,
-      itm_decorative_fur_a
+      itm_lamellar_gauntlets
     ],
     def_attrib|level(30),
     wp(210),
@@ -2269,8 +2264,7 @@ troops = [
     itm_m_iron_crown_brigandine_mail_b,
     itm_old_mail_gloves,
     itm_scale_gauntlets,
-    itm_lamellar_gauntlets,
-    itm_decorative_fur_a
+    itm_lamellar_gauntlets
   ],
   def_attrib|level(25),
   wp(180)|wp_polearm(180),
@@ -2437,8 +2431,7 @@ troops = [
     itm_m_alpine_corrazina_b,
     itm_m_gloves_a,
     itm_leather_gloves,
-    itm_decorated_leather_gloves_a,
-    itm_leather_hood_a
+    itm_decorated_leather_gloves_a
   ],
   def_attrib|level(10),
   wp(90)|wp_one_handed(50),
@@ -2471,8 +2464,7 @@ troops = [
     itm_m_alpine_corrazina_full_b,
     itm_m_gloves_a,
     itm_mail_mittens,
-    itm_old_mail_gloves,
-    itm_alpine_pelt_a
+    itm_old_mail_gloves
   ],
   def_attrib|level(15),
   wp(120)|wp_one_handed(50),
@@ -2504,10 +2496,7 @@ troops = [
     itm_m_alpine_corrazina_full_c,
     itm_m_gloves_a,
     itm_mail_mittens,
-    itm_old_mail_gloves,
-    itm_alpine_pelt_a,
-    itm_alpine_pelt_b,
-    itm_alpine_pelt_c
+    itm_old_mail_gloves
   ],
   def_attrib|level(20),
   wp(150)|wp_one_handed(50),
@@ -2668,10 +2657,7 @@ troops = [
     itm_alpine_breastplate_b,
     itm_alpine_breastplate_c,
     itm_m_gauntlets_b,
-    itm_m_gauntlets_a,
-    itm_alpine_pelt_a,
-    itm_alpine_pelt_b,
-    itm_alpine_pelt_c
+    itm_m_gauntlets_a
   ],
   def_attrib|level(25),
   wp(180)|wp_polearm(50),
@@ -2711,10 +2697,7 @@ troops = [
     itm_alpine_breastplate_heavy_a,
     itm_alpine_breastplate_heavy_b,
     itm_m_gauntlets_b,
-    itm_m_gauntlets_a,
-    itm_alpine_cloak_a,
-    itm_alpine_cloak_b,
-    itm_alpine_cloak_c
+    itm_m_gauntlets_a
   ],
   def_attrib|level(30),
   wp(210)|wp_polearm(50),
@@ -3245,32 +3228,32 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
    [itm_arrows,itm_sword_viking_1,itm_sword_viking_2,itm_fighting_axe,itm_war_axe,itm_battle_axe,itm_spear,itm_war_spear,itm_tab_shield_round_b,itm_tab_shield_round_c,itm_long_bow,itm_javelin,itm_throwing_axes,itm_m_hauberk_navy_a,itm_m_hauberk_navy_b,itm_m_hauberk_navy_c,itm_m_brigandine_navy_c],
    def_attrib|level(16),wp(110),knows_ironflesh_2|knows_power_strike_2|knows_power_draw_3|knows_power_throw_2|knows_riding_1|knows_athletics_2,nord_face_young_1, nord_face_old_2],
   ["steppe_bandit","Steppe Bandit","Steppe Bandits",tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_ranged|tf_guarantee_helmet|tf_mounted,0,0,fac_outlaws,
-   [itm_arrows,itm_sword_khergit_1,itm_winged_mace,itm_spear, itm_light_lance,itm_nomad_bow,itm_nomad_bow,itm_short_bow,itm_jarid,itm_stepper_nomad_helmet_a,itm_stepper_nomad_helmet_b,itm_tribe_vest_a,itm_tribe_vest_b,itm_leather_covered_round_shield,itm_leather_covered_round_shield, itm_decorative_fur_a, itm_saddle_horse,itm_steppe_horse,itm_steppe_horse],
+   [itm_arrows,itm_sword_khergit_1,itm_winged_mace,itm_spear, itm_light_lance,itm_nomad_bow,itm_nomad_bow,itm_short_bow,itm_jarid,itm_stepper_nomad_helmet_a,itm_stepper_nomad_helmet_b,itm_tribe_vest_a,itm_tribe_vest_b,itm_leather_covered_round_shield,itm_leather_covered_round_shield,  itm_saddle_horse,itm_steppe_horse,itm_steppe_horse],
    def_attrib|level(12),wp(100),knows_riding_4|knows_horse_archery_3|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],
   ["steppe_bandit_warrior","Steppe Warrior Bandit","Steppe Warrior Bandits",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_ranged|tf_guarantee_helmet|tf_mounted,0,0,fac_outlaws,
-   [itm_arrows,itm_sword_khergit_1, itm_sword_khergit_2, itm_winged_mace, itm_spear, itm_light_lance,itm_nomad_bow,itm_nomad_bow,itm_short_bow,itm_jarid,itm_stepper_nomad_helmet_c,itm_stepper_nomad_helmet_d,itm_tribe_vest_c,itm_tribe_armor_a, itm_tribe_armor_b, itm_leather_covered_round_shield,itm_leather_covered_round_shield, itm_decorative_fur_a, itm_steppe_horse,itm_steppe_horse_b],
+   [itm_arrows,itm_sword_khergit_1, itm_sword_khergit_2, itm_winged_mace, itm_spear, itm_light_lance,itm_nomad_bow,itm_nomad_bow,itm_short_bow,itm_jarid,itm_stepper_nomad_helmet_c,itm_stepper_nomad_helmet_d,itm_tribe_vest_c,itm_tribe_armor_a, itm_tribe_armor_b, itm_leather_covered_round_shield,itm_leather_covered_round_shield,  itm_steppe_horse,itm_steppe_horse_b],
    def_attrib|level(15),wp(130),knows_riding_4|knows_horse_archery_5|knows_power_draw_5,khergit_face_young_1, khergit_face_old_2],
   ["steppe_bandit_leader","Steppe Bandit Leader","Steppe Bandit Leaders",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse|tf_guarantee_ranged|tf_guarantee_helmet|tf_mounted,0,0,fac_outlaws,
-   [itm_khergit_arrows, itm_barbed_arrows, itm_sword_khergit_3, itm_sword_khergit_4, itm_lance, itm_khergit_bow,itm_nomad_bow, itm_strong_bow, itm_jarid, itm_stepper_nomad_helmet_e , itm_tribe_armor_c, itm_tribe_armor_d, itm_leather_covered_round_shield,itm_leather_covered_round_shield, itm_decorative_fur_a,itm_steppe_horse,itm_steppe_horse_b],
+   [itm_khergit_arrows, itm_barbed_arrows, itm_sword_khergit_3, itm_sword_khergit_4, itm_lance, itm_khergit_bow,itm_nomad_bow, itm_strong_bow, itm_jarid, itm_stepper_nomad_helmet_e , itm_tribe_armor_c, itm_tribe_armor_d, itm_leather_covered_round_shield,itm_leather_covered_round_shield, itm_steppe_horse,itm_steppe_horse_b],
    def_attrib|level(25),wp(230),knows_riding_6|knows_horse_archery_6|knows_power_draw_6|knows_ironflesh_6,khergit_face_young_1, khergit_face_old_2],
   ["taiga_bandit","Taiga Bandit","Taiga Bandits",tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_ranged,0,0,fac_outlaws,
-   [itm_arrows, itm_sword_khergit_1, itm_winged_mace, itm_spear, itm_light_lance, itm_nomad_bow, itm_nomad_bow,itm_short_bow, itm_jarid, itm_javelin, itm_nomad_cap, itm_fur_hat, itm_nomad_cap_b, itm_pilgrim_hood, itm_padded_coif, itm_leather_vest, itm_leather_vest_reinfoced, itm_rough_gambeson, itm_red_tunic, itm_ragged_outfit, itm_tribal_warrior_outfit, itm_leather_hood_a, itm_peasant_hood_a, itm_peasant_hood_b, itm_nomad_fur_a, itm_nomad_fur_b, itm_leather_covered_round_shield, itm_leather_covered_round_shield],
+   [itm_arrows, itm_sword_khergit_1, itm_winged_mace, itm_spear, itm_light_lance, itm_nomad_bow, itm_nomad_bow,itm_short_bow, itm_jarid, itm_javelin, itm_nomad_cap, itm_fur_hat, itm_nomad_cap_b, itm_pilgrim_hood, itm_padded_coif, itm_leather_vest, itm_leather_vest_reinfoced, itm_rough_gambeson, itm_red_tunic, itm_ragged_outfit, itm_tribal_warrior_outfit, itm_leather_covered_round_shield, itm_leather_covered_round_shield],
    def_attrib|level(15),wp(110),knows_common|knows_power_draw_4|knows_power_throw_3,vaegir_face_young_1, vaegir_face_old_2],
 
   ["desert_bandit","Piaktu Bandit","Piaktu Bandits",tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_outlaws,
    [itm_arrows, itm_arabian_sword_a, itm_winged_mace, itm_spear, itm_jarid, itm_nomad_bow, itm_short_bow, itm_jarid, itm_m_desert_bandit_a, itm_m_desert_bandit_b, itm_m_desert_bandit_c, itm_m_desert_bandit_d, itm_m_bandit_turban_a, itm_m_bandit_turban_b, itm_m_bandit_turban_c, itm_m_bandit_turban_d, itm_leather_gloves, itm_leather_covered_round_shield, itm_leather_covered_round_shield],
    def_attrib|level(12),wp(100),knows_riding_4|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],
   ["desert_bandit_master","Piaktu Assasin","Piaktu Assasins",tf_guarantee_armor|tf_guarantee_helmet,0,0,fac_outlaws,
-   [itm_arrows, itm_arabian_sword_a, itm_arabian_sword_b, itm_arabian_sword_c, itm_solarian_spear_a, itm_solarian_spear_b, itm_jarid, itm_nomad_bow, itm_short_bow, itm_jarid, itm_m_desert_bandit_a, itm_m_desert_bandit_b, itm_m_desert_bandit_c, itm_m_desert_bandit_d, itm_piaktu_mask_a, itm_piaktu_mask_b, itm_decorated_leather_gloves_a, itm_decorative_fur_a, itm_solarian_oval_shield_a, itm_solarian_oval_shield_b, itm_solarian_round_shield_a, itm_solarian_round_shield_b],
+   [itm_arrows, itm_arabian_sword_a, itm_arabian_sword_b, itm_arabian_sword_c, itm_solarian_spear_a, itm_solarian_spear_b, itm_jarid, itm_nomad_bow, itm_short_bow, itm_jarid, itm_m_desert_bandit_a, itm_m_desert_bandit_b, itm_m_desert_bandit_c, itm_m_desert_bandit_d, itm_piaktu_mask_a, itm_piaktu_mask_b, itm_decorated_leather_gloves_a,  itm_solarian_oval_shield_a, itm_solarian_oval_shield_b, itm_solarian_round_shield_a, itm_solarian_round_shield_b],
    def_attrib|level(18),wp(160),knows_riding_4|knows_power_draw_3,khergit_face_young_1, khergit_face_old_2],
   ["desert_bandit_horseman","Piaktu Horseman","Piaktu Horsemen",tf_guarantee_armor|tf_guarantee_helmet|tf_mounted|tf_guarantee_horse,0,0,fac_outlaws,
-   [itm_arabian_sword_a, itm_arabian_sword_b, itm_arabian_sword_c, itm_solarian_lance_a, itm_solarian_lance_b, itm_piaktu_coat_a, itm_piaktu_coat_b, itm_piaktu_mask_d, itm_piaktu_mask_c, itm_mail_mittens, itm_m_gloves_a, itm_decorative_fur_a, itm_decorative_fur_b, itm_solarian_oval_shield_a, itm_solarian_oval_shield_b, itm_solarian_round_shield_a, itm_solarian_round_shield_b, itm_arabian_horse_a, itm_arabian_horse_b],
+   [itm_arabian_sword_a, itm_arabian_sword_b, itm_arabian_sword_c, itm_solarian_lance_a, itm_solarian_lance_b, itm_piaktu_coat_a, itm_piaktu_coat_b, itm_piaktu_mask_d, itm_piaktu_mask_c, itm_mail_mittens, itm_m_gloves_a,  itm_solarian_oval_shield_a, itm_solarian_oval_shield_b, itm_solarian_round_shield_a, itm_solarian_round_shield_b, itm_arabian_horse_a, itm_arabian_horse_b],
    def_attrib|level(21),wp(180),knows_riding_4|knows_power_strike_3|knows_ironflesh_4,khergit_face_young_1, khergit_face_old_2],
   ["desert_bandit_ronin","Piaktu Ronin","Piaktu Ronins",tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves,0,0,fac_outlaws,
-   [itm_khergit_sword_two_handed_a, itm_khergit_sword_two_handed_b, itm_piaktu_ronin_armor_a, itm_piaktu_ronin_armor_b, itm_piaktu_helmet_a, itm_piaktu_helmet_b, itm_piaktu_helmet_c, itm_eastern_scale_gloves_a, itm_eastern_scale_gloves_b, itm_decorative_fur_a, itm_decorative_fur_b],
+   [itm_khergit_sword_two_handed_a, itm_khergit_sword_two_handed_b, itm_piaktu_ronin_armor_a, itm_piaktu_ronin_armor_b, itm_piaktu_helmet_a, itm_piaktu_helmet_b, itm_piaktu_helmet_c, itm_eastern_scale_gloves_a, itm_eastern_scale_gloves_b],
    def_attrib|level(21),wp(180),knows_athletics_4|knows_power_strike_3|knows_ironflesh_5,khergit_face_young_1, khergit_face_old_2],
   ["desert_bandit_leader","Piaktu Leader","Piaktu Leaders",tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_gloves|tf_mounted|tf_guarantee_horse,0,0,fac_outlaws,
-   [itm_khergit_sword_two_handed_a, itm_khergit_sword_two_handed_b, itm_sarranid_cavalry_sword, itm_arabian_sword_d, itm_arabian_sword_c, itm_solarian_lance_c, itm_solarian_lance_d, itm_piaktu_leader_armor_a, itm_piaktu_leader_helmet_a, itm_eastern_scale_gloves_a, itm_eastern_scale_gloves_b, itm_decorative_fur_c, itm_decorative_fur_b, itm_solarian_oval_shield_a, itm_solarian_oval_shield_b, itm_solarian_round_shield_a, itm_solarian_round_shield_b, itm_saracin_hard_horses_a, itm_saracin_hard_horses_d],
+   [itm_khergit_sword_two_handed_a, itm_khergit_sword_two_handed_b, itm_sarranid_cavalry_sword, itm_arabian_sword_d, itm_arabian_sword_c, itm_solarian_lance_c, itm_solarian_lance_d, itm_piaktu_leader_armor_a, itm_piaktu_leader_helmet_a, itm_eastern_scale_gloves_a, itm_eastern_scale_gloves_b, itm_solarian_oval_shield_a, itm_solarian_oval_shield_b, itm_solarian_round_shield_a, itm_solarian_round_shield_b, itm_saracin_hard_horses_a, itm_saracin_hard_horses_d],
    def_attrib|level(27),wp(240),knows_riding_4|knows_athletics_4|knows_power_strike_3|knows_ironflesh_5,khergit_face_young_1, khergit_face_old_2],
 
   ["black_celestial_armsman","Black Khergit Horseman","Black Khergit Horsemen",tf_mounted|tf_guarantee_boots|tf_guarantee_armor|tf_guarantee_horse,0,0,fac_black_khergits,
