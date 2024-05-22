@@ -385,6 +385,8 @@ items = [
 ["military_boots_b", "Military Boots", [("Milita_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 197, weight(1.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(18)|difficulty(0) ,imodbits_armor],
 
 ["mail_boots_a", "Mail Boots", [("Mail_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 297, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor],
+["mail_boots_b", "Mail Boots", [("Mail_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 297, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor],
+["mail_boots_c", "Mail Boots", [("Mail_Boots_C",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 297, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor],
 
 ["plate_boots_a", "Plate Boots", [("Steel_Greaves_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 497, weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(31)|difficulty(7), imodbits_armor],
 ["plate_boots_b", "Plate Boots", [("Steel_Greaves_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 437, weight(2.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(28)|difficulty(7), imodbits_armor],
@@ -396,14 +398,14 @@ items = [
 ["desert_nomad_boots_b", "Desert Nomad Boots", [("Desert_Nomad_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 87, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(12)|difficulty(0) ,imodbits_cloth],
 ["desert_nomad_boots_c", "Desert Nomad Boots", [("Desert_Nomad_Boots_C",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 87, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(12)|difficulty(0) ,imodbits_cloth],
 
-["desert_rich_boots_a", "Desert High Boots", [("Desert_Rich_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 102, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth],
-["desert_rich_boots_b", "Desert High Boots", [("Desert_Rich_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 102, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth],
+["desert_rich_boots_a", "Desert High Boots", [("Eastern_Leather_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 102, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth],
+["desert_rich_boots_b", "Desert High Boots", [("Eastern_Leather_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 102, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth],
 
 ["desert_leather_boots_a", "Desert Leather Boots", [("Desert_Leather_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 131, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth],
 ["desert_leather_boots_b", "Desert Leather Boots", [("Desert_Leather_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 131, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth],
 
-["desert_mail_boots_a", "Desert Mail Boots", [("Desert_Mail_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 367, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(25)|difficulty(0) ,imodbits_armor],
-["desert_mail_boots_b", "Desert Mail Boots with Spurs", [("Desert_Mail_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 367, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(25)|difficulty(0) ,imodbits_armor],
+["desert_mail_boots_a", "Desert Mail Boots", [("Eastern_Mail_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 367, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(25)|difficulty(0) ,imodbits_armor],
+["desert_mail_boots_b", "Desert Mail Boots with Spurs", [("Eastern_Mail_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 367, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(25)|difficulty(0) ,imodbits_armor],
 
 ["desert_heavy_boots_a", "Desert Heavy Boots", [("Desert_Heavy_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 407, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(26)|difficulty(7), imodbits_armor],
 ["desert_heavy_boots_b", "Desert Heavy Boots", [("Desert_Heavy_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 407, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(26)|difficulty(7), imodbits_armor],
@@ -469,14 +471,41 @@ items = [
 ["peasant_dress", "Peasant Dress", [("Common_Dress_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 6 , weight(1)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(2)|difficulty(0) ,imodbits_cloth ], 
 ["woolen_dress", "Woolen Dress", [("woolen_dress",0)], itp_merchandise| itp_type_body_armor|itp_civilian  |itp_covers_legs ,0,
  10 , weight(1.75)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(2)|difficulty(0) ,imodbits_cloth ],
-["shirt", "Shirt", [("Shirt_B",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0,
+["shirt", "Shirt", [("Burlap_Tunic_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0,
  31 , weight(1)|abundance(100)|head_armor(0)|body_armor(5)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
  #NEW: was "linen_tunic"
 ["linen_tunic", "Linen Tunic", [("Shirt_A",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
  61 , weight(1)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(13)|difficulty(0) ,imodbits_cloth ],
+
  #NEW was cvl_costume_a
-["short_tunic", "Red Tunic", [("Shirt_C",0)], itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
- 80 , weight(1)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(14)|difficulty(0) ,imodbits_cloth ], 
+["short_tunic", "Cheap Tunic", [("Cheap_Tunic_A",0)], itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
+ 80 , weight(1)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
+
+["cheap_padding_a", "Padding", [("Cheap_Tunic_B",0)], itp_type_body_armor|itp_covers_legs,0, 180 , weight(11.0)|abundance(3)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
+["cheap_padding_b", "Padding", [("Cheap_Tunic_B_v1",0)], itp_type_body_armor|itp_covers_legs,0, 180 , weight(11.0)|abundance(3)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
+
+["cheap_mail_a", "Rusty Mail", [("Cheap_Tunic_Mail_A",0)], itp_type_body_armor|itp_covers_legs,0, 285 , weight(14.0)|abundance(3)|head_armor(0)|body_armor(32)|leg_armor(8)|difficulty(0) ,imodbits_armor ],
+["cheap_mail_b", "Rusty Mail", [("Cheap_Tunic_Mail_B",0)], itp_type_body_armor|itp_covers_legs,0, 355 , weight(15.0)|abundance(3)|head_armor(0)|body_armor(36)|leg_armor(8)|difficulty(0) ,imodbits_armor ],
+
+["neutral_aketon_a", "Aketon", [("Aketon_Old_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,301 , weight(12)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(8)|difficulty(0) ,imodbits_cloth, [], [] ],
+["neutral_aketon_a_v1", "Aketon with Hood", [("Aketon_Old_A_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,331 , weight(12)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(0) ,imodbits_cloth, [], [] ],
+["neutral_aketon_b", "Aketon", [("Aketon_Old_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,331 , weight(12)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(0) ,imodbits_cloth, [], [] ],
+["neutral_aketon_c", "Aketon with Kneekops", [("Aketon_Kneecops_Old_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,559 , weight(19)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(18)|difficulty(7) ,imodbits_cloth, [], [] ],
+["neutral_aketon_c_v1", "Aketon with Kneekops", [("Aketon_Kneecops_Old_A_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,579 , weight(19)|abundance(100)|head_armor(0)|body_armor(29)|leg_armor(18)|difficulty(7) ,imodbits_cloth, [], [] ],
+
+["hauberk_neutral_a", "Hauberk", [("Hauberk_Old_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,899 , weight(24)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(12)|difficulty(8) ,imodbits_armor, [], [] ], 
+["hauberk_neutral_a_v1", "Hauberk", [("Hauberk_Old_A_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,997 , weight(24)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(12)|difficulty(8) ,imodbits_armor, [], [] ],
+
+["brigandine_neutral_a", "Brigandine", [("Brigandine_Neutral_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,899 , weight(21)|abundance(100)|head_armor(0)|body_armor(42)|leg_armor(12)|difficulty(8) ,imodbits_armor, [], [] ],
+["brigandine_neutral_a_v1", "Brigandine", [("Brigandine_Neutral_A_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,973 , weight(21)|abundance(100)|head_armor(0)|body_armor(44)|leg_armor(12)|difficulty(8) ,imodbits_armor, [], [] ],
+["brigandine_neutral_b", "Brigandine", [("Brigandine_Neutral_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,899 , weight(21)|abundance(100)|head_armor(0)|body_armor(42)|leg_armor(12)|difficulty(8) ,imodbits_armor, [], [] ],
+["brigandine_neutral_b_v1", "Brigandine", [("Brigandine_Neutral_B_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,973 , weight(21)|abundance(100)|head_armor(0)|body_armor(44)|leg_armor(12)|difficulty(8) ,imodbits_armor, [], [] ],
+
+["brigandine_neutral_heavy_a", "Brigandine on Mail", [("Brigandine_Neutral_C",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1491 , weight(24)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(12)|difficulty(8) ,imodbits_armor, [], [] ],
+["brigandine_neutral_heavy_a_v1", "Brigandine on Mail", [("Brigandine_Neutral_C_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1641 , weight(24)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(12)|difficulty(8) ,imodbits_armor, [], [] ],
+["brigandine_neutral_heavy_b", "Brigandine on Mail", [("Brigandine_Neutral_D",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1491 , weight(24)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(12)|difficulty(8) ,imodbits_armor, [], [] ],
+["brigandine_neutral_heavy_b_v1", "Brigandine on Mail", [("Brigandine_Neutral_D_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1641 , weight(24)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(12)|difficulty(8) ,imodbits_armor, [], [] ],
+
 ["tunic_with_green_cape", "Peasant Tunic", [("Peasant_Tunic_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 62 , weight(1)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(8)|difficulty(0) ,imodbits_cloth ], 
 
 #TODO:
@@ -848,10 +877,6 @@ items = [
 ["m_aketon_forest_b", "Green Forester Aketon", [("Aketon_Two_Tones_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,399 , weight(14)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(13)|difficulty(0) ,imodbits_cloth, [], [] ],
 ["m_aketon_forest_c", "Green Forester Aketon with Mail", [("Aketon_Two_Tones_C",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,529 , weight(18)|abundance(100)|head_armor(0)|body_armor(37)|leg_armor(13)|difficulty(8) ,imodbits_armor, [], [] ],
 
-["m_aketon_old_a", "Old Aketon", [("Aketon_Old_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,351 , weight(12)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(15)|difficulty(0) ,imodbits_cloth, [], [] ],
-["m_aketon_old_b", "Old Aketon", [("Aketon_Old_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,351 , weight(12)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(15)|difficulty(0) ,imodbits_cloth, [], [] ],
-["m_aketon_old_c", "Old Aketon with Kneekops", [("Aketon_Kneecops_Old_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,559 , weight(19)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(18)|difficulty(7) ,imodbits_cloth, [], [] ],
-
 ["m_aketon_black_a", "Black Aketon", [("Aketon_Black_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,359 , weight(13)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(15)|difficulty(0) ,imodbits_cloth, [], [] ],
 ["m_aketon_black_b", "Black Aketon with Kneekops", [("Aketon_Black_B",0), ("Aketon_Black_B.1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,559 , weight(19)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(19)|difficulty(7) ,imodbits_cloth, [], [] ],
 
@@ -900,8 +925,6 @@ items = [
 ["mail_hauberk", "Mail Hauberk", [("Hauberk_Revised_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  1320 , weight(19)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(18)|difficulty(8) ,imodbits_armor ],
 
-["m_hauberk_old_a", "Hauberk on Old Aketon", [("Hauberk_Old_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,899 , weight(24)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(18)|difficulty(8) ,imodbits_armor, [], [] ], 
-
 ["m_hauberk_black_a", "Black Hauberk", [("Hauberk_Black_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,993 , weight(21)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [] ], 
 
 ["m_hauberk_mountain_a", "Mountain Hauberk", [("Hauberk_Mountain_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,609 , weight(18)|abundance(100)|head_armor(0)|body_armor(34)|leg_armor(13)|difficulty(7) ,imodbits_armor, [], [] ],
@@ -949,7 +972,7 @@ items = [
  33 , weight(1)|abundance(100)|head_armor(0)|body_armor(9)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
 
 #Quest-specific - perhaps can be used for prisoners, 
-["burlap_tunic", "Burlap Tunic", [("Shirt_B",0)], itp_type_body_armor  |itp_covers_legs ,0,
+["burlap_tunic", "Burlap Tunic", [("Burlap_Tunic_A",0)], itp_type_body_armor  |itp_covers_legs ,0,
  5 , weight(1)|abundance(100)|head_armor(0)|body_armor(3)|leg_armor(1)|difficulty(0) ,imodbits_armor ],
 
 # Removed old heraldic items
@@ -995,6 +1018,11 @@ items = [
 
 ["m_coif_cloth_a", "Black Coif", [("koif_monie_a",0)], itp_type_head_armor|itp_merchandise   ,0, 89 , weight(0.5)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
 ["m_coif_cloth_b", "Light Coif", [("koif_monie_b",0)], itp_type_head_armor|itp_merchandise   ,0, 89 , weight(0.5)|abundance(100)|head_armor(12)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
+
+["neutral_sallet_a", "Sallet", [("Neutral_Sallet_A",0), ("Neutral_Sallet_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
+["neutral_sallet_b", "Sallet", [("Neutral_Sallet_B",0), ("Neutral_Sallet_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 311 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
+["neutral_chapel_a", "Chapel de Fer", [("Neutral_Chapel_A",0), ("Neutral_Chapel_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
+["neutral_kettlehat_a", "Kettle Hat", [("Neutral_Kettlehat_A",0), ("Neutral_Kettlehat_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
 
 ["fur_hat", "Fur Hat", [("fur_hat_a_new",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 4 , weight(0.5)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["nomad_cap", "Nomad Cap", [("nomad_cap_a_new",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 6 , weight(0.75)|abundance(100)|head_armor(10)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
