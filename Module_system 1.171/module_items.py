@@ -706,10 +706,12 @@ items = [
 ["m_tauria_vest_heavy_b", "Tauria Curburg Vest", [("Tauria_Vest_E",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1589 , weight(24)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(25)|difficulty(9) ,imodbits_cloth, [], [fac_kingdom_9] ],
 
 ["m_tauria_plate_a", "Tauria Breastplate", [("Tauria_Plate_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1259 , weight(22)|abundance(100)|head_armor(0)|body_armor(37)|leg_armor(20)|difficulty(8) ,imodbits_cloth, [], [fac_kingdom_9] ],
+["m_tauria_plate_a_v1", "Tauria Breastplate", [("Tauria_Plate_A_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1359 , weight(23)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(20)|difficulty(8) ,imodbits_cloth, [], [fac_kingdom_9] ],
 ["m_tauria_plate_b", "Tauria Breastplate", [("Tauria_Plate_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1399 , weight(23)|abundance(100)|head_armor(0)|body_armor(39)|leg_armor(20)|difficulty(8) ,imodbits_cloth, [], [fac_kingdom_9] ],
 ["m_tauria_plate_c", "Tauria Breastplate", [("Tauria_Plate_C",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1416 , weight(23)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(25)|difficulty(9) ,imodbits_cloth, [], [fac_kingdom_9] ],
 
 ["m_tauria_plate_mail_a", "Tauria Breastplate on Mail", [("Tauria_Plate_Mail_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,2199 , weight(26)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(25)|difficulty(11) ,imodbits_cloth, [], [fac_kingdom_9] ],
+["m_tauria_plate_mail_a_v1", "Tauria Breastplate on Mail", [("Tauria_Plate_Mail_A_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,2299 , weight(26)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(25)|difficulty(11) ,imodbits_cloth, [], [fac_kingdom_9] ],
 ["m_tauria_plate_mail_b", "Tauria Breastplate on Mail", [("Tauria_Plate_Mail_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,2259 , weight(28)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(25)|difficulty(12) ,imodbits_cloth, [], [fac_kingdom_9] ],
 
 ["m_tauria_brigandine_a", "Tauria Brigandine", [("Tauria_Brigandine_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1799 , weight(25)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(25)|difficulty(11) ,imodbits_cloth, [], [fac_kingdom_9] ],
