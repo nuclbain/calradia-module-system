@@ -805,19 +805,24 @@ items = [
 ["hairako_full_mail_a", "Hairako Full Mail", [("Hairako_Long_Coat_Full_Mail_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1826 , weight(25)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(21)|difficulty(11) ,imodbits_armor, [], [fac_kingdom_8] ],
 ["hairako_full_mail_b", "Hairako Full Mail", [("Hairako_Long_Coat_Full_Mail_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1826 , weight(25)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(21)|difficulty(11) ,imodbits_armor, [], [fac_kingdom_8] ],
 
-["m_nerpa_shirt", "Nerpa Shirt", [("Shirt_Nerpa_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 28 , weight(1)|abundance(100)|head_armor(0)|body_armor(5)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
+["nerpa_shirt_a", "Nerpa Shirt", [("Shirt_Nerpa_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 28 , weight(1)|abundance(100)|head_armor(0)|body_armor(5)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
+["nerpa_shirt_a_v1", "Nerpa Shirt with Hood", [("Shirt_Nerpa_A_v1",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 38 , weight(2)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
 
 ["m_nerpa_aketon_a", "Nerpa Aketon", [("Nerpa_Aketon_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,251 , weight(12)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(8)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_7] ],
 ["m_nerpa_aketon_b", "Nerpa Aketon", [("Nerpa_Aketon_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,289 , weight(13)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_7] ],
 
 ["m_nerpa_coat_of_plates_light_a", "Nerpa Light Coat of Plates", [("Nerpa_Coat_Of_Plates_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,537 , weight(15)|abundance(100)|head_armor(0)|body_armor(28)|leg_armor(8)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ],
+["m_nerpa_coat_of_plates_light_a_v1", "Nerpa Light Coat of Plates", [("Nerpa_Coat_Of_Plates_A_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,567 , weight(16)|abundance(100)|head_armor(0)|body_armor(30)|leg_armor(8)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ],
 ["m_nerpa_coat_of_plates_light_b", "Nerpa Light Coat of Plates", [("Nerpa_Coat_Of_Plates_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,565 , weight(16)|abundance(100)|head_armor(0)|body_armor(30)|leg_armor(8)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ],
+["m_nerpa_coat_of_plates_light_b_v1", "Nerpa Light Coat of Plates", [("Nerpa_Coat_Of_Plates_B_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,595 , weight(17)|abundance(100)|head_armor(0)|body_armor(32)|leg_armor(8)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_7] ],
 
 ["m_nerpa_coat_of_plates_medium_a", "Nerpa Coat of Plates", [("Nerpa_Coat_Of_Plates_C",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,699 , weight(17)|abundance(100)|head_armor(0)|body_armor(33)|leg_armor(8)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_7] ],
 ["m_nerpa_coat_of_plates_medium_b", "Nerpa Coat of Plates", [("Nerpa_Coat_Of_Plates_D",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,814 , weight(19)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(17)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_7] ],
 
 ["m_nerpa_coat_of_plates_heavy_a", "Nerpa Heavy Coat of Plates", [("Nerpa_Coat_Of_Plates_E",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1017 , weight(21)|abundance(100)|head_armor(0)|body_armor(44)|leg_armor(17)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_7] ],
 ["m_nerpa_coat_of_plates_heavy_b", "Nerpa Heavy Coat of Plates", [("Nerpa_Coat_Of_Plates_F",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1569 , weight(22)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(17)|difficulty(10) ,imodbits_armor, [], [fac_kingdom_7] ],
+["m_nerpa_coat_of_plates_heavy_b_v1", "Nerpa Heavy Coat of Plates", [("Nerpa_Coat_Of_Plates_F_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1609 , weight(23)|abundance(100)|head_armor(0)|body_armor(49)|leg_armor(17)|difficulty(10) ,imodbits_armor, [], [fac_kingdom_7] ],
+["m_nerpa_coat_of_plates_heavy_b_v2", "Nerpa Heavy Coat of Plates", [("Nerpa_Coat_Of_Plates_F_v2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1699 , weight(24)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(17)|difficulty(10) ,imodbits_armor, [], [fac_kingdom_7] ],
 
 ["piaktu_coat_a", "Piaktu Armor", [("Piaktu_Coat_A",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 545 , weight(16)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_11] ],
 ["piaktu_coat_b", "Piaktu Armor", [("Piaktu_Coat_B",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 713 , weight(22)|abundance(100)|head_armor(0)|body_armor(41)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_11] ],
