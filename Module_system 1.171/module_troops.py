@@ -1578,7 +1578,7 @@ troops = [
     swadian_face_old_2
   ],
 
-# hairako
+  # hairako
   [
     "hairako_nomad",
     "Hairako Nomad",
@@ -1596,7 +1596,9 @@ troops = [
       itm_scimitar,
       itm_scimitar_b,
       itm_straight_falchion,
-      itm_mace_1
+      itm_mace_1,
+      itm_hose_d,
+      itm_poulaines_d
     ],
     def_attrib|level(5),
     wp(60),
@@ -1631,7 +1633,9 @@ troops = [
       itm_war_spear,
       itm_straight_falchion,
       itm_mace_2,
-      itm_mace_3
+      itm_mace_3,
+      itm_hose_d,
+      itm_poulaines_d
     ],
     def_attrib|level(10),
     wp(90),
@@ -1668,7 +1672,8 @@ troops = [
       itm_arabian_sword_b,
       itm_war_spear,
       itm_mace_4,
-      itm_mace_3
+      itm_mace_3,
+      itm_desert_leather_boots_a
     ],
     def_attrib|level(15),
     wp(120),
@@ -1705,7 +1710,9 @@ troops = [
       itm_battle_trident,
       itm_ranseur,
       itm_mace_4,
-      itm_mace_3
+      itm_mace_3,
+      itm_desert_leather_boots_a,
+      itm_desert_leather_boots_b
     ],
     def_attrib|level(20),
     wp(150),
@@ -1742,7 +1749,9 @@ troops = [
       itm_arabian_sword_d,
       itm_arabian_sword_c,
       itm_battle_trident,
-      itm_ranseur
+      itm_ranseur,
+      itm_desert_heavy_boots_a,
+      itm_desert_heavy_boots_b
     ],
     def_attrib|level(25),
     wp(180),
@@ -1755,7 +1764,7 @@ troops = [
     "hairako_rider",
     "Hairako Rider",
     "Hairako Riders",
-    tf_mounted|tf_guarantee_horse|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_gloves,
+    tf_mounted|tf_guarantee_horse|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_gloves,
     0,
     0,
     fac_kingdom_8,
@@ -1778,7 +1787,9 @@ troops = [
       itm_solarian_lance_b,
       itm_solarian_lance_c,
       itm_solarian_lance_d,
-      itm_steppe_horse
+      itm_steppe_horse,
+      itm_desert_leather_boots_a,
+      itm_desert_leather_boots_b
     ],
     def_attrib|level(15),
     wp(120),
@@ -1791,7 +1802,7 @@ troops = [
     "hairako_experienced_rider",
     "Hairako Experienced Rider",
     "Hairako Experienced Riders",
-    tf_mounted|tf_guarantee_horse|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_gloves,
+    tf_mounted|tf_guarantee_horse|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_gloves,
     0,
     0,
     fac_kingdom_8,
@@ -1812,7 +1823,9 @@ troops = [
       itm_solarian_lance_c,
       itm_solarian_lance_d,
       itm_steppe_horse,
-      itm_steppe_horse_b
+      itm_steppe_horse_b,
+      itm_desert_leather_boots_a,
+      itm_desert_leather_boots_b
     ],
     def_attrib|level(20),
     wp(150),
@@ -1825,7 +1838,7 @@ troops = [
     "hairako_mounted_shaitan",
     "Hairako Mounted Shaitan",
     "Hairako Mounted Shaitans",
-    tf_mounted|tf_guarantee_horse|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_gloves,
+    tf_mounted|tf_guarantee_horse|tf_guarantee_armor|tf_guarantee_helmet|tf_guarantee_shield|tf_guarantee_boots|tf_guarantee_gloves,
     0,
     0,
     fac_kingdom_8,
@@ -1854,7 +1867,9 @@ troops = [
       itm_horseman_poleaxe_b,
       itm_steppe_horse_b,
       itm_steppe_horse_c,
-      itm_steppe_horse_d
+      itm_steppe_horse_d,
+      itm_desert_heavy_boots_a,
+      itm_desert_heavy_boots_b
     ],
     def_attrib|level(25),
     wp(180),
@@ -1886,7 +1901,9 @@ troops = [
       itm_mace_1,
       itm_sword_khergit_1,
       itm_strong_bow,
-      itm_arrows
+      itm_arrows,
+      itm_desert_leather_boots_a,
+      itm_desert_leather_boots_b
     ],
     def_attrib|level(10),
     wp(90)|wp_archery(50),
@@ -1916,7 +1933,9 @@ troops = [
       itm_mace_2,
       itm_ranseur,
       itm_strong_bow,
-      itm_arrows
+      itm_arrows,
+      itm_desert_leather_boots_a,
+      itm_desert_leather_boots_b
     ],
     def_attrib|level(15),
     wp(120)|wp_archery(50),
@@ -1946,7 +1965,9 @@ troops = [
       itm_battle_trident,
       itm_strong_bow,
       itm_arrows,
-      itm_barbed_arrows
+      itm_barbed_arrows,
+      itm_desert_heavy_boots_a,
+      itm_desert_heavy_boots_b
     ],
     def_attrib|level(20),
     wp(180)|wp_archery(50),
