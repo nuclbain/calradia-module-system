@@ -3131,7 +3131,8 @@ troops = [
       itm_falchion,
       itm_pickaxe,
       itm_tab_shield_tauria_a,
-      itm_boar_spear
+      itm_boar_spear,
+      itm_poulaines_d
     ],
     def_attrib|level(5),
     wp(60),
@@ -3163,7 +3164,8 @@ troops = [
       itm_pickaxe,
       itm_tab_shield_tauria_a,
       itm_boar_spear,
-      itm_broad_spear
+      itm_broad_spear,
+      itm_poulaines_d
     ],
     def_attrib|level(10),
     wp(90),
@@ -3198,7 +3200,8 @@ troops = [
       itm_tab_shield_heater_c,
       itm_two_handed_battle_axe_2,
       itm_leather_gloves,
-      itm_m_gloves_a
+      itm_m_gloves_a,
+      itm_leather_boots_a,
     ],
     def_attrib|level(15),
     wp(120)|wp_two_handed(50),
@@ -3241,7 +3244,8 @@ troops = [
       itm_shield_heater_d,
       itm_tab_shield_tauria_a,
       itm_sword_of_war,
-      itm_throwing_spears
+      itm_throwing_spears,
+      itm_leather_boots_a,
     ],
     def_attrib|level(20),
     wp(150)|wp_two_handed(50),
@@ -3283,7 +3287,11 @@ troops = [
       itm_light_lance,
       itm_throwing_spears,
       itm_warhorse,
-      itm_black_knight_horse_a
+      itm_black_knight_horse_a,
+      itm_mail_boots_a,
+      itm_mail_boots_b,
+      itm_mail_boots_c,
+      itm_leather_boots_a,
     ],
     def_attrib|level(25),
     wp(180),
@@ -3324,7 +3332,10 @@ troops = [
       itm_sword_of_war,
       itm_war_axe,
       itm_shortened_voulge,
-      itm_throwing_spears
+      itm_throwing_spears,
+      itm_mail_boots_a,
+      itm_mail_boots_b,
+      itm_mail_boots_c
     ],
     def_attrib|level(25),
     wp(180)|wp_two_handed(50),
@@ -3358,7 +3369,9 @@ troops = [
       itm_bec_de_corbin,
       itm_simple_poleaxe,
       itm_heavy_throwing_axes,
-      itm_throwing_spears
+      itm_throwing_spears,
+      itm_plate_boots_a,
+      itm_plate_boots_b
     ],
     def_attrib|level(30),
     wp(210)|wp_polearm(50),
