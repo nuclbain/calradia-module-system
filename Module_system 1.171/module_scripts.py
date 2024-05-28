@@ -1799,7 +1799,7 @@ scripts = [
       (item_set_slot, "itm_khergit_guard_armor", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
       (item_set_slot, "itm_blue_tunic", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
       (item_set_slot, "itm_mail_hauberk", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
-      (item_set_slot, "itm_m_hauberk_black_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
+      (item_set_slot, "itm_stormguard_hauberk_a", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
       (item_set_slot, "itm_m_hauberk_navy_c", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
 	  (item_set_slot, "itm_lamellar_vest_khergit", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
 	  (item_set_slot, "itm_steppe_armor", slot_item_multiplayer_item_class, multi_item_class_type_light_armor),
@@ -2246,7 +2246,7 @@ scripts = [
 
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_blue_tunic", "trp_iron_crown_vetaran_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_leather_jerkin", "trp_iron_crown_vetaran_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_m_hauberk_black_a", "trp_iron_crown_vetaran_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_stormguard_hauberk_a", "trp_iron_crown_vetaran_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mail_hauberk", "trp_iron_crown_vetaran_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_banded_armor", "trp_iron_crown_vetaran_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_leather_gloves", "trp_iron_crown_vetaran_multiplayer"),
@@ -2283,7 +2283,7 @@ scripts = [
 
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_blue_tunic", "trp_nord_scout_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_leather_jerkin", "trp_nord_scout_multiplayer"),
-      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_m_hauberk_black_a", "trp_nord_scout_multiplayer"),
+      (call_script, "script_multiplayer_set_item_available_for_troop", "itm_stormguard_hauberk_a", "trp_nord_scout_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mail_hauberk", "trp_nord_scout_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_leather_gloves", "trp_nord_scout_multiplayer"),
       (call_script, "script_multiplayer_set_item_available_for_troop", "itm_mail_mittens", "trp_nord_scout_multiplayer"),
@@ -39353,7 +39353,7 @@ scripts = [
            (eq, "$sneaked_into_town", disguise_guard),
            (cur_tableau_add_override_item, "itm_iron_crown_nasal_a"),
            (cur_tableau_add_override_item, "itm_mail_mittens"),
-           (cur_tableau_add_override_item, "itm_m_hauberk_black_a"),
+           (cur_tableau_add_override_item, "itm_stormguard_hauberk_a"),
            (cur_tableau_add_override_item, "itm_leather_jerkin"), #dckplmc civilian armor
          (else_try),
            (eq, "$sneaked_into_town", disguise_bard),
@@ -69239,7 +69239,7 @@ Born at {s43}^Contact in {s44} of the {s45}.^\
         (eq, "$sneaked_into_town", disguise_guard),
         (mission_tpl_entry_add_override_item, ":mission_template", ":entry_no", "itm_iron_crown_nasal_a"),
         (mission_tpl_entry_add_override_item, ":mission_template", ":entry_no", "itm_mail_mittens"),
-        (mission_tpl_entry_add_override_item, ":mission_template", ":entry_no", "itm_m_hauberk_black_a"),
+        (mission_tpl_entry_add_override_item, ":mission_template", ":entry_no", "itm_stormguard_hauberk_a"),
         (mission_tpl_entry_add_override_item, ":mission_template", ":entry_no", "itm_leather_jerkin"), #dckplmc
         (try_begin),
           (eq, ":with_weapon", 1),

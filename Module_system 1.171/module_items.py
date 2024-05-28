@@ -543,10 +543,6 @@ items = [
  295 , weight(5)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(14)|difficulty(0) ,imodbits_cloth ],
 ["gambeson", "Light Blue Gambeson", [("Gambeson_One_Tone_A",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs|itp_civilian,0,
  260 , weight(5)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
-["m_padded_dark_a", "Black Padded Vest", [("Gambeson_One_Tone_B",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 399 , weight(10)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(10)|difficulty(0) ,imodbits_armor, [], [] ],
-["m_padded_dark_b", "Gray Padded Vest", [("Gambeson_One_Tone_C",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 399 , weight(10)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(10)|difficulty(0) ,imodbits_armor, [], [] ],
-["m_padded_dark_c", "Light Gray Padded Vest", [("Gambeson_One_Tone_D",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 399 , weight(10)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(10)|difficulty(0) ,imodbits_armor, [], [] ],
-["m_padded_dark_a_mail", "Black Padded Vest with Mail", [("Gambeson_Mail_A",0)], itp_type_body_armor|itp_covers_legs|itp_merchandise   ,0, 561 , weight(10)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(7) ,imodbits_armor, [], [] ],
 
 #NEW: was aketon_a
 ["padded_cloth", "Aketon", [("Gambeson_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
@@ -717,6 +713,32 @@ items = [
 ["m_tauria_brigandine_a", "Tauria Brigandine", [("Tauria_Brigandine_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1799 , weight(25)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(25)|difficulty(11) ,imodbits_cloth, [], [fac_kingdom_9] ],
 ["m_tauria_brigandine_b", "Tauria Brigandine", [("Tauria_Brigandine_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1949 , weight(26)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(25)|difficulty(11) ,imodbits_cloth, [], [fac_kingdom_9] ],
 
+["stormguard_aketon_a", "Black Aketon", [("Aketon_Black_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,359 , weight(13)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(15)|difficulty(0) ,imodbits_cloth, [], [] ],
+["stormguard_aketon_a_v1", "Black Aketon with Hood", [("Aketon_Black_A_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,359 , weight(13)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(15)|difficulty(0) ,imodbits_cloth, [], [] ],
+["stormguard_aketon_b", "Black Aketon with Kneekops", [("Aketon_Black_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,559 , weight(19)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(19)|difficulty(7) ,imodbits_cloth, [], [] ],
+["stormguard_aketon_b_v1", "Black Aketon with Hood and Kneekops", [("Aketon_Black_B_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,559 , weight(19)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(19)|difficulty(7) ,imodbits_cloth, [], [] ],
+["stormguard_aketon_b_v2", "Black Aketon with Decor and Kneekops", [("Aketon_Black_B_v2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,559 , weight(19)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(19)|difficulty(7) ,imodbits_cloth, [], [] ],
+
+["stormguard_aketon_plated_a", "Black Aketon with Plate", [("Stormguard_Plated_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,659 , weight(19)|abundance(100)|head_armor(0)|body_armor(30)|leg_armor(19)|difficulty(7) ,imodbits_cloth, [], [] ],
+["stormguard_aketon_plated_a_v1", "Black Aketon with Plate", [("Stormguard_Plated_A_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,699 , weight(20)|abundance(100)|head_armor(0)|body_armor(33)|leg_armor(19)|difficulty(7) ,imodbits_cloth, [], [] ],
+["stormguard_aketon_plated_a_v2", "Black Aketon with Plate", [("Stormguard_Plated_A_v2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,799 , weight(21)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(19)|difficulty(7) ,imodbits_cloth, [], [] ],
+
+["stormguard_aketon_plated_b", "Black Aketon with Plate", [("Stormguard_Plated_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,846 , weight(22)|abundance(100)|head_armor(0)|body_armor(38)|leg_armor(19)|difficulty(8) ,imodbits_cloth, [], [] ],
+["stormguard_aketon_plated_b_v1", "Black Aketon with Plate", [("Stormguard_Plated_B_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,896 , weight(23)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(19)|difficulty(8) ,imodbits_cloth, [], [] ],
+
+["stormguard_hauberk_a", "Black Hauberk", [("Hauberk_Black_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,993 , weight(21)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [] ], 
+["stormguard_hauberk_a_v1", "Black Hauberk with Hood", [("Hauberk_Black_A_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,999 , weight(21)|abundance(100)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [] ],
+["stormguard_hauberk_a_v2", "Black Hauberk", [("Hauberk_Black_A_v2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1053 , weight(22)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [] ],
+["stormguard_hauberk_a_v3", "Black Hauberk with Decor", [("Hauberk_Black_A_v3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,999 , weight(22)|abundance(100)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [] ],
+
+["stormguard_heavy_hauberk_a", "Black Heavy Hauberk", [("Heavy_Hauberk_Black_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1199 , weight(24)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(20)|difficulty(9) ,imodbits_armor, [], [] ],
+["stormguard_heavy_hauberk_a_v1", "Black Heavy Hauberk", [("Heavy_Hauberk_Black_A_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1299 , weight(25)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(20)|difficulty(9) ,imodbits_armor, [], [] ],
+
+["coat_of_plates", "Coat of Plates", [("Coat_Of_Plates_B",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1228 , weight(21)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(18)|difficulty(9) ,imodbits_armor ],
+["coat_of_plates_v1", "Coat of Plates with Decorations", [("Coat_Of_Plates_B_v1",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1228 , weight(21)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(18)|difficulty(9) ,imodbits_armor ],
+["coat_of_plates_v2", "Coat of Plates", [("Coat_Of_Plates_B_v2",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1328 , weight(21)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(18)|difficulty(9) ,imodbits_armor ],
+["coat_of_plates_v3", "Coat of Plates", [("Coat_Of_Plates_B_v3",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1628 , weight(23)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(21)|difficulty(10) ,imodbits_armor ],
+
 ["aketon_silver_rose_a", "Silver Rose Aketon", [("Silver_Rose_Aketon_Basic_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,251 , weight(12)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_1] ],
 ["aketon_silver_rose_b", "Silver Rose Aketon", [("Silver_Rose_Aketon_Basic_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,251 , weight(12)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_1] ],
 ["aketon_silver_rose_b_v1", "Silver Rose Aketon with Hood", [("Silver_Rose_Aketon_Basic_B_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,251 , weight(12)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [fac_kingdom_1] ],
@@ -884,9 +906,6 @@ items = [
 ["m_aketon_forest_b", "Green Forester Aketon", [("Aketon_Two_Tones_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,399 , weight(14)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(13)|difficulty(0) ,imodbits_cloth, [], [] ],
 ["m_aketon_forest_c", "Green Forester Aketon with Mail", [("Aketon_Two_Tones_C",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,529 , weight(18)|abundance(100)|head_armor(0)|body_armor(37)|leg_armor(13)|difficulty(8) ,imodbits_armor, [], [] ],
 
-["m_aketon_black_a", "Black Aketon", [("Aketon_Black_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,359 , weight(13)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(15)|difficulty(0) ,imodbits_cloth, [], [] ],
-["m_aketon_black_b", "Black Aketon with Kneekops", [("Aketon_Black_B",0), ("Aketon_Black_B.1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,559 , weight(19)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(19)|difficulty(7) ,imodbits_cloth, [], [] ],
-
  #NEW: was "leather_jerkin"
 ["leather_jerkin", "Leather Jerkin", [("Rough_Leather_Jerkin_A",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
  421 , weight(6)|abundance(100)|head_armor(0)|body_armor(23)|leg_armor(15)|difficulty(0) ,imodbits_cloth ],
@@ -932,8 +951,6 @@ items = [
 ["mail_hauberk", "Mail Hauberk", [("Hauberk_Revised_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  1320 , weight(19)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(18)|difficulty(8) ,imodbits_armor ],
 
-["m_hauberk_black_a", "Black Hauberk", [("Hauberk_Black_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,993 , weight(21)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [] ], 
-
 ["m_hauberk_mountain_a", "Mountain Hauberk", [("Hauberk_Mountain_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,609 , weight(18)|abundance(100)|head_armor(0)|body_armor(34)|leg_armor(13)|difficulty(7) ,imodbits_armor, [], [] ],
 ["m_hauberk_mountain_b", "Mountain Hauberk", [("Hauberk_Mountain_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,609 , weight(19)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(13)|difficulty(7) ,imodbits_armor, [], [] ],
 ["m_hauberk_mountain_c", "Mountain Hauberk", [("Hauberk_Mountain_C",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,805 , weight(21)|abundance(100)|head_armor(0)|body_armor(40)|leg_armor(18)|difficulty(8) ,imodbits_armor, [], [] ],
@@ -942,10 +959,6 @@ items = [
 ["m_hauberk_navy_a", "Rider Hauberk", [("Hauberk_Navy_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,493 , weight(24)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(10)|difficulty(7) ,imodbits_armor, [], [] ],
 ["m_hauberk_navy_b", "Rider Hauberk", [("Hauberk_Navy_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,599 , weight(24)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(10)|difficulty(8) ,imodbits_armor, [], [] ],
 ["m_hauberk_navy_c", "Rider Hauberk", [("Hauberk_Navy_C",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,719 , weight(28)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(14)|difficulty(9) ,imodbits_armor, [], [] ],
-
-["black_breastplate_a", "Black Breastplate", [("Black_Breastplate_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,873 , weight(16)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(10)|difficulty(7) ,imodbits_armor, [], [fac_kingdom_12] ],
-["black_breastplate_b", "Black Breastplate", [("Black_Breastplate_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,971 , weight(20)|abundance(100)|head_armor(0)|body_armor(44)|leg_armor(15)|difficulty(8) ,imodbits_armor, [], [fac_kingdom_12] ],
-["black_breastplate_c", "Black Breastplate", [("Black_Breastplate_C",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1095 , weight(22)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(18)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_12] ],
 
 ["brigandine_red", "Brigandine", [("Default_Brigandine",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs,0,
  1830 , weight(23)|abundance(100)|head_armor(0)|body_armor(46)|leg_armor(20)|difficulty(0) ,imodbits_armor ],
@@ -967,11 +980,9 @@ items = [
 #NEW: was hard_lthr_a
 ["cuir_bouilli", "Cuir Bouilli", [("Cuir_Bouilli_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  3100 , weight(24)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(19)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_12] ],
-["coat_of_plates", "Coat of Plates", [("Coat_Of_Plates_B",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 1228 , weight(21)|abundance(100)|head_armor(0)|body_armor(45)|leg_armor(18)|difficulty(9) ,imodbits_armor ],
 ["coat_of_plates_red", "Coat of Plates", [("Coat_Of_Plates_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,1945 , weight(22)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(10) ,imodbits_armor ],
 ["plate_armor", "Plate Armor", [("Plate_Armor_A",0), ("Plate_Armor_A.1",0), ("Plate_Armor_A.2",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 6553 , weight(27)|abundance(100)|head_armor(0)|body_armor(55)|leg_armor(17)|difficulty(9) ,imodbits_plate ],
 ["black_armor", "Black Armor", [("Plate_Armor_B",0), ("Plate_Armor_B.1",0), ("Plate_Armor_B.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs ,0, 9496 , weight(28)|abundance(100)|head_armor(0)|body_armor(57)|leg_armor(18)|difficulty(10) ,imodbits_plate ],
-["black_plate", "Stormguard Black Armor", [("Stormguard_Black_Plate_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs ,0, 4496 , weight(28)|abundance(100)|head_armor(0)|body_armor(58)|leg_armor(29)|difficulty(12) ,imodbits_plate, [], [fac_kingdom_12] ],
 
  ["sarranid_dress_a", "Dress", [("woolen_dress",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  33 , weight(1)|abundance(100)|head_armor(0)|body_armor(9)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
