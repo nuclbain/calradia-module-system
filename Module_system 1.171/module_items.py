@@ -535,6 +535,8 @@ items = [
  87 , weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
 #NEW: was tabard_a
 ["tabard", "Tabard", [("Tabard_Short_A",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs|itp_civilian, 0,  107, weight(3)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth],
+["tabard_v1", "Guard Tabard", [("Tabard_Short_A_v1",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs, 0, 307, weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(6)|difficulty(0),imodbits_cloth],
+["tabard_v2", "Guard Tabard with Plates", [("Tabard_Short_A_v2",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs, 0, 507, weight(16)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(16)|difficulty(6),imodbits_armor],
 ["tabard_b", "Tabard", [("Tabard_Short_B",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs|itp_civilian, 0,  107, weight(3)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth],
 ["tabard_c", "Tabard", [("Tabard_Short_C",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs|itp_civilian, 0,  107, weight(3)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth],
 #NEW: was leather_vest
