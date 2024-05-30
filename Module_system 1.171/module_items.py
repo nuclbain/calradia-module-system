@@ -487,6 +487,13 @@ items = [
 ["cheap_mail_a", "Rusty Mail", [("Cheap_Tunic_Mail_A",0)], itp_type_body_armor|itp_covers_legs,0, 285 , weight(14.0)|abundance(3)|head_armor(0)|body_armor(32)|leg_armor(8)|difficulty(0) ,imodbits_armor ],
 ["cheap_mail_b", "Rusty Mail", [("Cheap_Tunic_Mail_B",0)], itp_type_body_armor|itp_covers_legs,0, 355 , weight(15.0)|abundance(3)|head_armor(0)|body_armor(36)|leg_armor(8)|difficulty(0) ,imodbits_armor ],
 
+["pourpoint_a", "Pourpoint", [("Pourpoint_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 180, weight(11.0)|abundance(3)|head_armor(0)|body_armor(18)|leg_armor(8)|difficulty(0), imodbits_cloth],
+["pourpoint_b", "Pourpoint", [("Pourpoint_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 220, weight(13.0)|abundance(3)|head_armor(0)|body_armor(23)|leg_armor(8)|difficulty(0), imodbits_cloth],
+["pourpoint_b_v1", "Pourpoint with Arms", [("Pourpoint_B_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 520, weight(15.0)|abundance(3)|head_armor(0)|body_armor(26)|leg_armor(15)|difficulty(6), imodbits_armor],
+["pourpoint_b_v2", "Pourpoint with Arms", [("Pourpoint_B_v2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 720, weight(19.0)|abundance(3)|head_armor(0)|body_armor(36)|leg_armor(19)|difficulty(8), imodbits_armor],
+["pourpoint_b_v3", "Pourpoint with Arms", [("Pourpoint_B_v3",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 920, weight(21.0)|abundance(3)|head_armor(0)|body_armor(43)|leg_armor(21)|difficulty(9), imodbits_armor],
+["pourpoint_c", "Pourpoint", [("Pourpoint_C",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs, 0, 180, weight(11.0)|abundance(3)|head_armor(0)|body_armor(18)|leg_armor(8)|difficulty(0), imodbits_cloth],
+
 ["neutral_aketon_a", "Aketon", [("Aketon_Old_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,301 , weight(12)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(8)|difficulty(0) ,imodbits_cloth, [], [] ],
 ["neutral_aketon_a_v1", "Aketon with Hood", [("Aketon_Old_A_v1",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,331 , weight(12)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(0) ,imodbits_cloth, [], [] ],
 ["neutral_aketon_b", "Aketon", [("Aketon_Old_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,331 , weight(12)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(0) ,imodbits_cloth, [], [] ],
