@@ -527,8 +527,9 @@ items = [
 ["leather_apron", "Peasant Leather Vest", [("Peasant_Tunic_B",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
  87 , weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
 #NEW: was tabard_a
-["tabard", "Tabard", [("Tabard_Revised_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs |itp_civilian,0,
- 107 , weight(3)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
+["tabard", "Tabard", [("Tabard_Short_A",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs|itp_civilian, 0,  107, weight(3)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth],
+["tabard_b", "Tabard", [("Tabard_Short_B",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs|itp_civilian, 0,  107, weight(3)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth],
+["tabard_c", "Tabard", [("Tabard_Short_C",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs|itp_civilian, 0,  107, weight(3)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth],
 #NEW: was leather_vest
 ["leather_vest", "Leather Vest", [("Leather_Vest_Revised_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0,
  146 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(15)|difficulty(0) ,imodbits_cloth ],
