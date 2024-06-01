@@ -4568,7 +4568,11 @@ troops = [
       itm_hood_d,
       itm_iron_crown_scullcap_a,
       itm_iron_crown_scullcap_b,
-      itm_leather_gloves
+      itm_leather_gloves,
+      itm_hose_c,
+      itm_hose_d,
+      itm_poulaines_c,
+      itm_poulaines_d
     ],
     def_attrib|level(5),
     wp(60),
@@ -4602,7 +4606,11 @@ troops = [
       itm_m_iron_crown_scale_vest_a,
       itm_m_iron_crown_scale_vest_b,
       itm_leather_gloves,
-      itm_m_gloves_a
+      itm_m_gloves_a,
+      itm_hose_c,
+      itm_hose_d,
+      itm_poulaines_c,
+      itm_poulaines_d
     ],
     def_attrib|level(10),
     wp(90),
@@ -4640,7 +4648,10 @@ troops = [
       itm_m_iron_crown_armor_b,
       itm_m_gloves_a,
       itm_mail_mittens,
-      itm_old_mail_gloves
+      itm_old_mail_gloves,
+      itm_leather_boots_a,
+      itm_leather_boots_b,
+      itm_leather_boots_c
     ],
     def_attrib|level(15),
     wp(120),
@@ -4678,7 +4689,10 @@ troops = [
       itm_mail_mittens,
       itm_old_mail_gloves,
       itm_scale_gauntlets,
-      itm_lamellar_gauntlets
+      itm_lamellar_gauntlets,
+      itm_mail_boots_a,
+      itm_mail_boots_b,
+      itm_mail_boots_c
     ],
     def_attrib|level(20),
     wp(150),
@@ -4709,7 +4723,10 @@ troops = [
       itm_m_iron_crown_brigandine_mail_b,
       itm_old_mail_gloves,
       itm_scale_gauntlets,
-      itm_lamellar_gauntlets
+      itm_lamellar_gauntlets,
+      itm_mail_boots_a,
+      itm_mail_boots_b,
+      itm_mail_boots_c
     ],
     def_attrib|level(25),
     wp(180),
@@ -4745,7 +4762,10 @@ troops = [
       itm_m_iron_crown_scale_b,
       itm_old_mail_gloves,
       itm_scale_gauntlets,
-      itm_lamellar_gauntlets
+      itm_lamellar_gauntlets,
+      itm_mail_boots_a,
+      itm_mail_boots_b,
+      itm_mail_boots_c
     ],
     def_attrib|level(30),
     wp(210),
@@ -4778,7 +4798,12 @@ troops = [
     itm_m_iron_crown_brigandine_mail_b,
     itm_old_mail_gloves,
     itm_scale_gauntlets,
-    itm_lamellar_gauntlets
+    itm_lamellar_gauntlets,
+    itm_plate_boots_a,
+    itm_plate_boots_b,
+    itm_mail_boots_a,
+    itm_mail_boots_b,
+    itm_mail_boots_c
   ],
   def_attrib|level(25),
   wp(180)|wp_polearm(180),
@@ -4808,7 +4833,9 @@ troops = [
     itm_m_iron_crown_aketon_b,
     itm_iron_crown_scullcap_a,
     itm_iron_crown_scullcap_b,
-    itm_leather_gloves
+    itm_leather_gloves,
+    itm_poulaines_c,
+    itm_poulaines_d
   ],
   def_attrib|level(10),
   wp(90)|wp_archery(50),
@@ -4840,7 +4867,9 @@ troops = [
     itm_m_iron_crown_brigandine_b,
     itm_iron_crown_nasal_b,
     itm_iron_crown_footman_helmet_b,
-    itm_m_gloves_a
+    itm_m_gloves_a,
+    itm_mail_boots_a,
+    itm_leather_boots_a
   ],
   def_attrib|level(15),
   wp(120)|wp_archery(50),
@@ -5420,7 +5449,9 @@ troops = [
     itm_solarian_aketon_b,
     itm_solarian_robe_a,
     itm_solarian_robe_b,
-    itm_solarian_robe_c
+    itm_solarian_robe_c,
+    itm_desert_boots_a,
+    itm_desert_boots_b
   ],
   def_attrib|level(5),
   wp(60),
@@ -5453,7 +5484,9 @@ troops = [
     itm_solarian_scale_vest_c,
     itm_solarian_scale_vest_d,
     itm_solarian_scale_vest_e,
-    itm_leather_gloves
+    itm_leather_gloves,
+    itm_desert_leather_boots_a,
+    itm_desert_leather_boots_b
   ],
   def_attrib|level(10),
   wp(90),
@@ -5487,7 +5520,9 @@ troops = [
     itm_solarian_mail_vest_e,
     itm_solarian_mail_vest_f,
     itm_leather_gloves,
-    itm_eastern_scale_gloves_a
+    itm_eastern_scale_gloves_a,
+    itm_desert_leather_boots_a,
+    itm_desert_leather_boots_b
   ],
   def_attrib|level(15),
   wp(120),
@@ -5520,7 +5555,9 @@ troops = [
     itm_solarian_armor_d,
     itm_mail_mittens,
     itm_eastern_scale_gloves_a,
-    itm_eastern_scale_gloves_b
+    itm_eastern_scale_gloves_b,
+    itm_desert_leather_boots_a,
+    itm_desert_leather_boots_b
   ],
   def_attrib|level(20),
   wp(150),
@@ -5554,7 +5591,9 @@ troops = [
     itm_solarian_armor_scale_a,
     itm_solarian_armor_scale_b,
     itm_solarian_armor_scale_c,
-    itm_eastern_scale_gloves_b
+    itm_eastern_scale_gloves_b,
+    itm_desert_heavy_boots_a,
+    itm_desert_heavy_boots_b
   ],
   def_attrib|level(25),
   wp(180),
@@ -5583,7 +5622,9 @@ troops = [
     itm_solarian_aketon_a,
     itm_solarian_aketon_b,
     itm_leather_gloves,
-    itm_old_leather_gloves
+    itm_old_leather_gloves,
+    itm_desert_leather_boots_a,
+    itm_desert_leather_boots_b
   ],
   def_attrib|level(15),
   wp(120),
@@ -5612,7 +5653,9 @@ troops = [
     itm_solarian_robe_b,
     itm_solarian_robe_c,
     itm_leather_gloves,
-    itm_old_leather_gloves
+    itm_old_leather_gloves,
+    itm_desert_leather_boots_a,
+    itm_desert_leather_boots_b
   ],
   def_attrib|level(20),
   wp(150),
@@ -5642,7 +5685,9 @@ troops = [
     itm_solarian_armor_a,
     itm_solarian_armor_b,
     itm_leather_gloves,
-    itm_old_leather_gloves
+    itm_old_leather_gloves,
+    itm_desert_leather_boots_a,
+    itm_desert_leather_boots_b
   ],
   def_attrib|level(25),
   wp(180),
@@ -5676,6 +5721,8 @@ troops = [
     itm_eastern_scale_gloves_a,
     itm_old_mail_gloves,
     itm_mail_mittens,
+    itm_desert_leather_boots_a,
+    itm_desert_leather_boots_b,
     itm_saracin_hard_horses_a_v1,
     itm_saracin_hard_horses_b_v1,
     itm_saracin_hard_horses_c_v1,
@@ -5711,6 +5758,8 @@ troops = [
     itm_solarian_armor_scale_c,
     itm_eastern_scale_gloves_b,
     itm_eastern_scale_gloves_a,
+    itm_desert_heavy_boots_a,
+    itm_desert_heavy_boots_b,
     itm_saracin_hard_horses_a,
     itm_saracin_hard_horses_b,
     itm_saracin_hard_horses_c,
