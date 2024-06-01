@@ -4906,6 +4906,7 @@ troops = [
     itm_alpine_footman_helmet_b,
     itm_alpine_footman_helmet_c,
     itm_alpine_breastplate_a,
+    itm_alpine_breastplate_a_v1,
     itm_alpine_breastplate_b,
     itm_alpine_breastplate_c,
     itm_m_gauntlets_b,
@@ -4948,7 +4949,10 @@ troops = [
     itm_alpine_footman_helmet_visored_a,
     itm_alpine_footman_helmet_visored_b,
     itm_m_alpine_full_plate_a,
+    itm_m_alpine_full_plate_a_v1,
     itm_m_alpine_full_plate_b,
+    itm_m_alpine_full_plate_b_v1,
+    itm_m_alpine_full_plate_b_v2,
     itm_alpine_breastplate_heavy_a,
     itm_alpine_breastplate_heavy_b,
     itm_m_gauntlets_b,
@@ -5088,7 +5092,8 @@ troops = [
     itm_alpine_breastplate_d,
     itm_alpine_chapel_mail_a,
     itm_alpine_chapel_mail_b,
-    itm_m_gloves_a
+    itm_m_gloves_a,
+    itm_mail_boots_a
   ],
   def_attrib|level(30),
   wp(210)|wp_crossbow(50),
