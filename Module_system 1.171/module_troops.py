@@ -4242,7 +4242,9 @@ troops = [
       itm_celestial_aketon_a,
       itm_celestial_aketon_b,
       itm_celestial_aketon_c,
-      itm_celestial_aketon_d
+      itm_celestial_aketon_d,
+      itm_poulaines_d,
+      itm_hose_d
     ],
     def_attrib|level(5),
     wp(60),
@@ -4274,7 +4276,9 @@ troops = [
       itm_celestial_aketon_b,
       itm_celestial_aketon_c,
       itm_celestial_aketon_d,
-      itm_mt_leather_gloves_a
+      itm_mt_leather_gloves_a,
+      itm_hose_d,
+      itm_poulaines_d
     ],
     def_attrib|level(10),
     wp(90),
@@ -4303,7 +4307,9 @@ troops = [
       itm_celestial_coif_b,
       itm_m_celestial_padded_cloth_a,
       itm_m_celestial_padded_cloth_b,
-      itm_mt_leather_gloves_a
+      itm_mt_leather_gloves_a,
+      itm_hose_d,
+      itm_poulaines_d
     ],
     def_attrib|level(10),
     wp(90)|wp_crossbow(50),
@@ -4339,8 +4345,11 @@ troops = [
       itm_celestial_light_sallet_b,
       itm_celestial_light_sallet_c,
       itm_m_celestial_mail_a,
+      itm_m_celestial_mail_a_v1,
       itm_m_celestial_mail_b,
-      itm_mt_leather_gloves_a
+      itm_m_celestial_mail_b_v1,
+      itm_mt_leather_gloves_a,
+      itm_hose_d
     ],
     def_attrib|level(15),
     wp(120)|wp_crossbow(50),
@@ -4380,7 +4389,10 @@ troops = [
       itm_celestial_aketon_breastplate_b,
       itm_m_gloves_a,
       itm_leather_gloves,
-      itm_mt_leather_gloves_a
+      itm_mt_leather_gloves_a,
+      itm_leather_boots_a,
+      itm_poulaines_d,
+      itm_hose_d
     ],
     def_attrib|level(15),
     wp(120),
@@ -4411,7 +4423,10 @@ troops = [
       itm_m_celestial_breastplate_d,
       itm_m_gloves_a,
       itm_leather_gloves,
-      itm_mt_leather_gloves_a
+      itm_mt_leather_gloves_a,
+      itm_leather_boots_a,
+      itm_mail_boots_a,
+      itm_mail_boots_b
     ],
     def_attrib|level(15),
     wp(120)|wp_polearm(50),
@@ -4438,7 +4453,10 @@ troops = [
       itm_celestial_sallet_on_mail_c,
       itm_m_celestial_breastplate_heavy_a,
       itm_m_celestial_breastplate_heavy_b,
-      itm_m_gloves_a
+      itm_m_gloves_a,
+      itm_mail_boots_a,
+      itm_mail_boots_b,
+      itm_mail_boots_c
     ],
     def_attrib|level(20),
     wp(150),
@@ -4471,6 +4489,9 @@ troops = [
       itm_m_gloves_a,
       itm_m_gauntlets_a,
       itm_m_gauntlets_b,
+      itm_plate_boots_a,
+      itm_plate_boots_b,
+      itm_mail_boots_a,
       itm_warhorse
     ],
     def_attrib|level(20),
@@ -4502,7 +4523,9 @@ troops = [
       itm_m_mace_knight_pierce,
       itm_shield_heater_d,
       itm_m_gauntlets_a,
-      itm_m_gauntlets_b
+      itm_m_gauntlets_b,
+      itm_plate_boots_a,
+      itm_plate_boots_b
     ],
     def_attrib|level(25),
     wp(180)|wp_polearm(50),
