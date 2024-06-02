@@ -5870,7 +5870,11 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_m_swadia_common_helmet_c,
       itm_m_coif_alternate_a,
       itm_leather_gloves,
-      itm_m_gloves_a
+      itm_m_gloves_a,
+      itm_hose_b,
+      itm_hose_d,
+      itm_poulaines_b,
+      itm_poulaines_d,
     ],
     def_attrib|level(10),
     wp(90),
@@ -5900,7 +5904,11 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_steel_bolts,
       itm_padded_coif,
       itm_mail_coif,
-      itm_kettle_hat
+      itm_kettle_hat,
+      itm_leather_shoes_a,
+      itm_leather_shoes_b,
+      itm_military_boots_a,
+      itm_military_boots_b
     ],
     def_attrib|level(12),
     wp(70),
@@ -5926,7 +5934,8 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_swiss_halberd,
       itm_bascinet,
       itm_bascinet_2,
-      itm_bascinet_3
+      itm_bascinet_3,
+      itm_mail_boots_a
     ],
     def_attrib|level(16),
     wp(90),
@@ -5956,7 +5965,10 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_spear,
       itm_hunting_crossbow,
       itm_bolts,
-      itm_saddle_horse
+      itm_saddle_horse,
+      itm_leather_boots_a,
+      itm_leather_boots_b,
+      itm_mail_boots_a
     ],
     def_attrib|level(10),
     wp(60),
@@ -5988,7 +6000,10 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_lance,
       itm_hunting_crossbow,
       itm_bolts,
-      itm_saddle_horse
+      itm_saddle_horse,
+      itm_leather_boots_a,
+      itm_leather_boots_b,
+      itm_mail_boots_a
     ],
     def_attrib|level(16),
     wp(90),
@@ -6010,7 +6025,8 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_shirt,
       itm_hunting_crossbow,
       itm_bolts,
-      itm_warhorse
+      itm_warhorse,
+      itm_mail_boots_a
     ],
     knight_attrib_5|level(25),
     wp(245),
