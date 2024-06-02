@@ -7104,7 +7104,11 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_fur_hat,
       itm_leather_cap,
       itm_straw_hat,
-      itm_felt_hat
+      itm_felt_hat,
+      itm_hose_b,
+      itm_hose_d,
+      itm_poulaines_b,
+      itm_poulaines_d
     ],
     def_attrib|level(4),
     wp(60),
@@ -7128,7 +7132,11 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_peasant_dress,
       itm_wimple_a,
       itm_wimple_with_veil,
-      itm_female_hood
+      itm_female_hood,
+      itm_hose_b,
+      itm_hose_d,
+      itm_poulaines_b,
+      itm_poulaines_d
     ],
     def_attrib|level(2),
     wp(40),
@@ -7149,7 +7157,11 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_solarian_turban_a,
       itm_solarian_turban_b,
       itm_solarian_robe_a,
-      itm_solarian_aketon_a
+      itm_solarian_aketon_a,
+      itm_hose_b,
+      itm_hose_d,
+      itm_poulaines_b,
+      itm_poulaines_d
     ],
     def_attrib|level(4),
     wp(60),
@@ -7173,7 +7185,11 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_peasant_dress,
       itm_wimple_a,
       itm_wimple_with_veil,
-      itm_female_hood
+      itm_female_hood,
+      itm_hose_b,
+      itm_hose_d,
+      itm_poulaines_b,
+      itm_poulaines_d
     ],
     def_attrib|level(2),
     wp(40),
@@ -7194,7 +7210,11 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_solarian_turban_a,
       itm_solarian_turban_b,
       itm_solarian_robe_a,
-      itm_solarian_aketon_a
+      itm_solarian_aketon_a,
+      itm_hose_b,
+      itm_hose_d,
+      itm_poulaines_b,
+      itm_poulaines_d
     ],
     def_attrib|level(4),
     wp(60),
@@ -7215,7 +7235,11 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_sarranid_common_dress,
       itm_sarranid_common_dress_b,
       itm_sarranid_felt_head_cloth,
-      itm_sarranid_felt_head_cloth_b
+      itm_sarranid_felt_head_cloth_b,
+      itm_hose_b,
+      itm_hose_d,
+      itm_poulaines_b,
+      itm_poulaines_d
     ],
     def_attrib|level(2),
     wp(40),
@@ -7245,7 +7269,11 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_fur_hat,
       itm_leather_cap,
       itm_straw_hat,
-      itm_felt_hat
+      itm_felt_hat,
+      itm_hose_b,
+      itm_hose_d,
+      itm_poulaines_b,
+      itm_poulaines_d
     ],
     def_attrib|level(4),
     wp(60),
@@ -7269,7 +7297,11 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_peasant_dress,
       itm_wimple_a,
       itm_wimple_with_veil,
-      itm_female_hood
+      itm_female_hood,
+      itm_hose_b,
+      itm_hose_d,
+      itm_poulaines_b,
+      itm_poulaines_d
     ],
     def_attrib|level(2),
     wp(40),
@@ -7301,7 +7333,11 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_fur_hat,
       itm_leather_cap,
       itm_straw_hat,
-      itm_felt_hat
+      itm_felt_hat,
+      itm_hose_b,
+      itm_hose_d,
+      itm_poulaines_b,
+      itm_poulaines_d
     ],
     def_attrib|level(4),
     wp(60),
@@ -7325,7 +7361,11 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
       itm_peasant_dress,
       itm_wimple_a,
       itm_wimple_with_veil,
-      itm_female_hood
+      itm_female_hood,
+      itm_hose_b,
+      itm_hose_d,
+      itm_poulaines_b,
+      itm_poulaines_d
     ],
     def_attrib|level(2),
     wp(40),
@@ -7347,7 +7387,8 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
     [
       itm_robe,
       itm_pilgrim_disguise,
-      itm_pilgrim_hood
+      itm_pilgrim_hood,
+      itm_sandals_a
     ],
     def_attrib|level(4),
     wp(60),
@@ -7367,7 +7408,8 @@ def_attrib|level(25),wp_melee(135)|wp_throwing(100),knows_common|knows_shield_3|
     [
       itm_robe,
       itm_pilgrim_disguise,
-      itm_pilgrim_hood
+      itm_pilgrim_hood,
+      itm_sandals_a
     ],
     def_attrib|level(4),
     wp(60),
