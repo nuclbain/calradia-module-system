@@ -563,6 +563,17 @@ items = [
 #NEW:
 ["aketon_green", "Padded Cloth", [("Padded_Cloth_Revised_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  297 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
+
+# MENEGRAS ARMOR START
+["menegras_aketon_a", "Menegras House Aketon", [("Aketon_Menegras_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,337 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [] ],
+["menegras_aketon_b", "Menegras House Aketon with Kneekops", [("Aketon_Menegras_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,489 , weight(17)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(7) ,imodbits_armor, [], [] ],
+
+["menegras_brigandine_a", "Menegras House Brigandine", [("Brigandine_Menegras_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,899 , weight(21)|abundance(100)|head_armor(0)|body_armor(36)|leg_armor(12)|difficulty(6) ,imodbits_armor, [], [] ],
+["menegras_brigandine_b", "Menegras House Brigandine on Mail", [("Brigandine_Menegras_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1299 , weight(25)|abundance(100)|head_armor(0)|body_armor(42)|leg_armor(18)|difficulty(7) ,imodbits_armor, [], [] ],
+["menegras_brigandine_c", "Menegras House Brigandine With Plates", [("Brigandine_Menegras_C",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1399 , weight(24)|abundance(100)|head_armor(0)|body_armor(44)|leg_armor(16)|difficulty(7) ,imodbits_armor, [], [] ],
+["menegras_brigandine_d", "Menegras House Heavy Brigandine", [("Brigandine_Menegras_D",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1671 , weight(26)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(23)|difficulty(9) ,imodbits_armor, [], [] ],
+# MENEGRAS ARMOR END
+
 ["m_aketon_a", "Aketon", [("Aketon_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,337 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [] ],
 ["m_aketon_b", "Aketon with Kneekops", [("Aketon_Kneecops_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,489 , weight(17)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(7) ,imodbits_cloth, [], [] ],
 
@@ -1064,6 +1075,15 @@ items = [
 ["neutral_sallet_b", "Sallet", [("Neutral_Sallet_B",0), ("Neutral_Sallet_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 311 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
 ["neutral_chapel_a", "Chapel de Fer", [("Neutral_Chapel_A",0), ("Neutral_Chapel_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
 ["neutral_kettlehat_a", "Kettle Hat", [("Neutral_Kettlehat_A",0), ("Neutral_Kettlehat_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
+
+["menegras_sallet_a", "Menegras Sallet", [("Menegras_Sallet_A",0), ("Menegras_Sallet_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
+["menegras_sallet_b", "Menegras Sallet open Visor", [("Menegras_Sallet_B",0), ("Menegras_Sallet_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 311 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
+["menegras_sallet_c", "Menegras Sallet closed Visor", [("Menegras_Sallet_C",0), ("Menegras_Sallet_C_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 342 , weight(2)|abundance(100)|head_armor(42)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
+
+["menegras_kettlehat_a", "Menegras Kettle Hat", [("Menegras_Kettlehat_A",0), ("Menegras_Kettlehat_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
+
+["menegras_chapel_a", "Menegras Chapel de Fer", [("Menegras_Chapel_A",0), ("Menegras_Chapel_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
+["menegras_chapel_b", "Menegras Chapel de Fer", [("Menegras_Chapel_B",0), ("Menegras_Chapel_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 311 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
 
 ["fur_hat", "Fur Hat", [("fur_hat_a_new",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 4 , weight(0.5)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["nomad_cap", "Nomad Cap", [("nomad_cap_a_new",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 6 , weight(0.75)|abundance(100)|head_armor(10)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
