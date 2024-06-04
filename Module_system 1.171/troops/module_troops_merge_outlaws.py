@@ -38,6 +38,8 @@ troops_outlaws = [
             itm_m_swadia_common_helmet_b,
             itm_padded_coif_full,
             itm_leather_gloves,
+            itm_hose_d,
+            itm_poulaines_d
         ],
         def_attrib | level(5),
         wp(60),
