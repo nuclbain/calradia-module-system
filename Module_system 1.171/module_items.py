@@ -1018,8 +1018,8 @@ items = [
 ["cuir_bouilli", "Cuir Bouilli", [("Cuir_Bouilli_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  3100 , weight(24)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(19)|difficulty(9) ,imodbits_armor, [], [fac_kingdom_12] ],
 ["coat_of_plates_red", "Coat of Plates", [("Coat_Of_Plates_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,1945 , weight(22)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(18)|difficulty(10) ,imodbits_armor ],
-["plate_armor", "Plate Armor", [("Plate_Armor_A",0), ("Plate_Armor_A.1",0), ("Plate_Armor_A.2",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 6553 , weight(27)|abundance(100)|head_armor(0)|body_armor(55)|leg_armor(17)|difficulty(9) ,imodbits_plate ],
-["black_armor", "Black Armor", [("Plate_Armor_B",0), ("Plate_Armor_B.1",0), ("Plate_Armor_B.2",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs ,0, 9496 , weight(28)|abundance(100)|head_armor(0)|body_armor(57)|leg_armor(18)|difficulty(10) ,imodbits_plate ],
+["plate_armor", "Plate Armor", [("Neutral_Plate_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0, 6553 , weight(27)|abundance(100)|head_armor(0)|body_armor(55)|leg_armor(17)|difficulty(9) ,imodbits_plate ],
+["black_armor", "Heavy Plate Armor", [("Neutral_Plate_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs ,0, 9496 , weight(28)|abundance(100)|head_armor(0)|body_armor(57)|leg_armor(18)|difficulty(10) ,imodbits_plate ],
 
  ["sarranid_dress_a", "Dress", [("woolen_dress",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  33 , weight(1)|abundance(100)|head_armor(0)|body_armor(9)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
