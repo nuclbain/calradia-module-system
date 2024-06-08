@@ -1044,6 +1044,74 @@ items = [
  3654 , weight(21)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(15)|difficulty(7) ,imodbits_armor,
  [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_heraldic_armor_d", ":agent_no", ":troop_no")])]],
 
+# HELMETS START
+# Helmet Diffuculty is equal to the Armor / 3.5
+# Helmet Price is equal to the (Armor * 10.5) + 9 - difficulty + (100 - abundance) * 2.5
+["felt_a", "Felt Hat", [("Revised_Felt_A",0), ("Revised_Felt_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 51, weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
+["felt_a_v1", "Felt Hat with Feather", [("Revised_Felt_A_v1",0), ("Revised_Felt_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 51, weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
+["felt_a_v2", "Felt Hat on Arming Cap", [("Revised_Felt_A_v2",0), ("Revised_Felt_A_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 104, weight(1)|abundance(100)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
+
+["felt_b", "Felt Hat", [("Revised_Felt_B",0), ("Revised_Felt_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 51, weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
+["felt_b_v1", "Felt Hat on Hood", [("Revised_Felt_B_v1",0), ("Revised_Felt_B_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 93, weight(1)|abundance(100)|head_armor(6)|body_armor(2)|leg_armor(0)|difficulty(0), imodbits_cloth],
+
+["padded_coif_a", "Padded Coif", [("Revised_Padded_Coif_A",0), ("Revised_Padded_Coif_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 156, weight(1)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
+["padded_coif_b", "Padded Coif", [("Revised_Padded_Coif_B",0), ("Revised_Padded_Coif_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 156, weight(1)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
+
+["cervelliere_a", "Cervelliere on Arming Cap", [("Revised_Cervelliere_A",0), ("Revised_Cervelliere_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 252, weight(1)|abundance(100)|head_armor(24)|body_armor(0)|leg_armor(0)|difficulty(7), imodbits_armor],
+["cervelliere_a_v1", "Cervelliere on Padded", [("Revised_Cervelliere_A_v1",0), ("Revised_Cervelliere_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 315, weight(1.5)|abundance(100)|head_armor(26)|body_armor(4)|leg_armor(0)|difficulty(9), imodbits_armor],
+["cervelliere_a_v2", "Cervelliere on Mail", [("Revised_Cervelliere_A_v2",0), ("Revised_Cervelliere_A_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 369, weight(2)|abundance(95)|head_armor(28)|body_armor(6)|leg_armor(0)|difficulty(10), imodbits_armor],
+["cervelliere_a_v3", "Cervelliere on Mail", [("Revised_Cervelliere_A_v3",0), ("Revised_Cervelliere_A_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 379, weight(2)|abundance(95)|head_armor(29)|body_armor(6)|leg_armor(0)|difficulty(10), imodbits_armor],
+
+["cervelliere_b", "Cervelliere on Arming Cap", [("Revised_Cervelliere_B",0), ("Revised_Cervelliere_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 252, weight(1)|abundance(100)|head_armor(24)|body_armor(0)|leg_armor(0)|difficulty(7), imodbits_armor],
+["cervelliere_b_v1", "Cervelliere on Padded", [("Revised_Cervelliere_B_v1",0), ("Revised_Cervelliere_B_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 315, weight(1.5)|abundance(100)|head_armor(26)|body_armor(4)|leg_armor(0)|difficulty(9), imodbits_armor],
+["cervelliere_b_v2", "Cervelliere on Mail", [("Revised_Cervelliere_B_v2",0), ("Revised_Cervelliere_B_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 369, weight(2)|abundance(95)|head_armor(28)|body_armor(6)|leg_armor(0)|difficulty(10), imodbits_armor],
+["cervelliere_b_v3", "Cervelliere on Mail", [("Revised_Cervelliere_B_v3",0), ("Revised_Cervelliere_B_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 379, weight(2)|abundance(95)|head_armor(29)|body_armor(6)|leg_armor(0)|difficulty(10), imodbits_armor],
+
+["flat_top_a", "Flat Top on Arming Cap", [("Revised_Flat_Top_A",0), ("Revised_Flat_Top_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 315, weight(1.5)|abundance(100)|head_armor(30)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
+["flat_top_a_v1", "Flat Top on Hood", [("Revised_Flat_Top_A_v1",0), ("Revised_Flat_Top_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 347, weight(1.5)|abundance(100)|head_armor(31)|body_armor(2)|leg_armor(0)|difficulty(9), imodbits_armor],
+["flat_top_a_v2", "Flat Top on Padding", [("Revised_Flat_Top_A_v2",0), ("Revised_Flat_Top_A_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 390, weight(2)|abundance(95)|head_armor(32)|body_armor(4)|leg_armor(0)|difficulty(10), imodbits_armor],
+["flat_top_a_v3", "Flat Top on Mail", [("Revised_Flat_Top_A_v3",0), ("Revised_Flat_Top_A_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 443, weight(2.5)|abundance(90)|head_armor(34)|body_armor(6)|leg_armor(0)|difficulty(11), imodbits_armor],
+["flat_top_a_v4", "Flat Top on Mail", [("Revised_Flat_Top_A_v4",0), ("Revised_Flat_Top_A_v4_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 453, weight(2.5)|abundance(90)|head_armor(35)|body_armor(6)|leg_armor(0)|difficulty(12), imodbits_armor],
+
+["flat_top_b", "Flat Top with Noseguard on Arming Cap", [("Revised_Flat_Top_B",0), ("Revised_Flat_Top_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 336, weight(1.5)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
+["flat_top_b_v1", "Flat Top with Noseguard on Hood", [("Revised_Flat_Top_B_v1",0), ("Revised_Flat_Top_B_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 367, weight(1.5)|abundance(100)|head_armor(33)|body_armor(2)|leg_armor(0)|difficulty(10), imodbits_armor],
+["flat_top_b_v2", "Flat Top with Noseguard on Padding", [("Revised_Flat_Top_B_v2",0), ("Revised_Flat_Top_B_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 410, weight(1.5)|abundance(95)|head_armor(34)|body_armor(4)|leg_armor(0)|difficulty(11), imodbits_armor],
+["flat_top_b_v3", "Flat Top with Noseguard on Mail", [("Revised_Flat_Top_B_v3",0), ("Revised_Flat_Top_B_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 463, weight(1.5)|abundance(90)|head_armor(36)|body_armor(6)|leg_armor(0)|difficulty(12), imodbits_armor],
+["flat_top_b_v4", "Flat Top with Noseguard on Mail", [("Revised_Flat_Top_B_v4",0), ("Revised_Flat_Top_B_v4_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 474, weight(1.5)|abundance(90)|head_armor(37)|body_armor(6)|leg_armor(0)|difficulty(12), imodbits_armor],
+
+["eyeslot_kettlehat_a", "Kettle Hat", [("Revised_Kettlehat_A",0), ("Revised_Kettlehat_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 336, weight(1)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
+["eyeslot_kettlehat_a_v1", "Kettle Hat on Arming Cap", [("Revised_Kettlehat_A_v1",0), ("Revised_Kettlehat_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 347, weight(1)|abundance(100)|head_armor(33)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
+["eyeslot_kettlehat_a_v2", "Kettle Hat on Hood", [("Revised_Kettlehat_A_v2",0), ("Revised_Kettlehat_A_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 390, weight(1.5)|abundance(95)|head_armor(34)|body_armor(2)|leg_armor(0)|difficulty(10), imodbits_armor],
+["eyeslot_kettlehat_a_v3", "Kettle Hat on Mail", [("Revised_Kettlehat_A_v3",0), ("Revised_Kettlehat_A_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 493, weight(2)|abundance(90)|head_armor(39)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+
+["sallet_a", "Sallet", [("Revised_Sallet_A",0), ("Revised_Sallet_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 367, weight(2)|abundance(100)|head_armor(35)|body_armor(0)|leg_armor(0)|difficulty(10), imodbits_armor],
+["sallet_a_v1", "Sallet on Arming Cap", [("Revised_Sallet_A_v1",0), ("Revised_Sallet_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 401, weight(2)|abundance(95)|head_armor(37)|body_armor(0)|leg_armor(0)|difficulty(11), imodbits_armor],
+["sallet_a_v2", "Sallet on Hood", [("Revised_Sallet_A_v2",0), ("Revised_Sallet_A_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 420, weight(2.5)|abundance(95)|head_armor(37)|body_armor(2)|leg_armor(0)|difficulty(11), imodbits_armor],
+["sallet_a_v3", "Sallet on Padding", [("Revised_Sallet_A_v3",0), ("Revised_Sallet_A_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 441, weight(2.5)|abundance(95)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
+["sallet_a_v4", "Sallet on Mail", [("Revised_Sallet_A_v4",0), ("Revised_Sallet_A_v4_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 493, weight(3)|abundance(90)|head_armor(39)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+["sallet_a_v5", "Sallet on Mail", [("Revised_Sallet_A_v5",0), ("Revised_Sallet_A_v5_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 504, weight(3)|abundance(90)|head_armor(40)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+
+# MENEGRAS HELMETS START
+["menegras_sallet_a", "Menegras Sallet", [("Menegras_Sallet_A",0), ("Menegras_Sallet_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 463 , weight(2)|abundance(90)|head_armor(38)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
+["menegras_sallet_b", "Menegras Sallet open Visor", [("Menegras_Sallet_B",0), ("Menegras_Sallet_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 496 , weight(2.5)|abundance(85)|head_armor(40)|body_armor(4)|leg_armor(0)|difficulty(13), imodbits_armor],
+["menegras_sallet_c", "Menegras Sallet closed Visor", [("Menegras_Sallet_C",0), ("Menegras_Sallet_C_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 517 , weight(2.5)|abundance(85)|head_armor(42)|body_armor(4)|leg_armor(0)|difficulty(13), imodbits_armor],
+
+["menegras_kettlehat_a", "Menegras Kettle Hat", [("Menegras_Kettlehat_A",0), ("Menegras_Kettlehat_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 465 , weight(2)|abundance(85)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
+
+["menegras_chapel_a", "Menegras Chapel de Fer", [("Menegras_Chapel_A",0), ("Menegras_Chapel_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 465 , weight(2)|abundance(85)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
+["menegras_chapel_b", "Menegras Chapel de Fer", [("Menegras_Chapel_B",0), ("Menegras_Chapel_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 465 , weight(2)|abundance(85)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
+# MENEGRAS HELMETS END
+
+# NASAL HELMETS START
+["nasal_helmet_a", "Nasal Helmet", [("Revised_Nasal_A",0), ("Revised_Nasal_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 372 , weight(2)|abundance(90)|head_armor(33)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
+["nasal_helmet_a_v1", "Nasal Helmet on Hood", [("Revised_Nasal_A_v1",0), ("Revised_Nasal_A_v1_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 412 , weight(2.5)|abundance(90)|head_armor(35)|body_armor(2)|leg_armor(0)|difficulty(11), imodbits_armor],
+["nasal_helmet_a_v2", "Nasal Helmet on Padding", [("Revised_Nasal_A_v2",0), ("Revised_Nasal_A_v2_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 465 , weight(3)|abundance(90)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
+["nasal_helmet_a_v3", "Nasal Helmet on Mail", [("Revised_Nasal_A_v3",0), ("Revised_Nasal_A_v3_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 493 , weight(3.5)|abundance(90)|head_armor(39)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+["nasal_helmet_a_v4", "Nasal Helmet on Mail", [("Revised_Nasal_A_v4",0), ("Revised_Nasal_A_v4_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 504 , weight(3.5)|abundance(90)|head_armor(40)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+# NASAL HELMETS END
+
+# HELMETS END
+
 ["turret_hat_ruby", "Turret Hat", [("turret_hat_r",0)], itp_type_head_armor  |itp_civilian|itp_fit_to_head ,0, 70 , weight(0.5)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ], 
 ["turret_hat_blue", "Turret Hat", [("turret_hat_b",0)], itp_type_head_armor  |itp_civilian|itp_fit_to_head ,0, 80 , weight(0.5)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ], 
 ["turret_hat_green", "Barbette", [("barbette_new",0)],itp_merchandise|itp_type_head_armor|itp_civilian|itp_fit_to_head,0,70, weight(0.5)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0),imodbits_cloth],
@@ -1075,15 +1143,6 @@ items = [
 ["neutral_sallet_b", "Sallet", [("Neutral_Sallet_B",0), ("Neutral_Sallet_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 311 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
 ["neutral_chapel_a", "Chapel de Fer", [("Neutral_Chapel_A",0), ("Neutral_Chapel_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
 ["neutral_kettlehat_a", "Kettle Hat", [("Neutral_Kettlehat_A",0), ("Neutral_Kettlehat_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
-
-["menegras_sallet_a", "Menegras Sallet", [("Menegras_Sallet_A",0), ("Menegras_Sallet_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
-["menegras_sallet_b", "Menegras Sallet open Visor", [("Menegras_Sallet_B",0), ("Menegras_Sallet_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 311 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
-["menegras_sallet_c", "Menegras Sallet closed Visor", [("Menegras_Sallet_C",0), ("Menegras_Sallet_C_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 342 , weight(2)|abundance(100)|head_armor(42)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
-
-["menegras_kettlehat_a", "Menegras Kettle Hat", [("Menegras_Kettlehat_A",0), ("Menegras_Kettlehat_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
-
-["menegras_chapel_a", "Menegras Chapel de Fer", [("Menegras_Chapel_A",0), ("Menegras_Chapel_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 299 , weight(2)|abundance(100)|head_armor(38)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
-["menegras_chapel_b", "Menegras Chapel de Fer", [("Menegras_Chapel_B",0), ("Menegras_Chapel_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 311 , weight(2)|abundance(100)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
 
 ["fur_hat", "Fur Hat", [("fur_hat_a_new",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 4 , weight(0.5)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["nomad_cap", "Nomad Cap", [("nomad_cap_a_new",0)], itp_merchandise| itp_type_head_armor |itp_civilian  ,0, 6 , weight(0.75)|abundance(100)|head_armor(10)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
