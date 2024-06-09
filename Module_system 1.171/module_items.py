@@ -574,9 +574,6 @@ items = [
 ["menegras_brigandine_d", "Menegras House Heavy Brigandine", [("Brigandine_Menegras_D",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,1671 , weight(26)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(23)|difficulty(9) ,imodbits_armor, [], [] ],
 # MENEGRAS ARMOR END
 
-["m_aketon_a", "Aketon", [("Aketon_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,337 , weight(11)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(6)|difficulty(0) ,imodbits_cloth, [], [] ],
-["m_aketon_b", "Aketon with Kneekops", [("Aketon_Kneecops_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,489 , weight(17)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(7) ,imodbits_cloth, [], [] ],
-
 ["m_iron_crown_aketon_a", "Iron Crown Aketon", [("Iron_Crown_Aketon_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,261 , weight(10)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(14)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ],
 ["m_iron_crown_aketon_b", "Iron Crown Aketon", [("Iron_Crown_Aketon_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0 ,261 , weight(10)|abundance(100)|head_armor(0)|body_armor(22)|leg_armor(14)|difficulty(0) ,imodbits_armor, [], [fac_kingdom_4] ],
 
@@ -1043,6 +1040,30 @@ items = [
 ["heraldic_mail_with_tabard", "Heraldic Mail with Tabard", [("heraldic_armor_new_d",0)],  itp_type_body_armor  |itp_covers_legs ,0,
  3654 , weight(21)|abundance(100)|head_armor(0)|body_armor(51)|leg_armor(15)|difficulty(7) ,imodbits_armor,
  [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_heraldic_armor_d", ":agent_no", ":troop_no")])]],
+
+# ARMORS START
+# Armor Diffuculty is equal to the Armor / 3
+# Armor Price is equal to the (Armor * 30) + 33 - difficulty + (100 - abundance) * 5.5
+# Armor wariants are based on modifiers
+[
+    "white_aketon_a", 
+    "Aketon", 
+    [
+        ("White_Aketon_A", 0),
+        ("White_Aketon_A_ragged", imodbit_ragged),
+        ("White_Aketon_A_tattered", imodbit_tattered),
+        ("White_Aketon_A_sturdy", imodbit_sturdy),
+        ("White_Aketon_A_thick", imodbit_thick),
+        ("White_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise|itp_type_body_armor|itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_ragged | imodbit_tattered | imodbit_sturdy | imodbit_thick | imodbit_hardened,
+    [], []
+],
+# ARMORS END
+
 
 # HELMETS START
 # Helmet Diffuculty is equal to the Armor / 3.5

@@ -57603,7 +57603,7 @@ scripts = [
 		(val_add, ":cur_town", towns_begin),
 		(troop_clear_inventory, ":cur_merchant"),
 		(party_get_slot, ":cur_faction", ":cur_town", slot_center_original_faction),
-		(troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_body_armor, 12),
+		(troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_body_armor, 64),
 		(troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_head_armor, 12),
 		(troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_foot_armor, 6),
 		(troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_hand_armor, 6),
