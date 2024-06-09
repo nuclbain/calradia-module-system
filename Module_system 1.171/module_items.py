@@ -1537,6 +1537,24 @@ items = [
 ],
 # AKETONS END
 
+# POURPOINTS START
+[
+    "white_pourpoint_a",
+    "Pourpoint",
+    [
+        ("White_Pourpoint_A", 0),
+        ("White_Pourpoint_A_tattered", imodbit_tattered),
+        ("White_Pourpoint_A_sturdy", imodbit_sturdy),
+        ("White_Pourpoint_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_tattered | imodbit_sturdy | imodbit_thick,
+    [], []
+],
+# POURPOINTS END
+
 # ARMORS END
 
 
