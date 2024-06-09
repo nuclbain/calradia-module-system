@@ -1051,6 +1051,8 @@ items = [
 # TODO: Implement in-game recoloring
 # TODO: Implement in-game upgrading (will change the model to the next variant)
 # Using item_has_modifier operation to check for possible upgrades?
+
+# AKETONS START
 [
     "white_aketon_a", 
     "Aketon", 
@@ -1075,7 +1077,7 @@ items = [
     [
         ("White_Aketon_B", 0),
         ("White_Aketon_B_thick", imodbit_thick),
-        ("White_Aketon_B_reinforced", imodbit_hardened),
+        ("White_Aketon_B_reinforced", imodbit_reinforced),
     ],
     itp_merchandise | itp_type_body_armor | itp_covers_legs,
     0, 1188,
@@ -1145,6 +1147,66 @@ items = [
 ],
 
 [
+    "olive_aketon_b", 
+    "Olive Painted Aketon with Plates", 
+    [
+        ("Olive_Aketon_B", 0),
+        ("Olive_Aketon_B_thick", imodbit_thick),
+        ("Olive_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "olive_aketon_b_v1", 
+    "Olive Painted Aketon with Plates", 
+    [
+        ("Olive_Aketon_B_v1", 0),
+        ("Olive_Aketon_B_v1_thick", imodbit_thick),
+        ("Olive_Aketon_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "olive_aketon_b_v2", 
+    "Olive Painted Aketon with Plates", 
+    [
+        ("Olive_Aketon_B_v2", 0),
+        ("Olive_Aketon_B_v2_thick", imodbit_thick),
+        ("Olive_Aketon_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "olive_aketon_b_v3", 
+    "Olive Painted Aketon with Plates", 
+    [
+        ("Olive_Aketon_B_v3", 0),
+        ("Olive_Aketon_B_v3_thick", imodbit_thick),
+        ("Olive_Aketon_B_v3_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
     "brown_aketon_a",
     "Brown Painted Aketon",
     [
@@ -1186,6 +1248,51 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
+    [], []
+],
+
+[
+    "brown_aketon_b", 
+    "Brown Painted Aketon with Plates", 
+    [
+        ("Brown_Aketon_B", 0),
+        ("Brown_Aketon_B_thick", imodbit_thick),
+        ("Brown_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "brown_aketon_b_v1", 
+    "Brown Painted Aketon with Plates", 
+    [
+        ("Brown_Aketon_B_v1", 0),
+        ("Brown_Aketon_B_v1_thick", imodbit_thick),
+        ("Brown_Aketon_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "brown_aketon_b_v2", 
+    "Brown Painted Aketon with Plates", 
+    [
+        ("Brown_Aketon_B_v2", 0),
+        ("Brown_Aketon_B_v2_thick", imodbit_thick),
+        ("Brown_Aketon_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
     [], []
 ],
 
@@ -1235,6 +1342,51 @@ items = [
 ],
 
 [
+    "red_aketon_b", 
+    "Red Painted Aketon with Plates", 
+    [
+        ("Red_Aketon_B", 0),
+        ("Red_Aketon_B_thick", imodbit_thick),
+        ("Red_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "red_aketon_b_v1", 
+    "Red Painted Aketon with Plates", 
+    [
+        ("Red_Aketon_B_v1", 0),
+        ("Red_Aketon_B_v1_thick", imodbit_thick),
+        ("Red_Aketon_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "red_aketon_b_v2", 
+    "Red Painted Aketon with Plates", 
+    [
+        ("Red_Aketon_B_v2", 0),
+        ("Red_Aketon_B_v2_thick", imodbit_thick),
+        ("Red_Aketon_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
     "gray_aketon_a",
     "Gray Painted Aketon",
     [
@@ -1280,6 +1432,51 @@ items = [
 ],
 
 [
+    "gray_aketon_b", 
+    "Gray Painted Aketon with Plates", 
+    [
+        ("Gray_Aketon_B", 0),
+        ("Gray_Aketon_B_thick", imodbit_thick),
+        ("Gray_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "gray_aketon_b_v1", 
+    "Gray Painted Aketon with Plates", 
+    [
+        ("Gray_Aketon_B_v1", 0),
+        ("Gray_Aketon_B_v1_thick", imodbit_thick),
+        ("Gray_Aketon_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "gray_aketon_b_v2", 
+    "Gray Painted Aketon with Plates", 
+    [
+        ("Gray_Aketon_B_v2", 0),
+        ("Gray_Aketon_B_v2_thick", imodbit_thick),
+        ("Gray_Aketon_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
     "navy_aketon_a",
     "Navy Painted Aketon",
     [
@@ -1308,6 +1505,38 @@ items = [
     imodbit_thick | imodbit_hardened,
     [], []
 ],
+
+[
+    "navy_aketon_b", 
+    "Navy Painted Aketon with Plates", 
+    [
+        ("Navy_Aketon_B", 0),
+        ("Navy_Aketon_B_thick", imodbit_thick),
+        ("Navy_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "navy_aketon_b_v1", 
+    "Navy Painted Aketon with Plates", 
+    [
+        ("Navy_Aketon_B_v1", 0),
+        ("Navy_Aketon_B_v1_thick", imodbit_thick),
+        ("Navy_Aketon_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+# AKETONS END
+
 # ARMORS END
 
 
