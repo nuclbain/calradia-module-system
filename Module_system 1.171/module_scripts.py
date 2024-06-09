@@ -57594,49 +57594,64 @@ scripts = [
   ]),
 
   # script_refresh_center_armories
-  ("refresh_center_armories",
-  [
-	  (reset_item_probabilities,100),
-	  (set_merchandise_modifier_quality,150),
-	  (try_for_range, ":cur_merchant", armor_merchants_begin, armor_merchants_end),
-		(store_sub, ":cur_town", ":cur_merchant", armor_merchants_begin),
-		(val_add, ":cur_town", towns_begin),
-		(troop_clear_inventory, ":cur_merchant"),
-		(party_get_slot, ":cur_faction", ":cur_town", slot_center_original_faction),
-		(troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_body_armor, 64),
-		(troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_head_armor, 12),
-		(troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_foot_armor, 6),
-		(troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_hand_armor, 6),
-		(troop_ensure_inventory_space, ":cur_merchant", merchant_inventory_space),
-		(store_troop_gold, reg6, ":cur_merchant"),
+  (
+      "refresh_center_armories",
+      [
+          (reset_item_probabilities,100),
+          (set_merchandise_modifier_quality,150),
+          (try_for_range, ":cur_merchant", armor_merchants_begin, armor_merchants_end),
+              (store_sub, ":cur_town", ":cur_merchant", armor_merchants_begin),
+              (val_add, ":cur_town", towns_begin),
+              (troop_clear_inventory, ":cur_merchant"),
+              (party_get_slot, ":cur_faction", ":cur_town", slot_center_original_faction),
+              (troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_body_armor, 64),
+              (troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_head_armor, 12),
+              (troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_foot_armor, 6),
+              (troop_add_merchandise_with_faction, ":cur_merchant", ":cur_faction", itp_type_hand_armor, 6),
+              (troop_ensure_inventory_space, ":cur_merchant", merchant_inventory_space),
+              (store_troop_gold, reg6, ":cur_merchant"),
 
-	    ##diplomacy start+
-		#Option: scaling gold additions by the prosperity of the town.
-		(try_begin),
-			(ge, "$g_dplmc_gold_changes", DPLMC_GOLD_CHANGES_LOW),#this must be explicitly enabled
-		    (party_get_slot, ":prosperity_75", ":cur_town", slot_town_prosperity),
-			(val_add, ":prosperity_75", 75),
-			(store_mul, ":target_gold", ":prosperity_75", 900),
-			(val_add, ":target_gold", 62),
-			(val_div, ":target_gold", 125),#average 900
-			(lt, reg(6), ":target_gold"),
-			(store_random_in_range,":new_gold",200,400),
-			(val_mul, ":new_gold", ":prosperity_75"),
-			(val_add, ":new_gold", 62),
-			(val_div, ":new_gold", 125),
-			(call_script, "script_troop_add_gold", ":cur_merchant", ":new_gold"),
-		(else_try),
-			(lt, "$g_dplmc_gold_changes", DPLMC_GOLD_CHANGES_LOW),
-		    #fall through to default behavior
-		    ##diplomacy end+
-	    (lt,reg6,1000),
-	    (store_random_in_range,":new_gold",250,500),
-	    (call_script, "script_troop_add_gold", ":cur_merchant", ":new_gold"),
-		##diplomacy start+
-		(try_end),
-		##diplomacy end+
-	  (end_try),
-  ]),
+              # Remove items that cant be used by player due to a low level
+              # with 1 level gap to let player buy items tha are almost good for him
+              (store_attribute_level, ":cur_level", "trp_player", ca_strength),
+              (val_add, ":cur_level", 1),
+
+              (troop_get_inventory_capacity, ":merchant_inventory_space", ":cur_merchant"),
+              (try_for_range, ":i_slot", 10, ":merchant_inventory_space"),
+                  (troop_get_inventory_slot, ":cur_item", ":cur_merchant", ":i_slot"),
+                  (item_get_difficulty, ":item_difficulty", ":cur_item"),
+                  (try_begin),
+                      (gt, ":item_difficulty", ":cur_level"),
+                      (troop_set_inventory_slot, ":cur_merchant", ":i_slot", -1),
+                  (try_end),
+              (try_end),
+
+              # Sort items to avoid empty slots
+              (troop_sort_inventory, ":cur_merchant"),
+
+              # Option: scaling gold additions by the prosperity of the town.
+              (try_begin),
+                  (ge, "$g_dplmc_gold_changes", DPLMC_GOLD_CHANGES_LOW),#this must be explicitly enabled
+                  (party_get_slot, ":prosperity_75", ":cur_town", slot_town_prosperity),
+                  (val_add, ":prosperity_75", 75),
+                  (store_mul, ":target_gold", ":prosperity_75", 900),
+                  (val_add, ":target_gold", 62),
+                  (val_div, ":target_gold", 125),#average 900
+                  (lt, reg(6), ":target_gold"),
+                  (store_random_in_range,":new_gold",200,400),
+                  (val_mul, ":new_gold", ":prosperity_75"),
+                  (val_add, ":new_gold", 62),
+                  (val_div, ":new_gold", 125),
+                  (call_script, "script_troop_add_gold", ":cur_merchant", ":new_gold"),
+              (else_try),
+                  (lt, "$g_dplmc_gold_changes", DPLMC_GOLD_CHANGES_LOW),
+                  (lt,reg6,1000),
+                  (store_random_in_range,":new_gold",250,500),
+                  (call_script, "script_troop_add_gold", ":cur_merchant", ":new_gold"),
+              (try_end),
+          (try_end),
+      ]
+  ),
 
   # script_refresh_center_weaponsmiths
   ("refresh_center_weaponsmiths",

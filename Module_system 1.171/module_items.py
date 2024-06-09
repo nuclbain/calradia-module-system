@@ -1070,6 +1070,21 @@ items = [
 ],
 
 [
+    "white_aketon_b", 
+    "Aketon with Plates", 
+    [
+        ("White_Aketon_B", 0),
+        ("White_Aketon_B_thick", imodbit_thick),
+        ("White_Aketon_B_reinforced", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
     "olive_aketon_a", 
     "Olive Painted Aketon", 
     [
