@@ -1044,7 +1044,7 @@ items = [
 # ARMORS START
 # Armor Diffuculty is equal to the Armor / 3
 # Armor Price is equal to the (Armor * 30) + 33 - difficulty + (100 - abundance) * 5.5
-# For armors with combned protection above 40 Difficulty divider is 2
+# For armors with combned protection above 55 Difficulty divider is 2
 # Formula JIC: Armor / 2
 # Armor variants are based on modifiers
 # There is different color options for some armors
@@ -1555,8 +1555,291 @@ items = [
 ],
 # POURPOINTS END
 
-# ARMORS END
+# CHURBURG START
+[
+    "white_churburg_a",
+    "Churburg",
+    [
+        ("White_Churburg_A", 0),
+        ("White_Churburg_A_thick", imodbit_thick),
+        ("White_Churburg_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1304,
+    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
 
+[
+    "white_churburg_b",
+    "Plated Churburg",
+    [
+        ("White_Churburg_B", 0),
+        ("White_Churburg_B_thick", imodbit_thick),
+        ("White_Churburg_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "white_churburg_c",
+    "Heavy Plated Churburg",
+    [
+        ("White_Churburg_B", 0),
+        ("White_Churburg_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+# CHURBURG END
+
+# HAUBERKS START
+[
+    "white_hauberk_a",
+    "Hauberk",
+    [
+        ("White_Hauberk_A", 0),
+        ("White_Hauberk_A_rusty", imodbit_rusty),
+        ("White_Hauberk_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_rusty | imodbit_thick,
+    [], []
+],
+
+[
+    "olive_hauberk_a",
+    "Hauberk on Olive Painted Aketon",
+    [
+        ("Olive_Hauberk_A", 0),
+        ("Olive_Hauberk_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "olive_hauberk_a_v1",
+    "Hauberk on Olive Painted Aketon",
+    [
+        ("Olive_Hauberk_A_v1", 0),
+        ("Olive_Hauberk_A_v1_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "olive_hauberk_a_v2",
+    "Hauberk on Olive Painted Aketon",
+    [
+        ("Olive_Hauberk_A_v2", 0),
+        ("Olive_Hauberk_A_v2_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "olive_hauberk_a_v3",
+    "Hauberk on Olive Painted Aketon",
+    [
+        ("Olive_Hauberk_A_v3", 0),
+        ("Olive_Hauberk_A_v3_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "brown_hauberk_a",
+    "Hauberk on Brown Painted Aketon",
+    [
+        ("Brown_Hauberk_A", 0),
+        ("Brown_Hauberk_A_thick", imodbit_thick),
+        ("Brown_Hauberk_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_hardened,
+    [], []
+],
+
+[
+    "brown_hauberk_a_v1",
+    "Hauberk on Brown Painted Aketon",
+    [
+        ("Brown_Hauberk_A_v1", 0),
+        ("Brown_Hauberk_A_v1_thick", imodbit_thick),
+        ("Brown_Hauberk_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_hardened,
+    [], []
+],
+
+[
+    "brown_hauberk_a_v2",
+    "Hauberk on Brown Painted Aketon",
+    [
+        ("Brown_Hauberk_A_v2", 0),
+        ("Brown_Hauberk_A_v2_thick", imodbit_thick),
+        ("Brown_Hauberk_A_v2_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_hardened,
+    [], []
+],
+
+[
+    "red_hauberk_a",
+    "Hauberk on Red Painted Aketon",
+    [
+        ("Red_Hauberk_A", 0),
+        ("Red_Hauberk_A_thick", imodbit_thick),
+        ("Red_Hauberk_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_hardened,
+    [], []
+],
+
+[
+    "red_hauberk_a_v1",
+    "Hauberk on Red Painted Aketon",
+    [
+        ("Red_Hauberk_A_v1", 0),
+        ("Red_Hauberk_A_v1_thick", imodbit_thick),
+        ("Red_Hauberk_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_hardened,
+    [], []
+],
+
+[
+    "red_hauberk_a_v2",
+    "Hauberk on Red Painted Aketon",
+    [
+        ("Red_Hauberk_A_v2", 0),
+        ("Red_Hauberk_A_v2_thick", imodbit_thick),
+        ("Red_Hauberk_A_v2_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_hardened,
+    [], []
+],
+
+[
+    "gray_hauberk_a",
+    "Hauberk on Gray Painted Aketon",
+    [
+        ("Gray_Hauberk_A", 0),
+        ("Gray_Hauberk_A_thick", imodbit_thick),
+        ("Gray_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "gray_hauberk_a_v1",
+    "Hauberk on Gray Painted Aketon",
+    [
+        ("Gray_Hauberk_A_v1", 0),
+        ("Gray_Hauberk_A_v1_thick", imodbit_thick),
+        ("Gray_Hauberk_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "gray_hauberk_a_v2",
+    "Hauberk on Gray Painted Aketon",
+    [
+        ("Gray_Hauberk_A_v2", 0),
+        ("Gray_Hauberk_A_v2_thick", imodbit_thick),
+        ("Gray_Hauberk_A_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "navy_hauberk_a",
+    "Hauberk on Navy Painted Aketon",
+    [
+        ("Navy_Hauberk_A", 0),
+        ("Navy_Hauberk_A_thick", imodbit_thick),
+        ("Navy_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "navy_hauberk_a_v1",
+    "Hauberk on Navy Painted Aketon",
+    [
+        ("Navy_Hauberk_A_v1", 0),
+        ("Navy_Hauberk_A_v1_thick", imodbit_thick),
+        ("Navy_Hauberk_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+# HAUBERKS END
+
+# ARMORS END
 
 # HELMETS START
 # Helmet Diffuculty is equal to the Armor / 3.5
