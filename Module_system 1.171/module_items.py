@@ -1044,8 +1044,6 @@ items = [
 # ARMORS START
 # Armor Diffuculty is equal to the Armor / 3
 # Armor Price is equal to the (Armor * 30) + 33 - difficulty + (100 - abundance) * 5.5
-# For armors with combned protection above 55 Difficulty divider is 2
-# Formula JIC: Armor / 2
 # Armor variants are based on modifiers
 # There is different color options for some armors
 # TODO: Implement in-game recoloring
@@ -1838,6 +1836,191 @@ items = [
     [], []
 ],
 # HAUBERKS END
+
+# BRIGANDINES START
+[
+    "white_brigandine_a",
+    "Brigandine",
+    [
+        ("White_Brigandine_A", 0),
+        ("White_Brigandine_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1571,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
+    imodbit_reinforced,
+    [], []
+],
+
+[
+    "olive_brigandine_a",
+    "Olive Painted Brigandine",
+    [
+        ("Olive_Brigandine_A", 0),
+        ("Olive_Brigandine_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1571,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "olive_brigandine_a_v1",
+    "Olive Painted Brigandine",
+    [
+        ("Olive_Brigandine_A_v1", 0),
+        ("Olive_Brigandine_A_v1_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1571,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "olive_brigandine_b",
+    "Olive Painted Brigandine on Mail",
+    [
+        ("Olive_Brigandine_B", 0),
+        ("Olive_Brigandine_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1804,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
+    imodbit_reinforced,
+    [], []
+],
+
+[
+    "olive_brigandine_b_v1",
+    "Olive Painted Brigandine on Mail",
+    [
+        ("Olive_Brigandine_B_v1", 0),
+        ("Olive_Brigandine_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1804,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
+    imodbit_reinforced,
+    [], []
+],
+
+[
+    "red_brigandine_a",
+    "Red Painted Brigandine",
+    [
+        ("Red_Brigandine_A", 0),
+        ("Red_Brigandine_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1571,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "red_brigandine_a_v1",
+    "Red Painted Brigandine",
+    [
+        ("Red_Brigandine_A_v1", 0),
+        ("Red_Brigandine_A_v1_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1571,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "red_brigandine_b",
+    "Red Painted Brigandine on Mail",
+    [
+        ("Red_Brigandine_B", 0),
+        ("Red_Brigandine_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1804,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
+    imodbit_reinforced,
+    [], []
+],
+
+[
+    "red_brigandine_b_v1",
+    "Red Painted Brigandine on Mail",
+    [
+        ("Red_Brigandine_B_v1", 0),
+        ("Red_Brigandine_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1804,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
+    imodbit_reinforced,
+    [], []
+],
+
+[
+    "red_brigandine_c",
+    "Red Painted Brigandine with Plates",
+    [
+        ("Red_Brigandine_C", 0),
+        ("Red_Brigandine_C_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(20)|abundance(80)|head_armor(0)|body_armor(41)|leg_armor(18)|difficulty(20),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "red_brigandine_c_v1",
+    "Red Painted Brigandine with Plates",
+    [
+        ("Red_Brigandine_C_v1", 0),
+        ("Red_Brigandine_C_v1_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(20)|abundance(80)|head_armor(0)|body_armor(41)|leg_armor(18)|difficulty(20),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "red_brigandine_d",
+    "Red Painted Brigandine on Mail with Plates",
+    [
+        ("Red_Brigandine_D", 0),
+        ("Red_Brigandine_D_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2181,
+    weight(24)|abundance(70)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "red_brigandine_d_v1",
+    "Red Painted Brigandine on Mail with Plates",
+    [
+        ("Red_Brigandine_D_v1", 0),
+        ("Red_Brigandine_D_v1_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2181,
+    weight(24)|abundance(70)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
+    imodbit_thick,
+    [], []
+],
+
+# BRIGANDINES END
 
 # ARMORS END
 
