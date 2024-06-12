@@ -1614,8 +1614,8 @@ items = [
     "white_churburg_c",
     "Heavy Plated Churburg",
     [
-        ("White_Churburg_B", 0),
-        ("White_Churburg_B_reinforced", imodbit_reinforced),
+        ("White_Churburg_C", 0),
+        ("White_Churburg_C_reinforced", imodbit_reinforced),
     ],
     itp_merchandise | itp_type_body_armor | itp_covers_legs,
     0, 1745,
