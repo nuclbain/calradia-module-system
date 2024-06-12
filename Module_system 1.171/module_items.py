@@ -1070,6 +1070,32 @@ items = [
 ],
 
 [
+    "white_aketon_heraldic_a", 
+    "Aketon", 
+    [
+        ("White_Aketon_Heraldic_A.base", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbits_none,
+    [
+        (
+            ti_on_init_item,
+            [
+                (store_trigger_param_1, ":agent_no"),
+                (store_trigger_param_2, ":troop_no"),
+                (call_script, "script_shield_item_set_banner", "tableau_heraldic_aketon_a", ":agent_no", ":troop_no"),
+                # Manually set mesh after heraldic was applied to avoid applying heraldic to all meshes
+                (cur_item_add_mesh, "@White_Aketon_Heraldic_A.arms"),
+                (cur_item_add_mesh, "@White_Aketon_Heraldic_A.hose"),
+            ]
+        )
+    ],
+    []
+],
+
+[
     "white_aketon_b", 
     "Aketon with Plates", 
     [

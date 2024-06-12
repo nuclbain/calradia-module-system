@@ -248,6 +248,7 @@ meshes = [
 
   ("heraldic_armor_bg", 0, "heraldic_armor_bg",  0, 0, 0, 0, 0, 0, 10, 10, 10),
 
+  ("tableau_mesh_white_aketon_heraldic_a", 0, "Tableau_Mesh_White_Aketon_Heraldic_A",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_a", 0, "tableau_mesh_heraldic_armor_a",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_b", 0, "tableau_mesh_heraldic_armor_b",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_c", 0, "tableau_mesh_heraldic_armor_c",  0, 0, 0, 0, 0, 0, 1, 1, 1),

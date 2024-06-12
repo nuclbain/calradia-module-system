@@ -94,6 +94,8 @@ game_menus = [
                     ),
                     # For crafting test
                     (troop_add_items, "trp_player", "itm_helper_staff", 1),
+                    (troop_add_items, "trp_player", "itm_white_aketon_heraldic_a", 1),
+                    (troop_add_items, "trp_player", "itm_poulaines_c", 1),
                     (troop_add_items, "trp_player", "itm_weaponsmith_tools", 1),
                     (troop_add_items, "trp_player", "itm_armorer_tools", 1),
                     (troop_add_items, "trp_player", "itm_cheap_smithing_material", 5),
