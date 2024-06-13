@@ -126,7 +126,7 @@ troops_female = [
             itm_crossbow,
             itm_plate_armor,
             itm_coat_of_plates,
-            itm_bascinet_3,
+            itm_sallet_c,
             itm_black_helmet,
             itm_courser,
             itm_mail_boots_a,

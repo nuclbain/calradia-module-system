@@ -118,7 +118,7 @@ troops_npc = [
         fac_commoners,
         [
             itm_banded_armor,
-            itm_bascinet_3,
+            itm_sallet_c,
             itm_m_gloves_a,
             itm_shortened_bill,
             itm_light_rifle_a,
