@@ -1,23 +1,5 @@
 from module_troops_utils import *
 
-# TODO: Implement this troop tree after items revision
-# [I] Silver Rose Recruit (Level 5)
-#   ├─ [II] Silver Rose Levy (Level 10)
-#   |   ├─ [III] Silver Rose Militia (Level 15)
-#   |   |   ├─ [IV] Silver Rose Militia Captain (Level 20)
-#   |   |   |   └─ [V] Silver Rose Sergeant (Level 25)
-#   |   |   └─ [IV] Silver Rose Horseman (Level 30)
-#   |   |       └─ [V] Silver Rose Knight (Level 35)
-#   |   |           └─ [VI] Silver Rose Paladin (Level 40)
-#   |   ├─ [III] Silver Rose Crossbowman (Level 15, Ranged Infantry)
-#   |   |   ├─ [IV] Silver Rose Trained Crossbowman (Level 20, Ranged Infantry)
-#   |   |   |   └─ [V] Silver Rose Sharpshooter (Level 25, Ranged Infantry)
-#   |   |   └─ [IV] Silver Rose Handgunner (Level 20, Ranged Infantry)
-#   └─ [II] Silver Rose Watchman (Level 10, Defensive Infantry)
-#       ├─ [III] Silver Rose City Guard (Level 15, Defensive Infantry)
-#       |   ├─ [IV] Urban Sentinel (Level 20, Defensive Infantry)
-#       |   └─ [IV] City Enforcer (Level 20, Heavy Infantry)
-#       └─ [III] Silver Rose Wall Archer (Level 15, Defensive Ranged)
 troops_silver_rose = [
     # SILVER ROSE UNITS BEGIN
     [
