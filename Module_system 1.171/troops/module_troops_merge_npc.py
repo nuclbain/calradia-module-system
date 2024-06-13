@@ -66,7 +66,7 @@ troops_npc = [
         fac_commoners,
         [
             itm_hunter_c,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_mt_leather_gloves_a,
             itm_hose_a,
             itm_royal_mace_decorated,

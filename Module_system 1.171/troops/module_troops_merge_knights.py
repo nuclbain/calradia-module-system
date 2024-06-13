@@ -11,7 +11,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_plate_c_v1,
             itm_plate_boots_a,
@@ -36,7 +36,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_plate_c_v2,
             itm_plate_boots_a,
@@ -61,7 +61,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_plate_c,
             itm_plate_boots_a,
@@ -86,7 +86,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_plate_b_v1,
             itm_plate_boots_a,
@@ -111,7 +111,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_plate_a_v1,
             itm_plate_boots_a,
@@ -136,7 +136,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_brigandine_c,
             itm_m_gauntlets_a,
@@ -161,7 +161,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_mail_a_v1,
             itm_m_gauntlets_a,
@@ -187,7 +187,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_plate_a,
             itm_plate_boots_a,
@@ -214,7 +214,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_plate_a_v1,
             itm_m_gauntlets_b,
@@ -239,7 +239,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_plate_b_v1,
             itm_m_gloves_a,
@@ -264,7 +264,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_mail_a_v1,
             itm_leather_gloves,
@@ -289,7 +289,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_mail_a,
             itm_m_gauntlets_a,
@@ -314,7 +314,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_brigandine_b,
             itm_plate_boots_a,
@@ -339,7 +339,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_brigandine_a,
             itm_plate_boots_a,
@@ -364,7 +364,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_mail_b,
             itm_m_gauntlets_b,
@@ -391,7 +391,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_brigandine_a,
             itm_plate_boots_a,
@@ -416,7 +416,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_mail_b_v1,
             itm_m_gauntlets_b,
@@ -441,7 +441,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_brigandine_a,
             itm_plate_boots_a,
@@ -467,7 +467,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_brigandine_b,
             itm_plate_boots_a,
@@ -493,7 +493,7 @@ troops_knights = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_brigandine_a,
             itm_plate_boots_a,
@@ -1063,7 +1063,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_plate_a,
             itm_plate_boots_a,
@@ -1089,7 +1089,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_plate_heavy_a,
             itm_plate_boots_a,
@@ -1115,7 +1115,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_plate_a,
             itm_plate_boots_a,
@@ -1167,7 +1167,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_plate_a,
             itm_plate_boots_a,
@@ -1193,7 +1193,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_plate_b,
             itm_plate_boots_a,
@@ -1219,7 +1219,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_plate_a,
             itm_plate_boots_a,
@@ -1271,7 +1271,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_plate_a,
             itm_plate_boots_a,
@@ -1297,7 +1297,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_plate_b,
             itm_plate_boots_a,
@@ -1323,7 +1323,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_plate_b,
             itm_plate_boots_a,
@@ -1349,7 +1349,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_plate_a,
             itm_plate_boots_a,
@@ -1375,7 +1375,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_plate_b,
             itm_plate_boots_a,
@@ -1401,7 +1401,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_breastplate_heavy_b,
             itm_plate_boots_a,
@@ -1427,7 +1427,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_plate_a,
             itm_plate_boots_a,
@@ -1453,7 +1453,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_breastplate_heavy_a,
             itm_plate_boots_a,
@@ -1479,7 +1479,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_breastplate_heavy_a,
             itm_plate_boots_a,
@@ -1505,7 +1505,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_breastplate_heavy_b,
             itm_plate_boots_a,
@@ -1531,7 +1531,7 @@ troops_knights = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_celestial_breastplate_c,
             itm_plate_boots_a,
@@ -1556,7 +1556,7 @@ troops_knights = [
         reserved,
         fac_kingdom_4,
         [
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_b,
             itm_m_iron_crown_scale_b,
             itm_plate_boots_a,
@@ -1608,7 +1608,7 @@ troops_knights = [
         [
             itm_warhorse,
             itm_poulaines_b,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_plate_boots_a,
             itm_m_iron_crown_scale_b,
             itm_scale_gauntlets,
@@ -1733,7 +1733,7 @@ troops_knights = [
         reserved,
         fac_kingdom_4,
         [
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_b,
             itm_m_iron_crown_brigandine_mail_a,
             itm_plate_boots_a,
@@ -1787,7 +1787,7 @@ troops_knights = [
         [
             itm_hunter,
             itm_poulaines_b,
-            itm_courtly_outfit,
+            itm_tabard_e,
             itm_plate_boots_a,
             itm_m_iron_crown_scale_b,
             itm_m_gauntlets_a,
@@ -1810,7 +1810,7 @@ troops_knights = [
         reserved,
         fac_kingdom_4,
         [
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_b,
             itm_m_iron_crown_brigandine_mail_a,
             itm_plate_boots_a,
@@ -1860,7 +1860,7 @@ troops_knights = [
         [
             itm_warhorse,
             itm_poulaines_b,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_plate_boots_a,
             itm_m_iron_crown_brigandine_mail_b,
             itm_scale_gauntlets,
@@ -1983,7 +1983,7 @@ troops_knights = [
         reserved,
         fac_kingdom_4,
         [
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_b,
             itm_m_iron_crown_brigandine_b,
             itm_plate_boots_a,
@@ -2036,7 +2036,7 @@ troops_knights = [
         [
             itm_hunter,
             itm_poulaines_b,
-            itm_courtly_outfit,
+            itm_tabard_e,
             itm_plate_boots_a,
             itm_m_iron_crown_brigandine_b,
             itm_scale_gauntlets,
@@ -2061,7 +2061,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_hunter,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_full_plate_a,
             itm_plate_boots_a,
@@ -2087,7 +2087,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_hunter,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_full_plate_a,
             itm_plate_boots_a,
@@ -2113,7 +2113,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_hunter,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_full_plate_a,
             itm_plate_boots_a,
@@ -2139,7 +2139,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_hunter,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_c,
             itm_plate_boots_a,
@@ -2165,7 +2165,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_hunter,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_b,
             itm_plate_boots_a,
@@ -2191,7 +2191,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_hunter,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_c,
             itm_plate_boots_a,
@@ -2217,7 +2217,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_hunter,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_full_plate_a,
             itm_plate_boots_a,
@@ -2243,7 +2243,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_hunter,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_c,
             itm_plate_boots_a,
@@ -2269,7 +2269,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_saddle_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_c,
             itm_plate_boots_a,
@@ -2295,7 +2295,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_saddle_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_b,
             itm_plate_boots_a,
@@ -2321,7 +2321,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_saddle_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_a,
             itm_plate_boots_a,
@@ -2347,7 +2347,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_saddle_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_c,
             itm_plate_boots_a,
@@ -2373,7 +2373,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_saddle_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_b,
             itm_plate_boots_a,
@@ -2399,7 +2399,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_saddle_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_a,
             itm_plate_boots_a,
@@ -2425,7 +2425,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_saddle_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_b,
             itm_plate_boots_a,
@@ -2451,7 +2451,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_saddle_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_c,
             itm_plate_boots_a,
@@ -2477,7 +2477,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_saddle_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_full_b,
             itm_plate_boots_a,
@@ -2503,7 +2503,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_saddle_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_b,
             itm_plate_boots_a,
@@ -2529,7 +2529,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_saddle_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_b,
             itm_plate_boots_a,
@@ -2555,7 +2555,7 @@ troops_knights = [
         fac_kingdom_5,
         [
             itm_saddle_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_b,
             itm_m_alpine_corrazina_a,
             itm_plate_boots_a,
@@ -3636,7 +3636,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_d,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_eastern_scale_gloves_b,
             itm_hairako_full_mail_b,
@@ -3663,7 +3663,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_d,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_eastern_scale_gloves_a,
             itm_hairako_full_mail_b,
@@ -3690,7 +3690,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_b,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_eastern_scale_gloves_b,
             itm_hairako_full_mail_b,
@@ -3717,7 +3717,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_c,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_eastern_scale_gloves_b,
             itm_hairako_full_mail_a,
@@ -3744,7 +3744,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_eastern_scale_gloves_b,
             itm_hairako_full_mail_b,
@@ -3771,7 +3771,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_d,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_eastern_scale_gloves_b,
             itm_hairako_full_mail_a,
@@ -3798,7 +3798,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_d,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_eastern_scale_gloves_b,
             itm_hairako_full_mail_a,
@@ -3825,7 +3825,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_b,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_eastern_scale_gloves_a,
             itm_hairako_full_mail_a,
@@ -3853,7 +3853,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_d,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_eastern_scale_gloves_b,
             itm_hairako_long_coat_scale_d,
@@ -3879,7 +3879,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_b,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_eastern_scale_gloves_b,
             itm_hairako_long_coat_scale_a,
@@ -3905,7 +3905,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_eastern_scale_gloves_b,
             itm_hairako_long_coat_scale_a,
@@ -3931,7 +3931,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_c,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_mail_mittens,
             itm_hairako_long_coat_scale_d,
@@ -3957,7 +3957,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_d,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_mail_mittens,
             itm_hairako_long_coat_scale_a,
@@ -3983,7 +3983,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_d,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_mail_mittens,
             itm_hairako_long_coat_scale_a,
@@ -4009,7 +4009,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_mail_mittens,
             itm_hairako_long_coat_scale_a,
@@ -4035,7 +4035,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_d,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_mail_mittens,
             itm_hairako_long_coat_scale_d,
@@ -4061,7 +4061,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_decorated_leather_gloves_a,
             itm_hairako_long_coat_scale_b,
@@ -4088,7 +4088,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_b,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_decorated_leather_gloves_a,
             itm_hairako_long_coat_scale_a,
@@ -4114,7 +4114,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse_b,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_decorated_leather_gloves_a,
             itm_hairako_long_coat_scale_b,
@@ -4140,7 +4140,7 @@ troops_knights = [
         fac_kingdom_8,
         [
             itm_steppe_horse,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_d,
             itm_old_mail_gloves,
             itm_hairako_long_coat_scale_a,
@@ -4165,7 +4165,7 @@ troops_knights = [
         reserved,
         fac_kingdom_9,
         [
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_hose_b,
             itm_m_tauria_brigandine_b,
             itm_plate_boots_a,
@@ -4295,7 +4295,7 @@ troops_knights = [
         reserved,
         fac_kingdom_9,
         [
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_hose_b,
             itm_m_tauria_brigandine_a,
             itm_plate_boots_a,
@@ -4321,7 +4321,7 @@ troops_knights = [
         reserved,
         fac_kingdom_9,
         [
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_hose_b,
             itm_m_tauria_plate_mail_b,
             itm_plate_boots_a,
@@ -4633,7 +4633,7 @@ troops_knights = [
         reserved,
         fac_kingdom_9,
         [
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_hose_b,
             itm_m_tauria_plate_mail_b,
             itm_plate_boots_a,
@@ -4659,7 +4659,7 @@ troops_knights = [
         reserved,
         fac_kingdom_9,
         [
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_hose_b,
             itm_m_tauria_vest_heavy_b,
             itm_plate_boots_a,
@@ -4685,7 +4685,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_plated_leather_b,
             itm_plate_boots_a,
@@ -4710,7 +4710,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_plated_leather_b,
             itm_plate_boots_a,
@@ -4736,7 +4736,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_plated_leather_a,
             itm_plate_boots_a,
@@ -4762,7 +4762,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_plated_leather_b,
             itm_plate_boots_a,
@@ -4787,7 +4787,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_plated_leather_b,
             itm_plate_boots_a,
@@ -4813,7 +4813,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_plated_leather_a,
             itm_plate_boots_a,
@@ -4838,7 +4838,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_plated_leather_a,
             itm_plate_boots_a,
@@ -4863,7 +4863,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_plated_leather_a,
             itm_plate_boots_a,
@@ -4889,7 +4889,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_lamellar_d,
             itm_plate_boots_a,
@@ -4913,7 +4913,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_lamellar_a,
             itm_plate_boots_a,
@@ -4938,7 +4938,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_lamellar_b,
             itm_plate_boots_a,
@@ -4964,7 +4964,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_lamellar_c,
             itm_plate_boots_a,
@@ -4989,7 +4989,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_lamellar_c,
             itm_plate_boots_a,
@@ -5014,7 +5014,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_lamellar_c,
             itm_plate_boots_a,
@@ -5039,7 +5039,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_lamellar_c,
             itm_plate_boots_a,
@@ -5064,7 +5064,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_lamellar_b,
             itm_plate_boots_a,
@@ -5088,7 +5088,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_lamellar_b,
             itm_plate_boots_a,
@@ -5113,7 +5113,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_lamellar_a,
             itm_plate_boots_a,
@@ -5138,7 +5138,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_lamellar_c,
             itm_plate_boots_a,
@@ -5163,7 +5163,7 @@ troops_knights = [
         reserved,
         fac_kingdom_10,
         [
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_lamellar_a,
             itm_plate_boots_a,
@@ -5726,7 +5726,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_black_knight_horse_a,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_m_gauntlets_a,
             itm_coat_of_plates_v3,
@@ -5752,7 +5752,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_black_knight_horse_a,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_coat_of_plates_v3,
             itm_m_gloves_a,
@@ -5779,7 +5779,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_black_knight_horse_a,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_black_armor,
             itm_m_gauntlets_a,
@@ -5802,7 +5802,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_black_knight_horse_a,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_m_gloves_a,
             itm_black_armor,
@@ -5827,7 +5827,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_black_armor,
             itm_m_gloves_a,
@@ -5853,7 +5853,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_black_armor,
             itm_m_gloves_a,
@@ -5879,7 +5879,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_black_armor,
             itm_m_gloves_a,
@@ -5905,7 +5905,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_black_armor,
             itm_m_gloves_a,
@@ -5931,7 +5931,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter_f,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_coat_of_plates,
             itm_m_gloves_a,
@@ -5957,7 +5957,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter_d,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_coat_of_plates,
             itm_m_gloves_a,
@@ -5983,7 +5983,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_coat_of_plates,
             itm_m_gloves_a,
@@ -6009,7 +6009,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_coat_of_plates,
             itm_m_gloves_a,
@@ -6035,7 +6035,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter_f,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_coat_of_plates,
             itm_m_gloves_a,
@@ -6061,7 +6061,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter_b,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_coat_of_plates,
             itm_m_gloves_a,
@@ -6087,7 +6087,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter_b,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_coat_of_plates_v1,
             itm_m_gloves_a,
@@ -6113,7 +6113,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter_b,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_coat_of_plates_v1,
             itm_m_gloves_a,
@@ -6139,7 +6139,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter_e,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_coat_of_plates_v1,
             itm_m_gloves_a,
@@ -6165,7 +6165,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter_c,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_coat_of_plates_v1,
             itm_m_gloves_a,
@@ -6191,7 +6191,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter_c,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_stormguard_aketon_plated_b_v1,
             itm_m_gloves_a,
@@ -6217,7 +6217,7 @@ troops_knights = [
         fac_kingdom_12,
         [
             itm_hunter_d,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_stormguard_hauberk_a,
             itm_m_gloves_a,

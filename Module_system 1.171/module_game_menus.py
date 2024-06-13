@@ -1886,7 +1886,7 @@ game_menus = [
                     (troop_add_gold, "trp_player", 80),
                     (troop_raise_proficiency, "trp_player", wpt_one_handed_weapon, 25),
                     (troop_raise_proficiency, "trp_player", wpt_crossbow, 10),
-                    (troop_add_item, "trp_player", "itm_tabard", imod_sturdy),
+                    (troop_add_item, "trp_player", "itm_tabard_a", imod_sturdy),
                     (troop_add_item, "trp_player", "itm_sword_medieval_a", imod_rusty),
                     (troop_add_item, "trp_player", "itm_hunting_crossbow", 0),
                     (troop_add_item, "trp_player", "itm_bolts", 0),

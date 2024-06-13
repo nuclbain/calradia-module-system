@@ -3012,7 +3012,7 @@ troops_town = [
         woman_face_1,
         woman_face_2,
     ],
-    # Town Mayors    #itm_courtly_outfit itm_gambeson itm_blue_gambeson itm_red_gambeson itm_nobleman_outfit itm_rich_outfit
+    # Town Mayors    #itm_tabard_e itm_gambeson itm_blue_gambeson itm_red_gambeson itm_tabard_f itm_tabard_d
     [
         "town_1_mayor",
         "Guild_Master",
@@ -3021,7 +3021,7 @@ troops_town = [
         0,
         reserved,
         fac_neutral,
-        [itm_poulaines_d, itm_courtly_outfit],
+        [itm_poulaines_d, itm_tabard_e],
         def_attrib | level(2),
         wp(20),
         knows_common,
@@ -3083,7 +3083,7 @@ troops_town = [
         fac_neutral,
         [
             itm_poulaines_d,
-            itm_nobleman_outfit,
+            itm_tabard_f,
         ],
         def_attrib | level(2),
         wp(20),
@@ -3116,7 +3116,7 @@ troops_town = [
         fac_neutral,
         [
             itm_poulaines_d,
-            itm_rich_outfit,
+            itm_tabard_d,
         ],
         def_attrib | level(2),
         wp(20),
@@ -3147,7 +3147,7 @@ troops_town = [
         0,
         reserved,
         fac_neutral,
-        [itm_poulaines_d, itm_courtly_outfit],
+        [itm_poulaines_d, itm_tabard_e],
         def_attrib | level(2),
         wp(20),
         knows_common,
@@ -3210,7 +3210,7 @@ troops_town = [
         0,
         reserved,
         fac_neutral,
-        [itm_poulaines_d, itm_nobleman_outfit],
+        [itm_poulaines_d, itm_tabard_f],
         def_attrib | level(2),
         wp(20),
         knows_common,
@@ -3270,7 +3270,7 @@ troops_town = [
         0,
         reserved,
         fac_neutral,
-        [itm_poulaines_d, itm_nobleman_outfit],
+        [itm_poulaines_d, itm_tabard_f],
         def_attrib | level(2),
         wp(20),
         knows_common,

@@ -4169,7 +4169,7 @@ Still I am sorry that I'll leave you soon. You must promise me, you'll come visi
 # (try_begin),
    # (troop_add_item, "$g_talk_troop", "itm_saddle_horse", 0),
    # (troop_add_item, "$g_talk_troop", "itm_courser", 0),
-   # (troop_add_item, "$g_talk_troop", "itm_courtly_outfit",0),
+   # (troop_add_item, "$g_talk_troop", "itm_tabard_e",0),
    # (troop_add_item, "$g_talk_troop", "itm_heraldic_mail_with_tabard",0),
    # (troop_add_item, "$g_talk_troop", "itm_red_gambeson",0),
    # (troop_add_item, "$g_talk_troop", "itm_sword_medieval_c",0),
@@ -9756,7 +9756,7 @@ What kind of recruits do you want?", "dplmc_constable_recruit_select",
 (try_for_range, ":slots", ek_food + 1, ":cap"),
   (troop_get_inventory_slot, ":item_no", "$g_talk_troop", ":slots"),
   (gt, ":item_no", 0), #item found
-  (neq, ":item_no", "itm_tabard"), #item found
+  (neq, ":item_no", "itm_tabard_a"), #item found
   (assign, ":cap", -1), #break
 (try_end),
 (eq, ":cap", -1),

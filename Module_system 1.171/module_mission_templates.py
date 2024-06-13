@@ -6039,10 +6039,10 @@ mission_templates = [
     "wedding",0,-1,
     "Wedding",
     [
-        (0,mtef_visitor_source,af_override_everything,0,1,[itm_tabard]),
+        (0,mtef_visitor_source,af_override_everything,0,1,[itm_tabard_a]),
         (1,mtef_visitor_source,af_override_everything,0,1,[itm_bride_dress, itm_bride_crown, itm_bride_shoes]),
         (2,mtef_visitor_source,af_castle_lord,0,1,[]),
-        (3,mtef_visitor_source,af_override_everything,0,1,[itm_courtly_outfit]),
+        (3,mtef_visitor_source,af_override_everything,0,1,[itm_tabard_e]),
         (4,mtef_visitor_source,af_castle_lord,0,1,[]),
         (5,mtef_visitor_source,af_castle_lord,0,1,[]),
         (6,mtef_visitor_source,af_castle_lord,0,1,[]),

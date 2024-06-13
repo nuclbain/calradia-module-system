@@ -11,9 +11,9 @@ troops_pretenders = [
         fac_kingdom_1,
         [
             itm_charger,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_d,
-            itm_tabard_v2,
+            itm_tabard_a_v2,
             itm_mail_boots_a,
             itm_sword_medieval_c_small,
             itm_tab_shield_small_round_c,
@@ -35,7 +35,7 @@ troops_pretenders = [
         fac_kingdom_2,
         [
             itm_hunter,
-            itm_courtly_outfit,
+            itm_tabard_e,
             itm_poulaines_d,
             itm_chornovalley_mail_a,
             itm_mail_boots_b,
@@ -85,7 +85,7 @@ troops_pretenders = [
         fac_kingdom_4,
         [
             itm_hunter,
-            itm_tabard,
+            itm_tabard_a,
             itm_poulaines_d,
             itm_m_brigandine_navy_c,
             itm_mail_boots_a,
@@ -110,7 +110,7 @@ troops_pretenders = [
         fac_kingdom_5,
         [
             itm_warhorse,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_mail_hauberk,
             itm_mail_boots_b,

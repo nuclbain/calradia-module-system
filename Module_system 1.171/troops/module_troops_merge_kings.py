@@ -13,7 +13,7 @@ troops_kings = [
         fac_kingdom_1,
         [
             itm_silver_rose_heavy_horse_a,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_poulaines_a,
             itm_silver_rose_plate_c_v2,
             itm_plate_boots_a,
@@ -38,7 +38,7 @@ troops_kings = [
         fac_kingdom_2,
         [
             itm_hunter,
-            itm_courtly_outfit,
+            itm_tabard_e,
             itm_poulaines_d,
             itm_chornovalley_heavy_lamellar_c,
             itm_plate_boots_a,
@@ -64,7 +64,7 @@ troops_kings = [
         fac_kingdom_3,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_celestial_plate_heavy_a,
             itm_plate_boots_a,
@@ -90,7 +90,7 @@ troops_kings = [
         fac_kingdom_4,
         [
             itm_hunter,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_poulaines_d,
             itm_m_iron_crown_scale_b,
             itm_plate_boots_a,
@@ -116,7 +116,7 @@ troops_kings = [
         fac_kingdom_5,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_alpine_full_plate_a,
             itm_plate_boots_a,
@@ -193,7 +193,7 @@ troops_kings = [
         fac_kingdom_8,
         [
             itm_steppe_horse_d,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_c,
             itm_hairako_full_mail_b,
             itm_mail_boots_a,
@@ -224,7 +224,7 @@ troops_kings = [
         fac_kingdom_9,
         [
             itm_mt_horse_b3,
-            itm_rich_outfit,
+            itm_tabard_d,
             itm_hose_d,
             itm_m_tauria_brigandine_b,
             itm_plate_boots_a,
@@ -250,7 +250,7 @@ troops_kings = [
         fac_kingdom_10,
         [
             itm_warhorse,
-            itm_tabard,
+            itm_tabard_a,
             itm_hose_b,
             itm_m_elen_plated_leather_b,
             itm_plate_boots_a,
@@ -302,7 +302,7 @@ troops_kings = [
         fac_kingdom_12,
         [
             itm_black_knight_horse_a,
-            itm_nobleman_outfit,
+            itm_tabard_f,
             itm_hose_a,
             itm_coat_of_plates_v3,
             itm_plate_boots_a,

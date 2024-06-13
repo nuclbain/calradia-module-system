@@ -429,9 +429,6 @@ items = [
 ["sarranid_lady_dress_b", "Eastern Lady Dress", [("sarranid_lady_dress_b",0)], itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 500 , weight(3)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0) ,imodbits_cloth],
 ["sarranid_common_dress", "Eastern Dress", [("sarranid_common_dress",0)], itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 500 , weight(3)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0) ,imodbits_cloth],
 ["sarranid_common_dress_b", "Eastern Dress", [("sarranid_common_dress_b",0)], itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 500 , weight(3)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0) ,imodbits_cloth],
-["courtly_outfit", "Courtly Outfit", [("Rich_Tabard_B",0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
-["nobleman_outfit", "Nobleman Outfit", [("Rich_Tabard_C",0),], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(12)|difficulty(0) ,imodbits_cloth ], 
-["nobleman_outfit_a", "Nobleman Outfit", [("Rich_Surcoat_C",0),], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(12)|difficulty(0) ,imodbits_cloth ], 
 ["leather_jacket", "Merchant Jacket", [("Leather_Jacket_A",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs  |itp_civilian ,0, 250 , weight(3)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(15)|difficulty(0) ,imodbits_cloth ],
 
 #NEW:
@@ -536,12 +533,6 @@ items = [
  47 , weight(2)|abundance(100)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
 ["leather_apron", "Peasant Leather Vest", [("Peasant_Tunic_B",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
  87 , weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
-#NEW: was tabard_a
-["tabard", "Tabard", [("Tabard_Short_A",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs|itp_civilian, 0,  107, weight(3)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth],
-["tabard_v1", "Guard Tabard", [("Tabard_Short_A_v1",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs, 0, 307, weight(10)|abundance(100)|head_armor(0)|body_armor(21)|leg_armor(6)|difficulty(0),imodbits_cloth],
-["tabard_v2", "Guard Tabard with Plates", [("Tabard_Short_A_v2",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs, 0, 507, weight(16)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(16)|difficulty(6),imodbits_armor],
-["tabard_b", "Tabard", [("Tabard_Short_B",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs|itp_civilian, 0,  107, weight(3)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth],
-["tabard_c", "Tabard", [("Tabard_Short_C",0)], itp_merchandise|itp_type_body_armor |itp_covers_legs|itp_civilian, 0,  107, weight(3)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(6)|difficulty(0),imodbits_cloth],
 #NEW: was leather_vest
 ["leather_vest", "Leather Vest", [("Leather_Vest_Revised_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0,
  146 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(15)|difficulty(0) ,imodbits_cloth ],
@@ -1049,6 +1040,111 @@ items = [
 # TODO: Implement in-game recoloring
 # TODO: Implement in-game upgrading (will change the model to the next variant)
 # Using item_has_modifier operation to check for possible upgrades?
+
+# TABARDS START
+[
+    "tabard_a",
+    "Tabard",
+    [
+        ("Revised_Tabard_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 543,
+    weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "tabard_a_v1",
+    "Lightly Plated Tabard",
+    [
+        ("Revised_Tabard_A_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 656,
+    weight(8)|abundance(100)|head_armor(0)|body_armor(16)|leg_armor(5)|difficulty(7),
+    imodbits_none,
+    [], []
+],
+
+[
+    "tabard_a_v2",
+    "Plated Tabard",
+    [
+        ("Revised_Tabard_A_v2", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 982,
+    weight(14)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(12)|difficulty(11),
+],
+
+[
+    "tabard_b",
+    "Tabard",
+    [
+        ("Revised_Tabard_B", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 543,
+    weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "tabard_c",
+    "Tabard",
+    [
+        ("Revised_Tabard_C", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 543,
+    weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "tabard_d",
+    "Tabard",
+    [
+        ("Revised_Tabard_D", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 543,
+    weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "tabard_e",
+    "Tabard",
+    [
+        ("Revised_Tabard_E", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 543,
+    weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "tabard_f",
+    "Tabard",
+    [
+        ("Revised_Tabard_F", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 543,
+    weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+# TABARDS END
 
 # AKETONS START
 [
@@ -3391,7 +3487,6 @@ items = [
 ["strange_great_sword",  "Strange Great Sword", [("no_dachi",0),("no_dachi_scabbard",ixmesh_carry)], itp_type_two_handed_wpn|itp_two_handed|itp_primary, itc_nodachi|itcf_carry_sword_back|itcf_show_holster_when_drawn, 920 , weight(3.5)|difficulty(11)|spd_rtng(92) | weapon_length(125)|swing_damage(38 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
 ["strange_short_sword", "Strange Short Sword", [("wakizashi",0),("wakizashi_scabbard",ixmesh_carry)], itp_type_one_handed_wpn|itp_primary, itc_longsword|itcf_carry_wakizashi|itcf_show_holster_when_drawn, 321 , weight(1.25)|difficulty(0)|spd_rtng(108) | weapon_length(65)|swing_damage(25 , cut) | thrust_damage(19 ,  pierce),imodbits_sword ],
 ["court_dress", "Court Dress", [("court_dress",0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(14)|leg_armor(4)|difficulty(0) ,imodbits_cloth ],
-["rich_outfit", "Rich Outfit", [("Rich_Tabard_A",0)], itp_type_body_armor|itp_covers_legs|itp_civilian   ,0, 348 , weight(4)|abundance(100)|head_armor(0)|body_armor(16)|leg_armor(4)|difficulty(0) ,imodbits_cloth ],
 ["khergit_guard_armor", "Khergit Guard Armor", [("lamellar_armor_a",0)], itp_type_body_armor|itp_covers_legs   ,0, 
 3048 , weight(25)|abundance(100)|head_armor(0)|body_armor(50)|leg_armor(18)|difficulty(0) ,imodbits_armor ],
 #["leather_steppe_cap_c", "Leather Steppe Cap", [("leather_steppe_cap_c",0)], itp_type_head_armor   ,0, 51 , weight(2)|abundance(100)|head_armor(18)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
