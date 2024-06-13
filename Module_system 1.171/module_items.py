@@ -2156,6 +2156,8 @@ items = [
 ["felt_b", "Felt Hat", [("Revised_Felt_B",0), ("Revised_Felt_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 51, weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
 ["felt_b_v1", "Felt Hat on Hood", [("Revised_Felt_B_v1",0), ("Revised_Felt_B_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 93, weight(1)|abundance(100)|head_armor(6)|body_armor(2)|leg_armor(0)|difficulty(0), imodbits_cloth],
 
+["arming_cap_a", "Arming Cap", [("Revised_Arming_Cap_A",0), ("Revised_Arming_Cap_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 104, weight(1)|abundance(100)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_none],
+
 ["padded_coif_a", "Padded Coif", [("Revised_Padded_Coif_A",0), ("Revised_Padded_Coif_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 156, weight(1)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
 ["padded_coif_b", "Padded Coif", [("Revised_Padded_Coif_B",0), ("Revised_Padded_Coif_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 156, weight(1)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
 

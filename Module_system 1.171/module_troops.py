@@ -97,7 +97,7 @@ upgrade2(
 upgrade(troops, "stormguard_tempest_sentinel", "stormguard_elite_stormguard")
 
 # new troop trees for native factions
-upgrade(troops, "silver_rose_novice", "silver_rose_levy")
+upgrade(troops, "silver_rose_recruit", "silver_rose_levy")
 
 # native
 upgrade2(troops, "silver_rose_levy", "silver_rose_milita", "silver_rose_scout")
