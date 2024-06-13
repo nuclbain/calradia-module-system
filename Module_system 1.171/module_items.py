@@ -1623,6 +1623,102 @@ items = [
     imodbit_thick | imodbit_reinforced,
     [], []
 ],
+
+[
+    "red_churburg_a",
+    "Churburg on Red Pourpoint",
+    [
+        ("Red_Churburg_A", 0),
+        ("Red_Churburg_A_thick", imodbit_thick),
+        ("Red_Churburg_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1304,
+    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "red_churburg_b",
+    "Plated Churburg on Red Pourpoint",
+    [
+        ("Red_Churburg_B", 0),
+        ("Red_Churburg_B_thick", imodbit_thick),
+        ("Red_Churburg_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "red_churburg_c",
+    "Heavy Plated Churburg on Red Pourpoint",
+    [
+        ("Red_Churburg_C", 0),
+        ("Red_Churburg_C_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "red_churburg_mail_a",
+    "Churburg with Mail on Red Pourpoint",
+    [
+        ("Red_Churburg_Mail_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(37)|leg_armor(11)|difficulty(16),
+    imodbits_none,
+    [], []
+],
+
+[
+    "red_churburg_mail_b",
+    "Plated Churburg with Mail on Red Pourpoint",
+    [
+        ("Red_Churburg_Mail_B", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(24)|abundance(90)|head_armor(0)|body_armor(41)|leg_armor(13)|difficulty(18),
+    imodbits_none,
+    [], []
+],
+
+[
+    "red_churburg_mail_c",
+    "Heavy Plated Churburg with Mail on Red Pourpoint",
+    [
+        ("Red_Churburg_Mail_C", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2071,
+    weight(28)|abundance(80)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
+    imodbits_none,
+    [], []
+],
+
+[
+    "red_churburg_mail_c_v1",
+    "Heavy Plated Decorated Churburg with Mail on Red Pourpoint",
+    [
+        ("Red_Churburg_Mail_C_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2236,
+    weight(28)|abundance(50)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
+    imodbits_none,
+    [], []
+],
 # CHURBURG END
 
 # HAUBERKS START
