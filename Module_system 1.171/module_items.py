@@ -1041,6 +1041,74 @@ items = [
 # TODO: Implement in-game upgrading (will change the model to the next variant)
 # Using item_has_modifier operation to check for possible upgrades?
 
+# TUNICS START
+# For tunics, the difficulty is 0, and the price is (Armor * 15)
+[
+    "tunic_a",
+    "Tunic",
+    [
+        ("Revised_Tunic_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 165,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "tunic_b",
+    "Tunic",
+    [
+        ("Revised_Tunic_B", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 165,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "tunic_c",
+    "Tunic",
+    [
+        ("Revised_Tunic_C", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 165,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "tunic_d",
+    "Tunic with Vest",
+    [
+        ("Revised_Tunic_D", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 195,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "tunic_e",
+    "Tunic with Leather Vest",
+    [
+        ("Revised_Tunic_E", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 240,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(11)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+# TUNICS END
+
 # TABARDS START
 [
     "tabard_a",
