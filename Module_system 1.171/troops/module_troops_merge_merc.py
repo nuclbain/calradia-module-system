@@ -507,7 +507,6 @@ troops_mercenaries = [
             itm_menegras_chapel_b,
             itm_menegras_brigandine_a,
             itm_menegras_brigandine_b,
-            itm_m_hauberk_c,
             itm_mail_mittens,
             itm_old_mail_gloves,
             itm_m_gloves_a,

@@ -105,7 +105,7 @@ troops_manhunters = [
         [
             itm_sledgehammer,
             itm_spiked_mace,
-            itm_mail_hauberk,
+            itm_white_hauberk_a,
             itm_sallet_b,
             itm_sallet_c,
             itm_mail_mittens,
@@ -131,7 +131,6 @@ troops_manhunters = [
         [
             itm_military_hammer,
             itm_warhammer,
-            itm_brigandine_red,
             itm_steel_shield,
             itm_scale_gauntlets,
             itm_mail_mittens,

@@ -294,7 +294,7 @@ troops_npc = [
         reserved,
         fac_commoners,
         [
-            itm_m_hauberk_mountain_d,
+            itm_olive_hauberk_a_v1,
             itm_m_gloves_a,
             itm_leather_boots_b,
             itm_m_scimitar_a,

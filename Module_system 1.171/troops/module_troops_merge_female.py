@@ -88,7 +88,7 @@ troops_female = [
             itm_hatchet,
             itm_voulge,
             itm_stormguard_hauberk_a,
-            itm_m_hauberk_navy_c,
+            itm_gray_hauberk_a,
             itm_hose_d,
             itm_poulaines_d,
             itm_skullcap,
