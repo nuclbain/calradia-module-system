@@ -308,7 +308,6 @@ troops_silver_rose = [
             itm_swadia_footman_shield_2,
             itm_swadia_footman_shield_3,
             itm_swadia_footman_shield_4,
-            itm_m_sergant_helmet_a,
             itm_silver_rose_plate_a,
             itm_silver_rose_plate_b,
             itm_silver_rose_recruit_plated_e,

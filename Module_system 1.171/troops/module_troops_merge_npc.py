@@ -227,7 +227,6 @@ troops_npc = [
             itm_coat_of_plates,
             itm_medium_rifle_f,
             itm_cartridges,
-            itm_scottish_sword,
             itm_tab_shield_pavise_d,
             itm_mail_boots_b,
             itm_m_gauntlets_a,
