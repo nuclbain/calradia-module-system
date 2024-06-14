@@ -1077,6 +1077,8 @@ items = [
     itp_merchandise | itp_type_body_armor | itp_covers_legs,
     0, 982,
     weight(14)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(12)|difficulty(11),
+    imodbits_none,
+    [], []
 ],
 
 [
