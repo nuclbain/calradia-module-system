@@ -2650,6 +2650,290 @@ items = [
 ],
 # KNIGHT SWORDS END
 
+# TWO HANDED SWORDS START
+# +100 price for two handed
+[
+    "sword_great_a",
+    "Great Sword",
+    [
+        ("Revised_Great_Sword_A",0),
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_two_handed | itp_primary,
+    itc_greatsword | itcf_carry_sword_back,
+    373,
+    weight(3.5) | difficulty(13) | spd_rtng(94) | weapon_length(123) | swing_damage(39, cut) | thrust_damage(30,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_great_a_v1",
+    "Great Sword",
+    [
+        ("Revised_Great_Sword_A_v1",0),
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_two_handed | itp_primary,
+    itc_greatsword | itcf_carry_sword_back,
+    383,
+    weight(3.5) | difficulty(13) | spd_rtng(94) | weapon_length(135) | swing_damage(41, cut) | thrust_damage(32,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_great_b",
+    "Great Sword of War",
+    [
+        ("Revised_Great_Sword_B",0),
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_two_handed | itp_primary,
+    itc_greatsword | itcf_carry_sword_back,
+    420,
+    weight(4.0) | difficulty(15) | spd_rtng(93) | weapon_length(169) | swing_damage(45, cut) | thrust_damage(28,  pierce),
+    imodbits_sword_high
+],
+# TWO HANDED SWORDS END
+
+# BLUNT WEAPONS START
+[
+    "hammer_a",
+    "Smith's Hammer",
+    [
+        ("Revised_Hammer_A",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    65,
+    weight(1.0) | difficulty(0) | spd_rtng(95) | weapon_length(45) | swing_damage(17, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "mace_a",
+    "Knobbed Mace",
+    [
+        ("Revised_Mace_A",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    177,
+    weight(1.5) | difficulty(7) | spd_rtng(99) | weapon_length(65) | swing_damage(21, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "mace_a_v1",
+    "Knobbed Mace",
+    [
+        ("Revised_Mace_A_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    183,
+    weight(1.75) | difficulty(8) | spd_rtng(98) | weapon_length(65) | swing_damage(24, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "mace_a_v2",
+    "Knobbed Mace",
+    [
+        ("Revised_Mace_A_v2",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    185,
+    weight(1.75) | difficulty(8) | spd_rtng(98) | weapon_length(65) | swing_damage(23, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "mace_a_v3",
+    "Knobbed Mace",
+    [
+        ("Revised_Mace_A_v3",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    187,
+    weight(1.75) | difficulty(8) | spd_rtng(98) | weapon_length(65) | swing_damage(24, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "mace_a_v4",
+    "Knobbed Mace",
+    [
+        ("Revised_Mace_A_v4",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    187,
+    weight(1.75) | difficulty(8) | spd_rtng(98) | weapon_length(65) | swing_damage(24, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],  
+# BLUNT WEAPONS END
+
+# PIERCING WEAPONS START
+[
+    "pickaxe_a",
+    "Pickaxe",
+    [
+        ("Revised_Pickaxe_A",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    197,
+    weight(1.5) | difficulty(7) | spd_rtng(95) | weapon_length(58) | swing_damage(21, pierce) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "pickaxe_a_v1",
+    "Great Pickaxe",
+    [
+        ("Revised_Pickaxe_A_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    213,
+    weight(1.75) | difficulty(8) | spd_rtng(95) | weapon_length(65) | swing_damage(22, pierce) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "military_pick_a",
+    "Military Pick",
+    [
+        ("Revised_Military_Pick_A",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    257,
+    weight(2.0) | difficulty(8) | spd_rtng(95) | weapon_length(60) | swing_damage(25, pierce) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "military_pick_a_v1",
+    "Military Pick",
+    [
+        ("Revised_Military_Pick_A_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    263,
+    weight(2.5) | difficulty(9) | spd_rtng(95) | weapon_length(60) | swing_damage(27, pierce) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "military_pick_a_v2",
+    "Military Pick",
+    [
+        ("Revised_Military_Pick_A_v2",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    275,
+    weight(2.5) | difficulty(10) | spd_rtng(95) | weapon_length(60) | swing_damage(29, pierce) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+# PIERCING WEAPONS END
+
+# LIGHT AXES START
+[
+    "hatchet_a",
+    "Hatchet",
+    [
+        ("Revised_Hatchet_A",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary | itp_secondary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_scimitar | itcf_carry_axe_left_hip,
+    43,
+    weight(2) | difficulty(0) | spd_rtng(97) | weapon_length(45) | swing_damage(23, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
+
+[
+    "hatchet_a_v1",
+    "Hatchet with Long Handle",
+    [
+        ("Revised_Hatchet_A_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary | itp_secondary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_scimitar | itcf_carry_axe_left_hip,
+    67,
+    weight(2.5) | difficulty(0) | spd_rtng(97) | weapon_length(56) | swing_damage(25, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
+
+[
+    "hatchet_b",
+    "Hatchet",
+    [
+        ("Revised_Hatchet_B",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary | itp_secondary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_scimitar | itcf_carry_axe_left_hip,
+    153,
+    weight(2) | difficulty(8) | spd_rtng(99) | weapon_length(45) | swing_damage(26, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
+
+[
+    "hatchet_b_v1",
+    "Hatchet with Long Handle",
+    [
+        ("Revised_Hatchet_B_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary | itp_secondary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_scimitar | itcf_carry_axe_left_hip,
+    177,
+    weight(2.5) | difficulty(9) | spd_rtng(99) | weapon_length(60) | swing_damage(28, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
+# LIGHT AXES END
+
+# HEAVY AXES START
+[
+    "heavy_axe_a",
+    "Heavy Axe",
+    [
+        ("Revised_Heavy_Axe_A",0),
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_two_handed | itp_primary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_nodachi | itcf_carry_axe_back,
+    198,
+    weight(4) | difficulty(11) | spd_rtng(91) | weapon_length(86) | swing_damage(32, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
+
+[
+    "heavy_war_axe_a",
+    "Heavy War Axe",
+    [
+        ("Revised_Heavy_War_Axe_A",0),
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_two_handed | itp_primary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_nodachi | itcf_carry_axe_back,
+    204,
+    weight(3.5) | difficulty(12) | spd_rtng(95) | weapon_length(86) | swing_damage(35, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
+
+[
+    "heavy_war_axe_a_v1",
+    "Heavy War Axe",
+    [
+        ("Revised_Heavy_War_Axe_A_v1",0),
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_two_handed | itp_primary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_nodachi | itcf_carry_axe_back,
+    218,
+    weight(3) | difficulty(13) | spd_rtng(98) | weapon_length(86) | swing_damage(35, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
+# HEAVY AXES END
+
 # SPEARS START
 [
     "spear_a",
