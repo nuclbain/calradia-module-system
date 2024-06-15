@@ -3085,6 +3085,32 @@ items = [
 # POLEARMS END
 # WEAPONS END
 
+# SHIELDS START
+[
+    "oval_shield_heraldic_a",
+    "Oval Shield",
+    [
+        ("shields_archer_tripoli_b", 0),
+    ], 
+    itp_type_shield|itp_merchandise|itp_wooden_parry,
+    itcf_carry_round_shield,
+    70,
+    weight(2)|abundance(100)|body_armor(1)|hit_points(165)|spd_rtng(100)|shield_width(36),
+    imodbit_reinforced,
+    [
+        (
+            ti_on_init_item, 
+            [
+                (store_trigger_param_1, ":agent_no"),
+                (store_trigger_param_2, ":troop_no"),
+                (call_script, "script_shield_item_set_banner", "tableau_oval_shield_a", ":agent_no", ":troop_no")
+            ]
+        )
+    ],
+    [fac_kingdom_1]
+],
+# SHIELDS END
+
 ["turret_hat_ruby", "Turret Hat", [("turret_hat_r",0)], itp_type_head_armor  |itp_civilian|itp_fit_to_head ,0, 70 , weight(0.5)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ], 
 ["turret_hat_blue", "Turret Hat", [("turret_hat_b",0)], itp_type_head_armor  |itp_civilian|itp_fit_to_head ,0, 80 , weight(0.5)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ], 
 ["turret_hat_green", "Barbette", [("barbette_new",0)],itp_merchandise|itp_type_head_armor|itp_civilian|itp_fit_to_head,0,70, weight(0.5)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0),imodbits_cloth],
