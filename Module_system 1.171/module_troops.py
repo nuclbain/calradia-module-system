@@ -104,11 +104,11 @@ upgrade2(troops, "silver_rose_city_watch", "silver_rose_tower_guard", "silver_ro
 upgrade2(troops, "silver_rose_levy", "silver_rose_milita", "silver_rose_scout")
 
 # upgrade2(troops, "silver_rose_milita", "silver_rose_footman", "silver_rose_crossbowman")
-# upgrade2(troops, "silver_rose_footman", "silver_rose_hacker", "silver_rose_infantry")
-# upgrade2(troops, "silver_rose_infantry", "silver_rose_sergeant", "silver_rose_horseman")
-# upgrade(troops, "silver_rose_crossbowman", "silver_rose_trained_crossbowman")
+upgrade2(troops, "silver_rose_footman", "silver_rose_hacker", "silver_rose_infantry")
+upgrade(troops, "silver_rose_infantry", "silver_rose_sergeant")
 
-# upgrade(troops, "silver_rose_trained_crossbowman", "silver_rose_sharpshooter")
+upgrade(troops, "silver_rose_crossbowman", "silver_rose_trained_crossbowman")
+upgrade(troops, "silver_rose_trained_crossbowman", "silver_rose_sharpshooter")
 
 # upgrade(troops, "silver_rose_horseman", "silver_rose_man_at_arms")
 # upgrade(troops, "silver_rose_man_at_arms", "silver_rose_knight")
