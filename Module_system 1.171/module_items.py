@@ -2351,6 +2351,456 @@ items = [
 
 # HELMETS END
 
+# WEAPONS START
+# Difficulty: Biggest damage type / 3
+# Price: speed + length + damage combined - difficulty
+[
+    "falchion_a",
+    "Falchion",
+    [
+        ("Revised_Falchion_A",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_scimitar | itcf_carry_sword_left_hip,
+    181,
+    weight(2.5) | difficulty(9) | spd_rtng(98) | weapon_length(64) | swing_damage(28, cut) | thrust_damage(0, pierce), 
+    imodbits_sword
+],
+
+[
+    "falchion_a_v1",
+    "Falchion",
+    [
+        ("Revised_Falchion_A_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_scimitar | itcf_carry_sword_left_hip,
+    183,
+    weight(2.5) | difficulty(10) | spd_rtng(98) | weapon_length(66) | swing_damage(29, cut) | thrust_damage(0, pierce), 
+    imodbits_sword
+],
+
+[   
+    "falchion_a_v2",
+    "Falchion",
+    [
+        ("Revised_Falchion_A_v2",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_scimitar | itcf_carry_sword_left_hip,
+    193,
+    weight(2.5) | difficulty(10) | spd_rtng(97) | weapon_length(76) | swing_damage(30, cut) | thrust_damage(0, pierce),
+    imodbits_sword
+],
+
+[
+    "falchion_b",
+    "Low Quality Falchion",
+    [
+        ("Revised_Falchion_B",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_scimitar | itcf_carry_sword_left_hip,
+    175,
+    weight(2) | difficulty(8) | spd_rtng(96) | weapon_length(62) | swing_damage(25, cut) | thrust_damage(0, pierce),
+    imodbits_sword
+],
+
+[
+    "falchion_b_v1",
+    "Low Quality Falchion",
+    [
+        ("Revised_Falchion_B_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_scimitar | itcf_carry_sword_left_hip,
+    180,
+    weight(2.25) | difficulty(9) | spd_rtng(96) | weapon_length(66) | swing_damage(27, cut) | thrust_damage(0, pierce), 
+    imodbits_sword
+],
+
+[
+    "falchion_b_v2",
+    "Low Quality Falchion",
+    [
+        ("Revised_Falchion_B_v2",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_scimitar | itcf_carry_sword_left_hip,
+    187,
+    weight(2.25) | difficulty(9) | spd_rtng(95) | weapon_length(72) | swing_damage(28, cut) | thrust_damage(0, pierce),
+    imodbits_sword
+],
+
+[
+    "falchion_c",
+    "Good Quality Falchion",
+    [
+        ("Revised_Falchion_C",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_scimitar | itcf_carry_sword_left_hip,
+    191,
+    weight(2.5) | difficulty(9) | spd_rtng(99) | weapon_length(64) | swing_damage(30, cut) | thrust_damage(0, pierce), 
+    imodbits_sword
+],
+
+[
+    "falchion_c_v1",
+    "Good Quality Falchion",
+    [
+        ("Revised_Falchion_C_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_scimitar | itcf_carry_sword_left_hip,
+    197,
+    weight(2.5) | difficulty(10) | spd_rtng(99) | weapon_length(66) | swing_damage(31, cut) | thrust_damage(0, pierce), 
+    imodbits_sword
+],
+
+[   
+    "falchion_c_v2",
+    "Good Quality Falchion",
+    [
+        ("Revised_Falchion_C_v2",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_scimitar | itcf_carry_sword_left_hip,
+    203,
+    weight(2.5) | difficulty(11) | spd_rtng(99) | weapon_length(76) | swing_damage(32, cut) | thrust_damage(0, pierce),
+    imodbits_sword
+],
+
+# SHORT SWORDS START
+[
+    "sword_short_a",
+    "Short Sword",
+    [
+        ("Revised_Short_Sword_A",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip,
+    203,
+    weight(1.5) | difficulty(9) | spd_rtng(98) | weapon_length(75) | swing_damage(27, cut) | thrust_damage(22,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_short_a_v1",
+    "Short Sword",
+    [
+        ("Revised_Short_Sword_A_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip,
+    217,
+    weight(2.0) | difficulty(9) | spd_rtng(98) | weapon_length(88) | swing_damage(28, cut) | thrust_damage(22,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_short_a_v2",
+    "Short Sword",
+    [
+        ("Revised_Short_Sword_A_v2",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip,
+    218,
+    weight(2.0) | difficulty(9) | spd_rtng(98) | weapon_length(88) | swing_damage(27, cut) | thrust_damage(24,  pierce),
+    imodbits_sword_high
+],
+
+[   
+    "sword_short_b",
+    "Good Quality Short Sword",
+    [
+        ("Revised_Short_Sword_B",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip,
+    217,
+    weight(1.5) | difficulty(9) | spd_rtng(99) | weapon_length(75) | swing_damage(28, cut) | thrust_damage(23,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_short_b_v1",
+    "Good Quality Short Sword",
+    [
+        ("Revised_Short_Sword_B_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip,
+    231,
+    weight(2.0) | difficulty(9) | spd_rtng(99) | weapon_length(88) | swing_damage(29, cut) | thrust_damage(23,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_short_b_v2",
+    "Good Quality Short Sword",
+    [
+        ("Revised_Short_Sword_B_v2",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip,
+    232,
+    weight(2.0) | difficulty(9) | spd_rtng(99) | weapon_length(88) | swing_damage(28, cut) | thrust_damage(25,  pierce),
+    imodbits_sword_high
+],
+# SHORT SWORDS END
+
+# REGULAR SWORDS START
+[
+    "sword_a",
+    "Sword",
+    [
+        ("Revised_Sword_A",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip,
+    231,
+    weight(2.5) | difficulty(9) | spd_rtng(98) | weapon_length(99) | swing_damage(27, cut) | thrust_damage(22,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_a_v1",
+    "Sword",
+    [
+        ("Revised_Sword_A_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip,
+    245,
+    weight(3.0) | difficulty(9) | spd_rtng(98) | weapon_length(103) | swing_damage(28, cut) | thrust_damage(22,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_a_v2",
+    "Sword",
+    [
+        ("Revised_Sword_A_v2",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip,
+    256,
+    weight(3.0) | difficulty(10) | spd_rtng(98) | weapon_length(105) | swing_damage(30, cut) | thrust_damage(24,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_a_v3",
+    "Sword",
+    [
+        ("Revised_Sword_A_v3",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip,
+    248,
+    weight(3.0) | difficulty(10) | spd_rtng(99) | weapon_length(99) | swing_damage(29, cut) | thrust_damage(24,  pierce),
+    imodbits_sword_high
+],
+# REGULAR SWORDS END
+
+# KNIGHT SWORDS START
+# Abit more expensive because of status
+[
+    "sword_knight_a",
+    "Knight Sword",
+    [
+        ("Revised_Knight_Sword_A",0),
+        ("Revised_Knight_Sword_A_scabbard",ixmesh_carry),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip | itcf_show_holster_when_drawn,
+    445,
+    weight(2.0) | difficulty(11) | spd_rtng(99) | weapon_length(101) | swing_damage(33, cut) | thrust_damage(28,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_knight_a_v1",
+    "Knight Sword",
+    [
+        ("Revised_Knight_Sword_A_v1",0),
+        ("Revised_Knight_Sword_A_v1_scabbard",ixmesh_carry),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip | itcf_show_holster_when_drawn,
+    445,
+    weight(2.0) | difficulty(11) | spd_rtng(99) | weapon_length(101) | swing_damage(33, cut) | thrust_damage(28,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_knight_a_v2",
+    "Knight Sword",
+    [
+        ("Revised_Knight_Sword_A_v2",0),
+        ("Revised_Knight_Sword_A_v2_scabbard",ixmesh_carry),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip | itcf_show_holster_when_drawn,
+    445,
+    weight(2.0) | difficulty(11) | spd_rtng(99) | weapon_length(101) | swing_damage(33, cut) | thrust_damage(28,  pierce),
+    imodbits_sword_high
+],
+# KNIGHT SWORDS END
+
+# SPEARS START
+[
+    "spear_a",
+    "Short Spear",
+    [
+        ("Revised_Spear_A",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    276,
+    weight(2.5) | difficulty(8) | spd_rtng(100) | weapon_length(150) | swing_damage(19, blunt) | thrust_damage(25,  pierce),
+    imodbits_polearm
+],
+
+[
+    "spear_a_v1",
+    "Short Spear",
+    [
+        ("Revised_Spear_A_v1",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    283,
+    weight(3.0) | difficulty(9) | spd_rtng(100) | weapon_length(150) | swing_damage(22, blunt) | thrust_damage(25,  pierce),
+    imodbits_polearm
+],
+
+[
+    "spear_a_v2",
+    "Short Spear",
+    [
+        ("Revised_Spear_A_v2",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    295,
+    weight(3.0) | difficulty(9) | spd_rtng(100) | weapon_length(165) | swing_damage(21, blunt) | thrust_damage(28,  pierce),
+    imodbits_polearm
+],
+# SPEARS END
+
+# LANCES START
+# For lances base difficulty is 10 + thrush damage / 3
+[
+    "lance_a",
+    "Lance",
+    [
+        ("Revised_Lance_A",0)
+    ],
+    itp_craftable | itp_couchable | itp_type_polearm | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_greatlance,
+    312,
+    weight(5) | difficulty(16) | spd_rtng(61) | weapon_length(250) | swing_damage(0, cut) | thrust_damage(17,  blunt),
+    imodbits_polearm
+],
+
+[
+    "lance_a_v1",
+    "Lance",
+    [
+        ("Revised_Lance_A_v1",0)
+    ],
+    itp_craftable | itp_couchable | itp_type_polearm | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_greatlance,
+    352,
+    weight(5) | difficulty(17) | spd_rtng(55) | weapon_length(275) | swing_damage(0, cut) | thrust_damage(22,  blunt),
+    imodbits_polearm
+],
+# LANCES END
+
+# POLEARMS START
+[
+    "polearm_military_scythe_a",
+    "Military Scythe",
+    [
+        ("Revised_Polearm_A",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    285,
+    weight(2.5)|difficulty(10)|spd_rtng(95) | weapon_length(155)|swing_damage(30 , cut) | thrust_damage(15 ,  pierce),
+    imodbits_polearm
+],
+
+[
+    "polearm_glaive_a",
+    "Glaive",
+    [
+        ("Revised_Polearm_B",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    288,
+    weight(3.0)|difficulty(11)|spd_rtng(95) | weapon_length(155)|swing_damage(32 , cut) | thrust_damage(19 ,  pierce),
+    imodbits_polearm
+],
+
+[
+    "polearm_military_glave_a",
+    "Military Glaive",
+    [
+        ("Revised_Polearm_C",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    293,
+    weight(3.5)|difficulty(11)|spd_rtng(93) | weapon_length(165)|swing_damage(33 , cut) | thrust_damage(21 ,  pierce),
+    imodbits_polearm
+],
+
+[
+    "polearm_light_halberd_a",
+    "Light Halberd",
+    [
+        ("Revised_Polearm_D",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    295,
+    weight(3.0)|difficulty(11)|spd_rtng(95) | weapon_length(158)|swing_damage(34 , cut) | thrust_damage(23 ,  pierce),
+    imodbits_polearm
+],
+
+[
+    "polearm_light_voulge_a",
+    "Light Voulge",
+    [
+        ("Revised_Polearm_E",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    298,
+    weight(2.5)|difficulty(11)|spd_rtng(96) | weapon_length(170)|swing_damage(30 , cut) | thrust_damage(23 ,  pierce),
+    imodbits_polearm
+],
+
+[
+    "polearm_light_voulge_b",
+    "Light Voulge",
+    [
+        ("Revised_Polearm_F",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    321,
+    weight(2.25)|difficulty(11)|spd_rtng(98) | weapon_length(170)|swing_damage(30 , cut) | thrust_damage(23 ,  pierce),
+    imodbits_polearm
+],
+# POLEARMS END
+# WEAPONS END
+
 ["turret_hat_ruby", "Turret Hat", [("turret_hat_r",0)], itp_type_head_armor  |itp_civilian|itp_fit_to_head ,0, 70 , weight(0.5)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ], 
 ["turret_hat_blue", "Turret Hat", [("turret_hat_b",0)], itp_type_head_armor  |itp_civilian|itp_fit_to_head ,0, 80 , weight(0.5)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ], 
 ["turret_hat_green", "Barbette", [("barbette_new",0)],itp_merchandise|itp_type_head_armor|itp_civilian|itp_fit_to_head,0,70, weight(0.5)|abundance(100)|head_armor(6)|body_armor(0)|leg_armor(0)|difficulty(0),imodbits_cloth],

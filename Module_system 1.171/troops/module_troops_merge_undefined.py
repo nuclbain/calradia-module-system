@@ -2270,7 +2270,7 @@ troops_undefined = [
             itm_hatchet,
             itm_club,
             itm_butchering_knife,
-            itm_falchion,
+            itm_falchion_a,
             itm_rawhide_coat,
             itm_stones,
             itm_nomad_armor,
@@ -4210,7 +4210,7 @@ troops_undefined = [
         0,
         reserved,
         fac_commoners,
-        [itm_leather_apron, itm_falchion, itm_sumpter_horse],
+        [itm_leather_apron, itm_falchion_a, itm_sumpter_horse],
         str_16 | agi_17 | int_6 | cha_30 | level(25),
         wpex(140, 230, 130, 80, 210, 170),
         knows_tracking_10
