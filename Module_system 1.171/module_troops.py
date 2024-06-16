@@ -96,20 +96,34 @@ upgrade2(
 )
 upgrade(troops, "stormguard_tempest_sentinel", "stormguard_elite_stormguard")
 
-# new troop trees for native factions
+# [I] Silver Rose Recruit
+# |- [II] Silver Rose Levy
+# |     |- [III] Silver Rose Militia
+# |     |- [III] Silver Rose Scout
+# |- [II] Silver Rose City Watch 
+# |     |- [III] Silver Rose Tower Guard
+# |     |- [III] Silver Rose Wall Guard
 upgrade2(troops, "silver_rose_recruit", "silver_rose_levy", "silver_rose_city_watch")
 upgrade2(troops, "silver_rose_city_watch", "silver_rose_tower_guard", "silver_rose_wall_guard")
-
-# native
 upgrade2(troops, "silver_rose_levy", "silver_rose_milita", "silver_rose_scout")
 
-# upgrade2(troops, "silver_rose_milita", "silver_rose_footman", "silver_rose_crossbowman")
+# [I] Silver Rose Footman
+# |- [II] Silver Rose Hacker
+# |- [II] Silver Rose Infantry
+# |     |- [III] Silver Rose Sergeant
 upgrade2(troops, "silver_rose_footman", "silver_rose_hacker", "silver_rose_infantry")
 upgrade(troops, "silver_rose_infantry", "silver_rose_sergeant")
 
+# [I] Silver Rose Crossbowman
+# |- [II] Silver Rose Trained Crossbowman
+# |     |- [III] Silver Rose Sharpshooter
 upgrade(troops, "silver_rose_crossbowman", "silver_rose_trained_crossbowman")
 upgrade(troops, "silver_rose_trained_crossbowman", "silver_rose_sharpshooter")
 
+# [I] Silver Rose Squire
+# |- [II] Silver Rose Horseman
+# |     |- [III] Silver Rose Man-at-Arms
+# |     |     |- [IV] Silver Rose Knight
 upgrade(troops, "silver_rose_squire", "silver_rose_horseman")
 upgrade(troops, "silver_rose_horseman", "silver_rose_man_at_arms")
 upgrade(troops, "silver_rose_man_at_arms", "silver_rose_knight")

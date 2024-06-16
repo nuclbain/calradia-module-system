@@ -2996,7 +2996,7 @@ items = [
     itp_craftable | itp_couchable | itp_type_polearm | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
     itc_greatlance,
     312,
-    weight(5) | difficulty(16) | spd_rtng(61) | weapon_length(250) | swing_damage(0, cut) | thrust_damage(17,  blunt),
+    weight(5) | difficulty(16) | spd_rtng(61) | weapon_length(250) | swing_damage(0, cut) | thrust_damage(17,  pierce),
     imodbits_polearm
 ],
 
@@ -3009,7 +3009,7 @@ items = [
     itp_craftable | itp_couchable | itp_type_polearm | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
     itc_greatlance,
     352,
-    weight(5) | difficulty(17) | spd_rtng(55) | weapon_length(275) | swing_damage(0, cut) | thrust_damage(22,  blunt),
+    weight(5) | difficulty(17) | spd_rtng(55) | weapon_length(275) | swing_damage(0, cut) | thrust_damage(22,  pierce),
     imodbits_polearm
 ],
 # LANCES END
