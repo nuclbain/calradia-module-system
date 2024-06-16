@@ -110,8 +110,9 @@ upgrade(troops, "silver_rose_infantry", "silver_rose_sergeant")
 upgrade(troops, "silver_rose_crossbowman", "silver_rose_trained_crossbowman")
 upgrade(troops, "silver_rose_trained_crossbowman", "silver_rose_sharpshooter")
 
-# upgrade(troops, "silver_rose_horseman", "silver_rose_man_at_arms")
-# upgrade(troops, "silver_rose_man_at_arms", "silver_rose_knight")
+upgrade(troops, "silver_rose_squire", "silver_rose_horseman")
+upgrade(troops, "silver_rose_horseman", "silver_rose_man_at_arms")
+upgrade(troops, "silver_rose_man_at_arms", "silver_rose_knight")
 
 upgrade(troops, "chornovalley_recruit", "chornovalley_scout")
 upgrade2(troops, "chornovalley_scout", "chornovalley_warrior", "chornovalley_hunter")
