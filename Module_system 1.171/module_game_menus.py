@@ -1659,8 +1659,8 @@ game_menus = [
                     (
                         store_random_in_range,
                         ":helmet_item",
-                        "itm_elen_nasal_padded_b",
-                        "itm_kettle_hat",
+                        "itm_eyeslot_kettlehat_a",
+                        "itm_eyeslot_kettlehat_a_v2",
                     ),
                     (
                         store_random_in_range,
@@ -1673,8 +1673,8 @@ game_menus = [
                     (
                         store_random_in_range,
                         ":helmet_item",
-                        "itm_chornovalley_skullcap_helmet_a",
-                        "itm_chornovalley_footman_helmet_b",
+                        "itm_nasal_helmet_a",
+                        "itm_nasal_helmet_a_v2",
                     ),
                     (else_try),
                     (eq, ":faction_no", "fac_kingdom_3"),  # original items
@@ -1716,16 +1716,16 @@ game_menus = [
                     (
                         troop_add_item,
                         "trp_player",
-                        "itm_solarian_turban_c",
+                        "itm_sallet_a_v1",
                         imod_hardened,
                     ),
                     (
                         store_random_in_range,
                         ":helmet_item",
-                        "itm_solarian_turban_a",
-                        "itm_solarian_ridge_helmet_c",
+                        "itm_sallet_a",
+                        "itm_sallet_a_v1",
                     ),
-                    # (assign, ":weapon_item","itm_sarranid_two_handed_mace_1"),
+                    # (assign, ":weapon_item","itm_mace_a_v1"),
                     (try_end),
                     (try_begin),
                     (gt, ":helmet_item", 0),
@@ -1847,7 +1847,6 @@ game_menus = [
                     (troop_add_gold, "trp_player", 90),
                     (troop_raise_proficiency, "trp_player", wpt_polearm, 15),
                     (troop_add_item, "trp_player", "itm_leather_jacket", 0),
-                    (troop_add_item, "trp_player", "itm_fur_hat", 0),
                     (troop_add_item, "trp_player", "itm_staff", 0),
                     (troop_add_item, "trp_player", "itm_hunting_crossbow", 0),
                     (troop_add_item, "trp_player", "itm_bolts", 0),
@@ -1925,7 +1924,6 @@ game_menus = [
                     (troop_add_item, "trp_player", "itm_hunting_crossbow", 0),
                     (troop_add_item, "trp_player", "itm_bolts", 0),
                     (troop_add_item, "trp_player", "itm_courser", imod_spirited),
-                    (troop_add_item, "trp_player", "itm_woolen_hood", imod_sturdy),
                     (troop_add_item, "trp_player", "itm_woolen_dress", imod_sturdy),
                     (troop_add_gold, "trp_player", 100),
                     (troop_raise_proficiency, "trp_player", wpt_one_handed_weapon, 10),

@@ -75,8 +75,7 @@ troops_manhunters = [
         [
             itm_winged_mace,
             itm_maul,
-            itm_kettle_hat,
-            itm_stormguard_hauberk_a,
+            itm_eyeslot_kettlehat_a_v2,
             itm_tab_shield_round_c,
             itm_leather_gloves,
             itm_leather_boots_a,

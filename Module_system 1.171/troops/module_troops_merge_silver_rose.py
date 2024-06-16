@@ -736,9 +736,8 @@ troops_silver_rose = [
             itm_wooden_shield,
             itm_leather_jerkin,
             itm_padded_cloth,
-            itm_padded_coif,
+            itm_padded_coif_a,
             itm_footman_helmet,
-            itm_iron_crown_nasal_a,
         ],
         def_attrib | level(14),
         wp(80),
@@ -760,7 +759,7 @@ troops_silver_rose = [
         [
             itm_awlpike,
             itm_pike,
-            itm_great_sword,
+            itm_sword_great_a,
             itm_morningstar,
             itm_sword_medieval_b,
             itm_tab_shield_heater_c,
@@ -792,7 +791,7 @@ troops_silver_rose = [
         [
             itm_awlpike,
             itm_pike,
-            itm_great_sword,
+            itm_sword_great_a,
             itm_morningstar,
             itm_sword_medieval_b,
             itm_tab_shield_heater_c,
