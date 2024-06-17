@@ -1773,6 +1773,64 @@ items = [
 ],
 
 [
+    "brown_brigandine_a",
+    "Brown Painted Brigandine",
+    [
+        ("Brown_Brigandine_A", 0),
+        ("Brown_Brigandine_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1571,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "brown_brigandine_a_v1",
+    "Brown Painted Brigandine",
+    [
+        ("Brown_Brigandine_A_v1", 0),
+        ("Brown_Brigandine_A_v1_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1571,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
+    imodbit_thick,
+    [], []
+],
+
+[
+    "brown_brigandine_b",
+    "Brown Painted Brigandine on Mail",
+    [
+        ("Brown_Brigandine_B", 0),
+        ("Brown_Brigandine_B_hardened", imodbit_hardened),
+        ("Brown_Brigandine_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1804,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
+    imodbit_hardened | imodbit_reinforced,
+    [], []
+],
+
+[
+    "brown_brigandine_b_v1",
+    "Brown Painted Brigandine on Mail",
+    [
+        ("Brown_Brigandine_B_v1", 0),
+        ("Brown_Brigandine_B_v1_hardened", imodbit_hardened),
+        ("Brown_Brigandine_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1804,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
+    imodbit_hardened | imodbit_reinforced,
+    [], []
+],
+
+[
     "red_brigandine_a",
     "Red Painted Brigandine",
     [
@@ -1985,11 +2043,22 @@ items = [
 # MENEGRAS HELMETS END
 
 # NASAL HELMETS START
-["nasal_helmet_a", "Nasal Helmet", [("Revised_Nasal_A",0), ("Revised_Nasal_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 372 , weight(2)|abundance(90)|head_armor(33)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
-["nasal_helmet_a_v1", "Nasal Helmet on Hood", [("Revised_Nasal_A_v1",0), ("Revised_Nasal_A_v1_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 412 , weight(2.5)|abundance(90)|head_armor(35)|body_armor(2)|leg_armor(0)|difficulty(11), imodbits_armor],
-["nasal_helmet_a_v2", "Nasal Helmet on Padding", [("Revised_Nasal_A_v2",0), ("Revised_Nasal_A_v2_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 465 , weight(3)|abundance(90)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
-["nasal_helmet_a_v3", "Nasal Helmet on Mail", [("Revised_Nasal_A_v3",0), ("Revised_Nasal_A_v3_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 493 , weight(3.5)|abundance(90)|head_armor(39)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
-["nasal_helmet_a_v4", "Nasal Helmet on Mail", [("Revised_Nasal_A_v4",0), ("Revised_Nasal_A_v4_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 504 , weight(3.5)|abundance(90)|head_armor(40)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+["nasal_helmet_a", "Nasal Helmet", [("Revised_Nasal_A",0), ("Revised_Nasal_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 372 , weight(2)|abundance(90)|head_armor(33)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
+["nasal_helmet_a_v1", "Nasal Helmet on Hood", [("Revised_Nasal_A_v1",0), ("Revised_Nasal_A_v1_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 412 , weight(2.5)|abundance(90)|head_armor(35)|body_armor(2)|leg_armor(0)|difficulty(11), imodbits_armor],
+["nasal_helmet_a_v2", "Nasal Helmet on Padding", [("Revised_Nasal_A_v2",0), ("Revised_Nasal_A_v2_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 465 , weight(3)|abundance(90)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
+["nasal_helmet_a_v3", "Nasal Helmet on Mail", [("Revised_Nasal_A_v3",0), ("Revised_Nasal_A_v3_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 493 , weight(3.5)|abundance(90)|head_armor(39)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+["nasal_helmet_a_v4", "Nasal Helmet on Mail", [("Revised_Nasal_A_v4",0), ("Revised_Nasal_A_v4_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 504 , weight(3.5)|abundance(90)|head_armor(40)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+
+["nasal_helmet_b", "Nasal Helmet", [("Revised_Nasal_B",0), ("Revised_Nasal_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 372 , weight(2)|abundance(90)|head_armor(33)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
+["nasal_helmet_b_v1", "Nasal Helmet on Hood", [("Revised_Nasal_B_v1",0), ("Revised_Nasal_B_v1_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 412 , weight(2.5)|abundance(90)|head_armor(35)|body_armor(2)|leg_armor(0)|difficulty(11), imodbits_armor],
+["nasal_helmet_b_v2", "Nasal Helmet on Padding", [("Revised_Nasal_B_v2",0), ("Revised_Nasal_B_v2_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 465 , weight(3)|abundance(90)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
+["nasal_helmet_b_v3", "Nasal Helmet on Mail", [("Revised_Nasal_B_v3",0), ("Revised_Nasal_B_v3_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 493 , weight(3.5)|abundance(90)|head_armor(39)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+["nasal_helmet_b_v4", "Nasal Helmet on Mail", [("Revised_Nasal_B_v4",0), ("Revised_Nasal_B_v4_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 504 , weight(3.5)|abundance(90)|head_armor(40)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+
+["facemask_a", "Facemask Helmet", [("Facemask_Helm_A",0), ("Facemask_Helm_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 424 , weight(2)|abundance(85)|head_armor(35)|body_armor(2)|leg_armor(0)|difficulty(11), imodbits_armor],
+["facemask_a_v1", "Facemask Helmet on Padding", [("Facemask_Helm_A_v1",0), ("Facemask_Helm_A_v1_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 465 , weight(2.5)|abundance(85)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
+["facemask_a_v2", "Facemask Helmet on Mail", [("Facemask_Helm_A_v2",0), ("Facemask_Helm_A_v2_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 506 , weight(3)|abundance(85)|head_armor(39)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+["facemask_a_v3", "Facemask Helmet on Mail", [("Facemask_Helm_A_v3",0), ("Facemask_Helm_A_v3_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 517 , weight(3)|abundance(85)|head_armor(40)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
 # NASAL HELMETS END
 
 # HELMETS END
@@ -2415,6 +2484,47 @@ items = [
 ],  
 # BLUNT WEAPONS END
 
+# MAULS START
+[
+    "maul_a",
+    "Maul",
+    [
+        ("Revised_Maul_A",0),
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_can_knock_down | itp_primary | itp_two_handed | itp_wooden_parry | itp_wooden_attack | itp_unbalanced,
+    itc_nodachi | itcf_carry_spear,
+    170,
+    weight(4) | difficulty(10) | spd_rtng(85) | weapon_length(65) | swing_damage(30, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "maul_b",
+    "Miliatry Hammer",
+    [
+        ("Revised_Maul_B",0),
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_can_knock_down | itp_primary | itp_two_handed | itp_wooden_parry | itp_wooden_attack | itp_unbalanced,
+    itc_nodachi | itcf_carry_spear,
+    186,
+    weight(6) | difficulty(12) | spd_rtng(82) | weapon_length(80) | swing_damage(36, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "maul_b_v1",
+    "Miliatry Hammer",
+    [
+        ("Revised_Maul_B_v1",0),
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_can_knock_down | itp_primary | itp_two_handed | itp_wooden_parry | itp_wooden_attack | itp_unbalanced,
+    itc_nodachi | itcf_carry_spear,
+    190,
+    weight(6) | difficulty(12) | spd_rtng(82) | weapon_length(80) | swing_damage(38, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+# MAULS END
+
 # PIERCING WEAPONS START
 [
     "pickaxe_a",
@@ -2573,6 +2683,32 @@ items = [
     itc_nodachi | itcf_carry_axe_back,
     218,
     weight(3) | difficulty(13) | spd_rtng(98) | weapon_length(86) | swing_damage(35, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
+
+[
+    "heavy_war_axe_b",
+    "Heavy War Axe",
+    [
+        ("Revised_Heavy_War_Axe_B",0),
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_two_handed | itp_primary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_nodachi | itcf_carry_axe_back,
+    210,
+    weight(3) | difficulty(13) | spd_rtng(98) | weapon_length(85) | swing_damage(32, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
+
+[
+    "heavy_war_axe_b_v1",
+    "Heavy War Axe",
+    [
+        ("Revised_Heavy_War_Axe_B_v1",0),
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_two_handed | itp_primary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_nodachi | itcf_carry_axe_back,
+    224,
+    weight(3) | difficulty(13) | spd_rtng(98) | weapon_length(85) | swing_damage(32, cut) | thrust_damage(0,  pierce),
     imodbits_axe
 ],
 # HEAVY AXES END
