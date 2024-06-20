@@ -601,6 +601,58 @@ items = [
 # TODO: Implement in-game upgrading (will change the model to the next variant)
 # Using item_has_modifier operation to check for possible upgrades?
 
+[
+    "brown_shirt_a",
+    "Brown Shirt",
+    [
+        ("Brown_Shirt_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 20,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(5)|leg_armor(3)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "brown_shirt_a_v1",
+    "Brown Adventurer Shirt",
+    [
+        ("Brown_Shirt_A_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 12,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(4)|leg_armor(2)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "rough_brown_shirt_a",
+    "Brown Rough Shirt",
+    [
+        ("Brown_Rough_Shirt_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 35,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(4)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "rough_brown_shirt_a_v1",
+    "Brown Rough Shirt with Ornamentation",
+    [
+        ("Brown_Rough_Shirt_A_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 35,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(4)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
 # TUNICS START
 # For tunics, the difficulty is 0, and the price is (Armor * 15)
 [
@@ -1319,6 +1371,22 @@ items = [
     imodbit_tattered | imodbit_sturdy | imodbit_thick,
     [], []
 ],
+
+[
+    "brown_pourpoint_a",
+    "Brown Painted Pourpoint",
+    [
+        ("Brown_Pourpoint_A", 0),
+        ("Brown_Pourpoint_A_tattered", imodbit_tattered),
+        ("Brown_Pourpoint_A_sturdy", imodbit_sturdy),
+        ("Brown_Pourpoint_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_tattered | imodbit_sturdy | imodbit_thick,
+    [], []
+],
 # POURPOINTS END
 
 # CHURBURG START
@@ -1956,10 +2024,14 @@ items = [
 ["felt_b", "Felt Hat", [("Revised_Felt_B",0), ("Revised_Felt_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 51, weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
 ["felt_b_v1", "Felt Hat on Hood", [("Revised_Felt_B_v1",0), ("Revised_Felt_B_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 93, weight(1)|abundance(100)|head_armor(6)|body_armor(2)|leg_armor(0)|difficulty(0), imodbits_cloth],
 
+["adventurer_hood_a", "Adventurer Hood", [("Adventurers_Hood_A",0), ("Adventurers_Hood_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 93, weight(1)|abundance(100)|head_armor(6)|body_armor(2)|leg_armor(0)|difficulty(0), imodbits_cloth],
+
 ["arming_cap_a", "Arming Cap", [("Revised_Arming_Cap_A",0), ("Revised_Arming_Cap_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 104, weight(1)|abundance(100)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_none],
 
 ["padded_coif_a", "Padded Coif", [("Revised_Padded_Coif_A",0), ("Revised_Padded_Coif_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 156, weight(1)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
+["padded_coif_a_v1", "Padded Coif on Hood", [("Revised_Padded_Coif_A_v1",0), ("Revised_Padded_Coif_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 209, weight(1.5)|abundance(100)|head_armor(16)|body_armor(3)|leg_armor(0)|difficulty(0), imodbits_cloth],
 ["padded_coif_b", "Padded Coif", [("Revised_Padded_Coif_B",0), ("Revised_Padded_Coif_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 156, weight(1)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
+["padded_coif_b_v1", "Padded Coif on Hood", [("Revised_Padded_Coif_B_v1",0), ("Revised_Padded_Coif_B_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 209, weight(1.5)|abundance(100)|head_armor(16)|body_armor(3)|leg_armor(0)|difficulty(0), imodbits_cloth],
 
 ["cervelliere_a", "Cervelliere on Arming Cap", [("Revised_Cervelliere_A",0), ("Revised_Cervelliere_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 252, weight(1)|abundance(100)|head_armor(24)|body_armor(0)|leg_armor(0)|difficulty(7), imodbits_armor],
 ["cervelliere_a_v1", "Cervelliere on Padded", [("Revised_Cervelliere_A_v1",0), ("Revised_Cervelliere_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 315, weight(1.5)|abundance(100)|head_armor(26)|body_armor(4)|leg_armor(0)|difficulty(9), imodbits_armor],

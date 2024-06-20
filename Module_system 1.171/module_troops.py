@@ -128,17 +128,29 @@ upgrade(troops, "silver_rose_squire", "silver_rose_horseman")
 upgrade(troops, "silver_rose_horseman", "silver_rose_man_at_arms")
 upgrade(troops, "silver_rose_man_at_arms", "silver_rose_knight")
 
-upgrade(troops, "chornovalley_recruit", "chornovalley_scout")
-upgrade2(troops, "chornovalley_scout", "chornovalley_warrior", "chornovalley_hunter")
+# [I] Chornovalley Recruit
+# |- [II] Chornovalley Scout
+# |     |- [III] Chornovalley Hunter
+# |     |     |- [IV] Chornovalley Longbowman
+# |- [II] Chornovalley Warden
+# |     |- [III] Chornovalley Gatekeeper
+upgrade2(troops, "chornovalley_recruit", "chornovalley_scout", "chornovalley_warden")
+upgrade(troops, "chornovalley_scout", "chornovalley_hunter")
 upgrade(troops, "chornovalley_hunter", "chornovalley_longbowman")
+upgrade(troops, "chornovalley_warden", "chornovalley_gatekeeper")
 
-upgrade2(
-    troops, "chornovalley_warrior", "chornovalley_sheriff", "chornovalley_horseman"
-)
-upgrade2(
-    troops, "chornovalley_sheriff", "chornovalley_gunslider", "chornovalley_sergeant"
-)
+# [I] Chornovalley Warrior
+# |- [II] Chornovalley Sheriff
+# |     |- [III] Chornovalley Sergeant
+upgrade(troops, "chornovalley_warrior", "chornovalley_sheriff")
+upgrade(troops, "chornovalley_sheriff", "chornovalley_sergeant")
 
+# [I] Chornovalley Gunslider
+# |- [II] Chornovalley Sniper
+upgrade(troops, "chornovalley_gunslider", "chornovalley_sniper")
+
+# [I] Chornovalley Horseman
+# |- [II] Chornovalley Knight
 upgrade(troops, "chornovalley_horseman", "chornovalley_knight")
 
 upgrade2(troops, "celestial_recruit", "celestial_milita", "celestial_hunter")
