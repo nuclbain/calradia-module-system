@@ -359,6 +359,7 @@ items = [
 ["hose_b", "Brown Hose", [("Hose_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 30, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
 ["hose_c", "Green Hose", [("Hose_C",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 30, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
 ["hose_d", "Grey Hose", [("Hose_D",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 30, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
+["hose_d_v1", "Grey Hose", [("Hose_D_v1",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 30, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
 ["hose_e", "Red Hose", [("Hose_E",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 30, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
 ["hose_f", "Yellow Hose", [("Hose_F",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 30, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
 
@@ -366,6 +367,7 @@ items = [
 ["poulaines_b", "Brown Poulaines", [("Poulaines_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["poulaines_c", "Green Poulaines", [("Poulaines_C",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["poulaines_d", "Grey Poulaines", [("Poulaines_D",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
+["poulaines_d_v1", "Grey Poulaines", [("Poulaines_D_v1",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["poulaines_e", "Red Poulaines", [("Poulaines_E",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["poulaines_f", "Yellow Poulaines", [("Poulaines_F",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 
@@ -1435,6 +1437,75 @@ items = [
 ],
 
 [
+    "olive_churburg_a",
+    "Churburg on Olive Painted Pourpoint",
+    [
+        ("Olive_Churburg_A", 0),
+        ("Olive_Churburg_A_thick", imodbit_thick),
+        ("Olive_Churburg_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1304,
+    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "olive_churburg_b",
+    "Plated Churburg on Olive Painted Pourpoint",
+    [
+        ("Olive_Churburg_B", 0),
+        ("Olive_Churburg_B_thick", imodbit_thick),
+        ("Olive_Churburg_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "olive_churburg_mail_a",
+    "Churburg with Mail on Olive Painted Pourpoint",
+    [
+        ("Olive_Churburg_Mail_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(37)|leg_armor(11)|difficulty(16),
+    imodbits_none,
+    [], []
+],
+
+[
+    "olive_churburg_mail_b",
+    "Plated Churburg with Mail on Olive Painted Pourpoint",
+    [
+        ("Olive_Churburg_Mail_B", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(24)|abundance(90)|head_armor(0)|body_armor(41)|leg_armor(13)|difficulty(18),
+    imodbits_none,
+    [], []
+],
+
+[
+    "olive_churburg_mail_c",
+    "Heavy Plated Churburg with Mail on Olive Painted Pourpoint",
+    [
+        ("Olive_Churburg_Mail_C", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2071,
+    weight(28)|abundance(80)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
+    imodbits_none,
+    [], []
+],
+
+[
     "red_churburg_a",
     "Churburg on Red Pourpoint",
     [
@@ -2102,6 +2173,32 @@ items = [
 ["sallet_d_v3", "Sallet on Padding", [("Revised_Sallet_D_v3",0), ("Revised_Sallet_D_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 441, weight(2.5)|abundance(95)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
 ["sallet_d_v4", "Sallet on Mail", [("Revised_Sallet_D_v4",0), ("Revised_Sallet_D_v4_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 493, weight(3)|abundance(90)|head_armor(39)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
 ["sallet_d_v5", "Sallet on Mail", [("Revised_Sallet_D_v5",0), ("Revised_Sallet_D_v5_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 504, weight(3)|abundance(90)|head_armor(40)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+
+# CELESTIAL HELMETS START
+["celestial_sallet_a", "Sallet", [("Celestial_Sallet_A",0), ("Celestial_Sallet_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 367, weight(2)|abundance(100)|head_armor(35)|body_armor(0)|leg_armor(0)|difficulty(10), imodbits_armor],
+["celestial_sallet_a_v1", "Sallet on Arming Cap", [("Celestial_Sallet_A_v1",0), ("Celestial_Sallet_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 401, weight(2)|abundance(95)|head_armor(37)|body_armor(0)|leg_armor(0)|difficulty(11), imodbits_armor],
+["celestial_sallet_a_v2", "Sallet on Hood", [("Celestial_Sallet_A_v2",0), ("Celestial_Sallet_A_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 420, weight(2.5)|abundance(95)|head_armor(37)|body_armor(2)|leg_armor(0)|difficulty(11), imodbits_armor],
+["celestial_sallet_a_v3", "Sallet on Padding", [("Celestial_Sallet_A_v3",0), ("Celestial_Sallet_A_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 441, weight(2.5)|abundance(95)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
+["celestial_sallet_a_v4", "Sallet on Mail", [("Celestial_Sallet_A_v4",0), ("Celestial_Sallet_A_v4_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 493, weight(3)|abundance(90)|head_armor(39)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+["celestial_sallet_a_v5", "Sallet on Mail", [("Celestial_Sallet_A_v5",0), ("Celestial_Sallet_A_v5_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 504, weight(3)|abundance(90)|head_armor(40)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+
+["celestial_sallet_b", "Sallet with Open Visor", [("Celestial_Sallet_B",0), ("Celestial_Sallet_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 401, weight(2)|abundance(95)|head_armor(37)|body_armor(0)|leg_armor(0)|difficulty(11), imodbits_armor],
+["celestial_sallet_b_v1", "Sallet with Open Visor on Arming Cap", [("Celestial_Sallet_B_v1",0), ("Celestial_Sallet_B_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 441, weight(2.5)|abundance(95)|head_armor(39)|body_armor(0)|leg_armor(0)|difficulty(12), imodbits_armor],
+["celestial_sallet_b_v2", "Sallet with Open Visor on Hood", [("Celestial_Sallet_B_v2",0), ("Celestial_Sallet_B_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 465, weight(2.5)|abundance(90)|head_armor(40)|body_armor(2)|leg_armor(0)|difficulty(13), imodbits_armor],
+["celestial_sallet_b_v3", "Sallet with Open Visor on Padding", [("Celestial_Sallet_B_v3",0), ("Celestial_Sallet_B_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 496, weight(2.5)|abundance(85)|head_armor(42)|body_armor(4)|leg_armor(0)|difficulty(13), imodbits_armor],
+["celestial_sallet_b_v4", "Sallet with Open Visor on Mail", [("Celestial_Sallet_B_v4",0), ("Celestial_Sallet_B_v4_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 517, weight(2.5)|abundance(85)|head_armor(42)|body_armor(4)|leg_armor(0)|difficulty(13), imodbits_armor],
+["celestial_sallet_b_v5", "Sallet with Open Visor on Mail", [("Celestial_Sallet_B_v5",0), ("Celestial_Sallet_B_v5_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 528, weight(2.5)|abundance(85)|head_armor(43)|body_armor(4)|leg_armor(0)|difficulty(13), imodbits_armor],
+
+["celestial_sallet_c", "Sallet with Closed Visor", [("Celestial_Sallet_C",0), ("Celestial_Sallet_C_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 441, weight(2.5)|abundance(95)|head_armor(39)|body_armor(0)|leg_armor(0)|difficulty(12), imodbits_armor],
+["celestial_sallet_c_v1", "Sallet with Closed Visor on Arming Cap", [("Celestial_Sallet_C_v1",0), ("Celestial_Sallet_C_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 465, weight(2.5)|abundance(90)|head_armor(40)|body_armor(0)|leg_armor(0)|difficulty(13), imodbits_armor],
+["celestial_sallet_c_v2", "Sallet with Closed Visor on Hood", [("Celestial_Sallet_C_v2",0), ("Celestial_Sallet_C_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 496, weight(2.5)|abundance(85)|head_armor(42)|body_armor(2)|leg_armor(0)|difficulty(13), imodbits_armor],
+["celestial_sallet_c_v3", "Sallet with Closed Visor on Padding", [("Celestial_Sallet_C_v3",0), ("Celestial_Sallet_C_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 517, weight(2.5)|abundance(85)|head_armor(42)|body_armor(4)|leg_armor(0)|difficulty(13), imodbits_armor],
+["celestial_sallet_c_v4", "Sallet with Closed Visor on Mail", [("Celestial_Sallet_C_v4",0), ("Celestial_Sallet_C_v4_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 528, weight(2.5)|abundance(85)|head_armor(43)|body_armor(4)|leg_armor(0)|difficulty(13), imodbits_armor],
+["celestial_sallet_c_v5", "Sallet with Closed Visor on Mail", [("Celestial_Sallet_C_v5",0), ("Celestial_Sallet_C_v5_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 539, weight(2.5)|abundance(85)|head_armor(44)|body_armor(4)|leg_armor(0)|difficulty(13), imodbits_armor],
+
+["celestial_sallet_d", "Sallet with Closed Visor on Bevor", [("Celestial_Sallet_D",0), ("Celestial_Sallet_D_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 651, weight(3)|abundance(60)|head_armor(47)|body_armor(6)|leg_armor(0)|difficulty(15), imodbits_armor],
+["celestial_sallet_d_v1", "Sallet with Closed Visor on Bevor", [("Celestial_Sallet_D_v1",0), ("Celestial_Sallet_D_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 652, weight(3)|abundance(60)|head_armor(47)|body_armor(6)|leg_armor(0)|difficulty(15), imodbits_armor],
+# CELESTIAL HELMETS END
 
 # MENEGRAS HELMETS START
 ["menegras_sallet_a", "Menegras Sallet", [("Menegras_Sallet_A",0), ("Menegras_Sallet_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 463 , weight(2)|abundance(90)|head_armor(38)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
