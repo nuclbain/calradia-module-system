@@ -153,12 +153,33 @@ upgrade(troops, "chornovalley_gunslider", "chornovalley_sniper")
 # |- [II] Chornovalley Knight
 upgrade(troops, "chornovalley_horseman", "chornovalley_knight")
 
-upgrade2(troops, "celestial_recruit", "celestial_milita", "celestial_hunter")
+# [I] Celestial Recruit
+# |- [II] Celestial Voulgier
+# |     |- [III] Celestial Houseguard
+# |     |     |- [IV] Celestial Footman
+# |- [II] Celestial Archer
+upgrade2(troops, "celestial_recruit", "celestial_voulgier", "celestial_archer")
+upgrade(troops, "celestial_voulgier", "celestial_houseguard")
+upgrade(troops, "celestial_houseguard", "celestial_footman")
+
+# [I] Celestial Milita
+# |- [II] Celestial Armsman
+# |     |- [III] Celestial Sergeant
+# |     |     |- [IV] Celestial Commander
+# |- [II] Celestial Foot Knight
+upgrade2(troops, "celestial_milita", "celestial_armsman", "celestial_foot_knight")
+upgrade(troops, "celestial_armsman", "celestial_sergeant")
+upgrade(troops, "celestial_sergeant", "celestial_commander")
+
+# [I] Celestial Hunter
+# |- [II] Celestial Crossbowman
 upgrade(troops, "celestial_hunter", "celestial_crossbowman")
 
-upgrade2(troops, "celestial_milita", "celestial_armsman", "celestial_foot_knight")
-upgrade2(troops, "celestial_armsman", "celestial_lancer", "celestial_sergeant")
-upgrade(troops, "celestial_sergeant", "celestial_commander")
+# [I] Celestial Squire
+# |- [II] Celestial Initiate Knight
+# |     |- [III] Celestial Lancer
+upgrade(troops, "celestial_squire", "celestial_initiate_knight")
+upgrade(troops, "celestial_initiate_knight", "celestial_lancer") 
 
 upgrade2(troops, "iron_crown_recruit", "iron_crown_raider", "iron_crown_skirmisher")
 upgrade(troops, "iron_crown_raider", "iron_crown_footman")

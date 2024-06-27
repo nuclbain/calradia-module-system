@@ -613,7 +613,7 @@ items = [
     0, 20,
     weight(2)|abundance(100)|head_armor(0)|body_armor(5)|leg_armor(3)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -626,7 +626,7 @@ items = [
     0, 12,
     weight(2)|abundance(100)|head_armor(0)|body_armor(4)|leg_armor(2)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -639,7 +639,7 @@ items = [
     0, 35,
     weight(2)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(4)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -652,7 +652,7 @@ items = [
     0, 35,
     weight(2)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(4)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 # TUNICS START
@@ -667,7 +667,7 @@ items = [
     0, 165,
     weight(2)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(5)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -680,7 +680,7 @@ items = [
     0, 165,
     weight(2)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(5)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -693,7 +693,7 @@ items = [
     0, 165,
     weight(2)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(5)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -706,7 +706,7 @@ items = [
     0, 195,
     weight(2)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(5)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -719,7 +719,7 @@ items = [
     0, 240,
     weight(2)|abundance(100)|head_armor(0)|body_armor(11)|leg_armor(5)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
 # TUNICS END
 
@@ -734,7 +734,7 @@ items = [
     0, 543,
     weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -747,7 +747,7 @@ items = [
     0, 656,
     weight(8)|abundance(100)|head_armor(0)|body_armor(16)|leg_armor(5)|difficulty(7),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -760,7 +760,7 @@ items = [
     0, 982,
     weight(14)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(12)|difficulty(11),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -773,7 +773,7 @@ items = [
     0, 543,
     weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -786,7 +786,7 @@ items = [
     0, 543,
     weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -799,7 +799,7 @@ items = [
     0, 543,
     weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -812,7 +812,7 @@ items = [
     0, 543,
     weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -825,9 +825,8 @@ items = [
     0, 543,
     weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(5)|difficulty(0),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_12]
 ],
-
 # TABARDS END
 
 # AKETONS START
@@ -846,7 +845,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_ragged | imodbit_tattered | imodbit_sturdy | imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
 ],
 
 [
@@ -872,7 +871,7 @@ items = [
             ]
         )
     ],
-    []
+    [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
 ],
 
 [
@@ -887,7 +886,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
 ],
 
 [
@@ -902,7 +901,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -917,7 +916,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -932,7 +931,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -947,7 +946,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -962,7 +961,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -977,7 +976,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -992,7 +991,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1007,7 +1006,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1022,7 +1021,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1037,7 +1036,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1052,7 +1051,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1067,7 +1066,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1082,7 +1081,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1097,7 +1096,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1112,7 +1111,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1127,7 +1126,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1142,7 +1141,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1157,7 +1156,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1172,7 +1171,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1187,7 +1186,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1202,7 +1201,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_4]
 ],
 
 [
@@ -1217,7 +1216,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_4]
 ],
 
 [
@@ -1232,7 +1231,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_4]
 ],
 
 [
@@ -1247,7 +1246,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_4]
 ],
 
 [
@@ -1262,7 +1261,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_4]
 ],
 
 [
@@ -1277,7 +1276,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_4]
 ],
 
 [
@@ -1292,7 +1291,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_4, fac_kingdom_12]
 ],
 
 [
@@ -1307,7 +1306,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_4, fac_kingdom_12]
 ],
 
 [
@@ -1322,7 +1321,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_4, fac_kingdom_12]
 ],
 
 [
@@ -1337,7 +1336,7 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_4, fac_kingdom_12]
 ],
 # AKETONS END
 
@@ -1355,7 +1354,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_tattered | imodbit_sturdy | imodbit_thick,
-    [], []
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
 ],
 
 [
@@ -1371,7 +1370,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_tattered | imodbit_sturdy | imodbit_thick,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1387,9 +1386,37 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_tattered | imodbit_sturdy | imodbit_thick,
-    [], []
+    [], [fac_kingdom_2]
 ],
 # POURPOINTS END
+
+[
+    "lamellar_cuirass_a",
+    "Lamellar Cuirass",
+    [
+        ("Lamellar_Cuirass_A", 0),
+        ("Lamellar_Cuirass_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1300,
+    weight(13)|abundance(80)|head_armor(0)|body_armor(30)|leg_armor(9)|difficulty(13),
+    imodbit_reinforced,
+    [], [fac_kingdom_3]
+],
+
+[
+    "lamellar_cuirass_a_v1",
+    "Lamellar Cuirass",
+    [
+        ("Lamellar_Cuirass_A_v1", 0),
+        ("Lamellar_Cuirass_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1300,
+    weight(13)|abundance(80)|head_armor(0)|body_armor(30)|leg_armor(9)|difficulty(13),
+    imodbit_reinforced,
+    [], [fac_kingdom_3]
+],
 
 # CHURBURG START
 [
@@ -1404,7 +1431,7 @@ items = [
     0, 1304,
     weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
 ],
 
 [
@@ -1419,7 +1446,7 @@ items = [
     0, 1512,
     weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
 ],
 
 [
@@ -1433,7 +1460,7 @@ items = [
     0, 1745,
     weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
 ],
 
 [
@@ -1448,7 +1475,7 @@ items = [
     0, 1304,
     weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1463,7 +1490,7 @@ items = [
     0, 1512,
     weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1476,7 +1503,7 @@ items = [
     0, 1512,
     weight(20)|abundance(90)|head_armor(0)|body_armor(37)|leg_armor(11)|difficulty(16),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1489,7 +1516,7 @@ items = [
     0, 1745,
     weight(24)|abundance(90)|head_armor(0)|body_armor(41)|leg_armor(13)|difficulty(18),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1502,7 +1529,7 @@ items = [
     0, 2071,
     weight(28)|abundance(80)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1517,7 +1544,7 @@ items = [
     0, 1304,
     weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1532,7 +1559,7 @@ items = [
     0, 1512,
     weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1546,7 +1573,7 @@ items = [
     0, 1745,
     weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1559,7 +1586,7 @@ items = [
     0, 1512,
     weight(20)|abundance(90)|head_armor(0)|body_armor(37)|leg_armor(11)|difficulty(16),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1572,7 +1599,7 @@ items = [
     0, 1745,
     weight(24)|abundance(90)|head_armor(0)|body_armor(41)|leg_armor(13)|difficulty(18),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1585,7 +1612,7 @@ items = [
     0, 2071,
     weight(28)|abundance(80)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1598,7 +1625,7 @@ items = [
     0, 2236,
     weight(28)|abundance(50)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
     imodbits_none,
-    [], []
+    [], [fac_kingdom_1]
 ],
 # CHURBURG END
 
@@ -1615,7 +1642,7 @@ items = [
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_rusty | imodbit_thick,
-    [], []
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
 ],
 
 [
@@ -1624,12 +1651,13 @@ items = [
     [
         ("Olive_Hauberk_A", 0),
         ("Olive_Hauberk_A_thick", imodbit_thick),
+        ("Olive_Hauberk_A_reinforced", imodbit_reinforced),
     ],
     itp_merchandise | itp_type_body_armor | itp_covers_legs,
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick,
-    [], []
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1638,12 +1666,13 @@ items = [
     [
         ("Olive_Hauberk_A_v1", 0),
         ("Olive_Hauberk_A_v1_thick", imodbit_thick),
+        ("Olive_Hauberk_A_v1_reinforced", imodbit_reinforced),
     ],
     itp_merchandise | itp_type_body_armor | itp_covers_legs,
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick,
-    [], []
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1652,12 +1681,13 @@ items = [
     [
         ("Olive_Hauberk_A_v2", 0),
         ("Olive_Hauberk_A_v2_thick", imodbit_thick),
+        ("Olive_Hauberk_A_v2_reinforced", imodbit_reinforced),
     ],
     itp_merchandise | itp_type_body_armor | itp_covers_legs,
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick,
-    [], []
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1666,12 +1696,69 @@ items = [
     [
         ("Olive_Hauberk_A_v3", 0),
         ("Olive_Hauberk_A_v3_thick", imodbit_thick),
+        ("Olive_Hauberk_A_v3_reinforced", imodbit_reinforced),
     ],
     itp_merchandise | itp_type_body_armor | itp_covers_legs,
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick,
-    [], []
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_3]
+],
+
+[
+    "olive_hauberk_b",
+    "Plated Hauberk on Olive Painted Aketon",
+    [
+        ("Olive_Hauberk_B", 0),
+        ("Olive_Hauberk_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(23)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(13)|difficulty(17),
+    imodbit_reinforced,
+    [], [fac_kingdom_3]
+],
+
+[
+    "olive_hauberk_b_v1",
+    "Plated Hauberk on Olive Painted Aketon",
+    [
+        ("Olive_Hauberk_B_v1", 0),
+        ("Olive_Hauberk_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(23)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(13)|difficulty(17),
+    imodbit_reinforced,
+    [], [fac_kingdom_3]
+],
+
+[
+    "olive_hauberk_b_v2",
+    "Plated Hauberk on Olive Painted Aketon",
+    [
+        ("Olive_Hauberk_B_v2", 0),
+        ("Olive_Hauberk_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(23)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(13)|difficulty(17),
+    imodbit_reinforced,
+    [], [fac_kingdom_3]
+],
+
+[
+    "olive_hauberk_b_v3",
+    "Plated Hauberk on Olive Painted Aketon",
+    [
+        ("Olive_Hauberk_B_v3", 0),
+        ("Olive_Hauberk_B_v3_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(23)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(13)|difficulty(17),
+    imodbit_reinforced,
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1686,7 +1773,7 @@ items = [
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1701,7 +1788,7 @@ items = [
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1716,7 +1803,7 @@ items = [
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1731,7 +1818,7 @@ items = [
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1746,7 +1833,7 @@ items = [
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1761,7 +1848,7 @@ items = [
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_thick | imodbit_hardened,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1776,7 +1863,7 @@ items = [
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_4]
 ],
 
 [
@@ -1791,7 +1878,7 @@ items = [
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_4]
 ],
 
 [
@@ -1806,7 +1893,7 @@ items = [
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_4]
 ],
 
 [
@@ -1821,7 +1908,7 @@ items = [
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_4, fac_kingdom_12]
 ],
 
 [
@@ -1836,7 +1923,7 @@ items = [
     0, 1393,
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_thick | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_4, fac_kingdom_12]
 ],
 # HAUBERKS END
 
@@ -1852,7 +1939,7 @@ items = [
     0, 1571,
     weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
     imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
 ],
 
 [
@@ -1866,7 +1953,7 @@ items = [
     0, 1571,
     weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
     imodbit_thick,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1880,7 +1967,7 @@ items = [
     0, 1571,
     weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
     imodbit_thick,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1894,7 +1981,7 @@ items = [
     0, 1804,
     weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
     imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_3]
 ],
 
 [
@@ -1908,7 +1995,47 @@ items = [
     0, 1804,
     weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
     imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_3]
+],
+
+[
+    "olive_brigandine_c",
+    "Olive Painted Leather Armor with Plates",
+    [
+        ("Olive_Brigandine_C", 0),
+        ("Olive_Brigandine_C_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1804,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
+    imodbit_reinforced,
+    [], [fac_kingdom_3]
+],
+
+[
+    "olive_brigandine_d",
+    "Olive Painted Armor with Plates",
+    [
+        ("Olive_Brigandine_D", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(20)|abundance(80)|head_armor(0)|body_armor(41)|leg_armor(18)|difficulty(20),
+    imodbits_none,
+    [], [fac_kingdom_3]
+],
+
+[
+    "olive_brigandine_d_v1",
+    "Olive Painted Armor with Plates",
+    [
+        ("Olive_Brigandine_D_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(20)|abundance(80)|head_armor(0)|body_armor(41)|leg_armor(18)|difficulty(20),
+    imodbits_none,
+    [], [fac_kingdom_3],
 ],
 
 [
@@ -1922,7 +2049,7 @@ items = [
     0, 1571,
     weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
     imodbit_thick,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1936,7 +2063,7 @@ items = [
     0, 1571,
     weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
     imodbit_thick,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1951,7 +2078,7 @@ items = [
     0, 1804,
     weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
     imodbit_hardened | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1966,7 +2093,7 @@ items = [
     0, 1804,
     weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
     imodbit_hardened | imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_2]
 ],
 
 [
@@ -1980,7 +2107,7 @@ items = [
     0, 1571,
     weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
     imodbit_thick,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -1994,7 +2121,7 @@ items = [
     0, 1571,
     weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
     imodbit_thick,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -2008,7 +2135,7 @@ items = [
     0, 1804,
     weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
     imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -2022,7 +2149,7 @@ items = [
     0, 1804,
     weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
     imodbit_reinforced,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -2036,7 +2163,7 @@ items = [
     0, 1893,
     weight(20)|abundance(80)|head_armor(0)|body_armor(41)|leg_armor(18)|difficulty(20),
     imodbit_thick,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -2050,7 +2177,7 @@ items = [
     0, 1893,
     weight(20)|abundance(80)|head_armor(0)|body_armor(41)|leg_armor(18)|difficulty(20),
     imodbit_thick,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -2064,7 +2191,7 @@ items = [
     0, 2181,
     weight(24)|abundance(70)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
     imodbit_thick,
-    [], []
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -2078,10 +2205,37 @@ items = [
     0, 2181,
     weight(24)|abundance(70)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
     imodbit_thick,
-    [], []
+    [], [fac_kingdom_1]
+],
+# BRIGANDINES END
+
+# PLATE ARMORS START
+[
+    "full_plate_armor_a",
+    "Full Plate Armor",
+    [
+        ("Plate_Armor_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2830,
+    weight(29)|abundance(50)|head_armor(0)|body_armor(57)|leg_armor(28)|difficulty(28),
+    imodbits_none,
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
 ],
 
-# BRIGANDINES END
+[
+    "full_plate_armor_b",
+    "Full Plate Armor",
+    [
+        ("Plate_Armor_B", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2830,
+    weight(29)|abundance(50)|head_armor(0)|body_armor(57)|leg_armor(28)|difficulty(28),
+    imodbits_none,
+    [], [fac_kingdom_1, fac_kingdom_3]
+],
+# PLATE ARMORS END
 
 # ARMORS END
 
@@ -2140,6 +2294,17 @@ items = [
 ["chapel_c_v1", "Chapel on Arming Cap", [("Revised_Chapel_C_v1",0), ("Revised_Chapel_C_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 336, weight(1.5)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
 ["chapel_c_v2", "Chapel on Hood", [("Revised_Chapel_C_v2",0), ("Revised_Chapel_C_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 379, weight(2)|abundance(95)|head_armor(33)|body_armor(2)|leg_armor(0)|difficulty(10), imodbits_armor],
 ["chapel_c_v3", "Chapel on Padding", [("Revised_Chapel_C_v3",0), ("Revised_Chapel_C_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 433, weight(2)|abundance(90)|head_armor(35)|body_armor(4)|leg_armor(0)|difficulty(11), imodbits_armor],
+
+["morion_a", "Morion", [("Revised_Morion_A",0), ("Revised_Morion_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 326, weight(1.5)|abundance(100)|head_armor(31)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
+["morion_a_v1", "Morion on Arming Cap", [("Revised_Morion_A_v1",0), ("Revised_Morion_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 336, weight(1.5)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
+["morion_a_v2", "Morion on Hood", [("Revised_Morion_A_v2",0), ("Revised_Morion_A_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 379, weight(2)|abundance(95)|head_armor(33)|body_armor(2)|leg_armor(0)|difficulty(10), imodbits_armor],
+
+["morion_b", "Morion", [("Revised_Morion_B",0), ("Revised_Morion_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 367, weight(2)|abundance(100)|head_armor(35)|body_armor(0)|leg_armor(0)|difficulty(10), imodbits_armor],
+["morion_b_v1", "Morion on Arming Cap", [("Revised_Morion_B_v1",0), ("Revised_Morion_B_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 401, weight(2)|abundance(95)|head_armor(37)|body_armor(0)|leg_armor(0)|difficulty(11), imodbits_armor],
+["morion_b_v2", "Morion on Hood", [("Revised_Morion_B_v2",0), ("Revised_Morion_B_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 420, weight(2.5)|abundance(95)|head_armor(37)|body_armor(2)|leg_armor(0)|difficulty(11), imodbits_armor],
+["morion_b_v3", "Morion on Padding", [("Revised_Morion_B_v3",0), ("Revised_Morion_B_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 441, weight(2.5)|abundance(95)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
+["morion_b_v4", "Morion on Mail", [("Revised_Morion_B_v4",0), ("Revised_Morion_B_v4_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 493, weight(3)|abundance(90)|head_armor(39)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
+["morion_b_v5", "Morion on Mail", [("Revised_Morion_B_v5",0), ("Revised_Morion_B_v5_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 504, weight(3)|abundance(90)|head_armor(40)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor],
 
 ["eyeslot_kettlehat_a", "Kettle Hat", [("Revised_Kettlehat_A",0), ("Revised_Kettlehat_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 336, weight(1)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
 ["eyeslot_kettlehat_a_v1", "Kettle Hat on Arming Cap", [("Revised_Kettlehat_A_v1",0), ("Revised_Kettlehat_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 347, weight(1)|abundance(100)|head_armor(33)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
@@ -2813,6 +2978,45 @@ items = [
     weight(2.5) | difficulty(9) | spd_rtng(99) | weapon_length(60) | swing_damage(28, cut) | thrust_damage(0,  pierce),
     imodbits_axe
 ],
+
+[
+    "axe_a",
+    "Axe",
+    [
+        ("Revised_Axe_A",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary | itp_secondary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_scimitar | itcf_carry_axe_left_hip,
+    190,
+    weight(2.5) | difficulty(10) | spd_rtng(99) | weapon_length(70) | swing_damage(31, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
+
+[
+    "axe_a_v1",
+    "Axe",
+    [
+        ("Revised_Axe_A_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary | itp_secondary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_scimitar | itcf_carry_axe_left_hip,
+    191,
+    weight(2.5) | difficulty(11) | spd_rtng(99) | weapon_length(70) | swing_damage(33, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
+
+[
+    "axe_a_v2",
+    "Axe",
+    [
+        ("Revised_Axe_A_v2",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary | itp_secondary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_scimitar | itcf_carry_axe_left_hip,
+    191,
+    weight(2.5) | difficulty(11) | spd_rtng(99) | weapon_length(70) | swing_damage(33, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
 # LIGHT AXES END
 
 # HEAVY AXES START
@@ -2878,6 +3082,19 @@ items = [
     itc_nodachi | itcf_carry_axe_back,
     224,
     weight(3) | difficulty(13) | spd_rtng(98) | weapon_length(85) | swing_damage(32, cut) | thrust_damage(0,  pierce),
+    imodbits_axe
+],
+
+[
+    "voulge_a",
+    "Voulge",
+    [
+        ("Revised_Voulge_A",0)
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_two_handed | itp_primary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_nodachi | itcf_carry_axe_back, 
+    129,
+    weight(4.5) | difficulty(8) | spd_rtng(87) | weapon_length(119) | swing_damage(35 , cut) | thrust_damage(0 ,  pierce),
     imodbits_axe
 ],
 # HEAVY AXES END
@@ -2951,6 +3168,116 @@ items = [
     imodbits_polearm
 ],
 # LANCES END
+
+# POLEHAMMERS START
+# + 125 base price value for polehammers
+[
+    "polehammer_a",
+    "Light Pierce Polehammer",
+    [
+        ("Revised_Polehammer_A",0)
+    ],
+    itp_craftable | itp_type_polearm | itp_merchandise | itp_cant_use_on_horseback | itp_primary | itp_penalty_with_shield | itp_wooden_parry | itp_two_handed,
+    itc_cutting_spear | itcf_carry_spear,
+    429,
+    weight(3.0) | difficulty(12) | spd_rtng(91) | weapon_length(160) | swing_damage(35, pierce) | thrust_damage(30, pierce),
+    imodbits_polearm
+],
+
+[
+    "polehammer_b",
+    "Simple Polehammer",
+    [
+        ("Revised_Polehammer_B",0)
+    ],
+    itp_craftable | itp_type_polearm | itp_merchandise | itp_cant_use_on_horseback | itp_primary | itp_penalty_with_shield | itp_wooden_parry | itp_two_handed,
+    itc_cutting_spear | itcf_carry_spear,
+    406,
+    weight(3.0) | difficulty(11) | spd_rtng(91) | weapon_length(140) | swing_damage(32, blunt) | thrust_damage(29, pierce),
+    imodbits_polearm
+],
+
+[
+    "polehammer_c",
+    "Military Polehammer",
+    [
+        ("Revised_Polehammer_C",0)
+    ],
+    itp_craftable | itp_type_polearm | itp_merchandise | itp_cant_use_on_horseback | itp_primary | itp_penalty_with_shield | itp_wooden_parry | itp_two_handed,
+    itc_cutting_spear | itcf_carry_spear,
+    414,
+    weight(3.5) | difficulty(12) | spd_rtng(91) | weapon_length(145) | swing_damage(35, blunt) | thrust_damage(30, pierce),
+    imodbits_polearm
+],
+
+[
+    "polehammer_c_v1",
+    "Military Polehammer",
+    [
+        ("Revised_Polehammer_C_v1",0)
+    ],
+    itp_craftable | itp_type_polearm | itp_merchandise | itp_cant_use_on_horseback | itp_primary | itp_penalty_with_shield | itp_wooden_parry | itp_two_handed,
+    itc_cutting_spear | itcf_carry_spear,
+    428,
+    weight(3.5) | difficulty(12) | spd_rtng(91) | weapon_length(145) | swing_damage(35, blunt) | thrust_damage(30, pierce),
+    imodbits_polearm
+],
+
+[
+    "polehammer_d",
+    "Militia Polehammer",
+    [
+        ("Revised_Polehammer_D",0)
+    ],
+    itp_craftable | itp_type_polearm | itp_merchandise | itp_cant_use_on_horseback | itp_primary | itp_penalty_with_shield | itp_wooden_parry | itp_two_handed,
+    itc_cutting_spear | itcf_carry_spear,
+    394,
+    weight(2.5) | difficulty(10) | spd_rtng(94) | weapon_length(140) | swing_damage(28, blunt) | thrust_damage(21, blunt),
+    imodbits_polearm
+],
+# POLEHAMMERS END
+
+# POLEAXES START
+# + 100 base price value for poleaxes
+[
+    "poleaxe_a",
+    "Footman Poleaxe",
+    [
+        ("Revised_Poleaxe_A",0)
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_two_handed | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    381,
+    weight(4.5) | difficulty(14) | spd_rtng(85) | weapon_length(125) | swing_damage(42, cut) | thrust_damage(15, blunt),
+    imodbits_polearm
+],
+
+[
+    "poleaxe_b",
+    "Military Poleaxe",
+    [
+        ("Revised_Poleaxe_B",0)
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_two_handed | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    436,
+    weight(5) | difficulty(15) | spd_rtng(85) | weapon_length(150) | swing_damage(42, cut) | thrust_damage(21, pierce),
+    imodbits_polearm
+],
+
+[
+    "poleaxe_c",
+    "Military Poleaxe",
+    [
+        ("Revised_Poleaxe_C",0)
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_two_handed | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    482,
+    weight(5) | difficulty(16) | spd_rtng(85) | weapon_length(160) | swing_damage(44, cut) | thrust_damage(27, pierce),
+    imodbits_polearm
+],
+# POLEAXES END
 
 # POLEARMS START
 [
@@ -3030,6 +3357,32 @@ items = [
     weight(2.25)|difficulty(11)|spd_rtng(98) | weapon_length(170)|swing_damage(30 , cut) | thrust_damage(23 ,  pierce),
     imodbits_polearm
 ],
+
+[
+    "polearm_saxon_voulge_a",
+    "Voulge",
+    [
+        ("Revised_Voulge_B",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    301,
+    weight(3.5)|difficulty(11)|spd_rtng(92) | weapon_length(160)|swing_damage(33 , cut) | thrust_damage(23 ,  pierce),
+    imodbits_polearm
+],
+
+[
+    "polearm_saxon_voulge_a_v1",
+    "Voulge",
+    [
+        ("Revised_Voulge_B_v1",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    316,
+    weight(3.5)|difficulty(11)|spd_rtng(98) | weapon_length(160)|swing_damage(35 , cut) | thrust_damage(26 ,  pierce),
+    imodbits_polearm
+],
 # POLEARMS END
 # WEAPONS END
 
@@ -3056,6 +3409,54 @@ items = [
         )
     ],
     [fac_kingdom_1]
+],
+
+[
+    "otto_shield_heraldic_a",
+    "Shield",
+    [
+        ("tableau_shield_otto1", 0),
+    ], 
+    itp_type_shield|itp_merchandise|itp_wooden_parry,
+    itcf_carry_round_shield,
+    170,
+    weight(2)|abundance(100)|body_armor(5)|hit_points(250)|spd_rtng(100)|shield_width(40)|shield_height(55),
+    imodbit_reinforced,
+    [
+        (
+            ti_on_init_item, 
+            [
+                (store_trigger_param_1, ":agent_no"),
+                (store_trigger_param_2, ":troop_no"),
+                (call_script, "script_shield_item_set_banner", "tableau_otto_shield_a", ":agent_no", ":troop_no")
+            ]
+        )
+    ],
+    []
+],
+
+[
+    "otto_shield_heraldic_a_v1",
+    "Shield",
+    [
+        ("tableau_shield_otto2", 0),
+    ], 
+    itp_type_shield|itp_merchandise|itp_wooden_parry,
+    itcf_carry_round_shield,
+    270,
+    weight(2)|abundance(100)|body_armor(12)|hit_points(457)|spd_rtng(100)|shield_width(40)|shield_height(55),
+    imodbit_reinforced,
+    [
+        (
+            ti_on_init_item, 
+            [
+                (store_trigger_param_1, ":agent_no"),
+                (store_trigger_param_2, ":troop_no"),
+                (call_script, "script_shield_item_set_banner", "tableau_otto_shield_b", ":agent_no", ":troop_no")
+            ]
+        )
+    ],
+    []
 ],
 # SHIELDS END
 
@@ -3127,8 +3528,6 @@ items = [
 ["warhammer",         "Great Hammer", [("luc_great_hammer_a",0)], itp_crush_through|itp_craftable|itp_type_two_handed_wpn|itp_merchandise|itp_can_knock_down|itp_primary|itp_two_handed|itp_wooden_parry|itp_wooden_attack|itp_unbalanced, itc_nodachi|itcf_carry_spear, 
 290 , weight(9)|difficulty(14)|spd_rtng(79) | weapon_length(75)|swing_damage(45 , blunt) | thrust_damage(0 ,  pierce),imodbits_mace ],
 ["warhammer_b",         "Great Hammer", [("luc_great_hammer_b",0)], itp_crush_through|itp_craftable|itp_type_two_handed_wpn|itp_merchandise|itp_can_knock_down|itp_primary|itp_two_handed|itp_wooden_parry|itp_wooden_attack|itp_unbalanced, itc_nodachi|itcf_carry_spear, 290 , weight(9)|difficulty(14)|spd_rtng(79) | weapon_length(75)|swing_damage(45 , blunt) | thrust_damage(0 ,  pierce),imodbits_mace ],
-["pickaxe",         "Pickaxe", [("bb_pickaxe_1_bigger",0)], itp_craftable|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry, itc_scimitar|itcf_carry_mace_left_hip, 
-27 , weight(3)|difficulty(0)|spd_rtng(99) | weapon_length(70)|swing_damage(19 , pierce) | thrust_damage(0 ,  pierce),imodbits_pick ],
 ["spiked_club",         "Spiked Club", [("luc_spiked_club",0)], itp_craftable|itp_type_one_handed_wpn|itp_primary|itp_wooden_parry, itc_scimitar|itcf_carry_mace_left_hip, 
 83 , weight(3)|difficulty(0)|spd_rtng(97) | weapon_length(70)|swing_damage(21 , pierce) | thrust_damage(0 ,  pierce),imodbits_mace ],
 ["fighting_pick", "Fighting Pick", [("fighting_pick_new",0)], itp_craftable|itp_type_one_handed_wpn|itp_merchandise|itp_primary|itp_wooden_parry, itc_scimitar|itcf_carry_mace_left_hip, 
@@ -3167,8 +3566,7 @@ items = [
 179 , weight(2.5)|difficulty(9)|spd_rtng(95) | weapon_length(80)|swing_damage(32 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
 ["axe", "Axe", [("luc_executioners_axe",0)], itp_craftable|itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry, itc_nodachi|itcf_carry_axe_back, 
 65 , weight(4)|difficulty(8)|spd_rtng(91) | weapon_length(108)|swing_damage(32 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
-["voulge_short", "Voulge", [("voulge",0)], itp_craftable|itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry, itc_nodachi|itcf_carry_axe_back, 
-129 , weight(4.5)|difficulty(8)|spd_rtng(87) | weapon_length(119)|swing_damage(35 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
+
 ["battle_axe", "Battle Axe", [("luc_battle_axe",0)], itp_craftable|itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry, itc_nodachi|itcf_carry_axe_back, 
 240 , weight(5)|difficulty(9)|spd_rtng(88) | weapon_length(108)|swing_damage(41 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
 ["war_axe", "War Axe", [("luc_war_axe",0)], itp_craftable|itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry, itc_nodachi|itcf_carry_axe_back, 
@@ -3416,11 +3814,6 @@ items = [
 ["bec_de_corbin_a",  "War Hammer", [("polehammer_edited",0)], itp_craftable|itp_type_polearm|itp_merchandise| itp_cant_use_on_horseback|itp_primary|itp_penalty_with_shield|itp_wooden_parry|itp_two_handed, itc_cutting_spear|itcf_carry_spear,
  125 , weight(3.0)|difficulty(0)|spd_rtng(81) | weapon_length(120)|swing_damage(38, blunt) | thrust_damage(38 ,  pierce),imodbits_polearm ],
 # 378 , weight(3.5)|difficulty(12)|spd_rtng(92) | weapon_length(160)|swing_damage(20 ,blunt) | thrust_damage(31 ,  pierce),imodbits_polearm ],
-["m_pole_hammer_a",  "Pole Hammer", [("luc_pole_hammer_z",0)], itp_craftable|itp_type_polearm|itp_merchandise| itp_cant_use_on_horseback|itp_primary|itp_penalty_with_shield|itp_wooden_parry|itp_two_handed, itc_cutting_spear|itcf_carry_spear, 515 , weight(3.0)|difficulty(0)|spd_rtng(83) | weapon_length(120)|swing_damage(38, blunt) | thrust_damage(38 ,  pierce),imodbits_polearm ],
-# 378 , weight(3.5)|difficulty(12)|spd_rtng(92) | weapon_length(160)|swing_damage(20 ,blunt) | thrust_damage(31 ,  pierce),imodbits_polearm ],
-["m_pole_hammer_b",  "Pole Hammer", [("luc_polehammer_z4",0)], itp_craftable|itp_type_polearm|itp_merchandise| itp_cant_use_on_horseback|itp_primary|itp_penalty_with_shield|itp_wooden_parry|itp_two_handed, itc_cutting_spear|itcf_carry_spear, 515 , weight(3.0)|difficulty(0)|spd_rtng(83) | weapon_length(120)|swing_damage(38, blunt) | thrust_damage(38 ,  pierce),imodbits_polearm ],
-# 378 , weight(3.5)|difficulty(12)|spd_rtng(92) | weapon_length(160)|swing_damage(20 ,blunt) | thrust_damage(31 ,  pierce),imodbits_polearm ],
-["m_war_hammer_a",  "War Hammer", [("lucerne_hammer_edited",0)], itp_craftable|itp_type_polearm|itp_merchandise| itp_cant_use_on_horseback|itp_primary|itp_penalty_with_shield|itp_wooden_parry|itp_two_handed, itc_cutting_spear|itcf_carry_spear, 499 , weight(3.0)|difficulty(0)|spd_rtng(81) | weapon_length(120)|swing_damage(38, pierce) | thrust_damage(38 ,  pierce),imodbits_polearm ],
 
 # SHIELDS
 

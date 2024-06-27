@@ -4088,7 +4088,7 @@ troops_undefined = [
         0,
         reserved,
         fac_commoners,
-        [itm_padded_leather, itm_crossbow, itm_bolts, itm_pickaxe, itm_saddle_horse],
+        [itm_padded_leather, itm_crossbow, itm_bolts, itm_pickaxe_a_v1, itm_saddle_horse],
         str_24 | agi_19 | int_6 | cha_30 | level(25),
         wpex(170, 80, 80, 160, 290, 150),
         knows_tracking_10

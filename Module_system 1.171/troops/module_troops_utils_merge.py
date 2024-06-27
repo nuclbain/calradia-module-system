@@ -2,6 +2,7 @@ from module_troops_merge_neutral import *
 from module_troops_merge_merc import *
 from module_troops_merge_silver_rose import *
 from module_troops_merge_chornovalley import *
+from module_troops_merge_celestial import *
 from module_troops_merge_factions import *
 from module_troops_merge_outlaws import *
 from module_troops_merge_manhunters import *
@@ -25,6 +26,7 @@ troops = (
     + troops_mercenaries
     + troops_silver_rose
     + troops_chornovalley
+    + troops_celestial
     + troops_factions
     + troops_outlaws
     + troops_manhunters

@@ -46,7 +46,7 @@ troops_npc = [
         0,
         reserved,
         fac_commoners,
-        [itm_m_pole_hammer_a, itm_poulaines_d],
+        [itm_poulaines_d],
         str_17 | agi_7 | int_11 | cha_12 | level(8),
         wp(170),
         knows_trainer_3

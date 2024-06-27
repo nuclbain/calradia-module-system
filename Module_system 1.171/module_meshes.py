@@ -262,6 +262,8 @@ meshes = [
 ###NEW###
 
 ###
+  ("tableau_mesh_shield_otto1", 0, "tableau_mesh_shield_otto1",  0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("tableau_mesh_shield_otto2", 0, "tableau_mesh_shield_otto2",  0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("tableau_mesh_shield_sarranids_a", 0, "tableau_mesh_shield_sarranids_a",  0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("tableau_mesh_shield_sarranids_b", 0, "tableau_mesh_shield_sarranids_b",  0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("tableau_mesh_shield_sarranids_c", 0, "tableau_mesh_shield_sarranids_c",  0, 0, 0, 0, 0, 0, 10, 10, 10),

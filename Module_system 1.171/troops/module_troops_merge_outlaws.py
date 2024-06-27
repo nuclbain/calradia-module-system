@@ -199,7 +199,7 @@ troops_outlaws = [
             itm_pilgrim_disguise,
             itm_pilgrim_hood,
             itm_studded_club,
-            itm_pickaxe,
+            itm_pickaxe_a_v1,
             itm_one_handed_battle_axe_c,
             itm_tab_shield_pavise_a,
             itm_leather_boots_a,
