@@ -5166,7 +5166,7 @@ troops_undefined = [
         [
             itm_sallet_c,
             itm_m_gauntlets_b,
-            itm_plate_armor,
+            itm_full_plate_armor_a,
             itm_sword_viking_3_small,
             itm_hunter,
         ],

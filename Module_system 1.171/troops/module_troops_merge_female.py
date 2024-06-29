@@ -123,7 +123,7 @@ troops_female = [
             itm_plate_covered_round_shield,
             itm_tab_shield_small_round_c,
             itm_crossbow,
-            itm_plate_armor,
+            itm_full_plate_armor_a,
             itm_coat_of_plates,
             itm_sallet_c,
             itm_sallet_a_v5,
