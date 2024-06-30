@@ -130,7 +130,7 @@ troops_female = [
             itm_courser,
             itm_mail_boots_a,
             itm_leather_boots_a,
-            itm_leather_gloves,
+            itm_leather_gloves_a,
         ],
         def_attrib | level(22),
         wp(140),

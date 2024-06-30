@@ -1843,7 +1843,7 @@ game_menus = [
                     (troop_raise_skill, "trp_player", "skl_trade", 1),
                     (troop_raise_skill, "trp_player", "skl_pathfinding", 1),
                     (troop_raise_skill, "trp_player", "skl_inventory_management", 1),
-                    (troop_add_item, "trp_player", "itm_leather_gloves", imod_plain),
+                    (troop_add_item, "trp_player", "itm_leather_gloves_a", imod_plain),
                     (troop_add_gold, "trp_player", 90),
                     (troop_raise_proficiency, "trp_player", wpt_polearm, 15),
                     (troop_add_item, "trp_player", "itm_leather_jacket", 0),
@@ -1865,7 +1865,7 @@ game_menus = [
                     (troop_raise_skill, "trp_player", "skl_wound_treatment", 1),
                     (troop_raise_skill, "trp_player", "skl_first_aid", 1),
                     (troop_raise_skill, "trp_player", "skl_surgery", 1),
-                    (troop_add_item, "trp_player", "itm_leather_gloves", imod_ragged),
+                    (troop_add_item, "trp_player", "itm_leather_gloves_a", imod_ragged),
                     (troop_add_item, "trp_player", "itm_quarter_staff", imod_heavy),
                     # remove monk stuff, add pilgrim stuff
                     (troop_remove_item, "trp_player", "itm_robe"),

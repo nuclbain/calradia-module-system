@@ -31357,7 +31357,7 @@ I suppose there are plenty of bounty hunters around to get the job done . . .", 
         # let's add some objects to this adventurous wife
         (troop_add_item, "$g_talk_troop","itm_hunter", imod_spirited),
         (troop_add_item, "$g_talk_troop","itm_tribal_warrior_outfit", imod_lordly),
-        (troop_add_item, "$g_talk_troop","itm_leather_gloves", imod_lordly),
+        (troop_add_item, "$g_talk_troop","itm_leather_gloves_a", imod_lordly),
         # (troop_add_item, "$g_talk_troop","itm_female_hood", imod_lordly),
         (troop_add_item, "$g_talk_troop","itm_hunting_bow", imod_masterwork),
         (troop_add_item, "$g_talk_troop","itm_arrows", imod_large_bag),

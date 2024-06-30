@@ -67,7 +67,7 @@ troops_npc = [
         [
             itm_hunter_c,
             itm_tabard_d,
-            itm_mt_leather_gloves_a,
+            itm_leather_gloves_a,
             itm_hose_a,
             itm_royal_mace_decorated,
         ],
@@ -91,7 +91,7 @@ troops_npc = [
         fac_commoners,
         [
             itm_heavy_infantry_axe,
-            itm_mt_leather_gloves_a,
+            itm_leather_gloves_a,
             itm_leather_boots_a,
             itm_throwing_knives,
         ],
@@ -118,7 +118,7 @@ troops_npc = [
         [
             itm_banded_armor,
             itm_sallet_c,
-            itm_m_gloves_a,
+            itm_leather_gloves_a_v1,
             itm_light_rifle_a,
             itm_mail_boots_a,
             itm_cartridges,
@@ -225,7 +225,7 @@ troops_npc = [
             itm_cartridges,
             itm_tab_shield_pavise_d,
             itm_mail_boots_b,
-            itm_m_gauntlets_a,
+            itm_plate_gauntlets_a,
         ],
         str_15 | agi_13 | int_9 | cha_11 | level(8),
         wp(105) | wp_firearm(300),
@@ -269,7 +269,7 @@ troops_npc = [
             itm_cartridges,
             itm_flanged_mace,
             itm_light_leather_boots_a,
-            itm_m_gloves_a,
+            itm_leather_gloves_a_v1,
         ],
         str_12 | agi_17 | int_13 | cha_7 | level(4),
         wp(85) | wp_firearm(200),
@@ -291,7 +291,7 @@ troops_npc = [
         fac_commoners,
         [
             itm_olive_hauberk_a_v1,
-            itm_m_gloves_a,
+            itm_leather_gloves_a_v1,
             itm_leather_boots_b,
         ],
         str_9 | agi_13 | int_12 | cha_8 | level(3),

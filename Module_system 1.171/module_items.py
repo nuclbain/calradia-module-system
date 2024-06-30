@@ -329,14 +329,21 @@ items = [
 
 # ARMOR
 #handwear
-["leather_gloves","Leather Gloves", [("gloves_a_L",0)], itp_merchandise|itp_type_hand_armor,0, 90, weight(0.25)|abundance(120)|body_armor(2)|difficulty(0),imodbits_cloth],
-["old_leather_gloves","Old Gloves", [("dethertir_gloves_L",0)], itp_merchandise|itp_type_hand_armor,0, 51, weight(0.25)|abundance(100)|body_armor(1)|difficulty(0),imodbits_cloth, [], [fac_kingdom_1]],
-["decorated_leather_gloves_a","Decorated Leather Gloves", [("gloves_lord_L", 0)], itp_type_hand_armor|itp_merchandise, 0,125, weight(0.75)|abundance(100)|body_armor(3), imodbit_reinforced|imodbit_lordly, [], [fac_kingdom_6]],
-["decorated_leather_gloves_b","Royal Leather Gloves", [("gloves_king_L", 0)], itp_type_hand_armor|itp_merchandise, 0,125, weight(0.75)|abundance(100)|body_armor(3), imodbit_reinforced|imodbit_lordly, [], [fac_kingdom_6]],
+["leather_gloves_a","Cheap Leather Gloves", [("Leather_Gloves_A_L",0)], itp_merchandise|itp_type_hand_armor,0, 60, weight(0.25)|abundance(100)|body_armor(1)|difficulty(0),imodbits_cloth],
+["leather_gloves_a_v1","Leather Gloves", [("Leather_Gloves_A_v1_L",0)], itp_merchandise|itp_type_hand_armor,0, 90, weight(0.25)|abundance(100)|body_armor(2)|difficulty(0),imodbits_cloth],
 
-["mt_leather_gloves_a","Leather_gloves", [("glove4_L",0)], itp_merchandise|itp_type_hand_armor,0, 299, weight(0.75)|abundance(100)|body_armor(2)|difficulty(0),imodbits_cloth, [], [fac_kingdom_5, fac_kingdom_9, fac_kingdom_10]],
-["mail_mittens","Mail Mittens", [("gauntlets_crysader_L",0)], itp_merchandise|itp_type_hand_armor,0, 350, weight(0.5)|abundance(100)|body_armor(5)|difficulty(0),imodbits_armor],
-["old_mail_gloves","Old Mail Gloves", [("dethertir_gauntlets_L",0)], itp_merchandise|itp_type_hand_armor,0, 399, weight(0.75)|abundance(100)|body_armor(4)|difficulty(0),imodbits_armor, [], [fac_kingdom_1]],
+["leather_gloves_b","Long Cheap Leather Gloves", [("Leather_Gloves_B_L",0)], itp_merchandise|itp_type_hand_armor,0, 120, weight(0.3)|abundance(100)|body_armor(3)|difficulty(0),imodbits_cloth],
+["leather_gloves_b_v1","Long Leather Gloves", [("Leather_Gloves_B_v1_L",0)], itp_merchandise|itp_type_hand_armor,0, 150, weight(0.3)|abundance(100)|body_armor(4)|difficulty(0),imodbits_cloth],
+
+["mail_mittens_a","Mail Mittens", [("Mail_Gloves_A_L",0)], itp_merchandise|itp_type_hand_armor,0, 150, weight(0.5)|abundance(100)|body_armor(4)|difficulty(8),imodbits_armor],
+["mail_mittens_a_v1","Mail Mittens", [("Mail_Gloves_A_v1_L",0)], itp_merchandise|itp_type_hand_armor,0, 180, weight(0.5)|abundance(100)|body_armor(5)|difficulty(9),imodbits_armor],
+
+["plate_gauntlets_a","Cheap Plate Gauntlets", [("Plate_Gauntlets_A_L",0)], itp_merchandise|itp_type_hand_armor,0, 710, weight(0.75)|abundance(100)|body_armor(6)|difficulty(10),imodbits_armor],
+["plate_gauntlets_a_v1","Cheap Plate Gauntlets", [("Plate_Gauntlets_A_v1_L",0)], itp_merchandise|itp_type_hand_armor,0, 740, weight(0.75)|abundance(100)|body_armor(7)|difficulty(10),imodbits_armor],
+["plate_gauntlets_a_v2","Cheap Plate Gauntlets", [("Plate_Gauntlets_A_v2_L",0)], itp_merchandise|itp_type_hand_armor,0, 770, weight(0.75)|abundance(100)|body_armor(8)|difficulty(11),imodbits_armor],
+
+["plate_gauntlets_b","Plate Gauntlets", [("Plate_Gauntlets_B_L",0)], itp_merchandise|itp_type_hand_armor,0, 840, weight(0.85)|abundance(100)|body_armor(8)|difficulty(11),imodbits_armor],
+["plate_gauntlets_b_v1","Plate Gauntlets", [("Plate_Gauntlets_B_v1_L",0)], itp_merchandise|itp_type_hand_armor,0, 870, weight(0.85)|abundance(100)|body_armor(9)|difficulty(12),imodbits_armor],
 
 ["eastern_scale_gloves_a","Eastern Scale Gloves", [("gauntlets_arabs_a_L", 0)], itp_type_hand_armor|itp_merchandise, 0,710, weight(0.75)|abundance(100)|body_armor(5), imodbit_lordly, [], [fac_kingdom_6]],
 ["eastern_scale_gloves_b","Eastern Decorated Scale Gloves", [("gauntlets_arabs_b_L", 0)], itp_type_hand_armor|itp_merchandise, 0,919, weight(0.75)|abundance(100)|body_armor(6), imodbit_lordly, [], [fac_kingdom_6]],
@@ -346,11 +353,6 @@ items = [
 ["mt_gauntlets_a","Plate Gauntlets Gothic", [("glove1_L",0)], itp_merchandise|itp_type_hand_armor,0, 799, weight(0.75)|abundance(100)|body_armor(6)|difficulty(0),imodbits_armor, [], [fac_kingdom_10, fac_kingdom_9]],
 ["mt_gauntlets_a2","Plate Gauntlets Gothic", [("glove2_L",0)], itp_merchandise|itp_type_hand_armor,0, 799, weight(0.75)|abundance(100)|body_armor(6)|difficulty(0),imodbits_armor, [], [fac_kingdom_10, fac_kingdom_9]],
 ["mt_gauntlets_b","Mail Gloves", [("glove3_L",0)], itp_merchandise|itp_type_hand_armor,0, 599, weight(0.75)|abundance(100)|body_armor(5)|difficulty(0),imodbits_armor, [], [fac_kingdom_10, fac_kingdom_9]],
-
-["m_gloves_a","Leather Gauntlets", [("leather_gauntlet_L",0)], itp_merchandise|itp_type_hand_armor,0, 499, weight(0.5)|abundance(100)|body_armor(4)|difficulty(0),imodbits_cloth],
-
-["m_gauntlets_a","Plate Gauntlets", [("demi_gauntlets_L",0)], itp_merchandise|itp_type_hand_armor,0, 799, weight(0.75)|abundance(100)|body_armor(6)|difficulty(0),imodbits_armor],
-["m_gauntlets_b","Plate Gauntlets", [("finger_gauntlets_L",0)], itp_merchandise|itp_type_hand_armor,0, 849, weight(0.85)|abundance(100)|body_armor(7)|difficulty(0),imodbits_armor],
 
 # BOOTS BEGIN
 ["sandals_a", "Sandals", [("Sandals_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 5, weight(0.25)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(2)|difficulty(0) ,imodbits_cloth ],
