@@ -96,41 +96,90 @@ upgrade2(
 )
 upgrade(troops, "stormguard_tempest_sentinel", "stormguard_elite_stormguard")
 
-# new troop trees for native factions
-upgrade(troops, "silver_rose_novice", "silver_rose_levy")
-
-# native
+# [I] Silver Rose Recruit
+# |- [II] Silver Rose Levy
+# |     |- [III] Silver Rose Militia
+# |     |- [III] Silver Rose Scout
+# |- [II] Silver Rose City Watch 
+# |     |- [III] Silver Rose Tower Guard
+# |     |- [III] Silver Rose Wall Guard
+upgrade2(troops, "silver_rose_recruit", "silver_rose_levy", "silver_rose_city_watch")
+upgrade2(troops, "silver_rose_city_watch", "silver_rose_tower_guard", "silver_rose_wall_guard")
 upgrade2(troops, "silver_rose_levy", "silver_rose_milita", "silver_rose_scout")
 
-upgrade2(troops, "silver_rose_milita", "silver_rose_footman", "silver_rose_crossbowman")
+# [I] Silver Rose Footman
+# |- [II] Silver Rose Hacker
+# |- [II] Silver Rose Infantry
+# |     |- [III] Silver Rose Sergeant
 upgrade2(troops, "silver_rose_footman", "silver_rose_hacker", "silver_rose_infantry")
-upgrade2(troops, "silver_rose_infantry", "silver_rose_sergeant", "silver_rose_horseman")
-upgrade(troops, "silver_rose_crossbowman", "silver_rose_trained_crossbowman")
+upgrade(troops, "silver_rose_infantry", "silver_rose_sergeant")
 
+# [I] Silver Rose Crossbowman
+# |- [II] Silver Rose Trained Crossbowman
+# |     |- [III] Silver Rose Sharpshooter
+upgrade(troops, "silver_rose_crossbowman", "silver_rose_trained_crossbowman")
 upgrade(troops, "silver_rose_trained_crossbowman", "silver_rose_sharpshooter")
 
+# [I] Silver Rose Squire
+# |- [II] Silver Rose Horseman
+# |     |- [III] Silver Rose Man-at-Arms
+# |     |     |- [IV] Silver Rose Knight
+upgrade(troops, "silver_rose_squire", "silver_rose_horseman")
 upgrade(troops, "silver_rose_horseman", "silver_rose_man_at_arms")
 upgrade(troops, "silver_rose_man_at_arms", "silver_rose_knight")
 
-upgrade(troops, "chornovalley_recruit", "chornovalley_scout")
-upgrade2(troops, "chornovalley_scout", "chornovalley_warrior", "chornovalley_hunter")
+# [I] Chornovalley Recruit
+# |- [II] Chornovalley Scout
+# |     |- [III] Chornovalley Hunter
+# |     |     |- [IV] Chornovalley Longbowman
+# |- [II] Chornovalley Warden
+# |     |- [III] Chornovalley Gatekeeper
+upgrade2(troops, "chornovalley_recruit", "chornovalley_scout", "chornovalley_warden")
+upgrade(troops, "chornovalley_scout", "chornovalley_hunter")
 upgrade(troops, "chornovalley_hunter", "chornovalley_longbowman")
+upgrade(troops, "chornovalley_warden", "chornovalley_gatekeeper")
 
-upgrade2(
-    troops, "chornovalley_warrior", "chornovalley_sheriff", "chornovalley_horseman"
-)
-upgrade2(
-    troops, "chornovalley_sheriff", "chornovalley_gunslider", "chornovalley_sergeant"
-)
+# [I] Chornovalley Warrior
+# |- [II] Chornovalley Sheriff
+# |     |- [III] Chornovalley Sergeant
+upgrade(troops, "chornovalley_warrior", "chornovalley_sheriff")
+upgrade(troops, "chornovalley_sheriff", "chornovalley_sergeant")
 
+# [I] Chornovalley Gunslider
+# |- [II] Chornovalley Sniper
+upgrade(troops, "chornovalley_gunslider", "chornovalley_sniper")
+
+# [I] Chornovalley Horseman
+# |- [II] Chornovalley Knight
 upgrade(troops, "chornovalley_horseman", "chornovalley_knight")
 
-upgrade2(troops, "celestial_recruit", "celestial_milita", "celestial_hunter")
+# [I] Celestial Recruit
+# |- [II] Celestial Voulgier
+# |     |- [III] Celestial Houseguard
+# |     |     |- [IV] Celestial Footman
+# |- [II] Celestial Archer
+upgrade2(troops, "celestial_recruit", "celestial_voulgier", "celestial_archer")
+upgrade(troops, "celestial_voulgier", "celestial_houseguard")
+upgrade(troops, "celestial_houseguard", "celestial_footman")
+
+# [I] Celestial Milita
+# |- [II] Celestial Armsman
+# |     |- [III] Celestial Sergeant
+# |     |     |- [IV] Celestial Commander
+# |- [II] Celestial Foot Knight
+upgrade2(troops, "celestial_milita", "celestial_armsman", "celestial_foot_knight")
+upgrade(troops, "celestial_armsman", "celestial_sergeant")
+upgrade(troops, "celestial_sergeant", "celestial_commander")
+
+# [I] Celestial Hunter
+# |- [II] Celestial Crossbowman
 upgrade(troops, "celestial_hunter", "celestial_crossbowman")
 
-upgrade2(troops, "celestial_milita", "celestial_armsman", "celestial_foot_knight")
-upgrade2(troops, "celestial_armsman", "celestial_lancer", "celestial_sergeant")
-upgrade(troops, "celestial_sergeant", "celestial_commander")
+# [I] Celestial Squire
+# |- [II] Celestial Initiate Knight
+# |     |- [III] Celestial Lancer
+upgrade(troops, "celestial_squire", "celestial_initiate_knight")
+upgrade(troops, "celestial_initiate_knight", "celestial_lancer") 
 
 upgrade2(troops, "iron_crown_recruit", "iron_crown_raider", "iron_crown_skirmisher")
 upgrade(troops, "iron_crown_raider", "iron_crown_footman")

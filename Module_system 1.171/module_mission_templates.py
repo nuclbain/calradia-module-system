@@ -37,10 +37,10 @@ from compiler import *
 #SB : add new disguise sets, make sure none of them have high difficulty
 # the new flags now also have af_override_everything, so include footwear
 pilgrim_disguise = [itm_pilgrim_hood,itm_pilgrim_disguise,itm_practice_staff, itm_throwing_daggers]
-farmer_disguise = [itm_felt_hat, itm_coarse_tunic, itm_cleaver, itm_battle_fork, itm_stones]
-hunter_disguise = [itm_hunting_bow,itm_barbed_arrows, itm_black_hood, itm_leather_gloves, itm_light_leather, itm_sword_khergit_1]
+farmer_disguise = [itm_felt_a, itm_coarse_tunic, itm_cleaver, itm_battle_fork, itm_stones]
+hunter_disguise = [itm_hunting_bow,itm_barbed_arrows, itm_black_hood, itm_leather_gloves_a, itm_light_leather, itm_sword_khergit_1]
 merchant_disguise = [itm_leather_jacket,itm_felt_steppe_cap,itm_dagger]
-guard_disguise = [itm_stormguard_hauberk_a,itm_mail_mittens,itm_iron_crown_nasal_a,itm_tab_shield_round_c,itm_fighting_pick,itm_war_spear]
+guard_disguise = [itm_olive_hauberk_a,itm_mail_mittens_a,itm_nasal_helmet_a_v2,itm_tab_shield_round_c,itm_fighting_pick,itm_war_spear]
 bard_disguise = [itm_lyre,itm_linen_tunic,itm_winged_mace]
 #note that these are usually male clothing, especially farmer_disguise, need some female ones as well
 
@@ -5639,8 +5639,8 @@ mission_templates = [
       (53, mtef_scene_source,af_override_horse,0,1,[]),(54, mtef_scene_source,af_override_horse,0,1,[]),(55, mtef_scene_source,af_override_horse,0,1,[]),
 #used for tournament master scene
 
-      (56, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_practice_shield, itm_padded_cloth, itm_bascinet_3]),
-      (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_practice_shield, itm_padded_cloth, itm_bascinet_3]),
+      (56, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_practice_shield, itm_padded_cloth, itm_sallet_c]),
+      (57, mtef_visitor_source|mtef_team_0, af_override_all, aif_start_alarmed, 1, [itm_practice_sword, itm_practice_shield, itm_padded_cloth, itm_sallet_c]),
     ],
     tournament_triggers
   ),
@@ -6039,10 +6039,10 @@ mission_templates = [
     "wedding",0,-1,
     "Wedding",
     [
-        (0,mtef_visitor_source,af_override_everything,0,1,[itm_tabard]),
+        (0,mtef_visitor_source,af_override_everything,0,1,[itm_tabard_a]),
         (1,mtef_visitor_source,af_override_everything,0,1,[itm_bride_dress, itm_bride_crown, itm_bride_shoes]),
         (2,mtef_visitor_source,af_castle_lord,0,1,[]),
-        (3,mtef_visitor_source,af_override_everything,0,1,[itm_courtly_outfit]),
+        (3,mtef_visitor_source,af_override_everything,0,1,[itm_tabard_e]),
         (4,mtef_visitor_source,af_castle_lord,0,1,[]),
         (5,mtef_visitor_source,af_castle_lord,0,1,[]),
         (6,mtef_visitor_source,af_castle_lord,0,1,[]),

@@ -16,7 +16,7 @@ troops_summoned = [
             itm_stones,
             itm_hunting_crossbow,
             itm_bolts,
-            itm_falchion,
+            itm_falchion_a,
             itm_dagger,
             itm_cleaver,
             itm_knife,
