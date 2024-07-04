@@ -1355,6 +1355,96 @@ items = [
     imodbit_thick | imodbit_reinforced,
     [], [fac_kingdom_4, fac_kingdom_12]
 ],
+
+[
+    "green_aketon_a",
+    "Green Painted Aketon",
+    [
+        ("Green_Aketon_A", 0),
+        ("Green_Aketon_A_thick", imodbit_thick),
+        ("Green_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_aketon_a_v1",
+    "Green Painted Aketon",
+    [
+        ("Green_Aketon_A_v1", 0),
+        ("Green_Aketon_A_v1_thick", imodbit_thick),
+        ("Green_Aketon_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_aketon_a_v2",
+    "Green Painted Aketon",
+    [
+        ("Green_Aketon_A_v2", 0),
+        ("Green_Aketon_A_v2_thick", imodbit_thick),
+        ("Green_Aketon_A_v2_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_aketon_b",
+    "Green Painted Aketon with Plates",
+    [
+        ("Green_Aketon_B", 0),
+        ("Green_Aketon_B_thick", imodbit_thick),
+        ("Green_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_aketon_b_v1",
+    "Green Painted Aketon with Plates",
+    [
+        ("Green_Aketon_B_v1", 0),
+        ("Green_Aketon_B_v1_thick", imodbit_thick),
+        ("Green_Aketon_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_aketon_b_v2",
+    "Green Painted Aketon with Plates",
+    [
+        ("Green_Aketon_B_v2", 0),
+        ("Green_Aketon_B_v2_thick", imodbit_thick),
+        ("Green_Aketon_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
 # AKETONS END
 
 # POURPOINTS START
@@ -1730,6 +1820,135 @@ items = [
     imodbits_none,
     [], [fac_kingdom_1]
 ],
+
+[
+    "green_churburg_a",
+    "Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_A", 0),
+        ("Green_Churburg_A_thick", imodbit_thick),
+        ("Green_Churburg_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1304,
+    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_a_v1",
+    "Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_A_v1", 0),
+        ("Green_Churburg_A_v1_thick", imodbit_thick),
+        ("Green_Churburg_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1304,
+    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_a_v2",
+    "Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_A_v2", 0),
+        ("Green_Churburg_A_v2_thick", imodbit_thick),
+        ("Green_Churburg_A_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1304,
+    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_b",
+    "Plated Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_B", 0),
+        ("Green_Churburg_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
+    imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_b_v1",
+    "Plated Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_B_v1", 0),
+        ("Green_Churburg_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
+    imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_b_v2",
+    "Plated Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_B_v2", 0),
+        ("Green_Churburg_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
+    imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_c",
+    "Heavy Plated Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_C", 0),
+        ("Green_Churburg_C_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
+    imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_c_v1",
+    "Heavy Plated Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_C_v1", 0),
+        ("Green_Churburg_C_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
+    imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_c_v2",
+    "Heavy Plated Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_C_v2", 0),
+        ("Green_Churburg_C_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
+    imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
 # CHURBURG END
 
 # HAUBERKS START
@@ -2057,6 +2276,51 @@ items = [
     weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
     imodbit_thick | imodbit_reinforced,
     [], [fac_kingdom_4, fac_kingdom_12]
+],
+
+[
+    "green_hauberk_a",
+    "Hauberk on Green Painted Aketon",
+    [
+        ("Green_Hauberk_A", 0),
+        ("Green_Hauberk_A_thick", imodbit_thick),
+        ("Green_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_hauberk_a_v1",
+    "Hauberk on Green Painted Aketon",
+    [
+        ("Green_Hauberk_A_v1", 0),
+        ("Green_Hauberk_A_v1_thick", imodbit_thick),
+        ("Green_Hauberk_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_hauberk_a_v2",
+    "Hauberk on Green Painted Aketon",
+    [
+        ("Green_Hauberk_A_v2", 0),
+        ("Green_Hauberk_A_v2_thick", imodbit_thick),
+        ("Green_Hauberk_A_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
 ],
 # HAUBERKS END
 
