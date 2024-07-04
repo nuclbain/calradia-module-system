@@ -18,7 +18,7 @@ troops_manhunters = [
         [
             itm_mace_3,
             itm_winged_mace,
-            itm_footman_helmet,
+            itm_eyeslot_kettlehat_a_v1,
             itm_padded_cloth,
             itm_aketon_green,
             itm_aketon_green,

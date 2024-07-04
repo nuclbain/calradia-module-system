@@ -374,12 +374,16 @@ items = [
 ["poulaines_f", "Yellow Poulaines", [("Poulaines_F",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 
 ["leather_shoes_a", "Leather Shoes", [("Leather_Shoes_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 69, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(12)|difficulty(0) ,imodbits_cloth ],
+["leather_shoes_a_v1", "Leather Shoes", [("Leather_Shoes_A_v1",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 69, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(12)|difficulty(0) ,imodbits_cloth ],
 ["leather_shoes_b", "Leather Shoes", [("Leather_Shoes_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 69, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(12)|difficulty(0) ,imodbits_cloth ],
-["leather_shoes_c", "Leather Shoes", [("Leather_Shoes_C",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 69, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(12)|difficulty(0) ,imodbits_cloth ],
+["leather_shoes_b_v1", "Leather Shoes", [("Leather_Shoes_B_v1",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 69, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(12)|difficulty(0) ,imodbits_cloth ],
 
 ["light_leather_boots_a", "Light Leather Boots", [("Light_Leather_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 87, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth ],
+["light_leather_boots_a_v1", "Light Leather Boots", [("Light_Leather_Boots_A_v1",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 87, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth ],
 ["light_leather_boots_b", "Light Leather Boots", [("Light_Leather_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 87, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth ],
+["light_leather_boots_b_v1", "Light Leather Boots", [("Light_Leather_Boots_B_v1",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 87, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth ],
 ["light_leather_boots_c", "Light Leather Boots", [("Light_Leather_Boots_C",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 87, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth ],
+["light_leather_boots_c_v1", "Light Leather Boots", [("Light_Leather_Boots_C_v1",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 87, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth ],
 
 ["leather_boots_a", "Leather Boots", [("Leather_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 131, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth],
 ["leather_boots_b", "Hide & Leather Boots", [("Leather_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 131, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth],
@@ -653,6 +657,19 @@ items = [
     weight(2)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(4)|difficulty(0),
     imodbits_none,
     [], [fac_kingdom_2]
+],
+
+[
+    "rough_gray_shirt_a",
+    "Gray Rough Shirt",
+    [
+        ("Gray_Rough_Shirt_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 35,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(4)|difficulty(0),
+    imodbits_none,
+    [], [fac_kingdom_4]
 ],
 
 # TUNICS START
@@ -3210,7 +3227,20 @@ items = [
     itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_two_handed | itp_primary | itp_bonus_against_shield | itp_wooden_parry,
     itc_nodachi | itcf_carry_axe_back, 
     129,
-    weight(4.5) | difficulty(8) | spd_rtng(87) | weapon_length(119) | swing_damage(35 , cut) | thrust_damage(0 ,  pierce),
+    weight(4.5) | difficulty(8) | spd_rtng(87) | weapon_length(119) | swing_damage(30 , cut) | thrust_damage(0 ,  pierce),
+    imodbits_axe
+],
+
+[
+    "bardiche_a",
+    "Bardiche",
+    [
+        ("Revised_Bardiche_A",0)
+    ],
+    itp_craftable | itp_type_two_handed_wpn | itp_merchandise | itp_two_handed | itp_primary | itp_bonus_against_shield | itp_wooden_parry,
+    itc_nodachi | itcf_carry_axe_back,
+    198,
+    weight(4.25) | difficulty(11) | spd_rtng(95) | weapon_length(100) | swing_damage(32, cut) | thrust_damage(0,  pierce),
     imodbits_axe
 ],
 # HEAVY AXES END
@@ -3499,7 +3529,68 @@ items = [
     weight(3.5)|difficulty(11)|spd_rtng(98) | weapon_length(160)|swing_damage(35 , cut) | thrust_damage(26 ,  pierce),
     imodbits_polearm
 ],
+
+[
+    "polearm_voulge_a",
+    "Long Voulge",
+    [
+        ("Revised_Voulge_C",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    319,
+    weight(4.0)|difficulty(11)|spd_rtng(92) | weapon_length(180)|swing_damage(32 , cut) | thrust_damage(26 ,  pierce),
+    imodbits_polearm
+],
+
+[
+    "polearm_voulge_b",
+    "Long Voulge",
+    [
+        ("Revised_Voulge_D",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    293,
+    weight(4.0)|difficulty(11)|spd_rtng(92) | weapon_length(160)|swing_damage(32 , cut) | thrust_damage(20, blunt),
+    imodbits_polearm
+],
+
+[
+    "polearm_voulge_c",
+    "Long Voulge",
+    [
+        ("Revised_Voulge_E",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    304,
+    weight(4.0)|difficulty(11)|spd_rtng(96) | weapon_length(160)|swing_damage(33 , cut) | thrust_damage(26 ,  pierce),
+    imodbits_polearm
+],
 # POLEARMS END
+
+# HAFTED WEAPONS START
+[
+    "long_pole_mace_a", "Long Spiked Club",
+    [("Revised_Hafted_A",0)],
+    itp_type_polearm | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_staff | itcf_carry_axe_back,
+    217, # Price is 317 but - 100 for cheap materials
+    weight(3) | difficulty(9) | spd_rtng(94) | weapon_length(120) | swing_damage(25 , pierce) | thrust_damage(15 ,  blunt),
+    imodbits_mace
+],
+
+[
+    "long_pole_mace_b", "Long Hafed Spiked Mace",
+    [("Revised_Hafted_B",0)],
+    itp_type_polearm | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_staff | itcf_carry_axe_back,
+    337,
+    weight(3.5) | difficulty(10) | spd_rtng(92) | weapon_length(139) | swing_damage(28 , pierce) | thrust_damage(18 ,  blunt),
+    imodbits_mace
+],
+# HAFTED WEAPONS END
 # WEAPONS END
 
 # SHIELDS START
@@ -3596,8 +3687,6 @@ items = [
 ["leather_steppe_cap_c", "Steppe Cap", [("steppe_cap_a_new",0)], itp_merchandise|itp_type_head_armor   ,0, 51 , weight(1)|abundance(100)|head_armor(16)|body_armor(0)|leg_armor(0) ,imodbits_cloth ],
 ["mail_coif", "Mail Coif", [("crusader_koif_a",0)], itp_merchandise| itp_type_head_armor   ,0, 71 , weight(1.25)|abundance(100)|head_armor(22)|body_armor(0)|leg_armor(0)|difficulty(7) ,imodbits_armor ],
 
-["footman_helmet", "Footman's Helmet", [("Skull_Cap_A",0), ("Skull_Cap_A.1",0),("Skull_Cap_A_inv",ixmesh_inventory), ("Skull_Cap_A_inv.1",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature   ,0, 95 , weight(1.5)|abundance(100)|head_armor(24)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_plate, [], [fac_kingdom_1]],
-
 ["khergit_lady_hat", "Eastern Lady Hat", [("khergit_lady_hat",0)],  itp_type_head_armor   |itp_civilian |itp_doesnt_cover_hair | itp_fit_to_head,0, 1 , weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 ["khergit_lady_hat_b", "Eastern Lady Leather Hat", [("khergit_lady_hat_b",0)], itp_type_head_armor  | itp_doesnt_cover_hair | itp_fit_to_head  |itp_civilian ,0, 1 , weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
 
@@ -3605,9 +3694,8 @@ items = [
 ["m_bascinet_b", "Visored Bascinet", [("Revised_Bascinet_A",0),("Revised_Bascinet_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 659, weight(2.5)|abundance(100)|head_armor(50)|body_armor(0)|leg_armor(0)|difficulty(8) ,imodbits_plate, [], [fac_kingdom_3] ],
 
 ["great_helmet_heretics", "Great Helmet", [("Heretics_Helmet_A",0)], itp_merchandise| itp_type_head_armor|itp_covers_head,0, 995 , weight(2.75)|abundance(100)|head_armor(54)|body_armor(0)|leg_armor(0)|difficulty(11) ,imodbits_plate ],
-["great_helmet", "Great Helmet", [("crusader_knight_helm_d",0)], itp_merchandise| itp_type_head_armor|itp_covers_head,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
-["winged_great_helmet", "Decorated Great Helmet", [("namet_crusader_helm_d",0),("namet_crusader_helm_d.1",0)], itp_merchandise|itp_type_head_armor|itp_covers_head,0, 1240 , weight(2.75)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
-
+["great_helmet", "Great Helmet", [("Heretics_Helmet_A",0)], itp_merchandise| itp_type_head_armor|itp_covers_head,0, 980 , weight(2.75)|abundance(100)|head_armor(53)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
+["winged_great_helmet", "Decorated Great Helmet", [("Heretics_Helmet_A",0)], itp_merchandise|itp_type_head_armor|itp_covers_head,0, 1240 , weight(2.75)|abundance(100)|head_armor(55)|body_armor(0)|leg_armor(0)|difficulty(10) ,imodbits_plate ],
 
 #WEAPONS
 ["wooden_stick",         "Wooden Stick", [("wooden_stick",0)], itp_type_one_handed_wpn|itp_merchandise| itp_primary|itp_wooden_parry|itp_wooden_attack, itc_scimitar, 
@@ -3724,13 +3812,6 @@ items = [
  230 , weight(1.75)|difficulty(9)|spd_rtng(98) | weapon_length(72)|swing_damage(36 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
 ["one_handed_battle_axe_c", "One Handed Battle Axe", [("one_handed_battle_axe_c",0)], itp_craftable|itp_type_one_handed_wpn|itp_merchandise| itp_primary|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip,
  550 , weight(2.0)|difficulty(9)|spd_rtng(98) | weapon_length(76)|swing_damage(37 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
-["m_one_handed_knight_axe_a", "One Handed Knight Axe", [("luc_knightly_axe_one_handed",0)], itp_craftable|itp_type_one_handed_wpn|itp_merchandise| itp_primary|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip, 671 , weight(2.5)|difficulty(11)|spd_rtng(98) | weapon_length(85)|swing_damage(37 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
-["m_one_handed_knight_axe_b", "One Handed Knight Axe", [("luc_knightly_axe_one_handed_b",0)], itp_craftable|itp_type_one_handed_wpn|itp_merchandise| itp_primary|itp_secondary|itp_bonus_against_shield|itp_wooden_parry, itc_scimitar|itcf_carry_axe_left_hip, 699 , weight(2.5)|difficulty(11)|spd_rtng(98) | weapon_length(90)|swing_damage(37 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
-
-["m_two_handed_knight_axe_b","Two Handed Knight Axe", [("luc_knightly_axe_two_handed",0)], itp_craftable|itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,679 , weight(4.0)|difficulty(13)|spd_rtng(99) | weapon_length(95)|swing_damage(44 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
-
-["m_two_handed_heavy_axe_a","Heavy Two Handed Axe", [("luc_two_handed_axe_1",0)], itp_craftable|itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,199 , weight(4.0)|difficulty(10)|spd_rtng(99) | weapon_length(90)|swing_damage(38 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
-["m_two_handed_heavy_axe_b","Heavy Two Handed Axe", [("luc_two_handed_axe_2",0)], itp_craftable|itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,199 , weight(4.0)|difficulty(10)|spd_rtng(99) | weapon_length(90)|swing_damage(38 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
 
 ["two_handed_axe",         "Two Handed Axe", [("two_handed_battle_axe_a",0)], itp_craftable|itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,
  90 , weight(4.5)|difficulty(10)|spd_rtng(96) | weapon_length(90)|swing_damage(38 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
@@ -3753,7 +3834,7 @@ items = [
 ["long_axe_c_alt",      "Great Long Axe", [("long_axe_c",0)], itp_craftable|itp_type_two_handed_wpn| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,
  660 , weight(5.5)|difficulty(10)|spd_rtng(85) | weapon_length(127)|swing_damage(54 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
 
- ["bardiche",         "Bardiche", [("two_handed_battle_axe_d",0)], itp_craftable|itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,
+["bardiche",         "Bardiche", [("two_handed_battle_axe_d",0)], itp_craftable|itp_type_two_handed_wpn|itp_merchandise| itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,
  291 , weight(4.75)|difficulty(10)|spd_rtng(91) | weapon_length(102)|swing_damage(47 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],
 ["great_bardiche",         "Great Bardiche", [("two_handed_battle_axe_f",0)], itp_craftable|itp_type_two_handed_wpn|itp_merchandise|itp_two_handed|itp_primary|itp_bonus_against_shield|itp_wooden_parry|itp_unbalanced, itc_nodachi|itcf_carry_axe_back,
  617 , weight(5.0)|difficulty(10)|spd_rtng(89) | weapon_length(116)|swing_damage(50 , cut) | thrust_damage(0 ,  pierce),imodbits_axe ],

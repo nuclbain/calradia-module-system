@@ -737,7 +737,7 @@ troops_silver_rose = [
             itm_leather_jerkin,
             itm_padded_cloth,
             itm_padded_coif_a,
-            itm_footman_helmet,
+            itm_eyeslot_kettlehat_a_v1,
         ],
         def_attrib | level(14),
         wp(80),

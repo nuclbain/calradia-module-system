@@ -100,7 +100,7 @@ upgrade(troops, "stormguard_tempest_sentinel", "stormguard_elite_stormguard")
 # |- [II] Silver Rose Levy
 # |     |- [III] Silver Rose Militia
 # |     |- [III] Silver Rose Scout
-# |- [II] Silver Rose City Watch 
+# |- [II] Silver Rose City Watch
 # |     |- [III] Silver Rose Tower Guard
 # |     |- [III] Silver Rose Wall Guard
 upgrade2(troops, "silver_rose_recruit", "silver_rose_levy", "silver_rose_city_watch")
@@ -181,14 +181,28 @@ upgrade(troops, "celestial_hunter", "celestial_crossbowman")
 upgrade(troops, "celestial_squire", "celestial_initiate_knight")
 upgrade(troops, "celestial_initiate_knight", "celestial_lancer") 
 
-upgrade2(troops, "iron_crown_recruit", "iron_crown_raider", "iron_crown_skirmisher")
-upgrade(troops, "iron_crown_raider", "iron_crown_footman")
+# [I] Iron Crown Recruit
+# |- [II] Iron Crown Raider
+# |     |- [III] Iron Crown Reaver
+# |     |     |- [IV] Iron Crown Pirate
+# |     |     |- [IV] Iron Crown Guardian
+upgrade(troops, "iron_crown_recruit", "iron_crown_raider")
+upgrade(troops, "iron_crown_raider", "iron_crown_reaver")
+upgrade2(troops, "iron_crown_reaver", "iron_crown_pirate", "iron_crown_guardian")
+
+# [I] Iron Crown Footman
+# |- [II] Iron Crown Man-at-Arms
+# |     |- [III] Iron Crown Veteran
+# |     |     |- [IV] Iron Crown Champion
+# |     |- [III] Iron Crown Halberdier
 upgrade(troops, "iron_crown_footman", "iron_crown_man_at_arms")
 upgrade2(
     troops, "iron_crown_man_at_arms", "iron_crown_vetaran", "iron_crown_halberdier"
 )
 upgrade(troops, "iron_crown_vetaran", "iron_crown_champion")
 
+# [I] Iron Crown Skirmisher
+# |- [II] Iron Crown Trained Skirmisher
 upgrade(troops, "iron_crown_skirmisher", "iron_crown_trained_skirmisher")
 
 upgrade2(troops, "alpine_recruit", "alpine_levy", "alpine_footman")
