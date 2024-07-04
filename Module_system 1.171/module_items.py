@@ -1852,21 +1852,6 @@ items = [
 ],
 
 [
-    "green_churburg_a_v2",
-    "Churburg on Green Pourpoint",
-    [
-        ("Green_Churburg_A_v2", 0),
-        ("Green_Churburg_A_v2_thick", imodbit_thick),
-        ("Green_Churburg_A_v2_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1304,
-    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
     "green_churburg_b",
     "Plated Churburg on Green Pourpoint",
     [
@@ -1895,20 +1880,6 @@ items = [
 ],
 
 [
-    "green_churburg_b_v2",
-    "Plated Churburg on Green Pourpoint",
-    [
-        ("Green_Churburg_B_v2", 0),
-        ("Green_Churburg_B_v2_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1512,
-    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
-    imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
     "green_churburg_c",
     "Heavy Plated Churburg on Green Pourpoint",
     [
@@ -1928,20 +1899,6 @@ items = [
     [
         ("Green_Churburg_C_v1", 0),
         ("Green_Churburg_C_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1745,
-    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
-    imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_churburg_c_v2",
-    "Heavy Plated Churburg on Green Pourpoint",
-    [
-        ("Green_Churburg_C_v2", 0),
-        ("Green_Churburg_C_v2_reinforced", imodbit_reinforced),
     ],
     itp_merchandise | itp_type_body_armor | itp_covers_legs,
     0, 1745,
@@ -2691,6 +2648,11 @@ items = [
 ["chapel_c_v1", "Chapel on Arming Cap", [("Revised_Chapel_C_v1",0), ("Revised_Chapel_C_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 336, weight(1.5)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
 ["chapel_c_v2", "Chapel on Hood", [("Revised_Chapel_C_v2",0), ("Revised_Chapel_C_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 379, weight(2)|abundance(95)|head_armor(33)|body_armor(2)|leg_armor(0)|difficulty(10), imodbits_armor],
 ["chapel_c_v3", "Chapel on Padding", [("Revised_Chapel_C_v3",0), ("Revised_Chapel_C_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 433, weight(2)|abundance(90)|head_armor(35)|body_armor(4)|leg_armor(0)|difficulty(11), imodbits_armor],
+
+["chapel_alpine_a", "Chapel", [("Revised_Chapel_Alpine_A",0), ("Revised_Chapel_Alpine_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 336, weight(1)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
+["chapel_alpine_a_v1", "Chapel on Hood", [("Revised_Chapel_Alpine_A_v1",0), ("Revised_Chapel_Alpine_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 395, weight(1.25)|abundance(100)|head_armor(35)|body_armor(2)|leg_armor(0)|difficulty(10), imodbits_armor],
+["chapel_alpine_a_v2", "Chapel on Padded", [("Revised_Chapel_Alpine_A_v2",0), ("Revised_Chapel_Alpine_A_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 453, weight(1.5)|abundance(95)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
+["chapel_alpine_a_v3", "Chapel on Mail", [("Revised_Chapel_Alpine_A_v3",0), ("Revised_Chapel_Alpine_A_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 493, weight(2)|abundance(90)|head_armor(39)|body_armor(6)|leg_armor(0)|difficulty(14), imodbits_armor],
 
 ["morion_a", "Morion", [("Revised_Morion_A",0), ("Revised_Morion_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 326, weight(1.5)|abundance(100)|head_armor(31)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
 ["morion_a_v1", "Morion on Arming Cap", [("Revised_Morion_A_v1",0), ("Revised_Morion_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 336, weight(1.5)|abundance(100)|head_armor(32)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
