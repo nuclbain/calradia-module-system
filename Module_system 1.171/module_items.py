@@ -3891,6 +3891,76 @@ items = [
     ],
     []
 ],
+
+[
+    "infantry_shield_heraldic_a",
+    "Shield",
+    [
+        ("Shield_Middle_Empire_Infantry_A1_01", 0),
+    ], 
+    itp_type_shield|itp_merchandise|itp_wooden_parry,
+    itcf_carry_round_shield,
+    270,
+    weight(2)|abundance(100)|body_armor(7)|hit_points(566)|spd_rtng(90)|shield_width(43)|shield_height(67),
+    imodbit_reinforced,
+    [], []
+],
+
+[
+    "infantry_shield_heraldic_a_v1",
+    "Shield",
+    [
+        ("Shield_Middle_Empire_Infantry_A2_01", 0),
+    ], 
+    itp_type_shield|itp_merchandise|itp_wooden_parry,
+    itcf_carry_round_shield,
+    270,
+    weight(2)|abundance(100)|body_armor(7)|hit_points(566)|spd_rtng(90)|shield_width(43)|shield_height(67),
+    imodbit_reinforced,
+    [], []
+],
+
+[
+    "infantry_shield_heraldic_a_v2",
+    "Shield",
+    [
+        ("Shield_Middle_Empire_Infantry_A3_01", 0),
+    ], 
+    itp_type_shield|itp_merchandise|itp_wooden_parry,
+    itcf_carry_round_shield,
+    270,
+    weight(2)|abundance(100)|body_armor(7)|hit_points(566)|spd_rtng(90)|shield_width(43)|shield_height(67),
+    imodbit_reinforced,
+    [], []
+],
+
+[
+    "infantry_shield_heraldic_a_v3",
+    "Shield",
+    [
+        ("Shield_Middle_Empire_Infantry_A4_01", 0),
+    ], 
+    itp_type_shield|itp_merchandise|itp_wooden_parry,
+    itcf_carry_round_shield,
+    270,
+    weight(2)|abundance(100)|body_armor(7)|hit_points(566)|spd_rtng(90)|shield_width(43)|shield_height(67),
+    imodbit_reinforced,
+    [], []
+],
+
+[
+    "infantry_shield_heraldic_a_v4",
+    "Shield",
+    [
+        ("Shield_Middle_Empire_Infantry_A5_01", 0),
+    ], 
+    itp_type_shield|itp_merchandise|itp_wooden_parry,
+    itcf_carry_round_shield,
+    270,
+    weight(2)|abundance(100)|body_armor(7)|hit_points(566)|spd_rtng(90)|shield_width(43)|shield_height(67),
+    imodbit_reinforced,
+    [], []
+],
 # SHIELDS END
 
 ["turret_hat_ruby", "Turret Hat", [("turret_hat_r",0)], itp_type_head_armor  |itp_civilian|itp_fit_to_head ,0, 70 , weight(0.5)|abundance(100)|head_armor(8)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ], 

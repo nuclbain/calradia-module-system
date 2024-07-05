@@ -205,13 +205,14 @@ upgrade(troops, "iron_crown_vetaran", "iron_crown_champion")
 # |- [II] Iron Crown Trained Skirmisher
 upgrade(troops, "iron_crown_skirmisher", "iron_crown_trained_skirmisher")
 
-upgrade2(troops, "alpine_recruit", "alpine_levy", "alpine_footman")
-upgrade(troops, "alpine_footman", "alpine_swordsman")
+upgrade2(troops, "alpine_recruit", "alpine_levy", "alpine_watchman")
+upgrade(troops, "alpine_watchman", "alpine_militia")
+upgrade2(troops, "alpine_footman", "alpine_swordsman", "alpine_spearman")
 upgrade(troops, "alpine_swordsman", "alpine_elite_swordsman")
 
-upgrade2(troops, "alpine_levy", "alpine_spearman", "alpine_crossbowman")
-upgrade2(troops, "alpine_spearman", "alpine_trained_spearman", "alpine_scout")
 upgrade(troops, "alpine_scout", "alpine_horseman")
+
+upgrade(troops, "alpine_spearman", "alpine_trained_spearman")
 upgrade(troops, "alpine_trained_spearman", "alpine_veteran_spearman")
 upgrade(troops, "alpine_veteran_spearman", "alpine_man_at_arms")
 
