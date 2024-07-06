@@ -253,13 +253,6 @@ meshes = [
   ("tableau_mesh_heraldic_armor_b", 0, "tableau_mesh_heraldic_armor_b",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_c", 0, "tableau_mesh_heraldic_armor_c",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_d", 0, "tableau_mesh_heraldic_armor_d",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-###NEW###
-  ("tableau_mesh_mail_long_surcoat_new_heraldic", 0, "tableau_mesh_mail_long_surcoat_new_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("tableau_mesh_brigandine_b_heraldic", 0, "tableau_mesh_brigandine_b_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("tableau_mesh_heraldic_tunic_new", 0, "tableau_mesh_heraldic_tunic_new",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("tableau_mesh_heraldic_surcoat_over_mail_short", 0, "tableau_mesh_heraldic_surcoat_over_mail_short",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("tableau_mesh_tabard_b_heraldic", 0, "tableau_mesh_tabard_b_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-###NEW###
 
 ###
   ("tableau_mesh_shield_otto1", 0, "tableau_mesh_shield_otto1",  0, 0, 0, 0, 0, 0, 10, 10, 10),

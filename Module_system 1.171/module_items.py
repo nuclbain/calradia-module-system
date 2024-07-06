@@ -4823,27 +4823,6 @@ items = [
 ["warhorse_sarranid","Sarranian War Horse", [("warhorse_sarranid",0)], itp_merchandise|itp_type_horse, 0, 1811,abundance(40)|hit_points(165)|body_armor(58)|difficulty(4)|horse_speed(40)|horse_maneuver(44)|horse_charge(32)|horse_scale(112),imodbits_horse_basic|imodbit_champion, [], [fac_kingdom_6]],
 ["warhorse_steppe","Steppe Charger", [("warhorse_steppe",0)], itp_merchandise|itp_type_horse, 0, 1400,abundance(45)|hit_points(150)|body_armor(40)|difficulty(4)|horse_speed(40)|horse_maneuver(50)|horse_charge(28)|horse_scale(112),imodbits_horse_basic|imodbit_champion, [], [fac_kingdom_3,fac_kingdom_2]],
 
-# New heraldic armors
-["mail_long_surcoat_new_heraldic", "Heraldic Mail with Tabard", [("mail_long_surcoat_new_heraldic",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
- 3412 , weight(21)|abundance(100)|head_armor(0)|body_armor(48)|leg_armor(16)|difficulty(7) ,imodbits_armor,
- [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_heraldic_mail_long_surcoat_new", ":agent_no", ":troop_no")])]],
-
-["mail_short_surcoat_new_heraldic", "Heraldic Mail with Tabard", [("heraldic_surcoat_over_mail_short",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
- 3999 , weight(25)|abundance(100)|head_armor(0)|body_armor(53)|leg_armor(19)|difficulty(9) ,imodbits_armor,
- [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_heraldic_surcoat_over_mail_short", ":agent_no", ":troop_no")])]],
-
-["mail_tabard_heraldic", "Heraldic Mail with Tabard", [("tabard_b_heraldic",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
- 3187 , weight(20)|abundance(100)|head_armor(0)|body_armor(43)|leg_armor(19)|difficulty(7) ,imodbits_armor,
- [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_tabard_b_heraldic", ":agent_no", ":troop_no")])]],
-
-["brigandine_b_heraldic", "Heraldic Brigandine", [("brigandine_b_heraldic",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs,0,
- 2230 , weight(20)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(16)|difficulty(10) ,imodbits_armor,
- [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_brigandine_b_heraldic_new", ":agent_no", ":troop_no")])]],
- 
-["heraldic_tunic_new", "Heraldic Tunic", [("heraldic_tunic_new",0)], itp_merchandise| itp_type_body_armor|itp_covers_legs,0,
- 2230 , weight(20)|abundance(100)|head_armor(0)|body_armor(47)|leg_armor(16)|difficulty(10) ,imodbits_armor,
- [(ti_on_init_item, [(store_trigger_param_1, ":agent_no"),(store_trigger_param_2, ":troop_no"),(call_script, "script_shield_item_set_banner", "tableau_heraldic_short_tunic_new", ":agent_no", ":troop_no")])]],
-
 ["saracin_hard_horses_a","Heavy Eastern Horse", [("saracin_hard_horses_a", 0),("saracin_hard_horses_a", imodbit_heavy|imodbit_spirited)], itp_type_horse|itp_merchandise, 0,5000, weight(0)|abundance(10)|body_armor(40)|difficulty(3)|hit_points(200)|horse_maneuver(37)|horse_speed(45)|weapon_length(110)|horse_charge(50), imodbit_champion, [], [fac_kingdom_6]],
 ["saracin_hard_horses_b","Heavy Eastern Horse", [("saracin_hard_horses_b", 0),("saracin_hard_horses_b", imodbit_heavy|imodbit_spirited)], itp_type_horse|itp_merchandise, 0,5000, weight(0)|abundance(10)|body_armor(40)|difficulty(3)|hit_points(200)|horse_maneuver(37)|horse_speed(45)|weapon_length(110)|horse_charge(50), imodbit_champion, [], [fac_kingdom_6]],
 ["saracin_hard_horses_c","Heavy Eastern Horse", [("saracin_hard_horses_c", 0),("saracin_hard_horses_a", imodbit_heavy|imodbit_spirited)], itp_type_horse|itp_merchandise, 0,5000, weight(0)|abundance(10)|body_armor(40)|difficulty(3)|hit_points(200)|horse_maneuver(37)|horse_speed(45)|weapon_length(110)|horse_charge(50), imodbit_champion, [], [fac_kingdom_6]],
