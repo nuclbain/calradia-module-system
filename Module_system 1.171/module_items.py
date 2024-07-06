@@ -1445,6 +1445,58 @@ items = [
     imodbit_thick | imodbit_reinforced,
     [], [fac_kingdom_5]
 ],
+
+[
+    "yellow_aketon_a",
+    "Yellow Painted Aketon",
+    [
+        ("Yellow_Aketon_A", 0),
+        ("Yellow_Aketon_A_thick", imodbit_thick),
+        ("Yellow_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_aketon_a_v1",
+    "Yellow Painted Aketon",
+    [
+        ("Yellow_Aketon_A_v1", 0),
+        ("Yellow_Aketon_A_v1_thick", imodbit_thick),
+        ("Yellow_Aketon_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_aketon_b",
+    "Yellow Painted Aketon with Plates",
+    [("Yellow_Aketon_B", 0)],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbits_none,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_aketon_b_v1",
+    "Yellow Painted Aketon with Plates",
+    [("Yellow_Aketon_B_v1", 0)],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbits_none,
+    [], [fac_kingdom_6]
+],
 # AKETONS END
 
 # POURPOINTS START
@@ -1494,6 +1546,21 @@ items = [
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_tattered | imodbit_sturdy | imodbit_thick,
     [], [fac_kingdom_2]
+],
+
+[
+    "yellow_pourpoint_a",
+    "Yellow Painted Pourpoint",
+    [
+        ("Yellow_Pourpoint_A", 0),
+        ("Yellow_Pourpoint_A_sturdy", imodbit_sturdy),
+        ("Yellow_Pourpoint_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_sturdy | imodbit_thick,
+    [], [fac_kingdom_6]
 ],
 # POURPOINTS END
 
@@ -2279,6 +2346,88 @@ items = [
     imodbit_thick | imodbit_reinforced,
     [], [fac_kingdom_5]
 ],
+
+[
+    "yellow_hauberk_a",
+    "Hauberk on Yellow Painted Aketon",
+    [
+        ("Yellow_Hauberk_A", 0),
+        ("Yellow_Hauberk_A_thick", imodbit_thick),
+        ("Yellow_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1487,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_hauberk_a_v1",
+    "Hauberk on Yellow Painted Aketon",
+    [
+        ("Yellow_Hauberk_A_v1", 0),
+        ("Yellow_Hauberk_A_v1_thick", imodbit_thick),
+        ("Yellow_Hauberk_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1487,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_hauberk_b",
+    "Plated Hauberk on Yellow Painted Aketon",
+    [("Yellow_Hauberk_B", 0)],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1718,
+    weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
+    imodbits_none,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_hauberk_b_v1",
+    "Plated Hauberk on Yellow Painted Aketon",
+    [("Yellow_Hauberk_B_v1", 0)],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1718,
+    weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
+    imodbits_none,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_hauberk_c",
+    "Heavy Plated Hauberk on Yellow Painted Aketon",
+    [
+        ("Yellow_Hauberk_C", 0),
+        ("Yellow_Hauberk_C_thick", imodbit_thick),
+        ("Yellow_Hauberk_C_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1956,
+    weight(28)|abundance(80)|head_armor(0)|body_armor(44)|leg_armor(20)|difficulty(21),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_hauberk_c_v1",
+    "Heavy Plated Hauberk on Yellow Painted Aketon",
+    [
+        ("Yellow_Hauberk_C_v1", 0),
+        ("Yellow_Hauberk_C_v1_thick", imodbit_thick),
+        ("Yellow_Hauberk_C_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1956,
+    weight(28)|abundance(80)|head_armor(0)|body_armor(44)|leg_armor(20)|difficulty(21),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_6]
+],
 # HAUBERKS END
 
 # BRIGANDINES START
@@ -2723,6 +2872,24 @@ items = [
 ["celestial_sallet_d", "Sallet with Closed Visor on Bevor", [("Celestial_Sallet_D",0), ("Celestial_Sallet_D_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 651, weight(3)|abundance(60)|head_armor(47)|body_armor(6)|leg_armor(0)|difficulty(15), imodbits_armor],
 ["celestial_sallet_d_v1", "Sallet with Closed Visor on Bevor", [("Celestial_Sallet_D_v1",0), ("Celestial_Sallet_D_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 652, weight(3)|abundance(60)|head_armor(47)|body_armor(6)|leg_armor(0)|difficulty(15), imodbits_armor],
 # CELESTIAL HELMETS END
+
+# SOLARIAN HELMETS START
+["yellow_turban_a", "Turban", [("Yellow_Turban_A",0), ("Yellow_Turban_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 104, weight(1)|abundance(100)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth, [], [fac_kingdom_6]],
+["yellow_turban_b", "Turban", [("Yellow_Turban_B",0), ("Yellow_Turban_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 104, weight(1)|abundance(100)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth, [], [fac_kingdom_6]],
+["yellow_turban_c", "Turban", [("Yellow_Turban_C",0), ("Yellow_Turban_C_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 104, weight(1)|abundance(100)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth, [], [fac_kingdom_6]],
+
+["yellow_turban_chapel_a", "Chapel on Turban", [("Yellow_Turban_Chapel_A",0), ("Yellow_Turban_Chapel_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 356, weight(1)|abundance(100)|head_armor(32)|body_armor(2)|leg_armor(0)|difficulty(10), imodbits_armor, [], [fac_kingdom_6]],
+["yellow_turban_chapel_a_v1", "Chapel on Turban", [("Yellow_Turban_Chapel_A_v1",0), ("Yellow_Turban_Chapel_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 377, weight(1)|abundance(100)|head_armor(33)|body_armor(3)|leg_armor(0)|difficulty(10), imodbits_armor, [], [fac_kingdom_6]],
+
+["yellow_turban_sallet_a", "Sallet on Turban", [("Yellow_Turban_Sallet_A",0), ("Yellow_Turban_Sallet_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 433, weight(1.5)|abundance(90)|head_armor(37)|body_armor(2)|leg_armor(0)|difficulty(11), imodbits_armor, [], [fac_kingdom_6]],
+["yellow_turban_sallet_a_v1", "Sallet on Turban", [("Yellow_Turban_Sallet_A_v1",0), ("Yellow_Turban_Sallet_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 453, weight(1.5)|abundance(90)|head_armor(38)|body_armor(3)|leg_armor(0)|difficulty(12), imodbits_armor, [], [fac_kingdom_6]],
+
+["solarian_footman_helmet_a", "Footman Helmet on Turban", [("Solarian_Footman_Helmet_A",0), ("Solarian_Footman_Helmet_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 446, weight(1.5)|abundance(85)|head_armor(37)|body_armor(2)|leg_armor(0)|difficulty(11), imodbits_armor, [], [fac_kingdom_6]],
+["solarian_footman_helmet_a_v1", "Footman Helmet on Turban", [("Solarian_Footman_Helmet_A_v1",0), ("Solarian_Footman_Helmet_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 467, weight(1.5)|abundance(85)|head_armor(38)|body_armor(3)|leg_armor(0)|difficulty(12), imodbits_armor, [], [fac_kingdom_6]],
+
+["solarian_footman_helmet_b", "Masked Footman Helmet on Padded", [("Solarian_Footman_Helmet_B",0), ("Solarian_Footman_Helmet_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 519, weight(1.5)|abundance(80)|head_armor(41)|body_armor(4)|leg_armor(0)|difficulty(13), imodbits_armor, [], [fac_kingdom_6]],
+["solarian_footman_helmet_b_v1", "Masked Footman Helmet on Mail", [("Solarian_Footman_Helmet_B_v1",0), ("Solarian_Footman_Helmet_B_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 560, weight(1.75)|abundance(80)|head_armor(43)|body_armor(6)|leg_armor(0)|difficulty(14), imodbits_armor, [], [fac_kingdom_6]],
+# SOLARIAN HELMETS END
 
 # MENEGRAS HELMETS START
 ["menegras_sallet_a", "Menegras Sallet", [("Menegras_Sallet_A",0), ("Menegras_Sallet_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 463 , weight(2)|abundance(90)|head_armor(38)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
