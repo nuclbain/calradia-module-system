@@ -672,6 +672,45 @@ items = [
     [], [fac_kingdom_4]
 ],
 
+[   
+    "purple_shirt_a",
+    "Purple Shirt",
+    [
+        ("Purple_Shirt_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 20,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(5)|leg_armor(3)|difficulty(0),
+    imodbits_none,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_shirt_a_v1",
+    "Purple Shirt",
+    [
+        ("Purple_Shirt_A_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 20,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(5)|leg_armor(3)|difficulty(0),
+    imodbits_none,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_shirt_a_v2",
+    "Purple Shirt",
+    [
+        ("Purple_Shirt_A_v2", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 20,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(5)|leg_armor(3)|difficulty(0),
+    imodbits_none,
+    [], [fac_kingdom_7]
+],
+
 # TUNICS START
 # For tunics, the difficulty is 0, and the price is (Armor * 15)
 [
@@ -1497,6 +1536,21 @@ items = [
     imodbits_none,
     [], [fac_kingdom_6]
 ],
+
+[
+    "purple_aketon_a",
+    "Purple Painted Aketon",
+    [
+        ("Purple_Aketon_A", 0),
+        ("Purple_Aketon_A_thick", imodbit_thick),
+        ("Purple_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_6]
+],
 # AKETONS END
 
 # POURPOINTS START
@@ -1648,8 +1702,138 @@ items = [
     imodbit_reinforced,
     [], [fac_kingdom_4]
 ],
+
+[
+    "purple_leather_armor_a",
+    "Leather Armor on Purple Shirt",
+    [
+        ("Purple_Leather_Armor_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 630,
+    weight(5)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], [fac_kingdom_7]
+],
 # LEATHER ARMORS END
 
+# COAT OF PLATES START
+[
+    "purple_coat_of_plates_a",
+    "Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_A", 0),
+        ("Purple_Aketon_Coat_A_thick", imodbit_thick),
+        ("Purple_Aketon_Coat_A_hardened", imodbit_hardened),
+        ("Purple_Aketon_Coat_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 982,
+    weight(15)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(11),
+    imodbit_thick | imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_a_v1",
+    "Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_A_v1", 0),
+        ("Purple_Aketon_Coat_A_v1_thick", imodbit_thick),
+        ("Purple_Aketon_Coat_A_v1_hardened", imodbit_hardened),
+        ("Purple_Aketon_Coat_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 982,
+    weight(15)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(11),
+    imodbit_thick | imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_b",
+    "Plated Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_B", 0),
+        ("Purple_Aketon_Coat_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1278,
+    weight(18)|abundance(95)|head_armor(0)|body_armor(28)|leg_armor(13)|difficulty(14),
+    imodbit_reinforced,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_b_v1",
+    "Plated Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_B_v1", 0),
+        ("Purple_Aketon_Coat_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1278,
+    weight(18)|abundance(95)|head_armor(0)|body_armor(28)|leg_armor(13)|difficulty(14),
+    imodbit_reinforced,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_c",
+    "Mail Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_C", 0),
+        ("Purple_Aketon_Coat_C_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1602,
+    weight(22)|abundance(90)|head_armor(0)|body_armor(36)|leg_armor(15)|difficulty(18),
+    imodbit_thick,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_c_v1",
+    "Mail Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_C_v1", 0),
+        ("Purple_Aketon_Coat_C_v1_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1602,
+    weight(22)|abundance(90)|head_armor(0)|body_armor(36)|leg_armor(15)|difficulty(18),
+    imodbit_thick,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_d",
+    "Heavy Mail Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_D", 0),
+        ("Purple_Aketon_Coat_D_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(26)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(17)|difficulty(20),
+    imodbit_thick,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_d_v1",
+    "Heavy Mail Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_D_v1", 0),
+        ("Purple_Aketon_Coat_D_v1_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(26)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(17)|difficulty(20),
+    imodbit_thick,
+    [], [fac_kingdom_7]
+],
+# COAT OF PLATES END
 [
     "lamellar_cuirass_a",
     "Lamellar Cuirass",
@@ -2427,6 +2611,21 @@ items = [
     weight(28)|abundance(80)|head_armor(0)|body_armor(44)|leg_armor(20)|difficulty(21),
     imodbit_thick | imodbit_reinforced,
     [], [fac_kingdom_6]
+],
+
+[
+    "purple_hauberk_a",
+    "Hauberk on Purple Painted Aketon",
+    [
+        ("Purple_Hauberk_A", 0),
+        ("Purple_Hauberk_A_thick", imodbit_thick),
+        ("Purple_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1487,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_7]
 ],
 # HAUBERKS END
 
