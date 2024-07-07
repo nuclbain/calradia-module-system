@@ -205,31 +205,63 @@ upgrade(troops, "iron_crown_vetaran", "iron_crown_champion")
 # |- [II] Iron Crown Trained Skirmisher
 upgrade(troops, "iron_crown_skirmisher", "iron_crown_trained_skirmisher")
 
+# [I] Alpine Recruit
+# |- [II] Alpine Levy
+# |- [II] Alpine Watchman
+# |     |- [III] Alpine Militia
 upgrade2(troops, "alpine_recruit", "alpine_levy", "alpine_watchman")
 upgrade(troops, "alpine_watchman", "alpine_militia")
+
+# [I] Alpine Footman
+# |- [II] Alpine Swordsman
+# |     |- [III] Alpine Elite Swordsman
+# |- [II] Alpine Spearman
+# |     |- [III] Alpine Trained Spearman
+# |     |     |- [IV] Alpine Veteran Spearman
+# |     |     |     |- [V] Alpine Man-at-Arms
 upgrade2(troops, "alpine_footman", "alpine_swordsman", "alpine_spearman")
 upgrade(troops, "alpine_swordsman", "alpine_elite_swordsman")
-
-upgrade(troops, "alpine_scout", "alpine_horseman")
 
 upgrade(troops, "alpine_spearman", "alpine_trained_spearman")
 upgrade(troops, "alpine_trained_spearman", "alpine_veteran_spearman")
 upgrade(troops, "alpine_veteran_spearman", "alpine_man_at_arms")
 
+# [I] Alpine Scout
+# |- [II] Alpine Horseman
+upgrade(troops, "alpine_scout", "alpine_horseman")
+
+# [I] Alpine Crossbowman
+# |- [II] Alpine Trained Crossbowman
+# |     |- [III] Alpine Veteran Crossbowman
+# |     |     |- [IV] Alpine Sharpshooter
 upgrade(troops, "alpine_crossbowman", "alpine_trained_crossbowman")
-upgrade(troops, "alpine_trained_crossbowman", "alpine_veteran_crossbowman")  # new 1.126
+upgrade(troops, "alpine_trained_crossbowman", "alpine_veteran_crossbowman")
 upgrade(troops, "alpine_veteran_crossbowman", "alpine_sharpshooter")
 
+# [I] Solarian Recruit
+# |- [II] Solarian Militia
+# |     |- [III] Solarian Spearman
+# |     |     |- [IV] Solarian Sworn Spearman
+upgrade(troops, "solarian_recruit", "solarian_militia")
+upgrade(troops, "solarian_militia", "solarian_spearman")
+upgrade(troops, "solarian_spearman", "solarian_sworn_spearman")
 
-upgrade(troops, "solarian_recruit", "solarian_footman")
-
-upgrade2(troops, "solarian_footman", "solarian_veteran_footman", "solarian_skirmisher")
-upgrade2(troops, "solarian_veteran_footman", "solarian_horseman", "solarian_infantry")
+# [I] Solarian Footman
+# |- [II] Solarian Veteran Footman
+# |     |- [III] Solarian Infantry
+# |     |     |- [IV] Solarian Guard
+upgrade(troops, "solarian_footman", "solarian_veteran_footman")
+upgrade(troops, "solarian_veteran_footman", "solarian_infantry")
 upgrade(troops, "solarian_infantry", "solarian_guard")
-upgrade(troops, "solarian_skirmisher", "solarian_archer")
 
+# [I] Solarian Skirmisher
+# |- [II] Solarian Archer
+# |     |- [III] Solarian Master Archer
+upgrade(troops, "solarian_skirmisher", "solarian_archer")
 upgrade(troops, "solarian_archer", "solarian_master_archer")
 
+# [I] Solarian Horseman
+# |- [II] Solarian Knight
 upgrade(troops, "solarian_horseman", "solarian_knight")
 
 

@@ -5,6 +5,7 @@ from module_troops_merge_chornovalley import *
 from module_troops_merge_celestial import *
 from module_troops_merge_iron_crown import *
 from module_troops_merge_alpine import *
+from module_troops_merge_solarian import *
 from module_troops_merge_factions import *
 from module_troops_merge_outlaws import *
 from module_troops_merge_manhunters import *
@@ -31,6 +32,7 @@ troops = (
     + troops_celestial
     + troops_iron_crown
     + troops_alpine
+    + troops_solarian
     + troops_factions
     + troops_outlaws
     + troops_manhunters

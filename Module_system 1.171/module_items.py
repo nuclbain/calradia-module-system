@@ -3175,6 +3175,76 @@ items = [
     weight(3.0) | difficulty(10) | spd_rtng(99) | weapon_length(99) | swing_damage(29, cut) | thrust_damage(24,  pierce),
     imodbits_sword_high
 ],
+
+[
+    "sword_b",
+    "Eastern Sword",
+    [
+        ("Revised_Sword_B",0),
+        ("Revised_Sword_B_scabbard",ixmesh_carry),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip | itcf_show_holster_when_drawn,
+    231,
+    weight(2.5) | difficulty(9) | spd_rtng(98) | weapon_length(99) | swing_damage(27, cut) | thrust_damage(22,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_b_v1",
+    "Eastern Sword",
+    [
+        ("Revised_Sword_B_v1",0),
+        ("Revised_Sword_B_v1_scabbard",ixmesh_carry),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip | itcf_show_holster_when_drawn,
+    229,
+    weight(2.0) | difficulty(9) | spd_rtng(98) | weapon_length(88) | swing_damage(28, cut) | thrust_damage(25,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_b_v2",
+    "Eastern Sword",
+    [
+        ("Revised_Sword_B_v2",0),
+        ("Revised_Sword_B_v2_scabbard",ixmesh_carry),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip | itcf_show_holster_when_drawn,
+    251,
+    weight(2.5) | difficulty(10) | spd_rtng(98) | weapon_length(105) | swing_damage(31, cut) | thrust_damage(22,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_b_v3",
+    "Western Thrusting Sword",
+    [
+        ("Revised_Sword_B_v3",0),
+        ("Revised_Sword_B_v3_scabbard",ixmesh_carry),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip | itcf_show_holster_when_drawn,
+    248,
+    weight(1.5) | difficulty(10) | spd_rtng(99) | weapon_length(98) | swing_damage(29, cut) | thrust_damage(29,  pierce),
+    imodbits_sword_high
+],
+
+[
+    "sword_b_v4",
+    "Western Thrusting Sword",
+    [
+        ("Revised_Sword_B_v4",0),
+        ("Revised_Sword_B_v4_scabbard",ixmesh_carry),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_merchandise | itp_primary,
+    itc_longsword | itcf_carry_sword_left_hip | itcf_show_holster_when_drawn,
+    251,
+    weight(1.5) | difficulty(11) | spd_rtng(99) | weapon_length(101) | swing_damage(30, cut) | thrust_damage(32,  pierce),
+    imodbits_sword_high
+],
 # REGULAR SWORDS END
 
 # KNIGHT SWORDS START
@@ -3341,7 +3411,72 @@ items = [
     187,
     weight(1.75) | difficulty(8) | spd_rtng(98) | weapon_length(65) | swing_damage(24, blunt) | thrust_damage(0,  pierce),
     imodbits_mace
-],  
+],
+
+[
+    "mace_b",
+    "Winged Mace",
+    [
+        ("Revised_Mace_B",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    191,
+    weight(2.0) | difficulty(9) | spd_rtng(99) | weapon_length(55) | swing_damage(27, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "mace_b_v1",
+    "Winged Mace",
+    [
+        ("Revised_Mace_B_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    197,
+    weight(2.0) | difficulty(9) | spd_rtng(99) | weapon_length(55) | swing_damage(28, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "mace_b_v2",
+    "Winged Mace",
+    [
+        ("Revised_Mace_B_v2",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    219,
+    weight(2.25) | difficulty(10) | spd_rtng(99) | weapon_length(65) | swing_damage(29, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "mace_c",
+    "Heavy Winged Mace",
+    [
+        ("Revised_Mace_C",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    269,
+    weight(3.5) | difficulty(11) | spd_rtng(98) | weapon_length(80) | swing_damage(33, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
+
+[
+    "mace_c_v1",
+    "Heavy Winged Mace",
+    [
+        ("Revised_Mace_C_v1",0),
+    ],
+    itp_craftable | itp_type_one_handed_wpn | itp_can_knock_down | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_scimitar | itcf_carry_mace_left_hip,
+    295,
+    weight(3.5) | difficulty(12) | spd_rtng(98) | weapon_length(80) | swing_damage(36, blunt) | thrust_damage(0,  pierce),
+    imodbits_mace
+],
 # BLUNT WEAPONS END
 
 # MAULS START
@@ -3677,6 +3812,32 @@ items = [
     weight(3.0) | difficulty(9) | spd_rtng(100) | weapon_length(165) | swing_damage(21, blunt) | thrust_damage(28,  pierce),
     imodbits_polearm
 ],
+
+[
+    "spear_b",
+    "Spear",
+    [
+        ("Revised_Spear_B",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    286,
+    weight(2.5) | difficulty(10) | spd_rtng(100) | weapon_length(130) | swing_damage(24, blunt) | thrust_damage(30,  pierce),
+    imodbits_polearm
+],
+
+[
+    "spear_b_v1",
+    "Spear",
+    [
+        ("Revised_Spear_B_v1",0),
+    ],
+    itp_craftable | itp_type_polearm | itp_offset_lance | itp_merchandise | itp_primary | itp_wooden_parry,
+    itc_staff | itcf_carry_spear,
+    318,
+    weight(3.5) | difficulty(11) | spd_rtng(100) | weapon_length(160) | swing_damage(27, blunt) | thrust_damage(30,  pierce),
+    imodbits_polearm
+],
 # SPEARS END
 
 # LANCES START
@@ -3704,6 +3865,58 @@ items = [
     itc_greatlance,
     352,
     weight(5) | difficulty(17) | spd_rtng(55) | weapon_length(275) | swing_damage(0, cut) | thrust_damage(22,  pierce),
+    imodbits_polearm
+],
+
+[
+    "lance_b",
+    "Lance",
+    [
+        ("Revised_Lance_B",0)
+    ],
+    itp_craftable | itp_couchable | itp_type_polearm | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_greatlance,
+    299,
+    weight(5) | difficulty(18) | spd_rtng(66) | weapon_length(185) | swing_damage(0, cut) | thrust_damage(24,  pierce),
+    imodbits_polearm
+],
+
+[
+    "lance_b_v1",
+    "Lance",
+    [
+        ("Revised_Lance_B_v1",0)
+    ],
+    itp_craftable | itp_couchable | itp_type_polearm | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_greatlance,
+    339,
+    weight(5) | difficulty(17) | spd_rtng(66) | weapon_length(185) | swing_damage(0, cut) | thrust_damage(22,  pierce),
+    imodbits_polearm
+],
+
+[
+    "lance_b_v2",
+    "Lance",
+    [
+        ("Revised_Lance_B_v2",0)
+    ],
+    itp_craftable | itp_couchable | itp_type_polearm | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_greatlance,
+    389,
+    weight(5) | difficulty(18) | spd_rtng(66) | weapon_length(190) | swing_damage(0, cut) | thrust_damage(25,  pierce),
+    imodbits_polearm
+],
+
+[
+    "lance_b_v3",
+    "Lance",
+    [
+        ("Revised_Lance_B_v3",0)
+    ],
+    itp_craftable | itp_couchable | itp_type_polearm | itp_merchandise | itp_primary | itp_penalty_with_shield | itp_wooden_parry,
+    itc_greatlance,
+    399,
+    weight(5) | difficulty(18) | spd_rtng(66) | weapon_length(190) | swing_damage(0, cut) | thrust_damage(25,  pierce),
     imodbits_polearm
 ],
 # LANCES END
