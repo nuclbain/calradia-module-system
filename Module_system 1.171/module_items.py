@@ -711,6 +711,19 @@ items = [
     [], [fac_kingdom_7]
 ],
 
+[
+    "hairako_shirt_a",
+    "Hairako Shirt",
+    [
+        ("Hairako_Shirt_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 79,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(9)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], [fac_kingdom_8]
+],
+
 # TUNICS START
 # For tunics, the difficulty is 0, and the price is (Armor * 15)
 [
@@ -1715,6 +1728,66 @@ items = [
     imodbits_none,
     [], [fac_kingdom_7]
 ],
+
+[
+    "hairako_leather_armor_a",
+    "Hairako Leather Armor",
+    [
+        ("Hairako_Leather_Armor_A", 0),
+        ("Hairako_Leather_Armor_A_thick", imodbit_thick),
+        ("Hairako_Leather_Armor_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1012,
+    weight(11)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(11),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_8]
+],
+
+[
+    "hairako_leather_armor_a_v1",
+    "Hairako Leather Armor",
+    [
+        ("Hairako_Leather_Armor_A_v1", 0),
+        ("Hairako_Leather_Armor_A_v1_thick", imodbit_thick),
+        ("Hairako_Leather_Armor_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1012,
+    weight(11)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(11),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_8]
+],
+
+[
+    "hairako_leather_armor_b",
+    "Hairako Leather Armor with Plates",
+    [
+        ("Hairako_Leather_Armor_B", 0),
+        ("Hairako_Leather_Armor_B_hardened", imodbit_hardened),
+        ("Hairako_Leather_Armor_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1544,
+    weight(16)|abundance(95)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(17),
+    imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_8]
+],
+
+[
+    "hairako_leather_armor_b_v1",
+    "Hairako Leather Armor with Plates",
+    [
+        ("Hairako_Leather_Armor_B_v1", 0),
+        ("Hairako_Leather_Armor_B_v1_hardened", imodbit_hardened),
+        ("Hairako_Leather_Armor_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1544,
+    weight(16)|abundance(95)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(17),
+    imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_8]
+],
 # LEATHER ARMORS END
 
 # COAT OF PLATES START
@@ -2626,6 +2699,36 @@ items = [
     weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
     imodbit_thick | imodbit_reinforced,
     [], [fac_kingdom_7]
+],
+
+[
+    "hairako_hauberk_a",
+    "Hauberk on Hairako Painted Aketon",
+    [
+        ("Hairako_Hauberk_A", 0),
+        ("Hairako_Hauberk_A_thick", imodbit_thick),
+        ("Hairako_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1487,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_8]
+],
+
+[
+    "hairako_hauberk_b",
+    "Plated Hauberk on Hairako Painted Aketon",
+    [
+        ("Hairako_Hauberk_B", 0),
+        ("Hairako_Hauberk_B_thick", imodbit_thick),
+        ("Hairako_Hauberk_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1718,
+    weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_8]
 ],
 # HAUBERKS END
 
