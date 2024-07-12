@@ -1594,6 +1594,21 @@ items = [
     imodbit_thick | imodbit_hardened,
     [], [fac_kingdom_9]
 ],
+
+[
+    "elen_aketon_a",
+    "Black & Yellow Painted Aketon",
+    [
+        ("Elen_Aketon_A", 0),
+        ("Elen_Aketon_A_thick", imodbit_thick),
+        ("Elen_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_10]
+],
 # AKETONS END
 
 # POURPOINTS START
@@ -1937,6 +1952,8 @@ items = [
     [], [fac_kingdom_7]
 ],
 # COAT OF PLATES END
+
+# LAMELLAR ARMORS START
 [
     "lamellar_cuirass_a",
     "Lamellar Cuirass",
@@ -1964,6 +1981,79 @@ items = [
     imodbit_reinforced,
     [], [fac_kingdom_3]
 ],
+
+[
+    "elen_lamellar_cuirass_a",
+    "Lamellar Cuirass",
+    [
+        ("Elen_Lamellar_Cuirass_A", 0),
+        ("Elen_Lamellar_Cuirass_A_thick", imodbit_thick),
+        ("Elen_Lamellar_Cuirass_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1300,
+    weight(13)|abundance(80)|head_armor(0)|body_armor(30)|leg_armor(9)|difficulty(13),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_10]
+],
+
+[
+    "elen_lamellar_cuirass_b",
+    "Lamellar Cuirass",
+    [
+        ("Elen_Lamellar_Cuirass_B", 0),
+        ("Elen_Lamellar_Cuirass_B_thick", imodbit_thick),
+        ("Elen_Lamellar_Cuirass_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(16)|abundance(75)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "elen_lamellar_cuirass_c",
+    "Plated Lamellar Cuirass",
+    [
+        ("Elen_Lamellar_Cuirass_C", 0),
+        ("Elen_Lamellar_Cuirass_C_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(20)|abundance(70)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
+    imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "elen_lamellar_cuirass_mail_a",
+    "Lamellar Cuirass with Mail",
+    [
+        ("Elen_Lamellar_Cuirass_Mail_A", 0),
+        ("Elen_Lamellar_Cuirass_Mail_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(22)|abundance(65)|head_armor(0)|body_armor(42)|leg_armor(13)|difficulty(20),
+    imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "elen_lamellar_cuirass_mail_b",
+    "Plated Lamellar Cuirass with Mail",
+    [
+        ("Elen_Lamellar_Cuirass_Mail_B", 0),
+        ("Elen_Lamellar_Cuirass_Mail_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2126,
+    weight(26)|abundance(60)|head_armor(0)|body_armor(46)|leg_armor(15)|difficulty(22),
+    imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+# LAMELLAR ARMORS END
 
 # CHURBURG START
 [
@@ -2759,6 +2849,21 @@ items = [
     weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
     imodbit_thick | imodbit_reinforced,
     [], [fac_kingdom_8]
+],
+
+[
+    "elen_hauberk_a",
+    "Hauberk on Black & Yellow Painted Aketon",
+    [
+        ("Elen_Hauberk_A", 0),
+        ("Elen_Hauberk_A_thick", imodbit_thick),
+        ("Elen_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1487,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_10]
 ],
 # HAUBERKS END
 
