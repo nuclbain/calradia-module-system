@@ -1564,6 +1564,36 @@ items = [
     imodbit_thick | imodbit_hardened,
     [], [fac_kingdom_6]
 ],
+
+[
+    "tauria_aketon_a",
+    "Pink & Blue Painted Aketon",
+    [
+        ("Tauria_Aketon_A", 0),
+        ("Tauria_Aketon_A_thick", imodbit_thick),
+        ("Tauria_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_9]
+],
+
+[
+    "tauria_aketon_a_v1",
+    "Pink & Blue Painted Aketon",
+    [
+        ("Tauria_Aketon_A_v1", 0),
+        ("Tauria_Aketon_A_v1_thick", imodbit_thick),
+        ("Tauria_Aketon_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_9]
+],
 # AKETONS END
 
 # POURPOINTS START
@@ -3011,6 +3041,148 @@ items = [
     weight(24)|abundance(70)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
     imodbit_thick,
     [], [fac_kingdom_1]
+],
+
+[
+    "tauria_brigandine_a",
+    "Pink & Blue Painted Brigandine",
+    [
+        ("Tauria_Brigandine_A", 0),
+        ("Tauria_Brigandine_A_thick", imodbit_thick),
+        ("Tauria_Brigandine_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1190,
+    weight(15)|abundance(100)|head_armor(0)|body_armor(32)|leg_armor(7)|difficulty(13),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_10]
+],
+
+[
+    "tauria_brigandine_a_v1",
+    "Pink & Blue Painted Brigandine",
+    [
+        ("Tauria_Brigandine_A_v1", 0),
+        ("Tauria_Brigandine_A_v1_thick", imodbit_thick),
+        ("Tauria_Brigandine_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1190,
+    weight(15)|abundance(100)|head_armor(0)|body_armor(32)|leg_armor(7)|difficulty(13),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_10]
+],
+
+[
+    "tauria_brigandine_b",
+    "Pink & Blue Painted Brigandine",
+    [
+        ("Tauria_Brigandine_B", 0),
+        ("Tauria_Brigandine_B_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1571,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
+    imodbit_thick,
+    [], [fac_kingdom_10]
+],
+
+[
+    "tauria_brigandine_b_v1",
+    "Pink & Blue Painted Brigandine",
+    [
+        ("Tauria_Brigandine_B_v1", 0),
+        ("Tauria_Brigandine_B_v1_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1571,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
+    imodbit_thick,
+    [], [fac_kingdom_10]
+],
+
+[
+    "tauria_brigandine_c",
+    "Pink & Blue Painted Brigandine on Mail",
+    [
+        ("Tauria_Brigandine_C", 0),
+        ("Tauria_Brigandine_C_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1804,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
+    imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "tauria_brigandine_c_v1",
+    "Pink & Blue Painted Brigandine on Mail",
+    [
+        ("Tauria_Brigandine_C_v1", 0),
+        ("Tauria_Brigandine_C_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1804,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
+    imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "tauria_brigandine_d",
+    "Pink & Blue Painted Brigandine on Plates",
+    [
+        ("Tauria_Brigandine_D", 0),
+        ("Tauria_Brigandine_D_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(20)|abundance(80)|head_armor(0)|body_armor(41)|leg_armor(18)|difficulty(20),
+    imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "tauria_brigandine_d_v1",
+    "Pink & Blue Painted Brigandine on Plates",
+    [
+        ("Tauria_Brigandine_D_v1", 0),
+        ("Tauria_Brigandine_D_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(20)|abundance(80)|head_armor(0)|body_armor(41)|leg_armor(18)|difficulty(20),
+    imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "tauria_brigandine_e",
+    "Pink & Blue Painted Brigandine on Mail with Plates",
+    [
+        ("Tauria_Brigandine_E", 0),
+        ("Tauria_Brigandine_E_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2181,
+    weight(24)|abundance(70)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
+    imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "tauria_brigandine_e_v1",
+    "Pink & Blue Painted Brigandine on Mail with Plates",
+    [
+        ("Tauria_Brigandine_E_v1", 0),
+        ("Tauria_Brigandine_E_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2181,
+    weight(24)|abundance(70)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
+    imodbit_reinforced,
+    [], [fac_kingdom_10]
 ],
 # BRIGANDINES END
 
