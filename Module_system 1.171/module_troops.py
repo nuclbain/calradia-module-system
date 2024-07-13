@@ -27,13 +27,11 @@ upgrade(troops, "nerpa_recruit", "nerpa_footman")
 upgrade2(troops, "nerpa_footman", "nerpa_soldier", "nerpa_yeoman")
 upgrade(troops, "nerpa_yeoman", "nerpa_trickshot")
 
-upgrade2(troops, "nerpa_soldier", "nerpa_ranger", "nerpa_captain")
-
 upgrade(troops, "nerpa_ranger", "nerpa_master_ranger")
 
 upgrade(troops, "nerpa_captain", "nerpa_army_veteran")
-upgrade(troops, "nerpa_army_veteran", "nerpa_mounted_veteran")
-upgrade2(troops, "nerpa_mounted_veteran", "nerpa_commader", "nerpa_black_head")
+upgrade(troops, "nerpa_army_veteran", "nerpa_black_head")
+upgrade(troops, "nerpa_mounted_veteran", "nerpa_commader")
 
 # hairako troop tree
 upgrade2(troops, "hairako_nomad", "hairako_footman", "hairako_archer")
