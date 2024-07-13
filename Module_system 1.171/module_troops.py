@@ -35,7 +35,6 @@ upgrade(troops, "nerpa_mounted_veteran", "nerpa_commader")
 
 # hairako troop tree
 upgrade2(troops, "hairako_nomad", "hairako_footman", "hairako_archer")
-upgrade2(troops, "hairako_footman", "hairako_infantry", "hairako_rider")
 
 upgrade(troops, "hairako_infantry", "hairako_infantry_veteran")
 upgrade(troops, "hairako_infantry_veteran", "hairako_shaitan")
@@ -43,14 +42,12 @@ upgrade(troops, "hairako_infantry_veteran", "hairako_shaitan")
 upgrade(troops, "hairako_rider", "hairako_experienced_rider")
 upgrade(troops, "hairako_experienced_rider", "hairako_mounted_shaitan")
 
-upgrade(troops, "hairako_archer", "hairako_sniper")
 upgrade(troops, "hairako_sniper", "hairako_sniper_elite")
 
 # tauria
 upgrade(troops, "tauria_recruit", "tauria_trooper")
-upgrade2(troops, "tauria_trooper", "tauria_soldier", "tauria_crossbowman")
-upgrade2(troops, "tauria_soldier", "tauria_foot_knight", "tauria_horseman")
 
+upgrade(troops, "tauria_soldier", "tauria_foot_knight")
 upgrade(troops, "tauria_foot_knight", "tauria_sword_master")
 upgrade(troops, "tauria_sword_master", "tauria_man_at_arms")
 
