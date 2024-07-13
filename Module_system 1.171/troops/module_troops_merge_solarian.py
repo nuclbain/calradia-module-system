@@ -495,7 +495,7 @@ troops_solarian = [
         fac_kingdom_6,
         [
             itm_lance,
-            itm_arabian_sword_b,
+            itm_sword_b_v1,
             itm_scimitar_b,
             itm_mace_4,
             itm_tab_shield_small_round_b,
@@ -522,7 +522,7 @@ troops_solarian = [
         fac_deserters,
         [
             itm_lance,
-            itm_arabian_sword_b,
+            itm_sword_b_v1,
             itm_scimitar_b,
             itm_mace_4,
             itm_tab_shield_small_round_b,
@@ -550,7 +550,7 @@ troops_solarian = [
         0,
         fac_kingdom_6,
         [
-            itm_arabian_sword_b,
+            itm_sword_b_v1,
             itm_scimitar_b,
             itm_war_spear,
             itm_mace_4,
@@ -576,7 +576,7 @@ troops_solarian = [
         0,
         fac_kingdom_6,
         [
-            itm_arabian_sword_b,
+            itm_sword_b_v1,
             itm_scimitar_b,
             itm_war_spear,
             itm_mace_4,

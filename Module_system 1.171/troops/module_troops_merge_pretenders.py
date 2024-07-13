@@ -130,7 +130,7 @@ troops_pretenders = [
         [
             itm_arabian_horse_b,
             itm_desert_leather_boots_b,
-            itm_sarranid_cavalry_sword,
+            itm_sword_b_v4,
             itm_tab_shield_small_round_c,
         ],
         lord_attrib,

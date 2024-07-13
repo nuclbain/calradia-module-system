@@ -965,7 +965,7 @@ troops_undefined = [
         0,
         fac_kingdom_6,
         [
-            itm_arabian_sword_b,
+            itm_sword_b_v1,
             itm_mace_3,
             itm_spear,
             itm_tab_shield_kite_c,
@@ -987,7 +987,7 @@ troops_undefined = [
         [
             itm_arrows,
             itm_nomad_bow,
-            itm_arabian_sword_a,
+            itm_sword_b,
         ],
         def_attrib | level(19),
         wp_melee(90) | wp_archery(100),
@@ -1010,7 +1010,7 @@ troops_undefined = [
         fac_kingdom_6,
         [
             itm_lance,
-            itm_arabian_sword_b,
+            itm_sword_b_v1,
             itm_scimitar_b,
             itm_mace_4,
             itm_tab_shield_small_round_b,
@@ -1443,7 +1443,7 @@ troops_undefined = [
         [
             itm_bamboo_spear,
             itm_tab_shield_kite_a,
-            itm_arabian_sword_a,
+            itm_sword_b,
         ],
         str_14 | agi_15 | def_attrib_multiplayer | str_12 | level(19),
         wpex(110, 100, 130, 30, 50, 120),
@@ -1466,7 +1466,7 @@ troops_undefined = [
         0,
         fac_kingdom_6,
         [
-            itm_arabian_sword_a,
+            itm_sword_b,
             itm_lance,
             itm_tab_shield_small_round_a,
             itm_saddle_horse,
@@ -3763,7 +3763,7 @@ troops_undefined = [
         [
             itm_bamboo_spear,
             itm_tab_shield_kite_c,
-            itm_arabian_sword_a,
+            itm_sword_b,
             itm_scale_gauntlets,
         ],
         level(7) | str_20,
@@ -3781,7 +3781,7 @@ troops_undefined = [
         0,
         fac_kingdom_6,
         [
-            itm_arabian_sword_a,
+            itm_sword_b,
             itm_lance,
             itm_tab_shield_small_round_c,
             itm_scale_gauntlets,

@@ -182,7 +182,7 @@ troops_kings = [
             itm_javelin,
             itm_solarian_lance_d,
             itm_tab_shield_tauria_b,
-            itm_sarranid_cavalry_sword,
+            itm_sword_b_v4,
         ],
         knight_attrib_5,
         wp(350),
