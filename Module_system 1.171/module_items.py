@@ -1562,7 +1562,7 @@ items = [
     0, 864,
     weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
     imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_6]
+    [], [fac_kingdom_7]
 ],
 
 [
