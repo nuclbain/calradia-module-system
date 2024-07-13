@@ -3481,6 +3481,19 @@ items = [
 ["menegras_chapel_b", "Menegras Chapel de Fer", [("Menegras_Chapel_B",0), ("Menegras_Chapel_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 465 , weight(2)|abundance(85)|head_armor(37)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
 # MENEGRAS HELMETS END
 
+# NERPA HELMETS START
+["nerpa_sallet_a", "Nerpa Sallet on Arming Cap", [("Nerpa_Sallet_A",0), ("Nerpa_Sallet_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 399 , weight(2)|abundance(95)|head_armor(37)|body_armor(0)|leg_armor(0)|difficulty(11), imodbits_armor],
+["nerpa_sallet_a_v1", "Nerpa Sallet on Hood", [("Nerpa_Sallet_A_v1",0), ("Nerpa_Sallet_A_v1_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 437 , weight(2.5)|abundance(95)|head_armor(39)|body_armor(2)|leg_armor(0)|difficulty(12), imodbits_armor],
+["nerpa_sallet_a_v2", "Nerpa Sallet on Padding", [("Nerpa_Sallet_A_v2",0), ("Nerpa_Sallet_A_v2_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 493 , weight(2.5)|abundance(90)|head_armor(41)|body_armor(4)|leg_armor(0)|difficulty(13), imodbits_armor],
+["nerpa_sallet_a_v3", "Nerpa Sallet on Mail", [("Nerpa_Sallet_A_v3",0), ("Nerpa_Sallet_A_v3_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 534 , weight(2.5)|abundance(90)|head_armor(43)|body_armor(6)|leg_armor(0)|difficulty(14), imodbits_armor],
+["nerpa_sallet_a_v4", "Nerpa Sallet on Mail", [("Nerpa_Sallet_A_v4",0), ("Nerpa_Sallet_A_v4_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 545 , weight(2.5)|abundance(90)|head_armor(44)|body_armor(6)|leg_armor(0)|difficulty(14), imodbits_armor],
+
+["nerpa_sallet_b", "Nerpa Sallet with Visor on Hood", [("Nerpa_Sallet_B",0), ("Nerpa_Sallet_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 493 , weight(2.75)|abundance(90)|head_armor(43)|body_armor(2)|leg_armor(0)|difficulty(13), imodbits_armor],
+["nerpa_sallet_b_v1", "Nerpa Sallet with Visor on Padding", [("Nerpa_Sallet_B_v1",0), ("Nerpa_Sallet_B_v1_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 534 , weight(2.75)|abundance(90)|head_armor(45)|body_armor(4)|leg_armor(0)|difficulty(14), imodbits_armor],
+["nerpa_sallet_b_v2", "Nerpa Sallet with Visor on Mail", [("Nerpa_Sallet_B_v2",0), ("Nerpa_Sallet_B_v2_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 600 , weight(2.75)|abundance(80)|head_armor(47)|body_armor(6)|leg_armor(0)|difficulty(15), imodbits_armor],
+["nerpa_sallet_b_v3", "Nerpa Sallet with Visor on Mail", [("Nerpa_Sallet_B_v3",0), ("Nerpa_Sallet_B_v3_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 611 , weight(2.75)|abundance(80)|head_armor(48)|body_armor(6)|leg_armor(0)|difficulty(15), imodbits_armor],
+# NERPA HELMETS END
+
 # NASAL HELMETS START
 ["nasal_helmet_a", "Nasal Helmet", [("Revised_Nasal_A",0), ("Revised_Nasal_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 372 , weight(2)|abundance(90)|head_armor(33)|body_armor(0)|leg_armor(0)|difficulty(9), imodbits_armor],
 ["nasal_helmet_a_v1", "Nasal Helmet on Hood", [("Revised_Nasal_A_v1",0), ("Revised_Nasal_A_v1_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_attach_armature ,0, 412 , weight(2.5)|abundance(90)|head_armor(35)|body_armor(2)|leg_armor(0)|difficulty(11), imodbits_armor],
