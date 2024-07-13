@@ -58,7 +58,6 @@ upgrade(troops, "tauria_crossbowman", "tauria_siege_crossbowman")
 
 # elen
 upgrade(troops, "elen_novice", "elen_footman")
-upgrade2(troops, "elen_footman", "elen_fighter", "elen_archer")
 
 upgrade(troops, "elen_fighter", "elen_light_infantry")
 upgrade(troops, "elen_light_infantry", "elen_heavy_infantry")
