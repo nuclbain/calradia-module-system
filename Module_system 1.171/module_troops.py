@@ -78,17 +78,18 @@ upgrade(troops, "adid_oasis_priest", "adid_oasis_high_priest")
 upgrade(troops, "adid_royal_lancer", "adid_golden_falcon")
 
 # stormguard
-upgrade(troops, "stormguard_mountaineer", "stormguard_thunderguard")
-upgrade(troops, "stormguard_thunderguard", "stormguard_stormbringer")
+upgrade2(troops, "stormguard_mountaineer", "stormguard_thunderguard", "stormguard_hunter")
+upgrade(troops, "stormguard_thunderguard", "stormguard_witch_hunter")
 upgrade(troops, "stormguard_stormbringer", "stormguard_avalanche_warrior")
 
-upgrade2(
+upgrade(
     troops,
     "stormguard_avalanche_warrior",
-    "stormguard_lightning_rider",
     "stormguard_tempest_sentinel",
 )
 upgrade(troops, "stormguard_tempest_sentinel", "stormguard_elite_stormguard")
+
+upgrade(troops, "stormguard_lightning_rider", "stormguard_master_of_order")
 
 # [I] Silver Rose Recruit
 # |- [II] Silver Rose Levy
