@@ -1888,9 +1888,7 @@ troops_factions = [
         0,
         fac_kingdom_12,
         [
-            itm_coat_of_plates,
-            itm_coat_of_plates_v1,
-            itm_coat_of_plates_v2,
+            itm_black_coat_of_plates_a,
             itm_mail_mittens_a_v1,
             itm_mail_mittens_a,
             itm_leather_gloves_a_v1,
@@ -1925,11 +1923,7 @@ troops_factions = [
         0,
         fac_kingdom_12,
         [
-            itm_coat_of_plates,
-            itm_coat_of_plates_v1,
-            itm_coat_of_plates,
-            itm_coat_of_plates_v1,
-            itm_coat_of_plates_v2,
+            itm_black_coat_of_plates_a,
             itm_leather_gloves_a_v1,
             itm_mail_mittens_a_v1,
             itm_mail_mittens_a,
@@ -1966,9 +1960,7 @@ troops_factions = [
         0,
         fac_kingdom_12,
         [
-            itm_coat_of_plates,
-            itm_coat_of_plates_v1,
-            itm_coat_of_plates_v2,
+            itm_black_coat_of_plates_a,
             itm_plate_gauntlets_a,
             itm_plate_gauntlets_a_v1,
             itm_one_handed_battle_axe_c,
@@ -1999,7 +1991,7 @@ troops_factions = [
         0,
         fac_kingdom_12,
         [
-            itm_coat_of_plates_v3,
+            itm_black_coat_of_plates_a,
             itm_plate_gauntlets_a_v1,
             itm_axe_crusader_1,
             itm_tab_shield_tauria_b,

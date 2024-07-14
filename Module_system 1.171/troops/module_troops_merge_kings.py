@@ -273,7 +273,6 @@ troops_kings = [
             itm_black_knight_horse_a,
             itm_tabard_f,
             itm_hose_a,
-            itm_coat_of_plates_v3,
             itm_plate_boots_a,
             itm_plate_gauntlets_a_v1,
         ],

@@ -1100,12 +1100,16 @@ slot_team_flag_situation                       = 0
 #Rebellion changes end
 # character backgrounds
 cb_noble = 1
-cb_merchant = 2
-cb_guard = 3
-cb_forester = 4
-cb_nomad = 5
-cb_thief = 6
-cb_priest = 7
+cb_blacksmith = 2
+cb_merchant = 3
+cb_farmer = 4
+cb_guard = 5
+cb_scholar = 6
+cb_forester = 7
+cb_nomad = 8
+cb_thief = 9
+cb_priest = 10
+cb_urchin = 11
 
 cb2_page = 0
 cb2_apprentice = 1
@@ -1125,18 +1129,20 @@ dplmc_cb3_bravo = 1
 dplmc_cb3_merc = 2
 ##diplomacy end+
 
-cb3_poacher = 3
-cb3_craftsman = 4
-cb3_peddler = 5
+cb3_cleric = 3
+cb3_battle_monk = 4
+cb3_brute = 5
 
 ##diplomacy start+ add background constants
-dplmc_cb3_preacher = 6
+dplmc_cb3_deprived = 6
 ##diplomacy end+
 
-cb3_troubadour = 7
+cb3_assasin = 7
 cb3_squire = 8
 cb3_lady_in_waiting = 9
-cb3_student = 10
+cb3_warrior_scholar = 10
+cb3_foreigner = 11
+cb3_swashbuckler = 12
 
 cb4_revenge = 1
 cb4_loss    = 2
