@@ -129,7 +129,6 @@ troops_manhunters = [
         fac_slavers,
         [
             itm_military_hammer,
-            itm_warhammer,
             itm_steel_shield,
             itm_scale_gauntlets,
             itm_mail_mittens_a,
