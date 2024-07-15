@@ -75,6 +75,7 @@ meshes = [
   ("pic_sarranid_encounter", 0, "pic_sarranid_encounter", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("pic_crafting", 0, "pic_crafting", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("pic_spells", 0, "pic_spells", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("pic_begin_adventure", 0, "pic_begin_adventure", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   
   ("mp_score_a", 0, "mp_score_a", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("mp_score_b", 0, "mp_score_b", 0, 0, 0, 0, 0, 0, 1, 1, 1),
@@ -248,23 +249,20 @@ meshes = [
 
   ("heraldic_armor_bg", 0, "heraldic_armor_bg",  0, 0, 0, 0, 0, 0, 10, 10, 10),
 
+  ("tableau_mesh_white_aketon_heraldic_a", 0, "Tableau_Mesh_White_Aketon_Heraldic_A",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_a", 0, "tableau_mesh_heraldic_armor_a",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_b", 0, "tableau_mesh_heraldic_armor_b",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_c", 0, "tableau_mesh_heraldic_armor_c",  0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("tableau_mesh_heraldic_armor_d", 0, "tableau_mesh_heraldic_armor_d",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-###NEW###
-  ("tableau_mesh_mail_long_surcoat_new_heraldic", 0, "tableau_mesh_mail_long_surcoat_new_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("tableau_mesh_brigandine_b_heraldic", 0, "tableau_mesh_brigandine_b_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("tableau_mesh_heraldic_tunic_new", 0, "tableau_mesh_heraldic_tunic_new",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("tableau_mesh_heraldic_surcoat_over_mail_short", 0, "tableau_mesh_heraldic_surcoat_over_mail_short",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-  ("tableau_mesh_tabard_b_heraldic", 0, "tableau_mesh_tabard_b_heraldic",  0, 0, 0, 0, 0, 0, 1, 1, 1),
-###NEW###
 
 ###
+  ("tableau_mesh_shield_otto1", 0, "tableau_mesh_shield_otto1",  0, 0, 0, 0, 0, 0, 10, 10, 10),
+  ("tableau_mesh_shield_otto2", 0, "tableau_mesh_shield_otto2",  0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("tableau_mesh_shield_sarranids_a", 0, "tableau_mesh_shield_sarranids_a",  0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("tableau_mesh_shield_sarranids_b", 0, "tableau_mesh_shield_sarranids_b",  0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("tableau_mesh_shield_sarranids_c", 0, "tableau_mesh_shield_sarranids_c",  0, 0, 0, 0, 0, 0, 10, 10, 10),
 ###
+  ("tableau_mesh_shield_oval_a", 0, "Tableu_Heraldic_Oval_Shield_A",  0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("tableau_mesh_shield_player_a", 0, "Tableu_Player_Shield_Veteran_Heraldic",  0, 0, 0, 0, 0, 0, 10, 10, 10),
   ("tableau_mesh_shield_player_b", 0, "Tableu_Player_Shield_Veteran_Heraldic_Reinforced",  0, 0, 0, 0, 0, 0, 10, 10, 10),
 ###

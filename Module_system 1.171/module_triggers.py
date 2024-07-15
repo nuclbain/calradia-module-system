@@ -1586,8 +1586,8 @@ triggers = [
 
 		 (ge, ":item_id", 0),
 
-	 	 (this_or_next|eq, ":item_id", "itm_great_sword"),
-	 	 (this_or_next|eq, ":item_id", "itm_sword_two_handed_a"),
+	 	 (this_or_next|eq, ":item_id", "itm_sword_great_a"),
+	 	 (this_or_next|eq, ":item_id", "itm_sword_great_b"),
 		 (eq, ":item_id", "itm_strange_great_sword"),
 
 		 (unlock_achievement, ACHIEVEMENT_LADY_OF_THE_LAKE),
