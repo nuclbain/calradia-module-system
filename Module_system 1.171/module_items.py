@@ -3744,6 +3744,12 @@ items = [
 ["hairako_noseguard_helmet_a_v5", "Noseguard Helmet on Mail", [("Hairako_Helmet_Noseguard_A_v5",0), ("Hairako_Helmet_Noseguard_A_v5_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 510, weight(1.5)|abundance(85)|head_armor(41)|body_armor(6)|leg_armor(0)|difficulty(13), imodbits_armor, [], [fac_kingdom_8]],
 # HAIRAKO HELMETS END
 
+# ADID HELMETS START
+["adid_footman_helmet_a", "Footman Helmet on Turban", [("Adid_Footman_Helmet_A",0), ("Adid_Footman_Helmet_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 446, weight(1.5)|abundance(85)|head_armor(37)|body_armor(2)|leg_armor(0)|difficulty(11), imodbits_armor, [], [fac_kingdom_11]],
+["adid_footman_helmet_b", "Footman Helmet on Turban", [("Adid_Footman_Helmet_B",0), ("Adid_Footman_Helmet_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 467, weight(1.5)|abundance(85)|head_armor(38)|body_armor(3)|leg_armor(0)|difficulty(12), imodbits_armor, [], [fac_kingdom_11]],
+["adid_footman_helmet_c", "Footman Helmet on Hood", [("Adid_Footman_Helmet_C",0), ("Adid_Footman_Helmet_C_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 488, weight(1.5)|abundance(85)|head_armor(39)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor, [], [fac_kingdom_11]],
+# ADID HELMETS END
+
 # MENEGRAS HELMETS START
 ["menegras_sallet_a", "Menegras Sallet", [("Menegras_Sallet_A",0), ("Menegras_Sallet_A_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 463 , weight(2)|abundance(90)|head_armor(38)|body_armor(4)|leg_armor(0)|difficulty(12), imodbits_armor],
 ["menegras_sallet_b", "Menegras Sallet open Visor", [("Menegras_Sallet_B",0), ("Menegras_Sallet_B_inv",ixmesh_inventory)], itp_merchandise| itp_type_head_armor|itp_civilian|itp_attach_armature ,0, 496 , weight(2.5)|abundance(85)|head_armor(40)|body_armor(4)|leg_armor(0)|difficulty(13), imodbits_armor],
