@@ -1135,7 +1135,9 @@ game_menus = [
  {s12}^^But soon everything changed and you decided to strike out on your own as an adventurer. What made you take this decision was...",
         # Finally, what made you decide to strike out on your own as an adventurer?",
         "none",
-        [],
+        [
+            (set_background_mesh, "mesh_pic_begin_adventure"),
+        ],
         [
             (
                 "revenge",

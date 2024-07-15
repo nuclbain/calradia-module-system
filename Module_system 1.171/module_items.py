@@ -1661,6 +1661,36 @@ items = [
     imodbit_hardened | imodbit_reinforced,
     [], [fac_kingdom_12]
 ],
+
+[
+    "adid_aketon_a",
+    "Leather Adid Aketon",
+    [
+        ("Adid_Aketon_A", 0),
+        ("Adid_Aketon_A_thick", imodbit_thick),
+        ("Adid_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1042,
+    weight(9)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(11),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_11]
+],
+
+[
+    "adid_aketon_b",
+    "Leather Adid Aketon with Plates",
+    [
+        ("Adid_Aketon_B", 0),
+        ("Adid_Aketon_B_thick", imodbit_thick),
+        ("Adid_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1342,
+    weight(12)|abundance(95)|head_armor(0)|body_armor(30)|leg_armor(13)|difficulty(14),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_11]
+],
 # AKETONS END
 
 # POURPOINTS START
@@ -3013,7 +3043,7 @@ items = [
     0, 1487,
     weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
     imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_11]
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -3026,7 +3056,7 @@ items = [
     0, 1487,
     weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
     imodbits_none,
-    [], [fac_kingdom_11]
+    [], [fac_kingdom_12]
 ],
 
 [
@@ -3040,6 +3070,36 @@ items = [
     itp_merchandise | itp_type_body_armor | itp_covers_legs,
     0, 1718,
     weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
+    imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_12]
+],
+
+[
+    "adid_hauberk_a",
+    "Hauberk on Adid Leather Aketon",
+    [
+        ("Adid_Hauberk_A", 0),
+        ("Adid_Hauberk_A_thick", imodbit_thick),
+        ("Adid_Hauberk_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1571,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(40)|leg_armor(10)|difficulty(17),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_11]
+],
+
+[
+    "adid_hauberk_b",
+    "Plated Hauberk on Adid Leather Aketon",
+    [
+        ("Adid_Hauberk_B", 0),
+        ("Adid_Hauberk_B_hardened", imodbit_hardened),
+        ("Adid_Hauberk_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1804,
+    weight(25)|abundance(85)|head_armor(0)|body_armor(43)|leg_armor(15)|difficulty(19),
     imodbit_hardened | imodbit_reinforced,
     [], [fac_kingdom_11]
 ],
