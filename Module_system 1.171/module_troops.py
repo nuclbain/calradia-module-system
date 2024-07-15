@@ -69,11 +69,10 @@ upgrade2(troops, "elen_archer", "elen_experienced_archer", "elen_sniper")
 upgrade(troops, "adid_nomad_scout", "adid_desert_vanguard")
 upgrade(troops, "adid_desert_vanguard", "adid_sultanate_vanguard")
 
-upgrade2(troops, "adid_sultanate_vanguard", "adid_camel_rider", "adid_serpent_guard")
 upgrade(troops, "adid_camel_rider", "adid_sandstalker")
 upgrade(troops, "adid_serpent_guard", "adid_oasis_acolyte")
 
-upgrade2(troops, "adid_oasis_acolyte", "adid_oasis_priest", "adid_royal_lancer")
+upgrade(troops, "adid_oasis_acolyte", "adid_oasis_priest")
 upgrade(troops, "adid_oasis_priest", "adid_oasis_high_priest")
 upgrade(troops, "adid_royal_lancer", "adid_golden_falcon")
 
