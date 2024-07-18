@@ -3551,6 +3551,8 @@ items = [
 ["felt_b_v1", "Felt Hat on Hood", [("Revised_Felt_B_v1",0), ("Revised_Felt_B_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 93, weight(1)|abundance(100)|head_armor(6)|body_armor(2)|leg_armor(0)|difficulty(0), imodbits_cloth],
 
 ["adventurer_hood_a", "Adventurer Hood", [("Adventurers_Hood_A",0), ("Adventurers_Hood_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 93, weight(1)|abundance(100)|head_armor(6)|body_armor(2)|leg_armor(0)|difficulty(0), imodbits_cloth],
+["hood_a", "Brown Hood", [("Revised_Hood_A",0), ("Revised_Hood_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 90, weight(1)|abundance(100)|head_armor(6)|body_armor(2)|leg_armor(0)|difficulty(0), imodbits_cloth],
+["hood_b", "Green Hood", [("Revised_Hood_B",0), ("Revised_Hood_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature|itp_civilian, 0, 90, weight(1)|abundance(100)|head_armor(6)|body_armor(2)|leg_armor(0)|difficulty(0), imodbits_cloth],
 
 ["arming_cap_a", "Arming Cap", [("Revised_Arming_Cap_A",0), ("Revised_Arming_Cap_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 104, weight(1)|abundance(100)|head_armor(9)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_none],
 
@@ -3558,6 +3560,11 @@ items = [
 ["padded_coif_a_v1", "Padded Coif on Hood", [("Revised_Padded_Coif_A_v1",0), ("Revised_Padded_Coif_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 209, weight(1.5)|abundance(100)|head_armor(16)|body_armor(3)|leg_armor(0)|difficulty(0), imodbits_cloth],
 ["padded_coif_b", "Padded Coif", [("Revised_Padded_Coif_B",0), ("Revised_Padded_Coif_B_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 156, weight(1)|abundance(100)|head_armor(14)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_cloth],
 ["padded_coif_b_v1", "Padded Coif on Hood", [("Revised_Padded_Coif_B_v1",0), ("Revised_Padded_Coif_B_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 209, weight(1.5)|abundance(100)|head_armor(16)|body_armor(3)|leg_armor(0)|difficulty(0), imodbits_cloth],
+
+["mail_coif_a", "Mail Coif", [("Revised_Mail_Coif_A",0), ("Revised_Mail_Coif_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 222, weight(1.5)|abundance(100)|head_armor(22)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
+["mail_coif_a_v1", "Mail Coif & Arming Cap", [("Revised_Mail_Coif_A_v1",0), ("Revised_Mail_Coif_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 243, weight(2)|abundance(100)|head_armor(24)|body_armor(0)|leg_armor(0)|difficulty(0), imodbits_armor],
+["mail_coif_a_v2", "Mail Coif & Hood", [("Revised_Mail_Coif_A_v2",0), ("Revised_Mail_Coif_A_v2_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 285, weight(2)|abundance(100)|head_armor(26)|body_armor(2)|leg_armor(0)|difficulty(0), imodbits_armor],
+["mail_coif_a_v3", "Mail Coif & Green Hood", [("Revised_Mail_Coif_A_v3",0), ("Revised_Mail_Coif_A_v3_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 285, weight(2)|abundance(100)|head_armor(26)|body_armor(2)|leg_armor(0)|difficulty(0), imodbits_armor],
 
 ["cervelliere_a", "Cervelliere on Arming Cap", [("Revised_Cervelliere_A",0), ("Revised_Cervelliere_A_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 252, weight(1)|abundance(100)|head_armor(24)|body_armor(0)|leg_armor(0)|difficulty(7), imodbits_armor],
 ["cervelliere_a_v1", "Cervelliere on Padded", [("Revised_Cervelliere_A_v1",0), ("Revised_Cervelliere_A_v1_inv",ixmesh_inventory)], itp_merchandise|itp_type_head_armor|itp_attach_armature, 0, 315, weight(1.5)|abundance(100)|head_armor(26)|body_armor(4)|leg_armor(0)|difficulty(9), imodbits_armor],
