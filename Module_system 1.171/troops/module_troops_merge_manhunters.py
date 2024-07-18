@@ -130,7 +130,6 @@ troops_manhunters = [
         [
             itm_military_hammer,
             itm_steel_shield,
-            itm_scale_gauntlets,
             itm_mail_mittens_a,
             itm_sallet_c,
             itm_plate_boots_b,

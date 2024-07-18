@@ -322,10 +322,6 @@ troops_mercenaries = [
         0,
         fac_commoners,
         [
-            itm_eastern_scale_gloves_a,
-            itm_eastern_scale_gloves_b,
-            itm_desert_rich_boots_a,
-            itm_desert_rich_boots_b,
             itm_maa_camel_rider_shield_a,
             itm_maa_camel_rider_shield_b,
             itm_maa_camel_rider_shield_c,
@@ -357,10 +353,6 @@ troops_mercenaries = [
         0,
         fac_commoners,
         [
-            itm_eastern_scale_gloves_a,
-            itm_eastern_scale_gloves_b,
-            itm_desert_rich_boots_a,
-            itm_desert_rich_boots_b,
             itm_maa_camel_rider_shield_a,
             itm_maa_camel_rider_shield_b,
             itm_maa_camel_rider_shield_c,
@@ -397,10 +389,6 @@ troops_mercenaries = [
         0,
         fac_commoners,
         [
-            itm_eastern_scale_gloves_a,
-            itm_eastern_scale_gloves_b,
-            itm_desert_rich_boots_a,
-            itm_desert_rich_boots_b,
             itm_maa_camel_rider_shield_a,
             itm_maa_camel_rider_shield_b,
             itm_maa_camel_rider_shield_c,

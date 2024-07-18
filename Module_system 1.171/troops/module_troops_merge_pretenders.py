@@ -129,7 +129,6 @@ troops_pretenders = [
         fac_kingdom_6,
         [
             itm_arabian_horse_b,
-            itm_desert_leather_boots_b,
             itm_sword_b_v4,
             itm_tab_shield_small_round_c,
         ],

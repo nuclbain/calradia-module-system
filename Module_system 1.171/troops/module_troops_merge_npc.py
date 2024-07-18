@@ -197,9 +197,7 @@ troops_npc = [
         reserved,
         fac_commoners,
         [
-            itm_eastern_scale_gloves_a,
             itm_mace_a_v1,
-            itm_desert_leather_boots_a,
         ],
         str_25 | agi_17 | int_12 | cha_14 | level(16),
         wp(200),
@@ -330,7 +328,7 @@ troops_npc = [
         0,
         reserved,
         fac_commoners,
-        [itm_robe, itm_maul, itm_eastern_scale_gloves_b, itm_leather_shoes_b],
+        [itm_robe, itm_maul, itm_leather_shoes_b],
         str_9 | agi_9 | int_12 | cha_8 | level(7),
         wp(80),
         knows_warrior_npc

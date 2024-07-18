@@ -345,15 +345,6 @@ items = [
 ["plate_gauntlets_b","Plate Gauntlets", [("Plate_Gauntlets_B_L",0)], itp_merchandise|itp_type_hand_armor,0, 840, weight(0.85)|abundance(100)|body_armor(8)|difficulty(11),imodbits_armor],
 ["plate_gauntlets_b_v1","Plate Gauntlets", [("Plate_Gauntlets_B_v1_L",0)], itp_merchandise|itp_type_hand_armor,0, 870, weight(0.85)|abundance(100)|body_armor(9)|difficulty(12),imodbits_armor],
 
-["eastern_scale_gloves_a","Eastern Scale Gloves", [("gauntlets_arabs_a_L", 0)], itp_type_hand_armor|itp_merchandise, 0,710, weight(0.75)|abundance(100)|body_armor(5), imodbit_lordly, [], [fac_kingdom_6]],
-["eastern_scale_gloves_b","Eastern Decorated Scale Gloves", [("gauntlets_arabs_b_L", 0)], itp_type_hand_armor|itp_merchandise, 0,919, weight(0.75)|abundance(100)|body_armor(6), imodbit_lordly, [], [fac_kingdom_6]],
-["scale_gauntlets","Scale Gauntlets", [("glove5_L",0)], itp_merchandise|itp_type_hand_armor,0, 710, weight(0.75)|abundance(100)|body_armor(5)|difficulty(0),imodbits_armor],
-["lamellar_gauntlets","Lamellar Gauntlets", [("glove6_L",0)], itp_merchandise|itp_type_hand_armor,0, 910, weight(0.9)|abundance(100)|body_armor(6)|difficulty(0),imodbits_armor],
-
-["mt_gauntlets_a","Plate Gauntlets Gothic", [("glove1_L",0)], itp_merchandise|itp_type_hand_armor,0, 799, weight(0.75)|abundance(100)|body_armor(6)|difficulty(0),imodbits_armor, [], [fac_kingdom_10, fac_kingdom_9]],
-["mt_gauntlets_a2","Plate Gauntlets Gothic", [("glove2_L",0)], itp_merchandise|itp_type_hand_armor,0, 799, weight(0.75)|abundance(100)|body_armor(6)|difficulty(0),imodbits_armor, [], [fac_kingdom_10, fac_kingdom_9]],
-["mt_gauntlets_b","Mail Gloves", [("glove3_L",0)], itp_merchandise|itp_type_hand_armor,0, 599, weight(0.75)|abundance(100)|body_armor(5)|difficulty(0),imodbits_armor, [], [fac_kingdom_10, fac_kingdom_9]],
-
 # BOOTS BEGIN
 ["sandals_a", "Sandals", [("Sandals_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 5, weight(0.25)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(2)|difficulty(0) ,imodbits_cloth ],
 
@@ -361,7 +352,6 @@ items = [
 ["hose_b", "Brown Hose", [("Hose_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 30, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
 ["hose_c", "Green Hose", [("Hose_C",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 30, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
 ["hose_d", "Grey Hose", [("Hose_D",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 30, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
-["hose_d_v1", "Grey Hose", [("Hose_D_v1",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 30, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
 ["hose_e", "Red Hose", [("Hose_E",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 30, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
 ["hose_f", "Yellow Hose", [("Hose_F",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 30, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
 
@@ -369,7 +359,6 @@ items = [
 ["poulaines_b", "Brown Poulaines", [("Poulaines_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["poulaines_c", "Green Poulaines", [("Poulaines_C",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["poulaines_d", "Grey Poulaines", [("Poulaines_D",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
-["poulaines_d_v1", "Grey Poulaines", [("Poulaines_D_v1",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["poulaines_e", "Red Poulaines", [("Poulaines_E",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["poulaines_f", "Yellow Poulaines", [("Poulaines_F",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 32, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 
@@ -389,34 +378,12 @@ items = [
 ["leather_boots_b", "Hide & Leather Boots", [("Leather_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 131, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth],
 ["leather_boots_c", "Hunting Leather Boots", [("Leather_Boots_C",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 131, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth],
 
-["military_boots_a", "Military Boots", [("Milita_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 197, weight(1.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(18)|difficulty(0) ,imodbits_armor],
-["military_boots_b", "Military Boots", [("Milita_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 197, weight(1.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(18)|difficulty(0) ,imodbits_armor],
-
 ["mail_boots_a", "Mail Boots", [("Mail_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 297, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor],
 ["mail_boots_b", "Mail Boots", [("Mail_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 297, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor],
 ["mail_boots_c", "Mail Boots", [("Mail_Boots_C",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 297, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(24)|difficulty(0) ,imodbits_armor],
 
 ["plate_boots_a", "Plate Boots", [("Steel_Greaves_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 497, weight(3)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(31)|difficulty(7), imodbits_armor],
 ["plate_boots_b", "Plate Boots", [("Steel_Greaves_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 437, weight(2.5)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(28)|difficulty(7), imodbits_armor],
-
-["desert_boots_a", "Desert Boots", [("Desert_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 27, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
-["desert_boots_b", "Desert Boots", [("Desert_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 27, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(9)|difficulty(0) ,imodbits_cloth ],
-
-["desert_nomad_boots_a", "Desert Nomad Boots", [("Desert_Nomad_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 87, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(12)|difficulty(0) ,imodbits_cloth],
-["desert_nomad_boots_b", "Desert Nomad Boots", [("Desert_Nomad_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 87, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(12)|difficulty(0) ,imodbits_cloth],
-["desert_nomad_boots_c", "Desert Nomad Boots", [("Desert_Nomad_Boots_C",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 87, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(12)|difficulty(0) ,imodbits_cloth],
-
-["desert_rich_boots_a", "Desert High Boots", [("Eastern_Leather_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 102, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth],
-["desert_rich_boots_b", "Desert High Boots", [("Eastern_Leather_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 102, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(14)|difficulty(0) ,imodbits_cloth],
-
-["desert_leather_boots_a", "Desert Leather Boots", [("Desert_Leather_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 131, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth],
-["desert_leather_boots_b", "Desert Leather Boots", [("Desert_Leather_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature|itp_civilian, 0, 131, weight(1)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(16)|difficulty(0) ,imodbits_cloth],
-
-["desert_mail_boots_a", "Desert Mail Boots", [("Eastern_Mail_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 367, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(25)|difficulty(0) ,imodbits_armor],
-["desert_mail_boots_b", "Desert Mail Boots with Spurs", [("Eastern_Mail_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 367, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(25)|difficulty(0) ,imodbits_armor],
-
-["desert_heavy_boots_a", "Desert Heavy Boots", [("Desert_Heavy_Boots_A",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 407, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(26)|difficulty(7), imodbits_armor],
-["desert_heavy_boots_b", "Desert Heavy Boots", [("Desert_Heavy_Boots_B",0)], itp_merchandise|itp_type_foot_armor|itp_attach_armature, 0, 407, weight(2)|abundance(100)|head_armor(0)|body_armor(0)|leg_armor(26)|difficulty(7), imodbits_armor],
 # BOOTS END
 
 ["sarranid_head_cloth", "Lady Head Cloth", [("tulbent",0)],  itp_type_head_armor | itp_doesnt_cover_hair |itp_civilian |itp_attach_armature,0, 1 , weight(0.5)|abundance(100)|head_armor(4)|body_armor(0)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
@@ -482,10 +449,9 @@ items = [
 
 ["tunic_with_green_cape", "Peasant Tunic", [("Peasant_Tunic_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 62 , weight(1)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(8)|difficulty(0) ,imodbits_cloth ], 
 
-#TODO:
- ["red_shirt", "Red Shirt", [("Shirt_C",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
+["red_shirt", "Red Shirt", [("Shirt_C",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
  10 , weight(1)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(1)|difficulty(0) ,imodbits_cloth ],
- ["red_tunic", "Red Tunic", [("Arena_Shirt_E",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
+["red_tunic", "Red Tunic", [("Arena_Shirt_E",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
  80 , weight(1)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
 
  ["green_tunic", "Green Tunic", [("Arena_Shirt_B",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
