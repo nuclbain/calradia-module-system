@@ -441,8 +441,6 @@ items = [
 ["woolen_dress", "Woolen Dress", [("woolen_dress",0)], itp_merchandise| itp_type_body_armor|itp_civilian  |itp_covers_legs ,0,
  10 , weight(1.75)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(2)|difficulty(0) ,imodbits_cloth ],
 
-["tunic_with_green_cape", "Peasant Tunic", [("Peasant_Tunic_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 62 , weight(1)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(8)|difficulty(0) ,imodbits_cloth ], 
-
 ["red_tunic", "Red Tunic", [("Arena_Shirt_E",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
  80 , weight(1)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
 
@@ -453,16 +451,6 @@ items = [
 ["robe", "Robe", [("Outcast_Robe_B",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs |itp_civilian,0, 31 , weight(1.5)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
 ["robe_on_mail_a", "Robe on Mail", [("Cultist_Armor_A",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0, 385 , weight(14.0)|abundance(3)|head_armor(0)|body_armor(35)|leg_armor(14)|difficulty(0) ,imodbits_armor ],
 ["robe_on_mail_b", "Robe on Mail", [("Cultist_Armor_B",0)], itp_merchandise|itp_type_body_armor|itp_covers_legs,0, 385 , weight(14.0)|abundance(3)|head_armor(0)|body_armor(35)|leg_armor(14)|difficulty(0) ,imodbits_armor ],
-#NEW: was coarse_tunic
-["coarse_tunic", "Tunic with vest", [("Coarse_Tunic_Revised_A",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
- 47 , weight(2)|abundance(100)|head_armor(0)|body_armor(11)|leg_armor(6)|difficulty(0) ,imodbits_cloth ],
-["leather_apron", "Peasant Leather Vest", [("Peasant_Tunic_B",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
- 87 , weight(3)|abundance(100)|head_armor(0)|body_armor(12)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
-#NEW: was leather_vest
-["leather_vest", "Leather Vest", [("Leather_Vest_Revised_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0,
- 146 , weight(4)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(15)|difficulty(0) ,imodbits_cloth ],
-["leather_vest_reinfoced", "Leather Vest", [("Leather_Vest_Revised_B",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0,
- 246 , weight(4)|abundance(100)|head_armor(0)|body_armor(23)|leg_armor(15)|difficulty(0) ,imodbits_cloth ],
 ["steppe_armor", "Steppe Armor", [("Leather_Lamellar_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs ,0,
  195 , weight(5)|abundance(100)|head_armor(0)|body_armor(16)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
 
@@ -565,7 +553,7 @@ items = [
     itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
     0, 15,
     weight(2)|abundance(100)|head_armor(0)|body_armor(4)|leg_armor(3)|difficulty(0),
-    imodbits_none,
+    imodbits_cloth,
     [], []
 ],
 
@@ -578,7 +566,7 @@ items = [
     itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
     0, 25,
     weight(2)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(3)|difficulty(0),
-    imodbits_none,
+    imodbits_cloth,
     [], []
 ],
 
@@ -591,7 +579,72 @@ items = [
     itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
     0, 35,
     weight(2)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(4)|difficulty(0),
-    imodbits_none,
+    imodbits_cloth,
+    [], []
+],
+
+[
+    "regular_shirt_d",
+    "Tunic with Vest",
+    [
+        ("Regular_Shirt_D", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 45,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(5)|difficulty(0),
+    imodbits_cloth,
+    [], []
+],
+
+[
+    "peasant_regular_shirt_a",
+    "Peasant Shirt",
+    [
+        ("Peasant_Regular_Shirt_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 15,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(4)|leg_armor(3)|difficulty(0),
+    imodbits_cloth,
+    [], []
+],
+
+[
+    "peasant_regular_shirt_a_v1",
+    "Smith Shirt",
+    [
+        ("Peasant_Regular_Shirt_A_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 25,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(3)|difficulty(0),
+    imodbits_cloth,
+    [], []
+],
+
+[
+    "leather_vest_regular_shirt_a",
+    "Leather Vest",
+    [
+        ("Leather_Vest_Regular_Shirt_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 129,
+    weight(5)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(9)|difficulty(8),
+    imodbits_cloth,
+    [], []
+],
+
+[
+    "leather_vest_regular_shirt_a_v1",
+    "Outlaw Leather Vest",
+    [
+        ("Leather_Vest_Regular_Shirt_A_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 169,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(9)|difficulty(9),
+    imodbits_cloth,
     [], []
 ],
 
@@ -604,7 +657,7 @@ items = [
     itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
     0, 45,
     weight(2)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(5)|difficulty(0),
-    imodbits_none,
+    imodbits_cloth,
     [], []
 ],
 
@@ -617,7 +670,7 @@ items = [
     itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
     0, 55,
     weight(2)|abundance(100)|head_armor(0)|body_armor(9)|leg_armor(6)|difficulty(0),
-    imodbits_none,
+    imodbits_cloth,
     [], []
 ],
 

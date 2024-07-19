@@ -914,7 +914,7 @@ troops_knights = [
         0x000000003F0C000530DB6DB6DB6D8EFE00000000001C36FB0000000000000000,
         vaegir_face_older_2,
     ],
-    # khergit civilian clothes: itm_leather_vest, itm_nomad_vest, itm_nomad_robe, itm_lamellar_vest,itm_tribal_warrior_outfit
+    # khergit civilian clothes: itm_leather_vest_regular_shirt_a, itm_nomad_vest, itm_nomad_robe, itm_lamellar_vest,itm_tribal_warrior_outfit
     [
         "knight_3_1",
         "Lord Solarion",
@@ -1490,7 +1490,7 @@ troops_knights = [
         [
             itm_hunter,
             itm_poulaines_b,
-            itm_leather_vest,
+            itm_leather_vest_regular_shirt_a,
             itm_plate_boots_a,
             itm_fighting_pick,
             itm_tab_shield_round_e,
@@ -1713,7 +1713,7 @@ troops_knights = [
         reserved,
         fac_kingdom_4,
         [
-            itm_leather_vest,
+            itm_leather_vest_regular_shirt_a,
             itm_poulaines_b,
             itm_plate_boots_a,
             itm_fighting_pick,

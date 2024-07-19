@@ -51,7 +51,7 @@ troops_mercenaries = [
             itm_stones,
             itm_arming_cap_a,
             itm_regular_shirt_b,
-            itm_tunic_with_green_cape,
+            itm_peasant_regular_shirt_a,
             itm_poulaines_b,
             itm_poulaines_d,
         ],

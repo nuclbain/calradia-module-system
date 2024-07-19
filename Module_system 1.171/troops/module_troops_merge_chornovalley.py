@@ -37,7 +37,10 @@ troops_chornovalley = [
         "chornovalley_warden",
         "Chornovalley Warden",
         "Chornovalley Wardens",
-        tf_guarantee_boots | tf_guarantee_armor | tf_guarantee_shield | tf_guarantee_helmet,
+        tf_guarantee_boots
+        | tf_guarantee_armor
+        | tf_guarantee_shield
+        | tf_guarantee_helmet,
         0,
         0,
         fac_kingdom_2,
@@ -68,7 +71,10 @@ troops_chornovalley = [
         "chornovalley_gatekeeper",
         "Chornovalley Gatekeeper",
         "Chornovalley Gatekeepers",
-        tf_guarantee_boots | tf_guarantee_armor | tf_guarantee_shield | tf_guarantee_helmet,
+        tf_guarantee_boots
+        | tf_guarantee_armor
+        | tf_guarantee_shield
+        | tf_guarantee_helmet,
         0,
         0,
         fac_kingdom_2,
@@ -100,7 +106,10 @@ troops_chornovalley = [
         "chornovalley_scout",
         "Chornovalley Scout",
         "Chornovalley Scouts",
-        tf_guarantee_boots | tf_guarantee_armor | tf_guarantee_shield | tf_guarantee_helmet,
+        tf_guarantee_boots
+        | tf_guarantee_armor
+        | tf_guarantee_shield
+        | tf_guarantee_helmet,
         0,
         0,
         fac_kingdom_2,
@@ -475,8 +484,7 @@ troops_chornovalley = [
             itm_javelin,
             itm_javelin,
             itm_steppe_cap,
-            itm_leather_vest,
-            itm_leather_vest,
+            itm_leather_vest_regular_shirt_a,
             itm_nomad_armor,
         ],
         str_10 | agi_5 | int_4 | cha_4 | level(14),
