@@ -1633,7 +1633,7 @@ game_menus = [
                     (else_try),
                     (eq, "$background_answer_3", dplmc_cb3_deprived),
                     (troop_add_item, "trp_player", "itm_knife", imod_rusty),
-                    (troop_add_item, "trp_player", "itm_shirt", imod_tattered),
+                    (troop_add_item, "trp_player", "itm_regular_shirt_a", imod_tattered),
                     (troop_add_item, "trp_player", "itm_poulaines_b", imod_tattered),
                     (troop_add_item, "trp_player", "itm_apples", 0),
                     (else_try),

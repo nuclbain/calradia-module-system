@@ -1737,7 +1737,7 @@ troops_knights = [
         [
             itm_hunter,
             itm_poulaines_b,
-            itm_leather_jacket,
+            itm_regular_shirt_c,
             itm_plate_boots_a,
             itm_sword_great_a,
             itm_tab_shield_round_e,
@@ -4564,7 +4564,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_a,
             itm_mail_boots_a,
@@ -4586,7 +4586,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_b,
             itm_mail_boots_a,
@@ -4608,7 +4608,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_c,
             itm_mail_boots_a,
@@ -4632,7 +4632,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_b,
             itm_mail_boots_a,
@@ -4655,7 +4655,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_a,
             itm_mail_boots_a,
@@ -4679,7 +4679,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_a,
             itm_mail_boots_a,
@@ -4703,7 +4703,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_a,
             itm_mail_boots_a,
@@ -4727,7 +4727,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_b,
             itm_mail_boots_a,
@@ -4751,7 +4751,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_b,
             itm_mail_boots_a,
@@ -4775,7 +4775,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_b,
             itm_mail_boots_a,
@@ -4799,7 +4799,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_c,
             itm_mail_boots_a,
@@ -4824,7 +4824,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_c,
             itm_mail_boots_a,
@@ -4849,7 +4849,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_c,
             itm_mail_boots_a,
@@ -4874,7 +4874,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_c,
             itm_mail_boots_a,
@@ -4899,7 +4899,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_a,
             itm_mail_boots_a,
@@ -4924,7 +4924,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_a,
             itm_mail_boots_a,
@@ -4949,7 +4949,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_a,
             itm_mail_boots_a,
@@ -4974,7 +4974,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_a,
             itm_mail_boots_a,
@@ -4999,7 +4999,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_b,
             itm_mail_boots_a,
@@ -5024,7 +5024,7 @@ troops_knights = [
         reserved,
         fac_kingdom_11,
         [
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_poulaines_b,
             itm_arabian_horse_b,
             itm_mail_boots_a,

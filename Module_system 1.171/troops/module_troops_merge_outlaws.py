@@ -167,7 +167,7 @@ troops_outlaws = [
         fac_outlaws,
         [
             itm_plate_gauntlets_a,
-            itm_shirt,
+            itm_regular_shirt_a,
             itm_hunting_crossbow,
             itm_bolts,
             itm_warhorse,

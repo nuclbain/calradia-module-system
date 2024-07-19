@@ -3434,7 +3434,7 @@ troops_ladies = [
         0,
         reserved,
         fac_neutral,
-        [itm_saddle_horse, itm_leather_jacket],
+        [itm_saddle_horse, itm_regular_shirt_c],
         def_attrib | level(2),
         wp(20),
         knows_common,

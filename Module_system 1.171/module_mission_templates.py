@@ -39,9 +39,9 @@ from compiler import *
 pilgrim_disguise = [itm_pilgrim_hood,itm_pilgrim_disguise,itm_practice_staff, itm_throwing_daggers]
 farmer_disguise = [itm_felt_a, itm_coarse_tunic, itm_cleaver, itm_battle_fork, itm_stones]
 hunter_disguise = [itm_hunting_bow,itm_barbed_arrows, itm_black_hood, itm_leather_gloves_a, itm_light_leather, itm_sword_khergit_1]
-merchant_disguise = [itm_leather_jacket,itm_felt_steppe_cap,itm_dagger]
+merchant_disguise = [itm_regular_shirt_c,itm_felt_steppe_cap,itm_dagger]
 guard_disguise = [itm_olive_hauberk_a,itm_mail_mittens_a,itm_nasal_helmet_a_v2,itm_tab_shield_round_c,itm_fighting_pick,itm_war_spear]
-bard_disguise = [itm_lyre,itm_linen_tunic,itm_winged_mace]
+bard_disguise = [itm_lyre,itm_regular_shirt_b,itm_winged_mace]
 #note that these are usually male clothing, especially farmer_disguise, need some female ones as well
 
 af_castle_lord = af_override_horse | af_override_weapons| af_require_civilian

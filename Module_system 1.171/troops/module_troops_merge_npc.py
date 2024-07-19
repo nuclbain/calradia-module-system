@@ -311,7 +311,7 @@ troops_npc = [
         0,
         reserved,
         fac_commoners,
-        [itm_shirt, itm_leather_shoes_b, itm_sword_medieval_b_small],
+        [itm_regular_shirt_a, itm_leather_shoes_b, itm_sword_medieval_b_small],
         str_9 | agi_8 | int_11 | cha_8 | level(5),
         wp(100),
         knows_warrior_npc

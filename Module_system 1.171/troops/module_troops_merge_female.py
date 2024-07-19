@@ -212,7 +212,7 @@ troops_female = [
             itm_saddle_horse,
             itm_saddle_horse,
             itm_saddle_horse,
-            itm_leather_jacket,
+            itm_regular_shirt_c,
             itm_hose_d,
             itm_poulaines_d,
             itm_arming_cap_a,

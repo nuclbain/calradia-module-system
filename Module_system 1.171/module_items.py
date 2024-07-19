@@ -404,7 +404,6 @@ items = [
 ["sarranid_lady_dress_b", "Eastern Lady Dress", [("sarranid_lady_dress_b",0)], itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 500 , weight(3)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0) ,imodbits_cloth],
 ["sarranid_common_dress", "Eastern Dress", [("sarranid_common_dress",0)], itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 500 , weight(3)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0) ,imodbits_cloth],
 ["sarranid_common_dress_b", "Eastern Dress", [("sarranid_common_dress_b",0)], itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 500 , weight(3)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(10)|difficulty(0) ,imodbits_cloth],
-["leather_jacket", "Merchant Jacket", [("Leather_Jacket_A",0)], itp_merchandise| itp_type_body_armor | itp_covers_legs  |itp_civilian ,0, 250 , weight(3)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(15)|difficulty(0) ,imodbits_cloth ],
 
 #NEW:
 ["rawhide_coat", "Rawhide Coat", [("Rawhide_Coat_A",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0, 12 , weight(5)|abundance(100)|head_armor(0)|body_armor(10)|leg_armor(0)|difficulty(0) ,imodbits_cloth ],
@@ -441,16 +440,9 @@ items = [
 ["peasant_dress", "Peasant Dress", [("Common_Dress_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 6 , weight(1)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(2)|difficulty(0) ,imodbits_cloth ], 
 ["woolen_dress", "Woolen Dress", [("woolen_dress",0)], itp_merchandise| itp_type_body_armor|itp_civilian  |itp_covers_legs ,0,
  10 , weight(1.75)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(2)|difficulty(0) ,imodbits_cloth ],
-["shirt", "Shirt", [("Burlap_Tunic_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0,
- 31 , weight(1)|abundance(100)|head_armor(0)|body_armor(5)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
- #NEW: was "linen_tunic"
-["linen_tunic", "Linen Tunic", [("Shirt_A",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
- 61 , weight(1)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(13)|difficulty(0) ,imodbits_cloth ],
 
 ["tunic_with_green_cape", "Peasant Tunic", [("Peasant_Tunic_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0, 62 , weight(1)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(8)|difficulty(0) ,imodbits_cloth ], 
 
-["red_shirt", "Red Shirt", [("Shirt_C",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
- 10 , weight(1)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(1)|difficulty(0) ,imodbits_cloth ],
 ["red_tunic", "Red Tunic", [("Arena_Shirt_E",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
  80 , weight(1)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
 
@@ -564,6 +556,70 @@ items = [
 # TODO: Implement in-game recoloring
 # TODO: Implement in-game upgrading (will change the model to the next variant)
 # Using item_has_modifier operation to check for possible upgrades?
+[
+    "regular_shirt_a",
+    "Shirt",
+    [
+        ("Regular_Shirt_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 15,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(4)|leg_armor(3)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "regular_shirt_b",
+    "Shirt with Jacket",
+    [
+        ("Regular_Shirt_B", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 25,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(3)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "regular_shirt_c",
+    "Merchant Shirt",
+    [
+        ("Regular_Shirt_C", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 35,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(7)|leg_armor(4)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "red_shirt_a",
+    "Rich Shirt",
+    [
+        ("Red_Regular_Shirt_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 45,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], []
+],
+
+[
+    "red_shirt_a_v1",
+    "Rich Shirt with Cloak",
+    [
+        ("Red_Regular_Shirt_A_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 55,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(9)|leg_armor(6)|difficulty(0),
+    imodbits_none,
+    [], []
+],
 
 [
     "brown_shirt_a",
