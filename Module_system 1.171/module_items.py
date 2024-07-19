@@ -3087,6 +3087,45 @@ items = [
 ],
 
 [
+    "mercenary_brigandine_a",
+    "Mercenary Armor",
+    [
+        ("Brigandine_Mercenary_A", 0)
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1914,
+    weight(22)|abundance(60)|head_armor(0)|body_armor(44)|leg_armor(14)|difficulty(19),
+    imodbits_none,
+    [], []
+],
+
+[
+    "mercenary_brigandine_b",
+    "Mercenary Armor",
+    [
+        ("Brigandine_Mercenary_B", 0)
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1914,
+    weight(22)|abundance(60)|head_armor(0)|body_armor(44)|leg_armor(14)|difficulty(19),
+    imodbits_none,
+    [], []
+],
+
+[
+    "mercenary_brigandine_c",
+    "Mercenary Armor",
+    [
+        ("Brigandine_Mercenary_C", 0)
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1914,
+    weight(22)|abundance(60)|head_armor(0)|body_armor(44)|leg_armor(14)|difficulty(19),
+    imodbits_none,
+    [], []
+],
+
+[
     "olive_brigandine_a",
     "Olive Painted Brigandine",
     [
