@@ -319,7 +319,7 @@ troops_undefined = [
             itm_felt_a,
             itm_felt_b,
             itm_regular_shirt_b,
-            itm_regular_shirt_d,
+            itm_regular_shirt_b,
         ],
         def_attrib | level(4),
         wp(60),
@@ -346,7 +346,7 @@ troops_undefined = [
             itm_felt_a,
             itm_felt_b,
             itm_regular_shirt_b,
-            itm_regular_shirt_d,
+            itm_regular_shirt_b,
         ],
         def_attrib | level(4),
         wp(60),
@@ -364,7 +364,7 @@ troops_undefined = [
         fac_commoners,
         [
             itm_regular_shirt_b,
-            itm_regular_shirt_d,
+            itm_regular_shirt_b,
             itm_tabard_a,
             itm_leather_vest_regular_shirt_a,
             itm_arming_cap_a,
@@ -411,7 +411,7 @@ troops_undefined = [
         fac_commoners,  # they look like belligerent drunks
         [
             itm_regular_shirt_b,
-            itm_regular_shirt_d,
+            itm_regular_shirt_b,
             itm_tabard_a,
             itm_leather_vest_regular_shirt_a,
             itm_arming_cap_a,
@@ -433,7 +433,7 @@ troops_undefined = [
         fac_commoners,
         [
             itm_regular_shirt_b,
-            itm_regular_shirt_d,
+            itm_regular_shirt_b,
             itm_tabard_a,
             itm_leather_vest_regular_shirt_a,
             itm_arming_cap_a,

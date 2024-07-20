@@ -584,19 +584,6 @@ items = [
 ],
 
 [
-    "regular_shirt_d",
-    "Tunic with Vest",
-    [
-        ("Regular_Shirt_D", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
-    0, 45,
-    weight(2)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(5)|difficulty(0),
-    imodbits_cloth,
-    [], []
-],
-
-[
     "peasant_regular_shirt_a",
     "Peasant Shirt",
     [

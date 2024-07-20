@@ -66,7 +66,7 @@ troops_tutorial = [
         no_scene,
         0,
         fac_commoners,
-        [itm_leather_boots_a, itm_regular_shirt_d],
+        [itm_leather_boots_a, itm_regular_shirt_b],
         def_attrib | level(2),
         wp(20),
         knows_inventory_management_10,
@@ -264,7 +264,7 @@ troops_tutorial = [
         [
             itm_leather_boots_a,
             itm_regular_shirt_b,
-            itm_regular_shirt_d,
+            itm_regular_shirt_b,
             itm_regular_shirt_a,
         ],
         def_attrib | level(4),

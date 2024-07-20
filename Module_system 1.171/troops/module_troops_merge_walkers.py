@@ -14,7 +14,7 @@ troops_walkers = [
         [
             itm_regular_shirt_b,
             itm_fur_coat,
-            itm_regular_shirt_d,
+            itm_regular_shirt_b,
             itm_tabard_a,
             itm_leather_vest_regular_shirt_a,
             itm_arena_tunic_white,
@@ -166,7 +166,7 @@ troops_walkers = [
         fac_commoners,
         [
             itm_regular_shirt_b,
-            itm_regular_shirt_d,
+            itm_regular_shirt_b,
             itm_leather_vest_regular_shirt_a,
             itm_peasant_regular_shirt_a_v1,
             itm_regular_shirt_a,
@@ -223,7 +223,7 @@ troops_walkers = [
         fac_commoners,
         [
             itm_regular_shirt_b,
-            itm_regular_shirt_d,
+            itm_regular_shirt_b,
             itm_tabard_a,
             itm_leather_vest_regular_shirt_a,
             itm_robe,
