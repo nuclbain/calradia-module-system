@@ -3730,25 +3730,79 @@ simple_triggers = [
     (try_end),
     ]),
 
-  # Spawn some bandits.
-  (36,
-   [
-       (call_script, "script_spawn_bandits"),
-       #SB : clean up looters a bit, especially ones running away       
-       (try_for_parties, ":party_no"),
-         (party_is_active, ":party_no"),
-         (party_get_template_id, ":cur_party_template", ":party_no"),
-         (this_or_next|eq, ":cur_party_template", "pt_looters"),
-         (eq, ":cur_party_template", "pt_leaded_looters"), #in case player lets them run away
-         # (neq, ":party_no", ":spawned_party_id"),
-         (get_party_ai_behavior, ":bhvr", ":party_no"),
-         (eq, ":bhvr", ai_bhvr_avoid_party), #running away
-         (get_party_ai_object, ":object", ":party_no"),
-         (is_between, ":object", centers_begin, centers_end), #not being chased
-         (party_set_ai_behavior, ":party_no", ai_bhvr_patrol_party),
-         (party_set_ai_patrol_radius, ":party_no", 22), #half bandit lair radius
-       (try_end),
-    ]),
+    # Spawn some bandits.
+    (
+        36,
+        [
+            (call_script, "script_spawn_bandits"),
+            #SB : clean up looters a bit, especially ones running away       
+            (try_for_parties, ":party_no"),
+                (party_is_active, ":party_no"),
+                (party_get_template_id, ":cur_party_template", ":party_no"),
+                (this_or_next|eq, ":cur_party_template", "pt_looters"),
+                (eq, ":cur_party_template", "pt_leaded_looters"), #in case player lets them run away
+                # (neq, ":party_no", ":spawned_party_id"),
+                (get_party_ai_behavior, ":bhvr", ":party_no"),
+                (eq, ":bhvr", ai_bhvr_avoid_party), #running away
+                (get_party_ai_object, ":object", ":party_no"),
+                (is_between, ":object", centers_begin, centers_end), #not being chased
+                (party_set_ai_behavior, ":party_no", ai_bhvr_patrol_party),
+                (party_set_ai_patrol_radius, ":party_no", 22), #half bandit lair radius
+            (try_end),
+        ]
+    ),
+
+    # New bandit spawn system
+    (
+        12,
+        [
+            (set_spawn_radius, 10),
+            (try_for_range, ":cur_village", villages_begin, villages_end),
+                (store_random_in_range, ":random_value", 0, 5),
+                (store_character_level, ":player_level", "trp_player"),
+                (troop_get_xp, ":player_xp", "trp_player"),
+                (store_party_size_wo_prisoners, ":player_party_size", "p_main_party"),
+                (eq, ":random_value", 0),
+
+                # Spawn costal bandit prties aroun Argentums Edge, Balanli and Elberl
+                (try_begin),
+                    (this_or_next | eq, ":cur_village", "p_village_3"),
+                    (this_or_next | eq, ":cur_village", "p_village_53"),
+                    (eq, ":cur_village", "p_village_72"),
+
+                    # Spawned party size is based on player's level
+                    (try_begin),
+                        (this_or_next | ge, ":player_level", 5),
+                        (ge, ":player_party_size", 5),
+                        (spawn_around_party, ":cur_village", "pt_several_coastal_bandits"),
+                    (else_try),
+                        (lt, ":player_level", 5),
+                        (spawn_around_party, ":cur_village", "pt_few_coastal_bandits"),
+                    (try_end),
+                (else_try),
+                    # Spawned party size is based on player's level
+                    (try_begin),
+                        (this_or_next | ge, ":player_level", 15),
+                        (ge, ":player_party_size", 20),
+                        (spawn_around_party, ":cur_village", "pt_lots_looters"),
+                    (else_try),
+                        (this_or_next | ge, ":player_level", 10),
+                        (ge, ":player_party_size", 10),
+                        (spawn_around_party, ":cur_village", "pt_pack_looters"),
+                    (else_try),
+                        (this_or_next | ge, ":player_level", 5),
+                        (ge, ":player_party_size", 5),
+                        (spawn_around_party, ":cur_village", "pt_several_looters"),
+                    (else_try),
+                        (lt, ":player_level", 5),
+                        (spawn_around_party, ":cur_village", "pt_looters"),
+                    (try_end),
+
+                    (party_upgrade_with_xp, "pt_looters", ":player_xp", 0),
+                (try_end),
+            (try_end),
+        ]
+    ),
 
   # Make parties larger as game progresses.
   (24,

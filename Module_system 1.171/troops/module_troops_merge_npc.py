@@ -25,7 +25,7 @@ troops_npc = [
         0,
         reserved,
         fac_commoners,
-        [itm_ragged_outfit, itm_studded_club, itm_leather_boots_a],
+        [itm_ragged_outfit_aketon_a, itm_studded_club, itm_leather_boots_a],
         str_11 | agi_13 | int_12 | cha_7 | level(3),
         wp(110),
         knows_tracker_npc

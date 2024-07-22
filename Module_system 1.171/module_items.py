@@ -483,8 +483,7 @@ items = [
  421 , weight(6)|abundance(100)|head_armor(0)|body_armor(23)|leg_armor(15)|difficulty(0) ,imodbits_cloth ],
 ["nomad_vest", "Nomad Vest", [("Nomad_Vest_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian ,0,
  360 , weight(7)|abundance(50)|head_armor(0)|body_armor(22)|leg_armor(8)|difficulty(0) ,imodbits_cloth ],
-["ragged_outfit", "Ragged Outfit", [("Padded_Cloth_Cloacked_B",0)], itp_merchandise| itp_type_body_armor |itp_civilian |itp_covers_legs ,0,
- 390 , weight(7)|abundance(100)|head_armor(0)|body_armor(23)|leg_armor(16)|difficulty(0) ,imodbits_cloth ],
+
  #NEW: was padded_leather
 ["padded_leather", "Padded Leather", [("Leather_Vest_A",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian,0, 454 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(10)|difficulty(0) ,imodbits_cloth ],
 ["m_leather_vest_a", "Leather Vest", [("Leather_Vest_B",0), ("Leather_Vest_B.1",0), ("Leather_Vest_B.2",0), ("Leather_Vest_B.3",0)], itp_merchandise| itp_type_body_armor  |itp_covers_legs|itp_civilian,0, 454 , weight(12)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(14)|difficulty(0) ,imodbits_cloth ],
@@ -636,6 +635,82 @@ items = [
 ],
 
 [
+    "outlaw_leather_armor_a",
+    "Outlaw Leather Armor",
+    [
+        ("Regular_Leather_Vest_A", 0),
+        ("Regular_Leather_Vest_A_thick", imodbit_thick),
+        ("Regular_Leather_Vest_A_hardened", imodbit_hardened),
+        ("Regular_Leather_Vest_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1080,
+    weight(10)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(12)|difficulty(12),
+    imodbit_thick | imodbit_hardened | imodbit_reinforced,
+    [], []
+],
+
+[
+    "scarlet_aketon_a",
+    "Scavenger Aketon",
+    [
+        ("Scarlet_Aketon_A", 0),
+        ("Scarlet_Aketon_A_hardened", imodbit_hardened),
+        ("Scarlet_Aketon_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1131,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(12)|difficulty(12),
+    imodbit_hardened | imodbit_reinforced,
+    [], []
+],
+
+[
+    "scarlet_aketon_a_v1",
+    "Scavenger Aketon",
+    [
+        ("Scarlet_Aketon_A_v1", 0),
+        ("Scarlet_Aketon_A_v1_hardened", imodbit_hardened),
+        ("Scarlet_Aketon_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1131,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(12)|difficulty(12),
+    imodbit_hardened | imodbit_reinforced,
+    [], []
+],
+
+[
+    "ragged_outfit_aketon_a",
+    "Ragged Outfit",
+    [
+        ("Ragged_Outfit_Aketon_A", 0),
+        ("Ragged_Outfit_Aketon_A_thick", imodbit_thick),
+        ("Ragged_Outfit_Aketon_A_hardened", imodbit_hardened),
+        ("Ragged_Outfit_Aketon_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(19)|leg_armor(9)|difficulty(9),
+    imodbit_thick | imodbit_hardened | imodbit_reinforced,
+    [], []
+],
+
+[
+    "ragged_outfit_coat_a",
+    "Ragged Outfit",
+    [
+        ("Ragged_Outfit_Coat_A", 0),
+        ("Ragged_Outfit_Coat_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1220,
+    weight(12)|abundance(100)|head_armor(0)|body_armor(26)|leg_armor(14)|difficulty(13),
+    imodbit_hardened,
+    [], []
+],
+
+[
     "red_shirt_a",
     "Rich Shirt",
     [
@@ -777,74 +852,6 @@ items = [
     imodbits_none,
     [], [fac_kingdom_8]
 ],
-
-# TUNICS START
-# For tunics, the difficulty is 0, and the price is (Armor * 15)
-[
-    "tunic_a",
-    "Tunic",
-    [
-        ("Revised_Tunic_A", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
-    0, 165,
-    weight(2)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(5)|difficulty(0),
-    imodbits_none,
-    [], [fac_kingdom_12]
-],
-
-[
-    "tunic_b",
-    "Tunic",
-    [
-        ("Revised_Tunic_B", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
-    0, 165,
-    weight(2)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(5)|difficulty(0),
-    imodbits_none,
-    [], [fac_kingdom_12]
-],
-
-[
-    "tunic_c",
-    "Tunic",
-    [
-        ("Revised_Tunic_C", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
-    0, 165,
-    weight(2)|abundance(100)|head_armor(0)|body_armor(6)|leg_armor(5)|difficulty(0),
-    imodbits_none,
-    [], [fac_kingdom_12]
-],
-
-[
-    "tunic_d",
-    "Tunic with Vest",
-    [
-        ("Revised_Tunic_D", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
-    0, 195,
-    weight(2)|abundance(100)|head_armor(0)|body_armor(8)|leg_armor(5)|difficulty(0),
-    imodbits_none,
-    [], [fac_kingdom_12]
-],
-
-[
-    "tunic_e",
-    "Tunic with Leather Vest",
-    [
-        ("Revised_Tunic_E", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
-    0, 240,
-    weight(2)|abundance(100)|head_armor(0)|body_armor(11)|leg_armor(5)|difficulty(0),
-    imodbits_none,
-    [], [fac_kingdom_12]
-],
-# TUNICS END
 
 # TABARDS START
 [
