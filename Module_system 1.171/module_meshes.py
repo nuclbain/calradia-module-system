@@ -412,6 +412,13 @@ meshes = [
   ("banner_kingdom_d", 0, "banner_kingdom_d", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_kingdom_e", 0, "banner_kingdom_e", 0, 0, 0, -90, 0, 0, 1, 1, 1),
   ("banner_kingdom_f", 0, "banner_kingdom_f", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_kingdom_g", 0, "banner_kingdom_g", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_kingdom_h", 0, "banner_kingdom_h", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_kingdom_i", 0, "banner_kingdom_i", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_kingdom_j", 0, "banner_kingdom_j", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_kingdom_k", 0, "banner_kingdom_k", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+  ("banner_kingdom_l", 0, "banner_kingdom_l", 0, 0, 0, -90, 0, 0, 1, 1, 1),
+
   ("banner_f21", 0, "banner_a15", 0, 0, 0, -90, 0, 0, 1, 1, 1),
 
 
@@ -575,6 +582,12 @@ meshes = [
   ("ui_kingdom_shield_4", 0, "ui_kingdom_shield_4", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("ui_kingdom_shield_5", 0, "ui_kingdom_shield_5", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   ("ui_kingdom_shield_6", 0, "ui_kingdom_shield_6", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("ui_kingdom_shield_7", 0, "ui_kingdom_shield_7", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("ui_kingdom_shield_8", 0, "ui_kingdom_shield_8", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("ui_kingdom_shield_9", 0, "ui_kingdom_shield_9", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("ui_kingdom_shield_10", 0, "ui_kingdom_shield_10", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("ui_kingdom_shield_11", 0, "ui_kingdom_shield_11", 0, 0, 0, 0, 0, 0, 1, 1, 1),
+  ("ui_kingdom_shield_12", 0, "ui_kingdom_shield_12", 0, 0, 0, 0, 0, 0, 1, 1, 1),
 
   #("flag_swadian", 0, "banner_a01", 0, 0, 0, 0, 0, 0, 1, 1, 1),
   #("flag_vaegir", 0, "banner_a02", 0, 0, 0, 0, 0, 0, 1, 1, 1),
