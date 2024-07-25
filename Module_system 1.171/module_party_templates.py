@@ -142,6 +142,35 @@ party_templates = [
         [(trp_coastal_bandit, 5, 9)],
     ),
     # COASTAL BANDITS END
+    # SCAVENGERS BEGIN
+    (
+        "few_scavengers",
+        "Few Scavengers",
+        icon_axeman | carries_goods(8),
+        0,
+        fac_outlaws,
+        bandit_personality,
+        [(trp_scavenger, 1, 4)],
+    ),
+    (
+        "several_scavengers",
+        "Several Scavengers",
+        icon_axeman | carries_goods(8),
+        0,
+        fac_outlaws,
+        bandit_personality,
+        [(trp_scavenger, 5, 9)],
+    ),
+    (
+        "pack_scavengers",
+        "Pack of Scavengers",
+        icon_axeman | carries_goods(8),
+        0,
+        fac_outlaws,
+        bandit_personality,
+        [(trp_scavenger_crossbowman, 1, 4), (trp_scavenger_brute, 1, 4), (trp_scavenger, 10, 15)],
+    ),
+    # SCAVENGERS END
     # HERETICS BEGIN
     (
         "heretics",

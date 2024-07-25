@@ -277,6 +277,9 @@ upgrade(troops, "cultist_acolyte", "dark_cultist")
 upgrade(troops, "dark_cultist", "occultist")
 upgrade2(troops, "occultist", "veilweaver", "veiled_inquisitor")
 
+upgrade2(troops, "scavenger", "scavenger_brute", "scavenger_crossbowman")
+upgrade(troops, "scavenger_brute", "scavenger_shock_trooper")
+
 # new tree connections
 upgrade(troops, "mountain_bandit", "alpine_recruit")
 upgrade(troops, "forest_bandit", "silver_rose_levy")

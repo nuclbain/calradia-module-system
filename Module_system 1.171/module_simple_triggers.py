@@ -3763,8 +3763,25 @@ simple_triggers = [
                 (store_party_size_wo_prisoners, ":player_party_size", "p_main_party"),
                 (eq, ":random_value", 0),
 
-                # Spawn costal bandit prties aroun Argentums Edge, Balanli and Elberl
+                # Spawn scavenger parties around looted villages
                 (try_begin),
+                    (party_slot_eq, ":cur_village", slot_village_state, svs_looted),
+
+                    # Spawned party size is based on player's level
+                    (try_begin),
+                        (this_or_next | ge, ":player_level", 15),
+                        (ge, ":player_party_size", 20),
+                        (spawn_around_party, ":cur_village", "pt_pack_scavengers"),
+                    (else_try),
+                        (this_or_next | ge, ":player_level", 10),
+                        (ge, ":player_party_size", 10),
+                        (spawn_around_party, ":cur_village", "pt_several_scavengers"),
+                    (else_try),
+                        (lt, ":player_level", 10),
+                        (spawn_around_party, ":cur_village", "pt_few_scavengers"),
+                    (try_end),
+                # Spawn costal bandit prties aroun Argentums Edge, Balanli and Elberl
+                (else_try),
                     (this_or_next | eq, ":cur_village", "p_village_3"),
                     (this_or_next | eq, ":cur_village", "p_village_53"),
                     (eq, ":cur_village", "p_village_72"),
