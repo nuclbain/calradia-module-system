@@ -398,7 +398,7 @@ troops_outlaws = [
             itm_hide_covered_round_shield,
             itm_long_bow,
             itm_arming_cap_a,
-            itm_leather_jerkin,
+            itm_regular_leather_jerkin_a,
             itm_leather_boots_a,
             itm_saddle_horse,
         ],

@@ -460,7 +460,7 @@ troops_iron_crown = [
         fac_kingdom_4,
         [
             itm_sword_viking_2,
-            itm_leather_jerkin,
+            itm_regular_leather_jerkin_a,
             itm_courser,
             itm_leather_gloves_a,
             itm_short_bow,
@@ -492,7 +492,7 @@ troops_iron_crown = [
             itm_javelin,
             itm_steppe_cap,
             itm_leather_vest_regular_shirt_a,
-            itm_nomad_armor,
+            itm_regular_nomad_vest_a,
         ],
         str_10 | agi_5 | int_4 | cha_4 | level(14),
         wp(80),

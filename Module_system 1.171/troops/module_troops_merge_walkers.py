@@ -13,7 +13,7 @@ troops_walkers = [
         fac_commoners,
         [
             itm_regular_shirt_b,
-            itm_fur_coat,
+            itm_peasant_fur_coat_a,
             itm_regular_shirt_b,
             itm_tabard_a,
             itm_leather_vest_regular_shirt_a,

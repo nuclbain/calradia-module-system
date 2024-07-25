@@ -84,7 +84,7 @@ troops_enterprise = [
         reserved,
         fac_neutral,
         [
-            itm_leather_jerkin,
+            itm_regular_leather_jerkin_a,
         ],
         def_attrib | level(2),
         wp(20),
@@ -114,7 +114,7 @@ troops_enterprise = [
         reserved,
         fac_neutral,
         [
-            itm_leather_jerkin,
+            itm_regular_leather_jerkin_a,
         ],
         def_attrib | level(2),
         wp(20),
@@ -158,7 +158,7 @@ troops_enterprise = [
         reserved,
         fac_neutral,
         [
-            itm_leather_jerkin,
+            itm_regular_leather_jerkin_a,
         ],
         def_attrib | level(2),
         wp(20),
@@ -202,7 +202,7 @@ troops_enterprise = [
         reserved,
         fac_neutral,
         [
-            itm_leather_jerkin,
+            itm_regular_leather_jerkin_a,
         ],
         def_attrib | level(2),
         wp(20),

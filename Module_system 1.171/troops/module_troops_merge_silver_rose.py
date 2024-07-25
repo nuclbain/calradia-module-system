@@ -706,7 +706,7 @@ troops_silver_rose = [
         fac_kingdom_1,
         [
             itm_sword_medieval_a,
-            itm_leather_jerkin,
+            itm_regular_leather_jerkin_a,
             itm_courser,
             itm_leather_gloves_a,
             itm_light_crossbow,
@@ -734,7 +734,7 @@ troops_silver_rose = [
             itm_club,
             itm_voulge,
             itm_wooden_shield,
-            itm_leather_jerkin,
+            itm_regular_leather_jerkin_a,
             itm_padded_cloth,
             itm_padded_coif_a,
             itm_eyeslot_kettlehat_a_v1,

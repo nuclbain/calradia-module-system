@@ -58,7 +58,7 @@ troops_female = [
             itm_fighting_pick,
             itm_club,
             itm_dress,
-            itm_leather_jerkin,
+            itm_regular_leather_jerkin_a,
             itm_hose_d,
             itm_poulaines_d,
             itm_cervelliere_a,
@@ -207,7 +207,7 @@ troops_female = [
         fac_commoners,
         [
             itm_sword_medieval_c,
-            itm_fur_coat,
+            itm_peasant_fur_coat_a,
             itm_saddle_horse,
             itm_saddle_horse,
             itm_saddle_horse,

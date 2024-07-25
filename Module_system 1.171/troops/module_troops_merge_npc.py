@@ -244,7 +244,7 @@ troops_npc = [
         0,
         reserved,
         fac_commoners,
-        [itm_studded_leather_coat, itm_poulaines_b, itm_falchion_a],
+        [itm_regular_leather_jerkin_b, itm_poulaines_b, itm_falchion_a],
         str_8 | agi_11 | int_10 | cha_10 | level(2),
         wp(70),
         knows_merchant_npc
@@ -262,7 +262,7 @@ troops_npc = [
         reserved,
         fac_commoners,
         [
-            itm_lamellar_vest,
+            itm_regular_nomad_vest_b_v1,
             itm_light_rifle_d,
             itm_cartridges,
             itm_flanged_mace,
@@ -363,7 +363,7 @@ troops_npc = [
         0,
         reserved,
         fac_commoners,
-        [itm_leather_jerkin, itm_hose_d, itm_club],
+        [itm_regular_leather_jerkin_a, itm_hose_d, itm_club],
         str_7 | agi_7 | int_7 | cha_7 | level(1),
         wp(40),
         knows_common,

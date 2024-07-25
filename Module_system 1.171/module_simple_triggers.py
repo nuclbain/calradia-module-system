@@ -3760,7 +3760,6 @@ simple_triggers = [
             (try_for_range, ":cur_village", villages_begin, villages_end),
                 (store_random_in_range, ":random_value", 0, 5),
                 (store_character_level, ":player_level", "trp_player"),
-                (troop_get_xp, ":player_xp", "trp_player"),
                 (store_party_size_wo_prisoners, ":player_party_size", "p_main_party"),
                 (eq, ":random_value", 0),
 
@@ -3797,8 +3796,6 @@ simple_triggers = [
                         (lt, ":player_level", 5),
                         (spawn_around_party, ":cur_village", "pt_looters"),
                     (try_end),
-
-                    (party_upgrade_with_xp, "pt_looters", ":player_xp", 0),
                 (try_end),
             (try_end),
         ]
