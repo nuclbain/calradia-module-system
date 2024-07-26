@@ -127,7 +127,7 @@ party_templates = [
         icon_axeman | carries_goods(8),
         0,
         fac_outlaws,
-        bandit_personality,
+        aggressiveness_15 | courage_15 | banditness, # more aggressive and courageous because of bandit lord in a party?
         [
             (trp_bandit_lord, 1, 3),
             (trp_outlaw, 20, 30),
@@ -215,6 +215,35 @@ party_templates = [
         ],
     ),
     # HERETICS END
+    # UNDEADS BEGIN
+    (
+        "few_undeads",
+        "Few Undeads",
+        icon_axeman | carries_goods(8),
+        0,
+        fac_undeads,
+        aggressiveness_15 | courage_15,
+        [(trp_dwelling_undead, 1, 4)],
+    ),
+    (
+        "several_undeads",
+        "Several Undeads",
+        icon_axeman | carries_goods(8),
+        0,
+        fac_undeads,
+        aggressiveness_15 | courage_15,
+        [(trp_dwelling_undead, 5, 9)],
+    ),
+    (
+        "pack_undeads",
+        "Pack of Undeads",
+        icon_axeman | carries_goods(8),
+        0,
+        fac_undeads,
+        aggressiveness_15 | courage_15,
+        [(trp_dwelling_undead, 10, 15)],
+    ),
+    # UNDEADS END
     (
         "manhunters",
         "Manhunters",

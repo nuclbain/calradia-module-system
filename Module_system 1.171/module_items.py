@@ -942,6 +942,60 @@ items = [
     [], [fac_kingdom_8]
 ],
 
+# ANCIENT ARMOR START
+[
+    "ancient_padded_vest_a",
+    "Ancient Padded Vest",
+    [
+        ("Old_Padded_Armor_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1685,
+    weight(10)|abundance(10)|head_armor(0)|body_armor(24)|leg_armor(15)|difficulty(13),
+    imodbits_none,
+    [], []
+],
+
+[
+    "ancient_padded_vest_a_v1",
+    "Ancient Padded Vest",
+    [
+        ("Old_Padded_Armor_A_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1685,
+    weight(10)|abundance(10)|head_armor(0)|body_armor(24)|leg_armor(15)|difficulty(13),
+    imodbits_none,
+    [], []
+],
+
+[
+    "ancient_padded_vest_b",
+    "Ancient Padded Vest on Mail",
+    [
+        ("Old_Padded_Armor_B", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1982,
+    weight(15)|abundance(10)|head_armor(0)|body_armor(33)|leg_armor(16)|difficulty(16),
+    imodbits_none,
+    [], []
+],
+
+[
+    "ancient_padded_vest_b_v1",
+    "Ancient Padded Vest on Mail",
+    [
+        ("Old_Padded_Armor_B_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1982,
+    weight(15)|abundance(10)|head_armor(0)|body_armor(33)|leg_armor(16)|difficulty(16),
+    imodbits_none,
+    [], []
+],
+# ANCIENT ARMOR END
+
 # TABARDS START
 [
     "tabard_a",

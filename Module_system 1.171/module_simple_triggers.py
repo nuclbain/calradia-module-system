@@ -3753,11 +3753,16 @@ simple_triggers = [
     ),
 
     # New bandit spawn system
+    # Add limiting factor for PT spawn?
+    # Map ends up to be infested with looters if player doesn't deal with them
     (
         12,
         [
             (set_spawn_radius, 10),
             (try_for_range, ":cur_village", villages_begin, villages_end),
+                # Spawn undead parties unconditionally (for now?)
+                (spawn_around_party, ":cur_village", "pt_few_undeads"),
+
                 (store_random_in_range, ":random_value", 0, 5),
                 (store_character_level, ":player_level", "trp_player"),
                 (store_party_size_wo_prisoners, ":player_party_size", "p_main_party"),
