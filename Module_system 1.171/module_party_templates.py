@@ -66,7 +66,6 @@ party_templates = [
         merchant_personality,
         [(trp_cattle, 80, 120)],
     ),
-
     # TODO: Check troops distribution and rebalance if needed
     # Few: 1-4
     # Several: 5-9
@@ -122,6 +121,21 @@ party_templates = [
         bandit_personality,
         [(trp_bandit, 10, 20), (trp_looter, 50, 80)],
     ),
+    (
+        "throng_looters",
+        "Throng of Looters",
+        icon_axeman | carries_goods(8),
+        0,
+        fac_outlaws,
+        bandit_personality,
+        [
+            (trp_bandit_lord, 1, 3),
+            (trp_outlaw, 20, 30),
+            (trp_pillager, 10, 20),
+            (trp_bandit, 20, 40),
+            (trp_looter, 100, 150),
+        ],
+    ),
     # COASTAL BANDITS BEGIN
     (
         "few_coastal_bandits",
@@ -168,7 +182,11 @@ party_templates = [
         0,
         fac_outlaws,
         bandit_personality,
-        [(trp_scavenger_crossbowman, 1, 4), (trp_scavenger_brute, 1, 4), (trp_scavenger, 10, 15)],
+        [
+            (trp_scavenger_crossbowman, 1, 4),
+            (trp_scavenger_brute, 1, 4),
+            (trp_scavenger, 10, 15),
+        ],
     ),
     # SCAVENGERS END
     # HERETICS BEGIN
