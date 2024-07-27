@@ -459,7 +459,7 @@ troops_iron_crown = [
         0,
         fac_kingdom_4,
         [
-            itm_sword_viking_2,
+            itm_sword_a_v1,
             itm_regular_leather_jerkin_a,
             itm_courser,
             itm_leather_gloves_a,
@@ -483,7 +483,7 @@ troops_iron_crown = [
         [
             itm_arrows,
             itm_spiked_mace,
-            itm_axe,
+            itm_heavy_axe_a,
             itm_falchion_a,
             itm_short_bow,
             itm_short_bow,

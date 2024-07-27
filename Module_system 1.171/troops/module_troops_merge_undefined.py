@@ -313,7 +313,7 @@ troops_undefined = [
             itm_knife,
             itm_pitch_fork,
             itm_sickle,
-            itm_club,
+            itm_club_a_v1,
             itm_stones,
             itm_arming_cap_a,
             itm_felt_a,
@@ -340,7 +340,7 @@ troops_undefined = [
             itm_knife,
             itm_pitch_fork,
             itm_sickle,
-            itm_club,
+            itm_club_a_v1,
             itm_stones,
             itm_arming_cap_a,
             itm_felt_a,
@@ -368,7 +368,7 @@ troops_undefined = [
             itm_tabard_a,
             itm_leather_vest_regular_shirt_a,
             itm_arming_cap_a,
-            itm_sword_medieval_b,
+            itm_sword_short_a_v1,
             itm_throwing_daggers,
         ],
         def_attrib | str_24 | agi_25 | level(26),
@@ -415,7 +415,7 @@ troops_undefined = [
             itm_tabard_a,
             itm_leather_vest_regular_shirt_a,
             itm_arming_cap_a,
-            itm_sword_viking_1,
+            itm_sword_a,
         ],
         def_attrib | str_20 | agi_16 | level(20),
         wp(180),
@@ -437,7 +437,7 @@ troops_undefined = [
             itm_tabard_a,
             itm_leather_vest_regular_shirt_a,
             itm_arming_cap_a,
-            itm_sword_viking_1,
+            itm_sword_a,
         ],
         def_attrib | str_20 | agi_16 | level(20),
         wp(180),
@@ -457,7 +457,7 @@ troops_undefined = [
         0,
         0,
         fac_neutral,
-        [itm_sword_viking_1, itm_regular_leather_jerkin_a, itm_courser, itm_leather_gloves_a],
+        [itm_sword_a, itm_regular_leather_jerkin_a, itm_courser, itm_leather_gloves_a],
         def_attrib | agi_11 | level(20),
         wp(130),
         knows_common,
@@ -476,7 +476,7 @@ troops_undefined = [
         0,
         0,
         fac_neutral,
-        [itm_sword_medieval_b, itm_regular_leather_jerkin_a, itm_courser, itm_leather_gloves_a],
+        [itm_sword_short_a_v1, itm_regular_leather_jerkin_a, itm_courser, itm_leather_gloves_a],
         def_attrib | agi_11 | level(10),
         wp(130),
         knows_common,
@@ -524,7 +524,7 @@ troops_undefined = [
         [
             itm_padded_cloth,
             itm_cervelliere_a,
-            itm_sword_medieval_b,
+            itm_sword_short_a_v1,
             itm_crossbow,
             itm_bolts,
             itm_plate_covered_round_shield,
@@ -546,7 +546,7 @@ troops_undefined = [
         [
             itm_bolts,
             itm_crossbow,
-            itm_sword_medieval_a,
+            itm_sword_short_a,
             itm_tab_shield_heater_b,
             itm_regular_leather_jerkin_a,
             itm_leather_armor,
@@ -691,7 +691,7 @@ troops_undefined = [
         0,
         fac_kingdom_3,
         [
-            itm_sword_khergit_4,
+            itm_falchion_b,
             itm_spiked_mace,
             itm_one_handed_war_axe_b,
             itm_one_handed_war_axe_a,
@@ -728,7 +728,7 @@ troops_undefined = [
         0,
         fac_kingdom_3,
         [
-            itm_sword_khergit_3,
+            itm_falchion_a_v2,
             itm_khergit_bow,
             itm_khergit_arrows,
             itm_tab_shield_small_round_b,
@@ -751,7 +751,7 @@ troops_undefined = [
         0,
         fac_kingdom_3,
         [
-            itm_sword_khergit_4,
+            itm_falchion_b,
             itm_spiked_mace,
             itm_one_handed_war_axe_b,
             itm_one_handed_war_axe_a,
@@ -789,7 +789,7 @@ troops_undefined = [
         0,
         fac_kingdom_4,
         [
-            itm_sword_viking_2,
+            itm_sword_a_v1,
             itm_one_handed_battle_axe_b,
             itm_two_handed_axe,
             itm_tab_shield_round_d,
@@ -818,7 +818,7 @@ troops_undefined = [
         fac_kingdom_4,
         [
             itm_javelin,
-            itm_sword_viking_1,
+            itm_sword_a,
             itm_two_handed_axe,
             itm_spear,
             itm_tab_shield_round_a,
@@ -848,7 +848,7 @@ troops_undefined = [
         [
             itm_arrows,
             itm_two_handed_axe,
-            itm_sword_viking_2,
+            itm_sword_a_v1,
             itm_short_bow,
             itm_regular_leather_jerkin_a,
             itm_blue_tunic,
@@ -908,7 +908,7 @@ troops_undefined = [
             itm_club_with_spike_head,
             itm_sledgehammer,
             itm_tab_shield_pavise_c,
-            itm_sword_medieval_a,
+            itm_sword_short_a,
             itm_arming_cap_a,
             itm_gray_hauberk_a,
             itm_ragged_outfit_aketon_a,
@@ -933,7 +933,7 @@ troops_undefined = [
         fac_kingdom_5,
         # TODO: Change weapons, copied from Nord Scout
         [
-            itm_sword_medieval_a,
+            itm_sword_short_a,
             itm_tab_shield_heater_cav_a,
             itm_light_lance,
             itm_cervelliere_a,
@@ -1038,7 +1038,7 @@ troops_undefined = [
         [
             itm_bolts,
             itm_crossbow,
-            itm_sword_medieval_b_small,
+            itm_sword_short_a_v2,
             itm_tab_shield_heater_a,
             itm_red_shirt_a,
         ],
@@ -1061,7 +1061,7 @@ troops_undefined = [
         0,
         0,
         fac_kingdom_1,
-        [itm_sword_medieval_a, itm_tab_shield_heater_a, itm_red_tunic],
+        [itm_sword_short_a, itm_tab_shield_heater_a, itm_red_tunic],
         str_15 | agi_15 | def_attrib_multiplayer | level(20),
         wpex(105, 130, 110, 40, 60, 110),
         knows_common_multiplayer
@@ -1084,7 +1084,7 @@ troops_undefined = [
         fac_kingdom_1,
         [
             itm_lance,
-            itm_sword_medieval_a,
+            itm_sword_short_a,
             itm_tab_shield_heater_a,
             itm_red_tunic,
             itm_saddle_horse,
@@ -1187,7 +1187,7 @@ troops_undefined = [
         0,
         fac_kingdom_3,
         [
-            itm_sword_khergit_1,
+            itm_falchion_a,
             itm_nomad_bow,
             itm_arrows,
             itm_regular_nomad_vest_a,
@@ -1214,7 +1214,7 @@ troops_undefined = [
         0,
         fac_kingdom_3,
         [
-            itm_sword_khergit_1,
+            itm_falchion_a,
             itm_spear,
             itm_tab_shield_small_round_a,
             itm_steppe_armor,
@@ -1241,7 +1241,7 @@ troops_undefined = [
         0,
         fac_kingdom_3,
         [
-            itm_sword_khergit_1,
+            itm_falchion_a,
             itm_lance,
             itm_tab_shield_small_round_a,
             itm_regular_nomad_vest_a,
@@ -1268,7 +1268,7 @@ troops_undefined = [
         0,
         0,
         fac_kingdom_4,
-        [itm_arrows, itm_sword_viking_2_small, itm_short_bow, itm_blue_tunic],
+        [itm_arrows, itm_sword_short_b_v1, itm_short_bow, itm_blue_tunic],
         str_15 | agi_14 | def_attrib_multiplayer | str_11 | level(15),
         wpe(90, 150, 60, 80),
         knows_common_multiplayer
@@ -1290,7 +1290,7 @@ troops_undefined = [
         0,
         fac_kingdom_4,
         [
-            itm_sword_viking_1,
+            itm_sword_a,
             itm_one_handed_war_axe_a,
             itm_tab_shield_round_a,
             itm_blue_tunic,
@@ -1317,7 +1317,7 @@ troops_undefined = [
         fac_kingdom_4,
         [
             itm_javelin,
-            itm_sword_viking_1,
+            itm_sword_a,
             itm_spear,
             itm_tab_shield_small_round_a,
             itm_blue_tunic,
@@ -1392,7 +1392,7 @@ troops_undefined = [
         0,
         fac_kingdom_5,
         [
-            itm_sword_medieval_a,
+            itm_sword_short_a,
             itm_tab_shield_heater_cav_a,
             itm_light_lance,
             itm_green_tunic,
@@ -2193,8 +2193,8 @@ troops_undefined = [
         fac_outlaws,
         [
             itm_arrows,
-            itm_sword_viking_1,
-            itm_sword_viking_2,
+            itm_sword_a,
+            itm_sword_a_v1,
             itm_fighting_axe,
             itm_battle_axe,
             itm_spear,
@@ -2232,7 +2232,7 @@ troops_undefined = [
         fac_outlaws,
         [
             itm_hatchet_b,
-            itm_club,
+            itm_club_a_v1,
             itm_butchering_knife,
             itm_falchion_a,
             itm_peasant_fur_coat_a_v1,
@@ -2338,7 +2338,7 @@ troops_undefined = [
         fac_kingdom_1,
         [
             itm_light_lance,
-            itm_sword_medieval_b_small,
+            itm_sword_short_a_v2,
             itm_tab_shield_heater_a,
             itm_arming_cap_a,
             itm_leather_gloves_a,
@@ -2359,7 +2359,7 @@ troops_undefined = [
         0,
         0,
         fac_kingdom_2,
-        [itm_arrows, itm_axe, itm_hunting_bow, itm_regular_shirt_b],
+        [itm_arrows, itm_heavy_axe_a, itm_hunting_bow, itm_regular_shirt_b],
         level(4) | str_20,
         wp(300),
         knows_power_draw_10 | knows_power_throw_10 | knows_riding_10,
@@ -2379,7 +2379,7 @@ troops_undefined = [
         0,
         0,
         fac_kingdom_2,
-        [itm_tab_shield_kite_a, itm_axe, itm_peasant_fur_coat_a_v1],
+        [itm_tab_shield_kite_a, itm_heavy_axe_a, itm_peasant_fur_coat_a_v1],
         level(4) | str_20,
         wp(300),
         knows_power_draw_10 | knows_power_throw_10 | knows_riding_10,
@@ -2410,7 +2410,7 @@ troops_undefined = [
         0,
         fac_kingdom_3,
         [
-            itm_sword_khergit_1,
+            itm_falchion_a,
             itm_nomad_bow,
             itm_arrows,
             itm_steppe_armor,
@@ -2431,7 +2431,7 @@ troops_undefined = [
         0,
         fac_kingdom_3,
         [
-            itm_sword_khergit_1,
+            itm_falchion_a,
             itm_tab_shield_small_round_a,
             itm_steppe_armor,
             itm_leather_gloves_a,
@@ -2472,7 +2472,7 @@ troops_undefined = [
         0,
         0,
         fac_kingdom_4,
-        [itm_arrows, itm_sword_viking_2_small, itm_short_bow, itm_blue_tunic],
+        [itm_arrows, itm_sword_short_b_v1, itm_short_bow, itm_blue_tunic],
         level(4) | str_20,
         wp(300),
         knows_power_draw_10 | knows_power_throw_10 | knows_riding_10,
@@ -2488,7 +2488,7 @@ troops_undefined = [
         0,
         fac_kingdom_4,
         [
-            itm_sword_viking_1,
+            itm_sword_a,
             itm_one_handed_war_axe_a,
             itm_tab_shield_round_a,
             itm_blue_tunic,
@@ -2663,7 +2663,7 @@ troops_undefined = [
         0,
         fac_kingdom_1,
         [
-            itm_sword_medieval_b,
+            itm_sword_short_a_v1,
             itm_tab_shield_heater_c,
             itm_spear,
             itm_mail_coif,
@@ -2686,7 +2686,7 @@ troops_undefined = [
         fac_kingdom_1,
         [
             itm_lance,
-            itm_sword_medieval_a,
+            itm_sword_short_a,
             itm_tab_shield_heater_b,
             itm_sallet_a_v5,
             itm_leather_gloves_a,
@@ -2709,7 +2709,7 @@ troops_undefined = [
         fac_kingdom_2,
         [
             itm_barbed_arrows,
-            itm_axe,
+            itm_heavy_axe_a,
             itm_nomad_bow,
             itm_leather_vest_regular_shirt_a,
         ],
@@ -2776,7 +2776,7 @@ troops_undefined = [
         0,
         fac_kingdom_3,
         [
-            itm_sword_khergit_2,
+            itm_falchion_a_v1,
             itm_khergit_bow,
             itm_barbed_arrows,
             itm_steppe_armor,
@@ -2798,7 +2798,7 @@ troops_undefined = [
         0,
         fac_kingdom_3,
         [
-            itm_sword_khergit_2,
+            itm_falchion_a_v1,
             itm_tab_shield_small_round_b,
             itm_javelin,
             itm_tribal_warrior_outfit,
@@ -2842,7 +2842,7 @@ troops_undefined = [
         fac_kingdom_4,
         [
             itm_arrows,
-            itm_sword_viking_2,
+            itm_sword_a_v1,
             itm_long_bow,
             itm_regular_leather_jerkin_a,
         ],
@@ -3031,7 +3031,7 @@ troops_undefined = [
         0,
         fac_kingdom_1,
         [
-            itm_sword_medieval_b,
+            itm_sword_short_a_v1,
             itm_heavy_crossbow,
             itm_steel_bolts,
             itm_tab_shield_heater_c,
@@ -3163,7 +3163,7 @@ troops_undefined = [
         0,
         fac_kingdom_3,
         [
-            itm_sword_khergit_3,
+            itm_falchion_a_v2,
             itm_strong_bow,
             itm_khergit_arrows,
             itm_tribal_warrior_outfit,
@@ -3226,7 +3226,7 @@ troops_undefined = [
         fac_kingdom_4,
         [
             itm_barbed_arrows,
-            itm_sword_viking_3,
+            itm_sword_a_v2,
             itm_long_bow,
             itm_regular_leather_jerkin_a,
             itm_leather_gloves_a,
@@ -3413,7 +3413,7 @@ troops_undefined = [
         0,
         fac_kingdom_1,
         [
-            itm_sword_medieval_b,
+            itm_sword_short_a_v1,
             itm_sniper_crossbow,
             itm_steel_bolts,
             itm_tab_shield_heater_c,
@@ -3609,7 +3609,7 @@ troops_undefined = [
         fac_kingdom_4,
         [
             itm_khergit_arrows,
-            itm_sword_viking_3,
+            itm_sword_a_v2,
             itm_long_bow,
             itm_gray_hauberk_a,
             itm_leather_gloves_a,
@@ -3839,7 +3839,7 @@ troops_undefined = [
         0,
         reserved,
         fac_commoners,
-        [itm_regular_shirt_b, itm_club, itm_saddle_horse],
+        [itm_regular_shirt_b, itm_club_a_v1, itm_saddle_horse],
         str_14 | agi_17 | int_6 | cha_30 | level(25),
         wpex(240, 130, 170, 150, 170, 90),
         knows_tracking_10
@@ -3901,7 +3901,7 @@ troops_undefined = [
         0,
         reserved,
         fac_commoners,
-        [itm_regular_leather_jerkin_a, itm_sword_medieval_a, itm_hunter],
+        [itm_regular_leather_jerkin_a, itm_sword_short_a, itm_hunter],
         str_20 | agi_13 | int_6 | cha_30 | level(25),
         wpex(210, 230, 200, 90, 100, 95),
         knows_tracking_10
@@ -3932,7 +3932,7 @@ troops_undefined = [
         0,
         reserved,
         fac_commoners,
-        [itm_regular_nomad_vest_a_v1, itm_sword_khergit_1, itm_steppe_horse],
+        [itm_regular_nomad_vest_a_v1, itm_falchion_a, itm_steppe_horse],
         str_18 | agi_13 | int_6 | cha_30 | level(25),
         wpex(160, 80, 130, 250, 50, 230),
         knows_tracking_10
@@ -3961,7 +3961,7 @@ troops_undefined = [
         0,
         reserved,
         fac_commoners,
-        [itm_tabard_a, itm_sword_medieval_a, itm_sumpter_horse],
+        [itm_tabard_a, itm_sword_short_a, itm_sumpter_horse],
         str_20 | agi_19 | int_6 | cha_30 | level(25),
         wpex(240, 210, 180, 90, 100, 80),
         knows_tracking_10
@@ -4025,7 +4025,7 @@ troops_undefined = [
         0,
         reserved,
         fac_commoners,
-        [itm_tribal_warrior_outfit, itm_sword_viking_1, itm_courser],
+        [itm_tribal_warrior_outfit, itm_sword_a, itm_courser],
         str_18 | agi_15 | int_6 | cha_30 | level(25),
         wpex(190, 250, 80, 120, 80, 250),
         knows_tracking_10
@@ -4054,7 +4054,7 @@ troops_undefined = [
         0,
         reserved,
         fac_commoners,
-        [itm_tabard_a, itm_sword_medieval_b_small, itm_courser],
+        [itm_tabard_a, itm_sword_short_a_v2, itm_courser],
         str_22 | agi_19 | int_6 | cha_30 | level(25),
         wpex(80, 230, 130, 220, 70, 160),
         knows_tracking_10
@@ -4205,7 +4205,7 @@ troops_undefined = [
         0,
         reserved,
         fac_commoners,
-        [itm_tabard_f, itm_sword_medieval_b_small, itm_courser],
+        [itm_tabard_f, itm_sword_short_a_v2, itm_courser],
         str_18 | agi_19 | int_6 | cha_30 | level(25),
         wpex(280, 170, 170, 170, 170, 180),
         knows_tracking_10
@@ -4235,7 +4235,7 @@ troops_undefined = [
         0,
         reserved,
         fac_commoners,
-        [itm_tabard_d, itm_sword_medieval_b_small, itm_hunter],
+        [itm_tabard_d, itm_sword_short_a_v2, itm_hunter],
         str_18 | agi_13 | int_6 | cha_30 | level(25),
         wpex(190, 290, 130, 210, 90, 90),
         knows_tracking_10
@@ -4297,7 +4297,7 @@ troops_undefined = [
             itm_leather_steppe_cap_c,
             itm_leather_gloves_a,
             itm_regular_nomad_vest_a_v1,
-            itm_sword_medieval_b_small,
+            itm_sword_short_a_v2,
             itm_courser,
         ],
         str_16 | agi_17 | int_12 | cha_7 | level(14),
@@ -4348,7 +4348,7 @@ troops_undefined = [
         fac_commoners,
         [
             itm_regular_leather_jerkin_a,
-            itm_sword_medieval_b_small,
+            itm_sword_short_a_v2,
             itm_hunter,
         ],
         str_24 | agi_13 | int_11 | cha_6 | level(14),
@@ -4374,7 +4374,7 @@ troops_undefined = [
             itm_eyeslot_kettlehat_a_v2,
             itm_leather_gloves_a,
             itm_regular_leather_jerkin_b,
-            itm_sword_medieval_c,
+            itm_sword_short_b_v1,
             itm_tab_shield_heater_c,
             itm_hunter,
         ],
@@ -4401,7 +4401,7 @@ troops_undefined = [
         reserved,
         fac_commoners,
         [
-            itm_sword_khergit_2,
+            itm_falchion_a_v1,
             itm_tab_shield_small_round_b,
             itm_leather_steppe_cap_b,
             itm_tribal_warrior_outfit,
@@ -4476,7 +4476,7 @@ troops_undefined = [
         0,
         reserved,
         fac_commoners,
-        [itm_sword_viking_2, itm_mail_coif, itm_gray_hauberk_a, itm_courser],
+        [itm_sword_a_v1, itm_mail_coif, itm_gray_hauberk_a, itm_courser],
         str_18 | agi_15 | int_9 | cha_10 | level(26),
         wp(90),
         knows_warrior_npc
@@ -4496,7 +4496,7 @@ troops_undefined = [
         reserved,
         fac_commoners,
         [
-            itm_sword_medieval_c,
+            itm_sword_short_b_v1,
             itm_leather_vest_regular_shirt_a,
             itm_courser,
         ],
@@ -4622,7 +4622,7 @@ troops_undefined = [
         reserved,
         fac_commoners,
         [
-            itm_sword_medieval_b,
+            itm_sword_short_a_v1,
             itm_tab_shield_heater_c,
             itm_mail_coif,
             itm_regular_leather_jerkin_b,
@@ -4671,7 +4671,7 @@ troops_undefined = [
         reserved,
         fac_commoners,
         [
-            itm_sword_viking_2_small,
+            itm_sword_short_b_v1,
             itm_light_throwing_axes,
             itm_sallet_a_v5,
             itm_leather_gloves_a,
@@ -4698,7 +4698,7 @@ troops_undefined = [
         [
             itm_khergit_war_helmet,
             itm_regular_nomad_vest_b,
-            itm_sword_medieval_c_small,
+            itm_sword_short_b,
             itm_courser,
         ],
         str_16 | agi_17 | int_12 | cha_7 | level(14),
@@ -4750,7 +4750,7 @@ troops_undefined = [
         [
             itm_cervelliere_a,
             itm_leather_gloves_a,
-            itm_sword_medieval_c_small,
+            itm_sword_short_b,
             itm_hunter,
         ],
         str_24 | agi_13 | int_11 | cha_6 | level(14),
@@ -4775,7 +4775,7 @@ troops_undefined = [
         [
             itm_sallet_b,
             itm_leather_gloves_a,
-            itm_sword_medieval_c_long,
+            itm_sword_a,
             itm_tab_shield_heater_c,
             itm_hunter,
         ],
@@ -4905,7 +4905,7 @@ troops_undefined = [
         reserved,
         fac_commoners,
         [
-            itm_sword_medieval_c_long,
+            itm_sword_a,
             itm_leather_gloves_a,
             itm_regular_nomad_vest_b_v1,
             itm_courser,
@@ -5031,7 +5031,7 @@ troops_undefined = [
         reserved,
         fac_commoners,
         [
-            itm_sword_medieval_c,
+            itm_sword_short_b_v1,
             itm_tab_shield_heater_c,
             itm_sallet_b,
             itm_leather_gloves_a,
@@ -5080,7 +5080,7 @@ troops_undefined = [
         reserved,
         fac_commoners,
         [
-            itm_sword_viking_2_small,
+            itm_sword_short_b_v1,
             itm_throwing_axes,
             itm_leather_gloves_a,
             itm_regular_nomad_vest_b_v1,
@@ -5106,7 +5106,7 @@ troops_undefined = [
         [
             itm_khergit_guard_helmet,
             itm_khergit_guard_armor,
-            itm_sword_viking_3_small,
+            itm_sword_short_b_v2,
             itm_courser,
         ],
         str_16 | agi_17 | int_12 | cha_7 | level(14),
@@ -5160,7 +5160,7 @@ troops_undefined = [
             itm_sallet_c,
             itm_plate_gauntlets_a_v1,
             itm_full_plate_armor_a,
-            itm_sword_viking_3_small,
+            itm_sword_short_b_v2,
             itm_hunter,
         ],
         str_24 | agi_13 | int_11 | cha_6 | level(14),
@@ -5185,7 +5185,7 @@ troops_undefined = [
         [
             itm_m_bascinet_b,
             itm_heraldic_mail_with_tabard,
-            itm_sword_medieval_d_long,
+            itm_sword_a_v1,
             itm_tab_shield_heater_d,
             itm_hunter,
         ],
@@ -5434,7 +5434,7 @@ troops_undefined = [
         reserved,
         fac_commoners,
         [
-            itm_sword_medieval_d_long,
+            itm_sword_a_v1,
             itm_tab_shield_heater_d,
             itm_great_helmet,
             itm_plate_gauntlets_a_v1,
@@ -5483,7 +5483,7 @@ troops_undefined = [
         reserved,
         fac_commoners,
         [
-            itm_sword_viking_3_small,
+            itm_sword_short_b_v2,
             itm_heavy_throwing_axes,
             itm_saddle_horse,
         ],
@@ -5632,7 +5632,7 @@ troops_undefined = [
         0,
         fac_neutral,
         [
-            itm_sword_medieval_a,
+            itm_sword_short_a,
             itm_regular_leather_jerkin_a,
             itm_courser,
             itm_leather_gloves_a,
@@ -5659,7 +5659,7 @@ troops_undefined = [
         0,
         fac_neutral,
         [
-            itm_sword_medieval_a,
+            itm_sword_short_a,
             itm_regular_leather_jerkin_a,
             itm_courser,
             itm_leather_gloves_a,
@@ -5687,7 +5687,7 @@ troops_undefined = [
         0,
         fac_neutral,
         [
-            itm_sword_medieval_a,
+            itm_sword_short_a,
             itm_regular_leather_jerkin_a,
             itm_courser,
             itm_leather_gloves_a,

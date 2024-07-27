@@ -439,7 +439,7 @@ troops_outlaws = [
             itm_robe,
             itm_pilgrim_disguise,
             itm_pilgrim_hood,
-            itm_studded_club,
+            itm_studded_club_a,
             itm_pickaxe_a_v1,
             itm_one_handed_battle_axe_c,
             itm_tab_shield_pavise_a,
@@ -612,7 +612,7 @@ troops_outlaws = [
         [
             itm_arrows,
             itm_spiked_mace,
-            itm_sword_viking_1,
+            itm_sword_a,
             itm_falchion_a,
             itm_wooden_shield,
             itm_hide_covered_round_shield,
@@ -638,7 +638,7 @@ troops_outlaws = [
         fac_outlaws,
         [
             itm_arrows,
-            itm_sword_viking_1,
+            itm_sword_a,
             itm_boar_spear,
             itm_hatchet_b,
             itm_hatchet_b_v1,
@@ -692,8 +692,8 @@ troops_outlaws = [
         fac_outlaws,
         [
             itm_arrows,
-            itm_sword_viking_1,
-            itm_sword_viking_2,
+            itm_sword_a,
+            itm_sword_a_v1,
             itm_fighting_axe,
             itm_battle_axe,
             itm_spear,
@@ -732,7 +732,7 @@ troops_outlaws = [
         fac_outlaws,
         [
             itm_arrows,
-            itm_sword_khergit_1,
+            itm_falchion_a,
             itm_winged_mace,
             itm_spear,
             itm_light_lance,
@@ -768,8 +768,8 @@ troops_outlaws = [
         fac_outlaws,
         [
             itm_arrows,
-            itm_sword_khergit_1,
-            itm_sword_khergit_2,
+            itm_falchion_a,
+            itm_falchion_a_v1,
             itm_winged_mace,
             itm_spear,
             itm_light_lance,
@@ -805,8 +805,8 @@ troops_outlaws = [
         [
             itm_khergit_arrows,
             itm_barbed_arrows,
-            itm_sword_khergit_3,
-            itm_sword_khergit_4,
+            itm_falchion_a_v2,
+            itm_falchion_b,
             itm_lance,
             itm_khergit_bow,
             itm_nomad_bow,
@@ -834,7 +834,7 @@ troops_outlaws = [
         fac_outlaws,
         [
             itm_arrows,
-            itm_sword_khergit_1,
+            itm_falchion_a,
             itm_winged_mace,
             itm_spear,
             itm_light_lance,
@@ -1002,7 +1002,7 @@ troops_outlaws = [
         fac_black_khergits,
         [
             itm_arrows,
-            itm_sword_khergit_2,
+            itm_falchion_a_v1,
             itm_scimitar,
             itm_scimitar,
             itm_winged_mace,

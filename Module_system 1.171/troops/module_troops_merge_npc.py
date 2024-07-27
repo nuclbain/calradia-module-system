@@ -25,7 +25,7 @@ troops_npc = [
         0,
         reserved,
         fac_commoners,
-        [itm_ragged_outfit_aketon_a, itm_studded_club, itm_leather_boots_a],
+        [itm_ragged_outfit_aketon_a, itm_studded_club_a, itm_leather_boots_a],
         str_11 | agi_13 | int_12 | cha_7 | level(3),
         wp(110),
         knows_tracker_npc
@@ -177,7 +177,7 @@ troops_npc = [
         0,
         reserved,
         fac_commoners,
-        [itm_tribal_warrior_outfit, itm_leather_boots_b, itm_sword_viking_1],
+        [itm_tribal_warrior_outfit, itm_leather_boots_b, itm_sword_a],
         str_9 | agi_10 | int_9 | cha_10 | level(7),
         wp(90),
         knows_warrior_npc
@@ -311,7 +311,7 @@ troops_npc = [
         0,
         reserved,
         fac_commoners,
-        [itm_regular_shirt_a, itm_leather_shoes_b, itm_sword_medieval_b_small],
+        [itm_regular_shirt_a, itm_leather_shoes_b, itm_sword_short_a_v2],
         str_9 | agi_8 | int_11 | cha_8 | level(5),
         wp(100),
         knows_warrior_npc
@@ -363,7 +363,7 @@ troops_npc = [
         0,
         reserved,
         fac_commoners,
-        [itm_regular_leather_jerkin_a, itm_hose_d, itm_club],
+        [itm_regular_leather_jerkin_a, itm_hose_d, itm_club_a],
         str_7 | agi_7 | int_7 | cha_7 | level(1),
         wp(40),
         knows_common,

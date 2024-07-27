@@ -38,7 +38,7 @@ from compiler import *
 # the new flags now also have af_override_everything, so include footwear
 pilgrim_disguise = [itm_pilgrim_hood,itm_pilgrim_disguise,itm_practice_staff, itm_throwing_daggers]
 farmer_disguise = [itm_felt_a, itm_regular_shirt_b, itm_cleaver, itm_battle_fork, itm_stones]
-hunter_disguise = [itm_hunting_bow,itm_barbed_arrows, itm_black_hood, itm_leather_gloves_a, itm_light_leather, itm_sword_khergit_1]
+hunter_disguise = [itm_hunting_bow,itm_barbed_arrows, itm_black_hood, itm_leather_gloves_a, itm_light_leather, itm_falchion_a]
 merchant_disguise = [itm_regular_shirt_c,itm_felt_steppe_cap,itm_dagger]
 guard_disguise = [itm_olive_hauberk_a,itm_mail_mittens_a,itm_nasal_helmet_a_v2,itm_tab_shield_round_c,itm_fighting_pick,itm_war_spear]
 bard_disguise = [itm_lyre,itm_regular_shirt_b,itm_winged_mace]
@@ -5717,8 +5717,8 @@ mission_templates = [
     "duel_with_lord",mtf_arena_fight|mtf_commit_casualties,-1,
     "You enter a melee fight in the arena.",
     [
-      (0, mtef_visitor_source|mtef_team_0,af_override_all,aif_start_alarmed,1,[itm_sword_medieval_a,itm_arena_tunic_blue]),
-      (16, mtef_visitor_source|mtef_team_1,af_override_all,aif_start_alarmed,1,[itm_sword_medieval_a,itm_arena_tunic_blue]),
+      (0, mtef_visitor_source|mtef_team_0,af_override_all,aif_start_alarmed,1,[itm_sword_short_a,itm_arena_tunic_blue]),
+      (16, mtef_visitor_source|mtef_team_1,af_override_all,aif_start_alarmed,1,[itm_sword_short_a,itm_arena_tunic_blue]),
       #SB : use these for castle courtyard duels
       (23, mtef_visitor_source|mtef_team_0,af_override_all,aif_start_alarmed,1,[itm_arena_sword,itm_heraldic_mail_with_tunic]),
       (24, mtef_visitor_source|mtef_team_1,af_override_all,aif_start_alarmed,1,[itm_arena_sword,itm_heraldic_mail_with_tunic_b]),
