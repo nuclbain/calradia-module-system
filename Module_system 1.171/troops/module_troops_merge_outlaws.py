@@ -599,7 +599,7 @@ troops_outlaws = [
         wp(150),
         knows_common | knows_ironflesh_5 | knows_power_strike_5,
         skeleton_face1,
-        skeleton_face2,
+        skeleton_face1,
     ],
     [
         "brigand",
