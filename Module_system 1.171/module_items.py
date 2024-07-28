@@ -1089,6 +1089,52 @@ items = [
 ],
 # TABARDS END
 
+# DELGUY ARMOR START
+[
+    "delgay_aketon_a",
+    "Delgay Aketon",
+    [
+        ("Delgay_Aketon_A", 0),
+        ("Delgay_Aketon_A_thick", imodbit_thick),
+        ("Delgay_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], []
+],
+
+[
+    "delgay_aketon_b",
+    "Delgay Aketon",
+    [
+        ("Delgay_Aketon_B", 0),
+        ("Delgay_Aketon_B_thick", imodbit_thick),
+        ("Delgay_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], []
+],
+
+[
+    "delgay_coat_of_plates_a",
+    "Delgay Coat of Plates",
+    [
+        ("Delgay_Coat_Of_Plates_A", 0),
+        ("Delgay_Coat_Of_Plates_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1720,
+    weight(19)|abundance(90)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(18),
+    imodbit_reinforced,
+    [], []
+],
+# DELGUY ARMOR END
+
 # FACTIONS START
 [
     "white_aketon_a", 
@@ -2936,11 +2982,88 @@ items = [
     "Leather Armor on Purple Shirt",
     [
         ("Purple_Leather_Armor_A", 0),
+        ("Purple_Leather_Armor_A_thick", imodbit_thick),
+        ("Purple_Leather_Armor_A_hardened", imodbit_hardened),
     ],
     itp_merchandise | itp_type_body_armor | itp_covers_legs,
     0, 630,
-    weight(5)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(5)|difficulty(0),
-    imodbits_none,
+    weight(12)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(5)|difficulty(0),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_leather_armor_a_v1",
+    "Leather Armor on Purple Shirt",
+    [
+        ("Purple_Leather_Armor_A_v1", 0),
+        ("Purple_Leather_Armor_A_v1_thick", imodbit_thick),
+        ("Purple_Leather_Armor_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 630,
+    weight(12)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(5)|difficulty(0),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_leather_armor_a_v2",
+    "Leather Armor on Purple Shirt",
+    [
+        ("Purple_Leather_Armor_A_v2", 0),
+        ("Purple_Leather_Armor_A_v2_thick", imodbit_thick),
+        ("Purple_Leather_Armor_A_v2_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 630,
+    weight(12)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(5)|difficulty(0),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_leather_armor_b",
+    "Leather Armor on Purple Shirt",
+    [
+        ("Purple_Leather_Armor_B", 0),
+        ("Purple_Leather_Armor_B_hardened", imodbit_hardened),
+        ("Purple_Leather_Armor_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1260,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(15)|difficulty(13),
+    imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_leather_armor_b_v1",
+    "Leather Armor on Purple Shirt",
+    [
+        ("Purple_Leather_Armor_B_v1", 0),
+        ("Purple_Leather_Armor_B_v1_hardened", imodbit_hardened),
+        ("Purple_Leather_Armor_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1260,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(15)|difficulty(13),
+    imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_leather_armor_b_v2",
+    "Leather Armor on Purple Shirt",
+    [
+        ("Purple_Leather_Armor_B_v2", 0),
+        ("Purple_Leather_Armor_B_v2_hardened", imodbit_hardened),
+        ("Purple_Leather_Armor_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1260,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(15)|difficulty(13),
+    imodbit_hardened | imodbit_reinforced,
     [], [fac_kingdom_7]
 ],
 
