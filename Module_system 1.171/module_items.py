@@ -929,19 +929,6 @@ items = [
     [], [fac_kingdom_7]
 ],
 
-[
-    "hairako_shirt_a",
-    "Hairako Shirt",
-    [
-        ("Hairako_Shirt_A", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
-    0, 79,
-    weight(2)|abundance(100)|head_armor(0)|body_armor(9)|leg_armor(5)|difficulty(0),
-    imodbits_none,
-    [], [fac_kingdom_8]
-],
-
 # ANCIENT ARMOR START
 [
     "ancient_padded_vest_a",
@@ -1102,7 +1089,7 @@ items = [
 ],
 # TABARDS END
 
-# AKETONS START
+# FACTIONS START
 [
     "white_aketon_a", 
     "Aketon", 
@@ -1159,6 +1146,95 @@ items = [
     0, 1188,
     weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
     imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
+],
+
+[
+    "white_pourpoint_a",
+    "Pourpoint",
+    [
+        ("White_Pourpoint_A", 0),
+        ("White_Pourpoint_A_tattered", imodbit_tattered),
+        ("White_Pourpoint_A_sturdy", imodbit_sturdy),
+        ("White_Pourpoint_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_tattered | imodbit_sturdy | imodbit_thick,
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
+],
+
+[
+    "white_churburg_a",
+    "Churburg",
+    [
+        ("White_Churburg_A", 0),
+        ("White_Churburg_A_thick", imodbit_thick),
+        ("White_Churburg_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1304,
+    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
+],
+
+[
+    "white_churburg_b",
+    "Plated Churburg",
+    [
+        ("White_Churburg_B", 0),
+        ("White_Churburg_B_thick", imodbit_thick),
+        ("White_Churburg_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
+],
+
+[
+    "white_churburg_c",
+    "Heavy Plated Churburg",
+    [
+        ("White_Churburg_C", 0),
+        ("White_Churburg_C_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
+],
+
+[
+    "white_hauberk_a",
+    "Hauberk",
+    [
+        ("White_Hauberk_A", 0),
+        ("White_Hauberk_A_rusty", imodbit_rusty),
+        ("White_Hauberk_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_rusty | imodbit_thick,
+    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
+],
+
+[
+    "white_brigandine_a",
+    "Brigandine",
+    [
+        ("White_Brigandine_A", 0),
+        ("White_Brigandine_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1571,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
+    imodbit_reinforced,
     [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
 ],
 
@@ -1283,1201 +1359,6 @@ items = [
 ],
 
 [
-    "brown_aketon_a",
-    "Brown Painted Aketon",
-    [
-        ("Brown_Aketon_A", 0),
-        ("Brown_Aketon_A_thick", imodbit_thick),
-        ("Brown_Aketon_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_2]
-],
-
-[
-    "brown_aketon_a_v1",
-    "Brown Painted Aketon",
-    [
-        ("Brown_Aketon_A_v1", 0),
-        ("Brown_Aketon_A_v1_thick", imodbit_thick),
-        ("Brown_Aketon_A_v1_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_2]
-],
-
-[
-    "brown_aketon_a_v2",
-    "Brown Painted Aketon",
-    [
-        ("Brown_Aketon_A_v2", 0),
-        ("Brown_Aketon_A_v2_thick", imodbit_thick),
-        ("Brown_Aketon_A_v2_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_2]
-],
-
-[
-    "brown_aketon_b", 
-    "Brown Painted Aketon with Plates", 
-    [
-        ("Brown_Aketon_B", 0),
-        ("Brown_Aketon_B_thick", imodbit_thick),
-        ("Brown_Aketon_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_2]
-],
-
-[
-    "brown_aketon_b_v1", 
-    "Brown Painted Aketon with Plates", 
-    [
-        ("Brown_Aketon_B_v1", 0),
-        ("Brown_Aketon_B_v1_thick", imodbit_thick),
-        ("Brown_Aketon_B_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_2]
-],
-
-[
-    "brown_aketon_b_v2", 
-    "Brown Painted Aketon with Plates", 
-    [
-        ("Brown_Aketon_B_v2", 0),
-        ("Brown_Aketon_B_v2_thick", imodbit_thick),
-        ("Brown_Aketon_B_v2_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_2]
-],
-
-[
-    "red_aketon_a",
-    "Red Painted Aketon",
-    [
-        ("Red_Aketon_A", 0),
-        ("Red_Aketon_A_thick", imodbit_thick),
-        ("Red_Aketon_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_aketon_a_v1",
-    "Red Painted Aketon",
-    [
-        ("Red_Aketon_A_v1", 0),
-        ("Red_Aketon_A_v1_thick", imodbit_thick),
-        ("Red_Aketon_A_v1_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_aketon_a_v2",
-    "Red Painted Aketon",
-    [
-        ("Red_Aketon_A_v2", 0),
-        ("Red_Aketon_A_v2_thick", imodbit_thick),
-        ("Red_Aketon_A_v2_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_aketon_b", 
-    "Red Painted Aketon with Plates", 
-    [
-        ("Red_Aketon_B", 0),
-        ("Red_Aketon_B_thick", imodbit_thick),
-        ("Red_Aketon_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_aketon_b_v1", 
-    "Red Painted Aketon with Plates", 
-    [
-        ("Red_Aketon_B_v1", 0),
-        ("Red_Aketon_B_v1_thick", imodbit_thick),
-        ("Red_Aketon_B_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_aketon_b_v2", 
-    "Red Painted Aketon with Plates", 
-    [
-        ("Red_Aketon_B_v2", 0),
-        ("Red_Aketon_B_v2_thick", imodbit_thick),
-        ("Red_Aketon_B_v2_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_1]
-],
-
-[
-    "gray_aketon_a",
-    "Gray Painted Aketon",
-    [
-        ("Gray_Aketon_A", 0),
-        ("Gray_Aketon_A_thick", imodbit_thick),
-        ("Gray_Aketon_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_aketon_a_v1",
-    "Gray Painted Aketon",
-    [
-        ("Gray_Aketon_A_v1", 0),
-        ("Gray_Aketon_A_v1_thick", imodbit_thick),
-        ("Gray_Aketon_A_v1_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_aketon_a_v2",
-    "Gray Painted Aketon",
-    [
-        ("Gray_Aketon_A_v2", 0),
-        ("Gray_Aketon_A_v2_thick", imodbit_thick),
-        ("Gray_Aketon_A_v2_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_aketon_b", 
-    "Gray Painted Aketon with Plates", 
-    [
-        ("Gray_Aketon_B", 0),
-        ("Gray_Aketon_B_thick", imodbit_thick),
-        ("Gray_Aketon_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_aketon_b_v1", 
-    "Gray Painted Aketon with Plates", 
-    [
-        ("Gray_Aketon_B_v1", 0),
-        ("Gray_Aketon_B_v1_thick", imodbit_thick),
-        ("Gray_Aketon_B_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_aketon_b_v2", 
-    "Gray Painted Aketon with Plates", 
-    [
-        ("Gray_Aketon_B_v2", 0),
-        ("Gray_Aketon_B_v2_thick", imodbit_thick),
-        ("Gray_Aketon_B_v2_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_4]
-],
-
-[
-    "navy_aketon_a",
-    "Navy Painted Aketon",
-    [
-        ("Navy_Aketon_A", 0),
-        ("Navy_Aketon_A_thick", imodbit_thick),
-        ("Navy_Aketon_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_4, fac_kingdom_12]
-],
-
-[
-    "navy_aketon_a_v1",
-    "Navy Painted Aketon",
-    [
-        ("Navy_Aketon_A_v1", 0),
-        ("Navy_Aketon_A_v1_thick", imodbit_thick),
-        ("Navy_Aketon_A_v1_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_4, fac_kingdom_12]
-],
-
-[
-    "navy_aketon_b", 
-    "Navy Painted Aketon with Plates", 
-    [
-        ("Navy_Aketon_B", 0),
-        ("Navy_Aketon_B_thick", imodbit_thick),
-        ("Navy_Aketon_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_4, fac_kingdom_12]
-],
-
-[
-    "navy_aketon_b_v1", 
-    "Navy Painted Aketon with Plates", 
-    [
-        ("Navy_Aketon_B_v1", 0),
-        ("Navy_Aketon_B_v1_thick", imodbit_thick),
-        ("Navy_Aketon_B_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_4, fac_kingdom_12]
-],
-
-[
-    "green_aketon_a",
-    "Green Painted Aketon",
-    [
-        ("Green_Aketon_A", 0),
-        ("Green_Aketon_A_thick", imodbit_thick),
-        ("Green_Aketon_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_aketon_a_v1",
-    "Green Painted Aketon",
-    [
-        ("Green_Aketon_A_v1", 0),
-        ("Green_Aketon_A_v1_thick", imodbit_thick),
-        ("Green_Aketon_A_v1_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_aketon_a_v2",
-    "Green Painted Aketon",
-    [
-        ("Green_Aketon_A_v2", 0),
-        ("Green_Aketon_A_v2_thick", imodbit_thick),
-        ("Green_Aketon_A_v2_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_aketon_b",
-    "Green Painted Aketon with Plates",
-    [
-        ("Green_Aketon_B", 0),
-        ("Green_Aketon_B_thick", imodbit_thick),
-        ("Green_Aketon_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_aketon_b_v1",
-    "Green Painted Aketon with Plates",
-    [
-        ("Green_Aketon_B_v1", 0),
-        ("Green_Aketon_B_v1_thick", imodbit_thick),
-        ("Green_Aketon_B_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_aketon_b_v2",
-    "Green Painted Aketon with Plates",
-    [
-        ("Green_Aketon_B_v2", 0),
-        ("Green_Aketon_B_v2_thick", imodbit_thick),
-        ("Green_Aketon_B_v2_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
-    "yellow_aketon_a",
-    "Yellow Painted Aketon",
-    [
-        ("Yellow_Aketon_A", 0),
-        ("Yellow_Aketon_A_thick", imodbit_thick),
-        ("Yellow_Aketon_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_6]
-],
-
-[
-    "yellow_aketon_a_v1",
-    "Yellow Painted Aketon",
-    [
-        ("Yellow_Aketon_A_v1", 0),
-        ("Yellow_Aketon_A_v1_thick", imodbit_thick),
-        ("Yellow_Aketon_A_v1_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_6]
-],
-
-[
-    "yellow_aketon_b",
-    "Yellow Painted Aketon with Plates",
-    [("Yellow_Aketon_B", 0)],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbits_none,
-    [], [fac_kingdom_6]
-],
-
-[
-    "yellow_aketon_b_v1",
-    "Yellow Painted Aketon with Plates",
-    [("Yellow_Aketon_B_v1", 0)],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbits_none,
-    [], [fac_kingdom_6]
-],
-
-[
-    "purple_aketon_a",
-    "Purple Painted Aketon",
-    [
-        ("Purple_Aketon_A", 0),
-        ("Purple_Aketon_A_thick", imodbit_thick),
-        ("Purple_Aketon_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_7]
-],
-
-[
-    "tauria_aketon_a",
-    "Pink & Blue Painted Aketon",
-    [
-        ("Tauria_Aketon_A", 0),
-        ("Tauria_Aketon_A_thick", imodbit_thick),
-        ("Tauria_Aketon_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_9]
-],
-
-[
-    "tauria_aketon_a_v1",
-    "Pink & Blue Painted Aketon",
-    [
-        ("Tauria_Aketon_A_v1", 0),
-        ("Tauria_Aketon_A_v1_thick", imodbit_thick),
-        ("Tauria_Aketon_A_v1_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_9]
-],
-
-[
-    "elen_aketon_a",
-    "Black & Yellow Painted Aketon",
-    [
-        ("Elen_Aketon_A", 0),
-        ("Elen_Aketon_A_thick", imodbit_thick),
-        ("Elen_Aketon_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_10]
-],
-
-[
-    "black_aketon_a",
-    "Black Painted Aketon",
-    [
-        ("Black_Aketon_A", 0),
-        ("Black_Aketon_A_thick", imodbit_thick),
-        ("Black_Aketon_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_12]
-],
-
-[
-    "black_aketon_a_v1",
-    "Robe on Black Aketon",
-    [
-        ("Black_Aketon_A_v1", 0),
-        ("Black_Aketon_A_v1_thick", imodbit_thick),
-        ("Black_Aketon_A_v1_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 899,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_12]
-],
-
-[
-    "black_aketon_b",
-    "Black Painted Aketon with Plates",
-    [
-        ("Black_Aketon_B", 0),
-        ("Black_Aketon_B_thick", imodbit_thick),
-        ("Black_Aketon_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1188,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_12]
-],
-
-[
-    "black_aketon_c",
-    "Black Painted Aketon with Plates",
-    [
-        ("Black_Aketon_C", 0),
-        ("Black_Aketon_C_hardened", imodbit_hardened),
-        ("Black_Aketon_C_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1512,
-    weight(16)|abundance(90)|head_armor(0)|body_armor(33)|leg_armor(15)|difficulty(16),
-    imodbit_hardened | imodbit_reinforced,
-    [], [fac_kingdom_12]
-],
-
-[
-    "adid_aketon_a",
-    "Leather Adid Aketon",
-    [
-        ("Adid_Aketon_A", 0),
-        ("Adid_Aketon_A_thick", imodbit_thick),
-        ("Adid_Aketon_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1042,
-    weight(9)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(11),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_11]
-],
-
-[
-    "adid_aketon_b",
-    "Leather Adid Aketon with Plates",
-    [
-        ("Adid_Aketon_B", 0),
-        ("Adid_Aketon_B_thick", imodbit_thick),
-        ("Adid_Aketon_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1342,
-    weight(12)|abundance(95)|head_armor(0)|body_armor(30)|leg_armor(13)|difficulty(14),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_11]
-],
-# AKETONS END
-
-# POURPOINTS START
-[
-    "white_pourpoint_a",
-    "Pourpoint",
-    [
-        ("White_Pourpoint_A", 0),
-        ("White_Pourpoint_A_tattered", imodbit_tattered),
-        ("White_Pourpoint_A_sturdy", imodbit_sturdy),
-        ("White_Pourpoint_A_thick", imodbit_thick),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_tattered | imodbit_sturdy | imodbit_thick,
-    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
-],
-
-[
-    "red_pourpoint_a",
-    "Red Painted Pourpoint",
-    [
-        ("Red_Pourpoint_A", 0),
-        ("Red_Pourpoint_A_tattered", imodbit_tattered),
-        ("Red_Pourpoint_A_sturdy", imodbit_sturdy),
-        ("Red_Pourpoint_A_thick", imodbit_thick),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_tattered | imodbit_sturdy | imodbit_thick,
-    [], [fac_kingdom_1]
-],
-
-[
-    "brown_pourpoint_a",
-    "Brown Painted Pourpoint",
-    [
-        ("Brown_Pourpoint_A", 0),
-        ("Brown_Pourpoint_A_tattered", imodbit_tattered),
-        ("Brown_Pourpoint_A_sturdy", imodbit_sturdy),
-        ("Brown_Pourpoint_A_thick", imodbit_thick),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_tattered | imodbit_sturdy | imodbit_thick,
-    [], [fac_kingdom_2]
-],
-
-[
-    "yellow_pourpoint_a",
-    "Yellow Painted Pourpoint",
-    [
-        ("Yellow_Pourpoint_A", 0),
-        ("Yellow_Pourpoint_A_sturdy", imodbit_sturdy),
-        ("Yellow_Pourpoint_A_thick", imodbit_thick),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
-    imodbit_sturdy | imodbit_thick,
-    [], [fac_kingdom_6]
-],
-# POURPOINTS END
-
-# LEATHER ARMORS START
-[
-    "leather_armor",
-    "Leather Armor",
-    [("Leather_Cuirass_A",0)],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 864,
-    weight(13)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(10)|difficulty(9),
-    imodbits_cloth
-],
-
-[
-    "heavy_leather_vest_mail",
-    "Heavy Leather Armor",
-    [("Leather_Cuirass_B",0)],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1368,
-    weight(20)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(10)|difficulty(15),
-    imodbits_armor
-],
-
-[
-    "gray_leather_armor_a",
-    "Leather Armor on Gray Painted Aketon",
-    [
-        ("Gray_Leather_Armor_A", 0),
-        ("Gray_Leather_Armor_A_thick", imodbit_thick),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1012,
-    weight(11)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(11),
-    imodbit_thick,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_leather_armor_a_v1",
-    "Leather Armor onf Gray Painted Aketon",
-    [
-        ("Gray_Leather_Armor_A_v1", 0),
-        ("Gray_Leather_Armor_A_v1_thick", imodbit_thick),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1012,
-    weight(11)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(11),
-    imodbit_thick,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_leather_armor_a_v2",
-    "Leather Armor on Gray Painted Aketon",
-    [
-        ("Gray_Leather_Armor_A_v2", 0),
-        ("Gray_Leather_Armor_A_v2_thick", imodbit_thick),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1012,
-    weight(11)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(11),
-    imodbit_thick,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_leather_armor_b",
-    "Leather Armor with Plates on Gray Painted Aketon",
-    [
-        ("Gray_Leather_Armor_B", 0),
-        ("Gray_Leather_Armor_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1337,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(30)|leg_armor(13)|difficulty(14),
-    imodbit_reinforced,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_leather_armor_b_v1",
-    "Leather Armor with Plates on Gray Painted Aketon",
-    [
-        ("Gray_Leather_Armor_B_v1", 0),
-        ("Gray_Leather_Armor_B_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1337,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(30)|leg_armor(13)|difficulty(14),
-    imodbit_reinforced,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_leather_armor_b_v2",
-    "Leather Armor with Plates on Gray Painted Aketon",
-    [
-        ("Gray_Leather_Armor_B_v2", 0),
-        ("Gray_Leather_Armor_B_v2_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1337,
-    weight(14)|abundance(95)|head_armor(0)|body_armor(30)|leg_armor(13)|difficulty(14),
-    imodbit_reinforced,
-    [], [fac_kingdom_4]
-],
-
-[
-    "purple_leather_armor_a",
-    "Leather Armor on Purple Shirt",
-    [
-        ("Purple_Leather_Armor_A", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 630,
-    weight(5)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(5)|difficulty(0),
-    imodbits_none,
-    [], [fac_kingdom_7]
-],
-
-[
-    "hairako_leather_armor_a",
-    "Hairako Leather Armor",
-    [
-        ("Hairako_Leather_Armor_A", 0),
-        ("Hairako_Leather_Armor_A_thick", imodbit_thick),
-        ("Hairako_Leather_Armor_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1012,
-    weight(11)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(11),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_8]
-],
-
-[
-    "hairako_leather_armor_a_v1",
-    "Hairako Leather Armor",
-    [
-        ("Hairako_Leather_Armor_A_v1", 0),
-        ("Hairako_Leather_Armor_A_v1_thick", imodbit_thick),
-        ("Hairako_Leather_Armor_A_v1_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1012,
-    weight(11)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(11),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_8]
-],
-
-[
-    "hairako_leather_armor_b",
-    "Hairako Leather Armor with Plates",
-    [
-        ("Hairako_Leather_Armor_B", 0),
-        ("Hairako_Leather_Armor_B_hardened", imodbit_hardened),
-        ("Hairako_Leather_Armor_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1544,
-    weight(16)|abundance(95)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(17),
-    imodbit_hardened | imodbit_reinforced,
-    [], [fac_kingdom_8]
-],
-
-[
-    "hairako_leather_armor_b_v1",
-    "Hairako Leather Armor with Plates",
-    [
-        ("Hairako_Leather_Armor_B_v1", 0),
-        ("Hairako_Leather_Armor_B_v1_hardened", imodbit_hardened),
-        ("Hairako_Leather_Armor_B_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1544,
-    weight(16)|abundance(95)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(17),
-    imodbit_hardened | imodbit_reinforced,
-    [], [fac_kingdom_8]
-],
-# LEATHER ARMORS END
-
-# COAT OF PLATES START
-[
-    "coat_of_plates_red",
-    "Coat of Plates",
-    [("Coat_Of_Plates_A",0)],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1720,
-    weight(19)|abundance(90)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(18),
-    imodbits_armor
-],
-
-[
-    "coat_of_plates",
-    "Coat of Plates",
-    [("Coat_Of_Plates_B",0)],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1957,
-    weight(21)|abundance(90)|head_armor(0)|body_armor(45)|leg_armor(18)|difficulty(21),
-    imodbits_armor
-],
-
-[
-    "purple_coat_of_plates_a",
-    "Coat of Plates on Purple Painted Aketon",
-    [
-        ("Purple_Aketon_Coat_A", 0),
-        ("Purple_Aketon_Coat_A_thick", imodbit_thick),
-        ("Purple_Aketon_Coat_A_hardened", imodbit_hardened),
-        ("Purple_Aketon_Coat_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 982,
-    weight(15)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(11),
-    imodbit_thick | imodbit_hardened | imodbit_reinforced,
-    [], [fac_kingdom_7]
-],
-
-[
-    "purple_coat_of_plates_a_v1",
-    "Coat of Plates on Purple Painted Aketon",
-    [
-        ("Purple_Aketon_Coat_A_v1", 0),
-        ("Purple_Aketon_Coat_A_v1_thick", imodbit_thick),
-        ("Purple_Aketon_Coat_A_v1_hardened", imodbit_hardened),
-        ("Purple_Aketon_Coat_A_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 982,
-    weight(15)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(11),
-    imodbit_thick | imodbit_hardened | imodbit_reinforced,
-    [], [fac_kingdom_7]
-],
-
-[
-    "purple_coat_of_plates_b",
-    "Plated Coat of Plates on Purple Painted Aketon",
-    [
-        ("Purple_Aketon_Coat_B", 0),
-        ("Purple_Aketon_Coat_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1278,
-    weight(18)|abundance(95)|head_armor(0)|body_armor(28)|leg_armor(13)|difficulty(14),
-    imodbit_reinforced,
-    [], [fac_kingdom_7]
-],
-
-[
-    "purple_coat_of_plates_b_v1",
-    "Plated Coat of Plates on Purple Painted Aketon",
-    [
-        ("Purple_Aketon_Coat_B_v1", 0),
-        ("Purple_Aketon_Coat_B_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1278,
-    weight(18)|abundance(95)|head_armor(0)|body_armor(28)|leg_armor(13)|difficulty(14),
-    imodbit_reinforced,
-    [], [fac_kingdom_7]
-],
-
-[
-    "purple_coat_of_plates_c",
-    "Mail Coat of Plates on Purple Painted Aketon",
-    [
-        ("Purple_Aketon_Coat_C", 0),
-        ("Purple_Aketon_Coat_C_thick", imodbit_thick),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1602,
-    weight(22)|abundance(90)|head_armor(0)|body_armor(36)|leg_armor(15)|difficulty(18),
-    imodbit_thick,
-    [], [fac_kingdom_7]
-],
-
-[
-    "purple_coat_of_plates_c_v1",
-    "Mail Coat of Plates on Purple Painted Aketon",
-    [
-        ("Purple_Aketon_Coat_C_v1", 0),
-        ("Purple_Aketon_Coat_C_v1_thick", imodbit_thick),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1602,
-    weight(22)|abundance(90)|head_armor(0)|body_armor(36)|leg_armor(15)|difficulty(18),
-    imodbit_thick,
-    [], [fac_kingdom_7]
-],
-
-[
-    "purple_coat_of_plates_d",
-    "Heavy Mail Coat of Plates on Purple Painted Aketon",
-    [
-        ("Purple_Aketon_Coat_D", 0),
-        ("Purple_Aketon_Coat_D_thick", imodbit_thick),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1893,
-    weight(26)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(17)|difficulty(20),
-    imodbit_thick,
-    [], [fac_kingdom_7]
-],
-
-[
-    "purple_coat_of_plates_d_v1",
-    "Heavy Mail Coat of Plates on Purple Painted Aketon",
-    [
-        ("Purple_Aketon_Coat_D_v1", 0),
-        ("Purple_Aketon_Coat_D_v1_thick", imodbit_thick),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1893,
-    weight(26)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(17)|difficulty(20),
-    imodbit_thick,
-    [], [fac_kingdom_7]
-],
-
-[
-    "black_coat_of_plates_a",
-    "Mail Coat of Plates on Black Aketon",
-    [
-        ("Black_Aketon_Coat_A", 0),
-        ("Black_Aketon_Coat_A_thick", imodbit_thick),
-        ("Black_Aketon_Coat_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1602,
-    weight(22)|abundance(90)|head_armor(0)|body_armor(36)|leg_armor(15)|difficulty(18),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_12]
-],
-
-[
-    "black_coat_of_plates_a_v1",
-    "Mail Coat of Plates on Black Aketon",
-    [
-        ("Black_Aketon_Coat_A_v1", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1602,
-    weight(22)|abundance(90)|head_armor(0)|body_armor(36)|leg_armor(15)|difficulty(18),
-    imodbits_none,
-    [], [fac_kingdom_12]
-],
-
-[
-    "black_coat_of_plates_b",
-    "Heavy Mail Coat of Plates on Black Aketon",
-    [
-        ("Black_Aketon_Coat_B", 0),
-        ("Black_Aketon_Coat_B_thick", imodbit_thick),
-        ("Black_Aketon_Coat_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1893,
-    weight(26)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(17)|difficulty(20),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_12]
-],
-# COAT OF PLATES END
-
-# LAMELLAR ARMORS START
-[
-    "lamellar_cuirass_a",
-    "Lamellar Cuirass",
-    [
-        ("Lamellar_Cuirass_A", 0),
-        ("Lamellar_Cuirass_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1300,
-    weight(13)|abundance(80)|head_armor(0)|body_armor(30)|leg_armor(9)|difficulty(13),
-    imodbit_reinforced,
-    [], [fac_kingdom_3]
-],
-
-[
-    "lamellar_cuirass_a_v1",
-    "Lamellar Cuirass",
-    [
-        ("Lamellar_Cuirass_A_v1", 0),
-        ("Lamellar_Cuirass_A_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1300,
-    weight(13)|abundance(80)|head_armor(0)|body_armor(30)|leg_armor(9)|difficulty(13),
-    imodbit_reinforced,
-    [], [fac_kingdom_3]
-],
-
-[
-    "elen_lamellar_cuirass_a",
-    "Lamellar Cuirass",
-    [
-        ("Elen_Lamellar_Cuirass_A", 0),
-        ("Elen_Lamellar_Cuirass_A_thick", imodbit_thick),
-        ("Elen_Lamellar_Cuirass_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1300,
-    weight(13)|abundance(80)|head_armor(0)|body_armor(30)|leg_armor(9)|difficulty(13),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_10]
-],
-
-[
-    "elen_lamellar_cuirass_b",
-    "Lamellar Cuirass",
-    [
-        ("Elen_Lamellar_Cuirass_B", 0),
-        ("Elen_Lamellar_Cuirass_B_thick", imodbit_thick),
-        ("Elen_Lamellar_Cuirass_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1512,
-    weight(16)|abundance(75)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_10]
-],
-
-[
-    "elen_lamellar_cuirass_c",
-    "Plated Lamellar Cuirass",
-    [
-        ("Elen_Lamellar_Cuirass_C", 0),
-        ("Elen_Lamellar_Cuirass_C_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1745,
-    weight(20)|abundance(70)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
-    imodbit_reinforced,
-    [], [fac_kingdom_10]
-],
-
-[
-    "elen_lamellar_cuirass_mail_a",
-    "Lamellar Cuirass with Mail",
-    [
-        ("Elen_Lamellar_Cuirass_Mail_A", 0),
-        ("Elen_Lamellar_Cuirass_Mail_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1893,
-    weight(22)|abundance(65)|head_armor(0)|body_armor(42)|leg_armor(13)|difficulty(20),
-    imodbit_reinforced,
-    [], [fac_kingdom_10]
-],
-
-[
-    "elen_lamellar_cuirass_mail_b",
-    "Plated Lamellar Cuirass with Mail",
-    [
-        ("Elen_Lamellar_Cuirass_Mail_B", 0),
-        ("Elen_Lamellar_Cuirass_Mail_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 2126,
-    weight(26)|abundance(60)|head_armor(0)|body_armor(46)|leg_armor(15)|difficulty(22),
-    imodbit_reinforced,
-    [], [fac_kingdom_10]
-],
-# LAMELLAR ARMORS END
-
-# CHURBURG START
-[
-    "white_churburg_a",
-    "Churburg",
-    [
-        ("White_Churburg_A", 0),
-        ("White_Churburg_A_thick", imodbit_thick),
-        ("White_Churburg_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1304,
-    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
-],
-
-[
-    "white_churburg_b",
-    "Plated Churburg",
-    [
-        ("White_Churburg_B", 0),
-        ("White_Churburg_B_thick", imodbit_thick),
-        ("White_Churburg_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1512,
-    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
-],
-
-[
-    "white_churburg_c",
-    "Heavy Plated Churburg",
-    [
-        ("White_Churburg_C", 0),
-        ("White_Churburg_C_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1745,
-    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
-],
-
-[
     "olive_churburg_a",
     "Churburg on Olive Painted Pourpoint",
     [
@@ -2544,205 +1425,6 @@ items = [
     weight(28)|abundance(80)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
     imodbits_none,
     [], [fac_kingdom_3]
-],
-
-[
-    "red_churburg_a",
-    "Churburg on Red Pourpoint",
-    [
-        ("Red_Churburg_A", 0),
-        ("Red_Churburg_A_thick", imodbit_thick),
-        ("Red_Churburg_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1304,
-    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_churburg_b",
-    "Plated Churburg on Red Pourpoint",
-    [
-        ("Red_Churburg_B", 0),
-        ("Red_Churburg_B_thick", imodbit_thick),
-        ("Red_Churburg_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1512,
-    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_churburg_c",
-    "Heavy Plated Churburg on Red Pourpoint",
-    [
-        ("Red_Churburg_C", 0),
-        ("Red_Churburg_C_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1745,
-    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_churburg_mail_a",
-    "Churburg with Mail on Red Pourpoint",
-    [
-        ("Red_Churburg_Mail_A", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1512,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(37)|leg_armor(11)|difficulty(16),
-    imodbits_none,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_churburg_mail_b",
-    "Plated Churburg with Mail on Red Pourpoint",
-    [
-        ("Red_Churburg_Mail_B", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1745,
-    weight(24)|abundance(90)|head_armor(0)|body_armor(41)|leg_armor(13)|difficulty(18),
-    imodbits_none,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_churburg_mail_c",
-    "Heavy Plated Churburg with Mail on Red Pourpoint",
-    [
-        ("Red_Churburg_Mail_C", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 2071,
-    weight(28)|abundance(80)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
-    imodbits_none,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_churburg_mail_c_v1",
-    "Heavy Plated Decorated Churburg with Mail on Red Pourpoint",
-    [
-        ("Red_Churburg_Mail_C_v1", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 2236,
-    weight(28)|abundance(50)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
-    imodbits_none,
-    [], [fac_kingdom_1]
-],
-
-[
-    "green_churburg_a",
-    "Churburg on Green Pourpoint",
-    [
-        ("Green_Churburg_A", 0),
-        ("Green_Churburg_A_thick", imodbit_thick),
-        ("Green_Churburg_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1304,
-    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_churburg_a_v1",
-    "Churburg on Green Pourpoint",
-    [
-        ("Green_Churburg_A_v1", 0),
-        ("Green_Churburg_A_v1_thick", imodbit_thick),
-        ("Green_Churburg_A_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1304,
-    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_churburg_b",
-    "Plated Churburg on Green Pourpoint",
-    [
-        ("Green_Churburg_B", 0),
-        ("Green_Churburg_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1512,
-    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
-    imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_churburg_b_v1",
-    "Plated Churburg on Green Pourpoint",
-    [
-        ("Green_Churburg_B_v1", 0),
-        ("Green_Churburg_B_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1512,
-    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
-    imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_churburg_c",
-    "Heavy Plated Churburg on Green Pourpoint",
-    [
-        ("Green_Churburg_C", 0),
-        ("Green_Churburg_C_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1745,
-    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
-    imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_churburg_c_v1",
-    "Heavy Plated Churburg on Green Pourpoint",
-    [
-        ("Green_Churburg_C_v1", 0),
-        ("Green_Churburg_C_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1745,
-    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
-    imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-# CHURBURG END
-
-# HAUBERKS START
-[
-    "white_hauberk_a",
-    "Hauberk",
-    [
-        ("White_Hauberk_A", 0),
-        ("White_Hauberk_A_rusty", imodbit_rusty),
-        ("White_Hauberk_A_thick", imodbit_thick),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_rusty | imodbit_thick,
-    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
 ],
 
 [
@@ -2862,516 +1544,6 @@ items = [
 ],
 
 [
-    "brown_hauberk_a",
-    "Hauberk on Brown Painted Aketon",
-    [
-        ("Brown_Hauberk_A", 0),
-        ("Brown_Hauberk_A_thick", imodbit_thick),
-        ("Brown_Hauberk_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_2]
-],
-
-[
-    "brown_hauberk_a_v1",
-    "Hauberk on Brown Painted Aketon",
-    [
-        ("Brown_Hauberk_A_v1", 0),
-        ("Brown_Hauberk_A_v1_thick", imodbit_thick),
-        ("Brown_Hauberk_A_v1_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_2]
-],
-
-[
-    "brown_hauberk_a_v2",
-    "Hauberk on Brown Painted Aketon",
-    [
-        ("Brown_Hauberk_A_v2", 0),
-        ("Brown_Hauberk_A_v2_thick", imodbit_thick),
-        ("Brown_Hauberk_A_v2_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_2]
-],
-
-[
-    "red_hauberk_a",
-    "Hauberk on Red Painted Aketon",
-    [
-        ("Red_Hauberk_A", 0),
-        ("Red_Hauberk_A_thick", imodbit_thick),
-        ("Red_Hauberk_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_hauberk_a_v1",
-    "Hauberk on Red Painted Aketon",
-    [
-        ("Red_Hauberk_A_v1", 0),
-        ("Red_Hauberk_A_v1_thick", imodbit_thick),
-        ("Red_Hauberk_A_v1_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_1]
-],
-
-[
-    "red_hauberk_a_v2",
-    "Hauberk on Red Painted Aketon",
-    [
-        ("Red_Hauberk_A_v2", 0),
-        ("Red_Hauberk_A_v2_thick", imodbit_thick),
-        ("Red_Hauberk_A_v2_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_1]
-],
-
-[
-    "gray_hauberk_a",
-    "Hauberk on Gray Painted Aketon",
-    [
-        ("Gray_Hauberk_A", 0),
-        ("Gray_Hauberk_A_thick", imodbit_thick),
-        ("Gray_Hauberk_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_hauberk_a_v1",
-    "Hauberk on Gray Painted Aketon",
-    [
-        ("Gray_Hauberk_A_v1", 0),
-        ("Gray_Hauberk_A_v1_thick", imodbit_thick),
-        ("Gray_Hauberk_A_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_hauberk_a_v2",
-    "Hauberk on Gray Painted Aketon",
-    [
-        ("Gray_Hauberk_A_v2", 0),
-        ("Gray_Hauberk_A_v2_thick", imodbit_thick),
-        ("Gray_Hauberk_A_v2_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_hauberk_b",
-    "Plated Hauberk on Gray Painted Aketon",
-    [
-        ("Gray_Hauberk_B", 0),
-        ("Gray_Hauberk_B_thick", imodbit_thick),
-        ("Gray_Hauberk_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1688,
-    weight(24)|abundance(85)|head_armor(0)|body_armor(38)|leg_armor(15)|difficulty(18),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_4]
-],
-
-[
-    "gray_hauberk_b_v1",
-    "Plated Hauberk on Gray Painted Aketon",
-    [
-        ("Gray_Hauberk_B_v1", 0),
-        ("Gray_Hauberk_B_v1_thick", imodbit_thick),
-        ("Gray_Hauberk_B_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1688,
-    weight(24)|abundance(85)|head_armor(0)|body_armor(38)|leg_armor(15)|difficulty(18),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_4]
-],
-
-[
-    "navy_hauberk_a",
-    "Hauberk on Navy Painted Aketon",
-    [
-        ("Navy_Hauberk_A", 0),
-        ("Navy_Hauberk_A_thick", imodbit_thick),
-        ("Navy_Hauberk_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_4, fac_kingdom_12]
-],
-
-[
-    "navy_hauberk_a_v1",
-    "Hauberk on Navy Painted Aketon",
-    [
-        ("Navy_Hauberk_A_v1", 0),
-        ("Navy_Hauberk_A_v1_thick", imodbit_thick),
-        ("Navy_Hauberk_A_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_4, fac_kingdom_12]
-],
-
-[
-    "green_hauberk_a",
-    "Hauberk on Green Painted Aketon",
-    [
-        ("Green_Hauberk_A", 0),
-        ("Green_Hauberk_A_thick", imodbit_thick),
-        ("Green_Hauberk_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_hauberk_a_v1",
-    "Hauberk on Green Painted Aketon",
-    [
-        ("Green_Hauberk_A_v1", 0),
-        ("Green_Hauberk_A_v1_thick", imodbit_thick),
-        ("Green_Hauberk_A_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
-    "green_hauberk_a_v2",
-    "Hauberk on Green Painted Aketon",
-    [
-        ("Green_Hauberk_A_v2", 0),
-        ("Green_Hauberk_A_v2_thick", imodbit_thick),
-        ("Green_Hauberk_A_v2_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1393,
-    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_5]
-],
-
-[
-    "yellow_hauberk_a",
-    "Hauberk on Yellow Painted Aketon",
-    [
-        ("Yellow_Hauberk_A", 0),
-        ("Yellow_Hauberk_A_thick", imodbit_thick),
-        ("Yellow_Hauberk_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1487,
-    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_6]
-],
-
-[
-    "yellow_hauberk_a_v1",
-    "Hauberk on Yellow Painted Aketon",
-    [
-        ("Yellow_Hauberk_A_v1", 0),
-        ("Yellow_Hauberk_A_v1_thick", imodbit_thick),
-        ("Yellow_Hauberk_A_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1487,
-    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_6]
-],
-
-[
-    "yellow_hauberk_b",
-    "Plated Hauberk on Yellow Painted Aketon",
-    [("Yellow_Hauberk_B", 0)],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1718,
-    weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
-    imodbits_none,
-    [], [fac_kingdom_6]
-],
-
-[
-    "yellow_hauberk_b_v1",
-    "Plated Hauberk on Yellow Painted Aketon",
-    [("Yellow_Hauberk_B_v1", 0)],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1718,
-    weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
-    imodbits_none,
-    [], [fac_kingdom_6]
-],
-
-[
-    "yellow_hauberk_c",
-    "Heavy Plated Hauberk on Yellow Painted Aketon",
-    [
-        ("Yellow_Hauberk_C", 0),
-        ("Yellow_Hauberk_C_thick", imodbit_thick),
-        ("Yellow_Hauberk_C_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1956,
-    weight(28)|abundance(80)|head_armor(0)|body_armor(44)|leg_armor(20)|difficulty(21),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_6]
-],
-
-[
-    "yellow_hauberk_c_v1",
-    "Heavy Plated Hauberk on Yellow Painted Aketon",
-    [
-        ("Yellow_Hauberk_C_v1", 0),
-        ("Yellow_Hauberk_C_v1_thick", imodbit_thick),
-        ("Yellow_Hauberk_C_v1_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1956,
-    weight(28)|abundance(80)|head_armor(0)|body_armor(44)|leg_armor(20)|difficulty(21),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_6]
-],
-
-[
-    "purple_hauberk_a",
-    "Hauberk on Purple Painted Aketon",
-    [
-        ("Purple_Hauberk_A", 0),
-        ("Purple_Hauberk_A_thick", imodbit_thick),
-        ("Purple_Hauberk_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1487,
-    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_7]
-],
-
-[
-    "hairako_hauberk_a",
-    "Hauberk on Hairako Painted Aketon",
-    [
-        ("Hairako_Hauberk_A", 0),
-        ("Hairako_Hauberk_A_thick", imodbit_thick),
-        ("Hairako_Hauberk_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1487,
-    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_8]
-],
-
-[
-    "hairako_hauberk_b",
-    "Plated Hauberk on Hairako Painted Aketon",
-    [
-        ("Hairako_Hauberk_B", 0),
-        ("Hairako_Hauberk_B_thick", imodbit_thick),
-        ("Hairako_Hauberk_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1718,
-    weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_8]
-],
-
-[
-    "elen_hauberk_a",
-    "Hauberk on Black & Yellow Painted Aketon",
-    [
-        ("Elen_Hauberk_A", 0),
-        ("Elen_Hauberk_A_thick", imodbit_thick),
-        ("Elen_Hauberk_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1487,
-    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_10]
-],
-
-[
-    "black_hauberk_a",
-    "Hauberk on Black Painted Aketon",
-    [
-        ("Black_Hauberk_A", 0),
-        ("Black_Hauberk_A_thick", imodbit_thick),
-        ("Black_Hauberk_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1487,
-    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
-    imodbit_thick | imodbit_reinforced,
-    [], [fac_kingdom_12]
-],
-
-[
-    "black_hauberk_a_v1",
-    "Hauberk on Black Painted Aketon",
-    [
-        ("Black_Hauberk_A_v1", 0),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1487,
-    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
-    imodbits_none,
-    [], [fac_kingdom_12]
-],
-
-[
-    "black_hauberk_b",
-    "Plated Hauberk on Black Painted Aketon",
-    [
-        ("Black_Hauberk_B", 0),
-        ("Black_Hauberk_B_thick", imodbit_hardened),
-        ("Black_Hauberk_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1718,
-    weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
-    imodbit_hardened | imodbit_reinforced,
-    [], [fac_kingdom_12]
-],
-
-[
-    "adid_hauberk_a",
-    "Hauberk on Adid Leather Aketon",
-    [
-        ("Adid_Hauberk_A", 0),
-        ("Adid_Hauberk_A_thick", imodbit_thick),
-        ("Adid_Hauberk_A_hardened", imodbit_hardened),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1571,
-    weight(21)|abundance(90)|head_armor(0)|body_armor(40)|leg_armor(10)|difficulty(17),
-    imodbit_thick | imodbit_hardened,
-    [], [fac_kingdom_11]
-],
-
-[
-    "adid_hauberk_b",
-    "Plated Hauberk on Adid Leather Aketon",
-    [
-        ("Adid_Hauberk_B", 0),
-        ("Adid_Hauberk_B_hardened", imodbit_hardened),
-        ("Adid_Hauberk_B_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1804,
-    weight(25)|abundance(85)|head_armor(0)|body_armor(43)|leg_armor(15)|difficulty(19),
-    imodbit_hardened | imodbit_reinforced,
-    [], [fac_kingdom_11]
-],
-# HAUBERKS END
-
-# BRIGANDINES START
-[
-    "white_brigandine_a",
-    "Brigandine",
-    [
-        ("White_Brigandine_A", 0),
-        ("White_Brigandine_A_reinforced", imodbit_reinforced),
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1571,
-    weight(18)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(12)|difficulty(17),
-    imodbit_reinforced,
-    [], [fac_kingdom_1, fac_kingdom_3, fac_kingdom_5, fac_kingdom_7, fac_kingdom_9, fac_kingdom_10]
-],
-
-[
-    "mercenary_brigandine_a",
-    "Mercenary Armor",
-    [
-        ("Brigandine_Mercenary_A", 0)
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1914,
-    weight(22)|abundance(60)|head_armor(0)|body_armor(44)|leg_armor(14)|difficulty(19),
-    imodbits_none,
-    [], []
-],
-
-[
-    "mercenary_brigandine_b",
-    "Mercenary Armor",
-    [
-        ("Brigandine_Mercenary_B", 0)
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1914,
-    weight(22)|abundance(60)|head_armor(0)|body_armor(44)|leg_armor(14)|difficulty(19),
-    imodbits_none,
-    [], []
-],
-
-[
-    "mercenary_brigandine_c",
-    "Mercenary Armor",
-    [
-        ("Brigandine_Mercenary_C", 0)
-    ],
-    itp_merchandise | itp_type_body_armor | itp_covers_legs,
-    0, 1914,
-    weight(22)|abundance(60)|head_armor(0)|body_armor(44)|leg_armor(14)|difficulty(19),
-    imodbits_none,
-    [], []
-],
-
-[
     "olive_brigandine_a",
     "Olive Painted Brigandine",
     [
@@ -3468,6 +1640,157 @@ items = [
 ],
 
 [
+    "brown_aketon_a",
+    "Brown Painted Aketon",
+    [
+        ("Brown_Aketon_A", 0),
+        ("Brown_Aketon_A_thick", imodbit_thick),
+        ("Brown_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_2]
+],
+
+[
+    "brown_aketon_a_v1",
+    "Brown Painted Aketon",
+    [
+        ("Brown_Aketon_A_v1", 0),
+        ("Brown_Aketon_A_v1_thick", imodbit_thick),
+        ("Brown_Aketon_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_2]
+],
+
+[
+    "brown_aketon_a_v2",
+    "Brown Painted Aketon",
+    [
+        ("Brown_Aketon_A_v2", 0),
+        ("Brown_Aketon_A_v2_thick", imodbit_thick),
+        ("Brown_Aketon_A_v2_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_2]
+],
+
+[
+    "brown_aketon_b", 
+    "Brown Painted Aketon with Plates", 
+    [
+        ("Brown_Aketon_B", 0),
+        ("Brown_Aketon_B_thick", imodbit_thick),
+        ("Brown_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_2]
+],
+
+[
+    "brown_aketon_b_v1", 
+    "Brown Painted Aketon with Plates", 
+    [
+        ("Brown_Aketon_B_v1", 0),
+        ("Brown_Aketon_B_v1_thick", imodbit_thick),
+        ("Brown_Aketon_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_2]
+],
+
+[
+    "brown_aketon_b_v2", 
+    "Brown Painted Aketon with Plates", 
+    [
+        ("Brown_Aketon_B_v2", 0),
+        ("Brown_Aketon_B_v2_thick", imodbit_thick),
+        ("Brown_Aketon_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_2]
+],
+
+[
+    "brown_pourpoint_a",
+    "Brown Painted Pourpoint",
+    [
+        ("Brown_Pourpoint_A", 0),
+        ("Brown_Pourpoint_A_tattered", imodbit_tattered),
+        ("Brown_Pourpoint_A_sturdy", imodbit_sturdy),
+        ("Brown_Pourpoint_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_tattered | imodbit_sturdy | imodbit_thick,
+    [], [fac_kingdom_2]
+],
+
+[
+    "brown_hauberk_a",
+    "Hauberk on Brown Painted Aketon",
+    [
+        ("Brown_Hauberk_A", 0),
+        ("Brown_Hauberk_A_thick", imodbit_thick),
+        ("Brown_Hauberk_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_2]
+],
+
+[
+    "brown_hauberk_a_v1",
+    "Hauberk on Brown Painted Aketon",
+    [
+        ("Brown_Hauberk_A_v1", 0),
+        ("Brown_Hauberk_A_v1_thick", imodbit_thick),
+        ("Brown_Hauberk_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_2]
+],
+
+[
+    "brown_hauberk_a_v2",
+    "Hauberk on Brown Painted Aketon",
+    [
+        ("Brown_Hauberk_A_v2", 0),
+        ("Brown_Hauberk_A_v2_thick", imodbit_thick),
+        ("Brown_Hauberk_A_v2_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_2]
+],
+
+[
     "brown_brigandine_a",
     "Brown Painted Brigandine",
     [
@@ -3523,6 +1846,253 @@ items = [
     weight(22)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(14)|difficulty(19),
     imodbit_hardened | imodbit_reinforced,
     [], [fac_kingdom_2]
+],
+
+[
+    "red_aketon_a",
+    "Red Painted Aketon",
+    [
+        ("Red_Aketon_A", 0),
+        ("Red_Aketon_A_thick", imodbit_thick),
+        ("Red_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_aketon_a_v1",
+    "Red Painted Aketon",
+    [
+        ("Red_Aketon_A_v1", 0),
+        ("Red_Aketon_A_v1_thick", imodbit_thick),
+        ("Red_Aketon_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_aketon_a_v2",
+    "Red Painted Aketon",
+    [
+        ("Red_Aketon_A_v2", 0),
+        ("Red_Aketon_A_v2_thick", imodbit_thick),
+        ("Red_Aketon_A_v2_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_aketon_b", 
+    "Red Painted Aketon with Plates", 
+    [
+        ("Red_Aketon_B", 0),
+        ("Red_Aketon_B_thick", imodbit_thick),
+        ("Red_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_aketon_b_v1", 
+    "Red Painted Aketon with Plates", 
+    [
+        ("Red_Aketon_B_v1", 0),
+        ("Red_Aketon_B_v1_thick", imodbit_thick),
+        ("Red_Aketon_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_aketon_b_v2", 
+    "Red Painted Aketon with Plates", 
+    [
+        ("Red_Aketon_B_v2", 0),
+        ("Red_Aketon_B_v2_thick", imodbit_thick),
+        ("Red_Aketon_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_pourpoint_a",
+    "Red Painted Pourpoint",
+    [
+        ("Red_Pourpoint_A", 0),
+        ("Red_Pourpoint_A_tattered", imodbit_tattered),
+        ("Red_Pourpoint_A_sturdy", imodbit_sturdy),
+        ("Red_Pourpoint_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_tattered | imodbit_sturdy | imodbit_thick,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_churburg_a",
+    "Churburg on Red Pourpoint",
+    [
+        ("Red_Churburg_A", 0),
+        ("Red_Churburg_A_thick", imodbit_thick),
+        ("Red_Churburg_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1304,
+    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_churburg_b",
+    "Plated Churburg on Red Pourpoint",
+    [
+        ("Red_Churburg_B", 0),
+        ("Red_Churburg_B_thick", imodbit_thick),
+        ("Red_Churburg_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_churburg_c",
+    "Heavy Plated Churburg on Red Pourpoint",
+    [
+        ("Red_Churburg_C", 0),
+        ("Red_Churburg_C_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_churburg_mail_a",
+    "Churburg with Mail on Red Pourpoint",
+    [
+        ("Red_Churburg_Mail_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(37)|leg_armor(11)|difficulty(16),
+    imodbits_none,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_churburg_mail_b",
+    "Plated Churburg with Mail on Red Pourpoint",
+    [
+        ("Red_Churburg_Mail_B", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(24)|abundance(90)|head_armor(0)|body_armor(41)|leg_armor(13)|difficulty(18),
+    imodbits_none,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_churburg_mail_c",
+    "Heavy Plated Churburg with Mail on Red Pourpoint",
+    [
+        ("Red_Churburg_Mail_C", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2071,
+    weight(28)|abundance(80)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
+    imodbits_none,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_churburg_mail_c_v1",
+    "Heavy Plated Decorated Churburg with Mail on Red Pourpoint",
+    [
+        ("Red_Churburg_Mail_C_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2236,
+    weight(28)|abundance(50)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
+    imodbits_none,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_hauberk_a",
+    "Hauberk on Red Painted Aketon",
+    [
+        ("Red_Hauberk_A", 0),
+        ("Red_Hauberk_A_thick", imodbit_thick),
+        ("Red_Hauberk_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_hauberk_a_v1",
+    "Hauberk on Red Painted Aketon",
+    [
+        ("Red_Hauberk_A_v1", 0),
+        ("Red_Hauberk_A_v1_thick", imodbit_thick),
+        ("Red_Hauberk_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_1]
+],
+
+[
+    "red_hauberk_a_v2",
+    "Hauberk on Red Painted Aketon",
+    [
+        ("Red_Hauberk_A_v2", 0),
+        ("Red_Hauberk_A_v2_thick", imodbit_thick),
+        ("Red_Hauberk_A_v2_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_1]
 ],
 
 [
@@ -3635,6 +2205,1007 @@ items = [
     weight(24)|abundance(70)|head_armor(0)|body_armor(45)|leg_armor(20)|difficulty(22),
     imodbit_thick,
     [], [fac_kingdom_1]
+],
+
+[
+    "gray_aketon_a",
+    "Gray Painted Aketon",
+    [
+        ("Gray_Aketon_A", 0),
+        ("Gray_Aketon_A_thick", imodbit_thick),
+        ("Gray_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_aketon_a_v1",
+    "Gray Painted Aketon",
+    [
+        ("Gray_Aketon_A_v1", 0),
+        ("Gray_Aketon_A_v1_thick", imodbit_thick),
+        ("Gray_Aketon_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_aketon_a_v2",
+    "Gray Painted Aketon",
+    [
+        ("Gray_Aketon_A_v2", 0),
+        ("Gray_Aketon_A_v2_thick", imodbit_thick),
+        ("Gray_Aketon_A_v2_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_aketon_b", 
+    "Gray Painted Aketon with Plates", 
+    [
+        ("Gray_Aketon_B", 0),
+        ("Gray_Aketon_B_thick", imodbit_thick),
+        ("Gray_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_aketon_b_v1", 
+    "Gray Painted Aketon with Plates", 
+    [
+        ("Gray_Aketon_B_v1", 0),
+        ("Gray_Aketon_B_v1_thick", imodbit_thick),
+        ("Gray_Aketon_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_aketon_b_v2", 
+    "Gray Painted Aketon with Plates", 
+    [
+        ("Gray_Aketon_B_v2", 0),
+        ("Gray_Aketon_B_v2_thick", imodbit_thick),
+        ("Gray_Aketon_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_leather_armor_a",
+    "Leather Armor on Gray Painted Aketon",
+    [
+        ("Gray_Leather_Armor_A", 0),
+        ("Gray_Leather_Armor_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1012,
+    weight(11)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(11),
+    imodbit_thick,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_leather_armor_a_v1",
+    "Leather Armor onf Gray Painted Aketon",
+    [
+        ("Gray_Leather_Armor_A_v1", 0),
+        ("Gray_Leather_Armor_A_v1_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1012,
+    weight(11)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(11),
+    imodbit_thick,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_leather_armor_a_v2",
+    "Leather Armor on Gray Painted Aketon",
+    [
+        ("Gray_Leather_Armor_A_v2", 0),
+        ("Gray_Leather_Armor_A_v2_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1012,
+    weight(11)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(11),
+    imodbit_thick,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_leather_armor_b",
+    "Leather Armor with Plates on Gray Painted Aketon",
+    [
+        ("Gray_Leather_Armor_B", 0),
+        ("Gray_Leather_Armor_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1337,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(30)|leg_armor(13)|difficulty(14),
+    imodbit_reinforced,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_leather_armor_b_v1",
+    "Leather Armor with Plates on Gray Painted Aketon",
+    [
+        ("Gray_Leather_Armor_B_v1", 0),
+        ("Gray_Leather_Armor_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1337,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(30)|leg_armor(13)|difficulty(14),
+    imodbit_reinforced,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_leather_armor_b_v2",
+    "Leather Armor with Plates on Gray Painted Aketon",
+    [
+        ("Gray_Leather_Armor_B_v2", 0),
+        ("Gray_Leather_Armor_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1337,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(30)|leg_armor(13)|difficulty(14),
+    imodbit_reinforced,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_hauberk_a",
+    "Hauberk on Gray Painted Aketon",
+    [
+        ("Gray_Hauberk_A", 0),
+        ("Gray_Hauberk_A_thick", imodbit_thick),
+        ("Gray_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_hauberk_a_v1",
+    "Hauberk on Gray Painted Aketon",
+    [
+        ("Gray_Hauberk_A_v1", 0),
+        ("Gray_Hauberk_A_v1_thick", imodbit_thick),
+        ("Gray_Hauberk_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_hauberk_a_v2",
+    "Hauberk on Gray Painted Aketon",
+    [
+        ("Gray_Hauberk_A_v2", 0),
+        ("Gray_Hauberk_A_v2_thick", imodbit_thick),
+        ("Gray_Hauberk_A_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_hauberk_b",
+    "Plated Hauberk on Gray Painted Aketon",
+    [
+        ("Gray_Hauberk_B", 0),
+        ("Gray_Hauberk_B_thick", imodbit_thick),
+        ("Gray_Hauberk_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1688,
+    weight(24)|abundance(85)|head_armor(0)|body_armor(38)|leg_armor(15)|difficulty(18),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_4]
+],
+
+[
+    "gray_hauberk_b_v1",
+    "Plated Hauberk on Gray Painted Aketon",
+    [
+        ("Gray_Hauberk_B_v1", 0),
+        ("Gray_Hauberk_B_v1_thick", imodbit_thick),
+        ("Gray_Hauberk_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1688,
+    weight(24)|abundance(85)|head_armor(0)|body_armor(38)|leg_armor(15)|difficulty(18),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_4]
+],
+
+[
+    "navy_aketon_a",
+    "Navy Painted Aketon",
+    [
+        ("Navy_Aketon_A", 0),
+        ("Navy_Aketon_A_thick", imodbit_thick),
+        ("Navy_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_4, fac_kingdom_12]
+],
+
+[
+    "navy_aketon_a_v1",
+    "Navy Painted Aketon",
+    [
+        ("Navy_Aketon_A_v1", 0),
+        ("Navy_Aketon_A_v1_thick", imodbit_thick),
+        ("Navy_Aketon_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_4, fac_kingdom_12]
+],
+
+[
+    "navy_aketon_b", 
+    "Navy Painted Aketon with Plates", 
+    [
+        ("Navy_Aketon_B", 0),
+        ("Navy_Aketon_B_thick", imodbit_thick),
+        ("Navy_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_4, fac_kingdom_12]
+],
+
+[
+    "navy_aketon_b_v1", 
+    "Navy Painted Aketon with Plates", 
+    [
+        ("Navy_Aketon_B_v1", 0),
+        ("Navy_Aketon_B_v1_thick", imodbit_thick),
+        ("Navy_Aketon_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_4, fac_kingdom_12]
+],
+
+[
+    "navy_hauberk_a",
+    "Hauberk on Navy Painted Aketon",
+    [
+        ("Navy_Hauberk_A", 0),
+        ("Navy_Hauberk_A_thick", imodbit_thick),
+        ("Navy_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_4, fac_kingdom_12]
+],
+
+[
+    "navy_hauberk_a_v1",
+    "Hauberk on Navy Painted Aketon",
+    [
+        ("Navy_Hauberk_A_v1", 0),
+        ("Navy_Hauberk_A_v1_thick", imodbit_thick),
+        ("Navy_Hauberk_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_4, fac_kingdom_12]
+],
+
+[
+    "green_aketon_a",
+    "Green Painted Aketon",
+    [
+        ("Green_Aketon_A", 0),
+        ("Green_Aketon_A_thick", imodbit_thick),
+        ("Green_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_aketon_a_v1",
+    "Green Painted Aketon",
+    [
+        ("Green_Aketon_A_v1", 0),
+        ("Green_Aketon_A_v1_thick", imodbit_thick),
+        ("Green_Aketon_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_aketon_a_v2",
+    "Green Painted Aketon",
+    [
+        ("Green_Aketon_A_v2", 0),
+        ("Green_Aketon_A_v2_thick", imodbit_thick),
+        ("Green_Aketon_A_v2_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_aketon_b",
+    "Green Painted Aketon with Plates",
+    [
+        ("Green_Aketon_B", 0),
+        ("Green_Aketon_B_thick", imodbit_thick),
+        ("Green_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_aketon_b_v1",
+    "Green Painted Aketon with Plates",
+    [
+        ("Green_Aketon_B_v1", 0),
+        ("Green_Aketon_B_v1_thick", imodbit_thick),
+        ("Green_Aketon_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_aketon_b_v2",
+    "Green Painted Aketon with Plates",
+    [
+        ("Green_Aketon_B_v2", 0),
+        ("Green_Aketon_B_v2_thick", imodbit_thick),
+        ("Green_Aketon_B_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_a",
+    "Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_A", 0),
+        ("Green_Churburg_A_thick", imodbit_thick),
+        ("Green_Churburg_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1304,
+    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_a_v1",
+    "Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_A_v1", 0),
+        ("Green_Churburg_A_v1_thick", imodbit_thick),
+        ("Green_Churburg_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1304,
+    weight(15)|abundance(90)|head_armor(0)|body_armor(32)|leg_armor(9)|difficulty(14),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_b",
+    "Plated Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_B", 0),
+        ("Green_Churburg_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
+    imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_b_v1",
+    "Plated Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_B_v1", 0),
+        ("Green_Churburg_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(18)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
+    imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_c",
+    "Heavy Plated Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_C", 0),
+        ("Green_Churburg_C_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
+    imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_churburg_c_v1",
+    "Heavy Plated Churburg on Green Pourpoint",
+    [
+        ("Green_Churburg_C_v1", 0),
+        ("Green_Churburg_C_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(22)|abundance(80)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
+    imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_hauberk_a",
+    "Hauberk on Green Painted Aketon",
+    [
+        ("Green_Hauberk_A", 0),
+        ("Green_Hauberk_A_thick", imodbit_thick),
+        ("Green_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_hauberk_a_v1",
+    "Hauberk on Green Painted Aketon",
+    [
+        ("Green_Hauberk_A_v1", 0),
+        ("Green_Hauberk_A_v1_thick", imodbit_thick),
+        ("Green_Hauberk_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "green_hauberk_a_v2",
+    "Hauberk on Green Painted Aketon",
+    [
+        ("Green_Hauberk_A_v2", 0),
+        ("Green_Hauberk_A_v2_thick", imodbit_thick),
+        ("Green_Hauberk_A_v2_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1393,
+    weight(20)|abundance(90)|head_armor(0)|body_armor(35)|leg_armor(9)|difficulty(15),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_5]
+],
+
+[
+    "yellow_aketon_a",
+    "Yellow Painted Aketon",
+    [
+        ("Yellow_Aketon_A", 0),
+        ("Yellow_Aketon_A_thick", imodbit_thick),
+        ("Yellow_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_aketon_a_v1",
+    "Yellow Painted Aketon",
+    [
+        ("Yellow_Aketon_A_v1", 0),
+        ("Yellow_Aketon_A_v1_thick", imodbit_thick),
+        ("Yellow_Aketon_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_aketon_b",
+    "Yellow Painted Aketon with Plates",
+    [("Yellow_Aketon_B", 0)],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbits_none,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_aketon_b_v1",
+    "Yellow Painted Aketon with Plates",
+    [("Yellow_Aketon_B_v1", 0)],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbits_none,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_pourpoint_a",
+    "Yellow Painted Pourpoint",
+    [
+        ("Yellow_Pourpoint_A", 0),
+        ("Yellow_Pourpoint_A_sturdy", imodbit_sturdy),
+        ("Yellow_Pourpoint_A_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_sturdy | imodbit_thick,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_hauberk_a",
+    "Hauberk on Yellow Painted Aketon",
+    [
+        ("Yellow_Hauberk_A", 0),
+        ("Yellow_Hauberk_A_thick", imodbit_thick),
+        ("Yellow_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1487,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_hauberk_a_v1",
+    "Hauberk on Yellow Painted Aketon",
+    [
+        ("Yellow_Hauberk_A_v1", 0),
+        ("Yellow_Hauberk_A_v1_thick", imodbit_thick),
+        ("Yellow_Hauberk_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1487,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_hauberk_b",
+    "Plated Hauberk on Yellow Painted Aketon",
+    [("Yellow_Hauberk_B", 0)],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1718,
+    weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
+    imodbits_none,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_hauberk_b_v1",
+    "Plated Hauberk on Yellow Painted Aketon",
+    [("Yellow_Hauberk_B_v1", 0)],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1718,
+    weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
+    imodbits_none,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_hauberk_c",
+    "Heavy Plated Hauberk on Yellow Painted Aketon",
+    [
+        ("Yellow_Hauberk_C", 0),
+        ("Yellow_Hauberk_C_thick", imodbit_thick),
+        ("Yellow_Hauberk_C_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1956,
+    weight(28)|abundance(80)|head_armor(0)|body_armor(44)|leg_armor(20)|difficulty(21),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_6]
+],
+
+[
+    "yellow_hauberk_c_v1",
+    "Heavy Plated Hauberk on Yellow Painted Aketon",
+    [
+        ("Yellow_Hauberk_C_v1", 0),
+        ("Yellow_Hauberk_C_v1_thick", imodbit_thick),
+        ("Yellow_Hauberk_C_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1956,
+    weight(28)|abundance(80)|head_armor(0)|body_armor(44)|leg_armor(20)|difficulty(21),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_6]
+],
+
+[
+    "purple_aketon_a",
+    "Purple Painted Aketon",
+    [
+        ("Purple_Aketon_A", 0),
+        ("Purple_Aketon_A_thick", imodbit_thick),
+        ("Purple_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_leather_armor_a",
+    "Leather Armor on Purple Shirt",
+    [
+        ("Purple_Leather_Armor_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 630,
+    weight(5)|abundance(100)|head_armor(0)|body_armor(15)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_a",
+    "Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_A", 0),
+        ("Purple_Aketon_Coat_A_thick", imodbit_thick),
+        ("Purple_Aketon_Coat_A_hardened", imodbit_hardened),
+        ("Purple_Aketon_Coat_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 982,
+    weight(15)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(11),
+    imodbit_thick | imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_a_v1",
+    "Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_A_v1", 0),
+        ("Purple_Aketon_Coat_A_v1_thick", imodbit_thick),
+        ("Purple_Aketon_Coat_A_v1_hardened", imodbit_hardened),
+        ("Purple_Aketon_Coat_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 982,
+    weight(15)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(8)|difficulty(11),
+    imodbit_thick | imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_b",
+    "Plated Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_B", 0),
+        ("Purple_Aketon_Coat_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1278,
+    weight(18)|abundance(95)|head_armor(0)|body_armor(28)|leg_armor(13)|difficulty(14),
+    imodbit_reinforced,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_b_v1",
+    "Plated Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_B_v1", 0),
+        ("Purple_Aketon_Coat_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1278,
+    weight(18)|abundance(95)|head_armor(0)|body_armor(28)|leg_armor(13)|difficulty(14),
+    imodbit_reinforced,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_c",
+    "Mail Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_C", 0),
+        ("Purple_Aketon_Coat_C_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1602,
+    weight(22)|abundance(90)|head_armor(0)|body_armor(36)|leg_armor(15)|difficulty(18),
+    imodbit_thick,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_c_v1",
+    "Mail Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_C_v1", 0),
+        ("Purple_Aketon_Coat_C_v1_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1602,
+    weight(22)|abundance(90)|head_armor(0)|body_armor(36)|leg_armor(15)|difficulty(18),
+    imodbit_thick,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_d",
+    "Heavy Mail Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_D", 0),
+        ("Purple_Aketon_Coat_D_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(26)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(17)|difficulty(20),
+    imodbit_thick,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_coat_of_plates_d_v1",
+    "Heavy Mail Coat of Plates on Purple Painted Aketon",
+    [
+        ("Purple_Aketon_Coat_D_v1", 0),
+        ("Purple_Aketon_Coat_D_v1_thick", imodbit_thick),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(26)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(17)|difficulty(20),
+    imodbit_thick,
+    [], [fac_kingdom_7]
+],
+
+[
+    "purple_hauberk_a",
+    "Hauberk on Purple Painted Aketon",
+    [
+        ("Purple_Hauberk_A", 0),
+        ("Purple_Hauberk_A_thick", imodbit_thick),
+        ("Purple_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1487,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_7]
+],
+
+[
+    "hairako_shirt_a",
+    "Hairako Shirt",
+    [
+        ("Hairako_Shirt_A", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs | itp_civilian,
+    0, 79,
+    weight(2)|abundance(100)|head_armor(0)|body_armor(9)|leg_armor(5)|difficulty(0),
+    imodbits_none,
+    [], [fac_kingdom_8]
+],
+
+[
+    "hairako_leather_armor_a",
+    "Hairako Leather Armor",
+    [
+        ("Hairako_Leather_Armor_A", 0),
+        ("Hairako_Leather_Armor_A_thick", imodbit_thick),
+        ("Hairako_Leather_Armor_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1012,
+    weight(11)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(11),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_8]
+],
+
+[
+    "hairako_leather_armor_a_v1",
+    "Hairako Leather Armor",
+    [
+        ("Hairako_Leather_Armor_A_v1", 0),
+        ("Hairako_Leather_Armor_A_v1_thick", imodbit_thick),
+        ("Hairako_Leather_Armor_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1012,
+    weight(11)|abundance(100)|head_armor(0)|body_armor(25)|leg_armor(8)|difficulty(11),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_8]
+],
+
+[
+    "hairako_leather_armor_b",
+    "Hairako Leather Armor with Plates",
+    [
+        ("Hairako_Leather_Armor_B", 0),
+        ("Hairako_Leather_Armor_B_hardened", imodbit_hardened),
+        ("Hairako_Leather_Armor_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1544,
+    weight(16)|abundance(95)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(17),
+    imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_8]
+],
+
+[
+    "hairako_leather_armor_b_v1",
+    "Hairako Leather Armor with Plates",
+    [
+        ("Hairako_Leather_Armor_B_v1", 0),
+        ("Hairako_Leather_Armor_B_v1_hardened", imodbit_hardened),
+        ("Hairako_Leather_Armor_B_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1544,
+    weight(16)|abundance(95)|head_armor(0)|body_armor(35)|leg_armor(15)|difficulty(17),
+    imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_8]
+],
+
+[
+    "hairako_hauberk_a",
+    "Hauberk on Hairako Painted Aketon",
+    [
+        ("Hairako_Hauberk_A", 0),
+        ("Hairako_Hauberk_A_thick", imodbit_thick),
+        ("Hairako_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1487,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_8]
+],
+
+[
+    "hairako_hauberk_b",
+    "Plated Hauberk on Hairako Painted Aketon",
+    [
+        ("Hairako_Hauberk_B", 0),
+        ("Hairako_Hauberk_B_thick", imodbit_thick),
+        ("Hairako_Hauberk_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1718,
+    weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_8]
+],
+
+[
+    "tauria_aketon_a",
+    "Pink & Blue Painted Aketon",
+    [
+        ("Tauria_Aketon_A", 0),
+        ("Tauria_Aketon_A_thick", imodbit_thick),
+        ("Tauria_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_9]
+],
+
+[
+    "tauria_aketon_a_v1",
+    "Pink & Blue Painted Aketon",
+    [
+        ("Tauria_Aketon_A_v1", 0),
+        ("Tauria_Aketon_A_v1_thick", imodbit_thick),
+        ("Tauria_Aketon_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_9]
 ],
 
 [
@@ -3778,6 +3349,445 @@ items = [
     imodbit_reinforced,
     [], [fac_kingdom_10]
 ],
+
+[
+    "elen_aketon_a",
+    "Black & Yellow Painted Aketon",
+    [
+        ("Elen_Aketon_A", 0),
+        ("Elen_Aketon_A_thick", imodbit_thick),
+        ("Elen_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_10]
+],
+
+[
+    "elen_lamellar_cuirass_a",
+    "Lamellar Cuirass",
+    [
+        ("Elen_Lamellar_Cuirass_A", 0),
+        ("Elen_Lamellar_Cuirass_A_thick", imodbit_thick),
+        ("Elen_Lamellar_Cuirass_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1300,
+    weight(13)|abundance(80)|head_armor(0)|body_armor(30)|leg_armor(9)|difficulty(13),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_10]
+],
+
+[
+    "elen_lamellar_cuirass_b",
+    "Lamellar Cuirass",
+    [
+        ("Elen_Lamellar_Cuirass_B", 0),
+        ("Elen_Lamellar_Cuirass_B_thick", imodbit_thick),
+        ("Elen_Lamellar_Cuirass_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(16)|abundance(75)|head_armor(0)|body_armor(35)|leg_armor(13)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "elen_lamellar_cuirass_c",
+    "Plated Lamellar Cuirass",
+    [
+        ("Elen_Lamellar_Cuirass_C", 0),
+        ("Elen_Lamellar_Cuirass_C_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1745,
+    weight(20)|abundance(70)|head_armor(0)|body_armor(39)|leg_armor(15)|difficulty(18),
+    imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "elen_lamellar_cuirass_mail_a",
+    "Lamellar Cuirass with Mail",
+    [
+        ("Elen_Lamellar_Cuirass_Mail_A", 0),
+        ("Elen_Lamellar_Cuirass_Mail_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(22)|abundance(65)|head_armor(0)|body_armor(42)|leg_armor(13)|difficulty(20),
+    imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "elen_lamellar_cuirass_mail_b",
+    "Plated Lamellar Cuirass with Mail",
+    [
+        ("Elen_Lamellar_Cuirass_Mail_B", 0),
+        ("Elen_Lamellar_Cuirass_Mail_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 2126,
+    weight(26)|abundance(60)|head_armor(0)|body_armor(46)|leg_armor(15)|difficulty(22),
+    imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "elen_hauberk_a",
+    "Hauberk on Black & Yellow Painted Aketon",
+    [
+        ("Elen_Hauberk_A", 0),
+        ("Elen_Hauberk_A_thick", imodbit_thick),
+        ("Elen_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1487,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_10]
+],
+
+[
+    "black_aketon_a",
+    "Black Painted Aketon",
+    [
+        ("Black_Aketon_A", 0),
+        ("Black_Aketon_A_thick", imodbit_thick),
+        ("Black_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_12]
+],
+
+[
+    "black_aketon_a_v1",
+    "Robe on Black Aketon",
+    [
+        ("Black_Aketon_A_v1", 0),
+        ("Black_Aketon_A_v1_thick", imodbit_thick),
+        ("Black_Aketon_A_v1_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 899,
+    weight(7)|abundance(100)|head_armor(0)|body_armor(20)|leg_armor(8)|difficulty(9),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_12]
+],
+
+[
+    "black_aketon_b",
+    "Black Painted Aketon with Plates",
+    [
+        ("Black_Aketon_B", 0),
+        ("Black_Aketon_B_thick", imodbit_thick),
+        ("Black_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1188,
+    weight(14)|abundance(95)|head_armor(0)|body_armor(25)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_12]
+],
+
+[
+    "black_aketon_c",
+    "Black Painted Aketon with Plates",
+    [
+        ("Black_Aketon_C", 0),
+        ("Black_Aketon_C_hardened", imodbit_hardened),
+        ("Black_Aketon_C_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1512,
+    weight(16)|abundance(90)|head_armor(0)|body_armor(33)|leg_armor(15)|difficulty(16),
+    imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_12]
+],
+
+[
+    "black_surcoat_a",
+    "Black Surcoat",
+    [
+        ("Black_Surcoat_Revised_A", 0),
+        ("Black_Surcoat_Revised_A_thick", imodbit_thick),
+        ("Black_Surcoat_Revised_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1220,
+    weight(14)|abundance(100)|head_armor(0)|body_armor(27)|leg_armor(13)|difficulty(13),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_12]
+],
+
+[
+    "black_coat_of_plates_a",
+    "Mail Coat of Plates on Black Aketon",
+    [
+        ("Black_Aketon_Coat_A", 0),
+        ("Black_Aketon_Coat_A_thick", imodbit_thick),
+        ("Black_Aketon_Coat_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1602,
+    weight(22)|abundance(90)|head_armor(0)|body_armor(36)|leg_armor(15)|difficulty(18),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_12]
+],
+
+[
+    "black_coat_of_plates_a_v1",
+    "Mail Coat of Plates on Black Aketon",
+    [
+        ("Black_Aketon_Coat_A_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1602,
+    weight(22)|abundance(90)|head_armor(0)|body_armor(36)|leg_armor(15)|difficulty(18),
+    imodbits_none,
+    [], [fac_kingdom_12]
+],
+
+[
+    "black_coat_of_plates_b",
+    "Heavy Mail Coat of Plates on Black Aketon",
+    [
+        ("Black_Aketon_Coat_B", 0),
+        ("Black_Aketon_Coat_B_thick", imodbit_thick),
+        ("Black_Aketon_Coat_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1893,
+    weight(26)|abundance(80)|head_armor(0)|body_armor(42)|leg_armor(17)|difficulty(20),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_12]
+],
+
+[
+    "black_hauberk_a",
+    "Hauberk on Black Painted Aketon",
+    [
+        ("Black_Hauberk_A", 0),
+        ("Black_Hauberk_A_thick", imodbit_thick),
+        ("Black_Hauberk_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1487,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_12]
+],
+
+[
+    "black_hauberk_a_v1",
+    "Hauberk on Black Painted Aketon",
+    [
+        ("Black_Hauberk_A_v1", 0),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1487,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(38)|leg_armor(9)|difficulty(16),
+    imodbits_none,
+    [], [fac_kingdom_12]
+],
+
+[
+    "black_hauberk_b",
+    "Plated Hauberk on Black Painted Aketon",
+    [
+        ("Black_Hauberk_B", 0),
+        ("Black_Hauberk_B_thick", imodbit_hardened),
+        ("Black_Hauberk_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1718,
+    weight(24)|abundance(85)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(19),
+    imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_12]
+],
+
+[
+    "adid_aketon_a",
+    "Leather Adid Aketon",
+    [
+        ("Adid_Aketon_A", 0),
+        ("Adid_Aketon_A_thick", imodbit_thick),
+        ("Adid_Aketon_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1042,
+    weight(9)|abundance(100)|head_armor(0)|body_armor(24)|leg_armor(10)|difficulty(11),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_11]
+],
+
+[
+    "adid_aketon_b",
+    "Leather Adid Aketon with Plates",
+    [
+        ("Adid_Aketon_B", 0),
+        ("Adid_Aketon_B_thick", imodbit_thick),
+        ("Adid_Aketon_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1342,
+    weight(12)|abundance(95)|head_armor(0)|body_armor(30)|leg_armor(13)|difficulty(14),
+    imodbit_thick | imodbit_reinforced,
+    [], [fac_kingdom_11]
+],
+
+[
+    "adid_hauberk_a",
+    "Hauberk on Adid Leather Aketon",
+    [
+        ("Adid_Hauberk_A", 0),
+        ("Adid_Hauberk_A_thick", imodbit_thick),
+        ("Adid_Hauberk_A_hardened", imodbit_hardened),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1571,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(40)|leg_armor(10)|difficulty(17),
+    imodbit_thick | imodbit_hardened,
+    [], [fac_kingdom_11]
+],
+
+[
+    "adid_hauberk_b",
+    "Plated Hauberk on Adid Leather Aketon",
+    [
+        ("Adid_Hauberk_B", 0),
+        ("Adid_Hauberk_B_hardened", imodbit_hardened),
+        ("Adid_Hauberk_B_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1804,
+    weight(25)|abundance(85)|head_armor(0)|body_armor(43)|leg_armor(15)|difficulty(19),
+    imodbit_hardened | imodbit_reinforced,
+    [], [fac_kingdom_11]
+],
+# FACTIONS END
+
+# LEATHER ARMORS START
+[
+    "leather_armor",
+    "Leather Armor",
+    [("Leather_Cuirass_A",0)],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 864,
+    weight(13)|abundance(100)|head_armor(0)|body_armor(18)|leg_armor(10)|difficulty(9),
+    imodbits_cloth
+],
+
+[
+    "heavy_leather_vest_mail",
+    "Heavy Leather Armor",
+    [("Leather_Cuirass_B",0)],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1368,
+    weight(20)|abundance(100)|head_armor(0)|body_armor(35)|leg_armor(10)|difficulty(15),
+    imodbits_armor
+],
+# LEATHER ARMORS END
+
+# COAT OF PLATES START
+[
+    "coat_of_plates_red",
+    "Coat of Plates",
+    [("Coat_Of_Plates_A",0)],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1720,
+    weight(19)|abundance(90)|head_armor(0)|body_armor(40)|leg_armor(15)|difficulty(18),
+    imodbits_armor
+],
+
+[
+    "coat_of_plates",
+    "Coat of Plates",
+    [("Coat_Of_Plates_B",0)],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1957,
+    weight(21)|abundance(90)|head_armor(0)|body_armor(45)|leg_armor(18)|difficulty(21),
+    imodbits_armor
+],
+# COAT OF PLATES END
+
+# LAMELLAR ARMORS START
+[
+    "lamellar_cuirass_a",
+    "Lamellar Cuirass",
+    [
+        ("Lamellar_Cuirass_A", 0),
+        ("Lamellar_Cuirass_A_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1300,
+    weight(13)|abundance(80)|head_armor(0)|body_armor(30)|leg_armor(9)|difficulty(13),
+    imodbit_reinforced,
+    [], [fac_kingdom_3]
+],
+
+[
+    "lamellar_cuirass_a_v1",
+    "Lamellar Cuirass",
+    [
+        ("Lamellar_Cuirass_A_v1", 0),
+        ("Lamellar_Cuirass_A_v1_reinforced", imodbit_reinforced),
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1300,
+    weight(13)|abundance(80)|head_armor(0)|body_armor(30)|leg_armor(9)|difficulty(13),
+    imodbit_reinforced,
+    [], [fac_kingdom_3]
+],
+# LAMELLAR ARMORS END
+
+# BRIGANDINES START
+[
+    "mercenary_brigandine_a",
+    "Mercenary Armor",
+    [
+        ("Brigandine_Mercenary_A", 0)
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1914,
+    weight(22)|abundance(60)|head_armor(0)|body_armor(44)|leg_armor(14)|difficulty(19),
+    imodbits_none,
+    [], []
+],
+
+[
+    "mercenary_brigandine_b",
+    "Mercenary Armor",
+    [
+        ("Brigandine_Mercenary_B", 0)
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1914,
+    weight(22)|abundance(60)|head_armor(0)|body_armor(44)|leg_armor(14)|difficulty(19),
+    imodbits_none,
+    [], []
+],
+
+[
+    "mercenary_brigandine_c",
+    "Mercenary Armor",
+    [
+        ("Brigandine_Mercenary_C", 0)
+    ],
+    itp_merchandise | itp_type_body_armor | itp_covers_legs,
+    0, 1914,
+    weight(22)|abundance(60)|head_armor(0)|body_armor(44)|leg_armor(14)|difficulty(19),
+    imodbits_none,
+    [], []
+],
+
 # BRIGANDINES END
 
 # PLATE ARMORS START
