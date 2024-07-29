@@ -481,6 +481,9 @@ troops_mercenaries = [
         reserved,
         fac_commoners,
         [
+            itm_polearm_military_scythe_a,
+            itm_polearm_glaive_a,
+            itm_polearm_military_glave_a,
             itm_menegras_sallet_a,
             itm_menegras_sallet_b,
             itm_menegras_aketon_a,
@@ -505,6 +508,10 @@ troops_mercenaries = [
         reserved,
         fac_commoners,
         [
+            itm_polearm_military_scythe_a,
+            itm_polearm_glaive_a,
+            itm_polearm_military_glave_a,
+            itm_polearm_light_halberd_a,
             itm_menegras_sallet_a,
             itm_menegras_sallet_b,
             itm_menegras_sallet_c,
@@ -533,6 +540,11 @@ troops_mercenaries = [
         reserved,
         fac_commoners,
         [
+            itm_polehammer_a,
+            itm_polehammer_b,
+            itm_poleaxe_a,
+            itm_polearm_glaive_a,
+            itm_polearm_military_glave_a,
             itm_menegras_sallet_a,
             itm_menegras_sallet_b,
             itm_menegras_sallet_c,
