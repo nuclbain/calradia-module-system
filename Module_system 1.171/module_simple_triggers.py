@@ -3856,9 +3856,9 @@ simple_triggers = [
                         (ge, ":player_party_size", 5),
                         (spawn_around_party, ":cur_village", "pt_several_looters"),
                     (else_try),
-                        (store_num_parties_of_template, ":count_pt_few_looters", "pt_few_looters"),
+                        (store_num_parties_of_template, ":count_pt_looters", "pt_looters"),
 
-                        (lt, ":count_pt_few_looters", 30),
+                        (lt, ":count_pt_looters", 30),
                         (lt, ":player_level", 5),
                         (spawn_around_party, ":cur_village", "pt_looters"),
                     (try_end),

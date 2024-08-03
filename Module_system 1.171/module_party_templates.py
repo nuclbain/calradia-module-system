@@ -127,7 +127,9 @@ party_templates = [
         icon_axeman | carries_goods(8),
         0,
         fac_outlaws,
-        aggressiveness_15 | courage_15 | banditness, # more aggressive and courageous because of bandit lord in a party?
+        aggressiveness_15
+        | courage_15
+        | banditness,  # more aggressive and courageous because of bandit lord in a party?
         [
             (trp_bandit_lord, 1, 3),
             (trp_outlaw, 20, 30),
@@ -269,7 +271,7 @@ party_templates = [
         0,
         fac_outlaws,
         bandit_personality,
-        [(trp_taiga_bandit, 3, 65)],
+        [(trp_taiga_bandit_cheiftain, 0, 5), (trp_taiga_bandit, 3, 65)],
     ),
     (
         "desert_bandits",
@@ -282,12 +284,12 @@ party_templates = [
     ),
     (
         "forest_bandits",
-        "Forest Bandits",
+        "Few Forest Bandits",
         icon_axeman | carries_goods(2),
         0,
         fac_forest_bandits,
         bandit_personality,
-        [(trp_forest_bandit, 3, 65)],
+        [(trp_forest_outlaw, 0, 1), (trp_forest_bandit, 1, 4)],
     ),
     (
         "mountain_bandits",
@@ -296,7 +298,7 @@ party_templates = [
         0,
         fac_mountain_bandits,
         bandit_personality,
-        [(trp_mountain_bandit, 3, 60)],
+        [(trp_mountain_bandit_warrior, 2, 6), (trp_mountain_bandit, 3, 60)],
     ),
     (
         "sea_raiders",
@@ -305,7 +307,7 @@ party_templates = [
         0,
         fac_outlaws,
         bandit_personality,
-        [(trp_sea_raider, 3, 60)],
+        [(trp_sea_raider_warlord, 0, 8), (trp_sea_raider, 3, 60)],
     ),
     (
         "deserters",
