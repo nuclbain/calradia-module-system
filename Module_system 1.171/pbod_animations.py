@@ -21,7 +21,7 @@ animations=[
 ##
  ##Shield Bash by Xeno, animation by Papa Larazou
  ["shield_bash", acf_enforce_all, amf_play|amf_priority_striked|amf_use_defend_speed|amf_client_owner_prediction,
-  [0.75, "shield_bash", 0, 30, blend_in_defense],
+  [0.75, "Shield_bash_13.9.11", 0, 29, blend_in_defense],
   # [0.75, "defend_shield_parry_all", 1, 50, blend_in_defense], #Adjust duration for balance.  Currently at 0.75 seconds, fixed.
   # [0.75, "defend_shield_right", 1, 50, blend_in_defense],
   # [0.75, "defend_shield_left", 1, 50, blend_in_defense],
