@@ -4111,6 +4111,51 @@ items = [
         imodbits_cloth,
     ],
     [
+        "wanderer_shirt_a",
+        "Wanderer Shirt",
+        [("Sleeveless_Wanderer_Vest_A", 0)],
+        itp_merchandise | itp_type_body_armor | itp_civilian | itp_covers_legs,
+        0,
+        139,
+        weight(5)
+        | abundance(100)
+        | head_armor(0)
+        | body_armor(13)
+        | leg_armor(6)
+        | difficulty(0),
+        imodbits_cloth,
+    ],
+    [
+        "wanderer_scale_a",
+        "Wanderer Scale Vest",
+        [("Sleeveless_Wanderer_Scale_A", 0)],
+        itp_merchandise | itp_type_body_armor | itp_covers_legs,
+        0,
+        1042,
+        weight(15)
+        | abundance(100)
+        | head_armor(0)
+        | body_armor(26)
+        | leg_armor(8)
+        | difficulty(11),
+        imodbits_armor,
+    ],
+    [
+        "wanderer_mail_a",
+        "Wanderer Mail Shirt",
+        [("Sleeveless_Wanderer_Mail_A", 0)],
+        itp_merchandise | itp_type_body_armor | itp_covers_legs,
+        0,
+        983,
+        weight(15)
+        | abundance(100)
+        | head_armor(0)
+        | body_armor(24)
+        | leg_armor(8)
+        | difficulty(10),
+        imodbits_armor,
+    ],
+    [
         "gambeson_a",
         "Gambeson",
         [("Gambeson_Revised_A", 0)],
@@ -4168,6 +4213,21 @@ items = [
         | body_armor(29)
         | leg_armor(13)
         | difficulty(14),
+        imodbits_armor,
+    ],
+    [
+        "haubergeon_a",
+        "Haubergeon",
+        [("Haubergeon_Revised_A", 0)],
+        itp_merchandise | itp_type_body_armor | itp_covers_legs,
+        0,
+        1101,
+        weight(20)
+        | abundance(100)
+        | head_armor(0)
+        | body_armor(27)
+        | leg_armor(9)
+        | difficulty(12),
         imodbits_armor,
     ],
     [
@@ -4430,7 +4490,6 @@ items = [
         | difficulty(0),
         imodbits_cloth,
     ],
-    # NEW: was aketon_a
     [
         "padded_cloth",
         "Aketon",
@@ -4446,7 +4505,36 @@ items = [
         | difficulty(0),
         imodbits_cloth,
     ],
-    # NEW:
+    [
+        "white_vest_long_a",
+        "Long Tunic",
+        [("Long_Vest_A", 0)],
+        itp_merchandise | itp_type_body_armor | itp_covers_legs,
+        0,
+        156,
+        weight(6)
+        | abundance(100)
+        | head_armor(0)
+        | body_armor(16)
+        | leg_armor(6)
+        | difficulty(0),
+        imodbits_cloth,
+    ],
+    [
+        "white_vest_long_a_v1",
+        "Long Tunic",
+        [("Long_Vest_A_v1", 0)],
+        itp_merchandise | itp_type_body_armor | itp_covers_legs,
+        0,
+        156,
+        weight(6)
+        | abundance(100)
+        | head_armor(0)
+        | body_armor(16)
+        | leg_armor(6)
+        | difficulty(0),
+        imodbits_cloth,
+    ],
     [
         "long_tunic_a",
         "Long Tunic",
