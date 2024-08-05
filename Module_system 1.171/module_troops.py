@@ -277,14 +277,17 @@ upgrade(troops, "cultist_acolyte", "dark_cultist")
 upgrade(troops, "dark_cultist", "occultist")
 upgrade2(troops, "occultist", "veilweaver", "veiled_inquisitor")
 
+upgrade2(troops, "scavenger", "scavenger_brute", "scavenger_crossbowman")
+upgrade(troops, "scavenger_brute", "scavenger_shock_trooper")
+
 # new tree connections
-upgrade(troops, "mountain_bandit", "alpine_recruit")
-upgrade(troops, "forest_bandit", "silver_rose_levy")
+upgrade(troops, "mountain_bandit", "mountain_bandit_warrior")
+upgrade(troops, "forest_bandit", "forest_outlaw")
 upgrade(troops, "steppe_bandit", "steppe_bandit_warrior")
 upgrade(troops, "steppe_bandit_warrior", "steppe_bandit_leader")
 
-upgrade(troops, "taiga_bandit", "chornovalley_recruit")
-upgrade(troops, "sea_raider", "iron_crown_recruit")
+upgrade(troops, "taiga_bandit", "taiga_bandit_cheiftain")
+upgrade(troops, "sea_raider", "sea_raider_warlord")
 upgrade(troops, "desert_bandit", "desert_bandit_master")
 upgrade2(
     troops, "desert_bandit_master", "desert_bandit_horseman", "desert_bandit_ronin"

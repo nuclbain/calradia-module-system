@@ -720,8 +720,7 @@ party_add_xp_to_stack                  = 1670   # (party_add_xp_to_stack, <party
 party_get_morale                       = 1671   # (party_get_morale, <destination>,<party_id>),
 party_set_morale                       = 1672   # (party_set_morale, <party_id>, <value>), #value is clamped to range [0...100].
 
-party_upgrade_with_xp                  = 1673   # (party_upgrade_with_xp, <party_id>, <xp_amount>, <upgrade_path>), #upgrade_path can be:
-                                                                                                                    #0 = choose random, 1 = choose first, 2 = choose second
+party_upgrade_with_xp                  = 1673   # (party_upgrade_with_xp, <party_id>, <xp_amount>, <upgrade_path>), # upgrade_path can be: 0 = choose random, 1 = choose first, 2 = choose second
 party_add_xp                           = 1674   # (party_add_xp, <party_id>, <xp_amount>),
 
 party_add_template                     = 1675   # (party_add_template, <party_id>, <party_template_id>, [reverse_prisoner_status]),

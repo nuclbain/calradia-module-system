@@ -37,8 +37,8 @@ from compiler import *
 #SB : add new disguise sets, make sure none of them have high difficulty
 # the new flags now also have af_override_everything, so include footwear
 pilgrim_disguise = [itm_pilgrim_hood,itm_pilgrim_disguise,itm_practice_staff, itm_throwing_daggers]
-farmer_disguise = [itm_felt_a, itm_regular_shirt_d, itm_cleaver, itm_battle_fork, itm_stones]
-hunter_disguise = [itm_hunting_bow,itm_barbed_arrows, itm_black_hood, itm_leather_gloves_a, itm_light_leather, itm_sword_khergit_1]
+farmer_disguise = [itm_felt_a, itm_regular_shirt_b, itm_cleaver, itm_battle_fork, itm_stones]
+hunter_disguise = [itm_hunting_bow,itm_barbed_arrows, itm_black_hood, itm_leather_gloves_a, itm_light_leather, itm_falchion_a]
 merchant_disguise = [itm_regular_shirt_c,itm_felt_steppe_cap,itm_dagger]
 guard_disguise = [itm_olive_hauberk_a,itm_mail_mittens_a,itm_nasal_helmet_a_v2,itm_tab_shield_round_c,itm_fighting_pick,itm_war_spear]
 bard_disguise = [itm_lyre,itm_regular_shirt_b,itm_winged_mace]
@@ -5717,8 +5717,8 @@ mission_templates = [
     "duel_with_lord",mtf_arena_fight|mtf_commit_casualties,-1,
     "You enter a melee fight in the arena.",
     [
-      (0, mtef_visitor_source|mtef_team_0,af_override_all,aif_start_alarmed,1,[itm_sword_medieval_a,itm_arena_tunic_blue]),
-      (16, mtef_visitor_source|mtef_team_1,af_override_all,aif_start_alarmed,1,[itm_sword_medieval_a,itm_arena_tunic_blue]),
+      (0, mtef_visitor_source|mtef_team_0,af_override_all,aif_start_alarmed,1,[itm_sword_short_a,itm_arena_tunic_blue]),
+      (16, mtef_visitor_source|mtef_team_1,af_override_all,aif_start_alarmed,1,[itm_sword_short_a,itm_arena_tunic_blue]),
       #SB : use these for castle courtyard duels
       (23, mtef_visitor_source|mtef_team_0,af_override_all,aif_start_alarmed,1,[itm_arena_sword,itm_heraldic_mail_with_tunic]),
       (24, mtef_visitor_source|mtef_team_1,af_override_all,aif_start_alarmed,1,[itm_arena_sword,itm_heraldic_mail_with_tunic_b]),
@@ -7951,7 +7951,7 @@ mission_templates = [
     "tutorial_1",0,-1,
     "You enter the training ground.",
     [
-        (0,mtef_leader_only,af_override_everything,0,1,[itm_tutorial_shield,itm_tutorial_sword,itm_tutorial_short_bow,itm_tutorial_arrows,itm_leather_jerkin]), #af_override_weapons
+        (0,mtef_leader_only,af_override_everything,0,1,[itm_tutorial_shield,itm_tutorial_sword,itm_tutorial_short_bow,itm_tutorial_arrows,itm_regular_leather_jerkin_a]), #af_override_weapons
      ],
     [
       (ti_tab_pressed, 0, 0, [],
@@ -8159,7 +8159,7 @@ mission_templates = [
     "tutorial_2",mtf_arena_fight,-1,
     "You enter the training ground.",
     [
-        (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_tutorial_shield,itm_leather_jerkin]),
+        (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_tutorial_shield,itm_regular_leather_jerkin_a]),
         (2,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
         (4,mtef_visitor_source|mtef_team_1,0,0,1,[]),
      ],
@@ -8444,7 +8444,7 @@ mission_templates = [
     "tutorial_3",mtf_arena_fight,-1,
     "You enter the training ground.",
     [
-        (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_leather_jerkin]),
+        (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_regular_leather_jerkin_a]),
         (3,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
         (5,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
@@ -8701,7 +8701,7 @@ mission_templates = [
     "tutorial_3_2",mtf_arena_fight,-1,
     "You enter the training ground.",
     [
-        (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_tutorial_staff,itm_leather_jerkin]),
+        (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_tutorial_staff,itm_regular_leather_jerkin_a]),
         (4,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
         (6,mtef_visitor_source|mtef_team_1,0,aif_start_alarmed,1,[]),
      ],
@@ -8855,7 +8855,7 @@ mission_templates = [
     "tutorial_4",mtf_arena_fight,-1,
     "You enter the training ground.",
     [
-        (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_tutorial_sword,itm_tutorial_short_bow,itm_tutorial_arrows,itm_leather_jerkin]), #af_override_weapons
+        (0,mtef_leader_only|mtef_team_0,af_override_everything,0,1,[itm_tutorial_sword,itm_tutorial_short_bow,itm_tutorial_arrows,itm_regular_leather_jerkin_a]), #af_override_weapons
      ],
     [
       (ti_tab_pressed, 0, 0, [],
@@ -9070,7 +9070,7 @@ mission_templates = [
     "tutorial_5",mtf_arena_fight,-1,
     "You enter the training ground.",
     [
-        (0,mtef_visitor_source|mtef_team_0,af_override_everything,0,1,[itm_tutorial_sword,itm_tutorial_shield,itm_tutorial_short_bow,itm_tutorial_arrows,itm_tutorial_saddle_horse,itm_leather_jerkin]),
+        (0,mtef_visitor_source|mtef_team_0,af_override_everything,0,1,[itm_tutorial_sword,itm_tutorial_shield,itm_tutorial_short_bow,itm_tutorial_arrows,itm_tutorial_saddle_horse,itm_regular_leather_jerkin_a]),
         (1,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
         (2,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),
         (3,mtef_visitor_source|mtef_team_0,0,aif_start_alarmed,1,[]),

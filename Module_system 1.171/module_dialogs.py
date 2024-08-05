@@ -4172,7 +4172,7 @@ Still I am sorry that I'll leave you soon. You must promise me, you'll come visi
    # (troop_add_item, "$g_talk_troop", "itm_tabard_e",0),
    # (troop_add_item, "$g_talk_troop", "itm_heraldic_mail_with_tabard",0),
    # (troop_add_item, "$g_talk_troop", "itm_red_gambeson",0),
-   # (troop_add_item, "$g_talk_troop", "itm_sword_medieval_c",0),
+   # (troop_add_item, "$g_talk_troop", "itm_sword_short_b_v1",0),
    # (troop_add_item, "$g_talk_troop", "itm_tab_shield_kite_cav_b",0),
    # (troop_add_item, "$g_talk_troop", "itm_light_lance",0),
 # (try_end),

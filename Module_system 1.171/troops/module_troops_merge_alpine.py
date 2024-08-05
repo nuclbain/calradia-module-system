@@ -652,8 +652,8 @@ troops_alpine = [
         0,
         fac_kingdom_5,
         [
-            itm_sword_medieval_b,
-            itm_leather_jerkin,
+            itm_sword_short_a_v1,
+            itm_regular_leather_jerkin_a,
             itm_courser,
             itm_leather_gloves_a,
             itm_short_bow,
@@ -676,7 +676,7 @@ troops_alpine = [
         [
             itm_arrows,
             itm_spiked_mace,
-            itm_axe,
+            itm_heavy_axe_a,
             itm_falchion_a,
             itm_short_bow,
             itm_short_bow,
@@ -685,7 +685,7 @@ troops_alpine = [
             itm_javelin,
             itm_steppe_cap,
             itm_leather_vest_regular_shirt_a,
-            itm_nomad_armor,
+            itm_regular_nomad_vest_a,
         ],
         def_attrib | str_10 | level(14),
         wp(80),

@@ -172,13 +172,12 @@ if module_sys_info["version"] <= 1011:
       "common_siege_rotate_belfry",
       "common_siege_assign_men_to_belfry",
    ]
- 
 
 
 # gets the type of component on whether it is found in mod_components1 or mod_components2.  Those not found in either are returned as 0
 def get_component_type(component_name):
     comp_type = 0
-    
+
     try:
         mod_components1.index(component_name)
         comp_type  |= 1
